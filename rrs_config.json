@@ -1,0 +1,94 @@
+{
+  "version": "2026-07-04",
+  "description": "RSS聚合服务配置 — 45个原生RSS源",
+  "refresh_interval_minutes": 30,
+  "max_items_per_feed": 50,
+  "sources": {
+    "deals": {
+      "name": "福利·羊毛·Deals",
+      "output_feed": "deals.xml",
+      "feeds": [
+        {"name": "福利羊毛 LINUX DO", "url": "https://linux.do/c/welfare/36.rss", "source": "Discourse"},
+        {"name": "AppSumo", "url": "https://appsumo.com/rss", "source": "官方"},
+        {"name": "Freebies", "url": "https://www.reddit.com/r/freebies/.rss", "source": "Reddit"},
+        {"name": "LowEndBox", "url": "https://lowendbox.com/feed/", "source": "WordPress"}
+      ]
+    },
+    "tech_news": {
+      "name": "科技资讯",
+      "output_feed": "tech.xml",
+      "feeds": [
+        {"name": "TechCrunch", "url": "https://techcrunch.com/feed/", "source": "官方"},
+        {"name": "ArsTechnica", "url": "https://feeds.arstechnica.com/arstechnica/index", "source": "官方"},
+        {"name": "The Verge", "url": "https://www.theverge.com/rss/index.xml", "source": "Vox Media"},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com/rss", "source": "YC 官方"},
+        {"name": "Phoronix", "url": "https://www.phoronix.com/rss.php", "source": "官方"},
+        {"name": "LWN.net", "url": "https://lwn.net/headlines/rss", "source": "官方"},
+        {"name": "SoylentNews", "url": "https://soylentnews.org/atom.xml", "source": "官方"},
+        {"name": "Dev.to", "url": "https://dev.to/feed", "source": "官方"},
+        {"name": "Lobsters", "url": "https://lobste.rs/rss", "source": "官方"},
+        {"name": "Habr", "url": "https://habr.com/ru/rss/all/", "source": "官方"},
+        {"name": "Reddit", "url": "https://www.reddit.com/r/all/.rss", "source": "Reddit"},
+        {"name": "36kr", "url": "https://36kr.com/feed", "source": "官方"},
+        {"name": "少数派", "url": "https://sspai.com/feed", "source": "官方"}
+      ]
+    },
+    "forums": {
+      "name": "技术论坛",
+      "output_feed": "forums.xml",
+      "feeds": [
+        {"name": "NodeLoc", "url": "https://www.nodeloc.com/latest.rss", "source": "Discourse"},
+        {"name": "V2EX", "url": "https://www.v2ex.com/index.xml", "source": "官方"},
+        {"name": "Linux DO 全站", "url": "https://linux.do/latest.rss", "source": "Discourse"},
+        {"name": "NodeSeek", "url": "https://rss.nodeseek.com/", "source": "官方"},
+        {"name": "Hostloc", "url": "https://hostloc.com/forum.php?mod=rss", "source": "Discuz!"},
+        {"name": "LowEndTalk", "url": "https://lowendtalk.com/latest.rss", "source": "Discourse"},
+        {"name": "Level1Techs Forum", "url": "https://forum.level1techs.com/latest.rss", "source": "Discourse"}
+      ]
+    },
+    "selfhosted": {
+      "name": "自部署 · HomeLab",
+      "output_feed": "selfhosted.xml",
+      "feeds": [
+        {"name": "r/selfhosted", "url": "https://www.reddit.com/r/selfhosted/.rss", "source": "Reddit"},
+        {"name": "ServeTheHome", "url": "https://www.servethehome.com/feed/", "source": "官方"},
+        {"name": "GitHub Trending", "url": "https://github-trending.vercel.app/rss", "source": "第三方"},
+        {"name": "Product Hunt", "url": "https://www.producthunt.com/feed", "source": "官方 Atom"}
+      ]
+    },
+    "hn_special": {
+      "name": "Hacker News 精选",
+      "output_feed": "hn.xml",
+      "feeds": [
+        {"name": "HN Show", "url": "https://hnrss.org/show", "source": "HN 独立开发"},
+        {"name": "HN Ask", "url": "https://hnrss.org/ask", "source": "HN 问答"},
+        {"name": "HN Best", "url": "https://hnrss.org/best", "source": "HN 精选高质量"}
+      ]
+    },
+    "ai": {
+      "name": "AI 前沿",
+      "output_feed": "ai.xml",
+      "feeds": [
+        {"name": "每日AI前沿", "url": "https://www.gdufe888.top/api/rss.xml", "source": "自有"}
+      ]
+    },
+    "youtube": {
+      "name": "YouTube 频道",
+      "output_feed": "youtube.xml",
+      "feeds": [
+        {"name": "政经鲁社长", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcQYrNiWlG7XQyooF4-b0iA", "source": "YouTube"},
+        {"name": "搞机零距离", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC96OvMh0Mb_3NmuE8Dpu7Gg", "source": "YouTube"},
+        {"name": "Polishing The Turd", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeGXnibpvlhobJt7Ijne1Mg", "source": "YouTube"},
+        {"name": "阿雷科技", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiLtBk8dChPldOho8uTZHhQ", "source": "YouTube"},
+        {"name": "LIFEANO CLUB", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5xunxPS6oZ1zzKufgREFuA", "source": "YouTube"},
+        {"name": "马克的技术工作坊", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbIeBdHsfTpHsICZy59ZzhA", "source": "YouTube"},
+        {"name": "AQI Movie", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSMBXTU9_XDi658Rp2s8MOA", "source": "YouTube"},
+        {"name": "剧天下", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCu4c2IzeU6PzoNN3HI864Kg", "source": "YouTube"},
+        {"name": "Hany Rambod", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCILtJghd5UNT5fOF4zq8uJg", "source": "YouTube"},
+        {"name": "UFC", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvgfXK4nTYKudb0rFR6noLA", "source": "YouTube"},
+        {"name": "AD Cafe", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXKMu_bXkkF7JJ3KU0vnrcw", "source": "YouTube"},
+        {"name": "Eianun科技碎片", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgpUTP0UcL3FqZ6W7d7dmWg", "source": "YouTube"}
+      ]
+    }
+  }
+}
