@@ -1,7 +1,7 @@
 {
   "version": "2026-07-04",
   "description": "RSS聚合服务配置 — 45个原生RSS源",
-  "refresh_interval_minutes": 30,
+  "refresh_interval_minutes": 10,
   "max_items_per_feed": 50,
   "sources": {
     "deals": {
