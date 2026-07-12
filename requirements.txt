@@ -3,3 +3,4 @@ uvicorn==0.34.0
 httpx==0.28.1
 feedparser==6.0.11
 APScheduler==3.10.4
+playwright==1.52.0

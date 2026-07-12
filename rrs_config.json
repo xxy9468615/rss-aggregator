@@ -1,8 +1,11 @@
 {
   "version": "2026-07-04",
-  "description": "RSS聚合服务配置 — 45个原生RSS源",
+  "description": "RSS聚合服务配置 — 45个原生RSS源 (1G 2vCPU tuned)",
   "refresh_interval_minutes": 10,
   "max_items_per_feed": 50,
+  "max_concurrent_fetches": 15,
+  "http_timeout_seconds": 20,
+  "cache_max_days": 7,
   "sources": {
     "deals": {
       "name": "福利·羊毛·Deals",
@@ -24,13 +27,15 @@
         {"name": "Hacker News", "url": "https://news.ycombinator.com/rss", "source": "YC 官方"},
         {"name": "Phoronix", "url": "https://www.phoronix.com/rss.php", "source": "官方"},
         {"name": "LWN.net", "url": "https://lwn.net/headlines/rss", "source": "官方"},
-        {"name": "SoylentNews", "url": "https://soylentnews.org/atom.xml", "source": "官方"},
+        {"name": "SoylentNews", "url": "https://soylentnews.org/index.rss", "source": "官方"},
         {"name": "Dev.to", "url": "https://dev.to/feed", "source": "官方"},
         {"name": "Lobsters", "url": "https://lobste.rs/rss", "source": "官方"},
         {"name": "Habr", "url": "https://habr.com/ru/rss/all/", "source": "官方"},
         {"name": "Reddit", "url": "https://www.reddit.com/r/all/.rss", "source": "Reddit"},
-        {"name": "36kr", "url": "https://36kr.com/feed", "source": "官方"},
-        {"name": "少数派", "url": "https://sspai.com/feed", "source": "官方"}
+        {"name": "36kr", "url": "https://36kr.com/feed", "source": "官方", "browser": true},
+        {"name": "少数派", "url": "https://sspai.com/feed", "source": "官方", "browser": true},
+        {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "source": "官方"},
+        {"name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/", "source": "官方"}
       ]
     },
     "forums": {
@@ -41,8 +46,8 @@
         {"name": "V2EX", "url": "https://www.v2ex.com/index.xml", "source": "官方"},
         {"name": "Linux DO 全站", "url": "https://linux.do/latest.rss", "source": "Discourse"},
         {"name": "NodeSeek", "url": "https://rss.nodeseek.com/", "source": "官方"},
-        {"name": "Hostloc", "url": "https://hostloc.com/forum.php?mod=rss", "source": "Discuz!"},
-        {"name": "LowEndTalk", "url": "https://lowendtalk.com/latest.rss", "source": "Discourse"},
+        {"name": "Hostloc", "url": "https://hostloc.com/forum.php?mod=rss", "source": "Discuz!", "browser": true},
+        {"name": "LowEndTalk", "url": "https://lowendtalk.com/latest.rss", "source": "Discourse", "disabled": true},
         {"name": "Level1Techs Forum", "url": "https://forum.level1techs.com/latest.rss", "source": "Discourse"}
       ]
     },
@@ -52,7 +57,6 @@
       "feeds": [
         {"name": "r/selfhosted", "url": "https://www.reddit.com/r/selfhosted/.rss", "source": "Reddit"},
         {"name": "ServeTheHome", "url": "https://www.servethehome.com/feed/", "source": "官方"},
-        {"name": "GitHub Trending", "url": "https://github-trending.vercel.app/rss", "source": "第三方"},
         {"name": "Product Hunt", "url": "https://www.producthunt.com/feed", "source": "官方 Atom"}
       ]
     },
