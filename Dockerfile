@@ -12,10 +12,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt && \
-    playwright install --with-deps chromium
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+
+# Download Playwright Chromium binary only (deps already installed above)
+RUN playwright install --no-deps chromium
 
 # Cache persists to /app/data on Railway's filesystem (survives restarts)
 ENV DATA_DIR=/app/data
