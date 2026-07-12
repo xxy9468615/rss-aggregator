@@ -1,19 +1,19 @@
 {
-  "version": "2026-07-04",
-  "description": "RSS聚合服务配置 — 45个原生RSS源 (1G 2vCPU tuned)",
+  "version": "2026-07-12",
+  "description": "RSS聚合服务配置 — Playwright无头浏览器 + 重试 + 安全源",
   "refresh_interval_minutes": 10,
   "max_items_per_feed": 50,
   "max_concurrent_fetches": 15,
   "http_timeout_seconds": 20,
   "cache_max_days": 7,
+  "max_attempts": 2,
+  "retry_delay_base": 3,
   "sources": {
     "deals": {
       "name": "福利·羊毛·Deals",
       "output_feed": "deals.xml",
       "feeds": [
         {"name": "福利羊毛 LINUX DO", "url": "https://linux.do/c/welfare/36.rss", "source": "Discourse"},
-        {"name": "AppSumo", "url": "https://appsumo.com/rss", "source": "官方"},
-        {"name": "Freebies", "url": "https://www.reddit.com/r/freebies/.rss", "source": "Reddit"},
         {"name": "LowEndBox", "url": "https://lowendbox.com/feed/", "source": "WordPress"}
       ]
     },
@@ -31,7 +31,6 @@
         {"name": "Dev.to", "url": "https://dev.to/feed", "source": "官方"},
         {"name": "Lobsters", "url": "https://lobste.rs/rss", "source": "官方"},
         {"name": "Habr", "url": "https://habr.com/ru/rss/all/", "source": "官方"},
-        {"name": "Reddit", "url": "https://www.reddit.com/r/all/.rss", "source": "Reddit"},
         {"name": "36kr", "url": "https://36kr.com/feed", "source": "官方", "browser": true},
         {"name": "少数派", "url": "https://sspai.com/feed", "source": "官方", "browser": true},
         {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "source": "官方"},
@@ -42,7 +41,7 @@
       "name": "技术论坛",
       "output_feed": "forums.xml",
       "feeds": [
-        {"name": "NodeLoc", "url": "https://www.nodeloc.com/latest.rss", "source": "Discourse"},
+        {"name": "NodeLoc", "url": "https://www.nodeloc.com/latest.json", "source": "Discourse", "type": "json"},
         {"name": "V2EX", "url": "https://www.v2ex.com/index.xml", "source": "官方"},
         {"name": "Linux DO 全站", "url": "https://linux.do/latest.rss", "source": "Discourse"},
         {"name": "NodeSeek", "url": "https://rss.nodeseek.com/", "source": "官方"},
@@ -55,7 +54,6 @@
       "name": "自部署 · HomeLab",
       "output_feed": "selfhosted.xml",
       "feeds": [
-        {"name": "r/selfhosted", "url": "https://www.reddit.com/r/selfhosted/.rss", "source": "Reddit"},
         {"name": "ServeTheHome", "url": "https://www.servethehome.com/feed/", "source": "官方"},
         {"name": "Product Hunt", "url": "https://www.producthunt.com/feed", "source": "官方 Atom"}
       ]
