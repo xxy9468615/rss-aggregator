@@ -62,6 +62,46 @@ _http_limits = httpx.Limits(
 _http_timeout = httpx.Timeout(HTTP_TIMEOUT, connect=10, pool=5)
 
 
+# ── Privacy / anti-tracking ─────────────────────────────
+_TRACKING_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+                    "gclid", "fbclid", "ref", "_ga", "_gl", "msclkid", "igshid"}
+
+
+def strip_tracking_params(url: str) -> str:
+    """Remove common tracking query parameters from a URL."""
+    try:
+        from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+        parsed = urlparse(url)
+        qs = parse_qs(parsed.query, keep_blank_values=False)
+        qs = {k: v for k, v in qs.items() if k not in _TRACKING_PARAMS}
+        return urlunparse(parsed._replace(query=urlencode(qs, doseq=True)))
+    except Exception:
+        return url
+
+
+_TRACKER_DOMAINS = {
+    "google-analytics.com", "googletagmanager.com", "googlesyndication.com",
+    "doubleclick.net", "facebook.net", "connect.facebook.net",
+    "twitter.com", "platform.twitter.com", "x.com",
+    "tiktok.com", "ads-twitter.com", "snapchat.com",
+    "hotjar.com", "clarity.ms", "mixpanel.com",
+    "segment.com", "amplitude.com", "newrelic.com",
+    "scorecardresearch.com", "quantserve.com",
+}
+
+
+def _privacy_headers(url: str) -> dict:
+    """Add privacy-friendly headers."""
+    host = urlparse(url).hostname or ""
+    return {
+        "DNT": "1",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "none",
+        "Sec-GPC": "1",
+    }
+
+
 # ── Playwright browser (headless Chromium) ───────────────
 _browser = None
 _playwright_ctx = None
@@ -99,6 +139,10 @@ async def fetch_with_browser(url: str) -> str | None:
     try:
         page = await _browser.new_page(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+            extra_http_headers={
+                "DNT": "1",
+                "Sec-GPC": "1",
+            },
         )
         await page.goto(url, wait_until="domcontentloaded", timeout=HTTP_TIMEOUT * 1000)
         await asyncio.sleep(2)
@@ -194,7 +238,7 @@ def _parse_discourse_json(text: str, source_name: str, source_tag: str) -> list[
             tid = t.get("id", 0)
             title = t.get("title", "")
             slug = t.get("slug", "")
-            link = f"https://www.nodeloc.com/t/{slug}/{tid}" if tid else ""
+            link = strip_tracking_params(f"https://www.nodeloc.com/t/{slug}/{tid}") if tid else ""
             excerpt = t.get("excerpt", "") or ""
             excerpt = re.sub(r"<[^>]+>", "", excerpt).strip()
             pub_str = t.get("created_at", "").replace("Z", "+00:00")
@@ -239,7 +283,7 @@ async def fetch_one(client: httpx.AsyncClient, feed_cfg: dict) -> list[dict]:
         elif "reddit.com" in url:
             extra_headers["User-Agent"] = _BROWSER_UAS[0]
 
-        hdrs = {**_default_headers(url), **extra_headers}
+        hdrs = {**_default_headers(url), **_privacy_headers(url), **extra_headers}
         html = None
         try:
             resp = await client.get(url, follow_redirects=True, headers=hdrs)
@@ -303,7 +347,7 @@ def _build_items(parsed, source_name: str, source_tag: str) -> list[dict]:
     """Normalize feedparser results into item dicts."""
     items = []
     for entry in parsed.entries[:MAX_ITEMS]:
-        link = entry.get("link", "")
+        link = strip_tracking_params(entry.get("link", ""))
         title = entry.get("title", "")
         summary = entry.get("summary", entry.get("description", ""))
         pub = entry.get("published_parsed") or entry.get("updated_parsed")
