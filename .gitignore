@@ -11,9 +11,6 @@ data/
 *.cache
 cache.json
 
-# Project instructions (local only, never commit)
-CLAUDE.md
-
 # Secrets / env
 .env
 .env.*

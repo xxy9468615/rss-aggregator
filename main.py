@@ -6,16 +6,18 @@ import os
 import random
 import re
 import time
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from typing import Any, AsyncGenerator
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from xml.etree.ElementTree import Element, SubElement, tostring
 
 import feedparser
 import httpx
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse, Response
+from fastapi.responses import HTMLResponse, JSONResponse, Response
 from playwright.async_api import async_playwright
 
 # ── Config ──────────────────────────────────────────────
@@ -51,8 +53,27 @@ def _handle_exception(loop, context):
 
 asyncio.get_event_loop().set_exception_handler(_handle_exception)
 
+# ── Lifespan Handler ────────────────────────────────────
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
+    await init_browser()
+    load_cache()
+    if feeds_cache:
+        log.info("Serving cached data while refresh runs in background")
+        asyncio.create_task(start_refresh_loop())
+    else:
+        log.info("No cached data, performing initial refresh...")
+        await refresh_all()
+        scheduler.add_job(refresh_all, "interval", minutes=REFRESH_MINUTES, id="refresh")
+        scheduler.start()
+        log.info("Scheduler started, refresh every %d min", REFRESH_MINUTES)
+    yield
+    scheduler.shutdown()
+    await close_browser()
+
+
 # ── App ─────────────────────────────────────────────────
-app = FastAPI(title="RSS Aggregator", version="1.4")
+app = FastAPI(title="RSS Aggregator", version="1.5", lifespan=lifespan)
 scheduler = AsyncIOScheduler()
 
 _http_limits = httpx.Limits(
@@ -70,7 +91,6 @@ _TRACKING_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm
 def strip_tracking_params(url: str) -> str:
     """Remove common tracking query parameters from a URL."""
     try:
-        from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
         parsed = urlparse(url)
         qs = parse_qs(parsed.query, keep_blank_values=False)
         qs = {k: v for k, v in qs.items() if k not in _TRACKING_PARAMS}
@@ -223,7 +243,7 @@ def _is_retryable(status_code: int) -> bool:
     return status_code in (429, 403, 503, 502, 500)
 
 
-def _parse_discourse_json(text: str, source_name: str, source_tag: str) -> list[dict]:
+def _parse_discourse_json(text: str, source_name: str, source_tag: str, source_url: str = "") -> list[dict]:
     """Parse Discourse /latest.json topic list into RSS items."""
     items: list[dict] = []
     try:
@@ -252,6 +272,7 @@ def _parse_discourse_json(text: str, source_name: str, source_tag: str) -> list[
                 "guid": f"nodeloc-{tid}",
                 "source": source_name,
                 "source_tag": source_tag,
+                "source_url": source_url,
             })
     except Exception as e:
         log.warning("Failed to parse Discourse JSON topics: %s", e)
@@ -274,7 +295,7 @@ async def fetch_one(client: httpx.AsyncClient, feed_cfg: dict) -> list[dict]:
         if not html:
             return []
         parsed = feedparser.parse(html)
-        return _build_items(parsed, source_name, source_tag)
+        return _build_items(parsed, source_name, source_tag, url)
 
     for attempt in range(MAX_ATTEMPTS):
         extra_headers = {}
@@ -335,15 +356,15 @@ async def fetch_one(client: httpx.AsyncClient, feed_cfg: dict) -> list[dict]:
 
         if html:
             if feed_type == "json" or urlparse(url).path.endswith(".json"):
-                return _parse_discourse_json(html, source_name, source_tag)
+                return _parse_discourse_json(html, source_name, source_tag, url)
 
             parsed = feedparser.parse(html)
-            return _build_items(parsed, source_name, source_tag)
+            return _build_items(parsed, source_name, source_tag, url)
 
     return []
 
 
-def _build_items(parsed, source_name: str, source_tag: str) -> list[dict]:
+def _build_items(parsed, source_name: str, source_tag: str, source_url: str = "") -> list[dict]:
     """Normalize feedparser results into item dicts."""
     items = []
     for entry in parsed.entries[:MAX_ITEMS]:
@@ -365,6 +386,7 @@ def _build_items(parsed, source_name: str, source_tag: str) -> list[dict]:
             "guid": guid,
             "source": source_name,
             "source_tag": source_tag,
+            "source_url": source_url,
         })
     return items
 
@@ -449,12 +471,20 @@ def build_rss_xml(cat_key: str) -> str:
     SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     for item in items:
         i = SubElement(channel, "item")
-        SubElement(i, "title").text = item["title"]
-        SubElement(i, "link").text = item["link"]
-        SubElement(i, "description").text = item["description"]
-        SubElement(i, "pubDate").text = item["pubDate"]
-        SubElement(i, "guid").text = item["guid"]
-        SubElement(i, "source").text = item["source"]
+        site_name = item.get("source", "")
+        raw_title = item.get("title", "")
+        if site_name and not raw_title.startswith(f"[{site_name}]"):
+            display_title = f"[{site_name}] {raw_title}"
+        else:
+            display_title = raw_title
+        SubElement(i, "title").text = display_title
+        SubElement(i, "link").text = item.get("link", "")
+        SubElement(i, "description").text = item.get("description", "")
+        SubElement(i, "pubDate").text = item.get("pubDate", "")
+        SubElement(i, "guid").text = item.get("guid", "")
+        source_url = item.get("source_url") or item.get("link", "")
+        source_el = SubElement(i, "source", url=source_url)
+        source_el.text = site_name
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(rss, encoding="unicode")
 
 
@@ -496,39 +526,34 @@ async def health():
     stale_limit = max(REFRESH_MINUTES * 60 * 3, 600)
     healthy = not last_refresh or elapsed < stale_limit
     status_code = 200 if healthy else 503
-    return Response(
-        content=json.dumps({
+    return JSONResponse(
+        content={
             "status": "ok" if healthy else "stale",
             "uptime_seconds": int(uptime),
             "last_refresh_seconds_ago": int(elapsed) if last_refresh else None,
             "refreshing": refreshing,
             "stats": stats,
             "cache_on_disk": CACHE_PATH.exists(),
-        }, ensure_ascii=False),
+        },
         status_code=status_code,
-        media_type="application/json",
     )
 
 
 @app.get("/livez")
 async def livez():
-    return Response(
-        content=json.dumps({"status": "alive"}, ensure_ascii=False),
-        media_type="application/json",
-    )
+    return JSONResponse(content={"status": "alive"})
 
 
 @app.get("/readyz")
 async def readyz():
     ready = last_refresh > 0 or CACHE_PATH.exists()
     status_code = 200 if ready else 503
-    return Response(
-        content=json.dumps({
+    return JSONResponse(
+        content={
             "status": "ready" if ready else "not_ready",
             "last_refresh_seconds_ago": int(time.time() - last_refresh) if last_refresh else None,
-        }, ensure_ascii=False),
+        },
         status_code=status_code,
-        media_type="application/json",
     )
 
 
@@ -538,33 +563,12 @@ async def manual_refresh():
     return {"status": "ok", "stats": stats}
 
 
-# ── Startup / Shutdown ──────────────────────────────────
-@app.on_event("startup")
-async def startup():
-    await init_browser()
-    load_cache()
-    if feeds_cache:
-        log.info("Serving cached data while refresh runs in background")
-        asyncio.create_task(start_refresh_loop())
-    else:
-        log.info("No cached data, performing initial refresh...")
-        await refresh_all()
-        scheduler.add_job(refresh_all, "interval", minutes=REFRESH_MINUTES, id="refresh")
-        scheduler.start()
-        log.info("Scheduler started, refresh every %d min", REFRESH_MINUTES)
-
-
+# ── Refresh Background Loop ──────────────────────────────
 async def start_refresh_loop():
     await refresh_all()
     scheduler.add_job(refresh_all, "interval", minutes=REFRESH_MINUTES, id="refresh")
     scheduler.start()
     log.info("Scheduler started, refresh every %d min", REFRESH_MINUTES)
-
-
-@app.on_event("shutdown")
-async def shutdown():
-    scheduler.shutdown()
-    await close_browser()
 
 
 # ── Entry ───────────────────────────────────────────────
