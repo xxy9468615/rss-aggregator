@@ -27,6 +27,8 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Refresh feeds
+        env:
+          NODELOC_COOKIE: ${{ secrets.NODELOC_COOKIE }}
         run: python3 main.py --cron
 
       - name: Commit and push
