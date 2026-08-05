@@ -5,6 +5,7 @@ import logging
 import os
 import random
 import re
+import sys
 import time
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
@@ -642,10 +643,34 @@ async def start_refresh_loop():
 
 
 # ── Entry ───────────────────────────────────────────────
+def _run_cron():
+    """One-shot refresh that writes static XML files to feeds/ for CI deploy.
+
+    Usage: python3 main.py --cron [OUTPUT_DIR]
+    Reads cache.json first so failed fetches don't empty the feeds.
+    """
+    import sys
+    out_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else APP_DIR / "feeds"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    load_cache()
+    asyncio.run(refresh_all())
+    written = 0
+    for cat_key, cat_cfg in cfg["sources"].items():
+        xml = build_rss_xml(cat_key)
+        (out_dir / cat_cfg["output_feed"]).write_text(xml, encoding="utf-8")
+        written += 1
+    opml = build_opml_xml()
+    (out_dir / "subscriptions.opml").write_text(opml, encoding="utf-8")
+    log.info("Cron refresh complete: %d feed files + subscriptions.opml written to %s", written, out_dir)
+
+
 if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", "8000"))
-    uvicorn.run(
+    if len(sys.argv) > 1 and sys.argv[1] == "--cron":
+        _run_cron()
+    else:
+        import uvicorn
+        port = int(os.environ.get("PORT", "8000"))
+        uvicorn.run(
         app,
         host="0.0.0.0",
         port=port,
