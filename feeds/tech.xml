@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>科技资讯</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 科技资讯</description><lastBuildDate>Wed, 05 Aug 2026 23:39:24 GMT</lastBuildDate><item><title>[Dev.to] AI Memory Is Not a Trust Model for Team Knowledge</title><link>https://dev.to/xtsoftwarelabs/ai-memory-is-not-a-trust-model-for-team-knowledge-4j5j</link><description>&lt;p&gt;AI memory solves a real problem: every new session starts cold.&lt;/p&gt;
+
+&lt;p&gt;An assistant can save facts about a project, retrieve them later, and avoid asking the same questions again. That works well for personal preferences and low-risk context.&lt;/p&gt;
+
+&lt;p&gt;Team knowledge is different.&lt;/p&gt;
+
+&lt;p&gt;When remembered information starts influencing incident response, architecture decisions, or production changes, persistence is not enough. The team needs to know:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What was saved?&lt;/li&gt;
+&lt;li&gt;Who checked it?&lt;/li&gt;
+&lt;li&gt;Is it still current?&lt;/li&gt;
+&lt;li&gt;How can someone correct it?&lt;/li&gt;
+&lt;li&gt;Who approved the correction?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A memory database does not automatically answer those questions.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Memory can preserve a guess
+&lt;/h2&gt;
+
+&lt;p&gt;Suppose an engineer is investigating an incident and tells Claude:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is probably the connection pool again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At that point, it is only a working theory.&lt;/p&gt;
+
+&lt;p&gt;An automatic memory system may still extract and store it. Three weeks later, another engineer investigates a slow endpoint in a different service. The assistant retrieves the connection pool note and presents it as relevant context.&lt;/p&gt;
+
+&lt;p&gt;The problem is not simply that the assistant might be wrong. Runbooks, wikis, documentation, and people are wrong sometimes too.&lt;/p&gt;
+
+&lt;p&gt;The difference is the admission process.&lt;/p&gt;
+
+&lt;p&gt;In many AI memory systems, the model decides what is worth remembering, writes it into a separate store, and retrieves it in later conversations. There may be no point where another engineer reviews the extracted statement before it starts influencing future answers.&lt;/p&gt;
+
+&lt;p&gt;A better extraction model can reduce mistakes. It does not create a review step.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Team knowledge should use the same trust boundary as code
+&lt;/h2&gt;
+
+&lt;p&gt;Engineering teams do not trust code because it was written and stored somewhere.&lt;/p&gt;
+
+&lt;p&gt;They trust it because they can:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Open the file.&lt;/li&gt;
+&lt;li&gt;Read the change.&lt;/li&gt;
+&lt;li&gt;Review the diff.&lt;/li&gt;
+&lt;li&gt;Leave comments.&lt;/li&gt;
+&lt;li&gt;Approve it before it reaches &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Trace its history later.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Shared domain knowledge should meet the same standard.&lt;/p&gt;
+
+&lt;p&gt;That means storing it in a form engineers already know how to inspect and review: files in a repository.&lt;/p&gt;
+
+&lt;p&gt;I am building &lt;a href="https://github.com/XTSoftwareLabs/neatcontext-plugins" rel="noopener noreferrer"&gt;NeatContext&lt;/a&gt; around this model. The examples below use NeatContext, but the important part is not the command syntax. It is the review boundary.&lt;/p&gt;
+
+&lt;p&gt;NeatContext writes extracted context as plain Markdown:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;profile.md
+knowledge/
+  pool-exhaustion.md
+  checkout-service.md
+  monitoring.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Those files can go through an ordinary Git workflow:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt; AI conversation
+        │
+        │  /neatcontext:save &amp;lt;name&amp;gt;
+        ▼
+ Local context
+ profile.md + knowledge/*.md
+        │
+        │  /neatcontext:export &amp;lt;name&amp;gt; --to contexts/
+        ▼
+ contexts/&amp;lt;name&amp;gt;/ in the repository
+        │
+        │  commit, push, open PR
+        ▼
+ Pull request ── review ──▶ merge
+        │
+        ▼
+ Team repository
+        │
+        │  pull, import, use
+        ▼
+ Another engineer's AI session
+        │
+        │  new findings
+        ▼
+ Another reviewed diff
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Nothing becomes shared context merely because an AI decided to remember it.&lt;/p&gt;
+
+&lt;p&gt;It becomes shared context after a person reviews it.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What this looks like in practice
+&lt;/h2&gt;
+
+&lt;p&gt;Imagine an engineer has finished investigating checkout timeouts. The actual cause was connection pool exhaustion.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  1. Save the result of the investigation
+&lt;/h3&gt;
+
+&lt;p&gt;After ruling out the wrong theories and finding the cause:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;You: /neatcontext:save checkout-pool-exhaustion
+
+Claude:
+Context folder:
+~/.neatcontext/contexts/checkout-pool-exhaustion-a1b2c3
+
+Profile path:
+~/.neatcontext/contexts/checkout-pool-exhaustion-a1b2c3/profile.md
+
+Knowledge folder:
+~/.neatcontext/contexts/checkout-pool-exhaustion-a1b2c3/knowledge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;At this point, the context is local. It has not become team knowledge.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  2. Export it into the repository
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;You: /neatcontext:export checkout-pool-exhaustion --to contexts
+
+Claude:
+Exported "checkout-pool-exhaustion" to:
+contexts/checkout-pool-exhaustion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The repository might now contain:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;contexts/
+  checkout-pool-exhaustion/
+    profile.md
+    knowledge/
+      pool-exhaustion.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The Markdown files are the proposed knowledge change.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  3. Open a pull request
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; add-checkout-pool-exhaustion-context
+git add contexts/checkout-pool-exhaustion
+git commit &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"Add checkout pool exhaustion context"&lt;/span&gt;
+git push &lt;span class="nt"&gt;-u&lt;/span&gt; origin add-checkout-pool-exhaustion-context
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A reviewer can now read &lt;code&gt;knowledge/pool-exhaustion.md&lt;/code&gt; like any other operational document.&lt;/p&gt;
+
+&lt;p&gt;They might notice a stale value:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;default_pool_size&lt;/code&gt; was increased last week. Update this before merging.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The author fixes it and pushes another commit.&lt;/p&gt;
+
+&lt;p&gt;Only after review and approval does the context reach &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The important part is not that Markdown is inherently more accurate than a database. It is that the team can inspect the knowledge before treating it as trusted input.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  4. Another engineer uses the reviewed context
+&lt;/h3&gt;
+
+&lt;p&gt;A teammate working on a later checkout issue pulls the repository and imports the context:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;$ git pull
+
+You: /neatcontext:import --from contexts/checkout-pool-exhaustion
+
+Claude:
+Imported "checkout-pool-exhaustion".
+
+You: /neatcontext:use checkout-pool-exhaustion
+
+Claude:
+Connected to checkout-pool-exhaustion.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;They can now ask:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;You:
+Checkout is timing out with the same symptoms as last time.
+What should I check first?
+
+Claude:
+Check pgbouncer's default_pool_size on billing-postgres first.
+
+A previous incident with these symptoms was caused by pool
+exhaustion, and the reviewed context contains the current pool
+configuration.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The answer is not more reliable because the model suddenly became better.&lt;/p&gt;
+
+&lt;p&gt;It is more reliable because the information supplied to the model has already passed through human review.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  5. New findings become another diff
+&lt;/h3&gt;
+
+&lt;p&gt;Suppose the second engineer adds a monitoring alert after resolving the incident.&lt;/p&gt;
+
+&lt;p&gt;They update the context:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;You: /neatcontext:save checkout-pool-exhaustion
+
+Claude:
+This will update "checkout-pool-exhaustion":
+
+- knowledge/pool-exhaustion.md
+  Adds the monitoring alert created after this incident.
+
+Confirm? (y/n)
+
+You: y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then export it again:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;You:
+/neatcontext:export checkout-pool-exhaustion --to contexts --force
+
+Claude:
+Exported "checkout-pool-exhaustion" to:
+contexts/checkout-pool-exhaustion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The update goes through another pull request:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; update-checkout-pool-exhaustion-context
+git add contexts/checkout-pool-exhaustion
+git commit &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"Document pool exhaustion monitoring alert"&lt;/span&gt;
+git push &lt;span class="nt"&gt;-u&lt;/span&gt; origin update-checkout-pool-exhaustion-context
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The context remains a sequence of reviewable changes rather than an accumulating collection of model-written memories.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Git adds
+&lt;/h2&gt;
+
+&lt;p&gt;The useful property is not merely that the files are local.&lt;/p&gt;
+
+&lt;p&gt;Git provides several things a team knowledge system needs:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Question&lt;/th&gt;
+&lt;th&gt;Automatic memory store&lt;/th&gt;
+&lt;th&gt;Git-reviewed context&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;What enters the shared knowledge?&lt;/td&gt;
+&lt;td&gt;Whatever the extraction process saves&lt;/td&gt;
+&lt;td&gt;Changes approved through a pull request&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Can engineers inspect it directly?&lt;/td&gt;
+&lt;td&gt;Depends on the product&lt;/td&gt;
+&lt;td&gt;Yes, as ordinary files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;How is incorrect information fixed?&lt;/td&gt;
+&lt;td&gt;Product-specific editing or deletion&lt;/td&gt;
+&lt;td&gt;Edit the file and review the diff&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Who changed it?&lt;/td&gt;
+&lt;td&gt;Sometimes unclear&lt;/td&gt;
+&lt;td&gt;Commit history and &lt;code&gt;git blame&lt;/code&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;How does it reach the team?&lt;/td&gt;
+&lt;td&gt;Often tied to an account or service&lt;/td&gt;
+&lt;td&gt;Through the repository the team already uses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Can a change be reverted?&lt;/td&gt;
+&lt;td&gt;Depends on the product&lt;/td&gt;
+&lt;td&gt;Yes, using normal Git history&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;A database can technically support auditing, review, editing, and version history. The problem is not the database itself.&lt;/p&gt;
+
+&lt;p&gt;The problem is treating automatically extracted information as trusted team knowledge without requiring those controls.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Not every memory needs a pull request
+&lt;/h2&gt;
+
+&lt;p&gt;This does not mean every remembered detail should go through code review.&lt;/p&gt;
+
+&lt;p&gt;Personal preferences such as formatting style, frequently used commands, or how someone likes responses structured are low-risk. Automatic memory is useful there.&lt;/p&gt;
+
+&lt;p&gt;The line should be drawn when remembered information becomes shared operational knowledge: system behavior, incident findings, architectural constraints, deployment rules, service ownership, or assumptions that may affect production decisions.&lt;/p&gt;
+
+&lt;p&gt;That knowledge should not become authoritative only because an assistant decided to save it.&lt;/p&gt;
+
+&lt;p&gt;It should become authoritative through the same process the team already uses for other important technical changes: a visible diff, a named reviewer, and an explicit approval.&lt;/p&gt;
+
+&lt;p&gt;NeatContext implements this workflow using plain Markdown and Git. The plugins are open source:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/XTSoftwareLabs/neatcontext-plugins" rel="noopener noreferrer"&gt;github.com/XTSoftwareLabs/neatcontext-plugins&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;How does your team review the knowledge that AI tools reuse across sessions?&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:33:31 GMT</pubDate><guid>3c8cddab1eeb5ef19958c59dfe1c8095</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] What I Learned Trying to Make AI-Agent Decisions Testable</title><link>https://dev.to/kikashy/what-i-learned-trying-to-make-ai-agent-decisions-testable-5h6h</link><description>&lt;h1&gt;
+  
+  
+  What I Learned Trying to Make AI-Agent Decisions Testable
+&lt;/h1&gt;
+
+&lt;p&gt;AI agents can retrieve the right policy, call the right tools, and still reach the wrong conclusion.&lt;/p&gt;
+
+&lt;p&gt;That gap became increasingly hard for me to ignore.&lt;/p&gt;
+
+&lt;p&gt;Most agent systems are getting better at access and execution. They can search documents, query databases, call APIs, use MCP servers, and complete multi-step workflows.&lt;/p&gt;
+
+&lt;p&gt;But many important business decisions depend on something different:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Which evidence is actually required?&lt;/li&gt;
+&lt;li&gt;Which rule applies in this situation?&lt;/li&gt;
+&lt;li&gt;Which exception changes the outcome?&lt;/li&gt;
+&lt;li&gt;What should happen when evidence is missing or conflicting?&lt;/li&gt;
+&lt;li&gt;When must the agent stop and escalate?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those questions are often buried inside prompts, application code, policy documents, or the judgment of a few experienced people.&lt;/p&gt;
+
+&lt;p&gt;That makes them difficult to test, review, reuse, and improve.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Problem Is Not Always Missing Knowledge
+&lt;/h2&gt;
+
+&lt;p&gt;Imagine an agent reviewing a new vendor.&lt;/p&gt;
+
+&lt;p&gt;It retrieves:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the vendor-onboarding policy&lt;/li&gt;
+&lt;li&gt;the sanctions-screening result&lt;/li&gt;
+&lt;li&gt;the tax form&lt;/li&gt;
+&lt;li&gt;the proposed annual spend&lt;/li&gt;
+&lt;li&gt;the business justification&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The agent has access to all the relevant information.&lt;/p&gt;
+
+&lt;p&gt;But it still has to determine:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;whether the request is in scope&lt;/li&gt;
+&lt;li&gt;whether all mandatory evidence is present&lt;/li&gt;
+&lt;li&gt;whether a sanctions match creates a hard stop&lt;/li&gt;
+&lt;li&gt;whether high annual spend requires committee review&lt;/li&gt;
+&lt;li&gt;whether incomplete evidence means rejection or escalation&lt;/li&gt;
+&lt;li&gt;whether it has enough information to decide at all&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Retrieval helps the agent find the policy.&lt;/p&gt;
+
+&lt;p&gt;It does not guarantee that the agent will apply the policy correctly.&lt;/p&gt;
+
+&lt;p&gt;A model may produce a plausible explanation while overlooking an exception, treating missing evidence as negative evidence, or claiming that approval occurred when no authorized person was consulted.&lt;/p&gt;
+
+&lt;p&gt;The answer can sound reasonable and still be indefensible.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why Coding Agents Often Feel More Reliable
+&lt;/h2&gt;
+
+&lt;p&gt;Coding agents currently provide one of the clearest examples of useful multi-step agent behavior.&lt;/p&gt;
+
+&lt;p&gt;I do not think that is only because models are unusually good at code.&lt;/p&gt;
+
+&lt;p&gt;Coding agents work inside an environment that already knows how to challenge their output:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;compilers&lt;/li&gt;
+&lt;li&gt;unit tests&lt;/li&gt;
+&lt;li&gt;type systems&lt;/li&gt;
+&lt;li&gt;linters&lt;/li&gt;
+&lt;li&gt;runtime feedback&lt;/li&gt;
+&lt;li&gt;version control&lt;/li&gt;
+&lt;li&gt;code review&lt;/li&gt;
+&lt;li&gt;CI/CD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The model proposes work.&lt;/p&gt;
+
+&lt;p&gt;The surrounding environment evaluates it.&lt;/p&gt;
+
+&lt;p&gt;Most business agents do not have an equivalent judgment harness.&lt;/p&gt;
+
+&lt;p&gt;They may have access to tools and knowledge, but the conditions behind a defensible decision remain implicit.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What I Tried First
+&lt;/h2&gt;
+
+&lt;p&gt;The obvious place to start was prompts.&lt;/p&gt;
+
+&lt;p&gt;A prompt can say:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;always check sanctions&lt;/li&gt;
+&lt;li&gt;require a tax form&lt;/li&gt;
+&lt;li&gt;escalate high-value vendors&lt;/li&gt;
+&lt;li&gt;never approve when evidence is incomplete&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This can work for a narrow workflow.&lt;/p&gt;
+
+&lt;p&gt;But as the decision grows, the prompt becomes difficult to review and test. Rules, exceptions, evidence requirements, explanations, and workflow instructions become mixed together.&lt;/p&gt;
+
+&lt;p&gt;A model can also interpret the same prose differently across runs or implementations.&lt;/p&gt;
+
+&lt;p&gt;The next option is application code.&lt;/p&gt;
+
+&lt;p&gt;Hard-coded logic is more deterministic, but it creates another problem. The judgment becomes coupled to one application, one programming language, and one deployment.&lt;/p&gt;
+
+&lt;p&gt;A domain expert cannot easily review it. Another agent cannot reuse it without reproducing the logic. Changes become software releases rather than reviewed updates to an organizational decision contract.&lt;/p&gt;
+
+&lt;p&gt;Skills and tool definitions help package behavior.&lt;/p&gt;
+
+&lt;p&gt;MCP helps standardize access to context and capabilities.&lt;/p&gt;
+
+&lt;p&gt;Policy engines can evaluate explicit rules.&lt;/p&gt;
+
+&lt;p&gt;All of these are useful. None of them, by themselves, fully represent the evidence, applicability, exceptions, uncertainty, and escalation conditions behind a business decision.&lt;/p&gt;
+
+&lt;p&gt;That led me to experiment with separating the judgment from both the model and the workflow.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Idea: A Testable Judgment Contract
+&lt;/h2&gt;
+
+&lt;p&gt;I started working on what is now the &lt;strong&gt;Judgment Pack Specification&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A Judgment Pack is a declarative representation of the conditions behind a decision.&lt;/p&gt;
+
+&lt;p&gt;At a high level, a pack can describe:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;what question is being decided&lt;/li&gt;
+&lt;li&gt;when the pack applies&lt;/li&gt;
+&lt;li&gt;which evidence is required&lt;/li&gt;
+&lt;li&gt;which facts are relevant&lt;/li&gt;
+&lt;li&gt;which rules and exceptions affect the outcome&lt;/li&gt;
+&lt;li&gt;which conditions make the decision unresolved&lt;/li&gt;
+&lt;li&gt;when escalation is required&lt;/li&gt;
+&lt;li&gt;which outputs are valid&lt;/li&gt;
+&lt;li&gt;how expected behavior can be tested&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A simplified vendor-onboarding pack might express:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Decision:
+May this vendor be onboarded?
+
+Required evidence:
+- sanctions-screening result
+- tax-form status
+
+Exceptions:
+- sanctions match → hard stop
+- annual spend above threshold → committee review
+
+Unresolved conditions:
+- required evidence missing
+- screening could not be completed
+- approval authority is unknown
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The important part is not the file format.&lt;/p&gt;
+
+&lt;p&gt;The important part is that the decision conditions become a reviewable and testable artifact rather than hidden instructions inside a prompt.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Testability Changes
+&lt;/h2&gt;
+
+&lt;p&gt;Once the judgment is explicit, we can write scenarios such as:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Scenario 1:
+Sanctions clear
+Tax form received
+Spend below threshold
+Expected result: eligible for approval
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Scenario 2:
+Sanctions match
+Tax form received
+Expected result: hard stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Scenario 3:
+Sanctions screening missing
+Tax form received
+Expected result: unresolved
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Scenario 4:
+Sanctions clear
+Tax form received
+Spend above threshold
+Expected result: committee review
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now a change to the pack can be evaluated against known expectations.&lt;/p&gt;
+
+&lt;p&gt;If someone modifies the annual-spend exception and an existing scenario starts producing direct approval instead of committee review, the test should fail.&lt;/p&gt;
+
+&lt;p&gt;That is closer to what coding agents already have: an environment that can challenge the result.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Correctly Refusing to Decide Is Part of Correctness
+&lt;/h2&gt;
+
+&lt;p&gt;One lesson has become especially important.&lt;/p&gt;
+
+&lt;p&gt;A business agent should not always produce an answer.&lt;/p&gt;
+
+&lt;p&gt;Sometimes the correct outcome is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;evidence required&lt;/li&gt;
+&lt;li&gt;unresolved&lt;/li&gt;
+&lt;li&gt;not applicable&lt;/li&gt;
+&lt;li&gt;escalate&lt;/li&gt;
+&lt;li&gt;human approval required&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Many current evaluation approaches reward producing the expected answer. But in enterprise decisions, a system can also fail by deciding when it should have stopped.&lt;/p&gt;
+
+&lt;p&gt;That means abstention and escalation cannot be treated as fallback error states.&lt;/p&gt;
+
+&lt;p&gt;They are first-class outcomes.&lt;/p&gt;
+
+&lt;p&gt;A useful judgment system must be able to distinguish:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“The answer is no”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;from:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“The system does not yet have authority or evidence to answer.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Those are operationally very different.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Judgment Pack Does Not Solve
+&lt;/h2&gt;
+
+&lt;p&gt;I do not see this as a replacement for agent frameworks, MCP, policy engines, or knowledge graphs.&lt;/p&gt;
+
+&lt;p&gt;They solve different parts of the system.&lt;/p&gt;
+
+&lt;p&gt;MCP can connect an agent to a sanctions service.&lt;/p&gt;
+
+&lt;p&gt;A gateway can control whether the agent is allowed to call it.&lt;/p&gt;
+
+&lt;p&gt;A policy engine can evaluate a deterministic rule.&lt;/p&gt;
+
+&lt;p&gt;A knowledge graph can represent relationships and organizational context.&lt;/p&gt;
+
+&lt;p&gt;A Judgment Pack is intended to describe how those inputs contribute to a defensible decision.&lt;/p&gt;
+
+&lt;p&gt;It also does not prove that source data is true.&lt;/p&gt;
+
+&lt;p&gt;If a system receives a false sanctions result, a correct evaluator can still produce the wrong real-world outcome. Provenance, source trust, authorization, and evidence acquisition remain separate concerns.&lt;/p&gt;
+
+&lt;p&gt;The current project is an attempt to make those boundaries explicit rather than claiming one specification solves all of agent governance.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Questions That Are Still Open
+&lt;/h2&gt;
+
+&lt;p&gt;Opening the project as open source is important because several of the hardest questions should not be answered by one person.&lt;/p&gt;
+
+&lt;p&gt;Some of the questions I am currently exploring are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How should an agent select the correct pack?&lt;/li&gt;
+&lt;li&gt;How should multiple packs compose?&lt;/li&gt;
+&lt;li&gt;Where should Judgment Pack end and policy engines begin?&lt;/li&gt;
+&lt;li&gt;How should conflicting evidence be represented?&lt;/li&gt;
+&lt;li&gt;Which evaluator semantics must be portable across runtimes?&lt;/li&gt;
+&lt;li&gt;How should evidence freshness be expressed?&lt;/li&gt;
+&lt;li&gt;How should organizations version and approve judgment changes?&lt;/li&gt;
+&lt;li&gt;How should authorization be separated from decision evaluation?&lt;/li&gt;
+&lt;li&gt;What makes an explanation defensible rather than merely plausible?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are specification questions, runtime questions, and organizational questions at the same time.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why I Opened It
+&lt;/h2&gt;
+
+&lt;p&gt;I spent many years building enterprise data platforms, operational systems, and AI infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Across those environments, organizations often had plenty of data and documentation. What they struggled to preserve was the judgment behind important decisions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;which evidence mattered&lt;/li&gt;
+&lt;li&gt;why an exception was allowed&lt;/li&gt;
+&lt;li&gt;when a rule stopped applying&lt;/li&gt;
+&lt;li&gt;who had authority&lt;/li&gt;
+&lt;li&gt;what uncertainty required escalation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Frontier models can reason over more context and use more tools.&lt;/p&gt;
+
+&lt;p&gt;But every organization still has its own conditions for what counts as an acceptable decision.&lt;/p&gt;
+
+&lt;p&gt;That judgment should not remain trapped inside prompts, undocumented code, or individual experience.&lt;/p&gt;
+
+&lt;p&gt;It should be possible to review, test, version, and improve it.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Project Is Now Open Source
+&lt;/h2&gt;
+
+&lt;p&gt;The Judgment Pack Specification and runtime are now open source.&lt;/p&gt;
+
+&lt;p&gt;I am looking for contributors in several areas:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Specification review&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Challenge how the project represents evidence, exceptions, uncertainty, escalation, and outcomes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Real-world decision packs&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Contribute a difficult decision from procurement, data governance, security, support, finance, operations, or another domain.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Adversarial scenarios&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Add cases where a reasonable-looking agent should refuse, escalate, or produce a different outcome.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Runtime and tooling&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Improve the Go runtime, evaluator, CLI, documentation, and agent integrations.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The most useful first contribution may not be code.&lt;/p&gt;
+
+&lt;p&gt;A real decision that exposes where the current model breaks can be more valuable than another feature.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Website: &lt;a href="https://judgmentpack.org" rel="noopener noreferrer"&gt;judgmentpack.org&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Specification: &lt;a href="https://github.com/Judgment-Pack/judgment-pack-spec" rel="noopener noreferrer"&gt;Judgment-Pack/judgment-pack-spec&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Good first issues: &lt;a href="https://github.com/Judgment-Pack/judgment-pack-spec/labels/good%20first%20issue" rel="noopener noreferrer"&gt;Browse beginner-friendly issues&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I would especially value critical feedback from people working on agent evaluation, MCP, policy engines, rules-as-code, human approval, and enterprise AI systems.&lt;/p&gt;
+
+&lt;p&gt;The project will improve faster through strong disagreement and real use cases than through agreement alone.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;strong&gt;Disclosure:&lt;/strong&gt; AI tools assisted with editing and structure. The project design, technical content, examples, and final review are my own.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:30:29 GMT</pubDate><guid>43188fb2eec7d7c6aab37c026764c184</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] My X (Twitter) Weekly Report Bot Showed '0 Followers' for Two Months—The Culprit Was a Non-Existent Account Name in My .env File</title><link>https://dev.to/masaoshimadaopen/my-x-twitter-weekly-report-bot-showed-0-followers-for-two-months-the-culprit-was-a-non-existent-1edl</link><description>&lt;p&gt;Hey everyone, it's your friendly neighborhood old man developer here. I'm 38, dabbling in AI agents and automated trading bots on the side, in between my day job. &lt;/p&gt;
+
+&lt;p&gt;Today, I want to share a story about one of my self-made bots that's been quietly dead for the past two months. It wasn't a dramatic crash or a visible error; it was far more insidious: it was running "normally" while being completely useless. The cause? An embarrassingly simple mistake.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Weekly Reports of '0 Followers'
+&lt;/h3&gt;
+
+&lt;p&gt;I built a simple analytics bot to keep an eye on the KPIs for my X account (@oji_ai_dev). Every Monday morning, it fetches my follower count, tweet count, impressions, and so on, then sends a Slack notification. &lt;/p&gt;
+
+&lt;p&gt;At some point, it started spitting out reports like this, week after week:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[Weekly X Report] Followers: 0 / Likes: 0 / Impressions: 0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Initially, I brushed it off. "Ah, maybe the API's acting up," or "I haven't posted much lately, so that makes sense." It's a common side-project pitfall, right? Once something's running, you tend to forget about it. Unless an error notification pops up, you just assume it's "normal."&lt;/p&gt;
+
+&lt;p&gt;But after two months of continuous "all zeros" reports, even I started to realize something was off. A quick check of my actual account confirmed I definitely did &lt;em&gt;not&lt;/em&gt; have zero followers. My bot was clearly broken.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Logs Were Clean, Code Seemed Fine. What Gives?
+&lt;/h3&gt;
+
+&lt;p&gt;Reluctantly, I pulled up the server logs where the bot was running. Not a single error trace. The script was being triggered on time every week, executing, and exiting with &lt;code&gt;status: 200 OK&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Next, I suspected the code. Had the X API spec changed? Was there a bug in the library I was using?&lt;/p&gt;
+
+&lt;p&gt;I pulled the code down locally and stepped through it with a debugger, line by line. It was only when I inspected the request payload right before hitting the API that it dawned on me:&lt;/p&gt;
+
+&lt;p&gt;"Wait, whose username is &lt;em&gt;that&lt;/em&gt;...?"&lt;/p&gt;
+
+&lt;p&gt;The target username being passed to the API wasn't my own.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  The Culprit Was in .env
+&lt;/h3&gt;
+
+&lt;p&gt;The issue wasn't in the code itself, but in my &lt;code&gt;.env&lt;/code&gt; file, where I define environment variables.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight ini"&gt;&lt;code&gt;&lt;span class="c"&gt;# Just one wrong line in the .env file
+&lt;/span&gt;
+&lt;span class="c"&gt;# INCORRECT: Pointing to a non-existent account
+&lt;/span&gt;&lt;span class="py"&gt;X_USERNAME_OJI&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"@kaito_trend"&lt;/span&gt;
+
+&lt;span class="c"&gt;# CORRECT: What it should have been
+&lt;/span&gt;&lt;span class="py"&gt;X_USERNAME_OJI&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"@oji_ai_dev"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;I must have copied and pasted an old &lt;code&gt;.env&lt;/code&gt; file from another bot I'd built, and completely forgot to update this one line. Facepalm-worthy, I know.&lt;/p&gt;
+
+&lt;p&gt;So, why didn't this throw an error? Here's a simplified look at the script's logic:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;&lt;span class="c1"&gt;# Script logic (conceptual)
+# This code itself would run without errors
+&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Load settings from .env
+&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;getenv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sh"&gt;"&lt;/span&gt;&lt;span class="s"&gt;X_USERNAME_OJI&lt;/span&gt;&lt;span class="sh"&gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Hit the API with a non-existent username
+# The API returned empty data, not an error
+&lt;/span&gt;&lt;span class="n"&gt;metrics&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nf"&gt;fetch_x_metrics&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+
+&lt;span class="c1"&gt;# Since 'metrics' being empty didn't cause an error, 
+# the script proceeded to process '0 items'
+&lt;/span&gt;&lt;span class="nf"&gt;log_metrics&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;metrics&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This was the core of my silent failure. The X API, when given a non-existent username, didn't return a 404 Not Found error or anything similar. It simply returned an empty dataset, indicating zero results.&lt;/p&gt;
+
+&lt;p&gt;My script, receiving this empty data, interpreted it as "no activity this week" and continued processing. The result? A weekly report that was &lt;strong&gt;technically not a lie, but completely meaningless&lt;/strong&gt; – always showing zero activity.&lt;/p&gt;
+
+&lt;p&gt;My monitoring system only checked for process completion, so of course, no alerts were triggered. No errors appeared in the logs. And so, the bot remained "alive but stopped" for over two months.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Lessons Learned from This Failure
+&lt;/h3&gt;
+
+&lt;p&gt;While this whole situation is pretty laughable, I think it highlights some common traps in personal development. I've distilled the lessons into three points:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Treat configuration files as part of your code.&lt;/strong&gt;&lt;br /&gt;
+It's standard practice to &lt;code&gt;.gitignore&lt;/code&gt; &lt;code&gt;.env&lt;/code&gt; files because they contain sensitive information, which often means they're overlooked in code reviews. However, they are crucial "code" that fundamentally changes how your application behaves. Copy-pasting carelessly or relying on assumptions for configuration is extremely risky.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Question the "happy path" of external APIs.&lt;/strong&gt;&lt;br /&gt;
+My assumption was, "If I pass a non-existent ID, it'll obviously return an error." That was a mistake. External API specifications don't always align with your expectations. I should have anticipated cases like "normal response but empty content" and built in some handling—maybe a warning, or even a retry mechanism.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Monitor "output/artifacts" over "process completion."&lt;/strong&gt;&lt;br /&gt;
+Assuming "monitoring OK" just because a process completed successfully is naive. As shown, the process can be fine, but the output can be completely garbage. What really needs monitoring are application-level metrics, like "Is the retrieved follower count suspiciously zero?" We need mechanisms that trigger alerts if, for example, the follower count is zero for N consecutive runs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When you're running side-project bots, these mundane maintenance and monitoring tasks often get pushed to the back burner. But letting these holes fester could lead to missing truly critical issues down the line. That thought sent a chill down my spine.&lt;/p&gt;
+
+&lt;p&gt;So, are your bots still happily chugging along and actually &lt;em&gt;doing&lt;/em&gt; their jobs? 😅&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:30:18 GMT</pubDate><guid>6b48601c3e9c2d166556717e2fca0acc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Notion vs Obsidian for Engineering Docs: What Breaks at Team Scale</title><link>https://dev.to/libme/notion-vs-obsidian-for-engineering-docs-what-breaks-at-team-scale-4aa0</link><description>&lt;p&gt;Both tools are excellent for one person taking notes. The gap only shows up when a team shares the same knowledge base. Short version: Notion scales on collaboration and access control but strains on performance and lock-in; Obsidian scales on speed, ownership, and Git-friendliness but has no native multiplayer and pushes concurrency problems onto your sync layer. Which pain you'd rather manage is the real decision.&lt;/p&gt;
+
+&lt;p&gt;I've run engineering docs on both — Notion for a ~30-person product org, Obsidian vaults synced through Git for smaller, more infra-heavy teams. The failure modes are predictable once you know where to look.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What actually differs between them?
+&lt;/h2&gt;
+
+&lt;p&gt;The core architectural split drives everything else: Notion is a cloud database with a document UI on top; Obsidian is a local Markdown editor over plain files. Every scaling tradeoff below descends from that one fact.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Dimension&lt;/th&gt;
+&lt;th&gt;Notion&lt;/th&gt;
+&lt;th&gt;Obsidian&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Storage model&lt;/td&gt;
+&lt;td&gt;Cloud-hosted blocks in a proprietary DB&lt;/td&gt;
+&lt;td&gt;Local &lt;code&gt;.md&lt;/code&gt; files you own&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Real-time co-editing&lt;/td&gt;
+&lt;td&gt;Native, multiplayer cursors&lt;/td&gt;
+&lt;td&gt;None natively&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Access control&lt;/td&gt;
+&lt;td&gt;Per-page/workspace permissions, SSO on higher tiers&lt;/td&gt;
+&lt;td&gt;Filesystem / sync-provider level only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Version history&lt;/td&gt;
+&lt;td&gt;Built in, granularity depends on tier&lt;/td&gt;
+&lt;td&gt;Whatever your sync layer gives (Git = excellent)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Search&lt;/td&gt;
+&lt;td&gt;Server-side, workspace-wide&lt;/td&gt;
+&lt;td&gt;Local, instant, but per-vault&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extensibility&lt;/td&gt;
+&lt;td&gt;Official API, integrations&lt;/td&gt;
+&lt;td&gt;1,000+ community plugins, local scripting&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Offline&lt;/td&gt;
+&lt;td&gt;Limited, historically unreliable&lt;/td&gt;
+&lt;td&gt;First-class (it's just files)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lock-in risk&lt;/td&gt;
+&lt;td&gt;High — export is lossy for databases&lt;/td&gt;
+&lt;td&gt;Low — it's already Markdown on disk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Takeaway: you're not choosing a note app, you're choosing whether your source of truth lives in someone else's database or on your own disk.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What breaks in Notion at team scale?
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Performance on large workspaces.&lt;/strong&gt; Notion's block model means a big page — a long runbook, a quarter of meeting notes, a database with thousands of rows — can get visibly slow to load and edit. In my experience this hits hardest on database views with many rollups and filters. It's usable, but "open the incident doc during an incident" is exactly when latency stings most.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Permission sprawl.&lt;/strong&gt; Notion's granular sharing is a genuine strength until you have 40 people and nested teamspaces. Someone shares a page publicly to get a quick link, a sensitive database inherits the wrong parent permission, and now auditing "who can see the security runbook" is a manual crawl. Granular permissions are a feature you have to actively govern, not set once.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Search that degrades with volume.&lt;/strong&gt; Search is fine at small scale and gets noisier as the workspace grows, because everything competes in one index and titles repeat ("Meeting Notes", "Q3 Planning" ×12). Without disciplined naming and archiving, finding the &lt;em&gt;current&lt;/em&gt; runbook among five stale copies becomes its own task.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lock-in.&lt;/strong&gt; This is the one people underweight. Notion exports pages to Markdown and databases to CSV, but the export is lossy — relations, rollups, linked databases, and synced blocks don't survive cleanly. The more you lean on Notion's database features, the more expensive it is to ever leave. Budget for that when you're deciding how much workflow logic to encode in Notion.&lt;/p&gt;
+
+&lt;p&gt;Takeaway: Notion's failures at scale are about governance and gravity, not missing features — the features are what create the governance burden.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What breaks in Obsidian at team scale?
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;No native real-time collaboration.&lt;/strong&gt; This is the headline. Obsidian is single-user by design. Two people editing the same note "at the same time" through a shared sync means one silently overwrites the other, or you get conflict copies. There are community plugins and third-party relay services that add live co-editing, but they're not first-party and you're trusting a plugin with your whole vault. For a team that expects Google-Docs-style multiplayer, this is a hard wall.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sync is a decision you have to make.&lt;/strong&gt; Obsidian Sync is a paid first-party add-on that's reliable but per-user. Many engineering teams instead put the vault in a Git repo — which is genuinely great for infra docs because you get real diffs, review, and history for free. The cost: your team now hits merge conflicts on prose. Editing the same &lt;code&gt;## Runbook&lt;/code&gt; section from two branches produces the same conflict markers as code, and not everyone on a docs team is comfortable resolving those.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Access control is coarse.&lt;/strong&gt; Permissions live wherever the files live. A Git repo is all-or-nothing per repo; a shared Dropbox/iCloud folder is all-or-nothing per folder. You cannot say "contractors can read the onboarding notes but not the security vault" inside Obsidian itself. You solve it by splitting vaults, which fragments search and cross-linking — the exact thing Obsidian is good at.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Plugin governance.&lt;/strong&gt; The plugin ecosystem is Obsidian's superpower and a supply-chain question at team scale. Community plugins run with broad access to your vault. Letting 20 engineers each install whatever they want, syncing plugin config across the team, and vetting updates is unglamorous work that someone has to own.&lt;/p&gt;
+
+&lt;p&gt;Takeaway: Obsidian's failures at scale all trace back to it being local-first — concurrency and access control are problems you inherit and must solve outside the app.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How should you decide between them?
+&lt;/h2&gt;
+
+&lt;p&gt;Decide by what your team's docs actually are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Product/cross-functional knowledge base&lt;/strong&gt; — many non-engineers, live meeting notes, project trackers, wikis PMs and designers edit daily → &lt;strong&gt;Notion&lt;/strong&gt;. The multiplayer editing and permission model are worth the performance and lock-in tax.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Infra/engineering-owned docs&lt;/strong&gt; — runbooks, ADRs, architecture notes, things that live next to code and benefit from review → &lt;strong&gt;Obsidian in Git&lt;/strong&gt;. Diffs, ownership, offline, and zero lock-in beat live co-editing you rarely need.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Mixed org&lt;/strong&gt; — this is common and fine: Notion for the collaborative wiki, Obsidian-in-Git (or a docs-as-code setup) for engineering-owned technical docs. The failure is forcing one tool to do both and then fighting its weak side forever.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One more axis: if "we must be able to walk away with our data intact" is a real constraint (compliance, acquisition risk, distrust of vendor pricing), that pushes hard toward Obsidian's plain-Markdown-on-disk model regardless of the collaboration cost.&lt;/p&gt;
+
+&lt;p&gt;Takeaway: match the tool to who edits the docs and how much you fear lock-in, not to which app demos better.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  A middle path worth knowing
+&lt;/h2&gt;
+
+&lt;p&gt;You don't have to pick a single hosted product to get docs-as-code benefits. Many teams keep engineering docs as Markdown in the code repo and render them with a static site generator, using whatever editor each person prefers — Obsidian just happens to be a very good editor for that file layout. That gives you PR review, CODEOWNERS-based access, and CI checks (dead-link linting, spell check) on your docs, while non-technical docs stay in a collaborative tool. It's more setup than either app alone, but at real team scale the review workflow often matters more than the editor.&lt;/p&gt;
+
+&lt;p&gt;Takeaway: at scale, the review and access workflow around your docs matters more than which editor renders the Markdown.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Bottom line
+&lt;/h2&gt;
+
+&lt;p&gt;If most of your editors are non-engineers and you need live collaboration with granular permissions, use Notion and accept that you'll pay in performance governance and lock-in — budget for both early. If your docs are engineering-owned, benefit from review, and you value ownership and offline access, put an Obsidian vault in Git and accept that you're on the hook for concurrency and access control. Mixed orgs should run both deliberately rather than stretching one tool across both jobs. Whatever you pick, the tool that "just works" at three people is not the one that decides the outcome at thirty — plan for the failure mode you can live with.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Related reading
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/libme/supabase-vs-firebase-in-2026-the-migration-questions-nobody-answers-35h8"&gt;Supabase vs Firebase in 2026: The Migration Questions Nobody Answers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/libme/vercel-vs-netlify-vs-cloudflare-pages-where-your-side-project-should-actually-live-1j30"&gt;Vercel vs Netlify vs Cloudflare Pages: Where Your Side Project Should Actually Live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/libme/should-you-migrate-off-pgvector-run-this-shadow-mode-benchmark-first-3o54"&gt;Should You Migrate Off pgvector? Run This Shadow-Mode Benchmark First&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Wed, 05 Aug 2026 23:19:05 GMT</pubDate><guid>cfa04e9e0014fa63eff981da8c8357c7</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Yt-watch-party</title><link>https://dev.to/arhamkabir/yt-watch-party-kca</link><description>&lt;p&gt;I built a real-time YouTube watch party application that allows users to create rooms, watch videos together with synchronized playback, and communicate through real-time chat.&lt;/p&gt;
+
+&lt;p&gt;Github: &lt;a href="https://github.com/DefNotArham/Watchly-yt-watch-party" rel="noopener noreferrer"&gt;https://github.com/DefNotArham/Watchly-yt-watch-party&lt;/a&gt; &lt;br /&gt;
+Demo: &lt;a href="https://watchly-frontend-188699933348.us-central1.run.app/" rel="noopener noreferrer"&gt;https://watchly-frontend-188699933348.us-central1.run.app/&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:17:51 GMT</pubDate><guid>f1bf007ef8f7b8c5ac547cd07e51c1a1</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Architecting reliable geofencing for Android without killing the battery</title><link>https://dev.to/haseebthedev0/architecting-reliable-geofencing-for-android-without-killing-the-battery-28an</link><description>&lt;p&gt;It happened during a quiet Friday Jumu'ah prayer. The sermon was in full swing, the room was pin-drop silent, and then it started—the aggressive, rhythmic vibrations of a smartphone echoing against the wooden floorboards. Every head in the room turned toward the sound. I felt the heat rise to my face because it was my phone, despite me being the guy who usually prides himself on having a 'smart' setup. I had forgotten to toggle the silent mode after leaving my office, and that simple oversight turned a moment of peace into a source of public embarrassment.&lt;/p&gt;
+
+&lt;p&gt;That specific friction is what drove me to build Muffle. We all live in a cycle of manual toggling: silent before meetings, vibrate during class, back to normal at home, and then forgetting to revert the settings until we miss an important call three hours later. While Android has some built-in 'Do Not Disturb' rules, they often feel too rigid or lack the context-aware triggers that actually match our messy, unpredictable lives. I wanted something that felt invisible, something that handled the sound profile based on where I was, not just what time it was on the clock.&lt;/p&gt;
+
+&lt;p&gt;Building a geofencing system that actually works—without turning the user's phone into a space heater—is a challenge that separates toy apps from production-ready tools. The Android &lt;code&gt;Geofencing API&lt;/code&gt; is the standard tool for this, but it is notoriously finicky. If you just naively register geofences for every single user routine, you hit the system-imposed limit of 100 geofences per app, which sounds like plenty until you realize that Google Play Services might decide to throttle your requests if you aren't careful with your &lt;code&gt;PendingIntent&lt;/code&gt; usage or location accuracy requests.&lt;/p&gt;
+
+&lt;p&gt;For Muffle, I decided to offload the heavy lifting to the &lt;code&gt;FusedLocationProviderClient&lt;/code&gt;. The core architectural decision was to decouple the monitoring service from the UI entirely. I implemented a &lt;code&gt;Foreground Service&lt;/code&gt; that manages the geofence registration using &lt;code&gt;GeofencingRequest&lt;/code&gt; and &lt;code&gt;LocationServices.getGeofencingClient(context)&lt;/code&gt;. The key was setting the &lt;code&gt;LoiteringDelay&lt;/code&gt; correctly. If you set it too short, you get 'flickering' as the user walks near the boundary of their office or home. If you set it too long, the user is already deep into their meeting before the phone silences. I eventually settled on a 30-second delay for geofence transitions to ensure the device has a stable signal lock before firing the &lt;code&gt;BroadcastReceiver&lt;/code&gt; that triggers the &lt;code&gt;AudioManager&lt;/code&gt; changes.&lt;/p&gt;
+
+&lt;p&gt;kotlin&lt;br /&gt;
+val geofence = Geofence.Builder()&lt;br /&gt;
+    .setRequestId(routineId)&lt;br /&gt;
+    .setCircularRegion(lat, lon, radius)&lt;br /&gt;
+    .setExpirationDuration(Geofence.NEVER_EXPIRE)&lt;br /&gt;
+    .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER or Geofence.GEOFENCE_TRANSITION_EXIT)&lt;br /&gt;
+    .setLoiteringDelay(30000)&lt;br /&gt;
+    .build()&lt;/p&gt;
+
+&lt;p&gt;By keeping the &lt;code&gt;BroadcastReceiver&lt;/code&gt; as a lightweight bridge that simply calls a &lt;code&gt;WorkManager&lt;/code&gt; task, I ensured that even if the OS decides to kill the foreground service to reclaim memory, the state change still triggers. This is the difference between an app that works 90% of the time and one that users can actually trust. Trust is the only currency that matters in utility apps, because the moment the phone rings in a quiet room, the app loses its reason for existing.&lt;/p&gt;
+
+&lt;p&gt;What surprised me most during development was how aggressive the modern Android power management layers are toward background tasks. My initial assumption was that a simple &lt;code&gt;Service&lt;/code&gt; with a &lt;code&gt;WakeLock&lt;/code&gt; would be sufficient for monitoring location. I was wrong. On many OEM devices—looking at you, certain Chinese manufacturers—the battery optimization settings are so restrictive that they effectively kill background processes the second the screen turns off. My geofences would simply stop firing.&lt;/p&gt;
+
+&lt;p&gt;I learned the hard way that you cannot fight the OS. Instead of trying to keep a persistent, high-consumption location listener alive, I had to pivot to a 'Batching' strategy. I started using &lt;code&gt;setExpedited&lt;/code&gt; on my &lt;code&gt;WorkManager&lt;/code&gt; requests to ensure that the OS treats these background sound-toggles as high-priority tasks. I also had to implement a manual 'Reboot Receiver'. You might think that registered geofences persist through a reboot, and they technically do, but the &lt;code&gt;PendingIntent&lt;/code&gt; associated with them often gets lost in the ether when the system cleans up the stale process state. My current architecture forces a re-sync of all active routines upon the &lt;code&gt;ACTION_BOOT_COMPLETED&lt;/code&gt; broadcast. If I were starting over, I would have built the state persistence layer much earlier. I spent two weeks chasing a bug where routines would simply disappear after a software update, only to realize that I wasn't properly handling the &lt;code&gt;onReceive&lt;/code&gt; lifecycle of the boot event in the &lt;code&gt;AndroidManifest.xml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another non-obvious lesson was the impact of GPS vs. Network location. For a tool like Muffle, relying strictly on GPS is a mistake. It drains battery and fails indoors. I had to use &lt;code&gt;PRIORITY_BALANCED_POWER_ACCURACY&lt;/code&gt; rather than &lt;code&gt;PRIORITY_HIGH_ACCURACY&lt;/code&gt;. Most users don't need to know they are in their office building within a three-meter margin; they just need to know they are within the general perimeter. By loosening the accuracy requirements, I cut battery usage by nearly 40% while keeping the routine triggers reliable enough for daily use.&lt;/p&gt;
+
+&lt;p&gt;If you are building an Android utility, stop trying to be 'clever' with system resources. The Android team has spent years building a robust set of tools like &lt;code&gt;WorkManager&lt;/code&gt; and &lt;code&gt;FusedLocationProviderClient&lt;/code&gt; for a reason. If you find yourself fighting the OS, you are likely using the wrong API. Don't build a custom background loop when the system provides a perfectly good event-driven architecture that handles the power state for you. The goal isn't to be the most active app on the device; the goal is to be the most reliable one.&lt;/p&gt;
+
+&lt;p&gt;Focus on the edge cases. What happens when the device loses network connectivity? What happens when the user has multiple overlapping routines? What happens when the user updates their calendar? If you build for the 'happy path' where the phone always has a signal and the user never restarts their device, you are building a prototype, not a product. Muffle was my attempt to bridge that gap between a simple idea and a utility that actually survives the reality of a busy, notification-filled life. You can see how I approached these problems and the final result at &lt;a href="https://play.google.com/store/apps/details?id=com.muffle.app" rel="noopener noreferrer"&gt;https://play.google.com/store/apps/details?id=com.muffle.app&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:11:25 GMT</pubDate><guid>39041db67ee05b0e9f3d2dcb25128d23</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Habr] Печеньки стали дороже. Стимул, мотив, потребность: разбираемся, чего мы ждём от работы</title><link>https://habr.com/ru/articles/1067240/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/27e/eb3/235/27eeb3235136d88a7d8f9c09ac17cb3b.jpg" /&gt;&lt;p&gt;Когда работа, к которой вы долго стремились, перестаёт радовать, легко решить, что вы обленились, выгорели или выбрали не ту профессию. Но иногда прежние стимулы просто больше не совпадают с тем, что человеку сейчас нужно. Попробуем разделить стимул, мотив и потребность и разобраться, почему одинаковая зарплата, сложная задача или сильная команда для разных разработчиков означают совершенно разные вещи.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067240/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067240#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 23:05:28 GMT</pubDate><guid>e7e780b8f34067f17ac739c1917e5b7e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Dev.to] How I stopped my coding agents from writing files before I could see the plan</title><link>https://dev.to/ordewell/how-i-stopped-my-coding-agents-from-writing-files-before-i-could-see-the-plan-10g7</link><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Disclosure up front:&lt;/strong&gt; I built the tool this article walks through. It's&lt;br /&gt;
+free and Apache-2.0, so my interest is "people find this useful" more than&lt;br /&gt;
+"people pay me."&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The failure that sent me down this path is probably familiar. I give an agent a&lt;br /&gt;
+multi-step goal: refactor this module, update the README, add tests. Everything&lt;br /&gt;
+goes fine until step 4 — where I discover it misread step 1 back at the start.&lt;br /&gt;
+By then files are written. There's no plan to correct, because the plan lived in&lt;br /&gt;
+the model's head. There's only something to undo.&lt;/p&gt;
+
+&lt;p&gt;That's the core problem: &lt;strong&gt;the plan is a side effect of the session, not an&lt;br /&gt;
+artifact you can inspect and edit.&lt;/strong&gt; This post is about the design decision I&lt;br /&gt;
+landed on to fix it — make the plan the thing you approve, not the thing you&lt;br /&gt;
+hope for.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  The plan is a typed artifact
+&lt;/h3&gt;
+
+&lt;p&gt;The tool reads your repo read-only, then hands back an ordered list of tasks.&lt;br /&gt;
+Each task carries four pieces of metadata: the runner (Claude Code, Codex, or&lt;br /&gt;
+OpenCode), the model, the thinking effort, and the mode. That's not decoration —&lt;br /&gt;
+those four are what the task &lt;em&gt;actually runs as&lt;/em&gt;. You can rewrite any prompt, add&lt;br /&gt;
+or delete a task, rewire dependencies (&lt;code&gt;task 4 depends on task 2&lt;/code&gt;), or change&lt;br /&gt;
+the model on a single task. Completed work stays done. Nothing round-trips the&lt;br /&gt;
+AI while you edit.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Why a separate planner
+&lt;/h3&gt;
+
+&lt;p&gt;The natural question is "why not just use plan mode?" Two reasons.&lt;/p&gt;
+
+&lt;p&gt;First, plan mode plans &lt;em&gt;inside&lt;/em&gt; the session that then executes — the plan is&lt;br /&gt;
+advisory and the model can drift from it. Here, the plan is produced by a&lt;br /&gt;
+separate process that physically cannot write to your repo. Its exploration is&lt;br /&gt;
+strictly read-only; commands that would write are refused before an approval&lt;br /&gt;
+prompt even exists, so there's no "allow once" to click through. Mutation&lt;br /&gt;
+belongs to the runners, not the planner.&lt;/p&gt;
+
+&lt;p&gt;Second, per-task assignment. A security refactor and a README update do not&lt;br /&gt;
+deserve the same model. The planner makes that portfolio decision across the&lt;br /&gt;
+whole plan, in the open, before you spend a single execution token — and you can&lt;br /&gt;
+override any of it.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Verdicts from evidence, not opinion
+&lt;/h3&gt;
+
+&lt;p&gt;The part I care most about happened later. Agents are bad at grading themselves&lt;br /&gt;
+— and worse, they'll announce success on a build that doesn't compile. So a task&lt;br /&gt;
+here is marked done only when its &lt;strong&gt;unique completion marker&lt;/strong&gt; appears in the&lt;br /&gt;
+runner's output, with the exit code retained beside it as separate evidence. The&lt;br /&gt;
+model is never the tie-breaker. If the session finished and claimed the work&lt;br /&gt;
+without the marker, it fails loudly.&lt;/p&gt;
+
+&lt;p&gt;If you've watched an agent say "done" and then open a file that's still broken,&lt;br /&gt;
+that's the whole motivation.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Honest limits
+&lt;/h3&gt;
+
+&lt;p&gt;The planner is still an LLM and writes bad plans sometimes. The argument isn't&lt;br /&gt;
+that it's always right — it's that &lt;em&gt;a bad plan you can see and edit costs a&lt;br /&gt;
+minute, and one you can't costs an afternoon.&lt;/em&gt; The completion marker proves the&lt;br /&gt;
+session finished and claimed the work, not that the code is correct.&lt;/p&gt;
+
+&lt;p&gt;Also: the TUI needs tmux on every platform (on Windows, that means WSL). The CLI&lt;br /&gt;
+and the VS Code extension run natively without it.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Try it
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;npm &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nt"&gt;-g&lt;/span&gt; ordewell &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ordewell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Point it at a repo you know well and read the plan it hands back. That first&lt;br /&gt;
+plan is the whole argument.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub: github.com/ordewell/ordewell&lt;/li&gt;
+&lt;li&gt;Apache-2.0, free, no paid tier.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy to answer anything, including "why not just do X."&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:04:43 GMT</pubDate><guid>f521ba36d5fb3a75ec8c9ea325a41dbd</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] I Built a Voice Agent That Switches Languages Mid-Call on Telnyx</title><link>https://dev.to/botoclock/i-built-a-voice-agent-that-switches-languages-mid-call-on-telnyx-1g51</link><description>&lt;p&gt;Translation apps interpret between two people speaking different languages. Code-switching is different: one caller switches languages mid-conversation and the agent follows them. No interpreter, no restart, no separate vendors — one Telnyx AI Assistant that detects the spoken language on every turn and replies in kind.&lt;/p&gt;
+
+&lt;p&gt;The Telnyx code example is:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-multilingual-code-switching-agent-python" rel="noopener noreferrer"&gt;https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-multilingual-code-switching-agent-python&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a Python Flask app with a simple browser page showing a phone number. No database, no Cloud Storage. Call the number, speak in English, switch to Spanish mid-conversation, and the agent follows you.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Flow
+&lt;/h2&gt;
+
+&lt;p&gt;A customer calls a support line. They start in English, switch to Spanish for a sensitive question, then switch back. The agent detects the language from their speech on every turn and replies in that language. No language picker menu, no "press 1 for English." The caller just speaks.&lt;/p&gt;
+
+&lt;p&gt;One phone number, one AI Assistant, five languages — English, Spanish, Portuguese, Hindi, and Mandarin.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How Code-Switching Works
+&lt;/h2&gt;
+
+&lt;p&gt;The entire behavior lives in the assistant's instructions. There is no application-layer language detection, no routing, no manual STT/LLM/TTS pipeline. The LLM follows plain English instructions:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;listen carefully to the caller. detect the language they are speaking on every turn.
+reply in the same language the caller is using right now.
+if the caller switches language mid-conversation or mid-sentence, switch with them.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The STT (Deepgram nova-3 with &lt;code&gt;language: "auto"&lt;/code&gt;) transcribes in whatever language the caller speaks. The LLM follows the instructions. The TTS (&lt;code&gt;voice ultra katie&lt;/code&gt;) renders the reply in that language. One platform, one API key.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why This Is Different From Translation
+&lt;/h2&gt;
+
+&lt;p&gt;The existing &lt;code&gt;ai-real-time-translation-bridge-python&lt;/code&gt; example connects two callers who speak different languages and translates between them. That is interpretation — two people, two languages, one bridge.&lt;/p&gt;
+
+&lt;p&gt;This example is code-switching — one caller, multiple languages, one agent. The agent is not translating. It is the agent. It replies in whatever language you speak, switches when you switch, and never says "I did not understand" or asks you to pick a language.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Key Technical Decisions
+&lt;/h2&gt;
+
+&lt;h3&gt;
+  
+  
+  &lt;code&gt;deepgram/nova-3&lt;/code&gt; with &lt;code&gt;language: "auto"&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;Per the AI Assistants docs: "To enable a multilingual agent, set the transcription model to &lt;code&gt;deepgram/nova-3&lt;/code&gt;." The &lt;code&gt;language: "auto"&lt;/code&gt; setting lets nova-3 auto-detect the spoken language on every turn. Note: &lt;code&gt;language: "multi"&lt;/code&gt; is not valid and returns a 400 error. Use &lt;code&gt;"auto"&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  &lt;code&gt;voice ultra katie&lt;/code&gt; in the instructions
+&lt;/h3&gt;
+
+&lt;p&gt;The existing phone assistant examples use &lt;code&gt;voice ultra katie&lt;/code&gt; in the instructions. Ultra supports 36+ languages, so one voice handles all five demo languages without switching voices per language.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  &lt;code&gt;moonshotai/Kimi-K2.6&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;A native Telnyx model — no external API key required.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Flask App Is Minimal
+&lt;/h2&gt;
+
+&lt;p&gt;Since the Voice AI Assistant handles the entire conversation, the Flask app only needs to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create/reuse the assistant via &lt;code&gt;provision_assistant.py&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Serve a page showing the inbound phone number&lt;/li&gt;
+&lt;li&gt;Log webhook events for observability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is no call-control logic, no application-layer STT, no manual TTS. The conversation runs entirely on Telnyx.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Run It
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git clone https://github.com/team-telnyx/telnyx-code-examples.git
+&lt;span class="nb"&gt;cd &lt;/span&gt;telnyx-code-examples/ai-multilingual-code-switching-agent-python
+&lt;span class="nb"&gt;cp&lt;/span&gt; .env.example .env
+python provision_assistant.py
+python app.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Open the browser, call the number, speak in any language. Switch mid-conversation and the agent follows.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Related Examples
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-real-time-translation-bridge-python" rel="noopener noreferrer"&gt;&lt;code&gt;ai-real-time-translation-bridge-python&lt;/code&gt;&lt;/a&gt; — two-caller interpreter&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-language-learning-phone-tutor-python" rel="noopener noreferrer"&gt;&lt;code&gt;ai-language-learning-phone-tutor-python&lt;/code&gt;&lt;/a&gt; — phone-based language tutor&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/language-learning-flashcards-python" rel="noopener noreferrer"&gt;&lt;code&gt;language-learning-flashcards-python&lt;/code&gt;&lt;/a&gt; — browser-based pronunciation scoring&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Wed, 05 Aug 2026 23:02:02 GMT</pubDate><guid>f61d354abc762524f5540165f905462b</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[SoylentNews] UK Wants Datacenters To Pay A Fee For Grid Connection Requests</title><link>https://soylentnews.org/article.pl?sid=26%2F08%2F05%2F024251&amp;from=rss</link><description>&lt;p class="byline"&gt;&lt;a href="//soylentnews.org/~Arthur+T+Knackerbracket/"&gt;Arthur T Knackerbracket&lt;/a&gt; writes:&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.theregister.com/systems/2026/07/31/uk-wants-datacenters-to-pay-a-fee-for-grid-connection-requests/5281248"&gt;https://www.theregister.com/systems/2026/07/31/uk-wants-datacenters-to-pay-a-fee-for-grid-connection-requests/5281248&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Ofgem is seeking feedback on proposals to levy a fee on datacenter development projects at the time they apply for a grid connection.&lt;/p&gt;&lt;p&gt;The move aims to discourage companies from seeking approval for speculative applications that clog up the pipeline and cause connection delays, without ever resulting in finished datacenters.&lt;/p&gt;&lt;p&gt;The UK regulator for electricity and gas says connection applications for electrical supply have surged from 41 gigawatts (GW) to 125 GW in under a year, with datacenters accounting for at least 80 GW of the new demand.&lt;/p&gt;&lt;p&gt;Even before that happened, one of the UK's big developers complained that its build teams faced &lt;a href="https://www.theregister.com/on-prem/2024/10/29/datacenter-developer-says-new-builds-held-up-by-power-issues/600011"&gt;a wait of "a number of years"&lt;/a&gt; for work such as local substation upgrades to increase grid capacity.&lt;/p&gt;&lt;p&gt;Ofgem is proposing a Datacenter Commitment Fee paid by the developers of large server farm projects when accepting a grid connection offer. The fee would be refunded once the facility is drawing power, or forfeited if the project exits the queue early instead.&lt;/p&gt;&lt;p&gt;Alan Howard, Omdia principal analyst for Colocation and DC Building,&amp;nbsp;&lt;a href="https://www.theregister.com/on-prem/2026/02/27/50-gw-of-datacenter-demand-queues-up-for-uk-grid-access/4531850"&gt;told us previously&lt;/a&gt; that the power connection queue issue is a big problem, not just for the UK, but also in the US and other markets around the globe.&lt;/p&gt;&lt;p&gt;"The strategy for many datacenter operators is to secure multiple land parcel rights, request a grid load connection for each (often requiring a costly load study), and see what gets approved so they can build. The capital investment to take all these projects seriously is clearly untenable and a huge financial risk for the energy sector if the demand doesn't fully materialize," he said.&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;a href="https://soylentnews.org/article.pl?sid=26/08/05/024251&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at SoylentNews.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:02:00 GMT</pubDate><guid>b042cd22e188ecfbc1a7a46e87550478</guid><source url="https://soylentnews.org/index.rss">SoylentNews</source></item><item><title>[Phoronix] Rust Coreutils 0.10 Released With More Security Hardening, Increased GNU Compatibility</title><link>https://www.phoronix.com/news/Rust-Coreutils-0.10</link><description>Rust Coreutils 0.10 is out today from the uutils project for this alternative to GNU Coreutils. Rust Coreutils 0.10 development focused on additional security hardening plus also increasing the GNU test suite compatibility and robustness...</description><pubDate>Wed, 05 Aug 2026 22:59:00 GMT</pubDate><guid>5c88a95196a6112d8037844c037a26fc</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[TechCrunch] Get up to $400 off your TechCrunch Disrupt 2026 pass until Friday</title><link>https://techcrunch.com/2026/08/05/get-up-to-400-off-your-techcrunch-disrupt-2026-pass-until-friday/</link><description>Starting today, you can take an additional $100 off your founder, investor, or attendee TechCrunch Disrupt 2026 pass, which is a nice bonus on top of our current discounted pricing.</description><pubDate>Wed, 05 Aug 2026 22:55:43 GMT</pubDate><guid>dbf96f72aff8a3428fc9b4bb29ecc95d</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Dev.to] Old MCP listings do die more often — but age is the wrong field to watch</title><link>https://dev.to/theopslog/old-mcp-listings-do-die-more-often-but-age-is-the-wrong-field-to-watch-3hoc</link><description>&lt;p&gt;A reader named Valentin asked me a good question in the comments of an earlier post. I had published a table showing that MCP registry listings fail at wildly different rates depending on where they're hosted — Railway 66%, Vercel 8% — and argued you could use that as a prior to order a revalidation queue instead of re-probing all 10,716 entries evenly.&lt;/p&gt;
+
+&lt;p&gt;His question: do the entries carry submission dates? Because if failure rate also climbs with &lt;strong&gt;listing age inside a single platform&lt;/strong&gt;, that's a second free input to the same queue — and it separates the platform effect from which platforms simply happened to be popular two years ago.&lt;/p&gt;
+
+&lt;p&gt;They do carry dates. The answer is yes. And answering it broke two things I had already published, which is the more useful half of this post.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The data
+&lt;/h2&gt;
+
+&lt;p&gt;The registry exposes &lt;code&gt;_meta["io.modelcontextprotocol.registry/official"].publishedAt&lt;/code&gt; on every server record. Getting usable ages out of it took a full unfiltered walk — &lt;strong&gt;661 pages, 66,045 version records&lt;/strong&gt; — joined to my 2026-07-30 census of every listed endpoint.&lt;/p&gt;
+
+&lt;p&gt;Deduped to server &lt;em&gt;name&lt;/em&gt;, one hosting platform per server, clean alive/dead verdict only: &lt;strong&gt;n = 1,092&lt;/strong&gt;. Dead means 404 / DNS failure / timeout / connection refused / TLS failure / 5xx. Auth-gated counts as alive — the address works, it just wants a key.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The result
+&lt;/h2&gt;
+
+&lt;p&gt;Failure rate by listing age, &lt;strong&gt;within&lt;/strong&gt; each platform:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;platform&lt;/th&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;0-30d&lt;/th&gt;
+&lt;th&gt;30-90d&lt;/th&gt;
+&lt;th&gt;90-180d&lt;/th&gt;
+&lt;th&gt;180d+&lt;/th&gt;
+&lt;th&gt;trend&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;railway&lt;/td&gt;
+&lt;td&gt;247&lt;/td&gt;
+&lt;td&gt;3%&lt;/td&gt;
+&lt;td&gt;51%&lt;/td&gt;
+&lt;td&gt;83%&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;z=8.69, p&amp;lt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;onrender&lt;/td&gt;
+&lt;td&gt;139&lt;/td&gt;
+&lt;td&gt;27%&lt;/td&gt;
+&lt;td&gt;52%&lt;/td&gt;
+&lt;td&gt;63%&lt;/td&gt;
+&lt;td&gt;80%&lt;/td&gt;
+&lt;td&gt;z=3.70, p&amp;lt;0.001&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vercel&lt;/td&gt;
+&lt;td&gt;82&lt;/td&gt;
+&lt;td&gt;0%&lt;/td&gt;
+&lt;td&gt;14%&lt;/td&gt;
+&lt;td&gt;26%&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;z=2.41, p=0.016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fly.dev&lt;/td&gt;
+&lt;td&gt;65&lt;/td&gt;
+&lt;td&gt;16%&lt;/td&gt;
+&lt;td&gt;18%&lt;/td&gt;
+&lt;td&gt;28%&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;z=0.92, p=0.36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;workers.dev&lt;/td&gt;
+&lt;td&gt;281&lt;/td&gt;
+&lt;td&gt;18%&lt;/td&gt;
+&lt;td&gt;29%&lt;/td&gt;
+&lt;td&gt;12%&lt;/td&gt;
+&lt;td&gt;36%&lt;/td&gt;
+&lt;td&gt;z=-0.33, p=0.74&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;trycloudflare&lt;/td&gt;
+&lt;td&gt;49&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Mantel-Haenszel, stratified by platform so the platform effect is held fixed: &lt;strong&gt;odds ratio 2.60, p=1.2e-09&lt;/strong&gt; for older-than-median (92 days) versus younger.&lt;/p&gt;
+
+&lt;p&gt;So age is real, and it is not just a platform proxy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One platform is in that odds ratio but not in the table.&lt;/strong&gt; Smithery is n=216 and 88% dead, but 214 of its 216 listings sit in the 180d+ bucket — there is no age spread inside it to test, and its "significant" trend is a 0-of-2 cell compared against a 191-of-214 cell. I left it out of the table because a two-point comparison isn't a trend, and kept it in the stratified odds ratio because dropping strata to taste is worse. Excluding it entirely moves the headline from 2.60 to 2.52, so nothing here rests on it.&lt;/p&gt;
+
+&lt;p&gt;Full reconciliation, since partial ones are how the last two errors happened: the six table rows sum to 863, smithery adds 216 for 1,079, and the remaining &lt;strong&gt;13 servers — ngrok (6), heroku (4), replit (3)&lt;/strong&gt; — are inside the n=1,092 but excluded from both the table &lt;em&gt;and&lt;/em&gt; the odds ratio, because none of them clears the 25-server floor I need to stratify on.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The pooled number is a trap
+&lt;/h2&gt;
+
+&lt;p&gt;Here is the same question asked without stratifying:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;age&lt;/th&gt;
+&lt;th&gt;dead&lt;/th&gt;
+&lt;th&gt;rate&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0-30d&lt;/td&gt;
+&lt;td&gt;41/221&lt;/td&gt;
+&lt;td&gt;18.6%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;30-90d&lt;/td&gt;
+&lt;td&gt;122/290&lt;/td&gt;
+&lt;td&gt;42.1%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;90-180d&lt;/td&gt;
+&lt;td&gt;195/351&lt;/td&gt;
+&lt;td&gt;55.6%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;180d+&lt;/td&gt;
+&lt;td&gt;199/230&lt;/td&gt;
+&lt;td&gt;86.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Trend z = 14.66, p = 1e-48. It looks overwhelming. Most of it is Simpson's paradox: old listings are concentrated on the platforms that rot, so a pooled age trend is largely measuring platform mix.&lt;/p&gt;
+
+&lt;p&gt;The stratified 2.60 is the honest number, and it is dramatically smaller than the pooled one.&lt;/p&gt;
+
+&lt;p&gt;I wrote a synthetic test case to keep myself honest about this — two platforms, the within-platform age trend set to &lt;em&gt;exactly zero&lt;/em&gt; in both, old listings concentrated in the deadlier one. The pooled test returns z=7.76. That's the shape of the mistake, generated on purpose so I'd recognise it.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Age doesn't work everywhere
+&lt;/h2&gt;
+
+&lt;p&gt;This is the part that changes what you'd build.&lt;/p&gt;
+
+&lt;p&gt;Age is strong on Railway and Render, weak but present on Vercel, and &lt;strong&gt;absent on &lt;code&gt;workers.dev&lt;/code&gt; and &lt;code&gt;fly.dev&lt;/code&gt;&lt;/strong&gt;. On &lt;code&gt;trycloudflare.com&lt;/code&gt; it's useless in the other direction — those are 100% dead at every age, because the hostname already told you.&lt;/p&gt;
+
+&lt;p&gt;I don't have a measured mechanism for that split. The obvious story — free tiers that sleep and get reclaimed versus hostnames that persist whether or not traffic arrives — is a plausible reading of the pattern, not something this data tests. I'm flagging it as inference because the difference between "measured" and "sounds right" is the only thing this series has.&lt;/p&gt;
+
+&lt;p&gt;What it does say operationally: &lt;strong&gt;a revalidation queue wants age conditioned on platform, not a global age sort.&lt;/strong&gt; And on the ephemeral-tunnel hosts, a write-time hostname check does everything age could do and does it before the bad entry ever lands. The two inputs cover disjoint sets, which is the good case — you should use both.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The mistake that found a better signal
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;publishedAt&lt;/code&gt; is attached to a &lt;em&gt;version record&lt;/em&gt;, not to a server. A server that republished last week reads as young while having been listed for a year.&lt;/p&gt;
+
+&lt;p&gt;So listing age has to be the minimum &lt;code&gt;publishedAt&lt;/code&gt; across every version of a name — which is exactly why the walk has to be unfiltered and 66,045 records long instead of ~10,000. &lt;strong&gt;31% of these servers were republished at least a day after first listing&lt;/strong&gt;, and for those, using the newest record understates true age by a median of 28 days, up to 279.&lt;/p&gt;
+
+&lt;p&gt;I ran it the naive way first, by accident. The effect came out &lt;strong&gt;stronger&lt;/strong&gt;: odds ratio 3.12 instead of 2.60.&lt;/p&gt;
+
+&lt;p&gt;That's not noise, and it's not a bug that made things look better. The naive method quietly merges two different things — "recently republished" and "young" — and the merged variable predicts death better than either. Which means the field worth queueing on probably isn't listing age at all:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time since last republication: OR 3.12, versus 2.60 for listing age.&lt;/strong&gt; Same stratification, same data. And it's the cheaper field, because it's the one the registry already updates in place — no min-across-versions, no 661-page walk.&lt;/p&gt;
+
+&lt;p&gt;Maintenance recency beats birthday. A listing nobody has touched in six months is a better bet for your queue than a listing that is merely old.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What this cost me
+&lt;/h2&gt;
+
+&lt;p&gt;Answering the question surfaced an error in the very table Valentin was quoting.&lt;/p&gt;
+
+&lt;p&gt;My hosting post had a row reading &lt;code&gt;trycloudflare tunnels | 115 | 85 | 74%&lt;/code&gt;. That row was matching hostnames loosely, and it had swept in 30 &lt;code&gt;*.mcp.cloudflare.com&lt;/code&gt; endpoints — Cloudflare's own official, permanent remote-MCP gateway, &lt;strong&gt;zero of them dead&lt;/strong&gt; — alongside 84 real quick tunnels, &lt;strong&gt;84 of which are dead&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The real number for quick tunnels is 100%, not 74%. A permanent service had been averaged into a bucket about ephemeral ones and diluted it.&lt;/p&gt;
+
+&lt;p&gt;The post even contradicted itself: a concentration list further down already said 84, and my own reply in that thread had already said 100%. The table was the thing nobody re-checked.&lt;/p&gt;
+
+&lt;p&gt;That's the second time this series has published a number broken by a loose hostname match. The first was in the other direction — one vendor's 97 gateway subpaths inflating a headline about two-fold, because I counted URLs where I should have counted operators. Same boundary, crossed twice, once inflating and once diluting.&lt;/p&gt;
+
+&lt;p&gt;The lesson I actually take from it isn't "be careful with hostnames." It's that &lt;strong&gt;unit-of-analysis is a checklist item on every metric, not a lesson you learn once per probe.&lt;/strong&gt; I had already written that down. It didn't transfer.&lt;/p&gt;
+
+&lt;p&gt;Both are corrected now, with the old numbers left visible.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Check it yourself
+&lt;/h2&gt;
+
+&lt;p&gt;Raw file and both scripts:&lt;br /&gt;
+&lt;a href="https://operatorsheets.github.io/state-of-mcp/data/AGE-VS-DEATH-20260805.json" rel="noopener noreferrer"&gt;AGE-VS-DEATH-20260805.json&lt;/a&gt; — per-platform buckets, both trend tests, both odds ratios. The walk script and analysis script are in the same directory.&lt;/p&gt;
+
+&lt;p&gt;The statistics are hand-rolled — no scipy on the machine that runs this — so the trend test and the Mantel-Haenszel are guarded by six known-answer cases: &lt;a href="https://operatorsheets.github.io/state-of-mcp/data/age_vs_death_selftest.py" rel="noopener noreferrer"&gt;age_vs_death_selftest.py&lt;/a&gt;. That includes the synthetic Simpson's case above, which is where the z=7.76 comes from. &lt;code&gt;python3 age_vs_death_selftest.py&lt;/code&gt; exits non-zero on any failure.&lt;/p&gt;
+
+&lt;p&gt;In the interest of not overselling that: those cases were run before the estimator touched real data, but they lived in a terminal session and were only committed today, after a pre-publication check caught this article claiming they were in the repo when they were not. A test you cannot re-run is not a test, and citing one publicly is worse than not having it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One limit I can't design away:&lt;/strong&gt; the census is 7/30 and the age walk is 8/05, so a URL that no longer appears in any current version record drops out of the join. That's 3 of 10,716. I pulled all three rather than guess: one was up on 7/30, one auth-gated, one an odd 200 — none of them dead on 7/30. I'll name all three rather than summarise, because summarising is what produced the error above:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;server-mcp.wearewarp.com/sse&lt;/code&gt; — a clean supersession. The listing is still active and now advertises a different address.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;abovo.replit.app/mcp&lt;/code&gt; — still an active listing, but its remote URL field is now empty. Not a move, not a deletion.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;hauntapi.com/mcp/server&lt;/code&gt; — &lt;strong&gt;gone.&lt;/strong&gt; A fresh registry search returns nothing, and the hostname no longer resolves in DNS. It was &lt;code&gt;up&lt;/code&gt; on 7/30. This one is a real deletion, and it is the case that undercuts the tidy version of this paragraph: the registry can and does drop entries, and this one was alive when I censused it and is dead now.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So one of the three is exactly the deletion I'd assumed didn't happen here. My first instinct was to write that this biases the result toward the null. The three actual cases don't support that, so I'm not claiming a direction.&lt;/p&gt;
+
+&lt;p&gt;I'd defend the direction of the effect. I wouldn't defend the second digit.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;em&gt;Everything above is measured from the &lt;a href="https://operatorsheets.github.io/state-of-mcp/" rel="noopener noreferrer"&gt;State of the MCP Registry&lt;/a&gt; data, which is published in full so the arithmetic can be re-walked by someone who doesn't trust it. There's also a free probe on that page if you want to see what a stranger sees when they hit your own server.&lt;/em&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:55:30 GMT</pubDate><guid>e225e80cd001ba4b5db9e4d56c7c410d</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Why Frontend Developers Should Care About Brand Identity Systems</title><link>https://dev.to/joemetry/why-frontend-developers-should-care-about-brand-identity-systems-h22</link><description>&lt;p&gt;We’ve all been there: you get a clean design mockup, fire up VS Code, and start writing components. But halfway through building the layout, you notice inconsistent spacing, random button variants, and color hex codes hardcoded all over the place. &lt;/p&gt;
+
+&lt;p&gt;As developers, we love systems—reusable components, clean state management, and modular architecture. So why do we treat brand assets like an afterthought?&lt;/p&gt;
+
+&lt;p&gt;When building &lt;strong&gt;Joemetry&lt;/strong&gt;, I realized that treating a brand identity like a design system completely changes how you write frontend code. &lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  1. Design Tokens = CSS Variables
+&lt;/h3&gt;
+
+&lt;p&gt;Instead of guessing padding values or scattering random colors across your stylesheets, defining strict design tokens early makes your CSS bulletproof:&lt;/p&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+css
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #3b82f6;
+  --spacing-unit: 1rem;
+}
+
+When your brand system has strict rules, your layout code writes itself.
+
+2. **Semantic Structure and SEO**
+Clean HTML structure isn't just about accessibility; it’s part of technical SEO optimization. When your markup respects hierarchy (&amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;), search crawlers understand your content contextually, bridging the gap between raw code and digital presence.
+
+3. **Consistency Wins**
+Whether you're pushing a single-page landing layout or an interactive portfolio, a unified visual system keeps your codebase lean and your UI predictable.
+
+How do you usually bridge the gap between design specs and your frontend code? Let’s chat in the comments!
+
+Building and exploring over at byjoemetry.com.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;</description><pubDate>Wed, 05 Aug 2026 22:37:50 GMT</pubDate><guid>ffa488d496480c29f36f4548bbdbda13</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Habr] Бенчмаркая Enumerable.Chunk: почему батчей меньше, а проход до ×2,7 дольше</title><link>https://habr.com/ru/articles/1067238/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/286/2b1/497/2862b149705962c261903f7abbf96404.png" /&gt;&lt;p&gt;&lt;code&gt;Chunk&lt;/code&gt; делит коллекцию на массивы — одна строка кода. Но есть размер чанка, после которого он замедляется в разы при тех же данных и той же памяти. А на массиве и на &lt;code&gt;List&amp;lt;int&amp;gt;&lt;/code&gt; внутри разный код, и в самой строке этого не видно.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067238/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067238#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 22:35:38 GMT</pubDate><guid>b71e8a9a728c6f6886addcbc32ae268b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[ArsTechnica] Thousands of servers can be backdoored by exploiting buggy motherboard controllers</title><link>https://arstechnica.com/security/2026/08/thousands-of-servers-can-be-backdoored-by-exploiting-buggy-motherboard-controllers/</link><description>Baseboard management controllers from the world's biggest manufacturers are a security mess.</description><pubDate>Wed, 05 Aug 2026 22:35:20 GMT</pubDate><guid>334d336fa53eb4b68f9e752e03883f9e</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Dev.to] 🚀 Cron vs Systemd Timers vs daemontools — Understanding the Evolution of Linux Job Scheduling &amp; Service Management</title><link>https://dev.to/deekay99/cron-vs-systemd-timers-vs-daemontools-understanding-the-evolution-of-linux-job-scheduling--31mm</link><description>&lt;p&gt;While diving deeper into Linux internals and modern SRE practices, I came across a question that many Linux engineers eventually ask:&lt;/p&gt;
+
+&lt;p&gt;Is cron obsolete now that systemd timers exist? And where does daemontools fit into all of this?&lt;/p&gt;
+
+&lt;p&gt;The answer is: they solve related—but not identical—problems.&lt;/p&gt;
+
+&lt;p&gt;A quick comparison&lt;/p&gt;
+
+&lt;p&gt;Tool    Primary Purpose&lt;br /&gt;
+🕰️ cron    Schedule commands or scripts at specific times&lt;br /&gt;
+⏱️ systemd timer    Schedule execution of systemd services&lt;br /&gt;
+🔄 daemontools    Supervise long-running services (daemons) and automatically restart them if they fail&lt;/p&gt;
+
+&lt;p&gt;One realization that helped me was thinking about the questions each tool answers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;cron: “When should I run this script?”&lt;/li&gt;
+&lt;li&gt;systemd timer: “When should I start this service?”&lt;/li&gt;
+&lt;li&gt;daemontools: “How do I keep this service running continuously?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cron vs Systemd Timers&lt;/p&gt;
+
+&lt;p&gt;Both can schedule recurring work, but systemd timers bring several capabilities that are particularly valuable in production environments.&lt;/p&gt;
+
+&lt;p&gt;Cron    Systemd Timer&lt;br /&gt;
+Runs commands directly  Triggers a systemd service&lt;br /&gt;
+Simple scheduling   Scheduling + service management&lt;br /&gt;
+Limited logging Rich logs via journalctl&lt;br /&gt;
+Misses jobs if the server is powered off    Can catch up using Persistent=true&lt;br /&gt;
+No dependency awareness Can wait for networking, databases, or other services&lt;br /&gt;
+Limited security controls   Supports sandboxing, resource limits, and privilege restrictions&lt;/p&gt;
+
+&lt;p&gt;Imagine scheduling a nightly database backup.&lt;/p&gt;
+
+&lt;p&gt;With cron, if the server is powered off at the scheduled time, the backup is simply missed.&lt;/p&gt;
+
+&lt;p&gt;With a systemd timer configured with:&lt;/p&gt;
+
+&lt;p&gt;Persistent=true&lt;/p&gt;
+
+&lt;p&gt;the missed backup is executed automatically after the system boots.&lt;/p&gt;
+
+&lt;p&gt;That small feature can make a big difference in production.&lt;/p&gt;
+
+&lt;p&gt;Where daemontools fits&lt;/p&gt;
+
+&lt;p&gt;Earlier in my career, I also had the opportunity to work with daemontools by DJ Bernstein.&lt;/p&gt;
+
+&lt;p&gt;It reminded me that before systemd became the standard on most Linux distributions, engineers often combined multiple tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;cron → scheduling&lt;/li&gt;
+&lt;li&gt;daemontools → service supervision&lt;/li&gt;
+&lt;li&gt;syslog → logging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Today, systemd integrates many of these capabilities into a single framework:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Services&lt;/li&gt;
+&lt;li&gt;Timers&lt;/li&gt;
+&lt;li&gt;Logging (journald)&lt;/li&gt;
+&lt;li&gt;Automatic restarts&lt;/li&gt;
+&lt;li&gt;Dependency management&lt;/li&gt;
+&lt;li&gt;Resource limits&lt;/li&gt;
+&lt;li&gt;Security hardening&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That doesn’t mean daemontools is obsolete—it still has value in legacy systems, lightweight environments, and certain embedded Linux deployments—but for modern Ubuntu, RHEL, and Debian servers, systemd has become the de facto standard.&lt;/p&gt;
+
+&lt;p&gt;My takeaway&lt;/p&gt;
+
+&lt;p&gt;As someone continuing to learn Linux, databases, Kubernetes, and SRE practices, one lesson stands out:&lt;/p&gt;
+
+&lt;p&gt;Understanding why these tools were created is just as important as learning how to use them.&lt;/p&gt;
+
+&lt;p&gt;Each represents a different stage in the evolution of Linux operations:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;cron
+   │
+   ▼
+daemontools &lt;span class="o"&gt;(&lt;/span&gt;service supervision&lt;span class="o"&gt;)&lt;/span&gt;
+   │
+   ▼
+systemd
+ ├── Services
+ ├── Timers
+ ├── Logging
+ ├── Security
+ ├── Resource Limits
+ └── Dependency Management
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;For my own work going forward:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✅ I’ll still use cron for quick, lightweight scheduled tasks.&lt;/li&gt;
+&lt;li&gt;✅ I’ll use systemd timers for production automation such as backups, maintenance jobs, and infrastructure operations.&lt;/li&gt;
+&lt;li&gt;✅ And I’ll continue to appreciate daemontools as an elegant piece of Linux history that influenced how reliable service supervision evolved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning the evolution of technology often explains why modern tools look the way they do—and that’s one of the most rewarding parts of the journey.&lt;/p&gt;
+
+&lt;p&gt;What does your team primarily use today?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cron?&lt;/li&gt;
+&lt;li&gt;Systemd Timers?&lt;/li&gt;
+&lt;li&gt;Kubernetes CronJobs?&lt;/li&gt;
+&lt;li&gt;Another scheduler or service supervisor?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’d love to hear your experiences and what has worked well in your environments.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:29:21 GMT</pubDate><guid>f33f7eaee0b1dd23440275ae6ca5720f</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Ahrefs MCP Server: Setup for Claude, Codex and the Rest</title><link>https://dev.to/studiomeyer_io/ahrefs-mcp-server-setup-for-claude-codex-and-the-rest-l46</link><description>&lt;p&gt;The first thing that will happen when you connect Ahrefs to an AI client is that nothing happens. No error, no tools, just a server that sits there looking connected. In my case the cause was mundane: Ahrefs ships two different MCP servers and two different kinds of API key, and only one of the four possible pairings is the one you want today. Nobody tells you which one you picked.&lt;/p&gt;
+
+&lt;p&gt;That is the short version of why this guide exists. The longer version is that I spent a subscription cycle running about 1,100 logged calls through this thing, and most of what cost me time was not the SEO analysis. It was the plumbing.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What You Are Actually Connecting To
+&lt;/h2&gt;
+
+&lt;p&gt;Ahrefs runs a hosted MCP server at &lt;code&gt;https://api.ahrefs.com/mcp/mcp&lt;/code&gt;. It speaks Streamable HTTP, which is the current transport in the Model Context Protocol spec and the one every serious client supports. SSE is deprecated and you should not build anything new on it.&lt;/p&gt;
+
+&lt;p&gt;Behind that endpoint sits most of what you would otherwise click through in the Ahrefs web app: Site Explorer for backlinks and organic keywords, Keywords Explorer for volume and difficulty, Rank Tracker, Site Audit, and the Google Search Console integration if you have connected an account. In my instance that came out to 130 callable tools, which is more than the marketing pages claim, because the server has been growing.&lt;/p&gt;
+
+&lt;p&gt;Two things about it are worth knowing before you wire anything up. Access starts at the Lite plan, so a free trial account will not get you in. And every billable call draws from the same monthly API unit budget as regular API v3 usage, which means your chat assistant and your cron jobs are eating from one plate. Billing splits three ways: a good number of endpoints cost nothing, some charge a flat rate per request, and the rest charge per row. The last section is about telling them apart.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Two Servers, Two Key Types, One Silent Failure
+&lt;/h2&gt;
+
+&lt;p&gt;This is the part that wasted my first evening.&lt;/p&gt;
+
+&lt;p&gt;There is an older local server, published as &lt;code&gt;@ahrefs/mcp&lt;/code&gt; on npm and hosted at &lt;code&gt;ahrefs/ahrefs-mcp-server&lt;/code&gt; on GitHub. That repository is now archived, and its README carries a sentence worth reading twice: it works with API v3 keys only, and it does not work with MCP keys.&lt;/p&gt;
+
+&lt;p&gt;The hosted remote server is the opposite. It wants a key with MCP scope, which you generate separately in your Ahrefs account. Ahrefs states plainly that API keys and MCP keys are not interchangeable.&lt;/p&gt;
+
+&lt;p&gt;So the matrix looks like this. Two cells work, but only one of them is a sensible choice today:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;API v3 key&lt;/th&gt;
+&lt;th&gt;MCP-scoped key&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Local &lt;code&gt;@ahrefs/mcp&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;worked, repo now archived&lt;/td&gt;
+&lt;td&gt;fails&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Remote &lt;code&gt;/mcp/mcp&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;fails&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;correct&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The archived combination is not broken so much as abandoned. It still runs if you already have it, but it receives no maintenance and Ahrefs points at the remote server instead.&lt;/p&gt;
+
+&lt;p&gt;The failure modes are quiet. An MCP-scoped key pointed at the REST API returns &lt;code&gt;Unauthorized&lt;/code&gt;, which at least tells you something. A client that cannot complete the handshake often just shows the server with zero tools, and you go looking for a config typo that is not there.&lt;/p&gt;
+
+&lt;p&gt;If you are setting up today, use the remote server and generate an MCP-scoped key. Ignore every tutorial that has you npm-installing anything.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Authentication: OAuth Is the Official Path, Bearer Is the Useful One
+&lt;/h2&gt;
+
+&lt;p&gt;Ahrefs documents OAuth as the way in. Your client opens a browser window, you sign in, it caches the credentials. For interactive work that is fine and it is genuinely the least fiddly option.&lt;/p&gt;
+
+&lt;p&gt;It gets awkward the moment you want a scheduled job to pull data at seven on a Sunday morning. OAuth needs a human at a browser for the initial authorisation, and after that you are maintaining a token refresh that has to keep working unattended. So for anything headless I authenticate with a bearer token instead, and pass the MCP key directly in the &lt;code&gt;Authorization&lt;/code&gt; header. Same endpoint, same tools, no browser, nothing to refresh.&lt;/p&gt;
+
+&lt;p&gt;The practical rule I settled on: bearer for anything that has to survive without me, OAuth for a laptop I am sitting in front of. If you only ever use this in chat, take the OAuth prompt and skip the next few sections.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Claude Code
+&lt;/h2&gt;
+
+&lt;p&gt;One command, and the scope flag decides whether the server lives in this project or in your user config.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;claude mcp add &lt;span class="nt"&gt;--transport&lt;/span&gt; http ahrefs https://api.ahrefs.com/mcp/mcp &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--header&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="nt"&gt;-s&lt;/span&gt; project
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Project scope writes into a &lt;code&gt;.mcp.json&lt;/code&gt; next to your code, which is the right choice when the key belongs to one client or one site. Put that file in &lt;code&gt;.gitignore&lt;/code&gt; before you paste a key into it, because the header sits there in plain text.&lt;/p&gt;
+
+&lt;p&gt;Two things that cost me time here. The tools appear as &lt;code&gt;mcp__ahrefs__&amp;lt;toolname&amp;gt;&lt;/code&gt;, not as &lt;code&gt;ahrefs.&amp;lt;toolname&amp;gt;&lt;/code&gt;, which matters when you are writing prompts that name a tool explicitly. And a running session loads its MCP servers at startup only, so the connection you just added shows up in the next session, not this one. I restarted three times convinced the config was wrong.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Claude Desktop
+&lt;/h2&gt;
+
+&lt;p&gt;No config file needed. Settings, then Connectors, then Add custom connector, then paste the endpoint URL. OAuth client ID and secret go under Advanced settings if your server needs them.&lt;/p&gt;
+
+&lt;p&gt;There is one architectural detail here that surprises people and that changes what you can connect. Claude Desktop does not reach your MCP server from your machine. It reaches it from Anthropic's cloud infrastructure. For a hosted service like Ahrefs that makes no difference at all. For a server running on your own laptop or behind a company VPN it makes all the difference, because that server has to be reachable from the public internet before it will ever work.&lt;/p&gt;
+
+&lt;p&gt;Free accounts are capped at one custom connector. Paid tiers are not.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Codex
+&lt;/h2&gt;
+
+&lt;p&gt;Codex reads &lt;code&gt;~/.codex/config.toml&lt;/code&gt; globally, or a &lt;code&gt;.codex/config.toml&lt;/code&gt; in a project directory you have marked as trusted. One TOML table per server, and the transport is inferred from which keys you set: a &lt;code&gt;command&lt;/code&gt; key means stdio, a &lt;code&gt;url&lt;/code&gt; key means Streamable HTTP.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight toml"&gt;&lt;code&gt;&lt;span class="nn"&gt;[mcp_servers.ahrefs]&lt;/span&gt;
+&lt;span class="py"&gt;url&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"https://api.ahrefs.com/mcp/mcp"&lt;/span&gt;
+&lt;span class="py"&gt;bearer_token_env_var&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"AHREFS_API_KEY"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Note what &lt;code&gt;bearer_token_env_var&lt;/code&gt; takes. It is the name of an environment variable, not the token itself. Writing your key there directly gives you a config file full of secret and a server full of nothing.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;codex mcp add&lt;/code&gt; subcommand exists, but it is shaped around stdio servers, so for a remote endpoint editing the TOML is both faster and easier to put in version control. Verify with &lt;code&gt;codex mcp list&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Cursor, VS Code and Windsurf
+&lt;/h2&gt;
+
+&lt;p&gt;All three speak the same JSON dialect with one annoying difference: the key that holds the URL. Cursor calls it &lt;code&gt;url&lt;/code&gt;. VS Code wants &lt;code&gt;url&lt;/code&gt; alongside an explicit &lt;code&gt;"type": "http"&lt;/code&gt;, the same shape Claude Code uses. Windsurf calls it &lt;code&gt;serverUrl&lt;/code&gt;. Everything else about the block copies across unchanged, which means a config that works in one editor is thirty seconds of renaming away from working in the next.&lt;/p&gt;
+
+&lt;p&gt;VS Code has had native MCP support since 1.99, surfaced through Copilot Chat. Windsurf added it early this year. If your team is split across editors, write the block once and keep the three variants in a snippet somewhere, because you will need them again.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Headless, Without Any Client at All
+&lt;/h2&gt;
+
+&lt;p&gt;MCP is a session protocol, not a plain REST call. You initialize, you send an initialized notification, and only then can you call a tool. Every request after the handshake carries the session id you got back.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;curl &lt;span class="nt"&gt;-sD&lt;/span&gt; hdr &lt;span class="nt"&gt;-X&lt;/span&gt; POST &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_MCP_URL&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Content-Type: application/json"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Accept: application/json, text/event-stream"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'{"jsonrpc":"2.0","id":1,"method":"initialize","params":{
+       "protocolVersion":"2025-06-18","capabilities":{},
+       "clientInfo":{"name":"sm","version":"1"}}}'&lt;/span&gt;
+
+&lt;span class="nv"&gt;SID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;grep&lt;/span&gt; &lt;span class="nt"&gt;-i&lt;/span&gt; &lt;span class="s1"&gt;'^mcp-session-id:'&lt;/span&gt; hdr | &lt;span class="nb"&gt;awk&lt;/span&gt; &lt;span class="s1"&gt;'{print $2}'&lt;/span&gt; | &lt;span class="nb"&gt;tr&lt;/span&gt; &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'\r'&lt;/span&gt;&lt;span class="si"&gt;)&lt;/span&gt;
+
+curl &lt;span class="nt"&gt;-s&lt;/span&gt; &lt;span class="nt"&gt;-X&lt;/span&gt; POST &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_MCP_URL&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Content-Type: application/json"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Accept: application/json, text/event-stream"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"MCP-Protocol-Version: 2025-06-18"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"mcp-session-id: &lt;/span&gt;&lt;span class="nv"&gt;$SID&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'{"jsonrpc":"2.0","method":"notifications/initialized"}'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Three things in there are easy to get wrong. Do not skip the second call: the session id alone does not finish the handshake, and a server that never received the initialized notification will refuse tool calls. The &lt;code&gt;Accept&lt;/code&gt; header needs both content types even if you never intend to read a stream. And from the 2025-06-18 revision onward, every request after initialization must carry the &lt;code&gt;MCP-Protocol-Version&lt;/code&gt; header, so it belongs on the notification and on every tool call that follows, alongside &lt;code&gt;mcp-session-id&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wrapping this in a small shell helper is worth the twenty minutes, because it makes the same data available to cron jobs and agents that have no chat interface at all. One warning from experience: if you build that helper with a bash default like &lt;code&gt;${ARG:-{}}&lt;/code&gt; for the JSON argument, brace matching inside the default value will silently append a stray closing brace and produce malformed JSON. The call then fails with no output and no error. Default the variable on a separate line.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Your Plan Decides Your Row Cap, and That Is the Expensive Part
+&lt;/h2&gt;
+
+&lt;p&gt;This is the section I wish I had read first, because it explains a mistake that cost me a full month of budget in a single morning.&lt;/p&gt;
+
+&lt;p&gt;Ahrefs gates two things by subscription tier: how many units you get per month, and how many rows a single request may return.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Plan&lt;/th&gt;
+&lt;th&gt;Units per month&lt;/th&gt;
+&lt;th&gt;Max rows per request&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lite&lt;/td&gt;
+&lt;td&gt;100,000&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Standard&lt;/td&gt;
+&lt;td&gt;400,000&lt;/td&gt;
+&lt;td&gt;250&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Advanced&lt;/td&gt;
+&lt;td&gt;1,000,000&lt;/td&gt;
+&lt;td&gt;500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enterprise&lt;/td&gt;
+&lt;td&gt;2,000,000&lt;/td&gt;
+&lt;td&gt;unlimited&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Those numbers changed on 28 April 2026, and they changed a lot. Lite went from 25,000 units to 100,000 and from 10 rows to 100. Standard went from 150,000 to 400,000 units and from 25 rows to 250. Advanced doubled its units and went from 100 rows to 500.&lt;/p&gt;
+
+&lt;p&gt;Now hold that next to how the pricing works. A call costs a minimum of 50 units, and beyond that you pay per row, multiplied by how many columns you asked for. Premium columns like &lt;code&gt;volume&lt;/code&gt;, &lt;code&gt;keyword_difficulty&lt;/code&gt; and &lt;code&gt;traffic_domain&lt;/code&gt; add roughly ten units per row each.&lt;/p&gt;
+
+&lt;p&gt;Put those two facts together and you get the trap. The most expensive call in my entire log ran with a limit of 250 rows. That is not a number I chose after thinking about it. It is exactly the row cap of the plan I was on, and I reached for it because it was the maximum available. Each of those calls cost 5,250 units. The same query at 50 rows would have cost 1,050 and told me the same thing, because rows 51 through 250 were long-tail noise I never used.&lt;/p&gt;
+
+&lt;p&gt;The row cap is not a recommendation. It is a ceiling, and since April it is a ceiling that sits up to ten times higher than it used to. That change is harmless if your code passes an explicit limit, because 50 still means 50. It bites in three specific cases: when you pass no limit at all, when your code asks for whatever the maximum currently is, and when a query used to be clipped by the old cap and now returns the full ten times more rows. All three are common in scripts written before spring, and none of them look different in the code.&lt;/p&gt;
+
+&lt;p&gt;Set the limit from what you will actually read. For keyword expansion I now start at 50 and go higher only when a result visibly clipped at the boundary and the extra rows matter.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Ten Traps That Each Cost Me a Run
+&lt;/h2&gt;
+
+&lt;p&gt;None of these are in the documentation in a way you would find before you hit them. All of them produced either an error I had to decode or, worse, an empty result that looked like a finding.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;where&lt;/code&gt; is JSON, never a string expression.&lt;/strong&gt; Writing &lt;code&gt;"position&amp;gt;3 and position&amp;lt;15"&lt;/code&gt; returns &lt;code&gt;bad where: invalid JSON syntax&lt;/code&gt;. The same filter as JSON needs one clause per condition:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;"and"&lt;/span&gt;&lt;span class="p"&gt;:[{&lt;/span&gt;&lt;span class="nl"&gt;"field"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;"position"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nl"&gt;"is"&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="s2"&gt;"gt"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]},&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;"field"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;"position"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nl"&gt;"is"&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="s2"&gt;"lt"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;]}]}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Operators are &lt;code&gt;gt&lt;/code&gt;, &lt;code&gt;gte&lt;/code&gt;, &lt;code&gt;lt&lt;/code&gt;, &lt;code&gt;lte&lt;/code&gt;, &lt;code&gt;eq&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;select&lt;/code&gt; changes type between tools.&lt;/strong&gt; Site Explorer and Keywords Explorer want a comma-separated string. &lt;code&gt;batch-analysis&lt;/code&gt; wants an array. Mixing them up gives you &lt;code&gt;column '["domain"' not found&lt;/code&gt; in one direction and &lt;code&gt;expected array but got string&lt;/code&gt; in the other.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do not transliterate umlauts.&lt;/strong&gt; Keyword matching is literal. A German term written with &lt;code&gt;ue&lt;/code&gt; instead of &lt;code&gt;ü&lt;/code&gt; returns zero rows and looks like a dead keyword. The same applies to Spanish tildes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The country filter can silently delete the truth.&lt;/strong&gt; Filtering organic keywords by country returned zero rows for a domain that demonstrably ranks, because its rankings sat in other countries. I paid 50 units for an empty answer and nearly concluded the domain ranked for nothing. Pull without the filter and take &lt;code&gt;keyword_country&lt;/code&gt; as a column instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use &lt;code&gt;mode: "subdomains"&lt;/code&gt; by default.&lt;/strong&gt; For any site where the apex redirects to www, &lt;code&gt;mode: "domain"&lt;/code&gt; measures the exact host and returns phantom zeros. I have seen a domain report a few hundred backlinks and no traffic in domain mode against twenty-two thousand backlinks in subdomains mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;volume-history&lt;/code&gt; takes &lt;code&gt;keyword&lt;/code&gt;, singular.&lt;/strong&gt; Passing &lt;code&gt;keywords&lt;/code&gt; fails with &lt;code&gt;required arguments [keyword] are missing&lt;/code&gt;. Twenty-six calls in one batch, all rejected, all for one letter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Today is not a valid &lt;code&gt;date_to&lt;/code&gt;.&lt;/strong&gt; Even the aggregate endpoints reject the current date with &lt;code&gt;bad date_to&lt;/code&gt;. Use yesterday.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Never look up a Site Audit issue by name.&lt;/strong&gt; Issue names are not unique. I found the same name attached to two different issue ids, one of which was permanently empty. Take the id from your own issues response rather than matching on text.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Empty Search Console detail tables do not mean a broken connection.&lt;/strong&gt; The detail endpoints materialise with roughly six weeks of lag, so a query for the last 30 days comes back empty while the aggregates are current to yesterday. I have watched two people conclude their GSC integration was dead when it was working perfectly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Treat &lt;code&gt;org_traffic&lt;/code&gt; as a model, not a measurement.&lt;/strong&gt; It is estimated from keywords in the Ahrefs index multiplied by a click curve, so anything the index does not carry simply does not exist in that figure. On the niche sites I compared it against real Search Console data it came out far too low, in one case by a factor I would not have believed without both numbers side by side. On your own domains, Search Console is the truth. On competitor domains, label it as a floor rather than a number.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Run the Free Surfaces Before You Spend Anything
+&lt;/h2&gt;
+
+&lt;p&gt;The single best habit I picked up: everything connected to a verified project of your own is either free or nearly free, and most people never touch it.&lt;/p&gt;
+
+&lt;p&gt;Across my log, the Search Console endpoints, the management endpoints and the free domain rating lookup together cost zero units and returned just under 6,000 rows. There is exactly one exception to that rule and it is a trap: &lt;code&gt;gsc-anonymous-queries&lt;/code&gt; carries the same &lt;code&gt;gsc-&lt;/code&gt; prefix but bills from 50 units per call, and on a small site it returns almost nothing. &lt;code&gt;site-audit-page-explorer&lt;/code&gt; costs a flat 50 units per request regardless of how many rows come back, which worked out to about a third of a unit per row across nearly 10,000 rows, with twenty-plus technical fields per URL. Rank tracker and subscription info are free as well.&lt;/p&gt;
+
+&lt;p&gt;Then there is the other side of the ledger. Three tools, all of them row-priced keyword and backlink pulls, accounted for 78 percent of everything I spent. The cheap and free surfaces returned about 18,000 rows for 3,400 units. The three expensive ones returned 30,000 rows for 592,000. That is a factor of about a hundred in value for the same budget.&lt;/p&gt;
+
+&lt;p&gt;So the order is: check your remaining units, exhaust the free project surfaces, drill with the flat-rate audit tools, and only then reach for the row-priced ones with a limit you chose deliberately.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What I Would Tell Someone Starting Tomorrow
+&lt;/h2&gt;
+
+&lt;p&gt;Generate an MCP-scoped key, point your client at the remote endpoint, and do not install anything. Use OAuth if you work in chat, bearer if anything of yours runs on a schedule. Before your first real query, open the subscription info tool and read your row cap out of your plan rather than assuming it.&lt;/p&gt;
+
+&lt;p&gt;Then write your own numbers down. The costs in this article are what I measured on one plan across 1,102 calls, and the pricing model moved noticeably in April. Every response carries its actual cost inline, which means the tool tells you what it charged if you bother to look. Two days of logging that field taught me more about where the money goes than any amount of reading the documentation did.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href="https://studiomeyer.io/en/blog/ahrefs-mcp-server-setup" rel="noopener noreferrer"&gt;studiomeyer.io&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:28:46 GMT</pubDate><guid>64141822e372bf89150f2c325fb489dc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Lobsters] Symbolics OpenGenera to go free for non-commercial use</title><link>https://hachyderm.io/@gmpalter/117044268951603975</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/8cxvb2/symbolics_opengenera_go_free_for_non"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:23:42 GMT</pubDate><guid>f52f0d3b977abfccabbe738404ce7f9c</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[The Verge] X product chief Nikita Bier is leaving after one year</title><link>https://www.theverge.com/tech/975955/x-twitter-nikita-bier-leaving</link><description>X head of product Nikita Bier is stepping down and says he will move into a role as an advisor, writing that "it's time to pass the torch and demote myself to my natural state: a poster." He shared the update just over a month after celebrating his one-year anniversary on the job, and just [&amp;#8230;]</description><pubDate>Wed, 05 Aug 2026 22:19:55 GMT</pubDate><guid>9956a069b7e375f4b1e6ed8d7b03aff9</guid><source url="https://www.theverge.com/rss/index.xml">The Verge</source></item><item><title>[Phoronix] Mesa 26.2 Released With NVK Mesh Shader Support, Many Other Vulkan Improvements</title><link>https://www.phoronix.com/news/Mesa-26.2-Released</link><description>Mesa 26.2 stable is now available as the newest quarterly feature release for this set of open-source OpenGL and Vulkan drivers typically used on Linux systems...</description><pubDate>Wed, 05 Aug 2026 22:13:57 GMT</pubDate><guid>afd1fc796d250bac6f22c455c4f3f307</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Lobsters] AI models shock UK testers by using fake identities to try to trick developers</title><link>https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/tmpokv/ai_models_shock_uk_testers_by_using_fake"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:02:11 GMT</pubDate><guid>7a9cd32c8b5869f887c3483f8eb1f32d</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[TechCrunch] Nikita Bier steps down as X’s head of product</title><link>https://techcrunch.com/2026/08/05/nikita-bier-steps-down-as-xs-head-of-product/</link><description>The serial entrepreneur is stepping down a little over a year after taking the "24/7 job" of overseeing X.</description><pubDate>Wed, 05 Aug 2026 21:30:50 GMT</pubDate><guid>5ad72d3cf78b53cc153bb80919e2e5dc</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Hacker News] The title cards in Blade Runner are amazing</title><link>https://randsinrepose.com/archives/blade-runner-title-cards/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189287"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:29:23 GMT</pubDate><guid>4979b470afa03b2a34a62d839c54decc</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Phoronix] USB4STREAM Adding Busy Poll Option For Lower Latency At The Cost Of Increased CPU Cycles</title><link>https://www.phoronix.com/news/USB4STREAM-Lower-Latency</link><description>One of the nifty new features of Linux 7.2 is USB4STREAM as an Intel-developed solution for quickly sending data between USB4 connected systems. Now for the upcoming Linux 7.3 cycle, a busy poll mode is being added to provide lower-latency data transfers at the expense of increased CPU activity...</description><pubDate>Wed, 05 Aug 2026 21:27:47 GMT</pubDate><guid>175b984f0ff3bc53091e7c4f6a799e1e</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[TechCrunch] Travis Kalanick’s robotics startup Atoms taps former Uber finance chief as CFO</title><link>https://techcrunch.com/2026/08/05/travis-kalanicks-robotics-startup-atoms-taps-former-uber-finance-chief-as-cfo/</link><description>Kalanick continues to get the band back together, after acquiring Anthony Levandowski's autonomy startup, and even soliciting investment from Uber.</description><pubDate>Wed, 05 Aug 2026 21:26:40 GMT</pubDate><guid>f873a748a47293ec2e1ae237807c784e</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Hacker News] NVIDIA’s Vera Whitepaper Has a Thread Loose</title><link>https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189234"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:24:45 GMT</pubDate><guid>ef5bc04a96b8fc7f2845050ba076f09b</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[TechCrunch] Meta launches Muse Code, an AI agent for large code bases</title><link>https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/</link><description>Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.</description><pubDate>Wed, 05 Aug 2026 21:21:28 GMT</pubDate><guid>f4b59bdfc21bfca7febe9386b880e4b0</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Habr] Как я починил энергосбережение OnePlus 3T на mainline ядре</title><link>https://habr.com/ru/articles/1067224/</link><description>&lt;p&gt;&lt;a href="https://habr.com/ru/articles/1054142/" rel="noopener noreferrer nofollow"&gt;Первая часть&lt;/a&gt; закончилась тем, что телефон заработал, и какое-то время этим всё и ограничивалось. postmarketOS на mainline-ядре, сверху Docker, Tailscale и один небольшой сервис, которому от меня ничего не требовалось. Я убрал телефон на полку и перестал о нём думать — ровно этого я от него и хотел.&lt;/p&gt;&lt;p&gt;Сервис работал. Заодно выяснилось, что процессор всё это время держался на 70 °C. Не под нагрузкой, а в покое, днём и ночью, на устройстве без вентилятора и без радиатора, где тепло уходит только через собственный алюминиевый корпус.&lt;/p&gt;&lt;p&gt;Вопрос, который стоило задать сразу: чем он занят, что даёт такую температуру. Дальше — ответ на него.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067224/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067224#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:17:54 GMT</pubDate><guid>64e50c3bb7b162d22705e9941e149b4d</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] Prime Agent: A self-improving RLM agent</title><link>https://www.primeintellect.ai/blog/prime-agent</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189075"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:11:57 GMT</pubDate><guid>42b062770a48a1e42044492cd6f191eb</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[TechCrunch] Trump’s DOJ gains oversight of OpenAI’s green-card employee sponsorships</title><link>https://techcrunch.com/2026/08/05/trumps-doj-gains-oversight-of-openais-green-card-employee-sponsorships/</link><description>The DOJ alleged that OpenAI did not meaningful attempt to hire U.S. citizens before seeking permanent residence for Visa-holding employees.</description><pubDate>Wed, 05 Aug 2026 21:05:37 GMT</pubDate><guid>8d0ab0b2cc81b7c2d1fc60ff34e92d87</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Schwartz confirmed as CDC director after bungling confirmation hearing</title><link>https://arstechnica.com/health/2026/08/schwartz-confirmed-as-cdc-director-after-bungling-confirmation-hearing/</link><description>Schwartz is well-qualified for the role, but crashed and burned in Senate hearing.</description><pubDate>Wed, 05 Aug 2026 21:03:18 GMT</pubDate><guid>672bb731116b04b8db56d288b30e04d6</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[TechCrunch] Moove raises $250M to become the backbone of the robotaxi industry</title><link>https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/</link><description>Moove is scaling up the autonomous vehicle fleet management side of its business and plans to someday own, not just manage, Waymo robotaxis.</description><pubDate>Wed, 05 Aug 2026 20:50:45 GMT</pubDate><guid>414f7a43ecb9335a4fdb3112511b5b9a</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[TechCrunch] How Lightspeed found its newest hire … via Instagram DM</title><link>https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/</link><description>Lightspeed partners Josh Machiz and Claire Zau stopped by the Equity studio to talk about the strategies behind their growing social media presence and their podcast, Lightwork.</description><pubDate>Wed, 05 Aug 2026 20:48:56 GMT</pubDate><guid>de0b65bd1b3a9b579f4399323ae33afd</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[TechCrunch] Why Lightspeed is going all-in on creator-led venture capital</title><link>https://techcrunch.com/video/why-lightspeed-is-going-all-in-on-creator-led-venture-capital/</link><description>Venture firms are turning to creators to build trust with the next generation of founders before a check is ever written.&amp;#160;It&amp;#8217;s&amp;#160;a trend&amp;#160;that&amp;#8217;s&amp;#160;been building with&amp;#160;a16z&amp;#8217;s acquisition&amp;#160;of Erik Torenberg’s Turpentine podcast and&amp;#160;OpenAI&amp;#8217;s acquisition&amp;#160;of TBPN.&amp;#160;Lightspeed Venture Partners&amp;#160;just made its own notable hire in that vein, bringing on&amp;#160;Claire Zau, a seed investor with a major following on Instagram and [&amp;#8230;]</description><pubDate>Wed, 05 Aug 2026 20:48:54 GMT</pubDate><guid>7f74154b5765a1847eacaaaa9d568939</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Anthropic’s AI used fake identities, malware in rogue attack on GitHub project</title><link>https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/</link><description>Anthropic and OpenAI models’ unprompted actions forced halt to UK cyber tests.</description><pubDate>Wed, 05 Aug 2026 20:47:11 GMT</pubDate><guid>2d08e589a5852a97e9a557b73e897c44</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Lobsters] A Vision for Cargo</title><link>https://epage.github.io/blog/2026/08/cargo-vision/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/mgr9lc/vision_for_cargo"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 20:45:57 GMT</pubDate><guid>7ea46b6d47ead94de5e1d0efda348303</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] Детектор не приступов, а тряски. Приложение для часов Garmin</title><link>https://habr.com/ru/articles/1067220/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/20a/b53/f31/20ab53f314353a56f46ebfce4193548a.png" /&gt;&lt;p&gt;Приложение называлось SeizureDetector — «детектор приступа». Под таким именем Connect IQ Store публиковать его отказался. Слишком много ответственности. И правильно сделал. Так что теперь это ShakeDetector, детектор тряски. Никогда не думал, что столкнусь с этой темой.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067220/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067220#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 20:29:03 GMT</pubDate><guid>7f40dccc8dfb1452008149e960025c3c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Lobsters] I Built a Blog and Forgot to Write</title><link>https://benjcal.space/blog/i-built-a-blog-and-forgot-to-write/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/qamm7j/i_built_blog_forgot_write"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 20:07:39 GMT</pubDate><guid>f1e066b799c84d07620bf4bb7b7fbdcf</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] 3. Bonsai-27B на рекурсивном форке llama.cpp: полный запуск и реальный бенчмарк на RTX 3050</title><link>https://habr.com/ru/articles/1067216/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/a16/23c/334/a1623c334d33ac463e76f5b88a337ff2.jpg" /&gt;&lt;p&gt;В этой статье я расскажу, как запустить Bonsai-27B на обычной видеокарте и как мой форк llama.cpp делает модель умнее прямо на инференсе. Показываю реальный тест: на одной и той же задаче базовая модель зависла и не смогла решить, а рекуррентная довела до ответа. Объясняю, что происходит внутри, сколько это стоит по скорости, и даю команды, чтобы повторить всё у себя на железе.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067216/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067216#habracut"&gt;Ну давай посомтрим&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 20:05:38 GMT</pubDate><guid>5a31cfe654b951c45475db1bba2180c4</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[TechCrunch] Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders</title><link>https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/</link><description>The serial entrepreneur joins the e-commerce company as CPO to lead its AI agents.</description><pubDate>Wed, 05 Aug 2026 20:05:00 GMT</pubDate><guid>1619858f8bfb01bab62dc84faf12078c</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Reddit signals ominous upcoming "changes” for old.reddit.com</title><link>https://arstechnica.com/gadgets/2026/08/reddit-signals-ominous-upcoming-changes-for-old-reddit-com/</link><description>Reddit says the beloved site is used for some "bad behavior."</description><pubDate>Wed, 05 Aug 2026 20:01:32 GMT</pubDate><guid>8d97d517ecf77da3c7463225e8da5724</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Lobsters] Proxmox officially supports Arm, with some caveats</title><link>https://www.jeffgeerling.com/blog/2026/proxmox-ve-arm-official/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/wblbfk/proxmox_officially_supports_arm_with"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 19:54:59 GMT</pubDate><guid>8b0f206e25135d5ce3d75ba8c0cbce4d</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[ArsTechnica] Hank Green found the AI problem that YouTube labels can’t catch</title><link>https://arstechnica.com/ai/2026/08/hank-green-found-the-ai-problem-that-youtube-labels-cant-catch/</link><description>"Slop" isn't the only problem.</description><pubDate>Wed, 05 Aug 2026 19:51:40 GMT</pubDate><guid>89dc1c4799e71c11f3b51c68e46c543e</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Hacker News] I'm switching my phone from Android to Linux</title><link>https://runarcn.no/android-to-linux/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49188022"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:50:13 GMT</pubDate><guid>f448502135c3c6311ae8b7a30757d188</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery</title><link>https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49187977"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:47:26 GMT</pubDate><guid>c75b1a332f5f7c38b9c7aa57a01d2c00</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[ArsTechnica] SpaceX claims Starlink Mobile will be better than AT&amp;T, T-Mobile, and Verizon</title><link>https://arstechnica.com/tech-policy/2026/08/spacex-claims-starlink-mobile-will-be-better-than-att-t-mobile-and-verizon/</link><description>SpaceX won't build large cell towers but plans small base stations across US.</description><pubDate>Wed, 05 Aug 2026 19:38:56 GMT</pubDate><guid>4e90c04284c709fb7e1cfc32bac27b89</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[TechCrunch] Jeff Dean and other top AI researchers are leaving Google to launch their own startup</title><link>https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/</link><description>The legendary Google executive is joined by other outgoing Google execs in a joint mission to use AI to push forward the process of scientific discovery.</description><pubDate>Wed, 05 Aug 2026 19:30:19 GMT</pubDate><guid>41dee0fbffe4c22bca2cf3c0cf179083</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] This Atlantic hurricane season is looking like a dud, but there will be a price to pay</title><link>https://arstechnica.com/science/2026/08/this-atlantic-hurricane-season-is-looking-like-a-dud-but-there-will-be-a-price-to-pay/</link><description>"The models are forecasting something outside the envelope of anything we have ever observed."</description><pubDate>Wed, 05 Aug 2026 19:19:04 GMT</pubDate><guid>cd3507730f9a5af1d3bb586d5aa976eb</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Hacker News] Muse Code and Muse Spark 1.2</title><link>https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2</link><description>&lt;a href="https://news.ycombinator.com/item?id=49187575"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:15:52 GMT</pubDate><guid>9eac21dc6afd938cc5765dc8c0e37e66</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item></channel></rss>
