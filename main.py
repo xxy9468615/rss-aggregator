@@ -488,6 +488,34 @@ def build_rss_xml(cat_key: str) -> str:
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(rss, encoding="unicode")
 
 
+def build_opml_xml() -> str:
+    """Generate an OPML document containing all categories and feeds."""
+    opml = Element("opml", version="2.0")
+    head = SubElement(opml, "head")
+    SubElement(head, "title").text = "RSS Aggregator Subscriptions"
+    SubElement(head, "dateCreated").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+
+    body = SubElement(opml, "body")
+    for cat_key, cat_cfg in cfg["sources"].items():
+        cat_outline = SubElement(body, "outline", text=cat_cfg["name"], title=cat_cfg["name"])
+        for feed in cat_cfg.get("feeds", []):
+            if feed.get("disabled"):
+                continue
+            feed_name = feed.get("name", "")
+            feed_url = feed.get("url", "")
+            if feed_url:
+                SubElement(
+                    cat_outline,
+                    "outline",
+                    type="rss",
+                    text=feed_name,
+                    title=feed_name,
+                    xmlUrl=feed_url,
+                    htmlUrl=feed_url,
+                )
+    return '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(opml, encoding="unicode")
+
+
 # ── Routes ──────────────────────────────────────────────
 @app.get("/")
 async def index():
@@ -512,6 +540,48 @@ async def get_feed(filename: str):
             xml = build_rss_xml(cat_key)
             return Response(content=xml, media_type="application/rss+xml; charset=utf-8")
     return Response(content="Feed not found", status_code=404)
+
+
+@app.get("/opml")
+@app.get("/subscriptions.opml")
+async def get_opml():
+    """Export all subscriptions as an OPML file."""
+    xml = build_opml_xml()
+    return Response(content=xml, media_type="application/xml; charset=utf-8")
+
+
+@app.get("/check")
+async def check_feeds():
+    """Real-time health check / probe for all configured RSS feeds."""
+    results = {}
+    async with httpx.AsyncClient(
+        headers={"User-Agent": "RSS-Aggregator/1.4"},
+        timeout=10,
+    ) as client:
+        for cat_key, cat_cfg in cfg["sources"].items():
+            cat_results = []
+            for feed in cat_cfg.get("feeds", []):
+                if feed.get("disabled"):
+                    cat_results.append({"name": feed.get("name"), "url": feed.get("url"), "status": "disabled"})
+                    continue
+                url = feed.get("url")
+                try:
+                    resp = await client.get(url, follow_redirects=True)
+                    cat_results.append({
+                        "name": feed.get("name"),
+                        "url": url,
+                        "status_code": resp.status_code,
+                        "ok": resp.status_code < 400
+                    })
+                except Exception as e:
+                    cat_results.append({
+                        "name": feed.get("name"),
+                        "url": url,
+                        "error": str(e),
+                        "ok": False
+                    })
+            results[cat_key] = cat_results
+    return {"status": "checked", "results": results}
 
 
 # ── Monitoring ───────────────────────────────────────────
