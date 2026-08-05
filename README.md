@@ -1,37 +1,46 @@
 # RSS Aggregator
 
-42+ RSS sources across 7 categories, auto-refresh every 10 minutes. Self-hosted on Railway with a custom domain.
+42+ RSS sources across 7 categories, auto-refresh every 10 minutes. Feeds are generated as static XML files and served via GitHub raw URLs.
 
 ## Public URL
 
-https://huike.indevs.in
+Feed files are available at:
+```
+https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/<name>.xml
+```
 
 ## Tech Stack
 
 - Python 3.12 + FastAPI + uvicorn
 - feedparser + httpx (concurrent fetching)
 - Playwright headless Chromium (fallback for blocked sources)
-- APScheduler (10-min interval refresh)
-- Docker → Railway
+- GitHub Actions (10-min interval refresh via cron)
+- Static XML files committed to repo
 
 ## Project Structure
 
 | File | Purpose |
 |------|---------|
-| `main.py` | FastAPI app, scheduler, fetcher, RSS XML builder (~530 lines, single-file) |
+| `main.py` | FastAPI app, scheduler, fetcher, RSS XML builder, `--cron` mode (~680 lines, single-file) |
 | `rrs_config.json` | Source config, refresh interval, retry settings |
 | `Dockerfile` | python:3.12-slim + Chromium deps + Playwright |
 | `requirements.txt` | Python dependencies |
+| `.github/workflows/refresh.yml` | CI workflow: cron every 10 min → `--cron` → commit feeds/*.xml |
 
 ## Quick Start
 
 ```bash
-# Local test
+# Local development
+pip install -r requirements.txt
+playwright install chromium
+uvicorn main:app --reload --port 8000
+
+# Local cron test (one-shot refresh)
+python3 main.py --cron
+
+# Docker local build and test
 docker build -t rss-agg .
 docker run -p 8000:8000 -v $(pwd)/data:/app/data rss-agg
-
-# Deploy
-git push origin main  # triggers Railway auto-deploy
 ```
 
 ## Configuration
@@ -59,21 +68,30 @@ git push origin main  # triggers Railway auto-deploy
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `NODELOC_COOKIE` | optional | Cookie for NodeLoc forum auth |
-| `DATA_DIR` | optional | Cache directory (default: `/app/data`) |
-| `PORT` | auto | Railway provides this automatically |
+| `DATA_DIR` | optional | Cache directory (default: `./data`) |
+| `PORT` | auto | Port for uvicorn (default: 8000) |
 
 ## Deployment
 
-Deployed on [Railway](https://railway.app) with Docker builder.
+Feeds are refreshed automatically via GitHub Actions cron (every 10 minutes). The workflow:
+1. Checks out the repo
+2. Sets up Python 3.12 + dependencies (including Playwright Chromium)
+3. Runs `python3 main.py --cron` to fetch all feeds and generate static XML files
+4. Commits the `feeds/*.xml` files to the main branch
 
-1. Connect repo to Railway (new project → import from GitHub)
-2. Railway auto-detects `Dockerfile` and builds
-3. Add a custom domain in Railway settings (e.g. `huike.indevs.in`)
-4. Push to `main` branch triggers automatic redeploy
+### Feed URLs
 
-Build includes Playwright Chromium (~100MB), so first deploy takes ~2-3 minutes. Subsequent deploys are cached.
+Consumers can subscribe to individual feeds:
+- Tech news: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/tech.xml`
+- Deals: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/deals.xml`
+- Forums: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/forums.xml`
+- Self-hosted: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/selfhosted.xml`
+- Hacker News: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/hn.xml`
+- AI: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/ai.xml`
+- YouTube: `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/youtube.xml`
 
-Resources: 1G RAM, 2 vCPU is sufficient.
+Or import all at once via OPML:
+- `https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds/subscriptions.opml`
 
 ## Architecture
 
@@ -81,11 +99,11 @@ Resources: 1G RAM, 2 vCPU is sufficient.
 RSS Sources (42+)
   ↓  httpx (concurrent=15, retry with backoff)
   ↓  Playwright Chromium (fallback for blocked sources)
-feedparser → /app/data/cache.json (7-day cache)
+feedparser → cache.json (7-day cache)
   ↓
-FastAPI → RSS XML output (/feeds/{filename})
+GitHub Actions cron (every 10 min) → feeds/*.xml (static XML files)
   ↓
-huike.indevs.in → Consumers (FreshRSS, etc.)
+GitHub raw URL → Consumer RSS readers (Folo, FreshRSS, etc.)
 ```
 
 ## Privacy
@@ -99,7 +117,7 @@ huike.indevs.in → Consumers (FreshRSS, etc.)
 - `NODELOC_COOKIE` env var required for NodeLoc forum feed
 - `.gitignore` excludes `data/`, `__pycache__/`, `.env`
 
-## Endpoints
+## Endpoints (local server mode)
 
 | Route | Description |
 |-------|-------------|
