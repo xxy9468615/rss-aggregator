@@ -19,7 +19,7 @@ COPY . .
 # Download Playwright Chromium binary only (system deps pre-installed above)
 RUN playwright install chromium
 
-# Cache persists to /app/data on Railway's filesystem (survives restarts)
+# Cache persists to /app/data
 ENV DATA_DIR=/app/data
 
 EXPOSE 8000
