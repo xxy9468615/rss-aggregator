@@ -1,0 +1,2234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>科技资讯</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 科技资讯</description><lastBuildDate>Wed, 05 Aug 2026 23:14:07 GMT</lastBuildDate><item><title>[Habr] Печеньки стали дороже. Стимул, мотив, потребность: разбираемся, чего мы ждём от работы</title><link>https://habr.com/ru/articles/1067240/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/27e/eb3/235/27eeb3235136d88a7d8f9c09ac17cb3b.jpg" /&gt;&lt;p&gt;Когда работа, к которой вы долго стремились, перестаёт радовать, легко решить, что вы обленились, выгорели или выбрали не ту профессию. Но иногда прежние стимулы просто больше не совпадают с тем, что человеку сейчас нужно. Попробуем разделить стимул, мотив и потребность и разобраться, почему одинаковая зарплата, сложная задача или сильная команда для разных разработчиков означают совершенно разные вещи.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067240/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067240#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 23:05:28 GMT</pubDate><guid>e7e780b8f34067f17ac739c1917e5b7e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[SoylentNews] UK Wants Datacenters To Pay A Fee For Grid Connection Requests</title><link>https://soylentnews.org/article.pl?sid=26%2F08%2F05%2F024251&amp;from=rss</link><description>&lt;p class="byline"&gt;&lt;a href="//soylentnews.org/~Arthur+T+Knackerbracket/"&gt;Arthur T Knackerbracket&lt;/a&gt; writes:&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.theregister.com/systems/2026/07/31/uk-wants-datacenters-to-pay-a-fee-for-grid-connection-requests/5281248"&gt;https://www.theregister.com/systems/2026/07/31/uk-wants-datacenters-to-pay-a-fee-for-grid-connection-requests/5281248&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Ofgem is seeking feedback on proposals to levy a fee on datacenter development projects at the time they apply for a grid connection.&lt;/p&gt;&lt;p&gt;The move aims to discourage companies from seeking approval for speculative applications that clog up the pipeline and cause connection delays, without ever resulting in finished datacenters.&lt;/p&gt;&lt;p&gt;The UK regulator for electricity and gas says connection applications for electrical supply have surged from 41 gigawatts (GW) to 125 GW in under a year, with datacenters accounting for at least 80 GW of the new demand.&lt;/p&gt;&lt;p&gt;Even before that happened, one of the UK's big developers complained that its build teams faced &lt;a href="https://www.theregister.com/on-prem/2024/10/29/datacenter-developer-says-new-builds-held-up-by-power-issues/600011"&gt;a wait of "a number of years"&lt;/a&gt; for work such as local substation upgrades to increase grid capacity.&lt;/p&gt;&lt;p&gt;Ofgem is proposing a Datacenter Commitment Fee paid by the developers of large server farm projects when accepting a grid connection offer. The fee would be refunded once the facility is drawing power, or forfeited if the project exits the queue early instead.&lt;/p&gt;&lt;p&gt;Alan Howard, Omdia principal analyst for Colocation and DC Building,&amp;nbsp;&lt;a href="https://www.theregister.com/on-prem/2026/02/27/50-gw-of-datacenter-demand-queues-up-for-uk-grid-access/4531850"&gt;told us previously&lt;/a&gt; that the power connection queue issue is a big problem, not just for the UK, but also in the US and other markets around the globe.&lt;/p&gt;&lt;p&gt;"The strategy for many datacenter operators is to secure multiple land parcel rights, request a grid load connection for each (often requiring a costly load study), and see what gets approved so they can build. The capital investment to take all these projects seriously is clearly untenable and a huge financial risk for the energy sector if the demand doesn't fully materialize," he said.&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;a href="https://soylentnews.org/article.pl?sid=26/08/05/024251&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at SoylentNews.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:02:00 GMT</pubDate><guid>b042cd22e188ecfbc1a7a46e87550478</guid><source url="https://soylentnews.org/index.rss">SoylentNews</source></item><item><title>[Phoronix] Rust Coreutils 0.10 Released With More Security Hardening, Increased GNU Compatibility</title><link>https://www.phoronix.com/news/Rust-Coreutils-0.10</link><description>Rust Coreutils 0.10 is out today from the uutils project for this alternative to GNU Coreutils. Rust Coreutils 0.10 development focused on additional security hardening plus also increasing the GNU test suite compatibility and robustness...</description><pubDate>Wed, 05 Aug 2026 22:59:00 GMT</pubDate><guid>5c88a95196a6112d8037844c037a26fc</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[TechCrunch] Get up to $400 off your TechCrunch Disrupt 2026 pass until Friday</title><link>https://techcrunch.com/2026/08/05/get-up-to-400-off-your-techcrunch-disrupt-2026-pass-until-friday/</link><description>Starting today, you can take an additional $100 off your founder, investor, or attendee TechCrunch Disrupt 2026 pass, which is a nice bonus on top of our current discounted pricing.</description><pubDate>Wed, 05 Aug 2026 22:55:43 GMT</pubDate><guid>dbf96f72aff8a3428fc9b4bb29ecc95d</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Dev.to] Why Frontend Developers Should Care About Brand Identity Systems</title><link>https://dev.to/joemetry/why-frontend-developers-should-care-about-brand-identity-systems-h22</link><description>&lt;p&gt;We’ve all been there: you get a clean design mockup, fire up VS Code, and start writing components. But halfway through building the layout, you notice inconsistent spacing, random button variants, and color hex codes hardcoded all over the place. &lt;/p&gt;
+
+&lt;p&gt;As developers, we love systems—reusable components, clean state management, and modular architecture. So why do we treat brand assets like an afterthought?&lt;/p&gt;
+
+&lt;p&gt;When building &lt;strong&gt;Joemetry&lt;/strong&gt;, I realized that treating a brand identity like a design system completely changes how you write frontend code. &lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  1. Design Tokens = CSS Variables
+&lt;/h3&gt;
+
+&lt;p&gt;Instead of guessing padding values or scattering random colors across your stylesheets, defining strict design tokens early makes your CSS bulletproof:&lt;/p&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+css
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #3b82f6;
+  --spacing-unit: 1rem;
+}
+
+When your brand system has strict rules, your layout code writes itself.
+
+2. **Semantic Structure and SEO**
+Clean HTML structure isn't just about accessibility; it’s part of technical SEO optimization. When your markup respects hierarchy (&amp;lt;header&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;), search crawlers understand your content contextually, bridging the gap between raw code and digital presence.
+
+3. **Consistency Wins**
+Whether you're pushing a single-page landing layout or an interactive portfolio, a unified visual system keeps your codebase lean and your UI predictable.
+
+How do you usually bridge the gap between design specs and your frontend code? Let’s chat in the comments!
+
+Building and exploring over at byjoemetry.com.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;</description><pubDate>Wed, 05 Aug 2026 22:37:50 GMT</pubDate><guid>ffa488d496480c29f36f4548bbdbda13</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Habr] Бенчмаркая Enumerable.Chunk: почему батчей меньше, а проход до ×2,7 дольше</title><link>https://habr.com/ru/articles/1067238/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/286/2b1/497/2862b149705962c261903f7abbf96404.png" /&gt;&lt;p&gt;&lt;code&gt;Chunk&lt;/code&gt; делит коллекцию на массивы — одна строка кода. Но есть размер чанка, после которого он замедляется в разы при тех же данных и той же памяти. А на массиве и на &lt;code&gt;List&amp;lt;int&amp;gt;&lt;/code&gt; внутри разный код, и в самой строке этого не видно.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067238/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067238#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 22:35:38 GMT</pubDate><guid>b71e8a9a728c6f6886addcbc32ae268b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Dev.to] 🚀 Cron vs Systemd Timers vs daemontools — Understanding the Evolution of Linux Job Scheduling &amp; Service Management</title><link>https://dev.to/deekay99/cron-vs-systemd-timers-vs-daemontools-understanding-the-evolution-of-linux-job-scheduling--31mm</link><description>&lt;p&gt;While diving deeper into Linux internals and modern SRE practices, I came across a question that many Linux engineers eventually ask:&lt;/p&gt;
+
+&lt;p&gt;Is cron obsolete now that systemd timers exist? And where does daemontools fit into all of this?&lt;/p&gt;
+
+&lt;p&gt;The answer is: they solve related—but not identical—problems.&lt;/p&gt;
+
+&lt;p&gt;A quick comparison&lt;/p&gt;
+
+&lt;p&gt;Tool    Primary Purpose&lt;br /&gt;
+🕰️ cron    Schedule commands or scripts at specific times&lt;br /&gt;
+⏱️ systemd timer    Schedule execution of systemd services&lt;br /&gt;
+🔄 daemontools    Supervise long-running services (daemons) and automatically restart them if they fail&lt;/p&gt;
+
+&lt;p&gt;One realization that helped me was thinking about the questions each tool answers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;cron: “When should I run this script?”&lt;/li&gt;
+&lt;li&gt;systemd timer: “When should I start this service?”&lt;/li&gt;
+&lt;li&gt;daemontools: “How do I keep this service running continuously?”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cron vs Systemd Timers&lt;/p&gt;
+
+&lt;p&gt;Both can schedule recurring work, but systemd timers bring several capabilities that are particularly valuable in production environments.&lt;/p&gt;
+
+&lt;p&gt;Cron    Systemd Timer&lt;br /&gt;
+Runs commands directly  Triggers a systemd service&lt;br /&gt;
+Simple scheduling   Scheduling + service management&lt;br /&gt;
+Limited logging Rich logs via journalctl&lt;br /&gt;
+Misses jobs if the server is powered off    Can catch up using Persistent=true&lt;br /&gt;
+No dependency awareness Can wait for networking, databases, or other services&lt;br /&gt;
+Limited security controls   Supports sandboxing, resource limits, and privilege restrictions&lt;/p&gt;
+
+&lt;p&gt;Imagine scheduling a nightly database backup.&lt;/p&gt;
+
+&lt;p&gt;With cron, if the server is powered off at the scheduled time, the backup is simply missed.&lt;/p&gt;
+
+&lt;p&gt;With a systemd timer configured with:&lt;/p&gt;
+
+&lt;p&gt;Persistent=true&lt;/p&gt;
+
+&lt;p&gt;the missed backup is executed automatically after the system boots.&lt;/p&gt;
+
+&lt;p&gt;That small feature can make a big difference in production.&lt;/p&gt;
+
+&lt;p&gt;Where daemontools fits&lt;/p&gt;
+
+&lt;p&gt;Earlier in my career, I also had the opportunity to work with daemontools by DJ Bernstein.&lt;/p&gt;
+
+&lt;p&gt;It reminded me that before systemd became the standard on most Linux distributions, engineers often combined multiple tools:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;cron → scheduling&lt;/li&gt;
+&lt;li&gt;daemontools → service supervision&lt;/li&gt;
+&lt;li&gt;syslog → logging&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Today, systemd integrates many of these capabilities into a single framework:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Services&lt;/li&gt;
+&lt;li&gt;Timers&lt;/li&gt;
+&lt;li&gt;Logging (journald)&lt;/li&gt;
+&lt;li&gt;Automatic restarts&lt;/li&gt;
+&lt;li&gt;Dependency management&lt;/li&gt;
+&lt;li&gt;Resource limits&lt;/li&gt;
+&lt;li&gt;Security hardening&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That doesn’t mean daemontools is obsolete—it still has value in legacy systems, lightweight environments, and certain embedded Linux deployments—but for modern Ubuntu, RHEL, and Debian servers, systemd has become the de facto standard.&lt;/p&gt;
+
+&lt;p&gt;My takeaway&lt;/p&gt;
+
+&lt;p&gt;As someone continuing to learn Linux, databases, Kubernetes, and SRE practices, one lesson stands out:&lt;/p&gt;
+
+&lt;p&gt;Understanding why these tools were created is just as important as learning how to use them.&lt;/p&gt;
+
+&lt;p&gt;Each represents a different stage in the evolution of Linux operations:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;cron
+   │
+   ▼
+daemontools &lt;span class="o"&gt;(&lt;/span&gt;service supervision&lt;span class="o"&gt;)&lt;/span&gt;
+   │
+   ▼
+systemd
+ ├── Services
+ ├── Timers
+ ├── Logging
+ ├── Security
+ ├── Resource Limits
+ └── Dependency Management
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;For my own work going forward:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;✅ I’ll still use cron for quick, lightweight scheduled tasks.&lt;/li&gt;
+&lt;li&gt;✅ I’ll use systemd timers for production automation such as backups, maintenance jobs, and infrastructure operations.&lt;/li&gt;
+&lt;li&gt;✅ And I’ll continue to appreciate daemontools as an elegant piece of Linux history that influenced how reliable service supervision evolved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning the evolution of technology often explains why modern tools look the way they do—and that’s one of the most rewarding parts of the journey.&lt;/p&gt;
+
+&lt;p&gt;What does your team primarily use today?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cron?&lt;/li&gt;
+&lt;li&gt;Systemd Timers?&lt;/li&gt;
+&lt;li&gt;Kubernetes CronJobs?&lt;/li&gt;
+&lt;li&gt;Another scheduler or service supervisor?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’d love to hear your experiences and what has worked well in your environments.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:29:21 GMT</pubDate><guid>f33f7eaee0b1dd23440275ae6ca5720f</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Ahrefs MCP Server: Setup for Claude, Codex and the Rest</title><link>https://dev.to/studiomeyer_io/ahrefs-mcp-server-setup-for-claude-codex-and-the-rest-l46</link><description>&lt;p&gt;The first thing that will happen when you connect Ahrefs to an AI client is that nothing happens. No error, no tools, just a server that sits there looking connected. In my case the cause was mundane: Ahrefs ships two different MCP servers and two different kinds of API key, and only one of the four possible pairings is the one you want today. Nobody tells you which one you picked.&lt;/p&gt;
+
+&lt;p&gt;That is the short version of why this guide exists. The longer version is that I spent a subscription cycle running about 1,100 logged calls through this thing, and most of what cost me time was not the SEO analysis. It was the plumbing.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What You Are Actually Connecting To
+&lt;/h2&gt;
+
+&lt;p&gt;Ahrefs runs a hosted MCP server at &lt;code&gt;https://api.ahrefs.com/mcp/mcp&lt;/code&gt;. It speaks Streamable HTTP, which is the current transport in the Model Context Protocol spec and the one every serious client supports. SSE is deprecated and you should not build anything new on it.&lt;/p&gt;
+
+&lt;p&gt;Behind that endpoint sits most of what you would otherwise click through in the Ahrefs web app: Site Explorer for backlinks and organic keywords, Keywords Explorer for volume and difficulty, Rank Tracker, Site Audit, and the Google Search Console integration if you have connected an account. In my instance that came out to 130 callable tools, which is more than the marketing pages claim, because the server has been growing.&lt;/p&gt;
+
+&lt;p&gt;Two things about it are worth knowing before you wire anything up. Access starts at the Lite plan, so a free trial account will not get you in. And every billable call draws from the same monthly API unit budget as regular API v3 usage, which means your chat assistant and your cron jobs are eating from one plate. Billing splits three ways: a good number of endpoints cost nothing, some charge a flat rate per request, and the rest charge per row. The last section is about telling them apart.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Two Servers, Two Key Types, One Silent Failure
+&lt;/h2&gt;
+
+&lt;p&gt;This is the part that wasted my first evening.&lt;/p&gt;
+
+&lt;p&gt;There is an older local server, published as &lt;code&gt;@ahrefs/mcp&lt;/code&gt; on npm and hosted at &lt;code&gt;ahrefs/ahrefs-mcp-server&lt;/code&gt; on GitHub. That repository is now archived, and its README carries a sentence worth reading twice: it works with API v3 keys only, and it does not work with MCP keys.&lt;/p&gt;
+
+&lt;p&gt;The hosted remote server is the opposite. It wants a key with MCP scope, which you generate separately in your Ahrefs account. Ahrefs states plainly that API keys and MCP keys are not interchangeable.&lt;/p&gt;
+
+&lt;p&gt;So the matrix looks like this. Two cells work, but only one of them is a sensible choice today:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;API v3 key&lt;/th&gt;
+&lt;th&gt;MCP-scoped key&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Local &lt;code&gt;@ahrefs/mcp&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;worked, repo now archived&lt;/td&gt;
+&lt;td&gt;fails&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Remote &lt;code&gt;/mcp/mcp&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;fails&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;correct&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The archived combination is not broken so much as abandoned. It still runs if you already have it, but it receives no maintenance and Ahrefs points at the remote server instead.&lt;/p&gt;
+
+&lt;p&gt;The failure modes are quiet. An MCP-scoped key pointed at the REST API returns &lt;code&gt;Unauthorized&lt;/code&gt;, which at least tells you something. A client that cannot complete the handshake often just shows the server with zero tools, and you go looking for a config typo that is not there.&lt;/p&gt;
+
+&lt;p&gt;If you are setting up today, use the remote server and generate an MCP-scoped key. Ignore every tutorial that has you npm-installing anything.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Authentication: OAuth Is the Official Path, Bearer Is the Useful One
+&lt;/h2&gt;
+
+&lt;p&gt;Ahrefs documents OAuth as the way in. Your client opens a browser window, you sign in, it caches the credentials. For interactive work that is fine and it is genuinely the least fiddly option.&lt;/p&gt;
+
+&lt;p&gt;It gets awkward the moment you want a scheduled job to pull data at seven on a Sunday morning. OAuth needs a human at a browser for the initial authorisation, and after that you are maintaining a token refresh that has to keep working unattended. So for anything headless I authenticate with a bearer token instead, and pass the MCP key directly in the &lt;code&gt;Authorization&lt;/code&gt; header. Same endpoint, same tools, no browser, nothing to refresh.&lt;/p&gt;
+
+&lt;p&gt;The practical rule I settled on: bearer for anything that has to survive without me, OAuth for a laptop I am sitting in front of. If you only ever use this in chat, take the OAuth prompt and skip the next few sections.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Claude Code
+&lt;/h2&gt;
+
+&lt;p&gt;One command, and the scope flag decides whether the server lives in this project or in your user config.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;claude mcp add &lt;span class="nt"&gt;--transport&lt;/span&gt; http ahrefs https://api.ahrefs.com/mcp/mcp &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--header&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="nt"&gt;-s&lt;/span&gt; project
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Project scope writes into a &lt;code&gt;.mcp.json&lt;/code&gt; next to your code, which is the right choice when the key belongs to one client or one site. Put that file in &lt;code&gt;.gitignore&lt;/code&gt; before you paste a key into it, because the header sits there in plain text.&lt;/p&gt;
+
+&lt;p&gt;Two things that cost me time here. The tools appear as &lt;code&gt;mcp__ahrefs__&amp;lt;toolname&amp;gt;&lt;/code&gt;, not as &lt;code&gt;ahrefs.&amp;lt;toolname&amp;gt;&lt;/code&gt;, which matters when you are writing prompts that name a tool explicitly. And a running session loads its MCP servers at startup only, so the connection you just added shows up in the next session, not this one. I restarted three times convinced the config was wrong.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Claude Desktop
+&lt;/h2&gt;
+
+&lt;p&gt;No config file needed. Settings, then Connectors, then Add custom connector, then paste the endpoint URL. OAuth client ID and secret go under Advanced settings if your server needs them.&lt;/p&gt;
+
+&lt;p&gt;There is one architectural detail here that surprises people and that changes what you can connect. Claude Desktop does not reach your MCP server from your machine. It reaches it from Anthropic's cloud infrastructure. For a hosted service like Ahrefs that makes no difference at all. For a server running on your own laptop or behind a company VPN it makes all the difference, because that server has to be reachable from the public internet before it will ever work.&lt;/p&gt;
+
+&lt;p&gt;Free accounts are capped at one custom connector. Paid tiers are not.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Codex
+&lt;/h2&gt;
+
+&lt;p&gt;Codex reads &lt;code&gt;~/.codex/config.toml&lt;/code&gt; globally, or a &lt;code&gt;.codex/config.toml&lt;/code&gt; in a project directory you have marked as trusted. One TOML table per server, and the transport is inferred from which keys you set: a &lt;code&gt;command&lt;/code&gt; key means stdio, a &lt;code&gt;url&lt;/code&gt; key means Streamable HTTP.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight toml"&gt;&lt;code&gt;&lt;span class="nn"&gt;[mcp_servers.ahrefs]&lt;/span&gt;
+&lt;span class="py"&gt;url&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"https://api.ahrefs.com/mcp/mcp"&lt;/span&gt;
+&lt;span class="py"&gt;bearer_token_env_var&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"AHREFS_API_KEY"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Note what &lt;code&gt;bearer_token_env_var&lt;/code&gt; takes. It is the name of an environment variable, not the token itself. Writing your key there directly gives you a config file full of secret and a server full of nothing.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;codex mcp add&lt;/code&gt; subcommand exists, but it is shaped around stdio servers, so for a remote endpoint editing the TOML is both faster and easier to put in version control. Verify with &lt;code&gt;codex mcp list&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Cursor, VS Code and Windsurf
+&lt;/h2&gt;
+
+&lt;p&gt;All three speak the same JSON dialect with one annoying difference: the key that holds the URL. Cursor calls it &lt;code&gt;url&lt;/code&gt;. VS Code wants &lt;code&gt;url&lt;/code&gt; alongside an explicit &lt;code&gt;"type": "http"&lt;/code&gt;, the same shape Claude Code uses. Windsurf calls it &lt;code&gt;serverUrl&lt;/code&gt;. Everything else about the block copies across unchanged, which means a config that works in one editor is thirty seconds of renaming away from working in the next.&lt;/p&gt;
+
+&lt;p&gt;VS Code has had native MCP support since 1.99, surfaced through Copilot Chat. Windsurf added it early this year. If your team is split across editors, write the block once and keep the three variants in a snippet somewhere, because you will need them again.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Headless, Without Any Client at All
+&lt;/h2&gt;
+
+&lt;p&gt;MCP is a session protocol, not a plain REST call. You initialize, you send an initialized notification, and only then can you call a tool. Every request after the handshake carries the session id you got back.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;curl &lt;span class="nt"&gt;-sD&lt;/span&gt; hdr &lt;span class="nt"&gt;-X&lt;/span&gt; POST &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_MCP_URL&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Content-Type: application/json"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Accept: application/json, text/event-stream"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'{"jsonrpc":"2.0","id":1,"method":"initialize","params":{
+       "protocolVersion":"2025-06-18","capabilities":{},
+       "clientInfo":{"name":"sm","version":"1"}}}'&lt;/span&gt;
+
+&lt;span class="nv"&gt;SID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="si"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;grep&lt;/span&gt; &lt;span class="nt"&gt;-i&lt;/span&gt; &lt;span class="s1"&gt;'^mcp-session-id:'&lt;/span&gt; hdr | &lt;span class="nb"&gt;awk&lt;/span&gt; &lt;span class="s1"&gt;'{print $2}'&lt;/span&gt; | &lt;span class="nb"&gt;tr&lt;/span&gt; &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'\r'&lt;/span&gt;&lt;span class="si"&gt;)&lt;/span&gt;
+
+curl &lt;span class="nt"&gt;-s&lt;/span&gt; &lt;span class="nt"&gt;-X&lt;/span&gt; POST &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_MCP_URL&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Authorization: Bearer &lt;/span&gt;&lt;span class="nv"&gt;$AHREFS_API_KEY&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Content-Type: application/json"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"Accept: application/json, text/event-stream"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"MCP-Protocol-Version: 2025-06-18"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-H&lt;/span&gt; &lt;span class="s2"&gt;"mcp-session-id: &lt;/span&gt;&lt;span class="nv"&gt;$SID&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;-d&lt;/span&gt; &lt;span class="s1"&gt;'{"jsonrpc":"2.0","method":"notifications/initialized"}'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Three things in there are easy to get wrong. Do not skip the second call: the session id alone does not finish the handshake, and a server that never received the initialized notification will refuse tool calls. The &lt;code&gt;Accept&lt;/code&gt; header needs both content types even if you never intend to read a stream. And from the 2025-06-18 revision onward, every request after initialization must carry the &lt;code&gt;MCP-Protocol-Version&lt;/code&gt; header, so it belongs on the notification and on every tool call that follows, alongside &lt;code&gt;mcp-session-id&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wrapping this in a small shell helper is worth the twenty minutes, because it makes the same data available to cron jobs and agents that have no chat interface at all. One warning from experience: if you build that helper with a bash default like &lt;code&gt;${ARG:-{}}&lt;/code&gt; for the JSON argument, brace matching inside the default value will silently append a stray closing brace and produce malformed JSON. The call then fails with no output and no error. Default the variable on a separate line.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Your Plan Decides Your Row Cap, and That Is the Expensive Part
+&lt;/h2&gt;
+
+&lt;p&gt;This is the section I wish I had read first, because it explains a mistake that cost me a full month of budget in a single morning.&lt;/p&gt;
+
+&lt;p&gt;Ahrefs gates two things by subscription tier: how many units you get per month, and how many rows a single request may return.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Plan&lt;/th&gt;
+&lt;th&gt;Units per month&lt;/th&gt;
+&lt;th&gt;Max rows per request&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lite&lt;/td&gt;
+&lt;td&gt;100,000&lt;/td&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Standard&lt;/td&gt;
+&lt;td&gt;400,000&lt;/td&gt;
+&lt;td&gt;250&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Advanced&lt;/td&gt;
+&lt;td&gt;1,000,000&lt;/td&gt;
+&lt;td&gt;500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enterprise&lt;/td&gt;
+&lt;td&gt;2,000,000&lt;/td&gt;
+&lt;td&gt;unlimited&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Those numbers changed on 28 April 2026, and they changed a lot. Lite went from 25,000 units to 100,000 and from 10 rows to 100. Standard went from 150,000 to 400,000 units and from 25 rows to 250. Advanced doubled its units and went from 100 rows to 500.&lt;/p&gt;
+
+&lt;p&gt;Now hold that next to how the pricing works. A call costs a minimum of 50 units, and beyond that you pay per row, multiplied by how many columns you asked for. Premium columns like &lt;code&gt;volume&lt;/code&gt;, &lt;code&gt;keyword_difficulty&lt;/code&gt; and &lt;code&gt;traffic_domain&lt;/code&gt; add roughly ten units per row each.&lt;/p&gt;
+
+&lt;p&gt;Put those two facts together and you get the trap. The most expensive call in my entire log ran with a limit of 250 rows. That is not a number I chose after thinking about it. It is exactly the row cap of the plan I was on, and I reached for it because it was the maximum available. Each of those calls cost 5,250 units. The same query at 50 rows would have cost 1,050 and told me the same thing, because rows 51 through 250 were long-tail noise I never used.&lt;/p&gt;
+
+&lt;p&gt;The row cap is not a recommendation. It is a ceiling, and since April it is a ceiling that sits up to ten times higher than it used to. That change is harmless if your code passes an explicit limit, because 50 still means 50. It bites in three specific cases: when you pass no limit at all, when your code asks for whatever the maximum currently is, and when a query used to be clipped by the old cap and now returns the full ten times more rows. All three are common in scripts written before spring, and none of them look different in the code.&lt;/p&gt;
+
+&lt;p&gt;Set the limit from what you will actually read. For keyword expansion I now start at 50 and go higher only when a result visibly clipped at the boundary and the extra rows matter.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Ten Traps That Each Cost Me a Run
+&lt;/h2&gt;
+
+&lt;p&gt;None of these are in the documentation in a way you would find before you hit them. All of them produced either an error I had to decode or, worse, an empty result that looked like a finding.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;where&lt;/code&gt; is JSON, never a string expression.&lt;/strong&gt; Writing &lt;code&gt;"position&amp;gt;3 and position&amp;lt;15"&lt;/code&gt; returns &lt;code&gt;bad where: invalid JSON syntax&lt;/code&gt;. The same filter as JSON needs one clause per condition:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;"and"&lt;/span&gt;&lt;span class="p"&gt;:[{&lt;/span&gt;&lt;span class="nl"&gt;"field"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;"position"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nl"&gt;"is"&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="s2"&gt;"gt"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]},&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;"field"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;"position"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nl"&gt;"is"&lt;/span&gt;&lt;span class="p"&gt;:[&lt;/span&gt;&lt;span class="s2"&gt;"lt"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;]}]}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Operators are &lt;code&gt;gt&lt;/code&gt;, &lt;code&gt;gte&lt;/code&gt;, &lt;code&gt;lt&lt;/code&gt;, &lt;code&gt;lte&lt;/code&gt;, &lt;code&gt;eq&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;select&lt;/code&gt; changes type between tools.&lt;/strong&gt; Site Explorer and Keywords Explorer want a comma-separated string. &lt;code&gt;batch-analysis&lt;/code&gt; wants an array. Mixing them up gives you &lt;code&gt;column '["domain"' not found&lt;/code&gt; in one direction and &lt;code&gt;expected array but got string&lt;/code&gt; in the other.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do not transliterate umlauts.&lt;/strong&gt; Keyword matching is literal. A German term written with &lt;code&gt;ue&lt;/code&gt; instead of &lt;code&gt;ü&lt;/code&gt; returns zero rows and looks like a dead keyword. The same applies to Spanish tildes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The country filter can silently delete the truth.&lt;/strong&gt; Filtering organic keywords by country returned zero rows for a domain that demonstrably ranks, because its rankings sat in other countries. I paid 50 units for an empty answer and nearly concluded the domain ranked for nothing. Pull without the filter and take &lt;code&gt;keyword_country&lt;/code&gt; as a column instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use &lt;code&gt;mode: "subdomains"&lt;/code&gt; by default.&lt;/strong&gt; For any site where the apex redirects to www, &lt;code&gt;mode: "domain"&lt;/code&gt; measures the exact host and returns phantom zeros. I have seen a domain report a few hundred backlinks and no traffic in domain mode against twenty-two thousand backlinks in subdomains mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;volume-history&lt;/code&gt; takes &lt;code&gt;keyword&lt;/code&gt;, singular.&lt;/strong&gt; Passing &lt;code&gt;keywords&lt;/code&gt; fails with &lt;code&gt;required arguments [keyword] are missing&lt;/code&gt;. Twenty-six calls in one batch, all rejected, all for one letter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Today is not a valid &lt;code&gt;date_to&lt;/code&gt;.&lt;/strong&gt; Even the aggregate endpoints reject the current date with &lt;code&gt;bad date_to&lt;/code&gt;. Use yesterday.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Never look up a Site Audit issue by name.&lt;/strong&gt; Issue names are not unique. I found the same name attached to two different issue ids, one of which was permanently empty. Take the id from your own issues response rather than matching on text.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Empty Search Console detail tables do not mean a broken connection.&lt;/strong&gt; The detail endpoints materialise with roughly six weeks of lag, so a query for the last 30 days comes back empty while the aggregates are current to yesterday. I have watched two people conclude their GSC integration was dead when it was working perfectly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Treat &lt;code&gt;org_traffic&lt;/code&gt; as a model, not a measurement.&lt;/strong&gt; It is estimated from keywords in the Ahrefs index multiplied by a click curve, so anything the index does not carry simply does not exist in that figure. On the niche sites I compared it against real Search Console data it came out far too low, in one case by a factor I would not have believed without both numbers side by side. On your own domains, Search Console is the truth. On competitor domains, label it as a floor rather than a number.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Run the Free Surfaces Before You Spend Anything
+&lt;/h2&gt;
+
+&lt;p&gt;The single best habit I picked up: everything connected to a verified project of your own is either free or nearly free, and most people never touch it.&lt;/p&gt;
+
+&lt;p&gt;Across my log, the Search Console endpoints, the management endpoints and the free domain rating lookup together cost zero units and returned just under 6,000 rows. There is exactly one exception to that rule and it is a trap: &lt;code&gt;gsc-anonymous-queries&lt;/code&gt; carries the same &lt;code&gt;gsc-&lt;/code&gt; prefix but bills from 50 units per call, and on a small site it returns almost nothing. &lt;code&gt;site-audit-page-explorer&lt;/code&gt; costs a flat 50 units per request regardless of how many rows come back, which worked out to about a third of a unit per row across nearly 10,000 rows, with twenty-plus technical fields per URL. Rank tracker and subscription info are free as well.&lt;/p&gt;
+
+&lt;p&gt;Then there is the other side of the ledger. Three tools, all of them row-priced keyword and backlink pulls, accounted for 78 percent of everything I spent. The cheap and free surfaces returned about 18,000 rows for 3,400 units. The three expensive ones returned 30,000 rows for 592,000. That is a factor of about a hundred in value for the same budget.&lt;/p&gt;
+
+&lt;p&gt;So the order is: check your remaining units, exhaust the free project surfaces, drill with the flat-rate audit tools, and only then reach for the row-priced ones with a limit you chose deliberately.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What I Would Tell Someone Starting Tomorrow
+&lt;/h2&gt;
+
+&lt;p&gt;Generate an MCP-scoped key, point your client at the remote endpoint, and do not install anything. Use OAuth if you work in chat, bearer if anything of yours runs on a schedule. Before your first real query, open the subscription info tool and read your row cap out of your plan rather than assuming it.&lt;/p&gt;
+
+&lt;p&gt;Then write your own numbers down. The costs in this article are what I measured on one plan across 1,102 calls, and the pricing model moved noticeably in April. Every response carries its actual cost inline, which means the tool tells you what it charged if you bother to look. Two days of logging that field taught me more about where the money goes than any amount of reading the documentation did.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;em&gt;This article was originally published on &lt;a href="https://studiomeyer.io/en/blog/ahrefs-mcp-server-setup" rel="noopener noreferrer"&gt;studiomeyer.io&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:28:46 GMT</pubDate><guid>64141822e372bf89150f2c325fb489dc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[The Verge] X product chief Nikita Bier is leaving after one year</title><link>https://www.theverge.com/tech/975955/x-twitter-nikita-bier-leaving</link><description>X head of product Nikita Bier is stepping down and says he will move into a role as an advisor, writing that "it's time to pass the torch and demote myself to my natural state: a poster." He shared the update just over a month after celebrating his one-year anniversary on the job, and just [&amp;#8230;]</description><pubDate>Wed, 05 Aug 2026 22:19:55 GMT</pubDate><guid>9956a069b7e375f4b1e6ed8d7b03aff9</guid><source url="https://www.theverge.com/rss/index.xml">The Verge</source></item><item><title>[Dev.to] I built a time-travel debugger for Zustand — and it caught three bugs I'd already shipped</title><link>https://dev.to/kuba_opoczka_a6fb453bac5f/i-built-a-time-travel-debugger-for-zustand-and-it-caught-three-bugs-id-already-shipped-1cce</link><description>&lt;p&gt;If you use Zustand, you've had this moment: the UI is wrong, you &lt;em&gt;know&lt;/em&gt; a store changed when it shouldn't have, and now you're scattering &lt;code&gt;console.log&lt;/code&gt; calls and refreshing, trying to catch the one action that did it. State debugging is detective work — and Zustand, by design, is so minimal that it doesn't give you much to work with.&lt;/p&gt;
+
+&lt;p&gt;I wanted to &lt;em&gt;see&lt;/em&gt; it instead. So I built &lt;strong&gt;Zustand DevTools&lt;/strong&gt;: a Chrome DevTools panel that records every state change in your app and lets you walk back through them.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The problem
+&lt;/h2&gt;
+
+&lt;p&gt;Zustand's whole appeal is that it's tiny and unopinionated — no boilerplate, no context wrappers, no ceremony. The flip side is there's no built-in answer to &lt;em&gt;"what changed, when, and because of which action?"&lt;/em&gt; The Redux DevTools middleware exists, but it's Redux-shaped: action-centric, and awkward the moment you have several small stores instead of one big one.&lt;/p&gt;
+
+&lt;p&gt;What I actually wanted while debugging was boring and specific:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a live view of each store's current state,&lt;/li&gt;
+&lt;li&gt;a timeline of every change, labelled with the action name,&lt;/li&gt;
+&lt;li&gt;the exact &lt;strong&gt;path&lt;/strong&gt; that changed (&lt;code&gt;items[1].quantity: 1 → 2&lt;/code&gt;), not a whole-object diff I have to eyeball,&lt;/li&gt;
+&lt;li&gt;and the ability to jump back to any point and look around.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  What it does
+&lt;/h2&gt;
+
+&lt;p&gt;Two parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stores + Timeline (free).&lt;/strong&gt; Open DevTools, click the Zustand tab, and every registered store shows up live. Every &lt;code&gt;set()&lt;/code&gt; becomes a timeline entry with the action name and a path-level diff:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;[cart] addItem    items[1].quantity: 1 → 2    total: 168 → 297
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Click any entry to time-travel to that moment — safely, by ID, rather than by replaying a fragile sequence of actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Trace Sessions (Pro).&lt;/strong&gt; Record while you reproduce a bug, then inspect the recording: path-level diffs, the likely call-site of each change, compare any two entries, and export a redacted session a teammate can import and inspect &lt;strong&gt;view-only&lt;/strong&gt;. That export is the part I use most. &lt;em&gt;"Here's the recording — drag the playhead to step 4 and you'll see where the total goes wrong"&lt;/em&gt; beats a paragraph of Slack every single time.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How you wire it up
+&lt;/h2&gt;
+
+&lt;p&gt;One wrapper per store you want to inspect:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;create&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;zustand&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;withDevtoolsBridge&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;zustand-devtools-bridge&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;useCartStore&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nf"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+  &lt;span class="nf"&gt;withDevtoolsBridge&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;set&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;({&lt;/span&gt;
+      &lt;span class="na"&gt;items&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[],&lt;/span&gt;
+      &lt;span class="na"&gt;addItem&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;item&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;
+        &lt;span class="nf"&gt;set&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="na"&gt;items&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[...&lt;/span&gt;&lt;span class="nx"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;items&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;item&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;}),&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;addItem&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c1"&gt;// named in the log&lt;/span&gt;
+    &lt;span class="p"&gt;}),&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="s1"&gt;cart&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Register a store once with a stable name and you get an accurate live view of it from then on. (There's also a zero-setup experimental view that reads hooks directly for a quick look — it's clearly labelled, because it can't always tell Zustand state apart from other hooks.)&lt;/p&gt;
+
+&lt;p&gt;Two design decisions I care about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;It chains the DevTools hook instead of clobbering it.&lt;/strong&gt; The real React DevTools keeps working right next to it, whichever loads first. A debugging tool that breaks your &lt;em&gt;other&lt;/em&gt; debugging tools is worse than nothing.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;State never leaves your machine.&lt;/strong&gt; Data flows from the inspected page to your panel and nowhere else — no server, no analytics, no telemetry. Your app state is often the most sensitive thing on the page; it shouldn't phone home just so you can look at it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  The honest part
+&lt;/h2&gt;
+
+&lt;p&gt;I build software by directing AI coding agents, and I don't trust their output by default. The architecture, the naming, the test strategy and the review are mine. There are &lt;strong&gt;96 automated tests across two major framework versions&lt;/strong&gt;, because a state tool that's subtly wrong is actively dangerous — you'd end up debugging the debugger.&lt;/p&gt;
+
+&lt;p&gt;And to be straight: after I'd "finished," I did a dedicated review pass over my own code and found &lt;strong&gt;three silent failures a green test suite had missed&lt;/strong&gt;. I fixed them and kept the diffs. If a tool for catching bugs can't survive its own author looking hard at it, it hasn't earned your trust.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Try it
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Free:&lt;/strong&gt; install the Stores + Timeline tools from the Chrome Web Store, add &lt;code&gt;zustand-devtools-bridge&lt;/code&gt; to your app, and wrap a store.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Pro:&lt;/strong&gt; unlimited Trace Sessions for a &lt;strong&gt;€9.99 one-time&lt;/strong&gt; purchase — three full previews free, no subscription, up to 5 devices, 30-day refund.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;👉 &lt;strong&gt;Try it: &lt;a href="https://kubaopoczka.github.io/zustand-devtools-site/" rel="noopener noreferrer"&gt;https://kubaopoczka.github.io/zustand-devtools-site/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you use Zustand and React, I'd genuinely like to know where it falls short — what you tried to inspect that it couldn't show you. That's the feedback that makes it better.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;em&gt;P.S. — I'm new here: this is my first dev.to post, and honestly still finding my feet sharing work out loud like this. If you've got tips for a newcomer (or thoughts on the tool itself), I'd genuinely love to hear them. 🙏&lt;/em&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:19:14 GMT</pubDate><guid>ae3d77698929e0dfec0415e208c8cffc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] I built GitCat 1.0 to replace Git Extensions for large repositories</title><link>https://dev.to/zangjiucheng/i-built-gitcat-10-to-replace-git-extensions-for-large-repositories-1k13</link><description>&lt;p&gt;GitCat did not start as a product. It started as an attempt to replace Git Extensions in one demanding workflow during my internship, then ended up on most of my team's laptops without me really planning it.&lt;/p&gt;
+
+&lt;p&gt;The repository we worked in was huge, with a pile of submodules and a branch structure nobody could hold in their head. Git Extensions gave us the workflows we needed, but switching repositories or branches meant reloading history, watching memory climb, and waiting on work laptops that had little memory to spare.&lt;/p&gt;
+
+&lt;p&gt;So I built something narrow and called it Cherry-Pick Helper. Colleagues tried it, sent me bugs, then asked for the next workflow and the one after that. I kept saying yes. Somewhere along the way it picked up an anime-flavored personality and a cat named Tama, whose job is keeping your repository safe.&lt;/p&gt;
+
+&lt;p&gt;The cat caught on faster than the features did.&lt;/p&gt;
+
+&lt;p&gt;What it became is &lt;a href="https://zangjiucheng.github.io/GitCat/?utm_source=devto&amp;amp;utm_medium=organic_social&amp;amp;utm_campaign=gitcat_v1_launch_2026_08_05&amp;amp;utm_content=launch_post" rel="noopener noreferrer"&gt;GitCat&lt;/a&gt;: a performance-focused Git Extensions alternative for large, branch-heavy repositories, built around two constraints:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Opening, scrolling, and switching should stay responsive as history grows.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Every operation that touches history should be reversible.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Version 1.0 is now available for macOS, Windows, and Linux. It is open source under GPL-3.0-or-later and built with Tauri 2, Rust, and Svelte 5.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Performance first: keeping a 150k-commit graph responsive
+&lt;/h2&gt;
+
+&lt;p&gt;A commit graph is useful only if it remains readable and interactive on repositories with deep, branch-heavy histories. For GitCat, performance is not a benchmark screen or a loading spinner—it determines the architecture.&lt;/p&gt;
+
+&lt;p&gt;GitCat uses &lt;code&gt;git2&lt;/code&gt; for reads and a hand-tuned Rust swimlane layout. Results are streamed to a virtualized canvas, so the newest commits appear quickly instead of waiting for the full history to finish.&lt;/p&gt;
+
+&lt;p&gt;The rendering pipeline separates four kinds of work:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;code&gt;git2&lt;/code&gt; walks repository history.&lt;/li&gt;
+&lt;li&gt;Rust computes the graph's swimlanes.&lt;/li&gt;
+&lt;li&gt;Results stream to the frontend as they become available.&lt;/li&gt;
+&lt;li&gt;A virtualized canvas paints the visible region instead of creating a DOM node for every commit.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For scrolling, the renderer uses a scroll-blit path: it copies the existing frame and redraws only the newly exposed strip. That keeps text readable and scrolling smooth in a 150k-commit test repository without placing a hard cap on history depth.&lt;/p&gt;
+
+&lt;p&gt;Initial load is only half of the problem. Everyday changes such as checkout, branch or tag updates, and staging update the graph incrementally instead of walking the entire history again. Switching context should feel like continuing work, not reopening the repository.&lt;/p&gt;
+
+&lt;p&gt;The interesting lesson for me was that “fast Git” and “fast rendering” are separate problems. Optimizing repository traversal is not enough if layout and paint still scale with every commit on every interaction.&lt;/p&gt;
+
+&lt;p&gt;That is the replacement target: keep the branch, submodule, staging, history, and recovery workflows that made Git Extensions useful to us, but make large repositories feel immediate on ordinary work hardware.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Reversibility is a product feature
+&lt;/h2&gt;
+
+&lt;p&gt;Before GitCat performs a mutation, its Safety Manager pins a snapshot of the repository. That gives the app a global Undo shortcut (&lt;code&gt;⌘Z&lt;/code&gt;), and the undo action is itself undoable.&lt;/p&gt;
+
+&lt;p&gt;This is more than putting a confirmation dialog in front of a dangerous button. Confirmations help before an operation; snapshots help after you realize the operation was technically valid but not what you intended.&lt;/p&gt;
+
+&lt;p&gt;The safety model also shapes the rest of the UI:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;checkout conflicts offer recoverable stash-based paths before a force-discard option;&lt;/li&gt;
+&lt;li&gt;force push and other irreversible actions use an explicit danger-confirm flow;&lt;/li&gt;
+&lt;li&gt;reflog rescue can restore an earlier &lt;code&gt;HEAD&lt;/code&gt; position;&lt;/li&gt;
+&lt;li&gt;dangling objects found through &lt;code&gt;git fsck&lt;/code&gt; can be recovered onto a new branch without moving the current branch;&lt;/li&gt;
+&lt;li&gt;the &lt;code&gt;git-filter-repo&lt;/code&gt; workflow includes a backup-and-restore path.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No GUI can make every Git operation harmless. The goal is to keep the normal path recoverable and make the truly irreversible cases unmistakable.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Real Git workflows, not a simplified model
+&lt;/h2&gt;
+
+&lt;p&gt;I did not want safety to mean hiding Git’s useful features. GitCat 1.0 includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;line- and hunk-level staging, unstaging, and discard;&lt;/li&gt;
+&lt;li&gt;drag-and-drop cherry-pick and merge with a three-way conflict resolver;&lt;/li&gt;
+&lt;li&gt;linear and interactive rebase;&lt;/li&gt;
+&lt;li&gt;bisect with visual cues for the narrowing range;&lt;/li&gt;
+&lt;li&gt;per-file history with rename following;&lt;/li&gt;
+&lt;li&gt;author and pickaxe (&lt;code&gt;-S&lt;/code&gt; / &lt;code&gt;-G&lt;/code&gt;) search;&lt;/li&gt;
+&lt;li&gt;submodules, patch export/apply, stashes, rerere, and external diff/merge tools;&lt;/li&gt;
+&lt;li&gt;WSL-path support on Windows.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is also a &lt;code&gt;⌘K&lt;/code&gt; command palette, Vim-style navigation, and a multi-repository dashboard. When the GUI is not the right tool, “Open Terminal” drops you into a real shell at the repository root.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Claude Code was part of the build
+&lt;/h2&gt;
+
+&lt;p&gt;Claude Code did a lot of the typing, and GitCat moved much faster because of it. I want to say that plainly because, when I shared the project earlier, the use of AI became a larger part of the discussion than the product itself.&lt;/p&gt;
+
+&lt;p&gt;Claude accelerated implementation, but I still chose the workflows and safety boundaries, reviewed the changes, ran the tests, debugged failures, and maintain the released code. Its role here was in the development process; it is not a GitCat feature that users have to enable.&lt;/p&gt;
+
+&lt;p&gt;Working this way also hardened something I already believed: &lt;strong&gt;Git operations should not become invisible&lt;/strong&gt;. Regardless of who or what typed the code, I want to know what an operation changed, read back what happened, and get out of it when it goes wrong. That principle is why snapshot-first mutation and recovery are product-level requirements rather than optional polish.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Architecture
+&lt;/h2&gt;
+
+&lt;p&gt;The desktop shell is Tauri 2. The Rust core uses &lt;code&gt;git2&lt;/code&gt; for reads and the Git CLI for writes, where the snapshot-first mutation policy is enforced. A typed IPC boundary connects it to a Svelte 5 frontend.&lt;/p&gt;
+
+&lt;p&gt;Most features live in focused Svelte islands, while the graph remains a custom canvas renderer. That split lets regular interface components stay declarative without forcing the hottest rendering path through a large DOM tree.&lt;/p&gt;
+
+&lt;p&gt;Tama, the cat in the interface, is wired to real application states rather than running as a decorative animation. She reacts to searching, conflicts, rebases, recovery work, success, and danger—and acts as the visible face of the Safety Manager.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  One current limitation
+&lt;/h2&gt;
+
+&lt;p&gt;The release builds are updater-signed, but the application is not yet code-signed or notarized with platform certificates. macOS Gatekeeper and Windows SmartScreen may therefore show a first-run warning; the install guide documents the exact steps. I would rather make that limitation explicit than hide it behind a download button.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Try it
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://zangjiucheng.github.io/GitCat/?utm_source=devto&amp;amp;utm_medium=organic_social&amp;amp;utm_campaign=gitcat_v1_launch_2026_08_05&amp;amp;utm_content=launch_post" rel="noopener noreferrer"&gt;Website and install guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zangjiucheng/GitCat" rel="noopener noreferrer"&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zangjiucheng/GitCat/releases/tag/v1.0.0" rel="noopener noreferrer"&gt;GitCat v1.0.0 release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I would especially value feedback from Git Extensions users and people who work in large repositories. Where does your current client make you wait: initial history load, switching branches, scrolling, staging, or something else?&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:19:13 GMT</pubDate><guid>5e9e5049d7f7c5c06e7e2b984fdedd39</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] AI writes your API in five minutes. What do you bring?</title><link>https://dev.to/tonyjoe/ai-writes-your-api-in-five-minutes-what-do-you-bring-1fpn</link><description>&lt;h2&gt;
+  
+  
+  &lt;em&gt;Why I wrote a book about Laravel REST APIs right when AI started writing the code&lt;/em&gt;
+&lt;/h2&gt;
+
+
+
+
+&lt;p&gt;In 2026 you open Claude or Copilot, type "build me a Laravel REST API with authentication" and five minutes later you have something running. So why write a book? Why would you read one?&lt;/p&gt;
+
+&lt;p&gt;Now look at that code and tell me whether you actually &lt;em&gt;read&lt;/em&gt; it or just checked that it &lt;em&gt;ran&lt;/em&gt;. You didn't write it and you didn't decide any of it. If it falls over in production tomorrow, the only thing you know how to do is reopen the same chat and ask for a fix, because you know nothing about that code that you didn't know before generating it.&lt;/p&gt;
+
+&lt;p&gt;The question that matters is what you put in it. If the answer is the prompt, your contribution is a request anyone can write, anywhere in the world, for a fifth of your salary. At that point the story about AI replacing us sooner or later no longer concerns you: &lt;strong&gt;you're already replaced&lt;/strong&gt;. Your company just hasn't put it in writing yet.&lt;/p&gt;
+
+&lt;p&gt;The alternative is not giving up the model, it's refusing to take its output on faith. It generates, &lt;strong&gt;you decide&lt;/strong&gt; whether that query survives real traffic, whether that validation covers the input nobody thought of, whether that authorization rule lets one user read another user's data. Those are questions the model won't ask on its own. You have to ask them, and you can only ask them if you know they exist.&lt;/p&gt;
+
+&lt;p&gt;Writing code is worth nothing anymore, because anyone can do it in five minutes. What's worth something is the thinking you put into it. If you put in none, the most expensive and slowest link in the production chain is &lt;em&gt;you&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The book is there to put you back on the deciding side. I've been building with Laravel for years, and the APIs in it are built like the ones I ship to production, not like the ones people write to make examples.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  An API is not a sum of endpoints
+&lt;/h3&gt;
+
+&lt;p&gt;The model writes a single endpoint very well. But an API is a chain of decisions that condition each other, where none of them makes sense looked at alone. You can't ask for that coherence one piece at a time, because one piece at a time is exactly how you lose it.&lt;/p&gt;
+
+&lt;p&gt;That's why the book follows &lt;strong&gt;one API from start to finish&lt;/strong&gt;. It's called BookShelf, it starts from a clean Laravel install and ends with a deploy on a VPS. The domain is deliberately boring, a catalog of books with authors and genres, because I don't want you spending time decoding the business while you're trying to understand how an API is put together. What you learn there moves to any other domain without changing a line of the reasoning.&lt;/p&gt;
+
+&lt;p&gt;Every line of code is explained and the source is on GitHub with a git tag at the end of each chapter, so you can download the project as it was at any point in the book. When a chapter makes a decision, the chapters after it carry that decision along, with everything that entails.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  The things you need to be able to judge
+&lt;/h3&gt;
+
+&lt;p&gt;It starts with how the API is designed, which is the part the model guesses worst: which resources you expose, what your status codes are actually telling the client, how to structure an error response that explains what went wrong instead of just failing. From there it moves to validation with Form Requests, authentication with Sanctum and authorization with Policies, which are three different problems even though too many projects mash them into the same controller.&lt;/p&gt;
+
+&lt;p&gt;Then come the things you only see under load or under attack. Eager loading and N+1, the point where most Laravel APIs fall over once the data gets real. Rate limiting, CORS and the vulnerabilities you need to know before opening your API to the world. And at the end, what tells you whether the work is actually done: tests with Pest, documentation generated with Scribe and a zero-downtime deploy with Envoy.&lt;/p&gt;
+
+&lt;p&gt;Twenty chapters, in this order, because it's the order in which the problems hit you. And you don't have to take my word on the level: the chapter on eager loading and N+1 is yours, &lt;strong&gt;whole and free&lt;/strong&gt;, link at the bottom.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  The chapter you'll want to read first
+&lt;/h3&gt;
+
+&lt;p&gt;The last chapter is about Claude Code, and it's not what you'd expect from a book published now. I don't tell you AI changed my life. I show you how I use it on a real working day: what I ask it, what I re-read line by line before trusting it, when I throw away what it proposed without arguing about it. It sits at the end for a precise reason. After nineteen chapters you can spot at a glance a query that won't hold, a leaky validation, a badly written Policy, so the model becomes someone who works &lt;em&gt;for you&lt;/em&gt;. Read that chapter first and you stay someone who works &lt;em&gt;for the model&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Who it's for, and who it isn't
+&lt;/h3&gt;
+
+&lt;p&gt;You know PHP and you want to build REST APIs that hold up in production. You don't have to know Laravel already: if you come from Symfony, WordPress or plain PHP, I explain every piece of the framework the moment it comes into play.&lt;/p&gt;
+
+&lt;p&gt;If instead you've been working with Laravel for years and you move through Policies, queues and Resources with your eyes closed, you can safely skip a good part of the book.&lt;/p&gt;
+
+&lt;p&gt;It's a different story if what you're looking for is a way to churn out APIs without having to understand them. That book exists, but I didn't write it.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Where to start
+&lt;/h3&gt;
+
+&lt;p&gt;The book is on Amazon: &lt;a href="https://antonio.popolizio.it/laravel-rest-apis" rel="noopener noreferrer"&gt;antonio.popolizio.it/laravel-rest-apis&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to see how I write first, the chapter on eager loading and N+1 is free at &lt;a href="https://antonio.popolizio.it/laravel-rest-apis/sample.pdf" rel="noopener noreferrer"&gt;antonio.popolizio.it/laravel-rest-apis/sample.pdf&lt;/a&gt;: you download it and that's it. No form, no leaving your email, no signing up for anything.&lt;/p&gt;
+
+&lt;p&gt;If you read the book, &lt;a href="mailto:hello@antonio.popolizio.it"&gt;write me&lt;/a&gt;. Whether you liked it or not, I want to know.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;In italiano lo trovi qui: &lt;a href="https://antonio.popolizio.it/api-rest-laravel" rel="noopener noreferrer"&gt;antonio.popolizio.it/api-rest-laravel&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:17:52 GMT</pubDate><guid>5669ad3cde201707f6b52050c5e2ec3b</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Phoronix] Mesa 26.2 Released With NVK Mesh Shader Support, Many Other Vulkan Improvements</title><link>https://www.phoronix.com/news/Mesa-26.2-Released</link><description>Mesa 26.2 stable is now available as the newest quarterly feature release for this set of open-source OpenGL and Vulkan drivers typically used on Linux systems...</description><pubDate>Wed, 05 Aug 2026 22:13:57 GMT</pubDate><guid>afd1fc796d250bac6f22c455c4f3f307</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Dev.to] I Built a Language Tutor That Listens and Scores Your Pronunciation</title><link>https://dev.to/botoclock/i-built-a-language-tutor-that-listens-and-scores-your-pronunciation-23f5</link><description>&lt;p&gt;Language learning apps work fine on a screen, but the hardest part is the thing screens avoid: actually speaking out loud and getting immediate feedback on whether you said it right.&lt;/p&gt;
+
+&lt;p&gt;Most voice-based language tools either play a recording or transcribe your speech. They don't do both in an interactive loop. I wanted to build something that does — something that plays a phrase, listens to you repeat it, and tells you whether you got it right.&lt;/p&gt;
+
+&lt;p&gt;The Telnyx code example is:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/language-learning-flashcards-python" rel="noopener noreferrer"&gt;https://github.com/team-telnyx/telnyx-code-examples/tree/main/language-learning-flashcards-python&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a Python Flask app with a browser UI. No phone number, no webhook tunnel, no Cloud Storage.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Loop
+&lt;/h2&gt;
+
+&lt;p&gt;The app uses all three Telnyx AI primitives in one interactive round-trip:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;strong&gt;TTS speaks&lt;/strong&gt; — an Ultra voice (Camila for Spanish, Valerie for French) plays a flashcard phrase. Audio autoplays.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;You repeat&lt;/strong&gt; — click Record, speak the phrase, click Stop.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;STT transcribes&lt;/strong&gt; — Whisper transcribes your speech.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Inference scores&lt;/strong&gt; — Kimi-K2.6 compares your transcription against the target phrase and returns a score: correct, close, or wrong, plus a one-sentence tip.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;One platform, one API key, no external services.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why This Is Different From a Translator
+&lt;/h2&gt;
+
+&lt;p&gt;The existing &lt;code&gt;ai-content-translator-python&lt;/code&gt; example does STT → translate → TTS. It's one-directional: you speak, the app translates. This example is interactive: the app speaks to you, you speak back, the app evaluates you. The flow is completely different even though it uses the same three Telnyx primitives.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Voices
+&lt;/h2&gt;
+
+&lt;p&gt;The app uses native Ultra voices per language, not one English voice with &lt;code&gt;language_boost&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;Voice&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spanish&lt;/td&gt;
+&lt;td&gt;Camila (es, Female)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;French&lt;/td&gt;
+&lt;td&gt;Valerie (fr-FR, Female)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;To add more languages, enumerate voices via &lt;code&gt;GET /v2/text-to-speech/voices&lt;/code&gt; and add them to &lt;code&gt;LANGUAGE_VOICE_MAP&lt;/code&gt; in &lt;code&gt;app.py&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How the Scoring Works
+&lt;/h2&gt;
+
+&lt;p&gt;The Inference call uses a system prompt that tells Kimi to compare the target phrase against the user's spoken text and return JSON with a score and a tip:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;"score"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"correct"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;"feedback"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Great job, your pronunciation matched the target phrase perfectly!"&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Kimi-K2.6 is a reasoning model — it takes ~10 seconds to think before scoring, but the result is more nuanced than a simple string comparison. It accounts for minor accent differences (correct), noticeable errors like wrong or missing words (close), and completely wrong speech (wrong).&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Decks
+&lt;/h2&gt;
+
+&lt;p&gt;The app ships with 4 pre-built flashcard decks:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Deck&lt;/th&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;Cards&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spanish — Greetings&lt;/td&gt;
+&lt;td&gt;Spanish&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spanish — Numbers&lt;/td&gt;
+&lt;td&gt;Spanish&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spanish — Common phrases&lt;/td&gt;
+&lt;td&gt;Spanish&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;French — Greetings&lt;/td&gt;
+&lt;td&gt;French&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Add more by editing &lt;code&gt;FLASHCARD_DECKS&lt;/code&gt; in &lt;code&gt;app.py&lt;/code&gt;. Each card has a &lt;code&gt;phrase&lt;/code&gt; (what TTS speaks and what you repeat) and a &lt;code&gt;translation&lt;/code&gt; (shown as a hint).&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Run It
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git clone https://github.com/team-telnyx/telnyx-code-examples.git
+&lt;span class="nb"&gt;cd &lt;/span&gt;telnyx-code-examples/language-learning-flashcards-python
+&lt;span class="nb"&gt;cp&lt;/span&gt; .env.example .env    &lt;span class="c"&gt;# fill in TELNYX_API_KEY&lt;/span&gt;
+pip &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nt"&gt;-r&lt;/span&gt; requirements.txt
+python app.py           &lt;span class="c"&gt;# starts on http://127.0.0.1:5050&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Open the browser, pick a deck, listen, repeat, get scored.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  One Thing to Watch
+&lt;/h2&gt;
+
+&lt;p&gt;Kimi-K2.6 is a reasoning model. It spends tokens thinking before it produces the JSON score. If &lt;code&gt;max_tokens&lt;/code&gt; is too low (I tried 200 at first), it runs out of tokens during reasoning and returns empty content. The fix is &lt;code&gt;max_tokens: 1000&lt;/code&gt; — enough for reasoning + the short JSON response. This is a Kimi-specific behavior; a non-reasoning model like Llama-3.3-70B would work with 200 tokens, but Kimi is the recommended Telnyx model.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Related Examples
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-language-learning-phone-tutor-python" rel="noopener noreferrer"&gt;&lt;code&gt;ai-language-learning-phone-tutor-python&lt;/code&gt;&lt;/a&gt; — phone-based language tutor&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/ai-content-translator-python" rel="noopener noreferrer"&gt;&lt;code&gt;ai-content-translator-python&lt;/code&gt;&lt;/a&gt; — STT + translate + TTS pipeline&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/team-telnyx/telnyx-code-examples/tree/main/multi-character-narrator-python" rel="noopener noreferrer"&gt;&lt;code&gt;multi-character-narrator-python&lt;/code&gt;&lt;/a&gt; — multi-voice TTS with emotions&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Wed, 05 Aug 2026 22:11:18 GMT</pubDate><guid>3a4f308226c2e27f1a88880f38fbd45d</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] A page my crawler could not read is not a page that does not exist. Six times I got that wrong, twice while writing this</title><link>https://dev.to/blueticks/a-page-my-crawler-could-not-read-is-not-a-page-that-does-not-exist-six-times-i-got-that-wrong-4pb5</link><description>&lt;p&gt;I have been running a small measurement rig for two weeks: a set of scripts that load our pages in a fresh anonymous browser context and record what is actually there. Directory listings, articles, search positions. It has been genuinely useful and it has been wrong in one specific way, six separate times, and the six are the same mistake.&lt;/p&gt;
+
+&lt;p&gt;Every time, a script failed to read something, and I wrote down the failure as a fact about the world. The last two happened while I was drafting this post, which is the part I would keep if I could only keep one.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  One: I turned four observations into a property
+&lt;/h2&gt;
+
+&lt;p&gt;Two directories were serving an anti-bot challenge instead of their content. I checked, got the challenge, checked again the next day, got the challenge, and after four identical observations I recorded it in my notes as an established property of those sites: they block automated readers.&lt;/p&gt;
+
+&lt;p&gt;On the fifth check, both loaded perfectly. Nothing had changed on my side.&lt;/p&gt;
+
+&lt;p&gt;The observations were all correct. Every single one of them. What was wrong was the sentence I wrote underneath them, which promoted four samples of an intermittent thing into a permanent characteristic. Four is not a small number when you are counting real events, and it is a very small number when you are trying to establish that something never happens.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Two: a listing was live for six days while I counted it as pending
+&lt;/h2&gt;
+
+&lt;p&gt;We submitted to a software directory. Two pages appeared under our name. My checker could not confirm they were public, because the site was serving that same challenge, so I recorded them honestly as unconfirmed and moved on.&lt;/p&gt;
+
+&lt;p&gt;Six days later, with the challenge gone, both pages loaded on the first try. Nine hundred words each, indexable, and almost certainly live the entire time.&lt;/p&gt;
+
+&lt;p&gt;This is the expensive version of the mistake. Nothing about my notes was a lie: I had written &lt;em&gt;I cannot prove these are public&lt;/em&gt;, which was true. But the ledger downstream treated unconfirmed as not live, so for six days our count of live pages was wrong, and the decision about whether that directory had been worth the effort was made on the wrong number.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A measurement you cannot take is not neutral. It manufactures a durable false negative, and the falseness sits in a column that looks just as confident as the true ones.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Three: I let a tool's limits define reality
+&lt;/h2&gt;
+
+&lt;p&gt;A directory sat in my ideas file for a week marked unreadable, tested with a command line HTTP client. The note said: cannot be read.&lt;/p&gt;
+
+&lt;p&gt;The site renders client side. A command line fetch gets a shell with no content in it. A real browser gets a full page, a signup form, and a working submission flow. The site was never unreadable. My tool could not read it, and I had written down the shorter sentence.&lt;/p&gt;
+
+&lt;p&gt;That shorter sentence is the whole problem. &lt;em&gt;Cannot be read&lt;/em&gt; has no subject. Once the subject falls out, the limitation moves from the tool to the world, and nobody who reads the note later will think to question it.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Four: eleven seconds
+&lt;/h2&gt;
+
+&lt;p&gt;I ran a script across every listing we own, reading the &lt;code&gt;rel&lt;/code&gt; attribute on outbound links. One domain came back with no link at all. An hour later, on a re-run, the same domain came back with a followed link.&lt;/p&gt;
+
+&lt;p&gt;That kind of disagreement is easy to average away. I ran it three more times: link, link, link. The first reading was a false negative because the page takes longer than eleven seconds to finish rendering, and my script measured an empty document and reported it as a fact.&lt;/p&gt;
+
+&lt;p&gt;The number that changed was not important. What was important is what it implied about all the other rows: &lt;strong&gt;a negative verdict and a slow page produce identical output&lt;/strong&gt;. So I re-ran every negative in the table. They held, this time. Had I not chased the one that flipped, I would have published a table with a wrong row in it and no way of knowing which row.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Five and six: I did it twice more while writing this
+&lt;/h2&gt;
+
+&lt;p&gt;The morning I finished the draft above, I went looking for a way to add a missing website link to one of our directory listings. The listing is 896 words about our product and my scripts had recorded, twice, that it contained no outbound link to us at all.&lt;/p&gt;
+
+&lt;p&gt;The edit form showed the website field already filled in, correctly, and presumably filled in from the day the listing was created.&lt;/p&gt;
+
+&lt;p&gt;A field with a value and a page with no link. One of those had to be wrong, and it was my reading. That directory puts the outbound link on a sub-page, not on the main listing. A large, well established listing on the same site behaves identically, so it is how the site works. My script had read exactly one page per listing, the address in my ledger, and had never followed a sub-page in its life.&lt;/p&gt;
+
+&lt;p&gt;So I rebuilt the sub-page search and ran it across every remaining no-link listing. A second one fell, for a completely different reason. That directory does link to us: an anchor whose visible text is our domain, whose &lt;code&gt;href&lt;/code&gt; points at a redirect script on their own domain, carrying &lt;code&gt;rel="nofollow"&lt;/code&gt;. My script tested whether the &lt;code&gt;href&lt;/code&gt; contained our domain. This one does not contain it anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Two of the three verdicts I re-examined were links hidden by a site convention.&lt;/strong&gt; One on a sub-page, one behind a redirect. That is not bad luck. It is what directories do: they route outbound traffic so they can count it, and every routing scheme is invisible to a naive href match.&lt;/p&gt;
+
+&lt;p&gt;And then, chasing the second one, I produced a false positive to match. My sub-page crawler reported finding our link on the redirect URL. It had followed the redirect, landed on our own website, and was cheerfully counting our own internal links. &lt;strong&gt;A measurement taken after following a link no longer measures the link. It measures the destination.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The rule I now use
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A positive result from a crawler is evidence. A negative result is a hypothesis.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I wrote that sentence in a draft of this post the evening before both of the failures above. Writing a rule down and applying it are two separate actions, and the second does not follow from the first on its own.&lt;/p&gt;
+
+&lt;p&gt;If the script finds a link, there is a link. That direction is safe, because the failure modes of the tool do not invent content. If the script finds nothing, one of two things is true: there is nothing there, or the tool did not manage to look. Those two are indistinguishable in the output, and only one of them is about the site.&lt;/p&gt;
+
+&lt;p&gt;Three practical consequences, all of which I now do:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Negative verdicts get a second pass, separately.&lt;/strong&gt; Not a re-run of the whole job, a targeted re-read of only the negatives. It is cheap because negatives are usually a minority, and it is the only thing that separates the two cases above.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes name the instrument, always.&lt;/strong&gt; Not &lt;em&gt;cannot be read&lt;/em&gt; but &lt;em&gt;the command line client gets an empty shell here&lt;/em&gt;. The first sentence is about the site and is wrong. The second is about my tool and is true, and it invites the obvious next question, which is whether a different tool would do better.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When an obstacle disappears, re-walk everything it ever hid.&lt;/strong&gt; This is the one I keep having to relearn. The day the challenges stopped, I should have immediately re-checked every row that had ever been marked unconfirmed. I did not, and the six day case is what that omission cost.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why this is worth the effort at all
+&lt;/h2&gt;
+
+&lt;p&gt;Because the alternative is a spreadsheet full of confident numbers where an unknown fraction of the zeros mean &lt;em&gt;no&lt;/em&gt; and the rest mean &lt;em&gt;I did not manage to ask&lt;/em&gt;. You cannot tell them apart later. There is no audit that recovers it, because the two look the same in every column you kept.&lt;/p&gt;
+
+&lt;p&gt;The fix is not better scripts. It is a second column recording how the answer was obtained, and a habit of distrusting one particular direction of result.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Disclosure
+&lt;/h2&gt;
+
+&lt;p&gt;I build BlueTicks for Gmail, a Chrome and Firefox extension that shows WhatsApp style ticks in your Gmail sent list, one tick sent and two blue ticks opened. It costs 4 dollars a year and there is a free tier. The measurement rig described above exists to track how it gets distributed, and it is written up as it happens, including the parts where it measured badly. You can find it at &lt;a href="https://blueticks.io/" rel="noopener noreferrer"&gt;blueticks.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you run something similar, the cheapest improvement available to you today is to re-run only your negatives and see how many of them survive.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:08:12 GMT</pubDate><guid>8f5e94ff593e5551d7cf01ee53055ab7</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] I checked the rel attribute on all 24 of my directory listings. Five of them give a followed link</title><link>https://dev.to/blueticks/i-checked-the-rel-attribute-on-all-24-of-my-directory-listings-five-of-them-give-a-followed-link-2end</link><description>&lt;p&gt;For twelve days I have been submitting a small Chrome extension to software directories and counting the ones that publish. The count reached 58 live pages, and I was pleased with it, and the number was answering the wrong question.&lt;/p&gt;
+
+&lt;p&gt;A listing is not a listing. What a directory actually gives you is a link, and links are not equal. So I wrote a script that loads every one of our listing pages in a fresh anonymous browser context, finds the outbound links, and reads the &lt;code&gt;rel&lt;/code&gt; attribute exactly as it appears in the page.&lt;/p&gt;
+
+&lt;p&gt;Here is what twelve days of directory submissions bought.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The numbers
+&lt;/h2&gt;
+
+&lt;p&gt;24 listing pages, across 21 distinct domains.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What the page gives&lt;/th&gt;
+&lt;th&gt;Pages&lt;/th&gt;
+&lt;th&gt;Domains&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A followed link&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;of which, on a page marked &lt;code&gt;noindex&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A link with &lt;code&gt;nofollow&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A link to the app store instead of to us&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Our name, and no link I could find&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;One of those last five turned out not to be a directory decision at all. See the last section.&lt;/p&gt;
+
+&lt;p&gt;The five that give a followed link, and they are close to the entire return: make.rs, peerpush.net, startupranking.com, superlaunchlist.com, webstoreextensions.com.&lt;/p&gt;
+
+&lt;p&gt;That is the whole return. Not 58 pages. Five links, and one of those five is worth less than it looks, which I only found by checking one more thing.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The check I nearly did not do
+&lt;/h2&gt;
+
+&lt;p&gt;Having sorted the links by &lt;code&gt;rel&lt;/code&gt;, I almost stopped. The remaining question took one line of code: what does each page say in its robots meta tag?&lt;/p&gt;
+
+&lt;p&gt;Four of the five followed links sit on ordinary indexable pages. The fifth sits on a page serving &lt;code&gt;noindex, follow&lt;/code&gt;, canonical to itself. The directory is telling search engines not to index the page at all.&lt;/p&gt;
+
+&lt;p&gt;A &lt;code&gt;noindex, follow&lt;/code&gt; page does pass link signals at first. But a page that stays unindexed stops being crawled as often, and the links on it are eventually treated as if they were not there. So that row is a followed link on a page the search engine has been asked to forget.&lt;/p&gt;
+
+&lt;p&gt;I would not have found it by looking at &lt;code&gt;rel&lt;/code&gt;, because &lt;code&gt;rel&lt;/code&gt; was clean. The two attributes answer different questions and I had only been asking one of them. &lt;strong&gt;Four indexable followed links is the honest number.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The three things I first counted as the same
+&lt;/h2&gt;
+
+&lt;p&gt;My first version of the script asked one question, does this page link to our domain, and sorted everything else into a bin called no link. That bin turned out to contain three completely different situations, and I only found out by opening two of the pages by hand.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A page can be entirely about you and link nowhere.&lt;/strong&gt; At least, that is what I wrote here first, and the example I chose turned out to be wrong. I will come back to it, because the way it broke is the most useful thing in this post.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A page can link to the app store instead of to you.&lt;/strong&gt; Two directories send visitors to the Chrome Web Store, with &lt;code&gt;nofollow&lt;/code&gt;, and never mention our own domain. The traffic may still convert, and I am not complaining about it. But the authority goes to Google, not to us, and calling that a backlink is self deception.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And a page can not mention you at all any more.&lt;/strong&gt; Worth checking, because listings do get edited.&lt;/p&gt;
+
+&lt;p&gt;My first script called all three of those the same thing. The distinction is the entire finding.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The example I built a section around, and how it broke
+&lt;/h2&gt;
+
+&lt;p&gt;The listing I used to illustrate &lt;em&gt;entirely about you, linking nowhere&lt;/em&gt; was ours on AlternativeTo. It runs to 896 words and names the product eighteen times. I loaded it anonymously, twice, counted 730 links on the page, found eight pointing off the domain, and not one of them was ours.&lt;/p&gt;
+
+&lt;p&gt;All of that is accurate. The conclusion was still wrong.&lt;/p&gt;
+
+&lt;p&gt;AlternativeTo puts the outbound link on a sub-page. Our main listing has none; &lt;code&gt;/about/&lt;/code&gt; carries &lt;strong&gt;Official Website&lt;/strong&gt; pointing at our domain with &lt;code&gt;rel="nofollow noopener"&lt;/code&gt;. I only found it because I went looking for a form to add the missing URL, opened the edit view, and discovered the URL had been stored correctly all along. A well established listing on the same site behaves identically, so this is how the site works, not a quirk of ours.&lt;/p&gt;
+
+&lt;p&gt;My script had one job, read the outbound links of a listing, and it read the outbound links of exactly one page per listing: the address recorded in my ledger. It had never followed a sub-page in its life.&lt;/p&gt;
+
+&lt;p&gt;So the row moved from no link to &lt;code&gt;nofollow&lt;/code&gt;. Then I rebuilt the sub-page search properly, ran it across every remaining no-link listing, and a second one fell the same way for a different reason.&lt;/p&gt;
+
+&lt;p&gt;One directory does link to us, through its own redirect script: an anchor reading &lt;code&gt;https://blueticks.io&lt;/code&gt; whose &lt;code&gt;href&lt;/code&gt; points at &lt;code&gt;redir.php&lt;/code&gt; on their domain, carrying &lt;code&gt;rel="nofollow"&lt;/code&gt;. My script looked for an &lt;code&gt;href&lt;/code&gt; containing our domain. This one does not contain it. The link is real, the rel is real, and my filter could not see either.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Two of the three no-link verdicts I re-examined turned out to be links hidden by a site convention&lt;/strong&gt;, one on a sub-page and one behind a redirect. That is not a coincidence, it is what directories do: they route outbound traffic so they can measure it, and every routing scheme is invisible to a naive href match.&lt;/p&gt;
+
+&lt;p&gt;The remaining rows are hypotheses. The followed and &lt;code&gt;nofollow&lt;/code&gt; rows are measurements.&lt;/p&gt;
+
+&lt;p&gt;This post was drafted alongside another one arguing that a crawler's negative result is a hypothesis rather than a fact. Its own principle caught it, one day later, in the table above.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The measurement that changed its mind
+&lt;/h2&gt;
+
+&lt;p&gt;One domain flipped between two runs an hour apart. startupranking.com read as no link at 07:05 and as a followed link at 08:00.&lt;/p&gt;
+
+&lt;p&gt;That is the sort of thing you either chase down or quietly average away. I ran it three more times: followed, followed, followed, with an empty &lt;code&gt;rel&lt;/code&gt; attribute each time. The first reading was a false negative, because eleven seconds is not enough for that site to finish loading, and my script measured an empty page.&lt;/p&gt;
+
+&lt;p&gt;The consequence is not that one number changed. It is that &lt;strong&gt;every negative verdict this script produces is suspect&lt;/strong&gt;, because a negative verdict and a slow page look identical. So I re-ran all nine of the no-link pages a second time. They held, at the level my script was capable of checking, which the previous section shows was not the level I thought. Had I not chased the one that flipped, I would have published a table with a wrong row in it and no way of knowing which.&lt;/p&gt;
+
+&lt;p&gt;A positive result from this kind of script is evidence. A negative result is a hypothesis.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Two counting mistakes, both caught by a total
+&lt;/h2&gt;
+
+&lt;p&gt;While tallying the results I wrote a small parser to group them by domain. It reported 28 addresses. The run had measured 24.&lt;/p&gt;
+
+&lt;p&gt;The parser was matching the summary lines at the bottom of the output as if they were results, adding one phantom row to every category. Nothing about the output looked wrong. The categories were plausible, the proportions were plausible, and the only thing that gave it away was that 28 is not 24.&lt;/p&gt;
+
+&lt;p&gt;Then, separately, I ran the script on a single URL to double check one site, and it overwrote the JSON file holding all 24 results, because the output path was a constant.&lt;/p&gt;
+
+&lt;p&gt;Neither of these is interesting on its own. Together they are the reason I now keep a total in every summary I print, even when nothing consumes it. &lt;strong&gt;The total is not for the reader. It is the only thing standing between a plausible table and a wrong one.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What I would do differently, and what I would not
+&lt;/h2&gt;
+
+&lt;p&gt;I would still make the submissions. They took a few nights, they cost nothing, and four indexable followed links from real software directories is a reasonable return for that.&lt;/p&gt;
+
+&lt;p&gt;What I would change is the bookkeeping. A listing goes into the ledger with its &lt;code&gt;rel&lt;/code&gt; value from day one, not twelve days later. Without that column the ledger says 58 and means five, and every decision downstream, where to submit next, whether the vein is exhausted, whether it is worth another night, is being made on the wrong number.&lt;/p&gt;
+
+&lt;p&gt;The vein is nearly exhausted, incidentally. Five search passes across pages that mention comparable tools returned fifty linked domains on its last pass and zero we did not already know. That is a real signal to stop, and it is only legible once you stop counting pages and start counting links.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  One of them was my own empty field
+&lt;/h2&gt;
+
+&lt;p&gt;After finishing the table I did something I had not done once in twelve days of measuring these listings: I asked whether I could change any of them.&lt;/p&gt;
+
+&lt;p&gt;We hold accounts on several of these directories. On one, a profile page carrying our name and no link, the website field in the settings was simply blank. I filled it in, saved, reloaded to confirm it had stored, and then loaded the public page in an anonymous context. The link is there now, with &lt;code&gt;rel="noreferrer nofollow ugc"&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So that row moves, and it moves for a reason that has nothing to do with the directory's policy. It was never a decision they made. It was a field I never filled.&lt;/p&gt;
+
+&lt;p&gt;I checked the others in the same spirit and the answers were varied and worth knowing. Two listings already had the correct URL stored and simply have not published yet, because the product is sitting in a launch queue. One company page has nineteen editable fields and not one of them is a website, so no link is possible there at all, which is a firm answer rather than a gap. One project page offers its owner no edit control I could find.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The useful lesson is not the row that moved.&lt;/strong&gt; It is that I spent twelve days measuring an inventory without once asking which parts of it I controlled. Measuring and acting are different verbs, and I had been using only the first.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Disclosure
+&lt;/h2&gt;
+
+&lt;p&gt;I build BlueTicks for Gmail, a Chrome and Firefox extension that shows WhatsApp style ticks in your Gmail sent list, one tick sent and two blue ticks opened. It costs 4 dollars a year and there is a free tier. The directory work described above is how it gets distributed, written up as it happens, including the parts that measure badly. You can find it at &lt;a href="https://blueticks.io/" rel="noopener noreferrer"&gt;blueticks.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are running the same play, the check takes an afternoon: load each listing anonymously, read the &lt;code&gt;rel&lt;/code&gt;, and count what you actually own.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:06:08 GMT</pubDate><guid>d2da1634dfc8c1ae0083222989d0cd99</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Lobsters] AI models shock UK testers by using fake identities to try to trick developers</title><link>https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/tmpokv/ai_models_shock_uk_testers_by_using_fake"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:02:11 GMT</pubDate><guid>7a9cd32c8b5869f887c3483f8eb1f32d</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Dev.to] FinanceHub #1: Cuando un MVP deja de ser suficiente</title><link>https://dev.to/eduuu_dev/financehub-1-cuando-un-mvp-deja-de-ser-suficiente-i9</link><description>&lt;h2&gt;
+  
+  
+  Introducción
+&lt;/h2&gt;
+
+&lt;p&gt;Hace un tiempo, junto a un compañero, comenzamos a desarrollar FinanceHub.&lt;/p&gt;
+
+&lt;p&gt;La idea era simple: construir una aplicación que nos ayudara a entender mejor nuestras finanzas personales.&lt;/p&gt;
+
+&lt;p&gt;Como ocurre con muchos proyectos, queríamos validar la idea lo antes posible, así que decidimos comenzar utilizando una plataforma no-code.&lt;/p&gt;
+
+&lt;p&gt;Y funcionó.&lt;/p&gt;
+
+&lt;p&gt;En poco tiempo teníamos una aplicación usable. Podíamos registrar ingresos, gastos y visualizar parte de nuestra información financiera.&lt;/p&gt;
+
+&lt;p&gt;Para un MVP, era exactamente lo que necesitábamos.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Pero apareció una pregunta
+&lt;/h2&gt;
+
+&lt;p&gt;Con el paso del tiempo empezamos a imaginar nuevas funcionalidades.&lt;/p&gt;
+
+&lt;p&gt;Más reglas de negocio. Mayor personalización. Una API propia. Integraciones. Mejor seguridad. Mayor control sobre la infraestructura.&lt;/p&gt;
+
+&lt;p&gt;Y ahí apareció una pregunta que probablemente muchos desarrolladores se han hecho alguna vez:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;¿Seguimos construyendo sobre la plataforma actual o es momento de crear nuestra propia base tecnológica?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  La decisión
+&lt;/h2&gt;
+
+&lt;p&gt;Finalmente decidimos dar el salto.&lt;/p&gt;
+
+&lt;p&gt;Mantener la idea. Mantener el producto. Pero reconstruir completamente la plataforma.&lt;/p&gt;
+
+&lt;p&gt;Mi desafío fue liderar esa migración técnica: pasar de una solución no-code a un backend desarrollado con Spring Boot, PostgreSQL y una arquitectura pensada para crecer.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Lo curioso
+&lt;/h2&gt;
+
+&lt;p&gt;Pensé que la parte difícil sería escribir el nuevo sistema.&lt;/p&gt;
+
+&lt;p&gt;No lo fue.&lt;/p&gt;
+
+&lt;p&gt;La parte difícil fue decidir cómo construirlo.&lt;/p&gt;
+
+&lt;p&gt;Porque cuando dejas de depender de una plataforma, todas las decisiones pasan a ser tuyas: la autenticación, la arquitectura, la infraestructura, la seguridad, los contratos, la base de datos, las migraciones, los despliegues, la observabilidad.&lt;/p&gt;
+
+&lt;p&gt;Todo.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  La primera decisión importante
+&lt;/h2&gt;
+
+&lt;p&gt;Antes de escribir una sola línea de código decidí hacer algo diferente.&lt;/p&gt;
+
+&lt;p&gt;No empezar por el código. Empezar por el diseño.&lt;/p&gt;
+
+&lt;p&gt;Así nació una metodología basada en especificaciones. Antes de pedirle cualquier tarea a Claude Code, definí:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la arquitectura,&lt;/li&gt;
+&lt;li&gt;el modelo de datos,&lt;/li&gt;
+&lt;li&gt;el contrato OpenAPI,&lt;/li&gt;
+&lt;li&gt;las reglas del proyecto,&lt;/li&gt;
+&lt;li&gt;y un plan dividido en pequeñas fases verificables.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ese proceso terminó siendo mucho más importante que cualquier prompt.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Lo que más me sorprendió
+&lt;/h2&gt;
+
+&lt;p&gt;Durante esta migración entendí algo.&lt;/p&gt;
+
+&lt;p&gt;La IA puede escribir muchísimo código. Pero no puede decidir qué sistema quieres construir. Eso sigue siendo trabajo del ingeniero.&lt;/p&gt;
+
+&lt;p&gt;Y cuanto más complejo es el proyecto, más importante se vuelve definir reglas claras antes de empezar.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Lo que viene
+&lt;/h2&gt;
+
+&lt;p&gt;En los próximos artículos quiero compartir cómo fuimos tomando esas decisiones. No para enseñar un framework en particular, sino para mostrar cómo estamos abordando la construcción de un producto real desde una perspectiva de ingeniería.&lt;/p&gt;
+
+&lt;p&gt;Porque al final, FinanceHub dejó de ser solo una aplicación para administrar finanzas.&lt;/p&gt;
+
+&lt;p&gt;Se convirtió en un laboratorio donde estamos aprendiendo sobre arquitectura, cloud, agentes de IA y diseño de software.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 21:57:35 GMT</pubDate><guid>561aeb3924b0b7cf0bef2770b6c7fb28</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Github Stacked PR</title><link>https://dev.to/dixitgurv/github-stacked-pr-l26</link><description>&lt;h2&gt;
+  
+  
+  🎯 What a “Stacked PR” Is (and Why You’ll Want One)
+&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;stacked pull request&lt;/strong&gt; (sometimes called a &lt;em&gt;stacked PR&lt;/em&gt;, &lt;em&gt;stacked diff&lt;/em&gt;, or &lt;em&gt;dependent PR&lt;/em&gt;) is a series of PRs that build on top of each other, each one containing a small, logically‑isolated change.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;main ──► A ──► B ──► C
+          │      │      │
+          │      │      └─ PR‑C (depends on B)
+          │      └─ PR‑B (depends on A)
+          └─ PR‑A (directly on main)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;A&lt;/strong&gt; is based on &lt;code&gt;main&lt;/code&gt;.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;B&lt;/strong&gt; is based on &lt;strong&gt;A&lt;/strong&gt; (its head).
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;C&lt;/strong&gt; is based on &lt;strong&gt;B&lt;/strong&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you eventually merge the stack in order (A → B → C), each change lands cleanly, and reviewers can focus on &lt;em&gt;one&lt;/em&gt; cohesive piece at a time.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Why Stack PRs?
+&lt;/h3&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Problem&lt;/th&gt;
+&lt;th&gt;Stacked PR Solution&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;strong&gt;Huge, monolithic PRs&lt;/strong&gt; that are hard to review &amp;amp; cause long CI times&lt;/td&gt;
+&lt;td&gt;Break the work into bite‑size PRs (e.g., “feature flag”, “data model”, “UI”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;strong&gt;Inter‑dependent changes&lt;/strong&gt; (e.g., a new API + its consumer)&lt;/td&gt;
+&lt;td&gt;Each dependent change lives in its own PR, but they still get tested together because they are built on top of each other&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;strong&gt;Rebasing on main&lt;/strong&gt; constantly drags in unrelated changes&lt;/td&gt;
+&lt;td&gt;Only the &lt;em&gt;bottom&lt;/em&gt; PR needs to be rebased onto &lt;code&gt;main&lt;/code&gt;; the rest stay on top of it&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Need to ship part of a larger change early&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Merge the first PR in the stack; the rest stay pending until they’re ready&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;CI resources&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Only the bottom PR runs the full suite against &lt;code&gt;main&lt;/code&gt;; higher PRs can run a &lt;em&gt;lighter&lt;/em&gt; subset because they already passed lower‑level tests&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  📦 The Landscape of Tools (as of 2026)
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tool / Service&lt;/th&gt;
+&lt;th&gt;Key Features&lt;/th&gt;
+&lt;th&gt;Installation / Setup&lt;/th&gt;
+&lt;th&gt;Typical Workflow&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;strong&gt;&lt;code&gt;ghstack&lt;/code&gt;&lt;/strong&gt; (GitHub CLI plugin)&lt;/td&gt;
+&lt;td&gt;- Creates stacked PRs automatically from a series of commits.&lt;br /&gt;- Handles base‑branch updates, resolves merge conflicts, and can &lt;em&gt;re‑stack&lt;/em&gt; after rebases.&lt;br /&gt;- Works with GitHub's GraphQL API, so you get “dependent PR” links in the UI.&lt;/td&gt;
+&lt;td&gt;
+&lt;code&gt;pip install ghstack&lt;/code&gt; (or &lt;code&gt;brew install ghstack&lt;/code&gt;).&lt;br /&gt;Requires a personal access token with &lt;code&gt;repo&lt;/code&gt; scope.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ &lt;code&gt;bash git checkout -b feature/stacked\n# create many commits …\nghstack push\n# later, after rebasing on main\nghstack rebase&lt;/code&gt;&lt;br /&gt;
+&lt;br /&gt;
+. |&lt;br /&gt;
+| &lt;strong&gt;&lt;code&gt;GitTown&lt;/code&gt;&lt;/strong&gt; (aka &lt;code&gt;git-town&lt;/code&gt;) | - &lt;code&gt;git town ship&lt;/code&gt; can ship a stack of dependent branches in order.&lt;br /&gt;- Not GitHub‑specific, works with any remote. | &lt;code&gt;brew install git-town&lt;/code&gt; / &lt;code&gt;cargo install git-town&lt;/code&gt;. |&lt;br /&gt;
+&lt;br /&gt;
+ &lt;code&gt;bash git town new featureA\n# commit …\ngit town new featureB\n# work on B …\ngit town sync&lt;/code&gt;&lt;br /&gt;
+&lt;br /&gt;
+ |&lt;br /&gt;
+| &lt;strong&gt;&lt;code&gt;gstack&lt;/code&gt;&lt;/strong&gt; (open‑source script) | - Very lightweight Bash script that creates a series of PRs from sequential commits.&lt;br /&gt;- Good for CI‑only pipelines. | &lt;code&gt;curl -L https://raw.githubusercontent.com/…/gstack.sh | bash&lt;/code&gt;. |&lt;br /&gt;
+&lt;br /&gt;
+ &lt;code&gt;bash gstack create&lt;/code&gt;&lt;br /&gt;
+&lt;br /&gt;
+. |&lt;br /&gt;
+| &lt;strong&gt;GitHub’s “Draft PR” + “Depends on” labels&lt;/strong&gt; | - No external tool needed; you manually create PRs and add a &lt;code&gt;depends-on:&amp;lt;PR#&amp;gt;&lt;/code&gt; label (or a comment).&lt;br /&gt;- GitHub UI now shows a &lt;em&gt;“This PR depends on #123”&lt;/em&gt; banner (rolled out in early 2026). | No install. Just enable the “Pull request dependencies” preview in your org settings. | Create PR‑A → PR‑B → PR‑C, add &lt;code&gt;depends-on: #A&lt;/code&gt; comment on B, etc. |&lt;br /&gt;
+| &lt;strong&gt;&lt;code&gt;pullrequest.io&lt;/code&gt; (SaaS)&lt;/strong&gt; | - Managed service that visualises stacks, auto‑updates bases, and adds “stack‑status” checks.&lt;br /&gt;- Works with public &amp;amp; private repos. | Sign up, link GitHub repo, generate a machine‑user token. | UI‑driven: select commits → “Create stack”. |&lt;br /&gt;
+| &lt;strong&gt;&lt;code&gt;Gerrit&lt;/code&gt;&lt;/strong&gt; (if you’re on a hybrid workflow) | - Has native support for “dependent changes”.&lt;br /&gt;- Works great if you already use Gerrit for code review. | Already part of Gerrit install. | Use &lt;code&gt;git review -d &amp;lt;change-id&amp;gt;&lt;/code&gt; etc. |&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Bottom‑line:&lt;/strong&gt; If you just need a quick, “no‑install” solution, the built‑in draft‑PR + &lt;code&gt;depends-on&lt;/code&gt; label works fine. If you want to automate the entire stack lifecycle (create, rebase, update, merge), &lt;strong&gt;&lt;code&gt;ghstack&lt;/code&gt;&lt;/strong&gt; is the most mature and GitHub‑native option in 2026.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;h2&gt;
+  
+  
+  🛠️ Step‑by‑Step Guide Using &lt;code&gt;ghstack&lt;/code&gt; (the most popular choice)
+&lt;/h2&gt;
+
+&lt;p&gt;Below is a &lt;strong&gt;complete workflow&lt;/strong&gt; you can copy‑paste into a terminal. It assumes you have:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git 2.40+ (or newer)&lt;/li&gt;
+&lt;li&gt;GitHub CLI (&lt;code&gt;gh&lt;/code&gt;) installed and authenticated&lt;/li&gt;
+&lt;li&gt;Python 3.9+ (for &lt;code&gt;ghstack&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+  
+  
+  1️⃣ Install the tools
+&lt;/h3&gt;
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# GitHub CLI (if you don’t have it)&lt;/span&gt;
+brew &lt;span class="nb"&gt;install &lt;/span&gt;gh   &lt;span class="c"&gt;# macOS&lt;/span&gt;
+&lt;span class="c"&gt;# or: sudo apt install gh   # Ubuntu&lt;/span&gt;
+
+&lt;span class="c"&gt;# ghstack (Python package)&lt;/span&gt;
+pip &lt;span class="nb"&gt;install&lt;/span&gt; &lt;span class="nt"&gt;--user&lt;/span&gt; ghstack
+&lt;span class="c"&gt;# make sure ~/.local/bin is on your $PATH&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+&lt;h3&gt;
+  
+  
+  2️⃣ Prepare a branch and make a series of commits
+&lt;/h3&gt;
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# Start from the latest main&lt;/span&gt;
+git checkout main
+git pull origin main
+
+&lt;span class="c"&gt;# Create a “stack” branch (the base of the stack)&lt;/span&gt;
+git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; feature/stacked
+
+&lt;span class="c"&gt;# 1️⃣ First logical change (e.g., add a new API)&lt;/span&gt;
+&lt;span class="c"&gt;# -------------------------------------------------&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"def hello(): return 'world'"&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; hello.py
+git add hello.py
+git commit &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"feat: add hello() helper"&lt;/span&gt;
+
+&lt;span class="c"&gt;# 2️⃣ Second logical change that depends on the first&lt;/span&gt;
+&lt;span class="c"&gt;# -------------------------------------------------&lt;/span&gt;
+&lt;span class="nb"&gt;cat&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; hello.py &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="sh"&gt;'&lt;/span&gt;&lt;span class="no"&gt;EOF&lt;/span&gt;&lt;span class="sh"&gt;'
+
+def greet(name):
+    return f"Hello, {name}! " + hello()
+&lt;/span&gt;&lt;span class="no"&gt;EOF
+&lt;/span&gt;git add hello.py
+git commit &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"feat: add greet() that uses hello()"&lt;/span&gt;
+
+&lt;span class="c"&gt;# 3️⃣ Third logical change (e.g., tests)&lt;/span&gt;
+&lt;span class="c"&gt;# -------------------------------------------------&lt;/span&gt;
+&lt;span class="nb"&gt;mkdir&lt;/span&gt; &lt;span class="nt"&gt;-p&lt;/span&gt; tests
+&lt;span class="nb"&gt;cat&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; tests/test_hello.py &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="sh"&gt;'&lt;/span&gt;&lt;span class="no"&gt;EOF&lt;/span&gt;&lt;span class="sh"&gt;'
+import unittest
+from hello import greet
+
+class TestHello(unittest.TestCase):
+    def test_greet(self):
+        self.assertIn("Hello, Alice!", greet("Alice"))
+&lt;/span&gt;&lt;span class="no"&gt;EOF
+&lt;/span&gt;git add tests/
+git commit &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"test: add unit tests for greet()"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Now you have three commits that you want to turn into three stacked PRs.&lt;/p&gt;
+&lt;h3&gt;
+  
+  
+  3️⃣ Push the stack to GitHub
+&lt;/h3&gt;
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# ghstack will create a separate remote branch for every commit&lt;/span&gt;
+ghstack push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;What happens under the hood:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Commit&lt;/th&gt;
+&lt;th&gt;Remote branch created&lt;/th&gt;
+&lt;th&gt;PR title (auto‑derived)&lt;/th&gt;
+&lt;th&gt;Base branch&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1️⃣&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;feat: add hello() helper&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;main&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2️⃣&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;feat: add greet() that uses hello()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3️⃣&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;test: add unit tests for greet()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Each PR appears in GitHub with the &lt;strong&gt;“depends on #XYZ”&lt;/strong&gt; banner (thanks to the new UI feature). The PR descriptions contain a tiny block:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="nn"&gt;---&lt;/span&gt; &lt;span class="s"&gt;ghstack metadata ---&lt;/span&gt;
+&lt;span class="na"&gt;base&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;ghstack/2&lt;/span&gt;
+&lt;span class="na"&gt;stack&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;ghstack/1&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;ghstack/2&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;ghstack/3&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt; &lt;span class="s"&gt;end ---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h3&gt;
+  
+  
+  4️⃣ Review &amp;amp; Iterate
+&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reviewers see each PR separately.&lt;/li&gt;
+&lt;li&gt;CI runs on each branch; &lt;strong&gt;GH‑Actions can be configured to run only the diff against its base&lt;/strong&gt; (fast) because the lower PR already passed the full suite.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you need to amend the &lt;em&gt;second&lt;/em&gt; commit:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git checkout ghstack/2   &lt;span class="c"&gt;# switch to the branch created for commit #2&lt;/span&gt;
+&lt;span class="c"&gt;# Make change, amend commit&lt;/span&gt;
+git commit &lt;span class="nt"&gt;--amend&lt;/span&gt; &lt;span class="nt"&gt;-m&lt;/span&gt; &lt;span class="s2"&gt;"feat: improve greet() implementation"&lt;/span&gt;
+&lt;span class="c"&gt;# Push the new version (ghstack takes care of the dependent PRs)&lt;/span&gt;
+ghstack push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;ghstack&lt;/code&gt; will automatically &lt;strong&gt;re‑stack&lt;/strong&gt; all downstream PRs (3, 4, …) on top of the updated commit.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  5️⃣ Rebase the whole stack onto a newer &lt;code&gt;main&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;Suppose &lt;code&gt;main&lt;/code&gt; has moved forward and you want to keep your stack up‑to‑date:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git checkout main
+git pull   &lt;span class="c"&gt;# get latest&lt;/span&gt;
+ghstack rebase
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Result:  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;ghstack/1&lt;/code&gt; is rebased onto the new &lt;code&gt;main&lt;/code&gt;.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;ghstack/2&lt;/code&gt; and &lt;code&gt;ghstack/3&lt;/code&gt; are automatically rebased onto the new &lt;code&gt;ghstack/1&lt;/code&gt;.
+&lt;/li&gt;
+&lt;li&gt;All open PRs get updated automatically – no manual &lt;code&gt;git push -f&lt;/code&gt; gymnastics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+  
+  
+  6️⃣ Merging the stack
+&lt;/h3&gt;
+
+&lt;p&gt;When every PR is approved:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# Merge bottom‑most PR first (or let GitHub auto‑merge with “Require linear history”)&lt;/span&gt;
+gh &lt;span class="nb"&gt;pr &lt;/span&gt;merge ghstack/1 &lt;span class="nt"&gt;--merge&lt;/span&gt;
+gh &lt;span class="nb"&gt;pr &lt;/span&gt;merge ghstack/2 &lt;span class="nt"&gt;--merge&lt;/span&gt;
+gh &lt;span class="nb"&gt;pr &lt;/span&gt;merge ghstack/3 &lt;span class="nt"&gt;--merge&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Because each PR’s &lt;strong&gt;base&lt;/strong&gt; is the previous PR, merging in order results in a perfectly linear history on &lt;code&gt;main&lt;/code&gt;.&lt;br /&gt;&lt;br /&gt;
+If you enable &lt;em&gt;GitHub’s “auto‑merge when all checks pass”&lt;/em&gt; on each PR, the merges will happen automatically as soon as the lower PR merges.&lt;/p&gt;
+&lt;h3&gt;
+  
+  
+  7️⃣ Clean up
+&lt;/h3&gt;
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# Delete the temporary remote branches&lt;/span&gt;
+ghstack delete-branches
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;You’re left with a clean &lt;code&gt;main&lt;/code&gt; branch plus the series of logical commits merged in order.&lt;/p&gt;
+
+
+&lt;h2&gt;
+  
+  
+  📋 Alternative Workflows (No‑Tool, “Manual Stack”)
+&lt;/h2&gt;
+
+&lt;p&gt;If you prefer not to install anything, you can still get a stacked workflow using plain Git:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="c"&gt;# 1️⃣ Create the base branch (on main)&lt;/span&gt;
+git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; feature/a main
+&lt;span class="c"&gt;# commit A … push and open PR‑A&lt;/span&gt;
+
+&lt;span class="c"&gt;# 2️⃣ Create B *on top of* A&lt;/span&gt;
+git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; feature/b feature/a
+&lt;span class="c"&gt;# commit B … push and open PR‑B&lt;/span&gt;
+&lt;span class="c"&gt;# In PR‑B comment: “Depends on #PR-A”&lt;/span&gt;
+
+&lt;span class="c"&gt;# 3️⃣ Create C on top of B&lt;/span&gt;
+git checkout &lt;span class="nt"&gt;-b&lt;/span&gt; feature/c feature/b
+&lt;span class="c"&gt;# commit C … push and open PR‑C&lt;/span&gt;
+&lt;span class="c"&gt;# Comment: “Depends on #PR-B”&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;strong&gt;Key manual steps to remember:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;th&gt;How to do it manually&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Keep the base up‑to‑date&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;code&gt;git fetch origin &amp;amp;&amp;amp; git rebase origin/main&lt;/code&gt; on the &lt;em&gt;bottom&lt;/em&gt; branch, then &lt;code&gt;git checkout feature/b &amp;amp;&amp;amp; git rebase feature/a&lt;/code&gt;, etc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Close a PR when you want to drop a change&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Delete the branch (&lt;code&gt;git push origin --delete feature/b&lt;/code&gt;) and remove the dependent PRs (or &lt;code&gt;git rebase&lt;/code&gt; them onto the new base).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Show the dependency in GitHub UI&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Add a comment &lt;code&gt;Depends on #123&lt;/code&gt; (GitHub renders a banner). You can also add a label &lt;code&gt;depends-on:123&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Pros&lt;/em&gt;: No extra tooling, works everywhere.&lt;br /&gt;&lt;br /&gt;
+&lt;em&gt;Cons&lt;/em&gt;: You have to re‑base manually, risk of diverging PR bases, and you won’t get the nice “re‑stack” automation that &lt;code&gt;ghstack&lt;/code&gt; offers.&lt;/p&gt;
+
+
+&lt;h2&gt;
+  
+  
+  🧩 Integrating Stacked PRs with CI/CD
+&lt;/h2&gt;
+&lt;h3&gt;
+  
+  
+  1️⃣ Split CI Jobs
+&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Full‑suite job&lt;/strong&gt; runs on the &lt;em&gt;bottom&lt;/em&gt; PR (the one that targets &lt;code&gt;main&lt;/code&gt;).
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Incremental job&lt;/strong&gt; runs on higher PRs, using &lt;code&gt;git diff&lt;/code&gt; against its base to only test the new changes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub Actions example&lt;/strong&gt; (&lt;code&gt;.github/workflows/ci.yml&lt;/code&gt;):&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;CI&lt;/span&gt;
+
+&lt;span class="na"&gt;on&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;pull_request&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;types&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;opened&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;synchronize&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;reopened&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+&lt;span class="na"&gt;jobs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;test&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;runs-on&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;ubuntu-latest&lt;/span&gt;
+    &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;uses&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;actions/checkout@v4&lt;/span&gt;
+        &lt;span class="na"&gt;with&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+          &lt;span class="na"&gt;fetch-depth&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;   &lt;span class="c1"&gt;# needed for diffing&lt;/span&gt;
+
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;Find base commit&lt;/span&gt;
+        &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;base&lt;/span&gt;
+        &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;|&lt;/span&gt;
+          &lt;span class="s"&gt;# GH provides GITHUB_BASE_REF (the branch PR is based on)&lt;/span&gt;
+          &lt;span class="s"&gt;echo "base=$(git merge-base HEAD origin/${{ github.base_ref }})" &amp;gt;&amp;gt; $GITHUB_OUTPUT&lt;/span&gt;
+
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;Run incremental tests&lt;/span&gt;
+        &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;|&lt;/span&gt;
+          &lt;span class="s"&gt;# Example with pytest: run only changed files&lt;/span&gt;
+          &lt;span class="s"&gt;git diff --name-only ${{ steps.base.outputs.base }} | grep '\.py$' | xargs -r pytest&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Higher PRs get a &lt;em&gt;quick&lt;/em&gt; feedback loop; the bottom PR still validates the full integration test suite.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  2️⃣ Guardrails (Branch Protection)
+&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Require “dependents merged first”&lt;/strong&gt;: In your repo’s &lt;em&gt;Branch protection rules&lt;/em&gt; enable the optional “Require status checks to pass before merging” and add a &lt;strong&gt;custom check&lt;/strong&gt; that verifies “All dependent PRs are merged”.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Enforce linear history&lt;/strong&gt;: Turn on &lt;em&gt;“Require linear history”&lt;/em&gt;—this guarantees that merges happen in order and never create merge commits that would break the stack.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  📚 Best‑Practice Checklist
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;✅&lt;/th&gt;
+&lt;th&gt;Practice&lt;/th&gt;
+&lt;th&gt;Why it matters&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;One logical change per PR&lt;/strong&gt; (e.g., “add API”, “add consumer”, “add tests”)&lt;/td&gt;
+&lt;td&gt;Keeps review size small and makes stacking natural.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Name branches &lt;code&gt;feature/stack‑N‑&amp;lt;description&amp;gt;&lt;/code&gt;&lt;/strong&gt; (or let &lt;code&gt;ghstack&lt;/code&gt; generate them).&lt;/td&gt;
+&lt;td&gt;Makes it obvious which branch belongs to which stack level.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Keep the bottom PR always rebased onto &lt;code&gt;main&lt;/code&gt;&lt;/strong&gt;.&lt;/td&gt;
+&lt;td&gt;Guarantees that merging the stack never introduces merge conflicts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Add explicit “Depends on #XYZ” comments or labels&lt;/strong&gt; (if you’re not using &lt;code&gt;ghstack&lt;/code&gt;).&lt;/td&gt;
+&lt;td&gt;Human reviewers and bots can see the order at a glance.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Enable GitHub’s “Pull request dependencies” preview&lt;/strong&gt; (Org → Settings → Features).&lt;/td&gt;
+&lt;td&gt;Gives the UI banner and a built‑in dependency graph.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Run incremental CI on top‑of‑stack PRs&lt;/strong&gt;.&lt;/td&gt;
+&lt;td&gt;Faster feedback for downstream changes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Never force‑push the &lt;em&gt;bottom&lt;/em&gt; PR without re‑stacking downstream&lt;/strong&gt;.&lt;/td&gt;
+&lt;td&gt;If you do, downstream PRs will diverge and CI will fail.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;When a stack is ready to ship, merge bottom‑up&lt;/strong&gt; (or enable auto‑merge with “Merge when the head branch is up‑to‑date”).&lt;/td&gt;
+&lt;td&gt;Guarantees linear history and avoids “merge commit” noise.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9️⃣&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Delete temporary &lt;code&gt;ghstack/*&lt;/code&gt; branches after the stack lands&lt;/strong&gt;.&lt;/td&gt;
+&lt;td&gt;Keeps the repo tidy and avoids accidental pushes.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;🔟&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Document the stack in the PR description&lt;/strong&gt; (e.g., “Stack: #12 → #13 → #14”).&lt;/td&gt;
+&lt;td&gt;Future maintainers know the intent and can locate related changes quickly.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  📦 Example: Real‑World Scenario (Feature Flag Rollout)
+&lt;/h2&gt;
+
+&lt;p&gt;Suppose you need to:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;strong&gt;feature flag&lt;/strong&gt; in the config library.
+&lt;/li&gt;
+&lt;li&gt;Guard a &lt;strong&gt;new endpoint&lt;/strong&gt; behind that flag.
+&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;integration tests&lt;/strong&gt; for the endpoint.
+&lt;/li&gt;
+&lt;li&gt;Deploy a &lt;strong&gt;monitoring dashboard&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can create &lt;strong&gt;four stacked PRs&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;PR&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Branch (ghstack)&lt;/th&gt;
+&lt;th&gt;Base&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;#101&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;feat: add “new‑feature” flag&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;main&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#102&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;feat: new endpoint (guarded by flag)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#103&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;test: integration tests for new endpoint&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;#104&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;chore: dashboard for new feature&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ghstack/3&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Team workflow&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Day 1&lt;/strong&gt;: Open PR #101, get flag reviewed.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Day 2&lt;/strong&gt;: Merge #101, rebase the rest automatically (&lt;code&gt;ghstack rebase&lt;/code&gt;).
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Day 3&lt;/strong&gt;: Open #102, review the endpoint.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Day 4&lt;/strong&gt;: Merge #102 → #103 now runs against the updated code.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Day 5&lt;/strong&gt;: Merge #103 → #104, then ship the whole stack in one go if you want the dashboard to go live only after tests pass.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If a stakeholder decides to &lt;em&gt;skip&lt;/em&gt; the dashboard for now, you simply close #104—no need to rewrite history.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  🔧 Quick Reference Cheat Sheet
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;What it does&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ghstack push&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Creates a remote branch for &lt;strong&gt;each&lt;/strong&gt; local commit and opens a PR for each.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ghstack rebase&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rebases the &lt;em&gt;entire&lt;/em&gt; stack onto the current &lt;code&gt;main&lt;/code&gt; (or any other base you specify).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ghstack status&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Shows the current stack layout (&lt;code&gt;base → ... → HEAD&lt;/code&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ghstack delete-branches&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Deletes the temporary &lt;code&gt;ghstack/*&lt;/code&gt; branches after the stack is merged.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git checkout -b feature/X &amp;lt;base&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Manual way to start a new stacked branch off &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git rebase &amp;lt;new-base&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rebase the &lt;em&gt;bottom&lt;/em&gt; branch onto a newer base; then re‑base the children manually (&lt;code&gt;git checkout B &amp;amp;&amp;amp; git rebase A&lt;/code&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gh pr merge &amp;lt;num&amp;gt; --merge&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Merge a specific PR (use &lt;code&gt;--squash&lt;/code&gt; or &lt;code&gt;--rebase&lt;/code&gt; if you prefer those strategies).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;`gh pr comment  --body "Depends on&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;</description><pubDate>Wed, 05 Aug 2026 21:53:57 GMT</pubDate><guid>dc12393e052539fc12e69c8e6631aecd</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] A Faster Model Will Not Fix Your Slow Voice Agent</title><link>https://dev.to/nabeelbaghoor/a-faster-model-will-not-fix-your-slow-voice-agent-chf</link><description>&lt;p&gt;The first thing I check when a client tells me their AI voice agent "feels slow" is not the model. It is almost never the model. I have swapped a faster model into a sluggish agent and had callers notice nothing at all, because the seconds they were feeling were never being spent where everyone assumed.&lt;/p&gt;
+
+&lt;p&gt;If you have ever profiled a slow page and found the real cost was a render blocking script rather than the function you spent all week optimizing, you already understand this post. Voice just makes the mistake more expensive, because a phone call has no spinner. No loading state, no skeleton UI, no way to signal "still working" other than talking. Silence is the only progress indicator you get, and to a human on a phone, silence means the line dropped, the other person is confused, or nobody is listening. All three make callers talk over the agent, repeat themselves, or hang up.&lt;/p&gt;
+
+&lt;p&gt;I build production voice agents on Retell wired into n8n, GoHighLevel and Twilio. Before that I spent years in Unity and AR, where a late frame was a safety problem rather than a conversion problem. That is where I learned to treat latency as a property of the whole chain rather than a number attached to one component.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The metric is turn latency, not time to first token
+&lt;/h2&gt;
+
+&lt;p&gt;The number everybody quotes is time to first token, or whatever response time the vendor publishes. The number callers experience is turn latency: the gap between the moment they stop speaking and the moment they hear the agent start.&lt;/p&gt;
+
+&lt;p&gt;That gap is a sum, and the model is one term in it:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;strong&gt;Endpointing.&lt;/strong&gt; The system waits until it is confident the caller is done. A deliberate wait, and frequently the largest single item in the budget.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Transcription.&lt;/strong&gt; Speech becomes text. Usually streaming, so most of it overlaps with the caller still speaking.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Reasoning.&lt;/strong&gt; The model reads state and decides what to say, and whether to call a tool.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Tool calls.&lt;/strong&gt; Anything the agent must ask an external system before it can answer.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Speech generation.&lt;/strong&gt; The reply becomes audio, and audio takes real time to play no matter how fast it was generated.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Network and telephony.&lt;/strong&gt; Delay you do not control.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Two things fall out of writing the chain down. Shaving 200ms off step 3 while step 1 sits at two seconds is the classic optimizing-the-wrong-thing move. And steps 4 and 5 are where badly behaved agents actually lose people.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Endpointing is the config you set once and never looked at again
+&lt;/h2&gt;
+
+&lt;p&gt;Endpointing is the agent deciding you finished your sentence. Too short and it interrupts people mid thought, the rudest failure mode a phone system has. Too long and every turn carries a dead pause, so the agent feels slow even when everything downstream is fast.&lt;/p&gt;
+
+&lt;p&gt;The mistake is treating it as one global constant. Different moments deserve different patience:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Short answers get short waits.&lt;/strong&gt; "Yes." A confirmation. A one word choice. Lingering here is what makes an agent feel sluggish across an entire call.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Open questions get long waits.&lt;/strong&gt; Ask someone why they are calling and they think out loud, pause, resume. Cut them off and you lose the actual reason for the call.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Anything recited digit by digit gets the most patience.&lt;/strong&gt; People say phone numbers in chunks with real gaps. An agent that jumps in after the first chunk gets the number wrong, and a wrong callback number is a lost lead no matter how snappy the call felt.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Same shape as the rest of agent design: loose where the caller is exploring, tight where the caller is confirming.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Rule one: nothing on the critical path the next sentence does not need
+&lt;/h2&gt;
+
+&lt;p&gt;This one rule fixes most "slow agent" complaints I get handed.&lt;/p&gt;
+
+&lt;p&gt;A voice agent wired into a real business touches a CRM, a calendar, a messaging platform, an automation layer. The instinct is to do all of it inline, mid conversation, while the caller listens to nothing. That is how you get four seconds of silence after someone says "yes, book me in".&lt;/p&gt;
+
+&lt;p&gt;Split the work by one question: does the caller's next sentence depend on it?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Blocking work&lt;/strong&gt; is anything the agent must know before it can speak truthfully. Real availability before it offers a slot. Whether an account exists before it claims one does. Keep this list short and defend its shortness.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Non-blocking work&lt;/strong&gt; is everything else. Creating the contact, tagging the lead, firing the confirmation SMS, writing the summary, kicking off follow up. None of it belongs in the caller's waiting time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In practice the agent fires a webhook at the automation layer and keeps talking. This is the job queue pattern every backend engineer already knows, applied where latency is measured in human patience. Nobody is standing at the CRM watching for the row to appear, so the row can appear five seconds late.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The one wait worth taking, and how to cover it
+&lt;/h2&gt;
+
+&lt;p&gt;Calendar availability is the honest exception. If the agent offers a slot it has not verified, you traded a two second pause for a double booking, which is far more expensive to explain to a client.&lt;/p&gt;
+
+&lt;p&gt;So take the wait, but never take it in silence. Speak first, then look up. "Let me check what we have this week" costs about a second and a half of speech, roughly what the lookup needs, and the caller experiences zero dead air because a voice was talking the whole time.&lt;/p&gt;
+
+&lt;p&gt;That is not a trick. It is what a receptionist does while their booking screen loads, and it is the same instinct as an optimistic UI update. The rule generalizes: &lt;strong&gt;if you cannot remove a wait, cover it with speech that was going to happen anyway.&lt;/strong&gt; What you must not do is fill the gap with filler promising progress the system is not making. Callers notice an agent that says "one moment" three times in a row.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Rule two: the agent's own sentences are part of the budget
+&lt;/h2&gt;
+
+&lt;p&gt;Generated speech plays at human speed. A four sentence answer takes four sentences worth of seconds no matter how fast the model produced it. If your agent opens with a paragraph, you spent more of the caller's patience on your greeting than on any technical delay in the stack.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Cap reply length in the prompt and mean it.&lt;/strong&gt; One or two sentences, then a question. Long thorough answers read beautifully in testing and feel interminable on a phone.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Front load the useful part.&lt;/strong&gt; Answer, then explain if asked. A caller who has their answer will interrupt the rest, and that is a good outcome.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Never read back more than necessary.&lt;/strong&gt; Confirm what would be expensive to get wrong. Skip the rest.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Keep the greeting to one line.&lt;/strong&gt; It is your time to first byte, and every caller pays it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  Rule three: keep the per-turn work small
+&lt;/h2&gt;
+
+&lt;p&gt;Prompt size and tool count both cost time, and both grow quietly. Every rule added after one bad call, every edge case pasted into the system prompt, every tool bolted on for a feature used twice a month adds work to every turn of every call forever. It is dependency creep, and it bills you per request.&lt;/p&gt;
+
+&lt;p&gt;The structural fix is the one that also makes agents more reliable: break the single long prompt into a flow where each node carries only the context and tools it needs. The node collecting a phone number does not need the refund policy in its prompt.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How I actually test this
+&lt;/h2&gt;
+
+&lt;p&gt;Average latency is a comforting and largely useless number. Callers do not remember the average turn. They remember the one four second gap in the middle of giving their address. Voice is a p99 problem wearing a p50 dashboard.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Listen to whole recordings, not dashboards.&lt;/strong&gt; Latency problems are obvious in twenty seconds of audio and invisible in a summary metric.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Test the paths that touch other systems.&lt;/strong&gt; The booking turn, the lookup turn, the handoff turn. That is where the seconds hide.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Test messy callers.&lt;/strong&gt; Someone who volunteers their number before being asked, someone who pauses mid sentence, someone with a TV on in the background. Those turns reveal what your endpointing settings really are.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Test when the business is busy&lt;/strong&gt;, because third party systems slow down under load and your agent inherits all of it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  Where I learned to think this way
+&lt;/h2&gt;
+
+&lt;p&gt;In my AR years, latency was not a conversion metric. If an overlay lagged the operator's head, the illusion broke and the person stopped trusting the headset entirely. The fix there is the fix here: decouple what the user feels from what the system does. A firefighter looking at a stale marker and a caller listening to three seconds of silence are having the same experience, which is a system failing to prove it is still there.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The short version
+&lt;/h2&gt;
+
+&lt;p&gt;If an agent feels slow, work down this list in order:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Tune endpointing per moment instead of globally. Tight on short answers, patient on open questions and digits.&lt;/li&gt;
+&lt;li&gt;Move everything the next sentence does not need off the critical path.&lt;/li&gt;
+&lt;li&gt;Cover the one unavoidable wait, availability, with speech that was going to happen anyway.&lt;/li&gt;
+&lt;li&gt;Cut the agent's own sentences down, starting with the greeting.&lt;/li&gt;
+&lt;li&gt;Shrink prompts and tool lists per node.&lt;/li&gt;
+&lt;li&gt;Test the worst turn on messy calls, not the average turn on clean ones.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;None of it requires a faster model. Speed on a phone call is a design decision about where the work happens, made over and over, and it is usually the difference between an agent a business trusts with its phone and one that quietly costs it leads.&lt;/p&gt;
+
+&lt;p&gt;I write more about voice agent builds at &lt;a href="https://nabeelbaghoor.com/blog" rel="noopener noreferrer"&gt;nabeelbaghoor.com/blog&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 21:49:36 GMT</pubDate><guid>da146a6117c1333700535b00ce4d061e</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[TechCrunch] Nikita Bier steps down as X’s head of product</title><link>https://techcrunch.com/2026/08/05/nikita-bier-steps-down-as-xs-head-of-product/</link><description>The serial entrepreneur is stepping down a little over a year after taking the "24/7 job" of overseeing X.</description><pubDate>Wed, 05 Aug 2026 21:30:50 GMT</pubDate><guid>5ad72d3cf78b53cc153bb80919e2e5dc</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Hacker News] The title cards in Blade Runner are amazing</title><link>https://randsinrepose.com/archives/blade-runner-title-cards/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189287"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:29:23 GMT</pubDate><guid>4979b470afa03b2a34a62d839c54decc</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Phoronix] USB4STREAM Adding Busy Poll Option For Lower Latency At The Cost Of Increased CPU Cycles</title><link>https://www.phoronix.com/news/USB4STREAM-Lower-Latency</link><description>One of the nifty new features of Linux 7.2 is USB4STREAM as an Intel-developed solution for quickly sending data between USB4 connected systems. Now for the upcoming Linux 7.3 cycle, a busy poll mode is being added to provide lower-latency data transfers at the expense of increased CPU activity...</description><pubDate>Wed, 05 Aug 2026 21:27:47 GMT</pubDate><guid>175b984f0ff3bc53091e7c4f6a799e1e</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[TechCrunch] Travis Kalanick’s robotics startup Atoms taps former Uber finance chief as CFO</title><link>https://techcrunch.com/2026/08/05/travis-kalanicks-robotics-startup-atoms-taps-former-uber-finance-chief-as-cfo/</link><description>Kalanick continues to get the band back together, after acquiring Anthony Levandowski's autonomy startup, and even soliciting investment from Uber.</description><pubDate>Wed, 05 Aug 2026 21:26:40 GMT</pubDate><guid>f873a748a47293ec2e1ae237807c784e</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Hacker News] NVIDIA’s Vera Whitepaper Has a Thread Loose</title><link>https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189234"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:24:45 GMT</pubDate><guid>ef5bc04a96b8fc7f2845050ba076f09b</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[TechCrunch] Meta launches Muse Code, an AI agent for large code bases</title><link>https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/</link><description>Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.</description><pubDate>Wed, 05 Aug 2026 21:21:28 GMT</pubDate><guid>f4b59bdfc21bfca7febe9386b880e4b0</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[Habr] Как я починил энергосбережение OnePlus 3T на mainline ядре</title><link>https://habr.com/ru/articles/1067224/</link><description>&lt;p&gt;&lt;a href="https://habr.com/ru/articles/1054142/" rel="noopener noreferrer nofollow"&gt;Первая часть&lt;/a&gt; закончилась тем, что телефон заработал, и какое-то время этим всё и ограничивалось. postmarketOS на mainline-ядре, сверху Docker, Tailscale и один небольшой сервис, которому от меня ничего не требовалось. Я убрал телефон на полку и перестал о нём думать — ровно этого я от него и хотел.&lt;/p&gt;&lt;p&gt;Сервис работал. Заодно выяснилось, что процессор всё это время держался на 70 °C. Не под нагрузкой, а в покое, днём и ночью, на устройстве без вентилятора и без радиатора, где тепло уходит только через собственный алюминиевый корпус.&lt;/p&gt;&lt;p&gt;Вопрос, который стоило задать сразу: чем он занят, что даёт такую температуру. Дальше — ответ на него.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067224/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067224#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:17:54 GMT</pubDate><guid>64e50c3bb7b162d22705e9941e149b4d</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] Prime Agent: A self-improving RLM agent</title><link>https://www.primeintellect.ai/blog/prime-agent</link><description>&lt;a href="https://news.ycombinator.com/item?id=49189075"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 21:11:57 GMT</pubDate><guid>42b062770a48a1e42044492cd6f191eb</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[TechCrunch] Trump’s DOJ gains oversight of OpenAI’s green-card employee sponsorships</title><link>https://techcrunch.com/2026/08/05/trumps-doj-gains-oversight-of-openais-green-card-employee-sponsorships/</link><description>The DOJ alleged that OpenAI did not meaningful attempt to hire U.S. citizens before seeking permanent residence for Visa-holding employees.</description><pubDate>Wed, 05 Aug 2026 21:05:37 GMT</pubDate><guid>8d0ab0b2cc81b7c2d1fc60ff34e92d87</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Schwartz confirmed as CDC director after bungling confirmation hearing</title><link>https://arstechnica.com/health/2026/08/schwartz-confirmed-as-cdc-director-after-bungling-confirmation-hearing/</link><description>Schwartz is well-qualified for the role, but crashed and burned in Senate hearing.</description><pubDate>Wed, 05 Aug 2026 21:03:18 GMT</pubDate><guid>672bb731116b04b8db56d288b30e04d6</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[TechCrunch] Moove raises $250M to become the backbone of the robotaxi industry</title><link>https://techcrunch.com/2026/08/05/moove-raises-250m-to-become-the-backbone-of-the-robotaxi-industry/</link><description>Moove is scaling up the autonomous vehicle fleet management side of its business and plans to someday own, not just manage, Waymo robotaxis.</description><pubDate>Wed, 05 Aug 2026 20:50:45 GMT</pubDate><guid>414f7a43ecb9335a4fdb3112511b5b9a</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[TechCrunch] How Lightspeed found its newest hire … via Instagram DM</title><link>https://techcrunch.com/2026/08/05/how-lightspeed-found-its-newest-hire-via-instagram-dm/</link><description>Lightspeed partners Josh Machiz and Claire Zau stopped by the Equity studio to talk about the strategies behind their growing social media presence and their podcast, Lightwork.</description><pubDate>Wed, 05 Aug 2026 20:48:56 GMT</pubDate><guid>de0b65bd1b3a9b579f4399323ae33afd</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[TechCrunch] Why Lightspeed is going all-in on creator-led venture capital</title><link>https://techcrunch.com/video/why-lightspeed-is-going-all-in-on-creator-led-venture-capital/</link><description>Venture firms are turning to creators to build trust with the next generation of founders before a check is ever written.&amp;#160;It&amp;#8217;s&amp;#160;a trend&amp;#160;that&amp;#8217;s&amp;#160;been building with&amp;#160;a16z&amp;#8217;s acquisition&amp;#160;of Erik Torenberg’s Turpentine podcast and&amp;#160;OpenAI&amp;#8217;s acquisition&amp;#160;of TBPN.&amp;#160;Lightspeed Venture Partners&amp;#160;just made its own notable hire in that vein, bringing on&amp;#160;Claire Zau, a seed investor with a major following on Instagram and [&amp;#8230;]</description><pubDate>Wed, 05 Aug 2026 20:48:54 GMT</pubDate><guid>7f74154b5765a1847eacaaaa9d568939</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Anthropic’s AI used fake identities, malware in rogue attack on GitHub project</title><link>https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/</link><description>Anthropic and OpenAI models’ unprompted actions forced halt to UK cyber tests.</description><pubDate>Wed, 05 Aug 2026 20:47:11 GMT</pubDate><guid>2d08e589a5852a97e9a557b73e897c44</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Lobsters] A Vision for Cargo</title><link>https://epage.github.io/blog/2026/08/cargo-vision/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/mgr9lc/vision_for_cargo"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 20:45:57 GMT</pubDate><guid>7ea46b6d47ead94de5e1d0efda348303</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] Детектор не приступов, а тряски. Приложение для часов Garmin</title><link>https://habr.com/ru/articles/1067220/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/20a/b53/f31/20ab53f314353a56f46ebfce4193548a.png" /&gt;&lt;p&gt;Приложение называлось SeizureDetector — «детектор приступа». Под таким именем Connect IQ Store публиковать его отказался. Слишком много ответственности. И правильно сделал. Так что теперь это ShakeDetector, детектор тряски. Никогда не думал, что столкнусь с этой темой.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067220/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067220#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 20:29:03 GMT</pubDate><guid>7f40dccc8dfb1452008149e960025c3c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Lobsters] I Built a Blog and Forgot to Write</title><link>https://benjcal.space/blog/i-built-a-blog-and-forgot-to-write/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/qamm7j/i_built_blog_forgot_write"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 20:07:39 GMT</pubDate><guid>f1e066b799c84d07620bf4bb7b7fbdcf</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] 3. Bonsai-27B на рекурсивном форке llama.cpp: полный запуск и реальный бенчмарк на RTX 3050</title><link>https://habr.com/ru/articles/1067216/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/a16/23c/334/a1623c334d33ac463e76f5b88a337ff2.jpg" /&gt;&lt;p&gt;В этой статье я расскажу, как запустить Bonsai-27B на обычной видеокарте и как мой форк llama.cpp делает модель умнее прямо на инференсе. Показываю реальный тест: на одной и той же задаче базовая модель зависла и не смогла решить, а рекуррентная довела до ответа. Объясняю, что происходит внутри, сколько это стоит по скорости, и даю команды, чтобы повторить всё у себя на железе.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067216/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067216#habracut"&gt;Ну давай посомтрим&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 20:05:38 GMT</pubDate><guid>5a31cfe654b951c45475db1bba2180c4</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[TechCrunch] Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders</title><link>https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/</link><description>The serial entrepreneur joins the e-commerce company as CPO to lead its AI agents.</description><pubDate>Wed, 05 Aug 2026 20:05:00 GMT</pubDate><guid>1619858f8bfb01bab62dc84faf12078c</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] Reddit signals ominous upcoming "changes” for old.reddit.com</title><link>https://arstechnica.com/gadgets/2026/08/reddit-signals-ominous-upcoming-changes-for-old-reddit-com/</link><description>Reddit says the beloved site is used for some "bad behavior."</description><pubDate>Wed, 05 Aug 2026 20:01:32 GMT</pubDate><guid>8d97d517ecf77da3c7463225e8da5724</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Lobsters] Proxmox officially supports Arm, with some caveats</title><link>https://www.jeffgeerling.com/blog/2026/proxmox-ve-arm-official/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/wblbfk/proxmox_officially_supports_arm_with"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 19:54:59 GMT</pubDate><guid>8b0f206e25135d5ce3d75ba8c0cbce4d</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[ArsTechnica] Hank Green found the AI problem that YouTube labels can’t catch</title><link>https://arstechnica.com/ai/2026/08/hank-green-found-the-ai-problem-that-youtube-labels-cant-catch/</link><description>"Slop" isn't the only problem.</description><pubDate>Wed, 05 Aug 2026 19:51:40 GMT</pubDate><guid>89dc1c4799e71c11f3b51c68e46c543e</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Hacker News] I'm switching my phone from Android to Linux</title><link>https://runarcn.no/android-to-linux/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49188022"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:50:13 GMT</pubDate><guid>f448502135c3c6311ae8b7a30757d188</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery</title><link>https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49187977"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:47:26 GMT</pubDate><guid>c75b1a332f5f7c38b9c7aa57a01d2c00</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[ArsTechnica] SpaceX claims Starlink Mobile will be better than AT&amp;T, T-Mobile, and Verizon</title><link>https://arstechnica.com/tech-policy/2026/08/spacex-claims-starlink-mobile-will-be-better-than-att-t-mobile-and-verizon/</link><description>SpaceX won't build large cell towers but plans small base stations across US.</description><pubDate>Wed, 05 Aug 2026 19:38:56 GMT</pubDate><guid>4e90c04284c709fb7e1cfc32bac27b89</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[TechCrunch] Jeff Dean and other top AI researchers are leaving Google to launch their own startup</title><link>https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/</link><description>The legendary Google executive is joined by other outgoing Google execs in a joint mission to use AI to push forward the process of scientific discovery.</description><pubDate>Wed, 05 Aug 2026 19:30:19 GMT</pubDate><guid>41dee0fbffe4c22bca2cf3c0cf179083</guid><source url="https://techcrunch.com/feed/">TechCrunch</source></item><item><title>[ArsTechnica] This Atlantic hurricane season is looking like a dud, but there will be a price to pay</title><link>https://arstechnica.com/science/2026/08/this-atlantic-hurricane-season-is-looking-like-a-dud-but-there-will-be-a-price-to-pay/</link><description>"The models are forecasting something outside the envelope of anything we have ever observed."</description><pubDate>Wed, 05 Aug 2026 19:19:04 GMT</pubDate><guid>cd3507730f9a5af1d3bb586d5aa976eb</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Hacker News] Muse Code and Muse Spark 1.2</title><link>https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2</link><description>&lt;a href="https://news.ycombinator.com/item?id=49187575"&gt;Comments&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:15:52 GMT</pubDate><guid>9eac21dc6afd938cc5765dc8c0e37e66</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] AudioToText: управление требованиями через записи встреч</title><link>https://habr.com/ru/articles/1067208/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/287/3f5/742/2873f5742dcfe7a6eafc4f0b2785029b.png" /&gt;&lt;p&gt;Как превратить записи встреч в рабочий материал для согласования требований: текущая версия проекта AudioToText. В статье показываю, как собрать сервис транскрибации на базе MLX Whisper и Django, чтобы автоматически получать структурированные протоколы созвонов, а не просто длинные текстовые файлы. Разбираю сценарий работы, ключевые элементы веб‑интерфейса, review‑контур и планы развития проекта в сторону NER и поиска противоречий по summary.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067208/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067208#habracut"&gt;Как запись встречи становится рабочим арте&lt;/a&gt;</description><pubDate>Wed, 05 Aug 2026 19:09:50 GMT</pubDate><guid>29424d7b913265fca4f8a0e7e101bcf3</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[ArsTechnica] Google's AI shake-up: DeepMind's Hassabis steps aside, senior scientists depart</title><link>https://arstechnica.com/gadgets/2026/08/googles-ai-shakeup-deepminds-hassabis-steps-aside-senior-scientists-depart/</link><description>Google's AI brain drain continues.</description><pubDate>Wed, 05 Aug 2026 19:05:58 GMT</pubDate><guid>b7358bf422527fb30c948ddac93f3bda</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item></channel></rss>
