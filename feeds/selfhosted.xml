@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Thu, 06 Aug 2026 07:10:29 GMT</lastBuildDate><item><title>[Product Hunt] Shieldstral</title><link>https://www.producthunt.com/products/mistral-7b</link><description>&lt;p&gt;
+<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Thu, 06 Aug 2026 09:48:55 GMT</lastBuildDate><item><title>[Product Hunt] hey postcard - digital postcards</title><link>https://www.producthunt.com/products/hey-postcard-slow-messaging</link><description>&lt;p&gt;
+            delivered tomorrow morning at a random time between 8 -10 AM
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/hey-postcard-slow-messaging?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1216227?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 05:29:41 GMT</pubDate><guid>bc3146cebb76ed216dd220ece1cc16e3</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Gesture Synth School</title><link>https://www.producthunt.com/products/gesture-synth-school</link><description>&lt;p&gt;
+            A practice app for learning to play music with your hands.
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/gesture-synth-school?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1216207?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:53:27 GMT</pubDate><guid>c0fb715017047b760df8d4019aed6bf1</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Shieldstral</title><link>https://www.producthunt.com/products/mistral-7b</link><description>&lt;p&gt;
             Define safety at runtime for text and images
           &lt;/p&gt;
           &lt;p&gt;
@@ -13,21 +27,28 @@
             &lt;a href="https://www.producthunt.com/products/glyphi-speed-reader?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1216160?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 02:41:19 GMT</pubDate><guid>386c5deb620d8235b038e700f17065e9</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Muse Code by Meta</title><link>https://www.producthunt.com/products/meta</link><description>&lt;p&gt;
-            Meta's autonomous coding agent for developers
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 02:41:19 GMT</pubDate><guid>386c5deb620d8235b038e700f17065e9</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Muse Code</title><link>https://www.producthunt.com/products/meta</link><description>&lt;p&gt;
+            Meta’s terminal agent for long-horizon coding
           &lt;/p&gt;
           &lt;p&gt;
             &lt;a href="https://www.producthunt.com/products/meta?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
-            &lt;a href="https://www.producthunt.com/r/p/1216110?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:47:15 GMT</pubDate><guid>039b1297dbd0b9b9f7f504ec5bc79171</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Cloudflare OS</title><link>https://www.producthunt.com/products/cloudflare-os</link><description>&lt;p&gt;
+            &lt;a href="https://www.producthunt.com/r/p/1216156?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 02:35:53 GMT</pubDate><guid>039b1297dbd0b9b9f7f504ec5bc79171</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Chute</title><link>https://www.producthunt.com/products/chute-better-airdrop</link><description>&lt;p&gt;
+            The fastest way to send anything to your iPhone
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/chute-better-airdrop?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1216085?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:44:20 GMT</pubDate><guid>60e4ed0b0d37b4840c2bc5c84729e2cc</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Cloudflare OS</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
             Build the AI operating system for your company
           &lt;/p&gt;
           &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/cloudflare-os?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            &lt;a href="https://www.producthunt.com/products/cloudflare?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1215966?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 18:52:07 GMT</pubDate><guid>240300cbd66b96c56a6a0ada163b821c</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] Gigantic DapuStor R6060 512TB E2 NVMe SSD Shown at FMS 2026</title><link>https://www.servethehome.com/gigantic-dapustor-r6060-512tb-e2-nvme-ssd-shown-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the gigantic DapuStor R6060, an E2 form factor NVMe SSD that packs 512TB of capacity per drive&lt;/p&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 18:52:07 GMT</pubDate><guid>5fe40cb4252a6e2a5d84e3e0056b64b0</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] Gigantic DapuStor R6060 512TB E2 NVMe SSD Shown at FMS 2026</title><link>https://www.servethehome.com/gigantic-dapustor-r6060-512tb-e2-nvme-ssd-shown-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the gigantic DapuStor R6060, an E2 form factor NVMe SSD that packs 512TB of capacity per drive&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/gigantic-dapustor-r6060-512tb-e2-nvme-ssd-shown-at-fms-2026/"&gt;Gigantic DapuStor R6060 512TB E2 NVMe SSD Shown at FMS 2026&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 17:32:05 GMT</pubDate><guid>3f730d0f3467d3948abe0f10429fe45c</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Aveiro</title><link>https://www.producthunt.com/products/aveiro</link><description>&lt;p&gt;
             Publish sites, newsletters and social posts with AI agents
           &lt;/p&gt;
@@ -35,14 +56,7 @@
             &lt;a href="https://www.producthunt.com/products/aveiro?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1215812?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 15:17:17 GMT</pubDate><guid>86c76b7183a37fdcd123799a9e984d4a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Cloudflare OS</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
-            an open platform for agents, apps, and work
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/cloudflare?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1215788?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 14:48:40 GMT</pubDate><guid>5fe40cb4252a6e2a5d84e3e0056b64b0</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Annotate</title><link>https://www.producthunt.com/products/annotate-8</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 15:17:17 GMT</pubDate><guid>86c76b7183a37fdcd123799a9e984d4a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Annotate</title><link>https://www.producthunt.com/products/annotate-8</link><description>&lt;p&gt;
             Screen recording as prompts
           &lt;/p&gt;
           &lt;p&gt;
@@ -127,14 +141,7 @@
             &lt;a href="https://www.producthunt.com/products/nextdoor-company?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1214477?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 06:58:44 GMT</pubDate><guid>f7a96783abe607d36de61b37d3ae341e</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Snipplet</title><link>https://www.producthunt.com/products/snipplet</link><description>&lt;p&gt;
-            Create and share beautiful guides from places you love
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/snipplet?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1214436?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 06:15:21 GMT</pubDate><guid>ca9db84a0d2ae35420138fe7cef77215</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Stynar</title><link>https://www.producthunt.com/products/stynar</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 06:58:44 GMT</pubDate><guid>f7a96783abe607d36de61b37d3ae341e</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Stynar</title><link>https://www.producthunt.com/products/stynar</link><description>&lt;p&gt;
             The AI SDR that runs outbound for you
           &lt;/p&gt;
           &lt;p&gt;
@@ -156,14 +163,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1214120?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:21:35 GMT</pubDate><guid>db5724b6b015e9dfaf6d7fed42a66343</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] AMD Helios Architecture Deep Dive: The Power of AMD’s Hardware Combined</title><link>https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/</link><description>&lt;p&gt;The Helios rackscale system is the culmination of AMD's server hardware, as well as their AI datacenter ambitions. For Advancing AI 2026, the company dove into the architecture of their first rackscale systems, outlining how they have scaled up 72 Instinct MI455X accelerators to act as a single system&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Glasp MCP Connector</title><link>https://www.producthunt.com/products/glasp-mcp-connector</link><description>&lt;p&gt;
-            Search your highlights and notes inside Claude and ChatGPT
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/glasp-mcp-connector?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1214090?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 18:39:20 GMT</pubDate><guid>eba274177f1d0a8eadb18024eee6eaf6</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Finyuus</title><link>https://www.producthunt.com/products/finyuus</link><description>&lt;p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Finyuus</title><link>https://www.producthunt.com/products/finyuus</link><description>&lt;p&gt;
             A code-first language for durable, governed AI workflows
           &lt;/p&gt;
           &lt;p&gt;
@@ -177,7 +177,14 @@
             &lt;a href="https://www.producthunt.com/products/vibe-buddy?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1213589?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 08:36:13 GMT</pubDate><guid>fdec9b5a654eaf3434980d80807b800b</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Screen Awesome</title><link>https://www.producthunt.com/products/screen-awesome-record-annotate</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 08:36:13 GMT</pubDate><guid>fdec9b5a654eaf3434980d80807b800b</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] SpeakoFlow</title><link>https://www.producthunt.com/products/speakoflow</link><description>&lt;p&gt;
+            Free, open-source voice dictation and AI assistant, offline
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/speakoflow?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1213586?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 08:34:16 GMT</pubDate><guid>a89dd98792fbd968e4ca02cc93a3c9ed</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Screen Awesome</title><link>https://www.producthunt.com/products/screen-awesome-record-annotate</link><description>&lt;p&gt;
             The free screen recorder that cannot upload your video
           &lt;/p&gt;
           &lt;p&gt;
@@ -222,14 +229,7 @@
             &lt;a href="https://www.producthunt.com/products/website-to-markdown-api?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1211882?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Fri, 31 Jul 2026 20:45:48 GMT</pubDate><guid>ca96b6ce9b7f653862654bda219be8d4</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] AirProof AI</title><link>https://www.producthunt.com/products/airproof-ai</link><description>&lt;p&gt;
-            Find the best spot for your air purifier in seconds
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/airproof-ai?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1211832?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Fri, 31 Jul 2026 19:11:12 GMT</pubDate><guid>0faae21a7c93a7ffc55d6bed3c7eafec</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Ticketdesk AI</title><link>https://www.producthunt.com/products/ticketdesk-ai</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Fri, 31 Jul 2026 20:45:48 GMT</pubDate><guid>ca96b6ce9b7f653862654bda219be8d4</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Ticketdesk AI</title><link>https://www.producthunt.com/products/ticketdesk-ai</link><description>&lt;p&gt;
             AI Agents for Customer Support
           &lt;/p&gt;
           &lt;p&gt;
@@ -243,11 +243,4 @@
             &lt;a href="https://www.producthunt.com/products/superlog?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1210682?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Thu, 30 Jul 2026 12:17:59 GMT</pubDate><guid>fbdc8389b6aa3fe5343e31aaf45ba222</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Dashi Metrics</title><link>https://www.producthunt.com/products/dashi-metrics</link><description>&lt;p&gt;
-            Visualize your revenue on a 3D globe
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/dashi-metrics?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1210501?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Thu, 30 Jul 2026 08:30:05 GMT</pubDate><guid>147e23403f54102162f136bbd782ba4a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item></channel></rss>
+          &lt;/p&gt;</description><pubDate>Thu, 30 Jul 2026 12:17:59 GMT</pubDate><guid>fbdc8389b6aa3fe5343e31aaf45ba222</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item></channel></rss>
