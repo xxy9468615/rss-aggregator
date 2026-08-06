@@ -1,295 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Thu, 06 Aug 2026 09:48:55 GMT</lastBuildDate><item><title>[NodeSeek] 【120出】VMISS US.LA.TRI.Basic 4.5CAD</title><link>https://www.nodeseek.com/post-860706-1</link><description>NS邮箱交付借来的调优TQ：IPv4回程IPv4大包回程IPv6回程国际互联单线程测速借来的NQ：https://nodequality.com/r/TZylJKB8xJMAIFLeQ4wvAB3HFxxAHRSx调优教程参考：https://www.nodeseek.com/post-847872-2IP评分查询</description><pubDate>Thu, 06 Aug 2026 09:48:14 GMT</pubDate><guid>bd2e5354f1bddf7104da09ae11b3c90e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [程序员] 2026 年了，访问 github 还是不稳定</title><link>https://www.v2ex.com/t/1232531#reply0</link><description>&lt;p&gt;我的梯子访问 google ，v 站都挺快的，就是访问 github 特别的慢，是什么情况？大家有同样的问题吗？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:48:05 GMT</pubDate><guid>31c018eb3f3c87d0b1090166c66ecebf</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 绿云你无敌了</title><link>https://www.nodeseek.com/post-860705-1</link><description>刚上线发现codex断了，开始还以为是我网络问题（我这联通时不时就断一下），结果一看探针发现是机器被莫名其妙关了我要发工单狠狠拷打客服了</description><pubDate>Thu, 06 Aug 2026 09:48:03 GMT</pubDate><guid>7569defb6904f1817950d5d2dabbeb08</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【好奇】卖 PO0 和 RFC 哪个利润率高</title><link>https://www.nodeseek.com/post-860704-1</link><description>PO0是腾讯的资源，RFC是自有资源，哪个利润率高呢假如PO0高的话，为什么没有PO0JP（期待</description><pubDate>Thu, 06 Aug 2026 09:47:52 GMT</pubDate><guid>2d033dccbfe8cd442c9e9ff2da966088</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [Claude] 如果不考虑风控的话，到底是买个 claude 5x + gpt 5x (都用 windows 桌面 app)好呢？ 还是 claude 20x 好？</title><link>https://www.v2ex.com/t/1232530#reply0</link><description>&lt;p&gt;因为 claude fable5 时不时会弹出"Fable 5's safeguards flagged this message", 然后就降级到 opus5 了。虽然做的是一个教育类的小东西，它仍然弹这种。&lt;/p&gt;
-&lt;p&gt;claude 5x / gpt 5x 单用的话，5x 又不够。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:47:27 GMT</pubDate><guid>4d32710173d8b394654f7b07d1225153</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [成都] 租房怎么避坑</title><link>https://www.v2ex.com/t/1232529#reply0</link><description>&lt;p&gt;想租个一居室自己做饭，在锦江最多 1500 有推荐的吗谢谢&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:46:06 GMT</pubDate><guid>6063a3657f35f9be62bc2517061251a2</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【24出】面包云 breadcloud JP - Crumb 1.1 $/月</title><link>https://www.nodeseek.com/post-860702-1</link><description>24¥outlook原邮（如果push免费可以push出），8月15号到期流量用了440g，一共1t</description><pubDate>Thu, 06 Aug 2026 09:45:27 GMT</pubDate><guid>251e27831a53adb126079a56b9bfcf29</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【TQ】isvoro HK YH</title><link>https://www.nodeseek.com/post-860701-1</link><description>IPv4回程IPv4大包回程国际互联单线程测速报告链接：https://tcpquality.ibsgss.uk/r/Qt0VonsZAl</description><pubDate>Thu, 06 Aug 2026 09:44:56 GMT</pubDate><guid>eb64076ef51d0cd76fb629da88aeb5ff</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 请教下中转站服务器</title><link>https://www.nodeseek.com/post-860700-1</link><description>请教下大佬们，做中转站,lightlayer这款配置够么？</description><pubDate>Thu, 06 Aug 2026 09:44:45 GMT</pubDate><guid>67e2b056436ecab8f47ce652f8f6b965</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 推广里的自定义域名邮箱 smailr 怎么添加自定义域名？</title><link>https://www.nodeloc.com/t/topic/102344</link><description>刚才注册进去看了看，发现组织创建了，需要管理员审核？ 
-怎么收费的？ 
-我的组织 ID c9472204-ff28-4709-b553-dd51989fc9f3</description><pubDate>Thu, 06 Aug 2026 09:44:41 GMT</pubDate><guid>nodeloc-102344</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [生活] 这几天跟以前初中的同学聊聊，原来初中的同学有那么多离婚了</title><link>https://www.v2ex.com/t/1232528#reply0</link><description>&lt;p&gt;我初中是在一个小县城（江西吉安的一个县  算是贫困县吧 万安），这几天跟我一个朋友也是我初中高中同学，聊了下 发现大学毕业后在老家发展结婚的  大多离婚了  我都好吃惊，我听下来我还有印象的 就有 8 个  其中一个我初中还算挺喜欢的  她闺蜜比她结婚早两年，也是我们班的  结婚一年就离了  然后是她结婚（关键她结婚都没在微信朋友圈发，我还是无意中刷微博发现她发了结婚照，标题也就是 初定是你） 我特么还寻思这结婚还能初定嘛  结果前天才知道  她也结婚没一年就离婚了，大学毕业后，我在深圳 偶尔回老家 没事还会叫她出来吃个饭   那时她就跟我说家里催婚催的急 （她独生女  94 年的这应该是 8 年前的事了），家里一直在安排她相亲，后面不知道怎么妥协了，结了婚   但是也就跟她闺蜜一样维持了 1 年  现在她们两个基本是结伴而行&lt;/p&gt;
-&lt;p&gt;另一个就是初中毕业就被混混搞大肚子的  然后双方父母只能安排结婚，还好那个混混有点实力 开游戏厅 后面又搞高利贷  赚了不少钱  平时看她出行一定是商务舱 生活质量让以前班上的女孩子都很羡慕那种  结婚都这么久了  小孩都快上高中了  结果听说这个月离婚冷静期&lt;/p&gt;
-&lt;p&gt;另外几个只知道离婚了  不知道她们近况&lt;br /&gt;
-现在 90 后离婚的真这么多吗&lt;/p&gt;
-&lt;p&gt;我还没结婚&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:44:25 GMT</pubDate><guid>cf8658398a9f237dd076ad002e22225b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【自测留档】NoBrand沪日专线 Super IPLC SHJP IND 7CM KFC</title><link>https://www.nodeseek.com/post-860698-1</link><description>IPv4回程IPv4大包回程IPv6回程教育网回程国际互联单线程测速报告链接：https://tcpquality.ibsgss.uk/r/XBibhRHsCX</description><pubDate>Thu, 06 Aug 2026 09:43:53 GMT</pubDate><guid>cb8192047b9c0dddd93277ea4f584727</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收】收绿云的2T大盘鸡，90刀3年那款</title><link>https://www.nodeseek.com/post-860697-1</link><description>还有大佬手上有这款吗？收一台，出的请私聊。谢谢。</description><pubDate>Thu, 06 Aug 2026 09:42:53 GMT</pubDate><guid>ce37fff4bcdbc2fbc9d2034a643a03ba</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 凉心云99/年的机子值得买吗</title><link>https://www.nodeseek.com/post-860696-1</link><description>有大佬买过良心云的机子吗。看到了凉心云99/年的机子，请问这个机子值得买吗。然后续费是同价吗</description><pubDate>Thu, 06 Aug 2026 09:42:13 GMT</pubDate><guid>8efc0f2fe424bf887ad11d06a5d2b6b1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [推广] 别再比较 AI 平台了，先把你的第一个 Agent 跑起来</title><link>https://www.v2ex.com/t/1232527#reply0</link><description>&lt;p&gt;最近半年，开发者社区里讨论最多的话题变了。&lt;/p&gt;
-&lt;p&gt;不再是"GPT 好还是 Claude 好"。&lt;/p&gt;
-&lt;p&gt;而是：&lt;/p&gt;
-&lt;p&gt;Dify 、Coze 、灵搭、n8n 、Flowise 、Langflow……到底选哪个？&lt;/p&gt;
-&lt;p&gt;我理解这种焦虑。选择太多，每个看起来都不错，每个又都差点什么。&lt;/p&gt;
-&lt;p&gt;于是很多人花了三个月比较平台，却连第一个 Agent 都没跑起来。&lt;/p&gt;
-&lt;p&gt;我们也走过这条弯路&lt;/p&gt;
-&lt;p&gt;ZGI 做了大半年，推翻过很多版本，踩过不少坑。&lt;/p&gt;
-&lt;p&gt;直到最近，才上线了一套我们自己觉得能长期迭代下去的架构。&lt;/p&gt;
-&lt;p&gt;所以今天不是来说"ZGI 是最好的"——说实话，市面上已经有很多优秀的平台，灵搭、Dify 、Coze 各有所长。&lt;/p&gt;
-&lt;p&gt;我们想说的只有一件事：&lt;/p&gt;
-&lt;p&gt;别把时间花在比较上。把时间花在"跑起来"上。&lt;/p&gt;
-&lt;p&gt;真正卡住你的，从来不是模型&lt;/p&gt;
-&lt;p&gt;今天接 GPT ，明天试 Claude ，后天换 DeepSeek ，下个月研究 Kimi 。&lt;/p&gt;
-&lt;p&gt;模型一直在换。但真正写过业务的人都知道，麻烦的根本不是模型，而是模型之外的一切：&lt;/p&gt;
-&lt;p&gt;知识库怎么接&lt;/p&gt;
-&lt;p&gt;Workflow 怎么编排&lt;/p&gt;
-&lt;p&gt;权限怎么管&lt;/p&gt;
-&lt;p&gt;Skills 怎么复用&lt;/p&gt;
-&lt;p&gt;日志怎么追&lt;/p&gt;
-&lt;p&gt;API 怎么对外暴露&lt;/p&gt;
-&lt;p&gt;这些东西不会因为 GPT 更新了就消失。反而越来越重要。&lt;/p&gt;
-&lt;p&gt;ZGI 的思路：让模型随便换，应用不重写&lt;/p&gt;
-&lt;p&gt;我们做的事情其实很简单——&lt;/p&gt;
-&lt;p&gt;把模型层和应用层彻底解耦。&lt;/p&gt;
-&lt;p&gt;你可以接 GPT-5.6 、Claude 、DeepSeek 、Kimi 、豆包，也可以随时切换。&lt;/p&gt;
-&lt;p&gt;但你的 Workflow 不用推倒重来。知识库不用重新配。Agent 不需要重新搭。&lt;/p&gt;
-&lt;p&gt;换个比喻：ZGI 想做的是 AI 应用的"操作系统层"。模型是 App ，你可以随时装卸；而你搭建的业务逻辑、知识体系、权限规则，是稳定的底座。&lt;/p&gt;
-&lt;p&gt;十分钟验证一个想法&lt;/p&gt;
-&lt;p&gt;最近我们上线了一个能力：&lt;/p&gt;
-&lt;p&gt;你可以直接体验 Kimi-K2.6 、Doubao-Seed-2.0 、DeepSeek V4 Pro——&lt;/p&gt;
-&lt;p&gt;不用申请 API ，不用配置 Key ，不用折腾环境。&lt;/p&gt;
-&lt;p&gt;打开就能用。&lt;/p&gt;
-&lt;p&gt;如果只是想验证一个想法，十分钟就够了。&lt;/p&gt;
-&lt;p&gt;为什么是现在&lt;/p&gt;
-&lt;p&gt;AI 最大的问题从来不是模型不够强。&lt;/p&gt;
-&lt;p&gt;而是：每个人都有很多想法，真正能把想法变成可运行应用的人，太少了。&lt;/p&gt;
-&lt;p&gt;我们把门槛再降了一点。&lt;/p&gt;
-&lt;p&gt;希望有人因为少折腾了一下午环境，多做出了一个真正上线的 Agent 。&lt;/p&gt;
-&lt;p&gt;如果真能做到这一点，我们觉得就值了。&lt;/p&gt;
-&lt;p&gt;ZGI 已经开源。&lt;/p&gt;
-&lt;p&gt;→ 想体验：直接注册，十分钟跑通第一个 Agent → 想深度使用：文档齐全，支持私有化部署 → 觉得哪里不好：直接提 Issue ，我们每天都在改&lt;/p&gt;
-&lt;p&gt;不用客气。&lt;/p&gt;
-&lt;p&gt;我们希望这个项目，能越来越像开发者真正想用的样子。 🎁 现在注册即送 1000 AI Credits ，开箱即用，无需充值，免费体验国内主流大模型。 Stop choosing. Start shipping.&lt;/p&gt;
-&lt;p&gt;直达地址： &lt;a href="https://zgi.cn/" rel="nofollow"&gt;https://zgi.cn/&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:41:21 GMT</pubDate><guid>1ecbf5f298ca6dd8bcce4b7b6528e861</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] CC这是准备和CCS看齐啊 移动丢包70%</title><link>https://www.nodeseek.com/post-860695-1</link><description /><pubDate>Thu, 06 Aug 2026 09:40:57 GMT</pubDate><guid>8f497fb0859b2eafd8e4022902d1d139</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [奇思妙想] 脑机接口 + AI = 缸中之脑？</title><link>https://www.v2ex.com/t/1232525#reply0</link><description>&lt;p&gt;近使用 AI 之后就想到了一个问题：我大脑中的想法是想法，想要把这个想法通过语言精准的表达出来是一件很困难的事情，重点在于精准的表达。
-如果脑机接口发明出来，将人的脑电波信号直接输入给 AI ，那么能否在输入端给予 AI 确定性呢？
-当通过将脑电波输入 AI ，让 AI 明白这种语言，是否可以模拟相同的信号返回给大脑，模拟出现实，如果这个实验通过，是否意味着我们的现实理论上也可能是虚拟的，从另一个角度是否意味着，我们可以给每一个人虚拟一个现实，也就是说平行时空是可能存在的，因为可以通过虚拟实现。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:39:11 GMT</pubDate><guid>1553337eef7d5aa1e9eaf9ec6ea02742</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【出】lightlayer SJC 4.9刀 月付</title><link>https://www.nodeseek.com/post-860694-1</link><description /><pubDate>Thu, 06 Aug 2026 09:38:26 GMT</pubDate><guid>af5df3a8792ed49c0e82f56f294a608e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 剩余价值折价出 Zouter Frankfurt BGP Global - Standard 15.84r月付</title><link>https://www.nodeseek.com/post-860693-1</link><description>5元出了，吃灰也是吃灰，不如给有缘人</description><pubDate>Thu, 06 Aug 2026 09:37:30 GMT</pubDate><guid>54ca9f0dfc009b42ba0bcf06a207e98c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 疑似 bug 某些帖子登录后却不显示了🙄</title><link>https://www.nodeseek.com/post-860692-1</link><description>疑似bug未登录时，在技术板块看到这个帖子我登论坛账号后，这个帖子却消失不见了，板块和首页列表里都找不到已确认浏览器未开脚本，插件该帖也未设置特殊权限什么的编辑：我也没开黑名单屏蔽</description><pubDate>Thu, 06 Aug 2026 09:37:24 GMT</pubDate><guid>31609d6e1d7314ea8047b27d84b75ce6</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 论坛被打了？</title><link>https://www.nodeseek.com/post-860691-1</link><description>刚刚无法连接，现在又能打开了</description><pubDate>Thu, 06 Aug 2026 09:37:07 GMT</pubDate><guid>dc66ca3bb00107bdf85a25e707ce35ad</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 我愿称每周四五为gpt拉闸日</title><link>https://www.nodeseek.com/post-860690-1</link><description>感觉已经固定这个节奏了。</description><pubDate>Thu, 06 Aug 2026 09:36:18 GMT</pubDate><guid>f28f23be3d1217a6d03afc4bfdcf90d1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 甲骨文升级号账单逾期2个月会发生是什么事</title><link>https://www.nodeseek.com/post-860689-1</link><description>跑超流量欠费252多新币信用卡无额度扣费失败。。接下来会发生什么是，打算跑路</description><pubDate>Thu, 06 Aug 2026 09:36:09 GMT</pubDate><guid>6f264dddb33917cba552533647a831e7</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [反馈] 诚恳致歉，希望恢复账号权重</title><link>https://www.v2ex.com/t/1232524#reply0</link><description>@&lt;a href="https://www.v2ex.com/member/Livid" rel="nofollow noopener" target="_blank"&gt;Livid&lt;/a&gt;&lt;br /&gt;站长你好，&lt;br /&gt;我是 16 年注册的十年老用户，平时常年潜水很少发帖。前段时间特殊情况单日连发三帖违规被降权，已经熟读社区规则认真反思，并无恶意灌水行为。&lt;br /&gt;保证今后规范发帖，严格控制发帖数量，恳请恢复账号权重，谢谢站长。</description><pubDate>Thu, 06 Aug 2026 09:35:02 GMT</pubDate><guid>5340f4eba785ccf3535bcd3daa656145</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] DMIT 现在这么缺货吗？</title><link>https://www.nodeseek.com/post-860688-1</link><description>DMIT现在这么缺货吗？官网基本都是无货，想买个线路机</description><pubDate>Thu, 06 Aug 2026 09:34:42 GMT</pubDate><guid>67565e09273d72cb797eb9b368a76e04</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收】剩余价值9折收 Legendvps SG Lite 2G 56刀3年</title><link>https://www.nodeseek.com/post-860687-1</link><description /><pubDate>Thu, 06 Aug 2026 09:34:33 GMT</pubDate><guid>4ddd15a1ea6fe9cc2b32e1eaa9142261</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 话说为什么提到po0都是默认rfc的，我看咕咕云也有卖</title><link>https://www.nodeseek.com/post-860686-1</link><description>让老板报销了一台618，感觉确实很顶，但是这300m和650g单向和po0那些溢价机不是一样的吗更何况rfc现在感觉有点人人喊打了</description><pubDate>Thu, 06 Aug 2026 09:34:27 GMT</pubDate><guid>5a408ce2fb2168e6a1df60a6d7b163b4</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [教程]第三版 懒猫云朝鲜鸡 获取 WARP IP 食用教程</title><link>https://www.nodeseek.com/post-860685-1</link><description /><pubDate>Thu, 06 Aug 2026 09:34:26 GMT</pubDate><guid>19e21df968d65d513552cce298fc1d72</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [求职] [求职] 交叉编译 | 端点安全 | 系统监控 | Linux 驱动 | EDR | C/C++ | 性能调优 | Qt | 鸿蒙 | eBPF | DPDK</title><link>https://www.v2ex.com/t/1232523#reply0</link><description>&lt;ul&gt;
-&lt;li&gt;最近看新机会，故整理一份求职贴，寻找气场相合的团队，有需求的大佬欢迎联系。&lt;/li&gt;
-&lt;li&gt;下面主要按照我的技术演进及时间线，聊聊我这些年折腾过的一些底层技术和填过的坑。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x00 驱动力：好奇心 &amp;amp;&amp;amp; 兴趣&lt;/h1&gt;
-&lt;p&gt;和大部分 C/C++/Qt 开发者一样，我早期也着重于常规的业务开发。但我属于那种只要时间充裕‘就想看看底层原理’的性格，比起堆叠业务代码，我更喜欢去向下拆解系统机制，这也促使我一步步走向了系统底层和安全的深水区。&lt;/p&gt;
-&lt;h1&gt;0x01 交叉编译：从“造轮子”到“魔改 ELF”&lt;/h1&gt;
+<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Thu, 06 Aug 2026 11:52:45 GMT</lastBuildDate><item><title>[NodeSeek] 今晚广东移动什么事？</title><link>https://www.nodeseek.com/post-860885-1</link><description>看看网络，突然发现日本和美国两个vps都离线了！什么回事！</description><pubDate>Thu, 06 Aug 2026 11:52:23 GMT</pubDate><guid>d351789b5dbeaa99e32f04342e63c282</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 今天的我家亲戚的她老婆婆的表姐夫昨天热死地里面了</title><link>https://www.nodeseek.com/post-860884-1</link><description>今天北方40多度，热得要命，搞不懂为什么今天一定要下地干活，为什么不明天在下地，明天才28度。我想说，这也能死啊。。。。搞不懂无为什么今天一定要下地，不如缓几天在下地，而且还是省会城市，又不是没有钱，一定要下地不知道为什么，这几年热射病被热死的人太多了，以前哪有这个病。</description><pubDate>Thu, 06 Aug 2026 11:51:28 GMT</pubDate><guid>50a4abae4ef31c369b8a00f9c6498d9e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [macOS] macOS 15.7.7 无法直接向同一 iCloud 账号的 iPhone 隔空投送传送文件</title><link>https://www.v2ex.com/t/1232556#reply0</link><description>&lt;p&gt;家中一台 M1 的 Mac Mini ，已在养老版本 15.7.7 差不多两年吧
+iPhone 17 ，iOS 26.6 ，隔空投送默认为「仅限联系人」&lt;/p&gt;
+&lt;p&gt;目前碰到的问题：&lt;/p&gt;
+&lt;p&gt;Mac Mini 向 iPhone 发送隔空投送文件，&lt;strong&gt;不正常&lt;/strong&gt;，且表现为：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-从 ARM 到手搓 MIPS64el 工具链： &lt;ul&gt;
-&lt;li&gt;
-最初接触交叉编译是从折腾 ARM 开发板开始。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/UKMigration" rel="nofollow"&gt;GitHub：嵌入式学习记录&lt;/a&gt;（该仓库建立于 23 年底学习 uboot 时，学习裸机程序则是在 21 年初）&lt;/li&gt;
+&lt;li&gt;Mac Mini 可以识别到一台叫 iPhone 17 的设备，但无法发送文件，且设备的预览缩略图为空白。&lt;/li&gt;
+&lt;li&gt;iPhone 端更改为「所有人 10 分钟」选项后，可正常发送和接受，但观察到 iPhone 的预览缩略图仍显示为空白。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;后来在工作中为了简化工作流，在不知道社区有现成轮子的情况下，通过源码摸索编译出了 mips64el 交叉工具链。虽然这套轮子最后没投入生产，但让我了解到了底层硬件编译参数，并在 24 年借此帮同事精准定位了一个由于硬件不支持硬浮点引发的深层崩溃。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-Qt 工具链：&lt;ul&gt;
-&lt;li&gt;为了实现底层服务与 UI 界面在同一套流水线下的单条命令编译，深扒网上资料，最后从 Stack Overflow 找到了一篇关于 Qt4 交叉编译的古早线索，随后通过不断摸索，试错，取巧，手搓出了 Qt5 交叉编译工具链，打通了前后端同构编译的闭环。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-国产架构溯源与三方库兼容： &lt;ul&gt;
-&lt;li&gt;早期深入研究了国产化架构的发展演进史。后期在遇到部分开源三方库不支持国产芯片架构交叉编译时，利用“架构溯源”的思路——将目标架构强制指定为其前身，成功绕过了棘手的编译限制。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-魔改 ELF 绕过 GLIBC 依赖： &lt;ul&gt;
-&lt;li&gt;
-在将出包平台规模化部署到一台 CentOS 6 老机器时，为了让基于高版本 GLIBC 构建的工具链能在低版本系统上运行，我没有使用妥协性的环境变量或 rpath ，而是直接通过修改已编译好的 ELF 文件实现了向下兼容。这让我对 ELF 文件结构和 GLIBC 版本校验逻辑形成了深刻的肌肉记忆，也为后期开发内核模块适配工具埋下了伏笔。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/CAdapt" rel="nofollow"&gt;GitHub：GLIBC 版本适配工具&lt;/a&gt;（源于从网上找的别人的修改方法并阅读、注解、改造）&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/UpModule" rel="nofollow"&gt;GitHub：内核模块适配工具&lt;/a&gt;（灵感源于上面这个“GLIBC 版本适配工具”）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-旧世界生态架构跃升： &lt;ul&gt;
-&lt;li&gt;
-针对 CentOS 6 默认 GCC 4.9.x 对 C++11 支持不完整、C++ ABI std::string 版本冲突以及现代三方库的依赖断代问题，我对交叉编译平台进行了一次底层大升级。将其整体对齐到了申威与龙芯“旧世界”的 8.3 版本，不仅完美支持了 C++17 特性，也保证了编译产物对老旧系统的兼容性，为整个项目的现代化平滑过渡打下了基石。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/CrossToolchain-GCC" rel="nofollow"&gt;GitHub：信创全套 GCC 交叉编译器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/CrossToolchain-QT" rel="nofollow"&gt;GitHub：信创全套 QT 交叉编译器&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x02 逆向与攻防：代码注入&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-这原本是本人在职期间找工作的过程中，深感底层与安全攻防圈子更看重纯粹的“真实战斗力”而学历其次，动了转行的念头，然后就对两者都涉及的 ShellCode 产生了浓厚兴趣并进行了学习，最初也没料到，这竟然为后来业务上实现内核热补丁（ LivePatch ）的 inline hook 埋下了伏笔，那时也不知道两者技术底色一脉相承😑。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/KongQBin/ShellCode" rel="nofollow"&gt;GitHub：善意代码注入&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x03 主防平台：从“应用层”到“内核态”&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-针对主防平台，我们的需求是“接收事件 -&amp;gt; 行为分析 -&amp;gt; 杀毒引擎 -&amp;gt; 决定是否放行”。基于上述需求，我研究并采集了多种 Linux 应用层 + 内核态 的监控方式并实现了两套。最初因为驱动方案需要逐一编译，对应用层方案不死心，也消耗了一定的时间。由于陈述出来又太多了，故详见博客园。&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.cnblogs.com/KBin/p/20830400" rel="nofollow"&gt;博客园：关于系统监控&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x04 性能调优：从“内核态”到“应用层”&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-在主防平台搭建结束后，便开始着手优化性能。&lt;ul&gt;
-&lt;li&gt;首先是优化等待队列的唤醒逻辑，对唤醒行为进行分桶，并引入键控唤醒机制，避免一次唤醒太多挂起的进程产生“惊群效应”。&lt;/li&gt;
-&lt;li&gt;查阅相关资料，了解了 DPDK 的底层原理，于是实现了基于设备文件映射的、核心绑定的、全链路分片的消息传递逻辑，解决了由于事件消息体中包含了可变长数组，导致 netlink 要先嗅探，再读取需要加锁的问题，消除了瓶颈效应。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;在驱动性能调优的过程中，本人也接触并使用了内存屏障，掌握了其底层原理，并顺便了解了 RCU 锁及其底层原理，于是又将两者的思想应用到了应用层的性能调优过程中。下面是一个典型的代码片段用于“过滤策略”的更新，具体如下所示：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class="language-cpp"&gt;class ProductMgrNotLockMgr
-{
-public:
-    ProductMgrNotLockMgr()
-        : m_productMgr(nullptr), m_productMgrVer(0){}
-    ~ProductMgrNotLockMgr(){}
-    shared_ptr&amp;lt;ProductMgr&amp;gt; getProductMgr()
-    {
-        static thread_local uint64_t m_productMgrVerTls = 0;
-        static thread_local shared_ptr&amp;lt;ProductMgr&amp;gt; m_productMgrTls = nullptr;
-        uint64_t globalVer = m_productMgrVer.load(memory_order_acquire);
-        if(m_productMgrVerTls != globalVer)
-        {
-            m_productMgrTls = atomic_load_explicit(&amp;amp;m_productMgr, memory_order_acquire);
-            m_productMgrVerTls = globalVer;
-        }
-        return m_productMgrTls;
-    }
-    void setProductMgr(shared_ptr&amp;lt;ProductMgr&amp;gt; mgr)
-    {
-        atomic_store_explicit(&amp;amp;m_productMgr, mgr, memory_order_release);
-        m_productMgrVer.fetch_add(1, memory_order_release);
-    }
-
-private:
-    shared_ptr&amp;lt;ProductMgr&amp;gt; m_productMgr;
-    atomic&amp;lt;uint64_t&amp;gt;       m_productMgrVer;
-};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;业务层中的每一个事件对象调用 get 方法取走自己的过滤策略，而更新时仅需要初始化新的策略配置，然后调用 set 即可，旧的策略配置在引用计数清零后会自动释放，至于策略配置为什么叫 ProductMgr 而不是 ConfigMgr 这属于历史遗留问题，不要在意这些细节🤭。&lt;/li&gt;
-&lt;li&gt;
-其中的内存屏障部分：&lt;ul&gt;
-&lt;li&gt;memory_order_acquire 等同于内核中的 smp_rmb ，用于刷新失效队列，保证数据最新。&lt;/li&gt;
-&lt;li&gt;memory_order_release 等同于内核中的 smp_wmb ，用于保证指令执行顺序、刷新写缓冲区并通知。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-其中的 RCU 锁部分 本质就是对智能指针的原子替换过程：&lt;ul&gt;
-&lt;li&gt;内核中的 RCU 锁需要写者阻塞等待最后一个读者结束对老内存的使用然后手动释放，而此处巧妙利用 C++ 的智能指针，不需要写者等待。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;其中的 static 关键字是为了延长局部变量的生命周期。&lt;/li&gt;
-&lt;li&gt;其中的 thread_local 关键字是为了让每个线程都有自己的变量副本，避免缓存竞争。&lt;/li&gt;
-&lt;li&gt;其中的 VerTls 变量，则是为了进一步提高性能，毕竟 shared_ptr 是个对象，内部存在多个变量。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x05 鸿蒙原生拓荒&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-近几个月主导了底层服务与 UI 向鸿蒙系统的全面移植适配。在这个缺乏现成文档的“拓荒期”，填平了大量底层生态差异的深坑：&lt;ul&gt;
-&lt;li&gt;一是 代码的 POSIX 化，一些 GNU 扩展接口在鸿蒙中根本不存在，鸿蒙使用的是基于 muslc 的工具链。&lt;/li&gt;
-&lt;li&gt;二是 界面、服务的库化、线程化，应用在鸿蒙中只允许单进程，原有的可执行程序需要包装为线程再编译为库，然后导出启停符号……，而后就是杜绝一切 system 、popen 、execve 家族调用。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;对于界面从 Linux 平台的移植，本人选用了 &lt;a href="https://gitcode.com/openharmony-sig/qt" rel="nofollow"&gt;gitcode&lt;/a&gt; 的版本，没有使用 QT 官方维护的版本，原因是行为差异较大，很多行为与 Linux 系统中并不一致。&lt;/li&gt;
-&lt;li&gt;对于原有代码的复用，本人实现了 桥接库 以及 Ark 实现层，部分业务在桥接库中使用鸿蒙提供的  C++ 库实现，另一部分穿透桥接库，使用 Ark 代码实现。&lt;/li&gt;
-&lt;li&gt;关于出包，鸿蒙当前只提供了 Windows 和 Mac 的教程，于是结合前两者摸索了一套 Linux 平台 的出包模板。&lt;/li&gt;
-&lt;li&gt;关于 QT 与 Ark 画布的转接，gitcode 和 QT 官方的 QT ，在画布转接上完完全全是两套不同的逻辑……，最后是配合 Ai 边猜边试实现的，记得一遍遍调整得(děi)有十几二十次吧😹。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x06 问题处理能力&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-除了上述开发过程中遇到的各种问题外，还处理过其它的形形色色的问题，展开讲又很多，故一笔带过吧：&lt;ul&gt;
-&lt;li&gt;符号表冲突、暴力隐藏了不该隐藏的符号（编译器 bug ）、ELF 页对齐问题、代码不规范导致唯独龙芯(mips64el+loongarch64)Release 包进程崩溃、优化级别引起的汇编指令错误、早期三方库不支持国产化架构编译问题、C++不同 std 库的正则表达式行为不同问题、Qt 插件装载问题、冷门信创系统与 Qt 兼容性问题、各类资源泄漏问题……&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;0x07 结语&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;以上除了主防的上层服务和鸿蒙的业务层代码适配两项，有同事配合我进行实现之外，其余大部分都是自己独立做出来的。&lt;/li&gt;
-&lt;li&gt;
-目前的话，除去一些规模较小、不太对口，或是因为学历受限的机会外，已经面试过两家知名的安全公司了：&lt;ul&gt;
-&lt;li&gt;一个二面通过，三面官直接根据前两面的结果定级低了些。&lt;/li&gt;
-&lt;li&gt;另一个四面通过，目前需要横向对比，对我的面评我认为很客观，大意是重实战轻理论了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-所以乾坤未定😋，我再接着找找看，目前我感兴趣的行业有：&lt;ul&gt;
-&lt;li&gt;终端安全行业（我的老本行）&lt;/li&gt;
-&lt;li&gt;性能调优领域&lt;/li&gt;
-&lt;li&gt;逆向与攻防&lt;/li&gt;
-&lt;li&gt;嵌入式领域&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><pubDate>Thu, 06 Aug 2026 09:27:01 GMT</pubDate><guid>7daa76c8cb447494b7326474c4373415</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 二审可能有转机吗？</title><link>https://www.v2ex.com/t/1232522#reply6</link><description>&lt;p&gt;郑州的烂尾保交楼楼盘，前段时间告了原开发商和城开子公司。
-在几乎没有证据的情况下，法官认定了购房人“知晓并同意转让”。
-诉讼费不便宜，我的律师认为二审改判概率不大，V 友们觉得上诉有必要上诉吗？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:25:42 GMT</pubDate><guid>2157116d6dbd5df730b271936d2a8cc0</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 前同事离职仲裁公司，并把和同事的聊天记录发给 HR</title><link>https://www.v2ex.com/t/1232521#reply4</link><description>&lt;p&gt;今天刚听到的， 大公司把小公司合并了，然后小公司不想被合并，就走了裁员名单，但最终赔偿拿的不够，就开始套还在职公司小王的话，（微信截图的方式，主要是薪酬构成的比例等）后面把这些聊天记录发给 HR ，HR 把这事发给小王，想了解截图是否属实&lt;/p&gt;
-&lt;p&gt;今天小王才知道这个事，气愤无比，因为当时都为同事，以为是随便聊天，结果竟然背刺了。。。&lt;/p&gt;
-&lt;p&gt;以上都非本人，是本人身边的好友透漏的，我听到都感觉震惊了，还有这种人？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:24:05 GMT</pubDate><guid>78e806dadd04423c49bcfcff75ca0c1b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] Cursor 半价优惠还有吗？</title><link>https://www.v2ex.com/t/1232520#reply0</link><description>&lt;p&gt;如题，下午用了官方邮件里的挽回链接去重新开通，结果支付的时候用的支付宝那张卡不支持境外支付导致支付失败了，就再也用不了那个优惠了。&lt;/p&gt;
-&lt;p&gt;求问还有可用的优惠吗？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:20:41 GMT</pubDate><guid>60a96357cbe0256e506d759b67a69c0c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 2026全球住宅代理推荐——Proxy001，真实原生家庭IP🌟🌟</title><link>https://www.nodeloc.com/t/topic/102343</link><description>:rainbow:支持UDP链接 
-:rainbow:支持账密/子账户/cdkey等使用方式 
-:rainbow:完整个人面板可查看具体消耗使用 
-:rainbow:0.55$/GB起，专业客户支持 
-:sparkles:注册链接：http&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 09:14:55 GMT</pubDate><guid>nodeloc-102343</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [生活] 你们最近在看什么书？</title><link>https://www.v2ex.com/t/1232519#reply0</link><description>&lt;p&gt;rt&lt;/p&gt;
-&lt;p&gt;或者有什么好书推荐，类型不限&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:14:38 GMT</pubDate><guid>82096e114b3c3560ba37507f51142c0f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] Qoder 国际版续杯 1 元 300 积分</title><link>https://www.v2ex.com/t/1232518#reply0</link><description>&lt;p&gt;可用 fable5 、opus4.8 、k3 等等&lt;/p&gt;
-&lt;p&gt;地址： &lt;a href="https://catfk.com/shop/DIQ879Y5" rel="nofollow"&gt;https://catfk.com/shop/DIQ879Y5&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:13:35 GMT</pubDate><guid>c4a579b714da9444a1d1ca443cb9787b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [职场话题] 维权难</title><link>https://www.v2ex.com/t/1232517#reply4</link><description>副业工作上的一些事情（我交了 1000 元，不退给我，涉及到霸王条款&amp;amp;纠纷）需要维权，很难。&lt;br /&gt;&lt;br /&gt;1.去找 police ，没人指引只能主动问，等了一会有群众不满意 police 的态度遂吵了起来还要录像。轮到我了，意思就是这种事不归他们管（去之前问过豆包是可以调解的），我说可以向对方企业施压...，无果，还花了我 30 块打车费&lt;br /&gt;&lt;br /&gt;2.找了我所在地最近综治中心，说了一大堆，意思是虽说在本市但跨区了让我找那块区域的综治&lt;br /&gt;&lt;br /&gt;3.联系涉及公司所在区域的综治，让我找他同事&lt;br /&gt;&lt;br /&gt;4.打过去手机上显示已经被标记为“骚扰电话”，下午打了 5 、6 个一个都没通。&lt;br /&gt;&lt;br /&gt;已经同步在 12315 ，315 投诉了，等待结果。花费的时间成本已经超过损失了。&lt;br /&gt;&lt;br /&gt;对方是老油子了，微信转推了 2 次才加到相关人员微信，微信认证企业是一家公司，我交钱的小程序主体是第二家公司，实际支付单收款方商户是第三家公司。我现在就在投诉实际收款的第三家公司。</description><pubDate>Thu, 06 Aug 2026 09:12:37 GMT</pubDate><guid>ea4449441d59b6cb70203d4057ab99f7</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 现在还有免费虚拟卡么？</title><link>https://www.nodeloc.com/t/topic/102342</link><description>rt，白嫖党不想再搭钱了</description><pubDate>Thu, 06 Aug 2026 09:08:22 GMT</pubDate><guid>nodeloc-102342</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [程序员] 如何评价 Discoveryloop: https://www.discoveryloop.com/</title><link>https://www.v2ex.com/t/1232516#reply2</link><description>&lt;p&gt;创始人团队看着很强，但愿景有点没看明白，介绍里都是一些看着很虚的命题，什么科学方法科学实验，本质是想通过 AI 自动化做重复实验？&lt;/p&gt;
-&lt;p&gt;这个目前看上去还没有落脚地的场景为什么能吸引这么多大佬加入，真有那么强大的前景？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:05:26 GMT</pubDate><guid>86d6e311e120525a4720cca8329e1e1f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 开源我的终端套壳项目，无限横向拓展的 libghostty 窗口</title><link>https://www.v2ex.com/t/1232515#reply2</link><description>&lt;p&gt;最近做了一个 macOS 原生工具 Colerm&lt;/p&gt;
-&lt;p&gt;它的目标比较简单：终端、项目和后台进程越来越多之后，不想一直在窗口和 Tab 之间来回找，于是把它们整理成一个可以横向浏览的工作区，日常使用基本都靠手势滑动和快捷键&lt;/p&gt;
-&lt;p&gt;目前支持：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基于 Ghostty 的原生终端&lt;/li&gt;
-&lt;li&gt;可调整宽度的横向终端列&lt;/li&gt;
-&lt;li&gt;终端 Tab 拖拽排序&lt;/li&gt;
-&lt;li&gt;⌘1 到 ⌘9 快速切换&lt;/li&gt;
-&lt;li&gt;Command Palette 搜索终端&lt;/li&gt;
-&lt;li&gt;跟随系统的明暗主题和终端配色&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://storage.colerm.com/CleanShot%202026-08-06%20at%2017.01.18%402x.png" /&gt;&lt;/p&gt;
-&lt;p&gt;官网： &lt;a href="https://colerm.com" rel="nofollow"&gt;https://colerm.com&lt;/a&gt;
-GitHub： &lt;a href="https://github.com/Envl/colerm" rel="nofollow"&gt;https://github.com/Envl/colerm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果你平时也会同时开很多项目、服务器或 coding agent ，欢迎试试看，也欢迎反馈实际使用中的问题。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:03:20 GMT</pubDate><guid>d47b8c9ebe77af70c69bd458773c6e6e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Claude] Claude 桌面版能接入 Grok 4.5 吗？</title><link>https://www.v2ex.com/t/1232514#reply1</link><description>请教下大佬们。</description><pubDate>Thu, 06 Aug 2026 09:02:01 GMT</pubDate><guid>07d30a98d51f296d2e8c1cf79cf19634</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 某书约球居然能约到咯咯哒</title><link>https://www.v2ex.com/t/1232512#reply20</link><description>最近寻思在小某书上约球。我的一般流程就是自报打球的积分（类似于巅峰赛积分），然后询问对方有没有意向，合适约一下。但是最近约到一个应该不是正经打球的。就是发现这个人别人约球帖子下留言 dd ，我以为是个美女球友来着。&lt;br /&gt;&lt;br /&gt;事情如下：&lt;br /&gt;我：你好，我 1700 ，周末有空打一下吗&lt;br /&gt;对方：1500/耶，不需要那么高&lt;br /&gt;我：没事的，应该也能练起来。你有地方吗&lt;br /&gt;对方：你要点外卖？&lt;br /&gt;&lt;br /&gt;这个时候我就感觉不太对，点进主页一看好像不是打球的。发出来大家乐一下，互联网交友还是要慎重。</description><pubDate>Thu, 06 Aug 2026 08:54:25 GMT</pubDate><guid>301c546b1f1edb0b59dc0cb4622ad4d9</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [职场话题] 同事协作的时候总想着把饭喂到嘴里，只想要最终改好的代码，连基础的排查、阅读理解都不愿自己动手</title><link>https://www.v2ex.com/t/1232511#reply3</link><description>&lt;p&gt;今天同事一句话，又给我干高血压了。&lt;/p&gt;
-&lt;p&gt;我这个人比较记仇，所以今天又想起来之前他说了一句 “只管生不管养”的言论。聊天记录一看。好家伙，刚好过去一年。&lt;/p&gt;
-&lt;p&gt;一年过去了，发出来大家乐呵乐呵，也想看看各位看法&lt;/p&gt;
-&lt;h2&gt;背景&lt;/h2&gt;
-&lt;p&gt;职级平级，同一个直属领导。我开发的模块中写过一个内部业务组件。（前端喜欢写组件很正常吧，通常不会考虑通用性，有时候产品就喜欢来一句：就和 xxx 功能一样吧，然后就扯上复用了&lt;/p&gt;
-&lt;h2&gt;事情经过&lt;/h2&gt;
-&lt;p&gt;测试在同事 A 工位口述描述了一个 bug ，然后同事 A 说 “噢噢，这个地方的 xx 功能，实现上用到了同事 B （我）的组件”。&lt;/p&gt;
-&lt;p&gt;我工位也在附近所以我也听到了，因为我在其他分支开发新功能，然后打开目录过去看了一下代码。 发现可能存在问题的代码。 随手截图发给了同事 A 让他可以按照这个修复。&lt;/p&gt;
-&lt;p&gt;图一： 修复方式
-图二：过了两个小时后，又补充了一张截图，表示代码有点冗余；&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/iiig5Qz.png" /&gt; &lt;/p&gt;
-&lt;p&gt;随后对方就是不耐烦的回复，我心想着代码冗余也不是不能跑，这个事情就过去好了。&lt;/p&gt;
-&lt;p&gt;我新功能准备提交代码的时候，GUI 看到了他的 commit message：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/jLxCQyY.png" /&gt; &lt;/p&gt;
-&lt;p&gt;然后就出现如下聊天记录：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/UMrnv8X.png" /&gt;
-&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/Zt9B2HR.png" /&gt; &lt;/p&gt;
-&lt;h2&gt;想问问大家：&lt;/h2&gt;
+&lt;p&gt;补充：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;内部业务组件，组件作者是不是要对所有千奇百怪的使用场景全权兜底？&lt;/li&gt;
-&lt;li&gt;别人用我的组件遇到问题，我主动给了修复线索，算不算尽到义务？&lt;/li&gt;
-&lt;li&gt;大家的团队里，内部组件的维护责任一般是怎么划清的？&lt;/li&gt;
-&lt;/ol&gt;</description><pubDate>Thu, 06 Aug 2026 08:53:03 GMT</pubDate><guid>d541cc31031886c26c14cf3aa63218bc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 被中国移动狠狠的恶心到了。</title><link>https://www.v2ex.com/t/1232510#reply8</link><description>事情是这样的，两年前我给我妈用我的手机号领了一个合约机。&lt;br /&gt;是今年 7 月底到期。&lt;br /&gt;中途我打过一次电话，想换成保号套餐，由于有合约在，每办理了。&lt;br /&gt;然后 8 月 1 号的时候，我打电话过去要帮我办理保号套餐。&lt;br /&gt;他们跟我说当月办理要次月生效！！&lt;br /&gt;&lt;br /&gt;我去他妈的，那我这个合约日期不就平白多了一个月？？&lt;br /&gt;打了他们 10086 的投诉电话，等了两三天每消息了，然后今天又打过去，跟我说结办了。&lt;br /&gt;我真的是艹了，为什么要这么恶心人啊！！&lt;br /&gt;&lt;br /&gt;有没有有经验的老哥给支支招。</description><pubDate>Thu, 06 Aug 2026 08:51:19 GMT</pubDate><guid>c72ed144e4451b3e842a20ac1a410013</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Upcloud500刀试用额度</title><link>https://www.nodeloc.com/t/topic/102340</link><description>前几天是250刀的，这次是500刀的 
-需要绑卡 
-点进去能看到链接  可以关注一下</description><pubDate>Thu, 06 Aug 2026 08:51:11 GMT</pubDate><guid>nodeloc-102340</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] chatgpt镜像站</title><link>https://www.nodeloc.com/t/topic/102339</link><description>大佬们，网上好多这种gpt的镜像站，很好奇他们都是怎么做到，也想部署一个玩 
-没有在github上搜到类似的项目，是我搜的词不对吗:joy:</description><pubDate>Thu, 06 Aug 2026 08:50:49 GMT</pubDate><guid>nodeloc-102339</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] [独立开发] 受够了市面上又丑又臃肿的倒数日，我做了这款高颜值的《时光倒计时》，送 30 个高级版兑换码</title><link>https://www.v2ex.com/t/1232509#reply12</link><description>&lt;p&gt;作为一个对 UI 有点强迫症的 iOS 开发者，市面上的倒数日 App 我几乎用了个遍。但说实话，要么 UI 还停留在几年前的拟物/草稿风格，要么充斥着各种广告、社交和无关的臃肿功能，连放个桌面小组件都显得和系统格格不入。&lt;/p&gt;
-&lt;p&gt;既然找不到满意的，那就自己动手做一款——《时光倒计时》。&lt;/p&gt;
-&lt;p&gt;我的核心目标很简单：极简、高颜值、纯粹。&lt;/p&gt;
-&lt;p&gt;📱 产品亮点：
-高颜值与精致 UI：精心调校的配色与动态质感，告别土味设计，让每一个重要的日子都赏心悦目。&lt;/p&gt;
-&lt;p&gt;深度适配 iOS 生态：&lt;/p&gt;
-&lt;p&gt;桌面小组件 (Widgets)：多种尺寸，完美融入你的桌面布局。&lt;/p&gt;
-&lt;p&gt;纯粹无打扰：无广告，无无意义的社交弹窗，打开即用，用完即走。&lt;/p&gt;
-&lt;p&gt;贴心细节：支持多种重复周期、自定义背景与提醒。&lt;/p&gt;
-&lt;p&gt;🖼 软件截图 / 展示：
-&lt;img alt="示例图片" class="embedded_image" rel="noreferrer" src="https://imgur.com/ie6uQa9" /&gt;
-&lt;a href="https://imgur.com/eTlvQ41" rel="nofollow"&gt;https://imgur.com/eTlvQ41&lt;/a&gt;
-&lt;a href="https://imgur.com/ie6uQa9" rel="nofollow"&gt;https://imgur.com/ie6uQa9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;🎁 V 友专属福利（送码）：
-为了感谢大家的支持，也想听听第一批专业用户的真实反馈，这里直接送出 20 个高级版买断兑换码！评论领取&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 08:50:35 GMT</pubDate><guid>98a7b4016756ddb595f1b257ad7fbec4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [宽带症候群] 国内网络会把 wg 的流量进行干扰吗？</title><link>https://www.v2ex.com/t/1232508#reply6</link><description>之前使用 wg 把做了个节点， 然后从国内连到 vultr 的服务器， 然后发现大概只能用 2 天左右， 立马就掉， 然后换端口又能用， 然后反复掉。 后来测试过 azure 以及，搬瓦工的都是这个样子。后来用 udp2raw 套起来之后又能用了， 感觉好像是 udp 会被干扰还是被封。 &lt;br /&gt;&lt;br /&gt;有没有了解的大佬。</description><pubDate>Thu, 06 Aug 2026 08:50:13 GMT</pubDate><guid>77bf6172ae538a12e6c79debd00b5517</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Claude] 今天突然收到提示可以买 Claude 礼品卡了</title><link>https://www.v2ex.com/t/1232507#reply4</link><description>&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/ybCDDEi.png" /&gt; &lt;/p&gt;
-&lt;p&gt;之前打开 &lt;a href="https://claude.ai/gift" rel="nofollow"&gt;https://claude.ai/gift&lt;/a&gt; 都是显示账号没有资格，今天突然就又可以买了。账号是老号+谷歌商店订阅的年 Pro 。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 08:44:19 GMT</pubDate><guid>c57a3167f730b2b03699248f0cf10876</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] ION DOMAINS上新social域名！</title><link>https://www.nodeloc.com/t/topic/102338</link><description>.FPS.Social
-开放注册 
-地址：</description><pubDate>Thu, 06 Aug 2026 08:39:02 GMT</pubDate><guid>nodeloc-102338</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [机械键盘] 考据了一下，程序员买机械键盘的心理动机，比想象中复杂</title><link>https://www.v2ex.com/t/1232505#reply5</link><description>&lt;p&gt;前几天翻工位，发现自己攒了 6 把机械键盘，但真正在用的只有 1 把。剩下 5 把躺在柜子里吃灰，比我的银行卡余额还安静。&lt;/p&gt;
-&lt;p&gt;出于职业病，我决定认真考据一下：程序员到底为什么要买这么多键盘。&lt;/p&gt;
-&lt;p&gt;第一阶段：需求驱动（入坑期）
-理由冠冕堂皇——"手感好，打字效率高"。事实是，用了三天你会发现打字速度没变，错字率没变，唯一的变化是同事投诉声音太吵，让你戴上了降噪耳机。&lt;/p&gt;
-&lt;p&gt;第二阶段：轴体鄙视链（沉迷期）
-青轴太吵、茶轴不上不下、红轴没灵魂、静音轴是叛徒——每一种轴体都有一套完整的意识形态。这时候你已经不是在选键盘，是在选政治立场。&lt;/p&gt;
-&lt;p&gt;第三阶段：客制化（不归路）
-开始研究 PCB、定位板、润轴、换轴。花两周时间给键盘"调音"，代码 bug 反而不改了。产品经理催需求，你说"等我先把这个键盘调完"。&lt;/p&gt;
-&lt;p&gt;第四阶段：断舍离（清醒期，短暂）
-某天算了下六把键盘的总价，够换个显示器了，于是决定"不再买了"。&lt;/p&gt;
-&lt;p&gt;第五阶段：复发（永久循环）
-半年后，某宝推了一款"限量联名轴体"，你的手指比脑子先下单。&lt;/p&gt;
-&lt;p&gt;考据结论：机械键盘对程序员而言，本质上不是打字工具，是唯一能光明正大投入时间和金钱、又不会被说"不务正业"的爱好——毕竟它挂着"生产力工具"的名头。&lt;/p&gt;
-&lt;p&gt;写完这篇文章，我打开购物车，看了眼里面躺着的第七把键盘，默默点了"立即购买"。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 08:36:23 GMT</pubDate><guid>1ed648ac5347f355635827dd5ba1dbdc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
+&lt;li&gt;从 iPhone 端向 Mac Mini 发送隔空投送文件，&lt;strong&gt;一切正常&lt;/strong&gt;（无论 mac 端是选择「允许所有人发现」或「仅限联系人」），且设备缩略图上面的提示文字就是 [我的设备] &lt;/li&gt;
+&lt;li&gt;两者之间双向剪贴板同步，&lt;strong&gt;正常&lt;/strong&gt;；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;用另一台 macOS 26 的 MacBook Air 尝试过，和 iPhone 之间的所有双向操作都正常，哪怕两边都是设置为「仅限联系人」。
+发送隔空投送时，iPhone 设备的预览图会显示为 iCloud 的头像。&lt;/p&gt;
+&lt;p&gt;根据描述来说，似乎就是 Mac mini 没有把 iPhone 识别为同 iCloud 的账号的设备，但奇怪的是两者之间的其他 Handoff 操作又是正常的。
+不知道有没有碰到这个问题的老哥？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 11:51:11 GMT</pubDate><guid>8933ee25713c169b333f49452589c75f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] [TNQ留档]绿云AU 2222</title><link>https://www.nodeseek.com/post-860883-1</link><description>不改线路的话联通算是很优秀的鸡了，要是把IPV6再优化一下那就更完美了。💻基本信息🎬IP质量🌐网络质量📍回程路由IPv4回程IPv4大包回程IPv6回程教育网回程国际互联单线程测速报告链接NodeQuality链接</description><pubDate>Thu, 06 Aug 2026 11:50:55 GMT</pubDate><guid>745760dcef358a8f0f1f7df7d74c4ec0</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 英国gpt team</title><link>https://www.nodeseek.com/post-860882-1</link><description /><pubDate>Thu, 06 Aug 2026 11:49:14 GMT</pubDate><guid>204447455ca7a0e91fbc2b2b501c4f52</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 用 Trae 白嫖的月卡还原了《我的世界》，效果竟然还不错</title><link>https://www.nodeloc.com/t/topic/102362</link><description>最近 trae 送的月卡不知道要做什么，就想着试试能不能还原一下我的世界，没想到效果意外的还不错，推荐一下。 
+目前做了多人联机、生存模式、合成、熔炉烧炼、部分生物、昼夜循环、天气系统，还有触屏适配，手机上也能玩。 
+用的是 Three.j&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 11:49:09 GMT</pubDate><guid>nodeloc-102362</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] 甲骨文想升级Region数量被拒绝</title><link>https://www.nodeseek.com/post-860881-1</link><description /><pubDate>Thu, 06 Aug 2026 11:48:22 GMT</pubDate><guid>71f34943ec76698d39429022f1f6fbd2</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] bage的hks炸了吗？</title><link>https://www.nodeseek.com/post-860880-1</link><description>难道就我这样？</description><pubDate>Thu, 06 Aug 2026 11:47:59 GMT</pubDate><guid>1510ae320608dbc7b687e6de16ecb5cd</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [分享创造] 有在 Notion 写作的用户吗，一个 Notion Blog 产品免费赠送半年</title><link>https://www.v2ex.com/t/1232555#reply0</link><description>&lt;p&gt;&lt;a href="https://nore.sh/zh" rel="nofollow"&gt;https://nore.sh/zh&lt;/a&gt; 是我最近的作品，有关动机可以阅读 &lt;a href="https://witt.im/posts/personal-blogging-with-nore" rel="nofollow"&gt;个人博客与 Nore 的价值&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;简单的说，即是将 Notion 中的页面发布成一个独立的 Blog ，这是一个常见的功能，并且有多个竞品，Nore 的特点是提供低运维参与、低营销、高性能与质量的替代品。&lt;/p&gt;
+&lt;p&gt;你可以试用，因为你的文章仍旧保存在你自己的 Notion 中，你也可以随时退出 Nore ，没有任何损失或绑定风险。&lt;/p&gt;
+&lt;p&gt;以下是活动链接，立刻领取 180 天会员：
+&lt;a href="https://nore.sh/zh/campaigns?code=dEieZYnEs1St8yUvnawO" rel="nofollow"&gt;https://nore.sh/zh/campaigns?code=dEieZYnEs1St8yUvnawO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/qLFwWx0d.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/AW52mfi6.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/wdaNXWgJ.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/1AY0caZx.png" /&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 11:46:51 GMT</pubDate><guid>3d569a2be1f35591b41adc3187dff0e4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] ZOUTER JP怎么仰卧起坐呢</title><link>https://www.nodeseek.com/post-860879-1</link><description>上上下下的</description><pubDate>Thu, 06 Aug 2026 11:45:38 GMT</pubDate><guid>9a2ee7711da10b0950162d048f59d438</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 犹豫就会败北，与腾讯云2c4g5m 368元/3年车擦肩而过</title><link>https://www.nodeseek.com/post-860878-1</link><description /><pubDate>Thu, 06 Aug 2026 11:45:29 GMT</pubDate><guid>067a9a32123259c428adc4a79b3fdacc</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] namecrane相关疑问求大佬解惑</title><link>https://www.nodeseek.com/post-860877-1</link><description>站内收了个佬的75刀终身版，自己一个人用不完，想出几个车位回回血，如果遇到滥用域名邮箱的车友，会不会影响到我？另外，拼车的话大概是啥行情？</description><pubDate>Thu, 06 Aug 2026 11:45:22 GMT</pubDate><guid>64559f3f654c11f773c3a9f8c73c1a4e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 论坛大佬还是牛，薅羊毛的能力一流，半小时刷到顶级</title><link>https://www.nodeseek.com/post-860876-1</link><description>是这样的，我昨天刚公布了个全视频免费下载站正式上线，帖子地址：https://www.nodeseek.com/post-843014-1今天上午就被个大佬找到漏洞，半个小时就把等级刷到顶级，太厉害了发这个帖子是想和这个兄弟说一下，感谢，刷的积分都归你了，毕竟是凭本身刷的分</description><pubDate>Thu, 06 Aug 2026 11:45:10 GMT</pubDate><guid>c3a12d4e90aaf87bd26ab79534aef0f1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] zouter jp是不是开始仰卧起坐了</title><link>https://www.nodeseek.com/post-860875-1</link><description /><pubDate>Thu, 06 Aug 2026 11:43:13 GMT</pubDate><guid>e0c63dd13bfd5d3948b47477d25d8d44</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 收一张tmonile，3刀实体卡</title><link>https://www.nodeseek.com/post-860874-1</link><description>走中介</description><pubDate>Thu, 06 Aug 2026 11:42:48 GMT</pubDate><guid>2780ee1a28934ac5af3e9196a9e99d2f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 日本钱包</title><link>https://www.nodeseek.com/post-860873-1</link><description>有用过Toyotawallet、Anapay的吗。用起来怎么样,充值容易吗,哪些卡可以充值</description><pubDate>Thu, 06 Aug 2026 11:42:05 GMT</pubDate><guid>533a87588e56825a4bbd73b66fafbee2</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 现在宣传模型的能力的方式已经变了吗？不再以跑分为主了？</title><link>https://www.nodeseek.com/post-860872-1</link><description>看谁家模型能够入侵公司为标准了？</description><pubDate>Thu, 06 Aug 2026 11:41:15 GMT</pubDate><guid>d847c3833b69a79cff4f5b7665e9e854</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [NQ] V.PS SJC Mini Pro</title><link>https://www.nodeseek.com/post-860871-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m62.3.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[0m</description><pubDate>Thu, 06 Aug 2026 11:41:09 GMT</pubDate><guid>5750a5a8ee557faa665585bc69e473de</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【80出】家人 frm 69</title><link>https://www.nodeseek.com/post-860870-1</link><description>续费价格69剩余时间：1年整除联通直连/刷流外不建议买，外加目前ip段送中</description><pubDate>Thu, 06 Aug 2026 11:40:56 GMT</pubDate><guid>a6eeb656932877027e96b256d4469329</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] （出了）太多鸡鸡了～出 咸鱼 fra.e1.mini 德国 9.3到期。</title><link>https://www.nodeseek.com/post-860869-1</link><description>太多鸡鸡了～出咸鱼fra.e1.mini德国9.3到期。溢价80（我出psuh费）总共130出～季度22.51t/2.5g点名批评～：xjt5213耍我。</description><pubDate>Thu, 06 Aug 2026 11:40:44 GMT</pubDate><guid>830cd455465d7ff7a110af1aba4ad353</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [吐槽]我的xx老板</title><link>https://www.nodeseek.com/post-860867-1</link><description>最近我老板又在作妖工作上不管出什么岔子，是不是我的问题，上来就问，这个怎么能这样呢；他这个怎么能坏呢；在这里是好的，换个地方怎么不可以呢；例如这些等等，总是一些让人莫名其妙的话，话里话外的意思就是我搞出的问题。这几天属实受不了，跟他battle了三次，今天我说我把这个坏了的东西我买单了，我不想跟吵架，反而他又不说话</description><pubDate>Thu, 06 Aug 2026 11:38:54 GMT</pubDate><guid>250a1a76e691b736c963fdb96b66dd05</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 三哥HostDZire预计24小时后恢复</title><link>https://www.nodeseek.com/post-860866-1</link><description>三哥自营还是不行啊，还是要买三哥上游的</description><pubDate>Thu, 06 Aug 2026 11:36:29 GMT</pubDate><guid>050afd1c5a8864413e788a3f537aef34</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出一个人码561泰国team码</title><link>https://www.nodeseek.com/post-860865-1</link><description>70，走闲🐟，闲鱼白号别来，使用后双席位561</description><pubDate>Thu, 06 Aug 2026 11:35:39 GMT</pubDate><guid>34d35a998999d435fd72f533b8758ed6</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [iPhone] tampermonkey 能用的油猴不知道为什么 stay 就不行？</title><link>https://www.v2ex.com/t/1232554#reply2</link><description>是不是还是有兼容性的问题&lt;br /&gt;例如某个论坛自动传图床插入编辑框图片链接的脚本前者可以正常完成，stay 就只能传图到图床但插入不了链接</description><pubDate>Thu, 06 Aug 2026 11:32:48 GMT</pubDate><guid>f6cc77e91900fd8823faca0a797a5d95</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 多 gpu 服务器能否按用户分组？</title><link>https://www.v2ex.com/t/1232553#reply1</link><description>&lt;p&gt;实验室内多 gpu 的 ubuntu 服务器，有什么办法可以指定用户访问哪几张吗？防止有人全占了。最好是重启系统也能生效&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 11:28:46 GMT</pubDate><guid>23e58ffcac94f8c402fe8aa960c13ab5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 干才是王道！免费领取一年 Smailr Pro 套餐</title><link>https://www.nodeloc.com/t/topic/102360</link><description /><pubDate>Thu, 06 Aug 2026 11:19:06 GMT</pubDate><guid>nodeloc-102360</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [Local LLM] 在 sm8x (A100, A6000, 3090/4090, L40)上跑 DeepSeek-V4-Flash 的 vLLM fork</title><link>https://www.v2ex.com/t/1232552#reply0</link><description>&lt;p&gt;&lt;a href="https://github.com/wtdcode/vllm-backport" rel="nofollow"&gt;https://github.com/wtdcode/vllm-backport&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;花了一点时间一半 vibe 一半自己理解代码把这个 vibe 出来了，期间最大的感悟是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;算子补齐感觉现在有 AI 是真的可以几乎接近自动化了，尤其是有很多可以抄的&lt;/li&gt;
+&lt;li&gt;相比写算子，更麻烦的是确认推理的正确性，很多时候误差一点点积累到最后就开始输出垃圾内容了&lt;/li&gt;
+&lt;li&gt;Fable 确实比 Opus 聪明一点，但是在调试 vLLM 这件事情上还是需要我的一些指导&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总之欢迎大家使用和反馈！ Repo 里也有 Docker 镜像可以快速部署，也可以点个 Star 。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 11:18:03 GMT</pubDate><guid>66e791c0e6cfef456f66bfaaf9c567b1</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 口喷用微信 voice input 意外的顺滑</title><link>https://www.v2ex.com/t/1232551#reply0</link><description>&lt;p&gt;主要微信客户端平时基本都会开着，相当于已经装了一个 whisper flow ，中英夹杂友好并且也能支持 fn, 怀疑是不是在微信客户端装了什么小模型，感觉特别顺畅。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 11:14:00 GMT</pubDate><guid>971fd2afe3015c5c755f5e53a6005327</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[Level1Techs Forum] Why does my Mac say a disk wasn’t ejected properly?</title><link>https://forum.level1techs.com/t/why-does-my-mac-say-a-disk-wasn-t-ejected-properly/253606</link><description>&lt;p&gt;My Mac frequently displays a warning saying “Disk not ejected properly”, even when Time Machine backup is not running. I have to forcibly eject the external hard drive because the system insists that it is still in use. How do i fix it?&lt;/p&gt;
+            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/why-does-my-mac-say-a-disk-wasn-t-ejected-properly/253606"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:53:12 GMT</pubDate><guid>9d4e0d9f311f898d1e0990669aaded38</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[NodeLoc] 免费领取一年 Smailr Pro 套餐</title><link>https://www.nodeloc.com/t/topic/102359</link><description>使用优惠码 C6ZZ-JJQH-MFU8 免费白嫖PRO套餐。 
+等不是办法，干，才是王道！</description><pubDate>Thu, 06 Aug 2026 10:50:49 GMT</pubDate><guid>nodeloc-102359</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] 【转自脚本之家有大量修改】ByBit台区保姆级开卡教程</title><link>https://www.nodeloc.com/t/topic/102358</link><description>Bybit台区卡怎么申请？2026最新零门槛开卡教程
+Bybit台区卡目前可以用中国身份证零门槛申请，不需要护照，开卡后能绑微信、支付宝、Apple Pay,本文实测亲历整个申请流程，包括注册节点选择、KYC认证、台湾地址填写、充值入金、新&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 10:50:43 GMT</pubDate><guid>nodeloc-102358</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] Vibe 了 一个 Quiver 笔记，有人需要吗？</title><link>https://www.v2ex.com/t/1232549#reply0</link><description>Mac 马上不支持以前版本的了，自己 Vibe 了一个 有人需要吗？</description><pubDate>Thu, 06 Aug 2026 10:42:47 GMT</pubDate><guid>3467affcb72f86043424c7299a095874</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [VPS] 1 个月前花费 &gt;¥1000 买了一台 Bandwagon 的 VPS, 搭的梯子用了刚好一个月 IP 被墙了. 话说如果等一阵子的话 IP 会有解封的可能吗, 还是说只能另外花 8 刀 左右换个新 IP 了?
+
+各位遇到过的来说说?</title><link>https://www.v2ex.com/t/1232548#reply2</link><description /><pubDate>Thu, 06 Aug 2026 10:40:36 GMT</pubDate><guid>39607a605061d87c195dfb41cb5d20fc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] vibe 了一个 Fences 的简单替代品 openFence</title><link>https://www.v2ex.com/t/1232547#reply0</link><description>&lt;p&gt;最近公司不忙每天盯着桌面看着图标很乱想着整理一下，之前就知道 Frences6 ，但是是付费的。我想着怎么都是花钱我直接 vibe 一个，正好看看这种小工具类的到底是直接花钱合适还是用 token 自己造轮子合适。
+特点就是下面描述这样,能满足我的需求吧。&lt;/p&gt;
+&lt;p&gt;先说结论：能氪金还是氪金，自己 vibe 又费劲又费钱。还有就是用贵的模型。&lt;/p&gt;
+&lt;p&gt;GitHub 地址： &lt;a href="https://github.com/weiweigogo/openFrence" rel="nofollow"&gt;https://github.com/weiweigogo/openFrence&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果对您有用的话希望您给我个 ⭐。&lt;/p&gt;
+&lt;h3&gt;特点&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比&lt;/th&gt;
+&lt;th&gt;Stardock Fences&lt;/th&gt;
+&lt;th&gt;openFences&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;价格&lt;/td&gt;
+&lt;td&gt;收费&lt;/td&gt;
+&lt;td&gt;免费开源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;大小&lt;/td&gt;
+&lt;td&gt;100MB+&lt;/td&gt;
+&lt;td&gt;780KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安装&lt;/td&gt;
+&lt;td&gt;需要安装程序&lt;/td&gt;
+&lt;td&gt;单 exe 拷贝即用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;后台服务&lt;/td&gt;
+&lt;td&gt;有&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;毛玻璃&lt;/td&gt;
+&lt;td&gt;有&lt;/td&gt;
+&lt;td&gt;有（ Acrylic ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;右键菜单&lt;/td&gt;
+&lt;td&gt;系统原生&lt;/td&gt;
+&lt;td&gt;Fluent Design 自绘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中文&lt;/td&gt;
+&lt;td&gt;官方支持&lt;/td&gt;
+&lt;td&gt;原生支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;截图&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="效果截图" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/BJilfcG.png" /&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:40:02 GMT</pubDate><guid>54301966290159be0788f10dd260ce74</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 关于那个强迫女友学 AI 的贴，我的观点是 AI 确实有用</title><link>https://www.v2ex.com/t/1232546#reply6</link><description>&lt;p&gt;比如我就让 AI 分析这个帖子，AI 的结论如下：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/u47N0rvz.png" /&gt;&lt;/p&gt;
+&lt;p&gt;我也有点好奇，各位拿各自的 AI 来分析这个帖子，会得出什么结论。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:36:36 GMT</pubDate><guid>10d8dafbe7540a70c7a826c834ace07e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Android] 请教一下各位关于在 Play Store 上架 APP 的问题</title><link>https://www.v2ex.com/t/1232544#reply3</link><description>&lt;p&gt;请教一下各位关于在 Play Store 上架 APP 的问题。我查了一下，香港区 play store 接受大陆个人身份的开发者上架 APP ，付费应用可以用中国大陆的银行账户收款。
+想和大家核实一下是不是这样的。然后个人身份相比公司身份上架 APP 有什么其他限制吗？感谢。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:30:34 GMT</pubDate><guid>2eb99e121a2288821b88e6c9d7b21368</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [宽带症候群] 江苏电信能干扰 DoH？</title><link>https://www.v2ex.com/t/1232542#reply3</link><description>&lt;p&gt;国内常用的 DoH 都会有假地址返回，这是怎么干扰的，不是很难拦截吗。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:24:32 GMT</pubDate><guid>dbfae0ebe2836fde3655d6d8a9f1fa4d</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [宽带症候群] 深圳移动，新版光猫，不支持端口映射</title><link>https://www.v2ex.com/t/1232541#reply0</link><description>&lt;p&gt;深圳移动，50 几/月的家庭宽带，500MB 下行的套餐。&lt;/p&gt;
+&lt;p&gt;大概三四个月前了，
+先是经常接到移动打来电话，询问宽带网速怎么样。&lt;/p&gt;
+&lt;p&gt;然后派人来更换了家里老光猫。&lt;/p&gt;
+&lt;p&gt;当时以为是好事。&lt;/p&gt;
+&lt;p&gt;最近想试一下 ipv6 的公网访问，，打开光猫发现，特么的，端口映射功能没了！虽然我的宽带也没有公网 ipv4 但公网 ipv6 还是有的吧？&lt;/p&gt;
+&lt;p&gt;这么搞，不知道算不算是阻碍 ipv6 推广，可以到工信部投诉？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:22:18 GMT</pubDate><guid>fcb5cfe6995f0a3a191f62242f9f7d71</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 第一个用户过百的扩展，可太难了☹️</title><link>https://www.v2ex.com/t/1232540#reply1</link><description /><pubDate>Thu, 06 Aug 2026 10:12:02 GMT</pubDate><guid>83641b07b1bcb212b396838453cb4681</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 关于 Codex 额度， Luna 出乎意料的好用</title><link>https://www.v2ex.com/t/1232539#reply10</link><description>&lt;p&gt;最近额度紧张，用 Luna Extra High 在跑，任务能完成额度使用也很少&lt;/p&gt;
+&lt;p&gt;原来我的需求较低级的模型就能解决的很好&lt;/p&gt;
+&lt;p&gt;所以必须用 Sol 解决的都是什么问题呢？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:10:58 GMT</pubDate><guid>24cc47a80f22489c872495d11fa2bb5c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Minecraft 26.2 开服联机教程，我的世界Java版服务器搭建教程，零基础开MC服！</title><link>https://www.nodeloc.com/t/topic/102354</link><description>本教程将通过手把手的方式，一步步地帮助你建立属于你自己的 Minecraft Java版服务器。在本教程中，我们使用Mojang发布的供玩家免费下载的服务器端程序（官方原版服）。 
+本教程使用Debian+MCSManager+Docker&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 10:10:11 GMT</pubDate><guid>nodeloc-102354</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [推广] 提前送点纯净家宽 IP，全球自提资源，质量包好😑</title><link>https://www.v2ex.com/t/1232538#reply0</link><description>&lt;p&gt;后面几天可能不在，等回来会全部添加完成　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+所以各位已经注册了的，先别急 🤣　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+和之前一样的家宽住宅 IP ，流量性质，全球资源自提　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+位置精确到城市街道，特殊需求的 ASN 暂时不好满足　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+质量检测软件和插件随时检测，包好用
+刚开了直播的专线长效，上行速度很稳　　　　　　　　　　　　　　　　　　　　　　　　　　
+&lt;a href="http://zooproxy.com?kwd=Litaly-MonstesXm" rel="nofollow"&gt;无 AFF 链接注册，可直接发给我账号，我会在 3 个工作日内全部加上&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;或者先用 CDK 兑换一些，以下是 CDK—11 个，用过的评论出来，栓 Q 😌　　　　　　　　　　　　　　　　　　　　　　　　　
+JMXE-PALC-QB59 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+X56X-D75V-6WLU 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+W3RE-DNVH-7CTH 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+XDU3-9CNC-9MER 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+K5VX-MG7M-9NEG 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+XUPE-LK4F-BFEK 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+YA9Z-HTS2-RE9N 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+WMJU-7WHB-ALAN 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+DR8R-FDZX-JRMT 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+H3CN-HYWU-38YX 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+9TSG-7P27-JTXT&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:09:23 GMT</pubDate><guid>4d6fd0e091632c6de62ce83dfeaf5e41</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 阿里云国际站账号企业认证与支付审核避坑指南！</title><link>https://www.v2ex.com/t/1232537#reply0</link><description>&lt;p&gt;很多独立开发者和初创团队在注册阿里云国际站时，经常卡在“企业实名认证”和“首次支付审核”这两个环节。作为长期处理此类风控的顾问，我整理了一套切实可行的合规避坑流程。&lt;/p&gt;
+&lt;h3&gt;企业实名认证的两大误区&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;误区一：个人资料充当企业资料&lt;/strong&gt;
+国际站对企业账号的审核需要提供合规的海外公司注册证书（ BR/CR ）或有效的商业证明。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;误区二：注册 IP 与资料所属国不符&lt;/strong&gt;
+例如使用美国营业执照认证，但注册、登录 IP 长期在香港，会直接触发阿里安全风控系统，要求人工提交法人身份证明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;规避二次支付审核（ Risk Management ）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;触发诱因&lt;/strong&gt;
+新账号注册后，直接绑定非本人信用卡，或者频繁更换 PayPal 账号充值。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解决策略&lt;/strong&gt;
+首次绑定支付方式时，确保卡片开户人姓名与阿里云账号注册姓名一致。如果遇到“账号被保护（ Account Suspended ）”，需准备好带有银行公章的对账单进行申诉。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;最佳实践&lt;/strong&gt;
+对于无法提供海外合规资质的团队，建议寻找合规的关联渠道商。由渠道商背书开通“免扫卡/免实名”的企业子账号，资金直接走渠道商侧，彻底绕过底层风控。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;📩 客服 Telegram： @&lt;a href="https://www.v2ex.com/member/cloudcup"&gt;cloudcup&lt;/a&gt; 🔥 合作平台： 阿里云国际｜腾讯云国际｜华为云国际｜ AWS ｜ GCP ｜ Azure 🔗 官方网站： &lt;a href="https://cloudcup.online" rel="nofollow"&gt;https://cloudcup.online&lt;/a&gt; ✈️自助开户充值：@cloudcup_bot ✈️双向联系：@cloudcupbot&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:08:57 GMT</pubDate><guid>2b94918908628944d8889d0e77ec9712</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [职场话题] 被一张图搞破防了。。。</title><link>https://www.v2ex.com/t/1232536#reply3</link><description>&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/Zbo03f92.jpeg" /&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:04:41 GMT</pubDate><guid>63cb1a2ae0f5f8ceb6c5363843784eee</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Claude] claude 现在有什么订阅方式吗?</title><link>https://www.v2ex.com/t/1232535#reply0</link><description>&lt;p&gt;有稳定的美区住宅 IP, 注册了好几个 claude 账号, 正常使用, 挺稳定的, 但是我没有美区卡.&lt;/p&gt;
+&lt;p&gt;找了人用美区卡尝试开通, 结果开通的时候提示要 kyc, 找了人帮忙认证, 结果一认证当成就封了, 这个流程试了三四次, 不同渠道找的人认证, 都是一认证就封号.&lt;/p&gt;
+&lt;p&gt;目前在尝试用 google play 抵用金, 结果我充完美元, 它说我不在美国, 无法使用, 被气哭了&lt;/p&gt;
+&lt;p&gt;有大手子指导一下吗?&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 10:01:09 GMT</pubDate><guid>e8890d5b05dc155633ba87abe05c6c66</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] Vibe Coding 你们会把推理模式开到最大吗？</title><link>https://www.v2ex.com/t/1232534#reply3</link><description>&lt;p&gt;Vibe Coding 你们会把推理模式开到最大吗？
+推理模式开大最大，不仅消耗更多 token ，还消耗更多时间，但是不开到最大，又怕 AI 曲解我的命令，写错误的代码还得返工&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:55:54 GMT</pubDate><guid>b3b73e784d874612c52f2f73669e92ea</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [macOS] 让 Codex 帮我把微信的游戏中心和小程序面板这两个讨厌的侧边栏入口去掉了</title><link>https://www.v2ex.com/t/1232533#reply2</link><description>&lt;p&gt;微信自从更新了一个大版本，把 Mac 和 Windows 统一后，左侧边栏就多出了游戏中心和小程序入口，没有提供隐藏这两个入口的设置。网上搜了一圈也没找到可以隐藏的方法。于是让 Codex 自己摸索了一番，终于搞定了。下图是搞定之后的效果：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://image-hosting-service.oss-cn-hangzhou.aliyuncs.com/20260806-173314.jpeg" /&gt;&lt;/p&gt;
+&lt;p&gt;我把成功的经验让 Codex 提炼成了指南，想要尝试的朋友可以把以下内容复制给 Codex:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-txt"&gt;请在我的 Mac 上制作一个独立的实验版微信，隐藏左侧栏的“游戏中心”和“小程序面板”两个入口，并保证截图权限在重启后仍然有效。请实际执行、逐步验证，不要只给我命令。
+
+一、已知结论与适用范围
+
+1. 目标是腾讯官网下载版 macOS 微信 4.1.12：
+   https://mac.weixin.qq.com/?t=mac&amp;amp;lang=zh_CN
+2. 本方案只适用于 Apple Silicon （ arm64 ） Mac ，以及该版本的这一份 wechat.dylib：
+   - 路径：/Applications/WeChat.app/Contents/Resources/wechat.dylib
+   - 修改前完整 SHA-256：
+     f28329ed2599e8567f6b0a09f031d05666a48abd97dbc7a3380891ddbcff6cdc
+3. 微信 4.1.12 不是通过修改 Electron 的 asar 来完成此任务。目标逻辑位于 Qt/XUI 原生 Mach-O 动态库 wechat.dylib 中。
+4. 如果系统不是 arm64 、版本不是 4.1.12 、文件路径不存在、哈希不相同，或待修改位置的原始字节不相同，立即停止并向我报告。不要猜测新偏移，不要把其他版本硬套进来。
+
+二、安全边界
+
+1. 永远不要修改、重签或覆盖 /Applications/WeChat.app 。
+2. 成品固定安装为：
+   /Applications/WeChat-NoGame.experimental.app
+3. 所有修改先在 /private/tmp 下用 mktemp -d 创建的临时目录中完成并验证，验证通过后才能安装。
+4. 如果上述实验版已经存在，先正常退出它，并把它移动到本次临时目录中作为可恢复备份；不要直接删除。
+5. 官方版和实验版的主进程名称都叫 WeChat 。结束进程前必须根据完整可执行文件路径确认目标，只结束 /Applications/WeChat-NoGame.experimental.app 下的进程。不要使用 pkill WeChat 或 killall WeChat 。
+6. 不要同时运行官方版和实验版。
+7. 写入 /Applications 、访问代码签名私钥或操作隐私设置前，按运行环境要求向我申请权限。钥匙串密码、Apple ID 登录、录屏授权等安全操作由我亲自完成。
+
+三、先做只读检查
+
+请检查并记录：
+
+- uname -m ，必须是 arm64 。
+- /Applications/WeChat.app/Contents/Info.plist 中的 CFBundleShortVersionString ，必须是 4.1.12 。
+- 用 file 或 lipo -archs 检查 wechat.dylib ，必须包含 arm64 。
+- shasum -a 256 检查 wechat.dylib ，必须等于上述原始 SHA-256 。
+- codesign --verify --deep --strict /Applications/WeChat.app 应通过。
+
+如果官方应用不是这个版本，请让我先从腾讯官网安装 4.1.12 ；不要使用 App Store 版继续。
+
+四、制作临时副本
+
+1. 用 mktemp -d 创建类似以下临时目录：
+   /private/tmp/wechat-nogame.XXXXXX
+2. 使用 ditto 完整复制官方应用到临时目录，并把副本命名为：
+   WeChat-NoGame.experimental.app
+3. 后续只操作这个临时副本。
+
+五、应用二进制补丁
+
+目标文件是临时副本的：
+Contents/Resources/wechat.dylib
+
+请创建一个小型、可审计的补丁脚本，并严格完成以下操作：
+
+1. 修改前重新计算 SHA-256 ；只有等于
+   f28329ed2599e8567f6b0a09f031d05666a48abd97dbc7a3380891ddbcff6cdc
+   才能继续。
+2. 在完整 universal 二进制文件的以下两个文件偏移处修改各 4 字节：
+
+   - 小程序面板，item type 6：0x0B5A4664
+   - 游戏中心，item type 7：0x0B5A4740
+
+3. 两处修改前的字节都必须严格等于：
+   f5 03 00 aa
+   这是 ARM64 指令 `mov x21, x0`。
+4. 两处都改为：
+   15 00 80 52
+   这是 ARM64 指令 `mov w21, #0`。
+5. 必须先验证两处原始字节都正确，再执行任何写入；其中任意一处不匹配就停止，不能留下只改一半的文件。
+6. 写入后重新读取并验证两个位置。
+7. 仅完成这两处修改、尚未重签时，目标 dylib 的 SHA-256 应为：
+   1e75abf1aa20cf093d6365f71e7328e8c4607e661ac552a9e1adb74daf225ac3
+   如果不相同，停止安装。
+
+这个补丁的原理是：保留两个 mmui::XTabBarItem 对象及其内部索引，只把传给 QWidget::setVisible 的可见性结果强制为 false 。不要删除对象、不要改变 tab 集合、不要 NOP 掉插入调用。
+
+尤其不要使用这两个已知失败方案：
+
+- 修改 0x1934d3c 附近的 game_entry_state：不会改变图标显示。
+- NOP 0x102a2dc 附近的插入调用：图标可能消失，但后续代码会访问空对象并崩溃。
+
+六、使用稳定的 Apple Development 身份重签
+
+不能使用 ad-hoc 签名作为最终方案。ad-hoc 的 designated requirement 会绑定当前 cdhash ；二进制一变，macOS TCC 就可能把它视作另一个应用，导致“录屏与系统录音”条目消失或权限永远无法识别。
+
+1. 执行：
+   security find-identity -v -p codesigning
+2. 选择一张当前有效且带私钥的 `Apple Development` 身份，后续用它的 SHA-1 指纹签名，不要只按可能重复的证书名称选择。
+3. 如果没有有效身份，暂停，让我在 Xcode → Settings → Accounts → Manage Certificates → + → Apple Development 中创建。创建后再检查。
+4. 如钥匙串中存在多张同名旧证书，要核对实际使用证书的有效期。不要误用过期证书。
+5. 不要复制腾讯原始 entitlements 。里面的 application-identifier 、App Group 和腾讯 Team ID 不属于我的开发团队，强行保留会造成无效或异常签名。
+6. 不要额外启用 hardened runtime ；这可能破坏微信依赖的运行方式。
+
+清除临时副本上的扩展属性。若 xattr 因下面这个只读缓存文件失败：
+
+Contents/MacOS/WeChatAppEx.app/Contents/Frameworks/WeChatAppEx Framework.framework/Versions/C/Resources/gpu_shader_cache.bin
+
+可以只对该文件临时执行 chmod u+w ，完成 xattr -cr 后恢复为 chmod 444 。
+
+设有效证书 SHA-1 为 SIGNING_IDENTITY ，依次执行等价于以下流程的签名：
+
+1. 先签被修改的 wechat.dylib：
+   codesign --force --sign "$SIGNING_IDENTITY" --timestamp=none &amp;lt;临时副本&amp;gt;/Contents/Resources/wechat.dylib
+2. 使用同一个身份重签所有嵌套代码和整个应用：
+   codesign --force --deep --sign "$SIGNING_IDENTITY" --timestamp=none &amp;lt;临时副本&amp;gt;
+3. 最后只重签外层应用，并设置一个与腾讯不同、在本机唯一且合法的代码签名标识。例如：
+   local.&amp;lt;经过清理的用户名&amp;gt;.WeChatNoGame
+   命令形式：
+   codesign --force --sign "$SIGNING_IDENTITY" --timestamp=none --identifier &amp;lt;唯一标识&amp;gt; &amp;lt;临时副本&amp;gt;
+
+不要修改 Info.plist 中原来的 CFBundleIdentifier `com.tencent.xinWeChat`，因为微信的数据路径、登录状态、子进程参数和 IPC 依赖它。这里隔离的是外层代码签名 identifier ，不是微信运行时读取的 bundle identifier 。
+
+七、签名验收
+
+安装前必须完成：
+
+1. 在能够访问系统钥匙串信任库的环境里运行：
+   codesign --verify --deep --strict &amp;lt;临时副本&amp;gt;
+   必须成功。
+2. 运行 codesign -dvv ，确认：
+   - Signature 不是 adhoc 。
+   - Authority 是刚创建的 Apple Development 证书，并能看到 Apple 的中间证书和根证书链。
+   - TeamIdentifier 不再是 `not set`。
+3. 运行 codesign -dr -，确认 designated requirement：
+   - 包含刚设置的唯一 identifier 。
+   - 由 Apple Development 证书约束。
+   - 不能是 `cdhash H"..."` 这种 ad-hoc 形式。
+4. 再次验证两个补丁位置仍为 `15 00 80 52`。
+5. 注意：重签会改变 dylib 的整体哈希，因此重签完成后不要再要求它等于“未重签补丁哈希”；此时应以严格签名验证和两个位置的字节为准。
+6. 如果受限沙箱里出现 `CSSMERR_TP_NOT_TRUSTED` 或 `Authority=(unavailable)`，可能只是沙箱读不到钥匙串。经我批准后在能访问系统信任库的环境中重新验证；仍失败才算真正失败。
+
+八、安装实验版
+
+1. 确认实验版所有进程均已退出。
+2. 若 /Applications/WeChat-NoGame.experimental.app 已存在，将旧版移入本次临时目录备份。
+3. 使用 ditto 把通过验证的临时副本安装到：
+   /Applications/WeChat-NoGame.experimental.app
+4. 对安装后的路径再次执行 codesign --verify --deep --strict ，并复查 designated requirement 和两个补丁字节。
+5. 官方 /Applications/WeChat.app 必须保持原哈希和原签名不变。
+
+九、处理“录屏与系统录音”权限
+
+首次安装稳定签名版后，请启动实验版并让我完成“进入微信”。然后由我亲自在：
+
+系统设置 → 隐私与安全性 → 录屏与系统录音
+
+执行以下操作：
+
+1. 如果列表里已有旧的 `WeChat-NoGame.experimental.app`，先选中并点减号移除。
+2. 点加号，重新选择准确路径：
+   /Applications/WeChat-NoGame.experimental.app
+3. 打开它的权限开关。
+4. 完整退出实验版的主进程和辅助进程，再重新启动。
+5. 使用 Control–Command–A 测试微信截图。
+
+第一次测试时可能同时出现两个窗口：前景是微信自己的“录屏权限未开启”，后方是 macOS 原生的“微信想要录制此电脑屏幕”授权框。此时先取消或移开微信自己的提示，再由我在系统授权框里点“允许”，然后再次触发截图。
+
+不要执行不带应用标识的全局 `tccutil reset ScreenCapture`，它会清掉其他软件的录屏授权。由于我们保留了原始 CFBundleIdentifier ，而只覆盖代码签名 identifier ，针对自定义 identifier 的 tccutil 命令可能提示 `No such bundle identifier`；这种情况不要扩大重置范围，直接使用系统设置中的“移除后重新添加”流程。
+
+十、最终验收
+
+请和我共同确认：
+
+- 实验版可以正常启动并进入聊天主界面。
+- 左侧栏的“小程序面板”和“游戏中心”两个按钮都消失。
+- 其他 tab 和聊天功能没有因为索引变化而崩溃。
+- Control–Command–A 可以进入微信截图模式。
+- 完整退出并重新打开实验版以后，录屏权限条目仍然存在、开关仍开启，截图仍可使用。
+- codesign --verify --deep --strict 仍通过。
+- 官方微信从未被修改。
+
+十一、回滚与升级规则
+
+1. 如果实验版异常，退出它，保留崩溃报告和签名信息，然后恢复本次临时目录中的旧实验版，或者从官方微信重新制作；不要动官方应用。
+2. 微信升级会覆盖或改变 wechat.dylib 。新版本必须重新逆向定位并建立新的原始哈希、原始字节和补丁偏移。没有重新验证前，绝对不要沿用 4.1.12 的偏移。
+3. Apple Development 证书通常有有效期。以后若录屏权限再次异常，先检查证书是否过期，以及重签后 designated requirement 是否改变。
+
+执行过程中请持续告诉我当前检查结果、准备修改的准确路径和验证结论。任何版本、哈希、原始字节或签名验证不符合上述预期时，立即停止并保留可恢复状态。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description><pubDate>Thu, 06 Aug 2026 09:54:41 GMT</pubDate><guid>4226c523af7c6be8da737402650d1313</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 2026 年了，访问 github 还是不稳定</title><link>https://www.v2ex.com/t/1232531#reply4</link><description>&lt;p&gt;我的梯子访问 google ，v 站都挺快的，就是访问 github 特别的慢，是什么情况？大家有同样的问题吗？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:48:05 GMT</pubDate><guid>dadfcab31580372b9b63e8fbb186a349</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Claude] 如果不考虑风控的话，到底是买个 claude 5x + gpt 5x (都用 windows 桌面 app)好呢？ 还是 claude 20x 好？</title><link>https://www.v2ex.com/t/1232530#reply0</link><description>&lt;p&gt;因为 claude fable5 时不时会弹出"Fable 5's safeguards flagged this message", 然后就降级到 opus5 了。虽然做的是一个教育类的小东西，它仍然弹这种。&lt;/p&gt;
+&lt;p&gt;claude 5x / gpt 5x 单用的话，5x 又不够。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:47:27 GMT</pubDate><guid>4d32710173d8b394654f7b07d1225153</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [成都] 租房怎么避坑</title><link>https://www.v2ex.com/t/1232529#reply0</link><description>&lt;p&gt;想租个一居室自己做饭，在锦江最多 1500 有推荐的吗谢谢&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 09:46:06 GMT</pubDate><guid>6063a3657f35f9be62bc2517061251a2</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
