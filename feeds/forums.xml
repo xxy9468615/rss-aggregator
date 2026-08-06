@@ -1,414 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Thu, 06 Aug 2026 01:03:09 GMT</lastBuildDate><item><title>[NodeSeek] 巴西Rendimento银行</title><link>https://www.nodeseek.com/post-859725-1</link><description>巴西可以开的非居民银行，需要先准备好巴西税号，非cn手机号，加上cn地址证明即可开户。</description><pubDate>Thu, 06 Aug 2026 01:02:22 GMT</pubDate><guid>b6768227ee06cfcbcda151f6008c5d8b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[Level1Techs Forum] PSA: WRX90E-SAGE SE stuck at Q-Code B2 after a GPU swap — BIOS FlashBack fixed it, Clear CMOS didn't</title><link>https://forum.level1techs.com/t/psa-wrx90e-sage-se-stuck-at-q-code-b2-after-a-gpu-swap-bios-flashback-fixed-it-clear-cmos-didnt/253591</link><description>&lt;p&gt;&lt;strong&gt;**TL;DR**&lt;/strong&gt; — Board sat at Q-Code B2 with a flashing cursor and would not boot. ASUS’s Q-Code table (FAQ 1043948) lists &lt;strong&gt;**B2 as “Boot up device abnormal”**&lt;/strong&gt;, not the “Legacy Option ROM Initialization” meaning you’ll find in older threads. Clear CMOS by button, and again with the battery out, changed nothing. &lt;strong&gt;**Reflashing the same BIOS version via USB FlashBack fixed it.**&lt;/strong&gt; No parts were changed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;—&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Pro WS WRX90E-SAGE SE, Threadripper PRO 9955WX, 192GB DDR5, two WD_BLACK NVMe, BIOS 1317, Fedora on LUKS. I pulled my GPU to try another card, it didn’t physically fit, I put the original back — and the machine failed to boot. ASUS splash, then a flashing cursor, Q-Code stuck at &lt;strong&gt;**B2**&lt;/strong&gt;. Same result with the card installed and with no GPU at all. With the discrete card in it produced no video output, so everything below I saw through the BMC’s iKVM.&lt;/p&gt;
-&lt;p&gt;The diagnosis is the useful part. What I could actually observe: the board rendered the ASUS splash every time. The BMC reported all 8 DIMM temp sensors live, `Memory_Train_ERR` not asserted, every rail in spec, and a healthy CMOS battery. The SEL held 20 records, all of them months-old “Hardware Change Detected” entries, and it gained no new records through any of this — no memory, CPU or PCIe fault was ever logged. Four things then cost me hours. &lt;strong&gt;**One:**&lt;/strong&gt; I worked from the older “Legacy Option ROM Initialization” meaning of B2 and spent a long time on CSM and video option-ROM settings before reading ASUS’s own table, which says &lt;em&gt;*“Boot up device abnormal”*&lt;/em&gt; and lists storage-only fixes. Check their table for your board first. &lt;strong&gt;**Two:**&lt;/strong&gt; The BMC’s bios config screen: `Advanced → NVMe Configuration` listed nothing, while `Boot Option Priorities` still showed my Fedora entry pointing at a partition GUID. I was unsure if the boot entries were seen or not, Boot entries live in NVRAM and persist regardless of whether the device is still there, so it told me nothing either way. &lt;strong&gt;**Three:**&lt;/strong&gt; if you’re pulling data over Redfish, `Systems/Self/Storage` kept reporting both NVMe present and Health OK the entire time. Its etag was ~40 hours old and matched the last successful boot, so I take it to be BIOS-fed cache rather than a live read — compare it against a live sensor etag (thermal, say) before trusting it. &lt;strong&gt;**Four:**&lt;/strong&gt; I could not get into BIOS setup at all — physical keyboard in a rear USB port, hammering Del and F2, nothing, over iKVM or direct. `Setup Prompt Timeout` was set to &lt;strong&gt;**1 second**&lt;/strong&gt;, which I assume is why, though I never got in to confirm it. Pushing settings in out-of-band didn’t work either: the BMC accepted and stored them at `Systems/Self/Bios/SD`, but the live BIOS values never changed and no apply attempt was ever recorded.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;**BIOS FlashBack fixed it, reflashing the same 1317 I was already on.**&lt;/strong&gt; Not an upgrade — 1317 is current. ASUS documents FlashBack as working with no CPU or memory installed, so it doesn’t depend on POST, the BMC, or anything else that was broken here. My assumption is that it clears NVRAM state that Clear CMOS doesn’t reach, but I can’t demonstrate that. Practical bits: rename the .CAP to &lt;strong&gt;**`A5496.CAP`**&lt;/strong&gt; (this board’s model code — it also shows up in the BMC’s `BiosAttributeRegistryA5496…json`), FAT32/MBR stick, file in the root, designated FlashBack port, hold the button ~3s until the LED flashes, then leave it 2–8 minutes. The bundled BIOSRenamer is Windows-only, and the download host is `dlcdnets.asus.com`. After the flash: both NVMe appeared in `NVMe Configuration`, boot order was correct, Del got me into setup on the first try, and Fedora booted to the LUKS prompt.&lt;/p&gt;
-&lt;p&gt;As for cause, I’m guessing. Pulling one card, fitting another and reinstalling the first changed PCIe topology three times in a row, and my assumption is that something in NVRAM ended up inconsistent as a result. I can’t prove it — the flash cleared everything at once, so I lost the chance to isolate it, and I never established whether the drives were genuinely not enumerating or simply not being listed. What I can say is that no hardware was replaced, the machine has been fine since, and neither Clear CMOS method made any difference where FlashBack did. I did pull the CMOS battery as pushing the CMOS clear button didn’t seem to do anything.  Pulling the battery didn’t impact the situation either.&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/psa-wrx90e-sage-se-stuck-at-q-code-b2-after-a-gpu-swap-bios-flashback-fixed-it-clear-cmos-didnt/253591"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 01:01:39 GMT</pubDate><guid>fed61684ccce30f2d3bb58b9b45490ad</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[V2EX] [分享创造] 批量文件打印工具</title><link>https://www.v2ex.com/t/1232346#reply1</link><description>&lt;p&gt;简介：有时候需要打印多个文件，这时候需要每次打开一个文件点击打印，流程有点麻烦，所以就做了个批量打印工具，只需把文件拖入，选择每个文件的打印参数（打印机，单面双面，彩色黑白，竖直横放等），点击批量打印就能发给打印机批量打印了，欢迎大家使用反馈鸭，哈哈哈&lt;/p&gt;
-&lt;p&gt;项目地址： &lt;a href="https://github.com/ns2250225/batchPrint" rel="nofollow"&gt;https://github.com/ns2250225/batchPrint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;使用说明：
-下载项目地址的 release 文件，解压到一个目录里面，然后双击 BatchPrint.exe 运行&lt;/p&gt;
-&lt;p&gt;软件界面预览图在 1 楼&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 01:00:33 GMT</pubDate><guid>d7f72c3cb26beedc4b910a7632ad7de1</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] Gmail 2027 年 1 月起停止第三方邮箱代发功能</title><link>https://www.nodeseek.com/post-859724-1</link><description>Google宣布Gmail将于2027年1月起停止支持通过网页端及移动应用代发第三方邮件地址（如Yahoo、Outlook或自定义域名），同时取消Gmailify和网页版POP收取功能。现有Gmail别名与GoogleWorkspace的代发选项不受影响。用户仍可借助Gmail手机应用查看第三方邮箱来信，但回复时无</description><pubDate>Thu, 06 Aug 2026 01:00:33 GMT</pubDate><guid>1fee38a0a56c15ebbca2bd8533d3e97c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] UI/UX 方面的 Agent</title><link>https://www.v2ex.com/t/1232345#reply0</link><description>&lt;p&gt;我是传统的 web 全栈工程师，现在编码有 AI 的各种 Agent 用，但是最近开发过程中总觉得 UI 差点意思，想具体设计一下。
-但是又没有啥经验，就是想问一下大家有没有什么 UI/UX 方面的 Agent 。
-还有比如说页面设计好了之后切完图，直接让 Agent 去设计出来的文件，然后找对应的切图，这种还原度现在能做到什么程度。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 00:59:36 GMT</pubDate><guid>7636061a213a4b382345a83550c74273</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 整了两个传家宝域名，虽说不是短域名（x</title><link>https://www.nodeseek.com/post-859723-1</link><description>一个chatgpt.je，一个anthropic.je，然后还有一个神秘中文域名我嫩爹.com()</description><pubDate>Thu, 06 Aug 2026 00:58:47 GMT</pubDate><guid>47d5eabbe9367ab602aec32999255a62</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] t-mobile有了 paypal要用什么节点注册养号</title><link>https://www.nodeseek.com/post-859722-1</link><description>需要什么节点注册养号</description><pubDate>Thu, 06 Aug 2026 00:58:31 GMT</pubDate><guid>b3c83311f1eb6661e4e9d03cd08aa50f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【20收】NoBrand Chicken SMALL Cogent 6.8</title><link>https://www.nodeseek.com/post-859721-1</link><description>名称ChickenSMALLCogent6.8每月：￥5.78CPU1核内存0.5GB硬盘4GB带宽400M峰值流量4T/月IP独立IPx1单线Cogent！前一段出了个，后边想收回来看看能拉动不。看那位大佬落灰给出个。</description><pubDate>Thu, 06 Aug 2026 00:58:22 GMT</pubDate><guid>c4d609d099990991599830416eecc667</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 想买一个美区的OVH服务器，好难</title><link>https://www.nodeseek.com/post-859720-1</link><description>俄勒冈机房到洛杉矶转发是不是还是比较低，而且比较稳定?除了俄勒冈机房，就只能买加拿大的PHS了，但是加拿大BHS延时要高到200多毫秒。就算用洛杉矶的线路机转发，延时也很高.</description><pubDate>Thu, 06 Aug 2026 00:57:53 GMT</pubDate><guid>422184ebe4d1ed5604980c0ff1daf1f1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 两个甲骨文都被封了</title><link>https://www.nodeseek.com/post-859719-1</link><description>伤心了应该是新开的号关联到之前的号上了两个号一前一后都被封了要求内部审查也不知道有没有用好多服务和网站都跑在甲骨文上</description><pubDate>Thu, 06 Aug 2026 00:57:34 GMT</pubDate><guid>7386e6418fc1c9eb1272d84d968a67f0</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【问+出】绿云的SG DC2</title><link>https://www.nodeseek.com/post-859718-1</link><description /><pubDate>Thu, 06 Aug 2026 00:56:56 GMT</pubDate><guid>3a57058357629ca588a2b473ba46cb42</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有没有佬知道，为什么之前订阅的土区gptplus突然不能apple  store订阅了</title><link>https://www.nodeseek.com/post-859717-1</link><description>有没有佬知道，为什么之前订阅的土区gptplus突然不能applestore续费了，已在公司急哭</description><pubDate>Thu, 06 Aug 2026 00:56:38 GMT</pubDate><guid>89e922a0a0412d0b3ecb16fc8c2b03ef</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 收 hostsailor荷兰16C16G200G</title><link>https://www.nodeseek.com/post-859715-1</link><description>8G的也收接受少溢价报价私信我</description><pubDate>Thu, 06 Aug 2026 00:56:11 GMT</pubDate><guid>00c0aa790d95ac318b3e9d41cb6369ba</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 看到一个和opencode go相似的套餐</title><link>https://www.nodeseek.com/post-859714-1</link><description>https://commandcode.ai/docs/plans/goat也是10刀一个月，看起来额度好像更多了（7x），不知道行不行？有没有用过的小伙伴？以下是AI分析：（对比：https://opencode.ai/docs/zh-cn/go）🦀两页都抓完了，详细对比：价格•GOAT：$10/月（无首月优惠</description><pubDate>Thu, 06 Aug 2026 00:55:39 GMT</pubDate><guid>a90a7ca3c110f009a7ac63e42b9c7779</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 还有没有4-8刀左右的VPS啊</title><link>https://www.nodeseek.com/post-859713-1</link><description>最近买NAT小鸡感觉挺有意思的，但是经常配置好运行几天后就随机嘎买个四五个年费都快赶上一个廉价VPS了所以问下MJJ佬们，现在哪里还有廉价的VPS啊？地区不限，最好日本、土耳其、德国</description><pubDate>Thu, 06 Aug 2026 00:55:35 GMT</pubDate><guid>bd137915e3e612f59a79d53892fc6071</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【NQ+TQ】NoBrand JP-TYO-1</title><link>https://www.nodeseek.com/post-859712-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m64.204.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Thu, 06 Aug 2026 00:55:20 GMT</pubDate><guid>f8f16233849d3fbe4214fe4206fd3ac3</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [随想] 深刻的感受到了 deepseek 对穷人的友好</title><link>https://www.v2ex.com/t/1232343#reply1</link><description>&lt;p&gt;前两天要写个东西，把 Hermes Agent 的模型从 DeepSeek 切到 Claude Opus 4.6 ，API 是 OpenCode Go 的 Zen 。&lt;/p&gt;
-&lt;p&gt;想当然觉得用不了多钱，就直接开跑，大概跑了 1 个小时（也可能是 30 分钟，没计时间有点想不起来了）。&lt;/p&gt;
-&lt;p&gt;等我回来一看，80 刀就剩了 3 刀。&lt;/p&gt;
-&lt;p&gt;这个时候再看看 DeepSeek ，真的是眉清目秀。第一次感受到，如果没有“梁圣”，基本上不拿 AI 赚钱的人，没几个人能这么畅快的用 AI 。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 00:55:19 GMT</pubDate><guid>409b47e060755a8947b48fb10cdc4347</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【出】Bestvm sg 新加坡BGP-Lite 1T款 135/年</title><link>https://www.nodeseek.com/post-859711-1</link><description>CPU：1核（EPYC7413）内存：0.5G（DDR4）硬盘：5G（SSD）带宽：1000m（共享）流量：1000G（in+out）IPv4：1IPv6：1借一下NQ剩余+30，抹零总价147，口令，ns邮箱push价格参考</description><pubDate>Thu, 06 Aug 2026 00:53:38 GMT</pubDate><guid>5dec5a9bfafe9dddced70cb252008353</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] notion商业版试用今天突然掉了</title><link>https://www.nodeseek.com/post-859710-1</link><description>之前6个月免费试用的，大佬们有遇到的吗？</description><pubDate>Thu, 06 Aug 2026 00:51:56 GMT</pubDate><guid>66b08a202f823799a5af8f2dbe45deba</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 多少老🐔在冲66666号啊？</title><link>https://www.nodeseek.com/post-859709-1</link><description>昨天到了661**了估计，</description><pubDate>Thu, 06 Aug 2026 00:50:12 GMT</pubDate><guid>46dd4897feabe7b47c9ab1be9817d7ea</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] 关于民间故事的数字化问题</title><link>https://www.v2ex.com/t/1232342#reply0</link><description>&lt;p&gt;各位大佬好，我在做一个项目，主要任务是把民间故事实体书转换成电子文档，保存下来。目前有几点困惑：&lt;/p&gt;
-&lt;p&gt;1 ，这些民间故事属于中国民间文学三套集成（故事，歌谣，谚语）系列，基本都是八九十年代出版，现在把它们做成电子书会有侵权的风险，我该怎样规避或者降低风险。（ ps：这个系列估计好多人第一次听说，可以了解一下）&lt;/p&gt;
-&lt;p&gt;2 ，我问了几个同学和身边的人，他们对这个不是很感兴趣，但我读这些书还是有收获的，比如有条谚语：酱里生，酱里死。和烂在锅里差不多意思，说得很通透。所以我想知道大家对这些民间文学的真实看法，毕竟我做这个项目就是为了让后来人看到这些故事，如果大家都认为没有价值，那就没有继续的必要了。&lt;/p&gt;
-&lt;p&gt;3 ，如果有价值，我该如何继续这个项目。
-目前我是业余时间在做，进度比较慢，一般每个月能产出 4 本电子书，这个三套集成系列上千本是有的。
-我买的二手书都是挑的便宜的，一本书二三十块，很多贵的能有一百多，如果继续做下去，成本吃不消。之前也把一些故事做成简单的字幕视频配上语音发到抖音，基本没流量。
-这个项目如果能有收入的话，我还是愿意全职干的，正好最近被裁了。&lt;/p&gt;
-&lt;p&gt;这些书说是民间瑰宝，可能有点夸张，但说是文学的土壤还是可以的，内容很丰富，尤其是里面的方言很有地方特色（重庆的“啷个”），如果就这样丢失了，还是挺可惜的。就像永乐大典，基本就永远遗失在历史长河中了。&lt;/p&gt;
-&lt;p&gt;数字化这件事原本应该是官方的力量来做，但好像被遗忘了。&lt;/p&gt;
-&lt;p&gt;最后，附上电子书链接，
-&lt;a href="https://santao.surge.sh/" rel="nofollow"&gt;https://santao.surge.sh/&lt;/a&gt;
-希望大家不吝赐教，谢谢。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 00:49:39 GMT</pubDate><guid>dcd976804187541b9bd02e30aa514078</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] （已出）出mhy de 17.99预售</title><link>https://www.nodeseek.com/post-859708-1</link><description>8.31到期流量600gseek.li邮箱push</description><pubDate>Thu, 06 Aug 2026 00:49:01 GMT</pubDate><guid>6bd22b9e9442a0f7886ebf4ddabae551</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有人分享一下minimax h3 的使用心得吗?</title><link>https://www.nodeseek.com/post-859706-1</link><description>有人分享一下minimaxh3的使用心得吗,准备部署一个玩玩,有人试过5070TI最高能跑多少分辨率?</description><pubDate>Thu, 06 Aug 2026 00:48:37 GMT</pubDate><guid>f5ab055a891590c8b4e4131634dd01c5</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] M1pro的 14 寸 mbp 屏幕出现了一条横。</title><link>https://www.nodeseek.com/post-859705-1</link><description>之前的mpb用了快10年都没事，m1pro的屏幕这么垃圾吗。听说去直营店修一下要好几千呀。早就过保了。想买m5现在又涨价，咋办。。。。</description><pubDate>Thu, 06 Aug 2026 00:46:07 GMT</pubDate><guid>d986bc33cfc4b7d0e8633600b79f89ff</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] krak的卡能邮寄到国内吗</title><link>https://www.nodeseek.com/post-859704-1</link><description>为了薅那10欧可以设置地址为国内关键是能有概率收到吗</description><pubDate>Thu, 06 Aug 2026 00:45:46 GMT</pubDate><guid>feec4b8a06b1396342b116dc2e0b49e4</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [OpenAI] 各位用银行卡支付的都用的哪家的卡？</title><link>https://www.v2ex.com/t/1232341#reply4</link><description>目前还是用商店内购的方式，但是内购始终不能解决 api 购买问题，而且以后内购会不会把抽成比例算用户头上也不好说，还是希望弄一个海外银行账户。&lt;br /&gt;&lt;br /&gt;常见的虚拟卡基本上就是 U 卡、Wise 、N26 这种，这类卡据说在某些地方风控挺严的，容易连坐啥的，本来想开个实体卡，借着旅游的时候去当地银行问了下都不给游客开户，必须有居留权才行。港卡能开但是也用不了。</description><pubDate>Thu, 06 Aug 2026 00:41:39 GMT</pubDate><guid>5e340a15323c575d85f646e4f78df21d</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了个看 AI 订阅余额和用量的 Android 桌面小组件</title><link>https://www.v2ex.com/t/1232340#reply0</link><description>这类应用 PC 端挺多的，想在手机上用小组件看，就 vibe 了一个，用的 KMP 。支持深色模式，调节更新间隔时间，修改主题颜色（ Material3 动态配色）等基本功能。&lt;br /&gt;&lt;br /&gt;目前支持的平台：&lt;br /&gt;- DeepSeek：可显示账户余额，填 API Key 即可，走官方接口&lt;br /&gt;- OpenCode Go：需要先在应用里登录，可以看滚动窗口 / 周 / 月用量&lt;br /&gt;- Codex：需要先在应用里登录，可以看周 / 月用量（官方暂时取消了 5H 窗口，但是做了适配）&lt;br /&gt;- NewAPI：可以看令牌余额和用量（要填 Base URL + Key ）&lt;br /&gt;&lt;br /&gt;项目地址： &lt;a href="https://github.com/657kbps/quota-widget" rel="nofollow noopener" target="_blank"&gt;https://github.com/657kbps/quota-widget&lt;/a&gt;&lt;br /&gt;APK 下载： &lt;a href="https://github.com/657kbps/quota-widget/releases/latest" rel="nofollow noopener" target="_blank"&gt;https://github.com/657kbps/quota-widget/releases/latest&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;觉得有用的话就点个 Star 吧！&lt;br /&gt;&lt;br /&gt;截图：&lt;br /&gt;&lt;a href="https://i.imgur.com/AiKZmyb.png" rel="nofollow noopener" target="_blank"&gt;&lt;img class="embedded_image" rel="noreferrer" src="https://i.imgur.com/AiKZmyb.png" /&gt;&lt;/a&gt;</description><pubDate>Thu, 06 Aug 2026 00:17:44 GMT</pubDate><guid>12acb25140c3f65f6df47811b22a7fcc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] [🎁送码] 维护了四年的今日热榜，我把它从零重写了一遍</title><link>https://www.v2ex.com/t/1232339#reply16</link><description>&lt;p&gt;直达链接：&lt;a href="https://rebang.today/?ref=v2ex260806" rel="nofollow"&gt;https://rebang.today&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;距离第一次来 V 站宣传已过去四年，看下这次重构新增了什么内容吧：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;全站搜索&lt;/strong&gt;：可以直接搜索内容、平台和具体榜单；基础搜索不需要登录，会员能查历史内容。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;四种桌面视图&lt;/strong&gt;：常驻视图有列表模式和看板模式（点击看板右上角可以预览列表，有图列表更生动），伪装模式有 Excel 和飞书文档（后面会增加 VS Code ）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;订阅和云端同步&lt;/strong&gt;：常看的平台可以集中放进订阅页，支持拖动排序，登录后会跟随账号同步。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;更细的阅读设置&lt;/strong&gt;：可以调整默认分类、链接打开方式、列表密度、深浅色主题和屏蔽词。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;更完整的榜单信息&lt;/strong&gt;：排名、来源、发布时间、作者、标签和视频标记更清楚，也新增了表情反应。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;更稳的加载和翻页&lt;/strong&gt;：重构翻页逻辑，再不会出现浏览过程中榜单刷新，内容因排行变化而重复出现了。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;外观分享链接&lt;/strong&gt;：可以把页面样式设置生成链接，打开后直接应用。可用于分享和无痕模式&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;更多内容来源&lt;/strong&gt;：最近新增 Product Hunt 、Readhub 、DEV 、SegmentFault 、博客园、TapTap 、喜马拉雅、App Store 、Hugging Face 、汽车之家等节点，总量达到了 100+，后面也会持续增加。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;其他已有特点：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;支持云端同步设置&lt;/li&gt;
-&lt;li&gt;三端适配，PC 、pad 、手机端 体验都不错&lt;/li&gt;
-&lt;li&gt;支持深色模式&lt;/li&gt;
-&lt;li&gt;支持 PWA ，安装在桌面，体验堪比 APP&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;功能预告：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;监控功能&lt;/li&gt;
-&lt;li&gt;公众号榜单&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;li&gt;期待你的建议&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;老规矩，30 份 1 个月的会员兑换码：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://rebang.today/vip-active?ref=v2ex260806" rel="nofollow"&gt;激活地址&lt;/a&gt; ｜ &lt;a href="https://rebang.today/article/vip?ref=v2ex260806" rel="nofollow"&gt;会员介绍&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;019fd266-9728-7807-886f-0837b9c0919a
-019fd26b-461e-79ea-bc4d-5556a0dbe92b
-019fd26b-461f-7d41-aada-3fd878a7c2d4
-019fd26b-4620-7c15-be83-75c6acda5102
-019fd26b-4621-7a02-b47c-c8453670e84e
-019fd26b-4622-7c97-864c-82cbb6b54330
-019fd26b-4623-71f6-a33e-bc593f3ddd9a
-019fd26b-4624-7243-9c47-8bcce6391c7d
-019fd26b-4625-7835-b3fa-472352d3c8e0
-019fd26b-4626-72c5-9ab6-4cab2c24e3a6
-019fd26b-4627-71d1-9178-637f72a67abf
-019fd26b-4628-7cbb-9f82-80c1a225eb07
-019fd26b-4629-740f-9a1e-714ff4e11d33
-019fd26b-462a-76d7-b4c2-16159428235e
-019fd26b-462b-7b13-946c-f71d479d8fc5
-019fd26b-462c-777e-87b5-48e75b9cac46
-019fd26b-462d-7a08-9793-c591c965ff0b
-019fd26b-462e-7fbc-b727-3e19b00ac862
-019fd26b-462f-7193-b696-b0119ba261c7
-019fd26b-4631-708c-809c-7c1a21a35c34
-019fd26b-4632-7e6d-8c7d-b08c573ddee1
-019fd26b-4633-7259-a7ac-9d1a38fb4a45
-019fd26b-4634-78e7-8512-53bf4618406a
-019fd26b-4635-7bcb-990e-ce1e9ba43b39
-019fd26b-4636-7c74-a546-7f7d1cd160e4
-019fd26b-4637-7084-afc4-e502b8bde458
-019fd26b-4638-7bd3-82f9-a5c1d54d2b6e
-019fd26b-4639-7265-b339-ef3e0ac1a761
-019fd26b-463a-7af3-8d95-4600e3f03cff
-019fd26b-463b-7b72-a248-581019f03379
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;最后是网站的一些预览截图：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="列表模式" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/8yLLY6KU.png" /&gt;
-&lt;img alt="看板模式" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/MxQcJH9e.png" /&gt;
-&lt;img alt="看板模式点击预览列表" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/9Atz6dLL.png" /&gt;
-&lt;img alt="手机端明亮和暗黑模式" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/2lumJ0Vb.png" /&gt;
-&lt;img alt="伪装模式：Excel" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/0Yl3Dev8.png" /&gt;
-&lt;img alt="伪装模式：飞书文档" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/Q79L2383.png" /&gt;&lt;/p&gt;
-&lt;p&gt;直达链接：&lt;a href="https://rebang.today/?ref=v2ex260806" rel="nofollow"&gt;https://rebang.today&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 00:12:17 GMT</pubDate><guid>39267878487df9e450b052027a8c5c5a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 楼下新开早餐店很快又要倒闭了</title><link>https://www.v2ex.com/t/1232338#reply10</link><description>上一家是做夜面馆，这个概念就不太行。下午才开始营业，做到半夜，刚开张生意好，半年就没了。&lt;br /&gt;&lt;br /&gt;这个早餐店，开张第一天就吃了。感觉这肠粉的汁，不喜欢，有豆豉碎，第一次见这样的汁。后面小孩吃了几天，说还是不喜欢。这老板以前也是做过餐饮，如果看到大家都不吃，他会不会觉得是自己做的不好吃的原因？第一天就有点想说，想了想别人刚开张，还是算了。</description><pubDate>Thu, 06 Aug 2026 00:07:19 GMT</pubDate><guid>f288c29a8c99eb9ce1bbed6ed12373cd</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Looking for Wholesale Supplier of Chinese AI Models (Kimi, GLM, DeepSeek, etc.)</title><link>https://www.nodeloc.com/t/topic/102279</link><description>I’m looking for a reliable supplier of Chinese AI models such as Kimi, GLM, DeepSeek, and similar models for wholesale u&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 00:00:57 GMT</pubDate><guid>nodeloc-102279</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [推广] 香港众安银行开户返 300HKD+30USD 美光科技股票兑换券 活动时间 8.6 日至 9.9 日截止</title><link>https://www.v2ex.com/t/1232337#reply1</link><description>&lt;p&gt;开户准备（请在香港境内完成）&lt;/p&gt;
-&lt;p&gt;在开启应用前，请确保准备好以下材料：&lt;/p&gt;
-&lt;p&gt;证件： 内地二代身份证、本人实名内地银行卡。&lt;/p&gt;
-&lt;p&gt;网络： 手机已开启国际漫游，确保可以接收验证码。&lt;/p&gt;
-&lt;p&gt;证明： 通过微信/支付宝搜索“移民局”小程序，下载 12367 出入境记录。&lt;/p&gt;
-&lt;p&gt;极简操作流程&lt;/p&gt;
-&lt;p&gt;开户链接： &lt;a href="https://l.za.group/Fu5wm" rel="nofollow"&gt;https://l.za.group/Fu5wm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;下载 &amp;amp; 注册： 下载 ZA Bank App ，点击开户。&lt;/p&gt;
-&lt;p&gt;验证： 绑定手机（务必确认漫游状态），通过人脸核验。&lt;/p&gt;
-&lt;p&gt;信息填写：&lt;/p&gt;
-&lt;p&gt;邀请码： 填入 HCEAD7 （返现必要步骤）。&lt;/p&gt;
-&lt;p&gt;职业/目的： 职业可选“自由职业”，开户目的建议选“储蓄”。&lt;/p&gt;
-&lt;p&gt;功能开通（重要）： 务必勾选开通“股票”和“基金”服务功能（否则事后补开极其麻烦）。&lt;/p&gt;
-&lt;p&gt;审核： 提交后通常 1 个工作日即可审核完毕。&lt;/p&gt;
-&lt;p&gt;达标任务：立享 300 HKD 返现&lt;/p&gt;
-&lt;p&gt;完成开户后，在 14 天内 确保账户满足以下任一条件（只需满足其中一个条件）&lt;/p&gt;
-&lt;p&gt;存款： 日终存款余额≥HKD 200,000 或其等值; 或&lt;/p&gt;
-&lt;p&gt;基金： 日终基金总资产≥HKD 100,000 或其等值; 或&lt;/p&gt;
-&lt;p&gt;股票： 日终股票总资产≥HKD 10,000 或其等值;(这个最容易完成，买一万股票放一个交易日过夜即可）&lt;/p&gt;
-&lt;p&gt;返现机制： 达成以上任一条件后:，系统将在次日晚上 21:00 前处理。核对无误后，我将直接通过 ZA Bank 转账，或按谷歌实时汇率通过微信/支付宝返还你 300 HKD 。&lt;/p&gt;
-&lt;p&gt;另外，被邀请人维持此条件累计达 7 天(无需连续): 日终股票总资产≥HKD10.000 或其等值; 或日终基金总资产 HKD100.000 或其等值;或日终存款余额≥HKD200,000 或其等值（只需满足其中一个条件）即可前往 ZA Quest7 领取 1 张 USD30 美光科技(MU) 指定美股兑换券&lt;/p&gt;
-&lt;p&gt;助攻提醒&lt;/p&gt;
-&lt;p&gt;操作过程中有任何疑问，欢迎随时私信咨询。Telegram: fgvbt123
-详细图文注册教程:&lt;a href="https://fgvbt.com/sites/129.html/" rel="nofollow"&gt;https://fgvbt.com/sites/129.html/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://fgvbt.com/wp-content/uploads/2026/05/photo_2026-08-05_23-12-00.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://fgvbt.com/wp-content/uploads/2026/05/photo_2026-08-05_23-12-00-3.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://fgvbt.com/wp-content/uploads/2026/05/photo_2026-08-05_23-12-00-2.jpg" /&gt;
-&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://fgvbt.com/wp-content/uploads/2026/05/photo_2026-05-21_19-37-13.jpg" /&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 00:00:51 GMT</pubDate><guid>390ef0226674b45c8a7ce6ee8aab8f96</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] bug反馈（前端）</title><link>https://www.nodeloc.com/t/topic/102276</link><description>登录以后点通知会超出页面（前端问题） 
-移动端 
-如图</description><pubDate>Wed, 05 Aug 2026 23:43:02 GMT</pubDate><guid>nodeloc-102276</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] Welcome to Smailr</title><link>https://www.nodeloc.com/t/topic/102275</link><description>Welcome to our node! This is a space for discussions about Smailr. 
-Feel free to introduce yourself and start conversati&amp;hellip;</description><pubDate>Wed, 05 Aug 2026 23:32:28 GMT</pubDate><guid>nodeloc-102275</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] 黄金到底会掉吗</title><link>https://www.nodeloc.com/t/topic/102273</link><description>之前看到帖子里面说会掉啊，，</description><pubDate>Wed, 05 Aug 2026 23:30:49 GMT</pubDate><guid>nodeloc-102273</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[Level1Techs Forum] Java's First GUI Control Panel</title><link>https://forum.level1techs.com/t/javas-first-gui-control-panel/253590</link><description>&lt;p&gt;I am just wondering when Java came out with it’s own Control Panel.&lt;/p&gt;
-&lt;p&gt;The most I see in J2SE 1.3, is a file called “plugincpl131_20.cpl”, but I don’t know what to do with it.&lt;/p&gt;
-&lt;p&gt;I see a “plugin” Control Panel in J2SE1.4, a regular Control Panel in J2SE 5.0 (32-bit), and a regular Control Panel in Java/JDK 6 (64-bit), etc…&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;2 posts - 1 participant&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/javas-first-gui-control-panel/253590"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 23:19:43 GMT</pubDate><guid>3531f5fd085fa940aad497ceea7149be</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[V2EX] [OpenAI] 土区涨价后第二次续费还是 499， XDN 你们是吗？你们采用的什么付款方式？</title><link>https://www.v2ex.com/t/1232335#reply5</link><description>&lt;ul&gt;
-&lt;li&gt;Apple 订阅&lt;/li&gt;
-&lt;li&gt;Gift Card 充值&lt;/li&gt;
-&lt;/ul&gt;</description><pubDate>Wed, 05 Aug 2026 23:01:38 GMT</pubDate><guid>543536c84fb91ea7ff22008ad83794e2</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [旅行] 哥本哈根、斯德哥尔摩、赫尔辛基十天行</title><link>https://www.v2ex.com/t/1232334#reply2</link><description>&lt;p&gt;每隔两三个月，我都会对自己长时间待的城市感到腻味，特别想离开。上个月趁着暑假，和小朋友一起去丹麦，瑞典和芬兰走马观花，生活状态好了很多。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;机票 + 船票和酒店（含早餐）的大约 3 万人民币之外&lt;/li&gt;
-&lt;li&gt;每个城市大约三到四天的吃喝玩乐支出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;城市&lt;/th&gt;
-&lt;th&gt;人民币 (¥，约)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;🇩🇰 哥本哈根&lt;/td&gt;
-&lt;td&gt;¥7,705&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;🇸🇪 斯德哥尔摩&lt;/td&gt;
-&lt;td&gt;¥2,792&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;🇫🇮 赫尔辛基&lt;/td&gt;
-&lt;td&gt;¥5,747&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;| &lt;strong&gt;合计&lt;/strong&gt;     |  &lt;strong&gt;≈ ¥16,244&lt;/strong&gt; + 30000 |&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://blog.minghe.me/blog/%E5%93%A5%E6%9C%AC%E5%93%88%E6%A0%B9%E3%80%81%E6%96%AF%E5%BE%B7%E5%93%A5%E5%B0%94%E6%91%A9%E3%80%81%E8%B5%AB%E5%B0%94%E8%BE%9B%E5%9F%BA%E5%8D%81%E5%A4%A9%E8%A1%8C" rel="nofollow"&gt;博文: 哥本哈根、斯德哥尔摩、赫尔辛基十天行&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:32:29 GMT</pubDate><guid>b746d98c82fd0e776fe84cc798ddbc23</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[Level1Techs Forum] RTX 5080 stuck at PCIe 5.0 x8 on ASUS TUF Z790-Plus WiFi</title><link>https://forum.level1techs.com/t/rtx-5080-stuck-at-pcie-5-0-x8-on-asus-tuf-z790-plus-wifi/253587</link><description>&lt;p&gt;Hello everyone,&lt;/p&gt;
-&lt;p&gt;I’m looking for some advice regarding an issue with my new system.&lt;/p&gt;
-&lt;p&gt;System Specifications:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;CPU: Intel Core i9-14900KF&lt;/li&gt;
-&lt;li&gt;GPU: ASUS ROG Astral RTX 5080 OC 16GB (DOOM Edition)&lt;/li&gt;
-&lt;li&gt;Motherboard: ASUS TUF Gaming Z790-Plus WiFi&lt;/li&gt;
-&lt;li&gt;BIOS: 1836 (latest)&lt;/li&gt;
-&lt;li&gt;RAM: 32GB Corsair Vengeance DDR5-6000&lt;/li&gt;
-&lt;li&gt;SSD: Samsung 990 Pro 2TB (PCIe Gen4)&lt;/li&gt;
-&lt;li&gt;Windows 11 Pro&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;GPU-Z consistently reports:&lt;/p&gt;
-&lt;p&gt;PCIe x16 5.0 @ x8 5.0&lt;/p&gt;
-&lt;p&gt;I have already performed the following troubleshooting:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated BIOS to the latest version.&lt;/li&gt;
-&lt;li&gt;Installed the latest NVIDIA drivers.&lt;/li&gt;
-&lt;li&gt;Cleared CMOS.&lt;/li&gt;
-&lt;li&gt;Reseated the GPU.&lt;/li&gt;
-&lt;li&gt;Verified all power connectors.&lt;/li&gt;
-&lt;li&gt;Enabled the GPU-Z Render Test, and it still reports PCIe 5.0 x8.&lt;/li&gt;
-&lt;li&gt;The Samsung 990 Pro is a PCIe Gen4 SSD, and according to the ASUS manual, the M.2_1 slot should not reduce the primary PCIe x16 slot to x8.&lt;/li&gt;
-&lt;li&gt;Best Buy inspected the system and did not identify any obvious installation issues.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;At this point I’m trying to determine whether this could be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A motherboard issue&lt;/li&gt;
-&lt;li&gt;CPU/socket (LGA1700) issue&lt;/li&gt;
-&lt;li&gt;BIOS bug&lt;/li&gt;
-&lt;li&gt;GPU issue&lt;/li&gt;
-&lt;li&gt;Or expected behavior with this hardware combination&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Unfortunately, I don’t have another GPU available to test.&lt;/p&gt;
-&lt;p&gt;Has anyone experienced this with an ASUS Z790 motherboard or an RTX 5080?&lt;/p&gt;
-&lt;p&gt;Any suggestions would be greatly appreciated.&lt;br /&gt;
-Thank you!&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;2 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/rtx-5080-stuck-at-pcie-5-0-x8-on-asus-tuf-z790-plus-wifi/253587"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:00:25 GMT</pubDate><guid>df99e7bd9b6bdd08546b4eaa0f0dc5fb</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[NodeLoc] 悲，前段时间站内白嫖的notion 试用 掉了</title><link>https://www.nodeloc.com/t/topic/102267</link><description>有没有佬知道现在的 notion 怎么继续薅啊？ 用过之后感觉很不错但现在掉了，变成免费版没有ai了 :ac01:</description><pubDate>Wed, 05 Aug 2026 18:07:18 GMT</pubDate><guid>nodeloc-102267</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] 如何在自己的 VPS 上搭建用于 ChatGPT 和 Claude 订阅的 CDK 系统？</title><link>https://www.nodeloc.com/t/topic/102266</link><description>我想在自己的 VPS 服务器上部署一套本地 CDK 卡密管理系统，用于管理 ChatGPT 和 Claude 的订阅激活。 
-我希望系统完全由自己托管，并支持 CDK 生成、库存管理、订单管理、自动发货、用户管理和支付接口等功能。 
-我的需&amp;hellip;</description><pubDate>Wed, 05 Aug 2026 17:40:19 GMT</pubDate><guid>nodeloc-102266</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] [分享创造] PickZ（chrome 插件） —— 选中即翻译/总结/改写/解释的轻量 AI 悬浮助手</title><link>https://www.v2ex.com/t/1232331#reply2</link><description>&lt;h1&gt;[分享创造] PickZ （ chrome 插件） —— 选中即翻译/总结/改写/解释的轻量 AI 悬浮助手&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;PickZ&lt;/strong&gt; 做的事情很简单：在任意网页上选中文字，旁边浮出一个按钮，点击即可 &lt;strong&gt;翻译 / 总结 / 改写 / 解释&lt;/strong&gt;，结果在小悬浮窗里流式输出，复制、重试都在手边。&lt;/p&gt;
-&lt;p&gt;商店链接： &lt;a href="https://chromewebstore.google.com/detail/pickz-ai-%E6%82%AC%E6%B5%AE%E5%8A%A9%E6%89%8B/nkhambeanbcflohmbgiebhjhdplhejpp" rel="nofollow"&gt;https://chromewebstore.google.com/detail/pickz-ai-悬浮助手/nkhambeanbcflohmbgiebhjhdplhejpp&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;为什么做这个&lt;/h2&gt;
-&lt;p&gt;平时读英文文档、技术博客，最烦来回切换翻译工具。沉浸式翻译这类方案主打整页对照，但很多时候我只想"看懂这一段"，甚至想让它给我解释某个概念。于是做了这个"选中即用"的小工具，主打零打断。&lt;/p&gt;
+<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Thu, 06 Aug 2026 04:23:05 GMT</lastBuildDate><item><title>[V2EX] [分享创造] 红果自动翻广</title><link>https://www.v2ex.com/t/1232444#reply0</link><description>&lt;h1&gt;揭果一下&lt;/h1&gt;
+&lt;p&gt;原生 Android APK 。最低支持 Android 8 ，已按 Android 14 SDK 编译，可在 Android 12-15 运行。仅使用系统无障碍服务，在红果短剧（&lt;code&gt;com.phoenix.read&lt;/code&gt;）前台时识别两类广告并上滑。&lt;/p&gt;
+&lt;h2&gt;使用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;构建并安装 APK 。&lt;/li&gt;
+&lt;li&gt;打开应用，点击“开启无障碍服务”。&lt;/li&gt;
+&lt;li&gt;在系统无障碍设置中开启“揭果一下”。&lt;/li&gt;
+&lt;li&gt;在应用中按需开启通知与“关闭电池优化”。&lt;/li&gt;
+&lt;li&gt;手动打开红果短剧。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;前台服务和电池优化豁免用于提高存活率。当前版本已禁用悬浮窗和开机恢复；不会申请网络或存储权限，不会处理其他应用，也不会自动滑动网络错误页。系统强行停止应用后，Android 不允许应用自行恢复。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://share.lanol.cn/#/?code=88977" rel="nofollow"&gt;https://share.lanol.cn/#/?code=88977&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:21:41 GMT</pubDate><guid>7848bc672771c19790a59f8621452467</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] （nq)留档cloudleadinno月付3刀版</title><link>https://www.nodeseek.com/post-860123-1</link><description>linktext</description><pubDate>Thu, 06 Aug 2026 04:21:23 GMT</pubDate><guid>9c54ff61cf6dbc6e1f1f14d0c398037b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 500刀 模型使用 支持gpt DS 等等</title><link>https://www.nodeloc.com/t/topic/102307</link><description>部分模型无法使用工具 建议的误用 
+https://ai.baipiao.co/v1 
+sk-XxbzeNJBi10Mlpo2sKGZu29jNxPQDsYVcni9HSYwPUgdaZhi</description><pubDate>Thu, 06 Aug 2026 04:21:17 GMT</pubDate><guid>nodeloc-102307</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] 溢价100收一台白丝云4837 年付159或者299款</title><link>https://www.nodeseek.com/post-860122-1</link><description>来晚了，有没有大佬出</description><pubDate>Thu, 06 Aug 2026 04:21:17 GMT</pubDate><guid>00df416965542ac20665e3f134a3da23</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] AgentRouter免费的羊毛大家薅了吗？opus4.8、opus5、gpt5.6爽登！！</title><link>https://www.nodeseek.com/post-860121-1</link><description>昨天刚知道这个平台，用github号登录后直接送了100刀！速度很快，我用的5.6-sol，效果不错！！没注册的赶紧来注册一下吧，https://agentrouter.org/register?aff=0Q7H通过这个链接注册你可获得$100,我也能获得推荐奖励！注意，github账号一定要是早于2025年12月</description><pubDate>Thu, 06 Aug 2026 04:20:48 GMT</pubDate><guid>1be8dd58fe09a72f2f1bbb731ae230aa</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 1799出OVH KS-Mystery 盲盒 内存 128G 硬盘 2x1.2T NVMe</title><link>https://www.nodeseek.com/post-860120-1</link><description>1799出OVHKS-Mystery盲盒内存128G硬盘2x1.2TNVMe出OVHKS-Mystery盲盒IE区机器，法国机房CPUE51650V4内存128G中奖le-e是64g硬盘2x1.2TNVMe中奖网络上下1Gbpsle-e是上传500续费22.9欧元/月自己准备IE区账号，push出。明盘一口价179</description><pubDate>Thu, 06 Aug 2026 04:19:41 GMT</pubDate><guid>bbae7296be289f2a1014f3b5e419519b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] OVH VPS-1德国</title><link>https://www.nodeseek.com/post-860119-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m51.195.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Thu, 06 Aug 2026 04:18:36 GMT</pubDate><guid>b999e24733795142479e9d3459936cd1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 关于bybit台湾卡</title><link>https://www.nodeseek.com/post-860118-1</link><description>已经有了哈萨克斯的bybit，还能在账号原有基础上申请台湾卡不？还是需要注册多一个新账号才行？</description><pubDate>Thu, 06 Aug 2026 04:17:41 GMT</pubDate><guid>32d7a0550a29cc73c0e7aa07a0fc2dbb</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 消息提醒的图标，有新消息时间图标能不能弄个实心的</title><link>https://www.nodeseek.com/post-860117-1</link><description>体验好点，对视力障碍也有帮助</description><pubDate>Thu, 06 Aug 2026 04:16:41 GMT</pubDate><guid>377b69a1b097c8d23346269984c4fe50</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有兄弟和我一样盒子收集癖么</title><link>https://www.nodeseek.com/post-860116-1</link><description /><pubDate>Thu, 06 Aug 2026 04:15:49 GMT</pubDate><guid>3e30177e570072a1a6f9ecabdf8a2ebd</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 收gg或者任何英国卡 靓号</title><link>https://www.nodeseek.com/post-860115-1</link><description>rt</description><pubDate>Thu, 06 Aug 2026 04:15:00 GMT</pubDate><guid>4788e5ceed764f8be4ad5e5ec2075a6f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] GG可以免费更换几次手机号？</title><link>https://www.nodeseek.com/post-860114-1</link><description>GG卡都收到被封的邮件了，还不清楚几时就不能用了。</description><pubDate>Thu, 06 Aug 2026 04:14:53 GMT</pubDate><guid>ba3a80679b786a60f20cd805548ac62c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收鸡】收一台DMIT的LAX.AS3.EB.Pocket 年付</title><link>https://www.nodeseek.com/post-860113-1</link><description>正价，剩余价值收。流量不够用了cnm的</description><pubDate>Thu, 06 Aug 2026 04:14:22 GMT</pubDate><guid>87b084a265bbc86823606c16327df3ff</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] gpt 五小时限额在哪看</title><link>https://www.v2ex.com/t/1232443#reply0</link><description>前几天就听说恢复 5 小时限额了，但我在 macos 客户端上一直没看见，只显示了周限；&lt;br /&gt;今天用 codex 聊了一上午突然报错了，看日志像是限额了，但在客户端上看不见限额和恢复时间，以前 5 小时限额也是有像周限一样显示的呀。&lt;br /&gt;&lt;br /&gt;exceeded retry limit, last status: 429 Too Many Requests, request id: 088daab1-3391-45b5-bde3-d68dcb088ffc</description><pubDate>Thu, 06 Aug 2026 04:14:03 GMT</pubDate><guid>7c2475ff5aa4c0b12d64144123f6453f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 强行计算企业财报「AI」提及次数与裁员比例关系，我顺手做了一个工具</title><link>https://www.v2ex.com/t/1232442#reply0</link><description>&lt;p&gt;最近企业财报里的 AI 含量肉眼可见地上涨，但是裁员新闻似乎也没有停过。&lt;/p&gt;
+&lt;p&gt;如果把企业财报中 AI 的提及次数作为 x ，把裁员比例作为 y ，它们能拟合出一条怎样的曲线？&lt;/p&gt;
+&lt;p&gt;当然，这不能证明任何因果关系，我把它做成了一个可以计算任何奇怪关系的工具。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/cS1bcEQ.png" /&gt; &lt;/p&gt;
+&lt;p&gt;网站： &lt;a href="https://equation.lol" rel="nofollow"&gt;https://equation.lol&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;输入任意两个名词，它会生成一条 y = f(x)，你可以看到它的公式、函数曲线以及解读&lt;/p&gt;
+&lt;p&gt;比如除了 AI 投入与裁员比例，还可以计算：&lt;/p&gt;
+&lt;p&gt;项目延期 = f （会议次数）&lt;/p&gt;
+&lt;p&gt;系统稳定性 = f （上线前说“应该没问题”的人数）&lt;/p&gt;
+&lt;p&gt;工资涨幅 = f （承担的责任）&lt;/p&gt;
+&lt;p&gt;纸箱数量 = f （猫的数量）&lt;/p&gt;
+&lt;p&gt;也可以试试两个风马牛不相及的名词，有时会产生一些意外合理的黑色幽默。&lt;/p&gt;
+&lt;p&gt;欢迎在回复里留下你选择的两个名词，我也想看看哪组关系最离谱。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:13:31 GMT</pubDate><guid>7f6e0652aa7d0907b6d5e8b5d6813315</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 隔壁deepfloud炸了还没好嘛？</title><link>https://www.nodeseek.com/post-860111-1</link><description>昨天中午就发现上不去的，今天打开还是上不去来着，有MJJ正常能上嘛</description><pubDate>Thu, 06 Aug 2026 04:13:02 GMT</pubDate><guid>0e9f681be27368d900fb0441c8f7bc42</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 阿里云 韩国 CDT</title><link>https://www.nodeseek.com/post-860110-1</link><description>OSS我一般使用https://cloud-images.ubuntu.com/jammy/current/image，方便</description><pubDate>Thu, 06 Aug 2026 04:12:58 GMT</pubDate><guid>44a1b651417833eb0c39c16f2c793560</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 请问host.mw这个是干嘛的</title><link>https://www.nodeloc.com/t/topic/102306</link><description>ssl.host.mw是之前用来申请1年的ssl的，我翻出来发现网站的根域名放东西了。有谁知道是用来干嘛的吗，真心求教。</description><pubDate>Thu, 06 Aug 2026 04:10:28 GMT</pubDate><guid>nodeloc-102306</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] AWS新注册帐号</title><link>https://www.nodeseek.com/post-860108-1</link><description>新注册帐号通过了，用多久算稳定呢？后续会要KYC吗</description><pubDate>Thu, 06 Aug 2026 04:09:35 GMT</pubDate><guid>dd2d8adf91c94d52f237d68376cfcca1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【出】｜出鸡🐔｜YT的HK.BGP.A 续费 151.2¥ / 年 2027-01-27到期 82元包push出</title><link>https://www.nodeseek.com/post-860107-1</link><description>不通阿里，通腾讯。</description><pubDate>Thu, 06 Aug 2026 04:09:24 GMT</pubDate><guid>cd68dd33af0b2eda04614dd23f02b210</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 吓哭了，CloudFlare Warp的IP也送中了？</title><link>https://www.nodeseek.com/post-860106-1</link><description /><pubDate>Thu, 06 Aug 2026 04:08:35 GMT</pubDate><guid>9061da36938e3cc577139a85e7f3e629</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 把gg携转了，等等结果</title><link>https://www.nodeseek.com/post-860105-1</link><description>不等了，放弃幻想，虽然还能接短信</description><pubDate>Thu, 06 Aug 2026 04:05:41 GMT</pubDate><guid>2a8d2fcda9387f45d83bdcc2380926ca</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 目前agentrouter可以蹬, Claude Opus 5/ GPT-5.6-sol</title><link>https://www.nodeseek.com/post-860104-1</link><description>互帮互助,目前agentrouter可以蹬每邀请一位朋友注册，您可获得100美元奖励，您的朋友可获得50美元奖励。通过转账功能将奖励金额转入您的账户余额。邀请的朋友越多，获得的奖励就越多。我也知道他们做这个的意义但是确实用着挺爽的而且不要钱可以用Claudeopus以及GPT5.6系列群里人很多我额度用完了想继续用</description><pubDate>Thu, 06 Aug 2026 04:04:36 GMT</pubDate><guid>8fd948c4b556bac569eb681586880ed4</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [分享创造] [送兑换码] 我做了一个“会计算的草稿纸” iOS App，把计算器和备忘录合在一起</title><link>https://www.v2ex.com/t/1232441#reply3</link><description>&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;平时算旅行预算、工资、房贷或者日期时，我经常需要在计算器和备忘录之间来回切换。&lt;/p&gt;
+&lt;p&gt;计算器只能留下最终结果，过一段时间再看，往往已经不知道当时怎么算的；如果把过程写在备忘录里，又需要不断复制数字和重新计算。&lt;/p&gt;
+&lt;p&gt;所以我想做一张“会计算的草稿纸”：像写笔记一样记录计算过程，同时自动得出结果。&lt;/p&gt;
+&lt;h2&gt;解决思路&lt;/h2&gt;
+&lt;p&gt;开发了一款叫「小算本」的 iOS App ，在小算本里，可以直接用接近日常书写的方式计算：&lt;/p&gt;
+&lt;p&gt;酒店 = 680&lt;br /&gt;
+高铁 = 240 x 2&lt;br /&gt;
+餐饮 = 160&lt;br /&gt;
+门票 = 50  &lt;/p&gt;
+&lt;p&gt;小计 = 酒店 + 高铁 + 餐饮 + 门票&lt;br /&gt;
+备用金 = 小计 x 10%&lt;br /&gt;
+总预算 = 小计 + 备用金&lt;br /&gt;
+人均 = 总预算 / 2  &lt;/p&gt;
+&lt;p&gt;每一行的结果会显示在右侧。&lt;/p&gt;
+&lt;p&gt;前面定义的变量可以在后面继续引用。修改“酒店”的价格后，小计、总预算和人均也会一起更新。&lt;/p&gt;
+&lt;p&gt;相比只得到一个答案，我更希望它能保留完整的计算过程，方便以后回来修改和复用。&lt;/p&gt;
 &lt;h2&gt;功能&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;选中即用&lt;/strong&gt;：选中文 → 悬浮按钮 → 翻译 / 总结 / 改写 / 解释，四选一&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;单词语典模式&lt;/strong&gt;：选中单个英文单词，直接给出词典条目（音标 / 词性 / 例句 / 搭配 / 同反义词），不用再开词典 App&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;页面级操作&lt;/strong&gt;：右键"总结此页 / 翻译此页"，自动提取正文，不用手动复制全文&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;快捷键&lt;/strong&gt;：&lt;code&gt;Ctrl+Shift+K&lt;/code&gt; 直接唤出悬浮窗&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;外观&lt;/strong&gt;：跟随系统 / 亮 / 暗主题，字体大小、悬浮窗宽度可调，窗口位置跟随选中处&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;流式输出&lt;/strong&gt; + 复制 / 重试按钮&lt;/li&gt;
+&lt;li&gt;中文变量、四则运算、括号和百分比&lt;/li&gt;
+&lt;li&gt;前后变量引用与结果自动更新&lt;/li&gt;
+&lt;li&gt;长度、重量、温度、时间和容量等单位换算&lt;/li&gt;
+&lt;li&gt;人民币、美元、欧元、日元等货币换算&lt;/li&gt;
+&lt;li&gt;日期加减、节日倒计时和农历换算&lt;/li&gt;
+&lt;li&gt;房贷、工资个税、五险一金等快速估算&lt;/li&gt;
+&lt;li&gt;亲戚称呼计算&lt;/li&gt;
+&lt;li&gt;生活、工作、资产、家庭、出行等计算纸模板&lt;/li&gt;
+&lt;li&gt;保存和搜索计算笔记&lt;/li&gt;
+&lt;li&gt;多种纸张主题&lt;/li&gt;
+&lt;li&gt;将整张计算纸生成图片分享&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;模型与费用&lt;/h2&gt;
+&lt;p&gt;应用使用原生 Swift 开发，中文解析和核心计算在本地完成，不依赖 AI 。&lt;/p&gt;
+&lt;p&gt;笔记默认保存在本机，只有货币换算会联网获取汇率。&lt;/p&gt;
+&lt;p&gt;买断制，无订阅、无广告。&lt;/p&gt;
+&lt;h2&gt;链接&lt;/h2&gt;
+&lt;p&gt;App Store：
+&lt;a href="https://apps.apple.com/cn/app/%E5%B0%8F%E7%AE%97%E6%9C%AC/id6780451725" rel="nofollow"&gt;https://apps.apple.com/cn/app/%E5%B0%8F%E7%AE%97%E6%9C%AC/id6780451725&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;国区价格：18 元。&lt;/p&gt;
+&lt;p&gt;这次准备了一些 App Store 兑换码。兑换方式：&lt;/p&gt;
+&lt;p&gt;App Store → 右上角头像 → 兑换充值卡或代码 → 手动输入代码。&lt;/p&gt;
+&lt;p&gt;AXATW6LHYPJ7&lt;br /&gt;
+9JAM9P4LT7KF&lt;br /&gt;
+33E3T774ETFH&lt;br /&gt;
+9RERAP44JN3H&lt;br /&gt;
+HEJLTTW3TX4E&lt;br /&gt;
+WAJM47EA4LR7&lt;br /&gt;
+MP3MMP4KPNWY&lt;br /&gt;
+XAYWTMTRK6FE&lt;br /&gt;
+E73L4ME7LTYY&lt;br /&gt;
+KJ6W39P4F4Y6&lt;br /&gt;
+PLTY7WFTAFRP&lt;br /&gt;
+ER9ET9MY66XW&lt;br /&gt;
+XLP93A3K7HFK&lt;br /&gt;
+T34KRRMMNTPP&lt;br /&gt;
+AAK6EPF73A7X&lt;br /&gt;
+MW46NT73MMPP&lt;br /&gt;
+W4A6M4KREKWY&lt;br /&gt;
+77YF7AP66394&lt;br /&gt;
+34KRT4RAW7RA&lt;br /&gt;
+73T9EMTAMHKK&lt;br /&gt;
+N9P46KR3WJY3&lt;br /&gt;
+7P64XK9YAAET&lt;br /&gt;
+AFKE4X93NLWF&lt;br /&gt;
+P7HHLKNW3EWE&lt;br /&gt;
+9HF47MH6EJFK&lt;br /&gt;
+9WLWPMEPFWYP&lt;br /&gt;
+FME9NER7JMHF&lt;br /&gt;
+NY3KRANXMPH7&lt;br /&gt;
+WEEAFFFHE4EN&lt;br /&gt;
+3MMKNK6JK739&lt;/p&gt;
+&lt;h2&gt;示例图&lt;/h2&gt;
+&lt;h3&gt;计算纸与结果联动&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/YRBdklT.gif" /&gt;
+&lt;img alt="图片 1" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/P8zyqwc.gif" /&gt; &lt;/p&gt;
+&lt;h3&gt;生活场景&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="图片 2" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/IgQeaR9.png" /&gt; &lt;/p&gt;
+&lt;h3&gt;工作场景&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="图片 3" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/Lkm32DG.png" /&gt; &lt;/p&gt;
+&lt;h3&gt;资产&amp;amp;家庭&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="图片 4" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/8t9IYGp.png" /&gt; &lt;/p&gt;
+&lt;h3&gt;出行&amp;amp;工具&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="图片 5" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/NxbKTjk.png" /&gt;&lt;/p&gt;
+&lt;p&gt;感谢体验，欢迎反馈～&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:03:21 GMT</pubDate><guid>747be65d1d6786f062d56e332c8d7fc0</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 关于cte直接插卡使用</title><link>https://www.nodeseek.com/post-860103-1</link><description>填写资料用的英文名，国外卡支付，电话号码也留的英国手机号，然后插卡就能直接使用，就是不能打电话，其他一切正常。</description><pubDate>Thu, 06 Aug 2026 04:02:31 GMT</pubDate><guid>0edad897d524813f3cc03034e7b94a89</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出一个seednet 300M 给root</title><link>https://www.nodeseek.com/post-860102-1</link><description>口令1149月5号到期买多了机器TCSCloud</description><pubDate>Thu, 06 Aug 2026 04:01:49 GMT</pubDate><guid>a72d8379b573330ef5232441e623bc75</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [Claude] windows 下 claude 桌面 app ，当它需要确认时，有时发声提醒，有时不发声。 是咋回事？</title><link>https://www.v2ex.com/t/1232440#reply0</link><description>&lt;p&gt;要所有需要确认的都发声提醒，怎么搞？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:01:38 GMT</pubDate><guid>33ef170be4d967d0c8972fb7c3798e1b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 200 刀的 GPT PRO 一个人真的能蹬完吗</title><link>https://www.v2ex.com/t/1232439#reply0</link><description>&lt;p&gt;我开 fast ， 同时 3 个项目中不停的蹬，但是根本蹬不完啊，重置一个没用过。我每天感觉都精疲力尽， 你们都是怎么用的？怎么做到能把 gpt pro 20x 蹬完的？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 04:01:11 GMT</pubDate><guid>89726f2ef31da06c453c360bcae8f2d8</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Token] www.arccodex.com 这个中转站是要跑路了吗？</title><link>https://www.v2ex.com/t/1232436#reply0</link><description>&lt;a href="https://status.arccodex.com/" rel="nofollow noopener" target="_blank"&gt;https://status.arccodex.com/&lt;/a&gt; 感觉账号池都不怎么维护了</description><pubDate>Thu, 06 Aug 2026 03:54:14 GMT</pubDate><guid>766f6bd3da57410ac7fc1a82eaead251</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 很多人说现在中国普通人月入 5000 并不难，也有人认为 5000 对很多人来说很困难。大家说说你家乡的真实情况？</title><link>https://www.v2ex.com/t/1232435#reply3</link><description>&lt;p&gt;在当地，月入 5000 是比较容易达到，还是需要技能、经验或者较好的岗位？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:48:32 GMT</pubDate><guid>d3d2ed954e81b3e07de71831c449e05b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 银行卡的委托扣费大家遇到过吗？</title><link>https://www.v2ex.com/t/1232434#reply1</link><description>&lt;p&gt;前几天去注销一张流量卡，卡里还有 20 几块钱，本来是退费的，结果遇到一个骚操作：在填了银行卡的时候说是会扣费或者退款，没仔细看，多退少补也正常，我这个卡应该能退点钱。然后人脸验证了。&lt;/p&gt;
+&lt;p&gt;下午来短信说销户成功了，结果一看银行卡扣了 30 多，柜台交易，当时很懵逼，怎么还扣费了。
+幸好填银行卡的时候截图了。看完才明白，运营商会先扣一个月的费用，然后下个月把多的全部还你。&lt;/p&gt;
+&lt;p&gt;但问题是为什么运营商可以直接扣我银行卡的钱？而且也不用任何验证码什么的。也不是走快捷支付，快捷支付我只有支付宝和微信，上面都没有这笔账。&lt;/p&gt;
+&lt;p&gt;周末去了支行，一顿查才发现，银行还有个委托扣费功能，像水电，社保什么的，可以直接扣款。我让银行查一下我的卡有哪些委托扣费，查完只有我之前买的保险的扣款，运营商查都查不到。&lt;/p&gt;
+&lt;p&gt;问银行要怎么查，以后莫名奇妙扣我钱怎么算？
+银行：没办法，他们查不到的，只有我去找扣款方。&lt;/p&gt;
+&lt;p&gt;也就是说，可能会有些委托扣费，你根本查不到，银行也查不到，但是能扣你钱。而且这个委托的流程极其简单，办完了你都可能不明确自己做了委托。&lt;/p&gt;
+&lt;p&gt;不知道大家有没有遇到过这种事情，要怎么处理？只能天天看账单吗&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:43:52 GMT</pubDate><guid>06330236e9787c1d9fd8cf388680dc8e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 新版本把重置卡都删了吗？</title><link>https://www.v2ex.com/t/1232431#reply1</link><description>&lt;p&gt;刚才升级了下 ChatGPT ，发现重置卡没了，没升级前我还确认了下是有的。&lt;/p&gt;
+&lt;p&gt;是删除了还是换地方了？（多么希望是换地方了）&lt;/p&gt;
+&lt;p&gt;&lt;img alt="BQACAgUAAyEGAASHRsPbAAEYo6FqdAJJ762z5_iBmQRBMeaZyD7VcgACgygAAtsboFeYmXH1pdtm8z0E.png" class="embedded_image" rel="noreferrer" src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEYo6FqdAJJ762z5_iBmQRBMeaZyD7VcgACgygAAtsboFeYmXH1pdtm8z0E.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="BQACAgUAAyEGAASHRsPbAAEYo6pqdAKdHrwsWdGFpA3BrU2fSJz5AQACjCgAAtsboFdmPFrdP4LdwD0E.png" class="embedded_image" rel="noreferrer" src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEYo6pqdAKdHrwsWdGFpA3BrU2fSJz5AQACjCgAAtsboFdmPFrdP4LdwD0E.png" /&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:42:42 GMT</pubDate><guid>1c3eaf453a989fb00b3365223d766565</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] AI 大模型是否有辅助设计编程语言的 skill？</title><link>https://www.v2ex.com/t/1232429#reply0</link><description>&lt;ul&gt;
+&lt;li&gt;前些天菲尔兹奖一顿火热，都在关注 AI 辅助数学研究。&lt;/li&gt;
+&lt;li&gt;我看到 C++ 20 的语法，就觉得挺纠结的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;template &amp;lt;typename T&amp;gt;
+  requires requires (T x) { x + x; } // `requires` 同时使用在 concept 的定义和使用上
+T add(T a, T b) {
+  return a + b;
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;内置 &lt;strong&gt;DeepSeek V4 Flash&lt;/strong&gt;，免费 &lt;strong&gt;20 次/天&lt;/strong&gt;（匿名自动注册，无需登录）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;BYOK&lt;/strong&gt;：设置里填 DeepSeek 或 OpenRouter API Key ，走你自己的配额，&lt;strong&gt;无每日限制&lt;/strong&gt;，零成本&lt;/li&gt;
-&lt;li&gt;GPT-4o-mini / GPT-4o / Claude Haiku 等模型（ Pro 档，逐步开放）&lt;/li&gt;
-&lt;li&gt;支持自定义 Base URL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;如果你也处在"读外文文档 → 选中 → 翻译/总结"这个循环里，欢迎试用，有任何意见（ UI 交互、动作设计、性能）都请拍砖。后续计划：自定义动作、整页对照翻译、Firefox 版。&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 17:13:50 GMT</pubDate><guid>ac762bf5e797a6c417351de8c7ed7509</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] Seedance 2.5 / H3 / Kling 3.0 有人测过哪家强吗？</title><link>https://www.v2ex.com/t/1232329#reply1</link><description>&lt;h1&gt;2026 年中 AI 视频模型笔记：Seedance 2.5 / H3 / Kling 3.0 ，到底谁能打&lt;/h1&gt;
-&lt;p&gt;最近一个月 AI 视频赛道密度太高了。字节 6 月底发了 Seedance 2.5 ，MiniMax 7 月底发了 H3 （海螺 3.0 ），Kling 3.0 年初就出了但一直在迭代 Turbo 和 O3 变体。我自己在做一个视频生成相关的小站，这几家的 API 和产品基本都摸了一遍，整理一下实际感受。&lt;/p&gt;
-&lt;h2&gt;Seedance 2.0&lt;/h2&gt;
-&lt;p&gt;Seedance 2.0 今年 2 月发布，在 Artificial Analysis 的 T2V 盲测榜上 Elo 大概 1270 左右，I2V 也是榜首级别。它的核心卖点不是画质最牛，而是"你写的它真的会拍"——prompt adherence 。做过商业视频的人知道这有多重要：你要求镜头从左往右推的同时产品标签保持可读，之前大部分模型是做不到的，但 Seedance 2.0 大概率做得到，当时很多人靠着这个模型套利挣了不少钱，现在想想拍断大腿，自己真傻。&lt;/p&gt;
-&lt;p&gt;规格最长 15 秒/次，支持最多 9 张图 + 3 段视频 + 3 段音频作为参考输入，音视频联合生成不用单独配音，8 种语言口型同步。Fast 变体成本大约 $0.13/秒，同级模型里算便宜。&lt;/p&gt;
-&lt;p&gt;问题在于：15 秒上限意味着做 30 秒广告需要分两段生成再拼，拼接处的光线、角色一致性看运气。&lt;/p&gt;
-&lt;h2&gt;Seedance 2.5：质感相比 2.0 好了特别多&lt;/h2&gt;
-&lt;p&gt;6 月 23 号在火山引擎 FORCE 大会发布。最明显的变化当然是单次 30 秒，场景切换和节奏变化都在一次生成里完成，不用再拼片了。参考输入从 15 个拉到 50 个（图片、视频、音频混合），新增了区域编辑——指定画面某个区域单独重新生成，不动其他部分。&lt;/p&gt;
-&lt;p&gt;但比起参数提升，我觉得更值得说的是画面质感。2.5 出来的人像跟 2.0 差距挺大的，皮肤质地、光影过渡、头发丝的层次感，放在一起看就是两代产品的区别。2.0 的人像有时候会有一种"干净但假"的感觉，2.5 则更接近实拍的颗粒感和光线反应。不只是分辨率的事，是整体渲染逻辑上的进步。很难想象 3.0 会是什么怪兽。。&lt;/p&gt;
-&lt;p&gt;字节说支持 4K 10bit 色深，但目前在即梦里能摸到的大多还是 720p ，高分辨率应该还在灰度。API 也还没开放，对开发者来说现阶段是期货。&lt;/p&gt;
-&lt;p&gt;判断：如果你的工作流被 15 秒上限卡着，2.5 一出来就该切。如果内容本来不超过 15 秒并且对画面质感没有极致要求，2.0 还是更成熟的选择。&lt;/p&gt;
-&lt;h2&gt;MiniMax H3 （海螺 3.0 ）：全模态 + 开源&lt;/h2&gt;
-&lt;p&gt;7 月 31 号发布。跟前面几个模型最不一样的地方是"全模态输入"——同时丢文字、图片、视频片段、音频进去，用自然语言描述它们的关系，比如"参考视频 1 的镜头运动，让图片 2 里的角色唱歌，声音匹配音频 3"。这种交互方式比 Seedance 和 Kling 分字段上传参考图要灵活得多。&lt;/p&gt;
-&lt;p&gt;规格：最长 15 秒，2K （ 2560×1440 ），24fps ，原生立体声同步生成。API 价格 $0.13/秒（ 2K ），比同分辨率竞品便宜不少。支持最多 12 个参考文件。&lt;/p&gt;
-&lt;p&gt;最值得关注的：MiniMax 开源权重，这是 2026 年第一个前沿级别视频模型开源，对自部署和微调影响很大。&lt;/p&gt;
-&lt;p&gt;相比 Seedance 2.0 ，H3 的 prompt 遵从度体感上差一档，复杂镜头指令容易跑偏。但速度快、价格低、全模态输入灵活，而且从最近抖音博主作品来看，似乎很适合艺术商业广告（大色域、纯色那种风格）&lt;/p&gt;
-&lt;h2&gt;Kling 3.0：分辨率和控制力最强&lt;/h2&gt;
-&lt;p&gt;快手 2 月 5 号发布（比 Seedance 2.0 早 3 天），分辨率能到 4K 60fps ，这点目前没有对手。6 月又出了 Turbo （更快、带原生音频）和 O3 变体（增加参考图控制）。&lt;/p&gt;
-&lt;p&gt;最有特色的是 Motion Brush：在画面上画一条路径，指定某个物体沿着这条路径运动。其他模型只能靠 prompt 描述碰运气，Kling 直接让你画。文字渲染也是强项，品牌标签、价格标签在视频里保持可读，电商场景很实用。&lt;/p&gt;
-&lt;p&gt;缺点：单次最长 10 秒（部分模式 15 秒），比 Seedance 2.0 还短。多镜头故事模式（最多 6 镜头）能缓解但本质还是拼片。&lt;/p&gt;
-&lt;p&gt;API 价格：通过 &lt;a href="http://fal.ai" rel="nofollow"&gt;fal.ai&lt;/a&gt; 大概 $0.08-0.11/秒（ Standard ），有免费额度 66 credits/天。llm-stats 盲测榜上 Kling 3.0 排名第一（ 1934 分），但不同榜评测方法差异大，参考就好。&lt;/p&gt;
-&lt;h2&gt;几个实际问题&lt;/h2&gt;
-&lt;p&gt;成本粗算（ API 按秒计费）：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;模型&lt;/th&gt;
-&lt;th&gt;分辨率&lt;/th&gt;
-&lt;th&gt;大约每秒&lt;/th&gt;
-&lt;th&gt;最长单次&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Seedance 2.0 Fast&lt;/td&gt;
-&lt;td&gt;720p&lt;/td&gt;
-&lt;td&gt;$0.13&lt;/td&gt;
-&lt;td&gt;15s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Seedance 2.5&lt;/td&gt;
-&lt;td&gt;720p （初期）&lt;/td&gt;
-&lt;td&gt;未公布&lt;/td&gt;
-&lt;td&gt;30s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;H3&lt;/td&gt;
-&lt;td&gt;2K&lt;/td&gt;
-&lt;td&gt;$0.13&lt;/td&gt;
-&lt;td&gt;15s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Kling 3.0 Standard&lt;/td&gt;
-&lt;td&gt;720p&lt;/td&gt;
-&lt;td&gt;~$0.08&lt;/td&gt;
-&lt;td&gt;10s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Kling 3.0 Turbo&lt;/td&gt;
-&lt;td&gt;720p&lt;/td&gt;
-&lt;td&gt;$0.18&lt;/td&gt;
-&lt;td&gt;15s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;选型的话：广告电商、需要精确控制 → Seedance 2.0 ，等 2.5 API 开了直接切；快速出片预算有限 → H3 ；要 4K 或运动路径控制 → Kling 3.0 ；要自部署 → 等 H3 开源或用 Wan 2.6 （ Apache 2.0 ）。&lt;/p&gt;
-&lt;p&gt;另外 Sora 就别考虑了，OpenAI 4 月关了 Web 和 App ，API 9 月也关。&lt;/p&gt;
-&lt;h2&gt;最后&lt;/h2&gt;
-&lt;p&gt;我自己在做一个 Seedance 的第三方站 &lt;a href="http://seadanse.com" rel="nofollow"&gt;seadanse.com&lt;/a&gt; ，等 2.5 的 API 开放后上线，订阅制。主要面向海外用户，也不知道能不能挣钱。&lt;/p&gt;
-&lt;p&gt;有问题评论区聊，对上面哪个模型的使用场景有疑问也可以问。&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 16:49:14 GMT</pubDate><guid>59c7efa00cca6090d4312825080e3b74</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] NodeLoc 邮箱服务独立品牌 Smailr 撕妹儿</title><link>https://www.nodeloc.com/t/topic/102262</link><description>NodeLoc 为了提供更优质也更方便的服务，已将 mail.nodeloc.com 的邮箱服务独立为品牌 Smailr (发音同 Smile) 
-
-  
-Smailr 有什么特色呢？ 
-针对MJJ来说，我们总想着一机一邮，就是担心后期转手&amp;hellip;</description><pubDate>Wed, 05 Aug 2026 16:33:46 GMT</pubDate><guid>nodeloc-102262</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [程序员] 👏香港高才通批复了,可以办香港 ID 了</title><link>https://www.v2ex.com/t/1232327#reply4</link><description>&lt;h1&gt;香港高才通时间线&lt;/h1&gt;
-&lt;h2&gt;📅 Timeline&lt;/h2&gt;
+&lt;li&gt;就是这个 &lt;code&gt;requires requires&lt;/code&gt; 就很怪异。&lt;/li&gt;
+&lt;li&gt;假如让 ai 来参与设计语言，应该会很厉害吧。&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Thu, 06 Aug 2026 03:42:34 GMT</pubDate><guid>5cf04f9e2d2b884ddc47147f7d60202f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 再来宣传一下我写的全平台 SSH 客户端（送码）</title><link>https://www.v2ex.com/t/1232428#reply5</link><description>&lt;p&gt;移动端终于补齐了，Termark 现在算是真正实现了全平台支持：Windows 、macOS 、Linux 、iOS 和 Android 都能用了。&lt;/p&gt;
+&lt;p&gt;移动端和桌面端并不是简单套壳，也不是把同一套界面强行适配到不同设备上，而是两套独立代码。桌面端更适合长期连接和多窗口操作，移动端则围绕临时运维、快速连接、查看日志等实际场景重新设计了交互。&lt;/p&gt;
+&lt;p&gt;Termark 最早做的是桌面端，之前也在论坛宣传过。目前客户端日活已经有 800+，一路走到现在，离不开各位老铁的支持，感谢大家。&lt;/p&gt;
+&lt;p&gt;官网地址：&lt;a href="https://www.termark.app" rel="nofollow"&gt;https://www.termark.app&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Termark 移动端" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/3NIpV2XKl.png" /&gt;&lt;/p&gt;
+&lt;p&gt;这次再送出 &lt;strong&gt;50 个一年兑换码&lt;/strong&gt;，感兴趣的朋友可以参与一下。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2SZ2CGYORBOJS6CSIEPSHPCX
+RRKS4OBSCG3ZDJLNBIWLTDZR
+MGPVJEYQ4BYT55GC3KRCPQCX
+SNSYACF5EWPWTGXIKXM37GSY
+IULUOTOODXOWRTNNABTZK4KL
+JGEHZS73NNSPZMZN5XQ7PVGM
+6Q35TO3R4RUU3RE7KH2CTNNR
+LMRKC5PXDK3NG4EU55ZXZ3OC
+P4WS436IW2S7EQQSAI6MNTGY
+4C6CKDOF55K7EYD7OUEJSUMB
+3Y2WWZTLVSDOXVTTQTTFWJ4H
+SAMKKV4MOKILQCX6Q2236VNR
+4BEGT4FWIFHZS6VX4YIOPIXZ
+CS6RAOVOODHSRXX67SFPK43R
+4G7LV5ZBWCB6P4QTMXRO73CA
+NMRCCTCOEFCXZR5UFZ7BL52A
+EZDGXSOOEB73X2SCQRLNDQQJ
+4SZ7KWD3EX2GVFCVQHEITFPL
+2762CQ3RWOHSBQHAXCYCQDFC
+VCWJNNME46HQLF36PPYJJYT6
+W5DZYRJFYZNUMJBRKWGKYNBM
+PEEGSBSRXFJLNJ6HS4IS6ICK
+K2QFV7PHDO6CQLZNMWZVNF6I
+FT2AILEC3OWDMTKGLFJLOL7Y
+KNCG427GBS4LXVZBO445FEBJ
+CC5IUDSBRFLOIEYHIY7UCQIL
+VHBYKXUPW4WAVP2W3VZ5MPK6
+APFRMXMCI67TZNJQMFRNQZGM
+5QRGSD5KB3OD7ED7BQJQAHMY
+ZBKSN3LUXTIGQQC2JNJNN7OE
+KOVJFJC2UFMPBDKUCVOXPLOU
+PHAI2Q2VDKNUS4TUM5CSFIYQ
+IB55DCP4KFMEAQQGCHJIORL6
+H2HHFWO2MUQCTFJJSRHEQMFH
+IVPUFT64CTYW3ZQM3OZOITIG
+7JXBBG2MWZTEBDML4HTCZFTN
+AVKJNDQC2EVWHBJ6TXUSP2FS
+PSUD36AQQG27P32A3V6UVDLB
+6R7F7M33P5ZY6WDD5WWHOHBF
+6JVOZ3UNNIO635IBRJ4CGN2B
+AVTCABTFDNI3SWXHV6VADUGQ
+FFJCVJP2WMBXUSE5NKFQDOHB
+5N6YHKXK5ELGEH62HWGSBWZN
+HTD3HBBX4ALALB2UMPC274RJ
+VJKKATKZUFRNT2SFDAVOUJX5
+JETXZFCSE3DWSUB4QESG3XEA
+D2AWKCCT5PBDULA7U6KU2KFH
+EYO34VTFER3ZRCMFS3HRQTXL
+B7UDHVM3V2I6N37D23YKO4WW
+HH5F6CUEZFVO73K2THFHLJ6A
+&lt;/code&gt;&lt;/pre&gt;</description><pubDate>Thu, 06 Aug 2026 03:40:33 GMT</pubDate><guid>b7016787fc02169a9768bb33bec2e671</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 为了让女朋友学 AI，给她买了 MacBook Pro，开了每月 200 刀的 GPT，她却说我一直在压迫她</title><link>https://www.v2ex.com/t/1232427#reply82</link><description>&lt;p&gt;最近半年，我对 AI 非常的有热情&lt;/p&gt;
+&lt;p&gt;基本每天都在试新模型、看项目、折腾 Agent 。前段时间自己做的一个开源项目 &lt;a href="https://github.com/tt-a1i/archify" rel="nofollow"&gt;Archify&lt;/a&gt;，也意外的火了，快 1 万 star 了，还拿到了赞助&lt;/p&gt;
+&lt;p&gt;可能正反馈来得太强，让我越来越确信，AI 以后不是少数程序员玩的工具，而会像搜索、Office 一样，成为很多工作的基础能力，一定会是未来的趋势&lt;/p&gt;
+&lt;p&gt;然后我就想着能不能带着女朋友一起学一下，她是非互联网行业的，基本用不到啥 AI ，工作也比较清闲&lt;/p&gt;
+&lt;p&gt;于是我给她买了 MacBook Pro ，又开了每月 200 刀的 GPT Pro&lt;/p&gt;
+&lt;p&gt;电脑是 2 月份买的，然后这期间一直在敦促她去用 AI 做自己喜欢的东西，当然她也没怎么搞&lt;/p&gt;
+&lt;p&gt;然后最近，我开玩笑说我们也可以一块搞我的项目，她下班早，3 点多下班，没啥事也可以帮我搞搞，然后她就说我压迫她，我也非常的苦恼，因为我觉得我的本意也是为了她好&lt;/p&gt;
+&lt;p&gt;跟女朋友认识好几年了，认识的时候我是大专，她是双一流，上海编制，工作轻松，下午三点多就下班了，我也是想着她时间多，也没啥事，不如学学 AI ，但是经过这个事我也是挺苦恼的，我觉得我也没有强迫她，但是可能确实她不太喜欢这些，我也在反思，V 友怎么看&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:33:57 GMT</pubDate><guid>45326a4ea8786c07a8a7335972182b55</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 烧纸云，这次估计是真凉了</title><link>https://www.nodeloc.com/t/topic/102305</link><description>RT，刚收到消息，如下： 
+【重要公告】LIME NETWORK 暂停营业及数据迁移通知 
+尊贵的 LIME NETWORK 用户： 
+感谢大家一直以来对 LIME NETWORK 的支持与信任。 
+非常遗憾地通知大家，由于上游服务账单成本&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 03:32:56 GMT</pubDate><guid>nodeloc-102305</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [VPS] 移动机房托管带宽不达标咋办</title><link>https://www.v2ex.com/t/1232426#reply2</link><description>&lt;p&gt;公司托管了一台服务器，移动机房
+号称 100M 带宽，但是晚上，从联通和电信的网络访问，就几百 k 的下载速度&lt;/p&gt;
+&lt;p&gt;腾讯云上的服务器下载倒是能满足&lt;/p&gt;
+&lt;p&gt;这种他们不认，有什么办法吗？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:31:10 GMT</pubDate><guid>cbeaa51786fdd4b92add2ed24251b933</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了个 AI 实时换脸的网站，终于有了第一个订单</title><link>https://www.v2ex.com/t/1232425#reply0</link><description>&lt;p&gt;把 AI 实时换脸做成了一个独立站 &lt;a href="https://livefaceswap.ai/zh" rel="nofollow"&gt;https://livefaceswap.ai/zh&lt;/a&gt; ，刚才来了第一个付费用户，感动。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="the first order" class="embedded_image" rel="noreferrer" src="https://r2.livefaceswap.ai/livefaceswap-ai/article-images/1805668d1d402ff6ee4f09767898a681981b31f0fe2aa35e62974a1a1b8812d2.png" /&gt;&lt;/p&gt;
+&lt;br /&gt;
+之前只接入国外的模型，一小时几十美金，只能免费体验 30 秒，现在接入了国内的 xmax 模型，成本能在 10 美金以下，可以直接体验 3 分钟了
+&lt;br /&gt;
+&lt;p&gt;网站效果如下，有兴趣可以体验下，新用户免费 3 分钟：
+&lt;img alt="live face swap 在线对比" class="embedded_image" rel="noreferrer" src="https://r2.livefaceswap.ai/livefaceswap-ai/article-images/dfeede40fa9c128067a7df392abd0f4c6d984b24a86f3c0b7e8c0f7a355eb207.png" /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;并且开发了 Windows 客户端，这块我是一点不懂，让 codex 全栈自研的，居然界面还不错。&lt;/p&gt;
+&lt;p&gt;现在实时换脸的 AI 模型没几家，价格都不算低，之后应该会进一步下降。如果有需要订阅进一步体验的同学，私聊或者邮件我，提供 7 折优惠券。&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:31:09 GMT</pubDate><guid>aa56705285bf07de208130e28d13b74e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] vibe coding 时，怎么设计出自己满意的前端 UI？</title><link>https://www.v2ex.com/t/1232424#reply3</link><description>我现在设计前端，都是找到自己喜欢的目标网站/app 参考设计，如果没有现成的网站或者 app 可以参考，就去小红书上看别人分享的设计图;然后让大模型参考着去实现，当然了大模型只能实现个大概，很多细节还是需要自己一点点去打磨（当然了还是 vibe coding 打磨）。&lt;br /&gt;    但是总有一些页面是自己从来没见过类似的设计，没有可参考的，这种直接 vide coding 出来的很可能不满意，可是我又无法明确告诉 AI 我想要怎样的效果，我只知道这个效果不满意，却说不出来我想要怎样的设计。&lt;br /&gt;    遇到这种问题怎么解决的？</description><pubDate>Thu, 06 Aug 2026 03:27:37 GMT</pubDate><guid>81930ae349721f544e11d7a909d6441a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [酷工作] [上海] [国企] 安全工具运维工程师（Senior System Support Engineer）- 云上艾珀（AIPO）</title><link>https://www.v2ex.com/t/1232423#reply1</link><description>&lt;p&gt;云上艾珀（贵州）技术有限公司是贵州大数据产业集团有限公司的全资子公司，是云上贵州公司与苹果公司合作开展 iCloud 业务的运营主体。主要负责 iCloud 在中国大陆境内的运营管理，包括 iCloud 数据中心运营，iCloud 业务拓展，iCloud 服务交付，用户售后服务等。&lt;/p&gt;
+&lt;p&gt;此岗位设置在云上艾珀信息安全中心内，主要负责公司信息安全团队工具的日常运维和支持工作。&lt;/p&gt;
+&lt;h2&gt;岗位职责&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;6 月 23 日&lt;/strong&gt;：提交高才通申请&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;7 月 23 日&lt;/strong&gt;：收到补件通知&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;7 月 31 日&lt;/strong&gt;：正式批复&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;（悲剧） 8 月初才看到结果&lt;/strong&gt; → 白白浪费 &lt;strong&gt;5 天&lt;/strong&gt;
-&lt;img alt="批复截图" class="embedded_image" rel="noreferrer" src="https://cdn.nodeimage.com/i/IPZBpp1n7wIICUEZRQbjqXbYLElvt2SS.webp" /&gt;&lt;/li&gt;
+&lt;li&gt;负责安全工具的可靠性工程(SRE)体系建设，制定并维护可用性、容量规划、监控告警及容灾演练等运维基线；管理 SIEM/日志分析平台、入侵检测与防御系统(IDS/IPS)、数据防泄漏(DLP)等关键安全基础设施，保障其高可用性、数据完整性与性能。&lt;/li&gt;
+&lt;li&gt;主导安全工具运维方向的任务规划、分发与进度跟踪，协调多人并行工作流，确保交付质量；负责系统、网络及应用层面的复杂故障排查，通过根因分析(RCA)定位问题并推动彻底解决；参与 On-Call 轮值，承担重大或升级技术问题的应急处理和资源协调。&lt;/li&gt;
+&lt;li&gt;运用 Python 、Bash 、Go 等编程语言及 Ansible 、CI/CD 流水线、SOAR 等自动化与编排工具，持续优化安全工具运维流程，实现日常操作的自动化、标准化，提升运维效率与系统自愈能力。&lt;/li&gt;
+&lt;li&gt;积极参与安全运营中心（ SOC ）关键职能，提供专业见解，协同团队提升整体安全防御能力。&lt;/li&gt;
+&lt;li&gt;高效完成上级交办的其他任务，积极配合团队应对突发安全专项或保障工作。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2&gt;😅 吐槽一下&lt;/h2&gt;
-&lt;p&gt;今天上班和同事聊天才发现批复已经下来了……
-整整晚看了 5 天，直接血亏。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;🪪 HKID 预约问题&lt;/h2&gt;
-&lt;p&gt;结果一查香港身份证预约：&lt;/p&gt;
-&lt;p&gt;👉 &lt;strong&gt;最早时间：9 月 24 号&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;但我这边：&lt;/p&gt;
-&lt;p&gt;👉 &lt;strong&gt;9 月初就要开学&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;= 完全不可能为了办个 HKID 再飞一趟香港 😅
-&lt;img alt="预约截图" class="embedded_image" rel="noreferrer" src="https://cdn.nodeimage.com/i/IFiDVxT2qUPyLhalVJ3aqnqH6U4AXJno.webp" /&gt;&lt;/h2&gt;
-&lt;h2&gt;🤖 自救方案&lt;/h2&gt;
-&lt;p&gt;下午直接开始干活：&lt;/p&gt;
+&lt;h2&gt;任职资格&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;写浏览器脚本&lt;/li&gt;
-&lt;li&gt;自动刷新预约页面&lt;/li&gt;
-&lt;li&gt;抢更早时间 slot&lt;/li&gt;
+&lt;li&gt;具有近 5 年内在信息技术或相关领域具备丰富的实践工作经验。至少具有 3 年以上大规模业务生产环境下的 SRE 、业务生产运维或安全工程领域工作的丰富经验。&lt;/li&gt;
+&lt;li&gt;信息安全、计算机科学与技术、工程学相关本科学历或同等专业背景。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;目前状态：&lt;/p&gt;
-&lt;p&gt;👉 &lt;strong&gt;还在疯狂刷…&lt;/strong&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;🧠 教训&lt;/h2&gt;
+&lt;h2&gt;技能要求&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;一定要&lt;strong&gt;每天查申请状态&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;香港这种预约系统 = &lt;strong&gt;拼手速 + 拼运气&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;提前写脚本可能是唯一解&lt;/li&gt;
+&lt;li&gt;熟悉 SRE 体系及高可用分布式架构，深入掌握 Linux 内核、TCP/IP 协议及主流虚拟化技术（ VMware 、Hyper-V 、Proxmox VE 等）。&lt;/li&gt;
+&lt;li&gt;具备故障排查与容量规划能力，熟悉 ITIL 流程及 SIEM/SOAR 等安全工具，善于通过文档固化技术成果。&lt;/li&gt;
+&lt;li&gt;掌握 Python 、Bash 、Go 等至少一种编程语言，能独立开发自动化工具，提升运维效率。&lt;/li&gt;
+&lt;li&gt;具备出色的多任务协调能力与自驱力，责任心强，英语可作为工作语言，适应跨文化的工作场景。&lt;/li&gt;
+&lt;li&gt;有云原生（ K8s ）经验、云安全背景或持 CISP 、CISAW 、CISSP 、
+RHCE 、CKA 等认证者优先。&lt;/li&gt;
+&lt;li&gt;具备良好政治素养与全局意识，责任心强，富有团队协作精神，乐于接受新事物、适应各类变化。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;如果有人最近也在抢 HKID 预约，可以交流一下脚本思路 or 时间刷新规律 👀&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 16:14:13 GMT</pubDate><guid>53a96c164dea3f19301fc608cb83e9be</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] AnyCrawl: 基于 TS 的高性能爬虫，用于将任意 Web 转为干净的数据喂给 Agent</title><link>https://www.v2ex.com/t/1232326#reply1</link><description>&lt;p&gt;求 Star：&lt;a href="https://github.com/any4ai/AnyCrawl" rel="nofollow"&gt;https://github.com/any4ai/AnyCrawl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;主打这些功能：&lt;/p&gt;
+&lt;h2&gt;薪资待遇&lt;/h2&gt;
+&lt;p&gt;40k*13 ，会综合考虑现有薪资水平和面试情况做调整。965 。&lt;/p&gt;
+&lt;h2&gt;联系方式&lt;/h2&gt;
+&lt;p&gt;&lt;a href="mailto:stadium7052@outlook.com"&gt;stadium7052@outlook.com&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:27:16 GMT</pubDate><guid>041e451d7b0e9504d46e16d20102b280</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [JetBrains] JetBrains 系列 IDE 在 MacOS 上的黑屏问题这么多版本还没有修复</title><link>https://www.v2ex.com/t/1232422#reply1</link><description>ide 工具重启，比如安装某些插件需要重启，如果 ide 此时有全屏的窗口，重启后有概率会有一个黑屏全屏页面,之前出现这个问题我都是完全退出 ide 再启动，今天发现换了新电脑，安装的最新版 idea 还是有这个 bug ，不想重启发现在任务列表把黑屏窗口拖出去也可以移除黑屏，不知道会有啥问题</description><pubDate>Thu, 06 Aug 2026 03:27:02 GMT</pubDate><guid>27d6ddc4173bcac317028c927d53cf78</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Hermes Agent 实战：接入微信两周后，我留下了这 4 个后台任务</title><link>https://www.nodeloc.com/t/topic/102304</link><description>Hermes Agent 接进微信两个星期后，我使用最多的功能居然是最不起眼的后台定时任务。 
+这套任务已经在微信里提醒过我三次，三次都起到了很重要的作用，有一次还挽救了我一个即将到期的VPS，所以我才想起来写这篇文章分享给大家。 
+那就是&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 03:26:23 GMT</pubDate><guid>nodeloc-102304</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [推广] Zooproxy 免费送动态住宅 IP 流量，原生独享 IP 只要几块钱，先试后用</title><link>https://www.v2ex.com/t/1232421#reply0</link><description>&lt;p&gt;动态住宅 ip 流量用不完，免费送给大家！！！&lt;/p&gt;
+&lt;p&gt;邀请码：veexfwaif&lt;/p&gt;
+&lt;p&gt;注册即刻兑换：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zooproxy.com/?kwd=LQ-v2ex" rel="nofollow"&gt;https://zooproxy.com/?kwd=LQ-v2ex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FPW4-UWBG-8HT2&lt;/p&gt;
+&lt;p&gt;9BT9-67BS-QBJ4&lt;/p&gt;
+&lt;p&gt;S7XM-ZZVV-RYTA&lt;/p&gt;
+&lt;p&gt;VGZ2-3A6D-MWD2&lt;/p&gt;
+&lt;p&gt;W34X-QB3W-TVUH&lt;/p&gt;
+&lt;p&gt;DNDN-MB47-597V&lt;/p&gt;
+&lt;p&gt;HQ76-744N-VECR&lt;/p&gt;
+&lt;p&gt;M3CC-2WS5-Q2VY&lt;/p&gt;
+&lt;p&gt;D74V-WDHK-UZ69&lt;/p&gt;
+&lt;p&gt;8M6T-UZVA-42UV&lt;/p&gt;
+&lt;p&gt;没抢到的宝子可以将注册的邮箱打在评论区&lt;/p&gt;
+&lt;p&gt;也可以 &lt;a href="https://t.me/Zooproxy7" rel="nofollow"&gt;https://t.me/Zooproxy7&lt;/a&gt; 联系这个&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:25:22 GMT</pubDate><guid>46508f1c97bc1fd2ae851423c2dc90e8</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 支付宝小程序 有没有办法去除广告</title><link>https://www.v2ex.com/t/1232420#reply0</link><description>用支付宝小程序给电动车扫码充电，每次都弹开屏广告，很烦</description><pubDate>Thu, 06 Aug 2026 03:25:01 GMT</pubDate><guid>1486e71da3f37627c64ec86634922dca</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] “打工人三件套”全面涨价</title><link>https://www.v2ex.com/t/1232419#reply6</link><description>错过 618 电商促销活动，现在一只想换个手机，看到最近的手机、电脑、电动自行车刚需产品全面涨价，成本最终转嫁至普通消费者。奈何看了一下自己的手机，想想，换个电池继续使用着吧。</description><pubDate>Thu, 06 Aug 2026 03:24:21 GMT</pubDate><guid>5ada4c18442d9dc3d5b91cd1abc0ac42</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 用 AI 写项目，面对需求改动，如何交流能降低改出新 bug 的概率？</title><link>https://www.v2ex.com/t/1232418#reply2</link><description>&lt;p&gt;最近用 AI 做个游戏的小项目，我是服务端，所以不太熟悉客户端（ web 代码），主要就是看看服务端代码、试玩、调整配置表。&lt;/p&gt;
+&lt;p&gt;最初是规划好技术栈、二十条 todo list ，给 AI 让它做，然后效果还不错，它甚至会自己写单元测试，代码质量相当可以。&lt;/p&gt;
+&lt;p&gt;但我发现，随着自己有更多想法，对 AI 提需求之后，新的代码更容易出现 bug——主要就是开始对老需求、老代码出现不完备、互斥的情况。&lt;/p&gt;
+&lt;p&gt;这个问题大家有遇到吗，请教平时是怎么解决/预防的呢？&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:19:09 GMT</pubDate><guid>94551bc927ae7455b5ebb1ecf25d0da5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 看视频的设备选择</title><link>https://www.v2ex.com/t/1232417#reply4</link><description>&lt;p&gt;因为不想买电视端会员，用现成的 pc 端视频会员，所以打算搞个小主机接电视，目前有三个选项&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;搜索引擎抓取：支持多个搜索引擎，批量操作友好&lt;/li&gt;
-&lt;li&gt;网页内容提取：精准抓取单页内容&lt;/li&gt;
-&lt;li&gt;整站爬取：完整遍历采集网站内容&lt;/li&gt;
-&lt;li&gt;性能强劲：支持多线程/多进程&lt;/li&gt;
-&lt;li&gt;批量任务：稳定高效处理海量任务&lt;/li&gt;
-&lt;li&gt;AI 智能解析：用大语言模型（ LLM ）从网页提取结构化数据（ JSON 格式）&lt;/li&gt;
-&lt;li&gt;完美适配 LLM：集成简单，开箱即用&lt;/li&gt;
-&lt;/ol&gt;</description><pubDate>Wed, 05 Aug 2026 16:14:13 GMT</pubDate><guid>9e4a86a7fc7a7b8527767876e46cfdb4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 利用精确时间轴精确识别日语字幕</title><link>https://www.v2ex.com/t/1232325#reply9</link><description>&lt;ol&gt;
-&lt;li&gt;之前尝试过各种本地大模型识别日语字幕，但是准确率都不够满意，尤其是时间轴很混乱，没法正常用。&lt;/li&gt;
-&lt;li&gt;时隔数月，突然想到，时间轴如果是确定的，那把音频切割开来，一句一句识别，加上 Codex 根据本地识别结果和中文翻译再联网 review ，可能可行。&lt;/li&gt;
-&lt;li&gt;本地用 whipser-v3 做初步识别，置信度低的找 whisper-v2 再次识别，随后让 Codex 对有争议的结果进行判断和联网查询。最后仍然会有个别结果不确定需要人工确认，但一集动漫一般就几句。&lt;/li&gt;
-&lt;li&gt;之所以要这么做是因为一些动漫只有精确的中文字幕，但网上公开的日语字幕，例如 &lt;a href="http://jimaku.cc" rel="nofollow"&gt;jimaku.cc&lt;/a&gt; 下载的，不太符合中国人的使用习惯，经常将 2 句合并到一起，而且有不少内部换行。&lt;/li&gt;
-&lt;li&gt;另外，Bang Dream 的第二季和第三季我没找到任何日语字幕，中文字幕是有的，利用这个我今天制作了几集双语字幕，准确率接近 100%了。&lt;/li&gt;
-&lt;li&gt;所以大家可以考虑用这个方法复活自己喜欢的动漫的日语字幕了，大部分动漫还是有外挂中文字幕的。&lt;/li&gt;
-&lt;/ol&gt;</description><pubDate>Wed, 05 Aug 2026 15:24:23 GMT</pubDate><guid>c084eead5f0dcae546181c13cf908975</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[Level1Techs Forum] Proxmox CEPH</title><link>https://forum.level1techs.com/t/proxmox-ceph/253581</link><description>&lt;p&gt;Hi&lt;br /&gt;
-I just wanted to share a stretch cluster we have finished building, hoping it’s useful for someone:&lt;br /&gt;
-Platform:        Dell PowerEdge R7725&lt;br /&gt;
-Hypervisor:      Proxmox VE 9.2.4&lt;br /&gt;
-Cluster:         10 node HA cluster&lt;/p&gt;
-&lt;p&gt;Storage:&lt;br /&gt;
-Backend:       Ceph stretched cluster&lt;br /&gt;
-OSDs:          60 NVMe OSDs&lt;br /&gt;
-Capacity:      210 TiB raw / 171 TiB usable&lt;br /&gt;
-Replication:   4-way write replication (2 copies at each site)&lt;br /&gt;
-Topology:      Dual-site stretch over diverse dual 100G dark fibre&lt;br /&gt;
-Distance:      ~10 miles between sites&lt;br /&gt;
-Witness:       Dedicated quorum witness node&lt;br /&gt;
-Performance:   ~0.05ms average OSD commit latency&lt;/p&gt;
-&lt;p&gt;Compute:&lt;br /&gt;
-CPU:           2 x AMD EPYC 9255 (48 cores / 96 threads)&lt;br /&gt;
-Memory:        512 GiB per node&lt;/p&gt;
-&lt;p&gt;Network Fabric:&lt;br /&gt;
-Ceph Cluster:  2 x 100GbE dedicated backend network&lt;br /&gt;
-OSD replication and recovery traffic&lt;/p&gt;
-&lt;p&gt;Ceph Public:   2 x 100GbE dedicated storage access network&lt;br /&gt;
-VM/client I/O&lt;/p&gt;
-&lt;p&gt;Corosync:      2 x 25GbE dedicated cluster communication network (2 networks)&lt;/p&gt;
-&lt;p&gt;Switching:     Redundant MLAG/LACP Extreme Networks (Cut-through enabled)&lt;/p&gt;
-&lt;p&gt;Architecture:&lt;br /&gt;
-Hyperconverged Proxmox + Ceph platform&lt;br /&gt;
-Dual-site stretched storage architecture&lt;br /&gt;
-Independent storage and cluster networks&lt;br /&gt;
-Designed for site-level resilience&lt;/p&gt;
-&lt;p&gt;CrystalDiskMark IOPS from a windows VM:&lt;br /&gt;
-95k read, 37k write for 4k&lt;br /&gt;
-4027MB/s read, 1902MB/s write&lt;/p&gt;
-&lt;p&gt;Ceph Performance Summary&lt;br /&gt;
-4MB Sequential:&lt;br /&gt;
-Write: 9.0 GB/s&lt;br /&gt;
-Read: 9.7 GB/s&lt;br /&gt;
-4KB Workload:&lt;br /&gt;
-Write: 20.4k IOPS&lt;br /&gt;
-Read: 54.8k IOPS&lt;/p&gt;
-&lt;p&gt;Latency:&lt;br /&gt;
-4KB Read: 0.29 ms&lt;br /&gt;
-4KB Write: 0.78 ms&lt;br /&gt;
-OSD commit: ~0.05 ms&lt;/p&gt;
-&lt;p&gt;Importing from VMWare 1GB/min, source performance constraint seems to be CPU&lt;br /&gt;
-(80% CPU on the vmware side, with 1 VM importing)&lt;/p&gt;
-&lt;p&gt;Veeam, and PBS for backup.&lt;br /&gt;
-Veeam restoring VMware VMs is around 3GB/min…&lt;/p&gt;
-&lt;p&gt;Advice welcome &lt;img alt=":slight_smile:" class="emoji" height="20" src="https://forum.level1techs.com/images/emoji/twitter/slight_smile.png?v=15" title=":slight_smile:" width="20" /&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;3 posts - 3 participants&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/proxmox-ceph/253581"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 15:16:49 GMT</pubDate><guid>50e592d9fbb843e03c24aac3ebb34496</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[V2EX] [分享创造] 各位都 vibe 了哪些有趣的应用？</title><link>https://www.v2ex.com/t/1232324#reply29</link><description>&lt;p&gt;订阅 chatgpt plus 和 claude pro 有蛮久了，我 vibe 的应用先说 3 个吧，都是 mac 平台的：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;又一款菜单栏的系统运行占用显示面板&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;swift ，支持显示 cpu 、gpu 、电池温度、高温提醒、电量、保持唤醒、进程 cpu&amp;amp;gpu&amp;amp;内存占用查看、杀进程、端口占用查看等功能。&lt;/p&gt;
-&lt;p&gt;一开始需求就是希望能在菜单栏查看进程和端口占用，然后杀进程，后面慢慢又引入了其它乱七八糟的功能，但总体还是保持了视觉上的简洁和克制，没有追求 atoll 和 vorssaint 那样做到 all in one ，这俩现在越来越复杂了，atoll 我都卸载了，换了另一个 here island 。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;又一个 easytier gui&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;rust+swift ，视觉上原生更好看，支持一次输入密码，开机启动自动组网，用的 cloudflarwe workers 搭建的个人共享节点做 p2p ，这样在外面随时可以 termux 访问 mac ，哪怕 mac 重启后，不用怕忘了。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;一款手游的自动化助手&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;maafw+maafw-go+mxu （ tauri ），用来解放双手的，这么多年靠手打太累了。&lt;/p&gt;
-&lt;p&gt;以上均是自用，后续都会开源的，实现过程也没少参考其它开源实现&lt;/p&gt;
-&lt;p&gt;ai 真好用啊，以前没时间搞的，现在交给 ai ，真的很方便，当然，一想到每个月这么多大洋交出去了，实际早就可以买个买断制很好用的产品了（比如最近买了 launchos 就很丝滑），但还是觉得有些应用 diy 更适合自己&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 15:15:49 GMT</pubDate><guid>e8a988d3188e5f11f5aca75375259f46</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 这域名有点抽象</title><link>https://www.nodeloc.com/t/topic/102253</link><description>LuTu.be
-是什么意思我觉得我不需要解释（） 
-还没注册，我在想如果我注册的话我人设会不会崩（</description><pubDate>Wed, 05 Aug 2026 15:03:59 GMT</pubDate><guid>nodeloc-102253</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [产品发布] 做了一个停车优惠信息汇总的小程序</title><link>https://www.v2ex.com/t/1232323#reply0</link><description>&lt;p&gt;&lt;a href="https://picui.ogmua.cn/s1/2026/08/05/6a72d7adb77bb.webp" rel="nofollow"&gt;https://picui.ogmua.cn/s1/2026/08/05/6a72d7adb77bb.webp&lt;/a&gt;
-搜 [停车小智]
-目前主要是武汉有数据，其他地方的数据各位可以小程序里提交、推荐。&lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 14:49:31 GMT</pubDate><guid>63bccfa577984f0a85c36589c55d0686</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
+&lt;li&gt;1135g7 迷你主机-&amp;gt;iris xe 核显，核显能力应该三者最强，价格第二贵&lt;/li&gt;
+&lt;li&gt;n100 小主机-&amp;gt;uhd 核显，最便宜&lt;/li&gt;
+&lt;li&gt;mac mini m1-&amp;gt;功耗最低，被动散热，但是不支持 av1 解码，价格也最贵
+不知道还要其他推荐没&lt;/li&gt;
+&lt;/ol&gt;</description><pubDate>Thu, 06 Aug 2026 03:18:47 GMT</pubDate><guid>8a3b64fff7d98da55d63ed515a764b4c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 一！定！不！要！搞！Pixel!白嫖</title><link>https://www.nodeloc.com/t/topic/102303</link><description>rt 
+Google最近连封我两个号，仔细想了想发现这两个号都是在搞完Pixel白嫖之后封号的。 
+所以，一定不要搞Pixel白嫖!!! 
+一定不要！！！！
+如果你的Google账号突然说什么“为了您的Google账号安全无虞叽里呱啦的”，&amp;hellip;</description><pubDate>Thu, 06 Aug 2026 03:13:19 GMT</pubDate><guid>nodeloc-102303</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [问与答] 日常吐槽社保</title><link>https://www.v2ex.com/t/1232415#reply1</link><description>知道会调整基数，没想到一下子会少那么多，一个月到手，直接少了 1500 ，一年就少小 2W ，一想到这钱用来去养那群衙门混子，心里及其不爽，如果是用来给干实事的心理倒平衡，但是如今社会上这种又有多少，真他妈操蛋</description><pubDate>Thu, 06 Aug 2026 03:12:17 GMT</pubDate><guid>e0cef7edf54ea7279014c8b793f67cc4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] iOS 梯子突然都用不了了，大家有遇到类似情况吗？求推荐稳定的~</title><link>https://www.v2ex.com/t/1232414#reply6</link><description>&lt;p&gt;RT 。&lt;/p&gt;
+&lt;p&gt;从昨晚开始，我这边 iOS 端的梯子就突然都无法使用了。之前这个梯子差不多稳定用了 5 年，但今年以来大家都知道的陆续出现了各种问题。&lt;/p&gt;
+&lt;p&gt;目前的情况是：&lt;/p&gt;
+&lt;p&gt;iOS 端彻底挂了；
+其他设备还能勉强使用；
+软路由目前也不太正常；
+换了另一个梯子，iOS 仍然无法使用；
+反倒是备用梯子 iOS 还能用。&lt;/p&gt;
+&lt;p&gt;想问一下大家有没有遇到类似情况？
+另外，也想找一个相对稳定、适合长期使用的梯子，还请推荐一下，感谢！~&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:10:22 GMT</pubDate><guid>bb7d1607fa0143acb2c2075235674f54</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
