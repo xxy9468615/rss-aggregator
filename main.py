@@ -489,6 +489,9 @@ def build_rss_xml(cat_key: str) -> str:
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(rss, encoding="unicode")
 
 
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/xxy9468615/rss-aggregator/main/feeds"
+
+
 def build_opml_xml() -> str:
     """Generate an OPML document containing all categories and feeds."""
     opml = Element("opml", version="2.0")
@@ -499,21 +502,17 @@ def build_opml_xml() -> str:
     body = SubElement(opml, "body")
     for cat_key, cat_cfg in cfg["sources"].items():
         cat_outline = SubElement(body, "outline", text=cat_cfg["name"], title=cat_cfg["name"])
-        for feed in cat_cfg.get("feeds", []):
-            if feed.get("disabled"):
-                continue
-            feed_name = feed.get("name", "")
-            feed_url = feed.get("url", "")
-            if feed_url:
-                SubElement(
-                    cat_outline,
-                    "outline",
-                    type="rss",
-                    text=feed_name,
-                    title=feed_name,
-                    xmlUrl=feed_url,
-                    htmlUrl=feed_url,
-                )
+        output_feed = cat_cfg.get("output_feed", f"{cat_key}.xml")
+        agg_url = f"{GITHUB_RAW_BASE}/{output_feed}"
+        SubElement(
+            cat_outline,
+            "outline",
+            type="rss",
+            text=cat_cfg["name"],
+            title=cat_cfg["name"],
+            xmlUrl=agg_url,
+            htmlUrl=agg_url,
+        )
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(opml, encoding="unicode")
 
 
