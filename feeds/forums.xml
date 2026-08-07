@@ -1,620 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Fri, 07 Aug 2026 06:36:19 GMT</lastBuildDate><item><title>[NodeSeek] CCTV13[朝闻天下]全球开源模型下载量 中国模型居榜首</title><link>https://www.nodeseek.com/post-862101-1</link><description>视频截图位置：1:49视频地址：https://tv.cctv.com/2026/08/02/VIDEZJoabCvJXzXSA2Jrx5d7260802.shtml这是啥高大上的软件啊？有知道的吗？都上央视新闻了，目测马上全民普及了</description><pubDate>Fri, 07 Aug 2026 06:35:57 GMT</pubDate><guid>bc425e1183f0c0382d911c916bf5af69</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 去水印的在线平台有没有好用的，目前感觉 dewatermark不错，寻求类似的对比</title><link>https://www.nodeseek.com/post-862100-1</link><description /><pubDate>Fri, 07 Aug 2026 06:35:17 GMT</pubDate><guid>9fee8e1d0d8ebc009a41e485bed3f808</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出个dedirock 7刀</title><link>https://www.nodeseek.com/post-862099-1</link><description>玩够了，60出，ns邮箱，</description><pubDate>Fri, 07 Aug 2026 06:35:03 GMT</pubDate><guid>c70a3f15c1eee1b121708ed6caad9a91</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [程序员] WorkBuddy 是真好用</title><link>https://www.v2ex.com/t/1232713#reply0</link><description>&lt;p&gt;一开始用的动机就是现在有送的额度，而且用 hy 模型还免费，不消耗额度&lt;/p&gt;
-&lt;p&gt;这几天就在重度使用&lt;/p&gt;
-&lt;p&gt;现在的感觉是用过的这类工具里面最好用的&lt;/p&gt;
-&lt;p&gt;个人最喜欢的几点：&lt;br /&gt;
-1 ，内置的专家团丰富，都是多智能体协作，我用的几个效果都很好，远超预期。这几天基本上全是在用专家和专家团&lt;br /&gt;
-2 ，UI 干净，对于我来说布局很清晰也很合理，没啥理解成本，根据选择的文件夹进行归类点赞，这里我就不点名批评某些应用了，都平铺在一起，还得我自己分辨&lt;br /&gt;
-3 ，生态对接很简单。比如微信小程序能直接跟本地应用同步，扫个码就行。做图标的时候对接另一个平台也是点一下就举行&lt;/p&gt;
-&lt;p&gt;来做个自来水，趁现在有优惠，感受一下&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:34:43 GMT</pubDate><guid>395841f5a7e9674ec015436802641e06</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] Opencode 又开始限流了？</title><link>https://www.nodeseek.com/post-862098-1</link><description>今上午就有一段时间断链现在又断连了，大佬们遇到了吗？</description><pubDate>Fri, 07 Aug 2026 06:33:57 GMT</pubDate><guid>f487c20ee6b44cba156f58c513679bc1</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收】+80 收VMISS US.LA.TRI.Basic 4.5 月付 207段</title><link>https://www.nodeseek.com/post-862097-1</link><description>如题，收到后剩余价值出VMISSUS.LA.CMIN2.Basic</description><pubDate>Fri, 07 Aug 2026 06:33:56 GMT</pubDate><guid>adbf9c7da09cdbc268250c973e6dd605</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 甲骨文春川的ARM现在是所有配置都需要下车吗？</title><link>https://www.nodeseek.com/post-862095-1</link><description>目前看各种消息说春川的ARM所有配额都无了，我的春川原两台2+12已经删了一台了，现在另一台也得删了吗？</description><pubDate>Fri, 07 Aug 2026 06:33:31 GMT</pubDate><guid>94d21f9c9007a3f92c4528d475c04e33</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 问下咸鱼频繁被下架商品会封号吗？</title><link>https://www.nodeseek.com/post-862094-1</link><description>rt。可能接了几个退款，说服务期内无法使用较多把我的商品下架了。</description><pubDate>Fri, 07 Aug 2026 06:33:10 GMT</pubDate><guid>2a474d4485a051db81ba4ce592c7b301</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[Level1Techs Forum] NVIDIA A10G in Octominer X12 (or "putting enterpise GPUs where they don't belong")</title><link>https://forum.level1techs.com/t/nvidia-a10g-in-octominer-x12-or-putting-enterpise-gpus-where-they-dont-belong/253642</link><description>&lt;p&gt;I recently had an adventure getting the NVIDIA A10G to work in an Octominer X12ULTRA, a B250-based cryptomining rig repurposed for LLMs, and I thought I’d share that experience to save the next person 2 weeks of banging their head into this problem. It might work for slotting other enterprise cards that ask for huge BAR space into systems that can’t handle this ask.&lt;/p&gt;
-&lt;p&gt;The A10G requests 32GB of BAR space for itself and additional space for its virtual functions as it’s intended for virtualization via SR-IOV, all of which the B250 is unprepared to deal with. The allocation thus fails and in turn causing the NVIDIA driver to fail with the below. There seems to be no way to configure the card to ask for less from the start (the similar A40 can when used in display mode instead of in compute mode, but this cannot be configured for A10/A10G). My platform doesn’t natively support ReBAR, so I added ReBarUEFI to the BIOS which didn’t initially seem to help, but probably gave me working ReBAR support which it turned out would be useful later; the box also POSTed way faster after I did that so was useful in any event.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="lang-auto"&gt;[    0.295080] pci 0000:02:00.0: [10de:2237] type 00 class 0x030200 PCIe Endpoint
-[    0.295107] pci 0000:02:00.0: BAR 0 [mem 0xdd000000-0xddffffff]
-[    0.295129] pci 0000:02:00.0: BAR 1 [mem 0x2000000000-0x27ffffffff 64bit pref]
-[    0.295152] pci 0000:02:00.0: BAR 3 [mem 0x2800000000-0x2801ffffff 64bit pref]
-[    0.295214] pci 0000:02:00.0: Enabling HDA controller
-[    0.295327] pci 0000:02:00.0: PME# supported from D0 D3hot
-[    0.295399] pci 0000:02:00.0: VF BAR 0 [mem 0x00000000-0x0003ffff]
-[    0.295403] pci 0000:02:00.0: VF BAR 0 [mem 0x00000000-0x007fffff]: contains BAR 0 for 32 VFs
-[    0.295425] pci 0000:02:00.0: VF BAR 1 [mem 0x00000000-0x7fffffff 64bit pref]
-[    0.295429] pci 0000:02:00.0: VF BAR 1 [mem 0x00000000-0xfffffffff 64bit pref]: contains BAR 1 for 32 VFs
-[    0.295445] pci 0000:02:00.0: VF BAR 3 [mem 0x00000000-0x01ffffff 64bit pref]
-[    0.295449] pci 0000:02:00.0: VF BAR 3 [mem 0x00000000-0x3fffffff 64bit pref]: contains BAR 3 for 32 VFs
-[    0.295808] pci 0000:02:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:1b.7 (capable of 252.048 Gb/s with 16.0 GT/s PCIe x16 link)
-
-...
-
-[    0.369107] pci 0000:00:1b.0: PCI bridge to [bus 01]
-[    0.369119] pci 0000:00:1b.0:   bridge window [mem 0xde000000-0xdeffffff]
-[    0.369128] pci 0000:00:1b.0:   bridge window [mem 0x2834000000-0x2839ffffff 64bit pref]
-[    0.369214] pci 0000:02:00.0: VF BAR 1 [mem size 0x1000000000 64bit pref]: can't assign; no space
-[    0.369220] pci 0000:02:00.0: VF BAR 1 [mem size 0x1000000000 64bit pref]: failed to assign
-[    0.369227] pci 0000:02:00.0: VF BAR 3 [mem size 0x40000000 64bit pref]: can't assign; no space
-[    0.369231] pci 0000:02:00.0: VF BAR 3 [mem size 0x40000000 64bit pref]: failed to assign
-[    0.369236] pci 0000:02:00.0: VF BAR 0 [mem size 0x00800000]: can't assign; no space
-[    0.369241] pci 0000:02:00.0: VF BAR 0 [mem size 0x00800000]: failed to assign
-
-...
-
-[    7.269481] NVRM: This PCI I/O region assigned to your NVIDIA device is invalid:
-               NVRM: BAR0 is 0M @ 0x0 (PCI:0000:02:00.0)
+<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Fri, 07 Aug 2026 07:54:15 GMT</lastBuildDate><item><title>[NodeSeek] [NQ留档]Neburst奶爸 JP S3N 4C8G 月付89.9刀</title><link>https://www.nodeseek.com/post-862247-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m23.129.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Fri, 07 Aug 2026 07:53:38 GMT</pubDate><guid>0076ffe91b61c96fd7ebd4522cb499f5</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 60收 DediOne 20260520-LAX.VPS.CN.1C1G20G-Special-12.99</title><link>https://www.nodeseek.com/post-862246-1</link><description /><pubDate>Fri, 07 Aug 2026 07:53:28 GMT</pubDate><guid>f486ad097a3110fb28196ed555a334ff</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 玩Panstar LAXPre Nano 65折腾一圈 【我赚了3.24元】 VS 【平台挣了2.79刀】</title><link>https://www.nodeseek.com/post-862245-1</link><description>买鸡花费10刀玩鸡跑了个NQhttps://www.nodeseek.com/post-861711-3卖鸡定价12刀，手续费1.2刀，实际到平台账户10.8刀提现到手10.48刀还会有汇率差我挣了多少10.48-10=0.48刀≈3.24元平台挣的：【抛开初始价3.89刀每月】第一波挣（我买时）：10刀×10%=</description><pubDate>Fri, 07 Aug 2026 07:53:27 GMT</pubDate><guid>52d157bada53dd5652373cd1d948d406</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] Smailr 现在已支持邮箱排序功能</title><link>https://www.nodeloc.com/t/topic/102450</link><description>创建了几十个上百个邮箱，可能常用的只有几个，现在可以通过左边的拖拽把常用的邮箱放在最上面。 也可以通过箭头上下调整。</description><pubDate>Fri, 07 Aug 2026 07:53:09 GMT</pubDate><guid>nodeloc-102450</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] emby推荐</title><link>https://www.nodeseek.com/post-862243-1</link><description>佬们有没有好用的影视服推推有音乐服也可以不要porn服</description><pubDate>Fri, 07 Aug 2026 07:52:31 GMT</pubDate><guid>6855ff0fce70abbafe98c11aa1d68df0</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 现在还有没有什么不太溢价的联通和移动🐔，坐标辽</title><link>https://www.nodeseek.com/post-862242-1</link><description>现在还有没有什么不太溢价的联通和移动🐔，坐标辽，大概500G左右，地区不限</description><pubDate>Fri, 07 Aug 2026 07:51:52 GMT</pubDate><guid>fba191b4c92eef8c102804df0afd8f03</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 650收一台DMIT-LAX.AN4.Pro.WEE 年付36.9</title><link>https://www.nodeseek.com/post-862241-1</link><description>650收一台DMIT-LAX.AN4.Pro.WEE年付36.9</description><pubDate>Fri, 07 Aug 2026 07:51:30 GMT</pubDate><guid>89c3f72ad36a263d53a50e6a23dbcf4a</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 玩鸡毕业了现在只能玩金融账户</title><link>https://www.nodeseek.com/post-862240-1</link><description>最近开了一堆户，总结下大陆账户：中国银行，中国工商银行香港账户：汇丰银行，众安银行，中银香港（预约了下周三，开户进行中）欧洲：ifast，bybiteu（唯一伪造地址开的，容易被关户）全球：wise，binance，neverless（海妖感觉和这个类似就没开了）怎么把出金入金转起来呢？</description><pubDate>Fri, 07 Aug 2026 07:50:59 GMT</pubDate><guid>dcec53be42b3a8e850fe60a98c970064</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 仅有krak 账户，是不是无法入金</title><link>https://www.nodeseek.com/post-862239-1</link><description>下卡了，但是是不是就一个krak无法入金，可以币安入金么。有没有啥详细的教程。</description><pubDate>Fri, 07 Aug 2026 07:50:43 GMT</pubDate><guid>a275bbccec19758abb4650d0616fd03f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出几个台Bero 小鸡+性能鸡</title><link>https://www.nodeseek.com/post-862238-1</link><description>Bero12oonlyIPv6¥702027-4-4到期年付12oBero12oIPv4+IPv6溢价¥108Bero69o溢价¥478</description><pubDate>Fri, 07 Aug 2026 07:50:35 GMT</pubDate><guid>bafe83cadf58865af0c00528a72037cc</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] zoutersg的ip是原生吗</title><link>https://www.nodeseek.com/post-862237-1</link><description /><pubDate>Fri, 07 Aug 2026 07:50:00 GMT</pubDate><guid>56d0ce0199280dbe7a16a95327e85af6</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] (出)28元包PUSH出一台VMISS.US.LA.9929.Basic 4.5CAD月付</title><link>https://www.nodeseek.com/post-862235-1</link><description>出一台VMISS.US.LA.9929.Basic，9月1号到期，剩余价值18，溢价5元，PUSH费用1加元，共28元</description><pubDate>Fri, 07 Aug 2026 07:49:42 GMT</pubDate><guid>ccdbc8fa2b8d450b76a2c9020dc43059</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 买的小鸡总是从探针离线，你们有遇到过么？</title><link>https://www.nodeseek.com/post-862234-1</link><description>买了个HK的小鸡，扎了针，昨天离线一次，今天又离线一次，是有的厂商的VPS总是自动给你关机吗？</description><pubDate>Fri, 07 Aug 2026 07:48:32 GMT</pubDate><guid>bc11653c09481e658eda6d238502f8de</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收】PanStar的DE Special款，带价来</title><link>https://www.nodeseek.com/post-862233-1</link><description>PanstarCloud·PS-6NPLWGDP【收】PanStarCloud的DESpecial款，带价来，价格是0.61的那款，月付年付都可以</description><pubDate>Fri, 07 Aug 2026 07:48:27 GMT</pubDate><guid>14e77eacdc65c1f8ec9a418e0c4b7acd</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 人找车codex pro20x 希望周额度在700以上，有车的速联系我。</title><link>https://www.nodeseek.com/post-862232-1</link><description>本人日常写代码用，只求稳定</description><pubDate>Fri, 07 Aug 2026 07:47:13 GMT</pubDate><guid>6356772cca0eaf65a6864241ffcd4def</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [推广] 9HTTP 限时优惠✅ 长效 ISP 代理美国 IP $1.92/IP ✅动态住宅 $0.45/GB 起</title><link>https://www.v2ex.com/t/1232754#reply0</link><description>&lt;h2&gt;倒计时 24 天&lt;/h2&gt;
+&lt;p&gt;✅ 长效 ISP 代理｜ 全场 6 折&lt;/p&gt;
+&lt;p&gt;搭载运营商专属固定静态 IP ，IP 归属稳定不频繁变动&lt;/p&gt;
+&lt;p&gt;完美适配长期多账号托管、海外店铺运维、后台日常登录管理，杜绝账号因 IP 波动触发风控，长期使用安全感拉满。&lt;/p&gt;
+&lt;p&gt;✅ 动态住宅代理｜全场 7 折&lt;/p&gt;
+&lt;p&gt;原生真实家庭住宅 IP 池，海量节点轮换&lt;/p&gt;
+&lt;p&gt;适合网页数据抓取、海外站点浏览检索、内容访问等场景，伪装普通居家用户环境，兼容性更广，各类采集项目都能顺畅运行。&lt;/p&gt;
+&lt;p&gt;官网：&lt;a href="https://www.9http.com?ref=v2ex" rel="nofollow"&gt;9HTTP&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;使用方法：&lt;/h2&gt;
+&lt;p&gt;购买时输入优惠码即可:&lt;a href="https://www.9http.com?ref=v2ex" rel="nofollow"&gt;9HTTP.COM&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:46:36 GMT</pubDate><guid>85e70fcece6bedf7a69a67cfb936699a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了个 App Store 截图制作工具：我想解决的不是套壳，而是多尺寸和多语言反复改图</title><link>https://www.v2ex.com/t/1232753#reply0</link><description>最近在做自己的 App 上架物料时，又被截图这件事卡住了。&lt;br /&gt;&lt;br /&gt;真正麻烦的不是做第一张图，而是后续这些重复劳动：&lt;br /&gt;&lt;br /&gt;- 同一套内容要适配 iPhone 、iPad 、Android Phone / Tablet ，尺寸和安全区域都不一样&lt;br /&gt;- 文案稍微改一个字，往往得回到多个设计稿里手动同步&lt;br /&gt;- 准备多语言版本时，中文、英文、日文长度差异很大，排版很容易崩&lt;br /&gt;- App 更新后，想只替换几张 UI 截图，也要重新检查整套导出规格&lt;br /&gt;- 有时候只是想给一张截图加设备框、背景和卖点标注，不太想打开 Figma 再搭一遍&lt;br /&gt;&lt;br /&gt;所以自己做了 AppScreenshots：&lt;br /&gt;&lt;br /&gt;&lt;a href="https://appscreenshots.net/" rel="nofollow noopener" target="_blank"&gt;https://appscreenshots.net/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;它是一个浏览器里的 App Store / Google Play 截图编辑器，目前主要做了这些功能：&lt;br /&gt;&lt;br /&gt;- 支持 iPhone 、iPad 、Android 、Apple Watch 等常见上架尺寸&lt;br /&gt;- 一份设计可以导出多个商店规格&lt;br /&gt;- 支持设备框、背景、文字、强调标注等基础组件&lt;br /&gt;- 可以做多语言版本，并批量导出&lt;br /&gt;- 另有单独的截图缩放、App Icon 、Mockup 等小工具&lt;br /&gt;- 免费可直接使用，不需要先注册才能试&lt;br /&gt;&lt;br /&gt;AI 生图/排版也加进去了，但我自己更把它当作起稿工具：先快速生成一个方向，再手动改文案和布局。对上架截图来说，能不能准确表达功能和目标用户，比看起来是不是 AI 做的更重要。&lt;br /&gt;&lt;br /&gt;这个工具目前最想验证两个问题：&lt;br /&gt;&lt;br /&gt;1. 大家实际做商店截图时，最耗时间的环节是什么？尺寸适配、多语言，还是文案和视觉排版？&lt;br /&gt;2. 如果你用过类似工具，哪些细节会决定你愿不愿意长期用？比如模板、版本管理、团队协作、导出规范校验等。&lt;br /&gt;&lt;br /&gt;欢迎直接吐槽，也欢迎拿自己的 App 截图来试试，页面上有一些模板和示例，暂时没做复杂的账号门槛。</description><pubDate>Fri, 07 Aug 2026 07:46:34 GMT</pubDate><guid>5c9d8fcb085fe74bb1371ef768959157</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [宽带症候群] 电信联通宽带选择</title><link>https://www.v2ex.com/t/1232752#reply0</link><description>&lt;p&gt;目前有两条主要宽带，
+坐标：0595
+店铺：
+联通下行 1000M,上行 150M ，月付 95 ，带 2 张副卡（办理这条宽带时，把移动和部分电信号转网加入的，95 元包含 2 张副卡的卡费 13 元*2 ）；每月流量 100G ，不过用不完，基本都是 wifi
+电信下行 1000M ，上行 50M ，月付 169 元，流量也是用不完，目前卡给小孩装儿童手表上。&lt;/p&gt;
+&lt;p&gt;家里：联通一条 1000M 下，上行 50M&lt;/p&gt;
+&lt;p&gt;店铺其实还有一条宽带，也是联通的，1000M 下行，50M 上行。&lt;/p&gt;
+&lt;p&gt;店铺的两条宽带都是公网 IP+桥接。
+现在比较纠结，要不要把电信的取消掉，毕竟费用还是挺高的，10 月份合约到期就可以直接取消。
+但是用下来感觉电信的宽带还是比联通的要稳一点，特别是晚上高峰期，联通测速只有 700M ，而且会有波动，电信的 940M 很稳定。&lt;/p&gt;
+&lt;p&gt;另外一个需求：有出国需求，目前是 amy 机场，在蹲 dmit ，不知道体验会不会更好&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:46:04 GMT</pubDate><guid>95250863204f84b818b2050cd4c56a36</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 25x D4F GA额度 opencode GO套餐限时double！！</title><link>https://www.nodeseek.com/post-862231-1</link><description>我宣布dax封圣了https://opencode.ai/go?ref=RGRS1YGZ32我的推广链接使用这个购买你多五美刀我多五美刀现在首月35元走走推广差不多900元左右的V4F太无敌啦！！</description><pubDate>Fri, 07 Aug 2026 07:46:04 GMT</pubDate><guid>8e2f374ca3bc455beac6e6095f8927be</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 「出」剩余价值八折出DMIT TYO.AS3.Pro.TINY年付$262.8</title><link>https://www.nodeseek.com/post-862230-1</link><description>到期2027年7月1日。中介费自理tg：@nbmrky</description><pubDate>Fri, 07 Aug 2026 07:45:26 GMT</pubDate><guid>b12b913836e296502c3e9ba98ee7ae80</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [测试留档]Panstar HKS Starlight TCP-Quality</title><link>https://www.nodeseek.com/post-862229-1</link><description>IPv4回程IPv4大包回程IPv6回程教育网回程国际互联单线程测速报告链接：https://tcpquality.ibsgss.uk/r/Gu3w6Lq3Mb</description><pubDate>Fri, 07 Aug 2026 07:45:24 GMT</pubDate><guid>6a48117bcf891b08762db5a30568e152</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出 NoBrand JP-TYO-1</title><link>https://www.nodeseek.com/post-862228-1</link><description>JP-TYO-1价格:￥109.65/年到期时间:2027-08-07push，口令线路skyline下游厂商NQ参考https://www.nodeseek.com/post-851975-1#8</description><pubDate>Fri, 07 Aug 2026 07:45:15 GMT</pubDate><guid>d6ed7705e51e321e9a48a93879c988a9</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 问一下google支付的时候总是提示“OR_BACR2_44”错误可能是什么原因呢？</title><link>https://www.nodeseek.com/post-862227-1</link><description>同一张卡在不同账号支付会这样吗？它报这个错误是跟账号有关系还是？有经验的老哥吗</description><pubDate>Fri, 07 Aug 2026 07:45:01 GMT</pubDate><guid>e16da906f04960249b382990ddba8dcb</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 我的gmail workspace里名字改不了😲</title><link>https://www.nodeseek.com/post-862226-1</link><description>请教大佬这咋回事随便写的然后改不了不过gmail里有个选项可以改回复的名字这多不爽</description><pubDate>Fri, 07 Aug 2026 07:44:53 GMT</pubDate><guid>6db7c38763649980ff735d7d04b7e26b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [程序员] 做了个 CLI:把团队的 AI 编程规则/技能一键同步到 Claude Code、Cursor、Codex</title><link>https://www.v2ex.com/t/1232751#reply2</link><description>&lt;p&gt;我们团队十几号人,都在用 AI 写代码,但工具很杂:有人 Claude Code,有人 Cursor,有人 Codex 。用的过程中发现一个很烦的问题——&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;每个人的 AI 配置不一致,而且各改各的。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;老同事本地攒了一套 &lt;a href="http://CLAUDE.md" rel="nofollow"&gt;CLAUDE.md&lt;/a&gt; 、自定义 skills 、一堆环境变量和"我们这儿的规矩";新人的 AI 基本是台空白出厂车。&lt;/li&gt;
+&lt;li&gt;同一个坑,AI 会带着每个人再踩一遍:A 花两小时搞清楚某条内部链路怎么配,一周后 B 问几乎一样的问题,又花两小时。&lt;/li&gt;
+&lt;li&gt;就算把 rules 、skills 丢进一个共享 Git 仓,也只解决了"有没有源"——&lt;strong&gt;合并之后没人记得 pull,pull 了也不知道该拷到哪个工具的哪个目录。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以我做了个 CLI,思路很简单:&lt;strong&gt;把团队的 skills / rules / docs / 环境变量 / hooks / MCP 配置放在一个 Git 仓里,评审合并后,自动同步进每个人本地的 AI 工具。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;teamai push  → 自动开分支 + 建 MR → Reviewer 评审合并
+                                        ↓
+             会话启动时 SessionStart hook 自动 teamai pull → 写进各工具目录
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Although the initial allocation fails, I discovered configuring ReBAR to a smaller size also triggers allocation of bridge windows even if the initial attempt failed. It made me suspect that if I stage the smaller BAR space first then trigger a rescan, I could readd the card and have it work enough to be picked up by nvidia-smi and CUDA. After confirming this and hammering out some initial issues I wound up with this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="lang-bash"&gt;#!/bin/bash
-# XXX Determine which device is the A10G first!
-DEVICE_A10G=/sys/bus/pci/devices/0000:02:00.0
-
-sudo nvidia-smi -pm 0
-sudo modprobe -r nvidia
-
-# On this platform, it seems necessary to trigger TWO rescan operations, with the second one having a smaller BAR size, to get the bridge window correctly defined.
-sudo tee $DEVICE_A10G/resource1_resize &amp;lt;&amp;lt;&amp;lt; 10
-sudo tee $DEVICE_A10G/remove &amp;lt;&amp;lt;&amp;lt; 1
-sudo tee /sys/bus/pci/rescan &amp;lt;&amp;lt;&amp;lt; 1
-
-sudo tee $DEVICE_A10G/resource1_resize &amp;lt;&amp;lt;&amp;lt; 8
-sudo tee $DEVICE_A10G/remove &amp;lt;&amp;lt;&amp;lt; 1
-sudo tee /sys/bus/pci/rescan &amp;lt;&amp;lt;&amp;lt; 1
-
-sudo modprobe nvidia
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After the rescan, I lose network connection and kernel logs suggest a timeout attempting to transmit. I suspect the Realtek NIC kernel driver doesn’t like the rescan, so I have to reload it too when I’m done:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="lang-bash"&gt;sudo modprobe -r r8169
-sudo modprobe r8169
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Similar effects could plague other hardware as well; make sure your key devices work after the rescan, especially NICs, NVMe, and storage controllers.&lt;/p&gt;
-&lt;p&gt;Following this, I was able to detect the card, load a model, and generally use the card as expected for LLMs. I probably don’t have working virtual functions, but I don’t need them for this use case.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="lang-auto"&gt;+-----------------------------------------------------------------------------------------+
-| NVIDIA-SMI 550.163.01             Driver Version: 550.163.01     CUDA Version: 12.4     |
-|-----------------------------------------+------------------------+----------------------+
-| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
-|                                         |                        |               MIG M. |
-|=========================================+========================+======================|
-|   0  NVIDIA A10G                    Off |   00000000:02:00.0 Off |                    0 |
-|  0%   82C    P8             31W /  200W |   21303MiB /  23028MiB |      0%      Default |
-|                                         |                        |                  N/A |
-+-----------------------------------------+------------------------+----------------------+
-|   1  NVIDIA GeForce RTX 3090 Ti     Off |   00000000:03:00.0 Off |                  Off |
-|  0%   35C    P8              4W /  200W |   21208MiB /  24564MiB |      0%      Default |
-|                                         |                        |                  N/A |
-+-----------------------------------------+------------------------+----------------------+
-
-+-----------------------------------------------------------------------------------------+
-| Processes:                                                                              |
-|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
-|        ID   ID                                                               Usage      |
-|=========================================================================================|
-|    0   N/A  N/A      1969      C   ./llama-server                              21292MiB |
-|    1   N/A  N/A      1969      C   ./llama-server                              21200MiB |
-+-----------------------------------------------------------------------------------------+
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Other lingering issues:&lt;/p&gt;
+&lt;p&gt;几个我自己觉得还算有用的点:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The A10G idles poorly, even in a normal server (R7910) that doesn’t need hacks - if anything is loaded on it, the memory automatically clocks to maximum and chews through 70-90W at idle; I have a shell script that manually sets clocks based on load and temperature, but it’d be nice to have a less hacky solution. My detection script also adds 1 second to LLM response times as the card is practically anemic until the script detects the load and opens the throttle.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I can’t re-enable NVIDIA persistent mode, only getting unknown error; not really a problem once I have llama-server running. Something has to keep the card open or I lose the ability to control its clocks and power consumption.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多工具一份维护&lt;/strong&gt;:skills 会分别写进 &lt;code&gt;~/.claude/skills/&lt;/code&gt;、&lt;code&gt;~/.cursor/skills/&lt;/code&gt;、&lt;code&gt;~/.codex/skills/&lt;/code&gt;……不用在每个工具里各拷一套。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;环境变量当一等公民&lt;/strong&gt;:测试环境地址、访问凭证这类配置能随 pull 注入 shell 。很多"新人连不上测试环境"其实不是知识问题,是配置没到位。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不绕过评审&lt;/strong&gt;:push 默认开 MR,必须过人。自动的是"同步"和"注入",不是"写入"——写什么依然由人把关。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;经验沉淀&lt;/strong&gt;:会话结束时如果检测到"摩擦信号"(你打断/纠正了 AI 、拒了工具调用、模型反复重试),会提示你把这次踩的坑总结成一篇 learning 推给团队,之后别人能检索到。&lt;/li&gt;
 &lt;/ul&gt;
-            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/nvidia-a10g-in-octominer-x12-or-putting-enterpise-gpus-where-they-dont-belong/253642"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:32:21 GMT</pubDate><guid>d745691ad6ed8d91dc9fdbcaa7eb0186</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[Level1Techs Forum] ThinkPad P16s Gen 4 AMD does not output video to LG UltraFine evo 6K 32U990A via USB4/Thunderbolt</title><link>https://forum.level1techs.com/t/thinkpad-p16s-gen-4-amd-does-not-output-video-to-lg-ultrafine-evo-6k-32u990a-via-usb4-thunderbolt/253640</link><description>&lt;p&gt;Hi everyone,&lt;/p&gt;
-&lt;p&gt;I am having a USB4/Thunderbolt compatibility issue between a new &lt;strong&gt;Lenovo ThinkPad P16s Gen 4 AMD&lt;/strong&gt; and an &lt;strong&gt;LG UltraFine evo 6K 32U990A-S&lt;/strong&gt; monitor.&lt;/p&gt;
-&lt;h3&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4104018-hardware-and-software-1" name="p-4104018-hardware-and-software-1"&gt;&lt;/a&gt;Hardware and software&lt;/h3&gt;
+&lt;p&gt;开源、MIT 、还在迭代:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;npm install -g teamai-cli
+# 单人用也行,不用先建仓,init 会检查并自动创建
+teamai init --repo https://github.com/yourorg/yourrepo
+&lt;/code&gt;&lt;/pre&gt;</description><pubDate>Fri, 07 Aug 2026 07:43:44 GMT</pubDate><guid>7d9c72c5b1a39f9f7058900d052f03a6</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 目前正在疯狂 Coding 争取给论坛虚拟主机换一套更加 NB 的系统</title><link>https://www.nodeloc.com/t/topic/102449</link><description>这个系统写完之后就是一个提供 ssh 的，支持 php，nginx，python 的虚拟主机 
+目前进度：daemon 部分已完成并进行初步测试，可以正常操作虚拟机，ssh 和 sftp 已测试并功能正常，http 代理和 tls 证&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 07:42:33 GMT</pubDate><guid>nodeloc-102449</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] 做了一个小朋友练字的小程序，收录了大概 2500+个字，除了可以在手机 pad 上，也可以打印成字贴</title><link>https://www.v2ex.com/t/1232750#reply4</link><description>小程序名字叫  幼儿练字助手</description><pubDate>Fri, 07 Aug 2026 07:42:26 GMT</pubDate><guid>85823f901ba6e857226e3fa12f20c463</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [酷工作] macOS / iOS 应用工程师招聘（全栈和具有跨平台能力者优先）</title><link>https://www.v2ex.com/t/1232749#reply0</link><description>&lt;p&gt;没在 V 站发过招聘，来试一试。&lt;/p&gt;
+&lt;p&gt;我们正在打造下一代 AI agent 工具。&lt;/p&gt;
+&lt;p&gt;如果你喜欢 Alfred 、Raycast 、Flows 、Cursor 、Notion 、Linear ，热衷于研究各种工作流、自动化和 AI Agent ，并希望亲手打造一款真正改变工作方式的产品，我们希望认识你。&lt;/p&gt;
+&lt;p&gt;这是一个从 0 到 1 的核心岗位，你将参与产品设计、客户端开发、后端架构、AI 能力集成等几乎所有关键决策。&lt;/p&gt;
+&lt;p&gt;你将负责——&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Lenovo ThinkPad P16s Gen 4 AMD&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;AMD Ryzen AI 9 HX PRO 370&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;64 GB RAM&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Windows 11 Enterprise 24H2&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;BIOS: R2XET39W, version 1.19, dated March 19, 2026&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LG UltraFine evo 6K, model 32U990A-S&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Direct connection between laptop and monitor, without a docking station&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;开发 macOS 和 iOS 原生应用（ Swift / SwiftUI ）&lt;/li&gt;
+&lt;li&gt;设计并实现 AI 驱动的工作流和自动化能力&lt;/li&gt;
+&lt;li&gt;构建 AI Agent 、Memory 、RAG 等核心能力&lt;/li&gt;
+&lt;li&gt;负责客户端与后端的整体架构设计与开发&lt;/li&gt;
+&lt;li&gt;设计 API 、数据库及云端服务，保障系统性能与稳定性&lt;/li&gt;
+&lt;li&gt;接入各类 LLM 、MCP 、第三方工具及开发者生态&lt;/li&gt;
+&lt;li&gt;与产品、设计共同打磨细节，持续优化用户体验&lt;/li&gt;
+&lt;li&gt;快速迭代产品，验证想法，把创意真正变成用户每天都会使用的工具&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4104018-problem-2" name="p-4104018-problem-2"&gt;&lt;/a&gt;Problem&lt;/h3&gt;
-&lt;p&gt;The LG monitor works immediately with my previous Intel-based HP EliteBook using:&lt;/p&gt;
+&lt;p&gt;我们希望你具备——&lt;/p&gt;
+&lt;p&gt;必备能力：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;the same monitor&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the same Thunderbolt cable&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the same Thunderbolt port on the monitor&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;有 macOS 或 iOS 原生应用开发经验&lt;/li&gt;
+&lt;li&gt;熟悉 Swift 、SwiftUI ，对 Apple 平台有深入理解&lt;/li&gt;
+&lt;li&gt;具备扎实的后端开发能力（ Node.js 、Go 、Rust 、Python 等任意一种均可）&lt;/li&gt;
+&lt;li&gt;能独立设计并开发完整功能，从客户端一直做到服务端&lt;/li&gt;
+&lt;li&gt;熟悉数据库设计、REST API 、实时通信等基础能力&lt;/li&gt;
+&lt;li&gt;对 AI 产品充满兴趣，了解 LLM 、Agent 、Prompt 、RAG 等相关技术&lt;/li&gt;
+&lt;li&gt;具备优秀的工程能力，关注性能、稳定性和代码质量&lt;/li&gt;
+&lt;li&gt;有较强的产品意识，而不仅仅是完成需求&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;When connected to the new ThinkPad, however:&lt;/p&gt;
+&lt;p&gt;如果你还具备这些，会非常加分：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;the monitor receives no video signal&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the ThinkPad is not charged by the monitor&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the monitor remains in standby&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;both USB4 ports on the ThinkPad show the same behavior&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;App Store 上架过自己的 app&lt;/li&gt;
+&lt;li&gt;做过 Alfred Workflow 、Raycast Extension 或类似插件&lt;/li&gt;
+&lt;li&gt;熟悉 Expo 、Flutter 等跨平台开发框架&lt;/li&gt;
+&lt;li&gt;做过浏览器插件、VS Code Extension 、开发者工具&lt;/li&gt;
+&lt;li&gt;使用过 Cursor 、Claude Code 、Codex 等 AI Coding 工具&lt;/li&gt;
+&lt;li&gt;有 AI Agent 、Workflow 、Automation 产品开发经验&lt;/li&gt;
+&lt;li&gt;做过 Electron 或 Tauri 桌面应用&lt;/li&gt;
+&lt;li&gt;有 RAG 、向量数据库、Embedding 等相关经验&lt;/li&gt;
+&lt;li&gt;熟悉 Apple Shortcuts 、Accessibility API 、Spotlight 、Launch Agent 等 macOS 系统能力&lt;/li&gt;
+&lt;li&gt;开源项目贡献者，或拥有自己的 Side Project&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The two USB-C ports on the ThinkPad work normally with the original Lenovo USB-C power supply, so both ports are able to charge the laptop.&lt;/p&gt;
-&lt;h3&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4104018-windows-and-device-manager-findings-3" name="p-4104018-windows-and-device-manager-findings-3"&gt;&lt;/a&gt;Windows and Device Manager findings&lt;/h3&gt;
-&lt;p&gt;Windows partially detects the monitor. Device Manager shows:&lt;/p&gt;
+&lt;p&gt;我们更看重——&lt;/p&gt;
+&lt;p&gt;相比于会多少框架，我们更看重：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;USB4 Router (2.0), LG Electronics - 32U990A&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;TPS DMC Billboard&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;an occasional &lt;code&gt;Unknown USB Device (Device Descriptor Request Failed)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;对优秀产品有审美，对细节有追求&lt;/li&gt;
+&lt;li&gt;喜欢折腾各种效率工具和自动化&lt;/li&gt;
+&lt;li&gt;乐于学习新技术，对 AI 保持好奇心&lt;/li&gt;
+&lt;li&gt;能快速学习、快速迭代、快速交付&lt;/li&gt;
+&lt;li&gt;有 owner 意识，愿意和团队一起把产品做到极致&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the LG USB4 router, the event log shows:&lt;/p&gt;
+&lt;p&gt;我们希望你是这样的人——&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Device configured (usb4devicerouter.inf)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Device not started (Usb4DeviceRouter)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Alfred 、Raycast 、Cursor 、Notion 、Flows 等产品的重度用户&lt;/li&gt;
+&lt;li&gt;经常自己写脚本、插件或者自动化工具提升效率&lt;/li&gt;
+&lt;li&gt;喜欢研究新的 AI 产品，而不仅仅是使用它们&lt;/li&gt;
+&lt;li&gt;对"软件应该足够智能、足够优雅"有自己的理解&lt;/li&gt;
+&lt;li&gt;希望打造真正能够改变工作方式的下一代 AI 产品&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The USB4 Host Router and USB4 Root Router are present and appear to be installed correctly.&lt;/p&gt;
-&lt;p&gt;The Texas Instruments Billboard device has the following hardware ID:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="lang-auto"&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class="lang-auto"&gt;USB\VID_0451&amp;amp;PID_ACE1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This appears to indicate that the USB-C Alternate Mode or USB4/Thunderbolt negotiation starts but does not complete successfully.&lt;/p&gt;
-&lt;h3&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4104018-troubleshooting-already-performed-4" name="p-4104018-troubleshooting-already-performed-4"&gt;&lt;/a&gt;Troubleshooting already performed&lt;/h3&gt;
+&lt;p&gt;欢迎来聊聊。&lt;/p&gt;
+&lt;p&gt;这是我的邮箱，期待各位的简历： &lt;a href="mailto:hr@knowhereto.ai"&gt;hr@knowhereto.ai&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:41:31 GMT</pubDate><guid>c786ef0d2fe8557322008189faf201a9</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [中转站测评] sub2api 中转站问题求助</title><link>https://www.v2ex.com/t/1232748#reply0</link><description>&lt;p&gt;程序 SUB2API ，规则部分原生。&lt;/p&gt;
+&lt;p&gt;背景：现有一分组，实际只有一个账号。该账号大致可以理解为"调度线上号池"的网关。
+该分组当中有一个网关 API 作为主账户。为了备份加了一个官 key 做优先级稍低的账户，以应对突发情况。
+设置方式：两个账户优先级 一个高 一个低。 官 key 优先级数字设置的 2 ，主力设置的 1.&lt;/p&gt;
+&lt;p&gt;结果在原账户可用的情况下，流量相当大的比例走到了 官 key 账户。 这跟预想完全两回事，分分钟要破产了。&lt;/p&gt;
+&lt;p&gt;百思不得其解，有佬指点一下吗&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:41:29 GMT</pubDate><guid>59e69146050afe552910bd75bf57c87b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [酷工作] 远程岗位： Go 开发组长，高级 Go 开发， PHP +GO， Java 转 Go，全栈工程师， Flutter（安卓+web）</title><link>https://www.v2ex.com/t/1232747#reply0</link><description>Go 开发组长，高级 Go 开发，PHP+GO ，Java 转 Go ，全栈工程师，Flutter （安卓+web ），Flutter+安卓，web 前端&lt;br /&gt;AI 应用开发，AI Agent 架构师，AI 工作流工程师  ，运维工程师，AI 产品经理，大数据运维，海外 DevOps&lt;br /&gt;&lt;br /&gt;-----------------------------&lt;br /&gt;更多岗位咨询详细，可直接添加或发简历到 TG： @&lt;a href="https://www.v2ex.com/member/zhaopin88999" rel="nofollow noopener" target="_blank"&gt;zhaopin88999&lt;/a&gt;&lt;br /&gt;有意向投递简历到 Email 邮箱： zygs2151@gmail.com</description><pubDate>Fri, 07 Aug 2026 07:39:18 GMT</pubDate><guid>572366ad28511f343869a11ba9adf03b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 征集节点名字</title><link>https://www.nodeloc.com/t/topic/102448</link><description>想创建一个节点，里面分享大家的各种好东西（好东西是什么？你觉得是好东西就是好东西），征集节点名字:face_savoring_food:</description><pubDate>Fri, 07 Aug 2026 07:38:56 GMT</pubDate><guid>nodeloc-102448</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] 「自荐」Mac 剪贴板+OCR+划词翻译+截图+局域网同步+拖拽容器+PopClip=OneClip</title><link>https://www.v2ex.com/t/1232745#reply4</link><description>&lt;p&gt;&lt;a href="https://github.com/One-Clip/OneClip" rel="nofollow"&gt;OneClip&lt;/a&gt;能做什么事情：  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Installed all available Windows updates&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Installed all updates through Lenovo Commercial Vantage&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Confirmed that BIOS and Lenovo drivers are current&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tested both USB4 ports&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tested the same Thunderbolt cable and monitor port with the old HP laptop&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Power-cycled the monitor&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Disabled the monitor’s deep sleep mode&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Confirmed that Thunderbolt is selected as the monitor input&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Confirmed that there are no configurable USB4 or Thunderbolt options in the ThinkPad BIOS&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Removed and reinstalled the affected USB devices in Device Manager&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;智能记录：自动保存剪贴板历史，支持文本、图片、文件等格式&lt;/li&gt;
+&lt;li&gt;全格式支持：图片/视频/音频/文档等，完整保留元数据&lt;/li&gt;
+&lt;li&gt;文本/图片编辑：支持文本/图片编辑，删除可撤销；支持置顶、收藏、删除等管理操作&lt;/li&gt;
+&lt;li&gt;栈粘贴板：⌘+⇧+C 呼出栈粘贴板，方便批量管理；⌘+V 依次粘贴栈内容，⌘+⇧+S 按行拆分捕获内容&lt;/li&gt;
+&lt;li&gt;快速粘贴面板：⌘+； 呼出快速粘贴面板，快速粘贴最近内容&lt;/li&gt;
+&lt;li&gt;拖拽容器：⌘+⇧+D 呼出拖拽容器，暂存并拖出文件/图片到其他应用&lt;/li&gt;
+&lt;li&gt;极速搜索：⌘+F 随打随搜，多维筛选与搜索高亮，快速定位历史内容&lt;/li&gt;
+&lt;li&gt;菜单栏集成：菜单栏快速访问、分类搜索、悬停预览与一键复制粘贴(左键复制，右键粘贴一气呵成)&lt;/li&gt;
+&lt;li&gt;全局快捷键：⌘+⇧+V 呼出主界面（支持自定义组合）&lt;/li&gt;
+&lt;li&gt;快捷回复：⌘+⇧+R 呼出快捷回复界面，支持文本/图片/文件模板及导入导出&lt;/li&gt;
+&lt;li&gt;OCR 识别：主动识别屏幕或图片文本，支持 OCR 翻译与快速提取&lt;/li&gt;
+&lt;li&gt;轻量级截图：支持轻量级截图，多种截图模式，支持截取区域、全屏、窗口等&lt;/li&gt;
+&lt;li&gt;划词翻译/截图翻译：支持划词翻译、截图翻译，无需手动输入&lt;/li&gt;
+&lt;li&gt;脚本功能：支持 JS 脚本编写，实现自动化操作&lt;/li&gt;
+&lt;li&gt;AI 集成：支持本地 AI （ Ollama/LMStudio ）与在线 AI 服务，智能总结与翻译&lt;/li&gt;
+&lt;li&gt;数据导入导出：支持数据备份/导入导出&lt;/li&gt;
+&lt;li&gt;自定义存储位置：支持自定义数据存储位置，便于管理&lt;/li&gt;
+&lt;li&gt;隐私保护：完全本地存储，无任何数据上传；支持生物识别（ Touch ID/Face ID ）保护&lt;/li&gt;
+&lt;li&gt;多语言支持：界面支持中文、英文&lt;/li&gt;
+&lt;li&gt;局域网同步：支持局域网内多设备同步文本/图片，网页实时共享剪贴板内容&lt;/li&gt;
+&lt;li&gt;API 支持：提供 URL Scheme API 接口，方便与其他应用集成&lt;/li&gt;
+&lt;li&gt;灵活控制：Dock 图标、明暗主题适配等配置；支持列表/卡片视图切换，卡片模式支持三种方向，支持边缘停靠鼠标触发&lt;/li&gt;
+&lt;li&gt;现代界面：遵循 macOS 设计规范，毛玻璃与暗黑模式适配&lt;/li&gt;
+&lt;li&gt;便捷安装：支持 Homebrew 一键安装（也支持 Sparkle 自动更新）&lt;/li&gt;
+&lt;li&gt;访达增强：支持访达 ⌘+X 剪切文件，然后 ⌘+V 在其他位置移动文件（别处单独付费的功能，OneClip 免费开放给大家）&lt;/li&gt;
+&lt;li&gt;PopClip：类 PopClip 选中菜单功能，选中文本后在鼠标位置显示快捷操作菜单&lt;/li&gt;
+&lt;li&gt;顶部灵动岛拖放架：适配刘海屏的顶部拖放架，支持拖拽到顶部灵动岛，实现一键复制粘贴&lt;/li&gt;
+&lt;li&gt;更多功能：等你来发现&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;As a temporary workaround, I can connect the monitor using a USB-C-to-HDMI connection. This produces a picture, but only at 4K resolution and without charging or USB4/Thunderbolt functionality.&lt;/p&gt;
-&lt;p&gt;Has anyone successfully used the &lt;strong&gt;LG 32U990A-S with a ThinkPad P16s Gen 4 AMD&lt;/strong&gt;, or seen the &lt;code&gt;Device not started (Usb4DeviceRouter)&lt;/code&gt; error with another AMD USB4 system?&lt;/p&gt;
-&lt;p&gt;I am particularly interested in whether this is:&lt;/p&gt;
+&lt;p&gt;链接汇总：&lt;br /&gt;
+官网： &lt;a href="https://oneclip.cloud/" rel="nofollow"&gt;https://oneclip.cloud/&lt;/a&gt;&lt;br /&gt;
+仓库： &lt;a href="https://github.com/One-Clip/OneClip" rel="nofollow"&gt;https://github.com/One-Clip/OneClip&lt;/a&gt;&lt;br /&gt;
+直链下载：&lt;a href="https://github.com/One-Clip/OneClip/releases/download/2.0.4/OneClip-2.0.4.dmg" rel="nofollow"&gt;点我下载&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/JFGBfwb.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/qjujMPr.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/us5jhAB.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/KsuQt2y.png" /&gt;&lt;/p&gt;
+&lt;p&gt;谢谢大家，介绍到这里，欢迎评论区/QQ 群批评指正！☺️  &lt;/p&gt;
+&lt;p&gt;点击链接加入群聊 [ AI 技术交流群｜ OneClip 剪切板] ： &lt;a href="https://qm.qq.com/q/3jv1qmErHG" rel="nofollow"&gt;https://qm.qq.com/q/3jv1qmErHG&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:35:58 GMT</pubDate><guid>6d221a48916d0a9b39f482dcfeeeb31c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [OpenAI] 请问这是出 bug 了吗？</title><link>https://www.v2ex.com/t/1232744#reply0</link><description>通过 cpa 进行 ChatGPT 代理，使用 keeper 进行数据监控，在 keeper 的监控里发现部分人员凌晨会有请求记录，和对应人员确定半夜都没有在使用它&lt;br /&gt;&lt;br /&gt;https://img.cdn1.vip/i/6a7589ee74b2b_1786087918.webp</description><pubDate>Fri, 07 Aug 2026 07:34:42 GMT</pubDate><guid>8b2749d2aaa0305746c26ba0cc36b08a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 原来 Claude 解封还会送 10 刀额度</title><link>https://www.v2ex.com/t/1232743#reply0</link><description>有总比没有强&lt;br /&gt;&lt;br /&gt;&lt;a href="https://i.imgur.com/NC9zHRH.png" rel="nofollow noopener" target="_blank"&gt;&lt;img class="embedded_image" rel="noreferrer" src="https://i.imgur.com/NC9zHRH.png" /&gt;&lt;/a&gt;</description><pubDate>Fri, 07 Aug 2026 07:34:41 GMT</pubDate><guid>a50c8f530b01a4483f0c97eecfdbcd7e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [DeepSeek] 体感上 DeepSeek-V4-Flash-0731 可以作 Claude Opus 4.8 的平替</title><link>https://www.v2ex.com/t/1232742#reply2</link><description>&lt;p&gt;我使用的 VSCode 的 GitHub Copilot ，对比的是 GHCP 里提供的 Opus 4.8. DeepSeek 是用官网推荐的 &lt;code&gt;vizards.deepseek-v4-for-copilot&lt;/code&gt; 接入的。&lt;/p&gt;
+&lt;p&gt;工作中用了小一周，原来平时使用 Opus 4.8(max) 对付的需求（顶着 x27 请求次数额度倍率），新版的 V4 Flash 完全不虚。有次 Opus 4.8 改 bug 跑一下午没折腾成，V4 Flash 接手一个多小时就找到实际原因了。开深度思考，速度比 Opus 快多了，国内连接也更稳定。&lt;/p&gt;
+&lt;p&gt;缓存命中率离谱的高，现在还没涨价，跑一个小时才一两块钱。梁圣\[暂\]如果涨价不是太过分，我还是非常愿意续的。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:33:39 GMT</pubDate><guid>0f8c47ba320b3a7d7c0a25d8dfaf4815</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] opencode go 的 deepseek v4 flash 改成 2 倍用量了吗？</title><link>https://www.v2ex.com/t/1232741#reply7</link><description>&lt;p&gt;刚更新的 opencode cli 在使用 deepseek v4 flash 显示成这样了&lt;/p&gt;
+&lt;p&gt;&lt;img alt="1786087946015.png" class="embedded_image" rel="noreferrer" src="https://picui.ogmua.cn/s1/2026/08/07/6a758a15c2a2d.webp" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:33:03 GMT</pubDate><guid>3b7c831d3b995d04b20f57d7ba377117</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [Apple] 纠结怪来了，现在要不要换 iPhone</title><link>https://www.v2ex.com/t/1232740#reply2</link><description>&lt;p&gt;如题，终极纠结怪来了。&lt;br /&gt;
+现在用的是 Pura 70 pro 1T ，刚发售两个月入手用到现在，还没有升级到鸿蒙。后续也会选择 1T 版本的手机。&lt;br /&gt;
+在疯狂纠结要不要趁现在卡时间入手 iPhone 17 Pro Max 。&lt;br /&gt;
+&lt;br /&gt;
+Pura 70 Pro 是第一次用华为的手机，之前有十年的时间一直在用 iPhone 。&lt;br /&gt;
+换华为的契机是，当初被 Pura 70 吸引，越看越顺眼，去店里体验了一下感觉拍照和手感都很好就下单了。&lt;br /&gt;
+用了两年多也挺舒服的，当初的过渡期没有强烈不适应的感觉。可能不舒服的也自适应，想办法解决了。&lt;br /&gt;
+&lt;br /&gt;
+我算是重度使用手机的人，对手机的要求是：&lt;br /&gt;
+1 、拍照要好，但不需要达到专业拍照的效果&lt;br /&gt;
+2 、我不太爱删照片，并且下了很多体验 app 但会忘记删，所以容量要够大&lt;br /&gt;
+&lt;br /&gt;
+想换手机有几个原因：&lt;br /&gt;
+1 、可能我重度使用手机，卡，很烫。有时刚打开游戏在加载，就已经开始发烫了&lt;br /&gt;
+2 、电量低到 10-20 左右，屏幕会细细密密地闪，有的时候会直接卡到黑屏&lt;br /&gt;
+3 、对我来说最严重的问题是，调出相机的速度太慢了，慢到怀疑人生。而且现在拍照大概率都有一种非常朦胧的美感。&lt;br /&gt;
+4 、去苹果店体验 17 promax ，越看越顺眼。。。手感和体验都好好啊，念念不忘&lt;br /&gt;
+&lt;br /&gt;
+几个备选：&lt;br /&gt;
+1 、这个月入手 iPhone 17 Pro Max&lt;br /&gt;
+2 、等待 Mate 90 Pro&lt;br /&gt;
+3 、我其实对 Pura X Max 很有兴趣，但是我觉得日常用还是过于不太实用，所以大概率不会选&lt;br /&gt;
+4 、等等党永远胜利，一个都不要&lt;br /&gt;
+&lt;br /&gt;
+在纠结的原因有以下几个：&lt;br /&gt;
+1 、华为对我来说有几个放不下的小功能：右滑返回、长截图。别看这功能小，但是我真的好喜欢，相当难以割舍。而且华为手表的续航比较强&lt;br /&gt;
+2 、去体验 17pm 的时候，总会觉得他的键盘有点不舒服，打字有一种诡异的感觉。但是实际比对又觉得差不太多，可能是心理作用&lt;br /&gt;
+3 、17 pm 真的太贵了 ... 虽然之前用 13 pro 也是一万出头买的，但是当时年纪小啊不懂事，现在懂的多了，总觉得这钱有点不值（怀念年少轻狂的时候，买了就买了...）&lt;br /&gt;
+4 、家人主力机是华为的，传照片视频比较方便，而且家庭健康管理算是比较方便&lt;br /&gt;
+5 、Mate 90 还是 puraxmax 都是鸿蒙系统，讲道理啊，家里人升级了但是有些适配确实有一些不太好&lt;br /&gt;
+&lt;br /&gt;
+以及，我知道最好买新不买旧，但是不考虑 iPhone 18 是因为，我觉得 18 必然会涨价啊，现在已经很贵了，再涨真的起飞了....&lt;br /&gt;
+其实更喜欢 iPhone Air ，但是我对 eSIM 没有想法。&lt;br /&gt;
+&lt;br /&gt;
+这就是一个纯吐槽我自己的帖子，同时也想听听大家 iPhone 17 的体验，或者 Mate 80 Pro 的使用体验。或者随便什么体验，反正我很纠结就是了...&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:32:11 GMT</pubDate><guid>d255e58573f9dad9b19638bdea9581b8</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [酷工作] AI Agent 开发工程师（企业级应用方向）</title><link>https://www.v2ex.com/t/1232739#reply0</link><description>职位描述：&lt;br /&gt;我们正在做企业级工作流方向的 AI Agent 应用。目标不是做一个只能聊天的助手，而是真正打造能够进入服装品牌跨境电商组织流程与业务流程的企业级数字员工智能体。&lt;br /&gt;你将参与甚至主导企业内部 AI Agent 产品的设计与开发。我们不追求庞大的团队，更希望找到愿意一起做事、愿意打硬仗、对 AI 变革流程有兴趣、并且能拿结果的人。喜欢挑战、喜欢钻研、喜欢探索的同学，欢迎来聊。&lt;br /&gt;&lt;br /&gt;岗位职责：&lt;br /&gt;1.参与业务需求分析、领域建模、系统拆分、技术方案设计。&lt;br /&gt;2.负责系统的高可用、高并发、高性能、高一致性的设计与优化。&lt;br /&gt;3.参与代码评审、架构评审、技术规范建设、提升团队工程质量。&lt;br /&gt;4.负责项目的前端、运维、后端管理与开发。&lt;br /&gt;&lt;br /&gt;任职要求：&lt;br /&gt;1.本科及以上学历，计算机/人工智能相关专业优先。&lt;br /&gt;2.5 年以上以上开发经验，有完整项目落地实施经验。&lt;br /&gt;3.熟悉 Java 语言，熟悉数据结构算法及应用，有扎实的编程能力。&lt;br /&gt;4.熟练掌握 Spring Boot 、Mybatis 、Restful API 等主流技术栈。&lt;br /&gt;5.具备较好的工程能力，能从 0 到 1 独立完成设计、开发、上线部署和问题排查。&lt;br /&gt;6.熟悉 MySQL 、Postgresql 、Kafka 、Redis 、RabbitMQ 等常用中间件的使用和简单原理。&lt;br /&gt;7.了解 CI/CD 、流水线、自动化测试、变更回滚等技术。&lt;br /&gt;8.熟练使用 claude code 、codex 等 AI 工具。&lt;br /&gt;9.具备良好的问题分析能力、沟通协作能力和技术推动的能力。&lt;br /&gt;&lt;br /&gt;加分项:&lt;br /&gt;1.有 AI 项目落地经验。&lt;br /&gt;2.有开源项目贡献更佳。&lt;br /&gt;3.有高并发交易链路、大规模订单系统经验更佳。&lt;br /&gt;4.有性能调优、JVM 调优、数据库优化、微服务拆分经验更佳。&lt;br /&gt;5.有电商项目经验更佳。&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;薪资范围 20~35k*13 ，base 广州，报销所有开发过程中使用到的 AI 费用，可以理解为 Token 自由&lt;br /&gt;&lt;br /&gt;公司主营业务是服装类目的跨境电商&lt;br /&gt;&lt;br /&gt;微信：U2Jsb29keVM=</description><pubDate>Fri, 07 Aug 2026 07:30:22 GMT</pubDate><guid>c1a76d55e34098ea19a628d4b07a2765</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 沉浸式翻译开源轻量替代 Duo Translator v2.1.0 发布</title><link>https://www.v2ex.com/t/1232738#reply5</link><description>&lt;p&gt;特点：完全免费、开箱即用、没有登录注册、没有营销弹窗。&lt;/p&gt;
+&lt;p&gt;截图
+&lt;img alt="settings" class="embedded_image" rel="noreferrer" src="https://img.zeroflx.com/duo-settings.png" /&gt;&lt;/p&gt;
+&lt;p&gt;本次更新主要功能&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;a known Lenovo/AMD USB4 firmware issue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;an LG monitor firmware compatibility issue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;a Windows USB4 driver issue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;or a hardware defect affecting this particular ThinkPad&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;微软翻译接口失效修复&lt;/li&gt;
+&lt;li&gt;YouTube 双语字幕
+&lt;img alt="youtube" class="embedded_image" rel="noreferrer" src="https://img.zeroflx.com/youtube-subtitles.png" /&gt;&lt;/li&gt;
+&lt;li&gt;引入更加可定制化的网站翻译规则系统 (控制翻译和不翻译区域, 提升阅读体验)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Thanks in advance.&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/thinkpad-p16s-gen-4-amd-does-not-output-video-to-lg-ultrafine-evo-6k-32u990a-via-usb4-thunderbolt/253640"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:31:14 GMT</pubDate><guid>c859b287f282d168d7d6c0dcb0ff6a9a</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[V2EX] [推广] 送 几个 ChatGPT Plus 成品号和直充</title><link>https://www.v2ex.com/t/1232712#reply0</link><description>&lt;p&gt;一个 AI 代充平台 惠 AI ，提供 ChatGPT 、claude 、grok 等 AI 代充会员服务。&lt;/p&gt;
-&lt;p&gt;最近上线邀请活动：&lt;/p&gt;
-&lt;p&gt;邀请 15 人：送 GPT Codex 成品号 + Plus 会员
-邀请 50 人：送 Plus 会员充值 1 次，充自己账户&lt;/p&gt;
-&lt;p&gt;有售后支持。&lt;/p&gt;
-&lt;p&gt;👉 &lt;a href="https://www.huiai.shop/" rel="nofollow"&gt;https://www.huiai.shop/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;利益相关：项目方推广，有问题可以直接楼里问。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:30:55 GMT</pubDate><guid>38266fa3506e939b894f5c7b448408d1</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] GitHub项目太多了</title><link>https://www.nodeseek.com/post-862092-1</link><description>怎么样才能找到自己想要的项目呢</description><pubDate>Fri, 07 Aug 2026 06:30:34 GMT</pubDate><guid>ecedc9a913346a48a7939d32ca5d6759</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [企业级超稳定GPT5.6] 速开抽奖，$20订阅日套餐</title><link>https://www.nodeseek.com/post-862091-1</link><description>回帖参与，中奖私信我领#半小时后23:30开奖#明天中午13:00开奖#明天晚上23:30开奖#周二晚上23:30#周三晚上23:30#周四晚上23:30#周一中午13:30#明二晚上23:30今天22:00每周数百亿Tokens稳定消耗的企业级供应商免费赠送，急用可领Muskai-DeepseekV4&amp;amp;G</description><pubDate>Fri, 07 Aug 2026 06:30:24 GMT</pubDate><guid>0e7f8f9d4fb56c10c1acfbc6b48e3190</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] gcp300$现在还能续杯吗</title><link>https://www.nodeseek.com/post-862090-1</link><description>rt</description><pubDate>Fri, 07 Aug 2026 06:30:19 GMT</pubDate><guid>1b3f622b97f63ffcd23ed40fa9f01ec6</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【出】450出RN/RackNerd 6c6G 100g 12TB</title><link>https://www.nodeseek.com/post-862089-1</link><description>RackNerd6核6G每月12TB流量（已申请翻倍为24T）89.99刀/年到期日06/24/2027剩余价值520多，450出</description><pubDate>Fri, 07 Aug 2026 06:30:10 GMT</pubDate><guid>74edd7420dc93c8c4aacf23ded62203c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 求推荐美西小口流量线路机</title><link>https://www.nodeseek.com/post-862088-1</link><description>楼主的业务当前部署于美西洛杉矶，平时拿节点的机器当CDN反代加速，每日带宽吃的不多，但持续流量长，一直找大口线路机去养有点奢侈了，想搞个便宜的小口细水长流专供一下求各位大神帮忙推荐一下需求：配置无线路三网精品带宽100mbps左右流量：1.5t-2t（可以拆开买🐔）</description><pubDate>Fri, 07 Aug 2026 06:30:03 GMT</pubDate><guid>bd4aa0e20b3c8121d33640a18fa5886a</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 甲骨文免费号听说需要降配，那升级号呢</title><link>https://www.nodeseek.com/post-862087-1</link><description>rt，听到好多mjj收到了免费号强制降配的邮件。我有个升级号，但是没有收到任何邮件。最开始出降配风波的时候，主动调到了2C12G，后来自作主张又改回去了，没吃账单，不知道这次对升级号有没有影响，需要改成2+12吗</description><pubDate>Fri, 07 Aug 2026 06:30:02 GMT</pubDate><guid>d1d0f8436a68904047498e76835f4f4c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[Level1Techs Forum] Windows 11 "Windows Installer service could not be accessed". Service is running and registered.</title><link>https://forum.level1techs.com/t/windows-11-windows-installer-service-could-not-be-accessed-service-is-running-and-registered/253638</link><description>&lt;p&gt;Attempting to install a number of different programs and they all give an error related to Windows Installer Service. I have tried the only 2 troubleshooting steps I can find online, Making sure the service is running (Services says it is) and reregistering the service. I did notice the “Startup type” dropdown menu is greyed out and that seemed odd. Its a major headache to reinstall windows so I’m hopeful somebody has an idea what’s going on.  Also windows updates will not install which i believe is related.&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div class="lightbox-wrapper"&gt;&lt;a class="lightbox" href="https://level1techs.us-east-1.linodeobjects.com/original/4X/9/9/4/994b3c2ce05a6b12f6ad98a94e27e0048cebc75e.png" rel="noopener nofollow ugc" title="Screenshot 2026-08-05 021638"&gt;&lt;img alt="Screenshot 2026-08-05 021638" height="173" src="https://level1techs.us-east-1.linodeobjects.com/original/4X/9/9/4/994b3c2ce05a6b12f6ad98a94e27e0048cebc75e.png" width="359" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div class="lightbox-wrapper"&gt;&lt;a class="lightbox" href="https://level1techs.us-east-1.linodeobjects.com/original/4X/3/3/6/336a4daf2f5fcab6bd9cae6a197b75e128eb566b.png" rel="noopener nofollow ugc" title="Service Properties Screenshot 2026-08-05 022354"&gt;&lt;img alt="Service Properties Screenshot 2026-08-05 022354" height="466" src="https://level1techs.us-east-1.linodeobjects.com/original/4X/3/3/6/336a4daf2f5fcab6bd9cae6a197b75e128eb566b.png" width="406" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;1 post - 1 participant&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/windows-11-windows-installer-service-could-not-be-accessed-service-is-running-and-registered/253638"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:29:09 GMT</pubDate><guid>3335b1509d2aec6401206f0f20c07a1b</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item><item><title>[NodeSeek] 现在美国edu邮箱是不是只能吃灰了,感觉没啥羊毛可薅了</title><link>https://www.nodeseek.com/post-862086-1</link><description /><pubDate>Fri, 07 Aug 2026 06:28:53 GMT</pubDate><guid>c188f9ff15ec16334dc72d21b6a15a9d</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [已出] 10R 出 HostBRR 500G 存储盒子 US 区域，DA面板，玩不明白，不是VPS，给有需要的人。</title><link>https://www.nodeseek.com/post-862085-1</link><description /><pubDate>Fri, 07 Aug 2026 06:25:54 GMT</pubDate><guid>c534be38d91f5865d3e4e9cf5e43af19</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 溢价100元，出VMISS US.LA.TRI.Basic 三网优化4.5 CAD/月付 .IP干净</title><link>https://www.nodeseek.com/post-862084-1</link><description>IP：207.57开头，IP干净，22号到期。100+剩余价值10.83，合计110改NS邮箱交付，或者加1CADpush费push</description><pubDate>Fri, 07 Aug 2026 06:24:35 GMT</pubDate><guid>f0d0031b62fb37061da01fc847e4ce95</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【TQ】 VMRack（L3.VPS.1C1G.Base）测试留档（中午）</title><link>https://www.nodeseek.com/post-862083-1</link><description>IPv4回程IPv4大包回程国际互联单线程测速报告链接：https://tcpquality.ibsgss.uk/r/_g2rrMkmtD</description><pubDate>Fri, 07 Aug 2026 06:24:34 GMT</pubDate><guid>6b2065e4e4457e454a4cd7bc00acece5</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 剩余价值出VMISS CN.HK.BGP.DC2.Basic</title><link>https://www.nodeseek.com/post-862082-1</link><description>有八折循环优惠，年付40加币。12.31到期，push费用1加币。1C1G100M带宽，400G流量</description><pubDate>Fri, 07 Aug 2026 06:24:23 GMT</pubDate><guid>58e9413c9300defc9f06107b6f67b8a0</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] vps 家宽落地是怎么样的过程</title><link>https://www.nodeseek.com/post-862081-1</link><description>有个racknerd的vps，用来上chatgpt的，最近买的一个成品号，没用俩天被封了，售后说让办个家宽，这个什么意思，怎么样的链路，等于从新办个vps吗，有没有什么好的实现方式</description><pubDate>Fri, 07 Aug 2026 06:23:33 GMT</pubDate><guid>a63e242fc28152db7456975254546e3e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] 如果是这种情况你们还跑路吗？</title><link>https://www.v2ex.com/t/1232711#reply4</link><description>如果你最初提涨新，公司因为种种原因不给涨。&lt;br /&gt;你寒心了，开始投简历约面试，公司看你真的要走，开始找你谈话。&lt;br /&gt;说一定涨，而且是你先前要求涨幅的双倍。&lt;br /&gt;哪怕最后实在没办法，给其他同事降薪也要给你涨。&lt;br /&gt;你还想留在这公司吗？</description><pubDate>Fri, 07 Aug 2026 06:23:28 GMT</pubDate><guid>9c451846381cd01efba41cd93b4ccf9d</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] CTEXCEL可以激活了，大家快去试试</title><link>https://www.nodeseek.com/post-862080-1</link><description>之前用VOHIVE一直487,刚才试了一下直接激活成功不过，我已经PP退款了，这可怎么办？</description><pubDate>Fri, 07 Aug 2026 06:23:04 GMT</pubDate><guid>3f8d07c8250f2e8b9fe53ece7a299707</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [分享创造] 做了一个 Apple Pencil 在 Safari 浏览器随手写输入框书写优化体验插件</title><link>https://www.v2ex.com/t/1232709#reply0</link><description>做这个插件的起源是，我使用 iPad 网页刷题某些网页的输入框太小，而且写起来页面会跟着晃动，所以搞了个插件，点击输入框可以加载一个超大的写字板来稳定沉浸式书写&lt;br /&gt;&lt;br /&gt;插件主要两个功能&lt;br /&gt;&lt;br /&gt;大尺寸网页写字板&lt;br /&gt;聚焦支持的网页文本输入框，即可打开更宽敞的编辑区域，方便手写和检查内容。你可以选择仅在使用 Apple Pencil 输入设备轻点时打开写字板，也可以在写字板显示期间隐藏屏幕键盘。遇到不需要处理的输入框，还能单独将其排除； PenKit 不会保存其中输入的文字。&lt;br /&gt;&lt;br /&gt;选取、复制与保存网页文字&lt;br /&gt;使用 Apple Pencil 输入设备选取网页文字后，可直接复制，或主动保存到 PenKit 备忘录。选中文字中的 HTTP 或 HTTPS 链接会一并保留，方便稍后继续查阅。&lt;br /&gt;按来源整理备忘录，来自同一网页的摘录会自动归入同一篇页面备忘录。你可以查看来源、编辑标题与摘录、复制内容，或删除不再需要的记录。&lt;br /&gt;&lt;br /&gt;&lt;a href="https://apps.apple.com/us/app/penkit/id6794534773?l=zh-Hans-CN" rel="nofollow noopener" target="_blank"&gt;https://apps.apple.com/us/app/penkit/id6794534773?l=zh-Hans-CN&lt;/a&gt;</description><pubDate>Fri, 07 Aug 2026 06:11:23 GMT</pubDate><guid>ec04a55626ccc279b951901f8e522c25</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [MacBook] 现在 256 扩容 2t 性价比还行吗</title><link>https://www.v2ex.com/t/1232708#reply1</link><description>有无推荐店铺,等等党一败再败，年初的时候还想着观望观望。</description><pubDate>Fri, 07 Aug 2026 06:11:09 GMT</pubDate><guid>4e7a22c4fb21a3738dd86111fa61f012</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 自建Emby，115网盘302，TV端用vidhub出现声音和画面不同步的情况，有时相差十几秒！</title><link>https://www.nodeloc.com/t/topic/102432</link><description>自建Emby，115网盘302，TV端用vidhub出现声音和画面不同步的情况，有时相差十几秒！ 
-大家有没有遇到过这样的情况，自建Emby，115网盘302，在电脑上用小幻端看正常，平板用vidhub端看也正常。但是在电视端用vidhub&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 06:10:03 GMT</pubDate><guid>nodeloc-102432</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [远程工作] SmartDeer 招聘｜测试 &amp; 实施工程师（兼职）｜远程协作｜ 10k-15k / 月</title><link>https://www.v2ex.com/t/1232707#reply0</link><description>&lt;h1&gt;SmartDeer 招聘｜测试 &amp;amp; 实施工程师（兼职，支持远程）&lt;/h1&gt;
-&lt;p&gt;SmartDeer 是一家面向全球的人力服务平台，覆盖 EOR / Payroll / Mobility / AOR / IC / 财税服务 / 公司设立等业务场景。&lt;/p&gt;
-&lt;p&gt;我们正在招聘一位&lt;strong&gt;测试 &amp;amp; 实施工程师&lt;/strong&gt;，参与 SmartDeer 核心业务系统的测试、实施和配置工作。&lt;/p&gt;
-&lt;p&gt;这个岗位不是单纯的测试岗位。除了产品测试外，你还会参与业务系统的实施和配置，包括&lt;strong&gt;业务规则、系统参数、数据等低代码配置工作&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;公司官网： &lt;a href="https://smartdeer.com" rel="nofollow"&gt;https://smartdeer.com&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;你将参与的工作&lt;/h2&gt;
+&lt;p&gt;常用翻译场景均已覆盖，&lt;a href="https://chromewebstore.google.com/detail/duo-translator-ai-transla/pjniaipnjcdiiglednmhgmjmpmllelke" rel="nofollow"&gt;chrome 插件地址直达&lt;/a&gt;，更多功能介绍请访问&lt;a href="https://github.com/linuxscreen/duo-translator" rel="nofollow"&gt;github&lt;/a&gt;和&lt;a href="https://duotranslator.com/zh" rel="nofollow"&gt;官网&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;三大浏览器商店均已上架，欢迎大家尝试和提意见。&lt;/p&gt;
+&lt;p&gt;碎碎念:&lt;/p&gt;
+&lt;p&gt;1 、最近（ 8 月 4 日）微软翻译接口调整，导致大部分插件微软翻译都失效了，感觉应该当天就先发布一个最小修复版本（那天卸载量 40 ，当天发布应该数据就打正了😢）。主要由于新增的功能还有很多问题需要解决，就拖到昨天才提交商店审核，今天通过。&lt;/p&gt;
+&lt;p&gt;2 、目前 chrome 商店已突破 400 用户。edge 还是 300 多一直没怎么变，也没有评论和反馈。推广和增长是真的难啊。&lt;/p&gt;
+&lt;p&gt;3 、本次更新商店审核速度：Firefox 立即通过(应该都是直接通过, 后续可能审核)、Edge 当天通过（这次很快）、Chrome 第二天通过。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:29:24 GMT</pubDate><guid>158b21ee323fd82cc1b1fd476c1ba3af</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] [AMA] 自由泳练习时长 3 年半，千米成绩破 16 分，有什么想问的</title><link>https://www.v2ex.com/t/1232737#reply0</link><description>&lt;p&gt;大家好，我是自由泳练习时长三年半的练习生。今天千米自由泳成绩 15′54, 50 米国标泳池。我之前也是无法连续游百米的选手，一开始坚持下来，25 分进步到 22 分，再到 20 分，然后一分一分的进步。没有童子功，平时也不撸铁，也不跑步，只靠坚持不懈的练习。&lt;/p&gt;
+&lt;p&gt;50 米自由泳和百米自由泳，可以达到运动员三级，但成年人没办法拿证书了，所以练习比较多的是千米。希望千米能再进步一些。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="千米自由泳" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/O4VoIxg.jpeg" /&gt; &lt;/p&gt;
+&lt;p&gt;视频链接: &lt;a href="https://www.bilibili.com/video/BV1Jzub6rEYZ/?share_source=copy_web&amp;amp;vd_source=05b92a37a11731df95e98813a7c62f28" rel="nofollow"&gt;千米自由泳 15′54 练习，跟着大佬 PB&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:29:15 GMT</pubDate><guid>444e3914e227156eee88bfdf07667a91</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 秋天第一杯奶茶不符合秋季忌寒忌燥养生理念</title><link>https://www.v2ex.com/t/1232736#reply6</link><description>很多人被这种洗脑式营销跟风，但是立秋需忌寒忌燥，初秋人体阳气内敛、脾胃虚寒，寒凉食物易损伤脾阳，引发腹痛、腹泻、脾胃虚弱。&lt;br /&gt;但是话说回来，对于一年四季爱喝冷饮的人，可能觉得无所谓了。</description><pubDate>Fri, 07 Aug 2026 07:29:10 GMT</pubDate><guid>f85992c4ca78ff10de8deb8b486a32ee</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [OpenAI] Chat GPT-5.6 Luna 可以无限使用了，各位打算怎么蹬？</title><link>https://www.v2ex.com/t/1232735#reply4</link><description>&lt;a href="https://i.imgur.com/lpPSTFo.png" rel="nofollow noopener" target="_blank"&gt;&lt;img class="embedded_image" rel="noreferrer" src="https://i.imgur.com/lpPSTFo.png" /&gt;&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 我们正在让 ChatGPT 中的更好智能更容易为每个人访问：&lt;br /&gt;&lt;br /&gt;- GPT-5.6 Sol 现在为 Plus 和 Pro 用户提供 Instant 和深度推理支持，带来更准确、更专注的响应。&lt;br /&gt;&lt;br /&gt;- 免费版和 Go 用户从明天起可与 GPT-5.6 Luna 进行无限文本聊天。&lt;br /&gt;&lt;br /&gt;以上转自：@OpenAI</description><pubDate>Fri, 07 Aug 2026 07:28:46 GMT</pubDate><guid>5a99115dfd8796e270d7f8e7bd2c841e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 使用 codex 30 分钟撸了一个 Redis 客户端</title><link>https://www.v2ex.com/t/1232734#reply0</link><description /><pubDate>Fri, 07 Aug 2026 07:26:55 GMT</pubDate><guid>7dee002a541b8f7f0f39e7bcbb46b171</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] [开源预告] 一款 shell + cli + 流程的桌面软件，自定义你的工作流，欢迎来提提意见</title><link>https://www.v2ex.com/t/1232733#reply0</link><description>&lt;p&gt;如果你也觉得聊天式开发十分难受&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;SmartDeer 业务系统的测试和实施工作&lt;/li&gt;
-&lt;li&gt;参与产品需求评审，理解业务流程和业务规则，设计测试场景和测试用例&lt;/li&gt;
-&lt;li&gt;根据业务需求完成系统参数、业务规则、数据等低代码配置，并验证配置结果&lt;/li&gt;
-&lt;li&gt;负责 Web 端功能测试和接口测试，保障需求交付质量&lt;/li&gt;
-&lt;li&gt;使用 SQL 进行数据查询、数据校验、测试数据准备及问题排查&lt;/li&gt;
-&lt;li&gt;对测试及线上问题进行初步定位，判断配置、数据或程序问题，并协助研发排查&lt;/li&gt;
-&lt;li&gt;与产品、研发紧密协作，独立推进测试、配置、上线及问题跟进&lt;/li&gt;
+&lt;li&gt;会话上下文稍长（超过 10 轮），模型就开始“降智”——忘记前面的约束、重复犯错、自相矛盾。&lt;/li&gt;
+&lt;li&gt;更难受的是，模型几乎永远发现不了自己的问题。你指出来，它道歉；你再指，它再道歉……像极了和一面回音壁对话。&lt;/li&gt;
+&lt;li&gt;每轮对话都要重复指导 ai 进行某些固定的流程&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;我们希望你具备&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;1 年以上 Web 系统测试、实施或相关工作经验&lt;/li&gt;
-&lt;li&gt;业务理解能力较强，能够快速理解复杂业务流程和业务规则&lt;/li&gt;
-&lt;li&gt;熟悉常见软件测试流程和测试方法，能够独立负责完整需求或项目测试&lt;/li&gt;
-&lt;li&gt;熟悉 MySQL 等数据库，能够熟练使用 SQL 进行查询和数据校验&lt;/li&gt;
-&lt;li&gt;熟悉接口测试，能够使用 Postman 等工具完成接口验证&lt;/li&gt;
-&lt;li&gt;能够独立分析和定位问题，并与产品、研发协作推动解决&lt;/li&gt;
-&lt;li&gt;有较强的责任心、细致度和交付意识&lt;/li&gt;
-&lt;li&gt;不要求具备完整的软件开发能力，但能够看懂代码或使用 Python 等进行简单数据处理、自动化工作会加分&lt;/li&gt;
-&lt;li&gt;能接受并适应 AI 辅助测试、数据处理、问题排查和系统配置的工作方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;加分项&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;有 EOR / Payroll / HR SaaS / 财务等业务系统经验&lt;/li&gt;
-&lt;li&gt;有 ERP 、CRM 或其他复杂 ToB 系统测试、实施经验&lt;/li&gt;
-&lt;li&gt;有低代码平台、配置化系统、规则引擎相关经验&lt;/li&gt;
-&lt;li&gt;有客户实施、业务配置或系统上线经验&lt;/li&gt;
-&lt;li&gt;有自动化测试经验&lt;/li&gt;
-&lt;li&gt;熟练使用 Codex 、Claude Code 、Cursor 等 AI 工具辅助工作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;工作方式&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;兼职，预算 10–15K/月&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;远程协作，&lt;strong&gt;北京优先&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;希望长期稳定合作，不考虑短期项目制或临时接单&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;工作日需要有较多可投入时间&lt;/strong&gt;，不太适合只能晚上、周末兼职的情况&lt;/li&gt;
-&lt;li&gt;10:00–19:00 期间需保持飞书在线，能够及时响应需求、测试及线上问题&lt;/li&gt;
-&lt;li&gt;每天 &lt;strong&gt;18:00–19:00&lt;/strong&gt; 为团队固定 Daily Sync 时间，需要能够稳定参加&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为避免双方浪费时间：如果目前有全职工作，且工作日白天基本无法投入或响应，这个岗位可能不太合适。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;联系方式&lt;/h2&gt;
-&lt;p&gt;请发送&lt;strong&gt;简历和可投入时间&lt;/strong&gt;至：&lt;/p&gt;
-&lt;p&gt;&lt;a href="mailto:william.zhang@ideal-careerbridge.com"&gt;william.zhang@ideal-careerbridge.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;邮件标题：&lt;strong&gt;测试 &amp;amp; 实施工程师 + 姓名&lt;/strong&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:08:36 GMT</pubDate><guid>c5e3897aa46484524cb32a304d652a3b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 微信小微 ai 开始灰测了</title><link>https://www.v2ex.com/t/1232706#reply4</link><description>&lt;p&gt;发朋友圈的时候有个 AI 帮写，目前看到这一个入口&lt;/p&gt;
-&lt;p&gt;&lt;img alt="31a0586d9002cb3d03ce2e867adcf319.jpg" class="embedded_image" rel="noreferrer" src="https://file.1tb.site/1786082834487_31a0586d9002cb3d03ce2e867adcf319.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="887822896b61342db17c90595fcc1c45.jpg" class="embedded_image" rel="noreferrer" src="https://file.1tb.site/1786082528762_887822896b61342db17c90595fcc1c45.jpg" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:07:37 GMT</pubDate><guid>88fb31b0dd494e0c5e5e3d8de0c8e820</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 为什么没有一个类似 LeetCode 的专注 AI/Agent 开发的产品？</title><link>https://www.v2ex.com/t/1232705#reply0</link><description /><pubDate>Fri, 07 Aug 2026 06:06:11 GMT</pubDate><guid>b6d42ead6eaf354fa85e2c482cb0f955</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [职场话题] 有没有在做外贸的 V 友？建了个同行交流群</title><link>https://www.v2ex.com/t/1232704#reply1</link><description>最近建了一个外贸跨境交流群，目前已经接近 200 人。&lt;br /&gt;&lt;br /&gt;群里主要都是做外贸、跨境相关工作的朋友，平时聊一些实际工作中遇到的问题，比如客户开发、报价、跟进、订单、单证、平台、AI 工具，以及大家各自踩过的坑和经验。&lt;br /&gt;&lt;br /&gt;建群的初衷比较简单，就是想有一个同行之间能正常交流的地方，所以目前有几个原则：&lt;br /&gt;&lt;br /&gt;1.禁止广告和刷屏&lt;br /&gt;2.主要邀请外贸、跨境一线从业者&lt;br /&gt;3.暂时不拉物流、付款、认证、代运营等第三方服务商&lt;br /&gt;&lt;br /&gt;如果你也是做外贸或者跨境的，欢迎进来一起交流。&lt;br /&gt;添加微信：imichaelhere&lt;br /&gt;&lt;br /&gt;添加时麻烦备注：&lt;br /&gt;&lt;br /&gt;地区 - 产品 - 称呼&lt;br /&gt;&lt;br /&gt;例如：&lt;br /&gt;深圳 - 家居用品 - Michael&lt;br /&gt;&lt;br /&gt;主要是方便确认一下大家的行业背景,有更多合作的机会</description><pubDate>Fri, 07 Aug 2026 06:05:33 GMT</pubDate><guid>64287378d8010963fad30901aaf6e5c8</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] CarPlay 便携屏 Carpodgo mini 499 的价格比其他品牌 180-400 元的有哪些差别？</title><link>https://www.v2ex.com/t/1232703#reply3</link><description /><pubDate>Fri, 07 Aug 2026 06:01:59 GMT</pubDate><guid>454625e408205d54d8913eb037ada25e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 写了个碰瓷网约车车牌查询网站</title><link>https://www.v2ex.com/t/1232702#reply2</link><description>&lt;p&gt;现在各地网约车碰瓷的情况非常猖獗，为了反制，我收集了社交媒体的公开信息，写了个网约车碰瓷的车牌查询网站。  &lt;/p&gt;
-&lt;p&gt;目前我手动插入了一些社媒上的碰瓷或者疑似碰瓷的事故记录。支持用户手动上传事故记录，经过审批后会公开。  &lt;/p&gt;
-&lt;p&gt;欢迎大家提意见，如果热度高大家都觉得有意义，后期可以考虑自动化抓取录入。  &lt;/p&gt;
-&lt;p&gt;&lt;img alt="主页" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/KziUwBz.png" /&gt;
-网约车事故记录查询： &lt;a href="https://pc.higrammar.com/" rel="nofollow"&gt;https://pc.higrammar.com/&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 06:01:04 GMT</pubDate><guid>a5b38ea318166d9900932d671c7842e0</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 如果女朋友转发这个，你们会给吗</title><link>https://www.v2ex.com/t/1232701#reply25</link><description>&lt;p&gt;抖音评论区挺多晒收钱的，还有这个秋天第一杯奶茶也是，也不知道什么时候营销出来的&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://imgur.com/a/G3o7gZT" rel="nofollow"&gt;https://imgur.com/a/G3o7gZT&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:58:28 GMT</pubDate><guid>ea0108826c4d19afe2abf56c755ffe7a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] ChatGPT 这次真要解禁成人内容了？</title><link>https://www.v2ex.com/t/1232700#reply9</link><description>Hi xxx,&lt;br /&gt;We use age-related information to determine when teen safety protections should apply to ChatGPT accounts, to provide the right experience.&lt;br /&gt;On August 11, 2026, these protections are scheduled to be removed from your account, and you’ll gain access to features and settings for adults.&lt;br /&gt;If this timing doesn’t seem right, please verify your age.&lt;br /&gt;To learn more, visit our Help Center.&lt;br /&gt;— The OpenAI Team</description><pubDate>Fri, 07 Aug 2026 05:57:08 GMT</pubDate><guid>ca9e0c4cc1a928f8dc532cd2a93920ac</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 做了一个给中文用户整理 AI 会员订阅信息的项目： MuyuGPT，来听听大家的意见</title><link>https://www.v2ex.com/t/1232698#reply0</link><description>&lt;p&gt;最近在整理一个项目，叫 MuyuGPT 。&lt;/p&gt;
-&lt;p&gt;先把利益相关放前面：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我是这个项目的运营/维护方，这是一篇项目介绍帖，不是第三方测评。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;MuyuGPT 是面向中文用户的独立第三方 AI 会员订阅协助与使用指南项目，目前主要覆盖：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ChatGPT&lt;/li&gt;
-&lt;li&gt;Claude&lt;/li&gt;
-&lt;li&gt;Gemini&lt;/li&gt;
-&lt;li&gt;Grok / SuperGrok&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;官网：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muyugpt.com" rel="nofollow"&gt;https://muyugpt.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;公开 GitHub 资料库：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/muyugpt-official/ai-subscription-guide" rel="nofollow"&gt;https://github.com/muyugpt-official/ai-subscription-guide&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今天发在「推广」节点，也是因为这篇本质上就是在介绍自己的项目。&lt;/p&gt;
-&lt;h2&gt;为什么做这个？&lt;/h2&gt;
-&lt;p&gt;最开始觉得这件事情很简单：&lt;/p&gt;
-&lt;p&gt;把几个 AI 产品的套餐整理一下就行。&lt;/p&gt;
-&lt;p&gt;实际整理以后发现问题比想象中多。&lt;/p&gt;
-&lt;p&gt;普通用户遇到的并不只是“怎么付款”，而是：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;不知道应该用 ChatGPT 还是 Claude ；&lt;/li&gt;
-&lt;li&gt;不知道免费版和会员版差多少；&lt;/li&gt;
-&lt;li&gt;不知道网页会员和 API 根本不是一回事；&lt;/li&gt;
-&lt;li&gt;不同套餐名称越来越多；&lt;/li&gt;
-&lt;li&gt;第三方商品的交付方式经常写得不清楚；&lt;/li&gt;
-&lt;li&gt;付款以后不知道订单为什么还在处理中；&lt;/li&gt;
-&lt;li&gt;不知道完成以后在哪里验收；&lt;/li&gt;
-&lt;li&gt;不知道哪些账号资料不能交给第三方。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;所以现在 MuyuGPT 实际上更像：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;产品信息 + 订单系统 + 中文知识库&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;而不是单纯的商品页面。&lt;/p&gt;
-&lt;h2&gt;目前整理的内容&lt;/h2&gt;
-&lt;p&gt;现在主要有几块：&lt;/p&gt;
-&lt;h3&gt;产品和套餐&lt;/h3&gt;
-&lt;p&gt;会整理 ChatGPT 、Claude 、Gemini 、Grok 各自的：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;主要使用场景；&lt;/li&gt;
-&lt;li&gt;套餐区别；&lt;/li&gt;
-&lt;li&gt;适合人群；&lt;/li&gt;
-&lt;li&gt;网页会员与 API ；&lt;/li&gt;
-&lt;li&gt;使用周期；&lt;/li&gt;
-&lt;li&gt;交付方式；&lt;/li&gt;
-&lt;li&gt;到账确认。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;订单流程&lt;/h3&gt;
-&lt;p&gt;目前通用逻辑是：&lt;/p&gt;
-&lt;p&gt;选择产品&lt;br /&gt;
-→ 看清套餐和交付说明&lt;br /&gt;
-→ 创建订单&lt;br /&gt;
-→ 完成 MuyuGPT 订单付款&lt;br /&gt;
-→ 查询订单状态&lt;br /&gt;
-→ 等待处理&lt;br /&gt;
-→ 用户本人验收&lt;/p&gt;
-&lt;p&gt;MuyuGPT 订单页面支持支付宝和微信付款。&lt;/p&gt;
-&lt;p&gt;这里也明确一下：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这是用户向 MuyuGPT 支付人民币，不代表 OpenAI 、Anthropic 、Google 或者 xAI 的官方订阅页直接支持支付宝/微信。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我觉得这句话必须写清楚，否则很容易造成误解。&lt;/p&gt;
-&lt;h2&gt;订单状态这块花了不少时间&lt;/h2&gt;
-&lt;p&gt;最开始只想做：&lt;/p&gt;
-&lt;p&gt;pending / success / failed&lt;/p&gt;
-&lt;p&gt;后来发现完全不够。&lt;/p&gt;
-&lt;p&gt;因为：&lt;/p&gt;
-&lt;p&gt;支付成功 ≠ 服务完成。&lt;/p&gt;
-&lt;p&gt;现在更倾向把它拆成：&lt;/p&gt;
-&lt;h3&gt;支付状态&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;pending&lt;/li&gt;
-&lt;li&gt;paid&lt;/li&gt;
-&lt;li&gt;failed&lt;/li&gt;
-&lt;li&gt;refunding&lt;/li&gt;
-&lt;li&gt;refunded&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;处理状态&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;not_started&lt;/li&gt;
-&lt;li&gt;queued&lt;/li&gt;
-&lt;li&gt;processing&lt;/li&gt;
-&lt;li&gt;waiting_user&lt;/li&gt;
-&lt;li&gt;completed&lt;/li&gt;
-&lt;li&gt;failed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这样用户才能看到：&lt;/p&gt;
-&lt;p&gt;“钱已经到了，但是订单还在处理。”&lt;/p&gt;
-&lt;p&gt;而不是一直猜到底发生了什么。&lt;/p&gt;
-&lt;h2&gt;账号安全是我现在比较在意的一块&lt;/h2&gt;
-&lt;p&gt;第三方 AI 订阅这类服务，一个很大的风险就是用户并不知道哪些东西属于高权限凭证。&lt;/p&gt;
-&lt;p&gt;我目前的原则是：&lt;/p&gt;
-&lt;p&gt;普通订单不应该要求用户提交：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;密码&lt;/li&gt;
-&lt;li&gt;短信/邮箱验证码&lt;/li&gt;
-&lt;li&gt;Cookie&lt;/li&gt;
-&lt;li&gt;Session Token&lt;/li&gt;
-&lt;li&gt;API Key&lt;/li&gt;
-&lt;li&gt;2FA 恢复代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;如果需要登录、确认账号、检查会员状态，尽量让用户本人在对应 AI 产品的官方页面完成。&lt;/p&gt;
-&lt;p&gt;也就是说：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;订单归订单，账号控制权归用户。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我觉得这个边界应该公开写，而不是靠客服临时解释。&lt;/p&gt;
-&lt;h2&gt;为什么又建了 GitHub ？&lt;/h2&gt;
-&lt;p&gt;主要是想解决“文章发出去以后没人更新”的问题。&lt;/p&gt;
-&lt;p&gt;AI 产品变化太快：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;套餐会改；&lt;/li&gt;
-&lt;li&gt;页面会改；&lt;/li&gt;
-&lt;li&gt;功能会改；&lt;/li&gt;
-&lt;li&gt;条件会改；&lt;/li&gt;
-&lt;li&gt;旧截图会失效。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;所以现在把部分公开文档放在：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/muyugpt-official/ai-subscription-guide" rel="nofollow"&gt;https://github.com/muyugpt-official/ai-subscription-guide&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;目前包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;MuyuGPT 项目说明；&lt;/li&gt;
-&lt;li&gt;AI 产品指南；&lt;/li&gt;
-&lt;li&gt;支付与订单说明；&lt;/li&gt;
-&lt;li&gt;账号安全；&lt;/li&gt;
-&lt;li&gt;FAQ ；&lt;/li&gt;
-&lt;li&gt;后续准备增加修改记录。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;GitHub 不是为了堆 SEO 页面，主要还是想有一个比较容易维护和检查的公开资料库。&lt;/p&gt;
-&lt;h2&gt;MuyuGPT 与这些 AI 公司是什么关系？&lt;/h2&gt;
-&lt;p&gt;没有官方关系。&lt;/p&gt;
-&lt;p&gt;MuyuGPT 是独立第三方项目，与：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;OpenAI&lt;/li&gt;
-&lt;li&gt;Anthropic&lt;/li&gt;
-&lt;li&gt;Google&lt;/li&gt;
-&lt;li&gt;xAI&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;不存在官方隶属、授权或合作关系。&lt;/p&gt;
-&lt;p&gt;产品名称只是用于描述对应 AI 服务。&lt;/p&gt;
-&lt;p&gt;各产品功能、账号政策和地区规则还是以官方为准。&lt;/p&gt;
-&lt;h2&gt;现在比较想听反馈的地方&lt;/h2&gt;
-&lt;p&gt;目前我自己觉得还有几个东西需要继续改：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;产品页面是不是信息太多；&lt;/li&gt;
-&lt;li&gt;会员/API 区别需不需要放到每个产品首屏；&lt;/li&gt;
-&lt;li&gt;订单状态用户是否真的能看懂；&lt;/li&gt;
-&lt;li&gt;安全说明应该放在商品页还是下单页更醒目；&lt;/li&gt;
-&lt;li&gt;GitHub 资料库目录怎么组织更合理；&lt;/li&gt;
-&lt;li&gt;第三方身份声明怎样写既清楚又不影响阅读。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;如果大家愿意看，可以直接看官网或者 GitHub 。&lt;/p&gt;
-&lt;p&gt;官网：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://muyugpt.com" rel="nofollow"&gt;https://muyugpt.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;GitHub：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/muyugpt-official/ai-subscription-guide" rel="nofollow"&gt;https://github.com/muyugpt-official/ai-subscription-guide&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有产品结构、文档、安全边界或者交互方面的建议，都欢迎直接在这个帖子里提。&lt;/p&gt;
-&lt;p&gt;最后再说明一次：&lt;/p&gt;
-&lt;p&gt;MuyuGPT 是独立第三方 AI 会员订阅协助与使用指南项目，不是 OpenAI 、Anthropic 、Google 或 xAI 的官方网站或官方代理。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:49:28 GMT</pubDate><guid>b45988eb881ddba0702c8888872560b5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [macOS] 从 windows 切换到 MacOS，感觉 MacOS 不好用。</title><link>https://www.v2ex.com/t/1232697#reply19</link><description>&lt;p&gt;码农，一直用 Windows(基本所有操作都是快捷键，比较少用鼠标，完全不影响工作)，本月切换到 Mac OS （ Macmini M4 Pro ）之后，感觉非常不好用，甚至反人类。&lt;/p&gt;
-&lt;p&gt;我知道很多的程序员、大牛都是用 Mac OS ，现在甚至怀疑是我自己的问题。 想听听大家的看法。&lt;/p&gt;
-&lt;p&gt;文件夹中有 14 张图片（参见图片），编号从 1 到 14 。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;鼠标双击打开一张之后，方向键(或者 PageUp\PageDown 键无法切换上一张下一张)；&lt;/li&gt;
-&lt;li&gt;鼠标点中，按回车键，不是打开，是更名。电脑存在这么多年，回车不一直是确认吗；&lt;/li&gt;
-&lt;li&gt;鼠标选中，空格打开，按方向键可以切换展示，但只能切换到这一行的最后一张，如果想看第二行的第一张，需要用左方向键切换到第一行的第一张，然后按下方向键切换到第二行第一张。我觉得这点是最反人类的设计。我的一个文件夹中有一堆图片，难道它们不是一个整体吗？为什么用方向键右键切到第一行最后一张时，再次按方向键右键无法切换到第二行第一张，我觉得做出这种设计来的人，简直是一个笑话；&lt;/li&gt;
-&lt;li&gt;鼠标选中，空格打开，tab 切换。可以看玩目录中的所有图片。然后，最大的笑话来了。1 看完之后是 10 、11 、12 、13 、14 、2 、3 、4 、....、8 、9 、1 居然是这样的顺序。  我记得上古时代的 windows 也存在这个问题。导致很多情况下，大家都编号为 001 、002 、003 这样，能得到预期的顺序。但 windows 10 已经用了不知道多少年。已经完全没有这个问题了。同目录下的数字序号的文件，注定是 1 到 9 ，之后是 10 到 19 。 现在用了 macOS ，居然还是 1 、10 、11 、12 、13 、14 、2 、3 这样排序。无奈、困扰之极。&lt;/li&gt;
-&lt;li&gt;屏幕下方 dock,第二个图标 APP ，点开之后，光标停在搜索输入几个字母，找到程序，执行。dock 消失。没问题。再次打开 dock 的时候，依然是第一次的结果，有我输入的内容，有上次筛选出来的程序，需要我删除掉上次的输入再次搜索。这个也很反人类，还念 windows 的点一下 win 键，之后直接输入，找到运行。下次点 win 键，完全重新的继续找。&lt;/li&gt;
-&lt;li&gt;拖拽‘访达’窗口，居然能在下边出现滚动条，把本来显示在窗口中的文件，硬生生的‘隐藏’起来；&lt;/li&gt;
-&lt;li&gt;硬生生的找不到‘剪切’在那里（也是想试试自己不上网搜能不能找到在 MacOS 中‘剪切’的功能）；&lt;/li&gt;
-&lt;li&gt;‘复制’和‘拷贝’。。。。&lt;/li&gt;
-&lt;li&gt;zip 文件没有类似于‘解压缩’的选项，只有打开。打开之后，两个图标居然是（允许）重叠的。可正常情况下那一个图标拖到另一个文件夹，不应该是移动到这个文件夹吗?&lt;/li&gt;
-&lt;li&gt;‘制作替身’，还没用过，看名字也没理解是什么意思；&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt="ScreenShot_2026-08-07_131548_665.png · 129" class="embedded_image" rel="noreferrer" src="https://img.cdn1.vip/i/6a756a89034e4_1786079881.webp" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:46:50 GMT</pubDate><guid>488aee7a91b8d3b4f8ecb1dbc431bfd4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 开源 kkRepo v0.7.0 发布，平替 Nexus 的制品仓库，新增企业级的制品清理策略+安全扫描策略功能支持</title><link>https://www.v2ex.com/t/1232696#reply0</link><description>&lt;h1&gt;kkRepo 是什么？&lt;/h1&gt;
-&lt;p&gt;kkRepo 是一款社区驱动、完全开源的自托管制品仓库，旨在解决 Sonatype Nexus 社区版的各类限制与痛点，为社区提供开放、可靠且可持续演进的制品管理方案。目前已支持 Maven, npm, PyPI, Go, Helm, Cargo/Rust, Dart/Pub, Composer/PHP, Terraform, Swift Package Registry, Ansible Galaxy, Docker/OCI, NuGet, RubyGems, Yum, Raw 等制品格式。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/klboke/kkRepo" rel="nofollow"&gt;https://github.com/klboke/kkRepo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;功能特性&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;支持 16+ 种主流仓库格式，覆盖 hosted 、proxy 和 group 仓库管理。&lt;/li&gt;
-&lt;li&gt;支持 AOT 编译运行，约 1 秒启动就绪，内存占用低于 200 MB 。&lt;/li&gt;
-&lt;li&gt;Proxy 仓库支持按仓库配置出站 HTTP 或 SOCKS5 网络代理，并支持可选的代理认证和 HTTPS 上游隧道。&lt;/li&gt;
-&lt;li&gt;支持制品安全扫描，包括 CycloneDX SBOM 生成、已知漏洞匹配、策略与豁免管理，以及可选的下载阻断。&lt;/li&gt;
-&lt;li&gt;支持丰富的制品清理策略，提供企业级制品生命周期管理。&lt;/li&gt;
-&lt;li&gt;兼容 Sonatype Nexus API 协议、用户权限模型、和 /repository/&amp;lt;repo&amp;gt;/... URL 布局。&lt;/li&gt;
-&lt;li&gt;可使用 kkRepo 平替 Sonatype Nexus ，支持存量数据一键迁移并沿用原仓库域名和 URL&lt;/li&gt;
-&lt;li&gt;支持完整的身份与访问控制，覆盖 Local 、LDAP 、OIDC 认证、匿名访问策略和细粒度权限管理。&lt;/li&gt;
-&lt;li&gt;支持完整的可观测性，包括 Prometheus 指标导出、提供 Grafana 面板。&lt;/li&gt;
-&lt;li&gt;使用 MySQL 或 PostgreSQL 存储元数据和共享运行状态；默认仍为 MySQL 。&lt;/li&gt;
-&lt;li&gt;支持 OSS/S3/File 存储制品 blob 。&lt;/li&gt;
-&lt;li&gt;支持多副本高可用部署。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;kkRepo v0.7.0 新增内容&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;新增制品仓库清理能力&lt;/li&gt;
-&lt;li&gt;新增制品安全扫描能力&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;系统 UI&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="img" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/MpI6rl2.png" /&gt;
-&lt;img alt="img" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/MZ7wtgQ.png" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:36:59 GMT</pubDate><guid>90afeeb95116d7a4056be3cdd90c30a9</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [人工智能] Wan 3.0 这次最有意思的可能不是 30 秒</title><link>https://www.v2ex.com/t/1232694#reply1</link><description>&lt;p&gt;昨天 Wan 3.0 开始公测，大家讨论最多的应该是单次终于可以做到 30 秒。&lt;/p&gt;
-&lt;p&gt;但我看了一圈之后，反而觉得这次比较容易被忽略的功能是：它开始直接吃“文档”了。&lt;/p&gt;
-&lt;p&gt;除了文字、图片、视频、音频之外，现在 doc 、xls 、ppt 、pdf 、md 都可以直接作为输入。&lt;/p&gt;
-&lt;p&gt;这个变化其实挺有意思。&lt;/p&gt;
-&lt;p&gt;以前所谓的 AI 视频生成，大部分还是：&lt;/p&gt;
-&lt;p&gt;写 prompt → 抽一个视频 → 不满意继续抽。&lt;/p&gt;
-&lt;p&gt;所以它本质上还是一个“生成素材”的工具。&lt;/p&gt;
-&lt;p&gt;但如果模型能直接理解一份 PPT 、产品 Brief 或 PDF ，然后把里面的内容、图片、结构一起理解之后生成视频，那用户给 AI 的就不再只是一个 prompt ，而是一整份“任务上下文”。&lt;/p&gt;
-&lt;p&gt;比如扔进去一份产品介绍 PPT ，让它直接做产品宣传片；或者把课程 PDF 丢进去做讲解视频。感觉视频模型正在慢慢从“生成一个好看的镜头”，往“完成一个视频任务”走。&lt;/p&gt;
-&lt;p&gt;另外单次 30 秒也比想象中重要。5 ～ 10 秒更像素材，30 秒已经开始能够完整讲一件事情了，后面如果角色一致性和镜头衔接继续提高，很多以前必须靠剪辑拼起来的东西可能会直接在模型里完成。&lt;/p&gt;
-&lt;p&gt;查资料的时候看到一个 Wan 3 的站： &lt;a href="https://wan3video.app/" rel="nofollow"&gt;https://wan3video.app/&lt;/a&gt; 里面整理了一些 Wan 3 的视频案例、prompt 和不同输入方式，想研究的可以一起看看。&lt;/p&gt;
-&lt;p&gt;现在比较好奇的是：&lt;/p&gt;
-&lt;p&gt;如果以后视频模型真的可以直接读 PPT / PDF / 产品资料，然后自己规划镜头、生成画面、配音和声音，大家觉得最先被替代的会是“AI 视频工具”，还是传统的视频制作 SaaS&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:20:13 GMT</pubDate><guid>4337833237e579b15e9b3f6cb533226b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 抽奖：量产 AI 硬件的通讯协议和小程序源码全开源了，配合 AI 编程可以直接改成自己的产品</title><link>https://www.v2ex.com/t/1232693#reply3</link><description>&lt;hr /&gt;
-&lt;p&gt;先亮明身份：我是做硬件的（四博智联 DOIT ），这帖是广告&lt;/p&gt;
-&lt;p&gt;购买地址淘宝： &lt;a href="https://item.taobao.com/item.htm?id=1068722425053" rel="nofollow"&gt;https://item.taobao.com/item.htm?id=1068722425053&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;但下面链的东西是真开源，MIT 协议，不用注册不用留资，clone 下来就能编译。&lt;/p&gt;
-&lt;p&gt;GitHub: &lt;a href="https://github.com/doit-open-org" rel="nofollow"&gt;https://github.com/doit-open-org&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;一、开源了什么&lt;/h2&gt;
-&lt;p&gt;不是开源某个玩具项目，是把已经量产、淘宝上能直接买到的几款设备，它们的通讯协议文档和微信小程序源码完整放了出来。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;esp32s3_chat_badge&lt;/strong&gt; —— 电子吧唧 Wi-Fi 款（ MZ46-S3-DZ V1.0 ）&lt;/p&gt;
-&lt;p&gt;完整的 ESP-IDF 固件源码，基于 xiaozhi-esp32 定制。ESP32-S3 主控，16MB Flash 配 Octal PSRAM ，360×360 圆形 QSPI 屏（ JD9855 ）加 CST816D 电容触摸，VB6824 负责音频和硬件唤醒词。仓库里带原理图 PDF 、完整引脚表、协议文档，还挂了 CI 编译。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ble_chat_badge&lt;/strong&gt; —— 电子吧唧蓝牙款&lt;/p&gt;
-&lt;p&gt;BLE 协议文档（中英双语）加微信小程序源码。小程序放了 BLE 扫描连接、资源上传、文件选择三个页面，够你看懂怎么跟设备说话。设备侧支持 AI 对话、图片和 GIF 、视频、MP3 、蓝牙音箱、AI 闹钟、应援灯。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;doit_pixel&lt;/strong&gt; —— LED 点阵屏&lt;/p&gt;
-&lt;p&gt;BLE 协议加微信小程序源码，这个是完整的，250 多个文件。调色、特效、音乐律动、DIY 画板、动态 DIY 、文字滚动、倒计时，页面全在里面。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;doit_record&lt;/strong&gt; —— AI 录音笔&lt;/p&gt;
-&lt;p&gt;BLE 协议加小程序源码。实时转写、音频波形、录音文件下载和管理都有。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;ai-companion-camera&lt;/strong&gt; —— AI 陪伴相机&lt;/p&gt;
-&lt;p&gt;ESP32-S3 加 GC2145 摄像头加 Cat.1 4G 模组，Wi-Fi 、4G 、BLE 三网。放的是 App 端和 Server 端两份开发文档。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CozyLife-cli&lt;/strong&gt; —— 设备控制命令行工具&lt;/p&gt;
-&lt;p&gt;Go 写的跨平台单文件二进制，自带 MCP server 。&lt;/p&gt;
-&lt;h2&gt;二、为什么要这么干&lt;/h2&gt;
-&lt;p&gt;做 AI 硬件 demo ，卡点从来不在代码，在硬件本身。打样、选模组、调屏幕驱动、跑通音频链路，一个月就过去了，做出来的东西还未必能用。&lt;/p&gt;
-&lt;p&gt;所以我们的想法很直接：硬件我们已经量产了，你买一个现成的，剩下的交给 AI 写。&lt;/p&gt;
-&lt;p&gt;具体就三步。第一步，把仓库里的协议文档丢给 Claude Code 或者 Cursor 、Codex 。第二步，让它照着协议生成你想要的端，微信小程序、iOS App 、Python 脚本、Home Assistant 集成、公司内部的控制面板，随便什么。第三步，拿仓库里的小程序源码当参考实现对照，模型有正确样例可看，不容易瞎编 API 。&lt;/p&gt;
-&lt;p&gt;之所以敢这么讲，是因为这批文档是给机器读的格式，不是营销 PPT 。&lt;/p&gt;
-&lt;p&gt;举两处实际内容。BLE 广播包那部分不是文字描述，是直接给的 C 结构体定义，广播数据段、Service UUID 、协议版本、设备类型、PID 、MAC 逐字段列出来，还附了真实的十六进制广播内容示例，连字节序都标了。DP 点表也是一条条列的，每条给出 DPID 、标识名、数据类型、读写方向、取值含义。比如吧唧的 110 号点是设备返回码，1 到 4 分别对应下载失败、设备忙、未联网、需要通过蓝牙共享网络，一个都没省。&lt;/p&gt;
-&lt;p&gt;这种结构化的东西喂给大模型，出码质量和让它猜是两回事。&lt;/p&gt;
-&lt;h2&gt;三、顺手安利一下那个 CLI&lt;/h2&gt;
-&lt;p&gt;CozyLife-cli 是 Go 编译的单文件二进制，Linux 、macOS 、Windows 的 amd64 、arm64 、arm 、386 全都编好了，下载即用，不用配环境。&lt;/p&gt;
-&lt;p&gt;除了常规的设备列表、读取状态、下发控制、拉历史日志这些命令，它自带一个 MCP server ，一条命令就能起服务，挂到 Claude Desktop 或者 Cursor 上，然后用自然语言控制你账号下的设备，也能把设备的历史数据拉出来让模型分析。还有一个局域网模式，完全不走云。&lt;/p&gt;
-&lt;p&gt;这个玩法在 V2EX 应该还比较少见，感兴趣的可以试试，README 里有中文版说明。&lt;/p&gt;
-&lt;h2&gt;四、广告部分，推广节点我就直说了&lt;/h2&gt;
-&lt;p&gt;新上架一款「配音宝」，说白了就是个文字转语音的外放小音箱。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/h15N5X8k.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/K9krMl28.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/tv7y65tu.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;白色小方块，正面整块喇叭网，顶部四颗实体按键：音量减、音量加、模式、电源。Type-C 充电，比笔记本触控板还小一圈，能揣兜里。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/h3W2dGk7.jpeg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/EoU9ZA1H.jpeg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/Njl66F61.jpeg" /&gt;&lt;/p&gt;
-&lt;p&gt;正经用途是导游讲解、收款到账播报、地摊叫卖、展会循环播放。在手机上打字或者选模板，设备直接读出来，支持音色克隆。文字转语音 超长续航 AI 复制红人音质 导游 收款 地摊叫卖神器。&lt;/p&gt;
-&lt;p&gt;价格  [ 50 ] ，电池  [ 2000mah ] ，续航  [ 10 小时] 。&lt;/p&gt;
-&lt;p&gt;淘宝： &lt;a href="https://item.taobao.com/item.htm?id=1068722425053" rel="nofollow"&gt;https://item.taobao.com/item.htm?id=1068722425053&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/Oh8zu9a1.webp" /&gt;&lt;/p&gt;
-&lt;p&gt;对 V2EX 的各位来说，重点是另一件事：这台的通讯协议同样对外开放。也就是说你可以完全不用我们的 App ，自己写控制端。能想到的玩法比如排队叫号和取餐播报、监控告警语音播报（ Prometheus 报警直接让它喊）、CI 挂了在工位喊一嗓子、给家里老人做的定时吃药提醒盒子。&lt;/p&gt;
-&lt;p&gt;协议文档我放在  [补仓库地址] ，或者直接在帖子下面留言，我发你。&lt;/p&gt;
-&lt;h2&gt;五、中奖规则：&lt;/h2&gt;
-&lt;p&gt;中奖楼层 =（ 2026/08/17 上证指数收盘价的 6 位整数 × 1005 % 有效楼层数）+ 1&lt;/p&gt;
-&lt;p&gt;淘宝购买地址： &lt;a href="https://item.taobao.com/item.htm?id=1068722425053" rel="nofollow"&gt;https://item.taobao.com/item.htm?id=1068722425053&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:18:02 GMT</pubDate><guid>8644db5a74086255cd6fc8d796922330</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] codex 咋不重置了 ？</title><link>https://www.v2ex.com/t/1232692#reply2</link><description>&lt;p&gt;codex 咋不重置了 ？ 蹬完了，啥时候重置？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 05:15:23 GMT</pubDate><guid>5f7e5be639b3f6416a13a1ebc52295fb</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 『抽奖』又到周末了🎁那就抽个奖吧</title><link>https://www.nodeloc.com/t/topic/102430</link><description>开奖后请在24小时内（私信）联系我领奖，逾期作废 :folded_hands: 
-祝各位周末愉快，吃好喝好玩好 :flexed_biceps:</description><pubDate>Fri, 07 Aug 2026 05:11:29 GMT</pubDate><guid>nodeloc-102430</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [加密货币] 个人出 u，小额出</title><link>https://www.v2ex.com/t/1232691#reply0</link><description>买啥套啥，小额割肉卖点 u ，换点生活费。&lt;br /&gt;只出 v 友，币安内部转 u 。&lt;br /&gt;google 汇率，有需要的 v 友可以留言。vx: Z2V0bXlt</description><pubDate>Fri, 07 Aug 2026 05:10:46 GMT</pubDate><guid>9efd8ea43d6c971e3408daf3eb682f81</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了一个在浏览器里把照片转成十字绣图纸的小工具</title><link>https://www.v2ex.com/t/1232690#reply2</link><description>最近做了一个小工具 StitchFromPhoto 。&lt;br /&gt;&lt;br /&gt;&lt;a href="https://stitchfromphoto.com/" rel="nofollow noopener" target="_blank"&gt;https://stitchfromphoto.com/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;它可以把 JPG 、PNG 或 WebP 照片转成十字绣图纸。原图留在本地，浏览器用 Canvas 完成转换，不需要注册账号，也不会把照片上传到服务器。&lt;br /&gt;&lt;br /&gt;转换用的是普通算法。浏览器先把图片缩到选定的针格尺寸，再匹配接近的 DMC 参考色，然后按使用频率压缩颜色。图纸宽度可以在 30 到 120 针之间调整，颜色数量是 6 到 36 种。完成后可以来回看彩色格子图和黑白符号图，页面也会计算不同 Aida 布目数下的成品尺寸。&lt;br /&gt;&lt;br /&gt;制作、完整预览和线色表都能免费使用。导出高清 PNG 与分块 PDF 目前是每张图片 2.99 美元。同一张原图购买后，在当前浏览器里 24 小时内可以继续调整并重复导出，没有订阅。&lt;br /&gt;&lt;br /&gt;现在还有一些限制。颜色匹配来自一份精简的数字 DMC 参考，只能作为近似结果，做大图前最好拿实体线比较。目前只支持全针，也没有逐格编辑。&lt;br /&gt;&lt;br /&gt;如果有人愿意试一下，我最想知道黑白符号图在大尺寸图纸上够不够清楚。单张图片付费是否容易理解，也欢迎直接说。</description><pubDate>Fri, 07 Aug 2026 05:07:57 GMT</pubDate><guid>16c37797becdcff9a0ea634f351f97eb</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 就营销事件而言，对 v 站现状尝试分析</title><link>https://www.v2ex.com/t/1232689#reply1</link><description>&lt;h2&gt;背景&lt;/h2&gt;
-&lt;p&gt;看到这个&lt;a href="https://www.v2ex.com/t/1232644" rel="nofollow"&gt;我用 AI 给女朋友做了个抑郁测试，结果她朋友是前男友
-&lt;/a&gt;。&lt;br /&gt;
-顺到了这个&lt;a href="https://global.v2ex.com/t/1232616" rel="nofollow"&gt;很多人不是说不会推广和营销吗？站里就有现成案例，照着学就行&lt;/a&gt;。&lt;br /&gt;
-于是了解到了 @&lt;a href="https://www.v2ex.com/member/t20000622yy"&gt;t20000622yy&lt;/a&gt; 先生的&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.v2ex.com/t/1232427" rel="nofollow"&gt;为了让女朋友学 AI ，给她买了 MacBook Pro ，开了每月 200 刀的 GPT ，她却说我一直在压迫她
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://v2ex.com/t/1215796" rel="nofollow"&gt;大厂前端社招复盘&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://v2ex.com/t/1218676" rel="nofollow"&gt;盛大集团面经（专升本毕业 9 个月,99%代码靠 AI 写）&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;反思&lt;/h2&gt;
-&lt;p&gt;这个《我用 AI 给女朋友做了个抑郁测试，结果她朋友是前男友》一帖，实话说我在看的时候其实感觉毫无违和。因为我觉得这里、其他地方，见到这样的人和内容，对我来说其实很自然。大家总是些有缺点的平常人，那方面之类的不太懂什么的很正常。&lt;br /&gt;
-而这一帖读完之后，我觉得一般情况下，会有一种被愚弄的感觉，以及 @&lt;a href="https://www.v2ex.com/member/t20000622yy"&gt;t20000622yy&lt;/a&gt; 先生的帖子，读完分析后，也会有一种被愚弄的感觉，进而产生气愤 =&amp;gt; “站长！一定要把这样的封了！”。&lt;br /&gt;
-但“当屋子里有一只蟑螂的时候，就意味着有一窝蟑螂”了。这帖这事是显眼的，是我们已经知道标准答案的了。对显眼的做一点处罚，不显眼的那些怎么办呢？  &lt;/p&gt;
-&lt;p&gt;打假是一件需要成本的事情，全打不现实；不打变成劣币市场，没人愿意来。  &lt;/p&gt;
-&lt;p&gt;而骗子是一定会存在的事情，没有骗子是违反自然规律的。因为骗意味着没有成本地获得能量，大自然奖励这样。&lt;br /&gt;
-人类文明是对此的修正。&lt;/p&gt;
-&lt;p&gt;于是尝试从社区的角度，分析社区现状、发展策略。  &lt;/p&gt;
-&lt;h2&gt;分析工具与 prompt&lt;/h2&gt;
-&lt;p&gt;硬性工具：Gemini 3.1 pro&lt;br /&gt;
-软性工具：零阶道理 的概念&lt;br /&gt;
-prompt 是放在 gem 里的。gem 里装的内容为&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;严格来说 ——
-零阶道理，是在给定目标、时间尺度和比较对象之下，足以决定结论方向和主要量级的最小因果模型。。
-这里有三个关键词。
-1. 「方向」，它告诉你 A 和 B 到底哪个好；
-2. 「量级」，它告诉你大概好多少 —— 是好百分之一，还是好十倍；须打分、百分比，让我知道程度。
-3. 「最小」，它未必只含一个因素，但只保留最少的几个主导项，多一项都不要。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;分析结果&lt;/h2&gt;
-&lt;p&gt;由于时间问题，比如我要洗碗。所以我在大致浏览之后，确认没什么毛病，就不花精力自己提炼主要内容地这么贴上来了。&lt;br /&gt;
-&lt;a href="https://share.gemini.google/hnWNb8eozdrF" rel="nofollow"&gt;规模信任的零阶博弈道理&lt;/a&gt;&lt;br /&gt;
-我觉得，这帖我站在了社区建设角度的这个大旗下，也许可以得到诸位的谅解，于是斗胆这么发出来了。  &lt;/p&gt;
-&lt;p&gt;如果我的 prompt 顺带可以让一些人得益，也是很好的了。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 04:52:02 GMT</pubDate><guid>08bd52d9589f04d50d5c595269866c48</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] A\ 莫名其妙的对我进行了一次奸尸</title><link>https://www.nodeloc.com/t/topic/102425</link><description>这个号早在 Feb 13 就给我封掉了，但是 Aug 5 又给我封了一次； 
-进一步证实了 A\ 的封禁是根据关联性的，我这两个号的关联应该就是 IP 和 机器码了。 
-所以如果被 A\ 封过号，IP是一定要换的，机器码换不了，可以在&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 04:50:31 GMT</pubDate><guid>nodeloc-102425</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [Local LLM] 两台 dgx-spark 部署满血 deepseek v4 flash 完全指南,稳定 60~70tok/s 单流</title><link>https://www.v2ex.com/t/1232688#reply2</link><description>前天看 x 上有人做成这事, 觉得很不错, 下单买了两台, 6 万 8,  nvidia 原厂 dgx spark  带并连线&lt;br /&gt;实测两台刚好能拿捏 deepseek v4 flash 0731 ，vibe coding 单流 60–70 tok/s 的体验足以覆盖日常 ；不是“能跑起来”的演示水平，而是可以当主力开发机稳定干活。&lt;br /&gt;主要是为了本地化隐私部署, 经常会跟 ai 聊很多机密信息, 不放心, 靠硬件出 token 得好几年才能回本.&lt;br /&gt;欢迎交流&lt;br /&gt;github: &lt;a href="https://github.com/maliubiao/dgx-spark-2-deepseek-flash-0731" rel="nofollow noopener" target="_blank"&gt;https://github.com/maliubiao/dgx-spark-2-deepseek-flash-0731&lt;/a&gt;</description><pubDate>Fri, 07 Aug 2026 04:44:27 GMT</pubDate><guid>7eb80e85225880205c0a907c639e2328</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[Level1Techs Forum] Hard hang on KVM switch-back (nvlddmkm error 14) - 4070 Ti + Odyssey G9 240Hz, wedges so deep even a scheduled shutdown won't go through</title><link>https://forum.level1techs.com/t/hard-hang-on-kvm-switch-back-nvlddmkm-error-14-4070-ti-odyssey-g9-240hz-wedges-so-deep-even-a-scheduled-shutdown-wont-go-through/253634</link><description>&lt;h1&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4103998-kvm-model-1" name="p-4103998-kvm-model-1"&gt;&lt;/a&gt;KVM Model:&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;DP 1.4 dual monitor two pc&lt;/em&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4103998-usb-interface-5-gigabit-or-10-gigbit-2" name="p-4103998-usb-interface-5-gigabit-or-10-gigbit-2"&gt;&lt;/a&gt;USB Interface (5-gigabit or 10-gigbit):&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;10 gigabit&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;于是，我决定自己造一个工具 CLILoom ，人类只负责和 ai 讨论设计 plan ，设计好之后全自动完成。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h1&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4103998-problem-3" name="p-4103998-problem-3"&gt;&lt;/a&gt;Problem:&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;s&lt;/em&gt;etup: 5900X (no iGPU), RTX 4070 Ti, Windows 11 Home, Samsung Odyssey G9 at 5120x1440/240Hz (so DSC) going through the DP 1.4 dual monitor 2-computer KVM. Second input is my work PC, which has literally never hiccuped once through this thing.&lt;/p&gt;
-&lt;p&gt;I’ve had this setup about 7 months. It was never 100% perfect - I’d get the occasional hang on switch once in a while and just lived with it. But two days ago it went from rare annoyance to nonstop. Now it hard-hangs constantly on switch-back to my main PC: G9 stays black, keyboard is lit but dead, only a power cut gets it back. Event log shows nvlddmkm error 14 at the exact second of the switch every single time (one incident escalated to error 153), then kernel-power 41 from me hitting the power button. At the worst of it I had five hangs inside 70 minutes.&lt;/p&gt;
-&lt;p&gt;The interesting part: the machine isn’t actually dead. I was in a Discord call with my headset receiver plugged straight into the PC (not through the KVM), and during a hang the audio would go silent while the KVM pointed at the main PC, then come back the moment I switched away. So the box is alive and the driver is just livelocked retraining the display. It’s stuck deep though - I set up an event-triggered task that force-restarts the GPU via pnputil when error 14 fires, and the restart-device call just times out. Even a scheduled shutdown /r sat blocked for 4+ minutes behind the wedged driver.&lt;/p&gt;
-&lt;p&gt;What I’ve ruled out so far, roughly in order:&lt;/p&gt;
-&lt;p&gt;- 240Hz/DSC link training: dropped to 120Hz, still hung&lt;/p&gt;
-&lt;p&gt;- A Corsair Xeneon Edge I’d installed the same day it got bad (HDMI direct to the GPU, not through the KVM): hangs happen with it completely unplugged too, although having it connected definitely makes hangs way more frequent, even powered off (guessing the driver still probes the connector during retrain)&lt;/p&gt;
-&lt;p&gt;- iCUE: killed the app and all Corsair services, still hung&lt;/p&gt;
-&lt;p&gt;- Driver/software state: uninstalled NVIDIA App, DDU in safe mode, clean driver-only install of 610.88. Bought me a completely clean day of switching, then it came back&lt;/p&gt;
-&lt;p&gt;- The KVM’s ports: it’s the dual monitor model and I only use one monitor, so I moved both my input and the G9 output over to the unused second channel. Hung on that channel too.&lt;/p&gt;
-&lt;p&gt;Two more data points I can’t explain away. It’s way worse in the afternoon than morning or evening, which makes me think something is heat-sensitive. And my work PC on the other input has stayed perfect through all of this, so the shared path (KVM output side, G9, that cable) seems fine, at least at whatever refresh the work PC negotiates.&lt;/p&gt;
-&lt;p&gt;Still on my list: swap DP cables between the two inputs, reseat the GPU and both PCIe power leads. But before I keep going - is the external power brick on these KVMs a known failure point? A sagging 5V rail shared across both columns is about the only thing left that fits the heat correlation, survives the channel swap test, and would explain why this was always slightly flaky but suddenly fell off a cliff. And has anyone seen a 40-series card get into this specific retrain livelock with a DSC monitor behind a KVM? Happy to pull logs or the memory dump if useful, I have the whole event log history from every incident.&lt;/p&gt;
-&lt;p&gt;I appreciate any insight you can all provide.&lt;/p&gt;
-&lt;h1&gt;&lt;a class="anchor" href="https://forum.level1techs.com#p-4103998-other-notes-4" name="p-4103998-other-notes-4"&gt;&lt;/a&gt;Other Notes:&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;type here&lt;/em&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;4 posts - 2 participants&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="https://forum.level1techs.com/t/hard-hang-on-kvm-switch-back-nvlddmkm-error-14-4070-ti-odyssey-g9-240hz-wedges-so-deep-even-a-scheduled-shutdown-wont-go-through/253634"&gt;Read full topic&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 04:33:34 GMT</pubDate><guid>b3027fb25ba33f57c02b0b854632153c</guid><source url="https://forum.level1techs.com/latest.rss">Level1Techs Forum</source></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;CLILoom 本质上是一个 shell + 流程引擎的组合体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/mYeKnAP.png" /&gt; &lt;/p&gt;
+&lt;p&gt;你可以：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过流程引擎来编写属于你自己的工作流（不止于开发）&lt;/li&gt;
+&lt;li&gt;比 workflow 更智能更省 token&lt;/li&gt;
+&lt;li&gt;能在终端跑的命令就能在软件中使用&lt;/li&gt;
+&lt;li&gt;健全的重试机制，流程控制机制&lt;/li&gt;
+&lt;li&gt;强大的小助手（基于你电脑的 cli ）不熟悉流程引擎的也可以通过和小助手对话用自然语言直接生成流程&lt;/li&gt;
+&lt;li&gt;可随时加入人工输入节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;一个简单工作流示例（真实在用）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" class="embedded_image" rel="noreferrer" src="https://i.imgur.com/uDpKZWZ.png" /&gt; &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;填写任务变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 worktree （脚本）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主 cli 讨论需求并直接写代码（主 cli ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code 评审（三个 cli 并发评审）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;处理 Code 评审（主 cli ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 Code 评审文件（脚本）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;提交合并代码（主 cli ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;清理 worktree （脚本）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;完成&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我的所有 cli 完全没有安装任何开发相关的第三方插件，目前这个流程经过十几个任务的考验，非常不错&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;拓展使用场景：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;cli 竞技场：同一个任务，派多个 cli 或模型去开发，最后用多个 cli 综合打分，这样可以真实的评测出哪个 cli ，哪个模型在你的使用场景是最强的&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;预计下周能开源，欢迎各位留下宝贵的意见&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:25:21 GMT</pubDate><guid>89286d81a245d126c273d71b2ac96d47</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] AI Coding 还看源代码吗？要是不看，会害怕血崩吗？</title><link>https://www.v2ex.com/t/1232732#reply1</link><description>&lt;p&gt;V2EX 帖子，AI Coding 到无法掌控局面：
+&lt;a href="https://v2ex.com/t/1224558" rel="nofollow"&gt;https://v2ex.com/t/1224558&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还有报道 AI Coding 9 秒内删除整个业务数据库的：
+&lt;a href="https://www.theguardian.com/technology/2026/apr/29/claude-ai-deletes-firm-database" rel="nofollow"&gt;https://www.theguardian.com/technology/2026/apr/29/claude-ai-deletes-firm-database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我个人也有经历。去年 8 月份开始，给公司做一个爬虫项目，AI coding 上功能很快，
+住宅 ip 轮换这一块，用的供应商平台接口，自动按城市地区动态返回。
+后面对需求，要求每个社交媒体的账户，要尽量固定一个 ip 地址，不能每次发起请求都变。
+这个功能也很快用 ai coding 做好。也让 ai 做了测试，没问题，我就交付了。
+不几天，几万个社交媒体账户，跑起来。&lt;/p&gt;
+&lt;p&gt;第二天来，发现，爬取任务的报错率超过 50% ，md,吓出冷汗！！！&lt;/p&gt;
+&lt;p&gt;然后开始查问题、啃 ai 写的代码;
+发现，住宅 ip 供应商给的固定 ip ，很大概率出现 cloudflare/谷歌的 http 测试端点能通，但爬具体的业务例如 &lt;a href="http://x.com" rel="nofollow"&gt;x.com&lt;/a&gt; 会访问超时。
+然后决定，在具体业务逻辑里做 ip 超时的回退策略(超时则重新获取 ip ），当时涉及貌似三四十个工作流，，用的 cursor …… &lt;/p&gt;
+&lt;p&gt;总共下来化了一两周吧，不在项目排期里的，真特么的焦头烂额的……&lt;/p&gt;
+&lt;p&gt;为什么前面 ai 测试良好？因为 AI 测试时,是用了洛杉矶等热门地区的账户，可能供应商 ip 充足；爬虫项目为了分摊风险，几万个社交媒体账户有不同国家、城市的。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;现在 AI 更强，对于 ai coding 的情况掌控，我似乎仅限于这些了：&lt;/p&gt;
+&lt;p&gt;1 了解和规划项目目录结构，要求按功能领域拆分目录，ai 改的时候，看看它动了哪些目录里的文件。
+2 框架和代码组织上，尽量去中心化、模块化，那怕代码重复，也要解耦，减少怀疑“改了 AB 是否被牵连”
+3 好像也没了，就看看每次它新增和删除了多少行代码，和预期是否相符。&lt;/p&gt;
+&lt;p&gt;我今年都是离职自己玩（闭门造车）。不知道现在阶段了，各位 AI Coding 时，是如何保持，对项目掌控方面的自信心？&lt;/p&gt;
+&lt;p&gt;或者说白了，就是你让 AI Coding 时想爽，但是否会担心，或做些什么，来保证自己对项目的持续开发、持续维护、甚至上线，都仍然有信心担责？这方面你会用些啥策略，或行为吗？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:23:53 GMT</pubDate><guid>920713f9dd2d8b0fb01415c7dba4c58c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 收录了众多推广区的中转站，爱薅羊毛的各位快来给你熟悉的中转站打分吧</title><link>https://www.v2ex.com/t/1232731#reply2</link><description>&lt;p&gt;在推广节点领了两个多月的赛博鸡蛋，做了个 AI 中转站排名网站。支持排名、评价、打分、安全审计，还收录了不少免费的公益站点。&lt;/p&gt;
+&lt;p&gt;ttps://&lt;a href="http://apirank.ttop5.cc" rel="nofollow"&gt;apirank.ttop5.cc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;绝大多数测试额度都是领的新用户免费额度，也有一些是充过 3 块 5 块的，样本有限，仅供参考哈。&lt;/p&gt;
+&lt;p&gt;新增了用户评分功能，爱薅羊毛的各位快来给熟悉的中转站打分吧~&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:21:12 GMT</pubDate><guid>0b9eda5185e6d33e26768761e6be3660</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] LINUX DO迎来大变——LINUX SB</title><link>https://www.nodeloc.com/t/topic/102447</link><description>LINUX SB终于是出现了</description><pubDate>Fri, 07 Aug 2026 07:21:06 GMT</pubDate><guid>nodeloc-102447</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [程序员] 给大家推荐一个赚钱的思路 我自己发现的</title><link>https://www.v2ex.com/t/1232730#reply1</link><description>我不是做了一个外链导航网吗 &lt;br /&gt;我就从小红书分享谷歌 seo 相关的内容 &lt;br /&gt;结果很多人问我要网址 &lt;br /&gt;小红书有个人售卖&lt;br /&gt;我就把网站放到小红书个人售卖了&lt;br /&gt;到现在已经出了 8 单了&lt;br /&gt;可以结合你自己的产品试一下</description><pubDate>Fri, 07 Aug 2026 07:20:52 GMT</pubDate><guid>df1c18b7f9b4ab954b101266498b7e92</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [游戏] dota2 无法匹配</title><link>https://www.v2ex.com/t/1232729#reply1</link><description>&lt;p&gt;dota2 可以启动，可以连接服务器，无法进行任何匹配。&lt;/p&gt;
+&lt;p&gt;报错信息：当前时间无法进入匹配队列。或者：cannot queue for matchmaking at this time&lt;/p&gt;
+&lt;p&gt;解决办法：选择服务器那里，把自动变成手动。选择两个地区的服务器后，就可以了。&lt;/p&gt;
+&lt;p&gt;不用卸载重装，不用给客服写信。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:20:02 GMT</pubDate><guid>0d853e976c66102150bbbd46b6f64877</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Meta和Anthropic，最近这两家AI巨头各自迎来了一个“高光时刻”和一个“尴尬时刻</title><link>https://www.nodeloc.com/t/topic/102446</link><description>:robot: 共同尴尬：AI测试中“失控”入侵 
+Meta的AI模型Muse Spark 1.1在安全测试时，因合作方Irregular配置失误意外联网，成功入侵了另一家公司系统。这已经是继OpenAI、Anthropic后，近期第三起类&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 07:18:04 GMT</pubDate><guid>nodeloc-102446</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item></channel></rss>
