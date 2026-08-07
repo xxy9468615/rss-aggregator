@@ -1,16 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Fri, 07 Aug 2026 08:43:49 GMT</lastBuildDate><item><title>[NodeSeek] 卖甲骨文乌龟日本东京升级号+gmail原油</title><link>https://www.nodeseek.com/post-862325-1</link><description>看来原来比较激进，价格写的太高，重新标价。https://www.nodeseek.com/post-855408-12026年5月注册的，含gmail原油，先钱后货或者买家承担中介费价格：RMB458背景介绍我从红尘那里买的，活到现在我自己注册成功了日本东京的，这个就可以卖掉了。该号从买过来除了增加了1个2fa外</description><pubDate>Fri, 07 Aug 2026 08:43:11 GMT</pubDate><guid>7438172e2bf20cecf29807ed71588084</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [分享发现] 手机往电脑上传下载文件跑满 400MB/s，搞了套“双 5G 网卡+网线直连”，</title><link>https://www.v2ex.com/t/1232773#reply0</link><description>### [分享] 彻底干掉 MTP ！搞了套“双 5G 网卡+网线直连”，手机往电脑传文件跑满 400MB/s&lt;br /&gt;&lt;br /&gt;平时经常要把手机里几十上百 G 的视频素材和日志包导出到电脑，天下苦 MTP 久矣。&lt;br /&gt;&lt;br /&gt;走 MTP 协议经常卡死不说，速度顶多三四十兆，遇到海量小文件直接假死；走无线局域网或者快传，又总受限于路由器性能和无线干扰，速度忽高忽低。&lt;br /&gt;&lt;br /&gt;最近自己折腾出了一套**硬件级点对点以太网专线**的方案，手机和电脑直接用网线拉起来。实测传输速度直接拉满 **400+ MB/s**（大概 3.2 Gbps 左右），基本上把 5G 网卡扣除损耗后的极限、以及手机 UFS 闪存的读取速度全部挤干了。&lt;br /&gt;&lt;br /&gt;附上实测和架构截图：&lt;br /&gt;[&lt;a href="https://imgur.com/K85Jpig" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/K85Jpig&lt;/a&gt;]( &lt;a href="https://imgur.com/K85Jpig" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/K85Jpig&lt;/a&gt;)&lt;br /&gt;[&lt;a href="https://imgur.com/pXdgYLV" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/pXdgYLV&lt;/a&gt;]( &lt;a href="https://imgur.com/pXdgYLV" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/pXdgYLV&lt;/a&gt;)&lt;br /&gt;[&lt;a href="https://imgur.com/9YyZpho" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/9YyZpho&lt;/a&gt;]( &lt;a href="https://imgur.com/9YyZpho" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/9YyZpho&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;这套方案我自己用了阵子感觉非常爽，分享给有类似大文件传输需求的朋友。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 1. 怎么接硬件？&lt;br /&gt;&lt;br /&gt;结构很简单，相当于拼了一个“三截式”的物理数据线：&lt;br /&gt;&lt;br /&gt;**`手机` ➔ `Type-C 转 5G 网卡` ➔ `网线` ➔ `USB-A/Type-C 转 5G 网卡` ➔ `电脑**`&lt;br /&gt;&lt;br /&gt;* **手机**：接口需要支持 USB 3.0+，且系统支持外接网卡（现在比较新的安卓机基本都行）。&lt;br /&gt;* **网卡**：买了两个瑞昱 RTL8156B 芯片的 5G USB 网卡（一个 C 口，一个 A 口）。**注意电脑端最好装一下 Realtek 官方的 USB 网卡驱动**，别用 Win 自带的默认驱动，性能更稳。&lt;br /&gt;* **网线**：随便一根 Cat6 或以上的短网线。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 2. 软件与网络配置（关键避坑点）&lt;br /&gt;&lt;br /&gt;本质上就是让手机和电脑建立一个点对点局域网，由手机充当 DHCP 服务器：&lt;br /&gt;&lt;br /&gt;1. **连上硬件**：把手机、网卡、网线和电脑全部接好。&lt;br /&gt;2. **电脑网卡设置（重点）**：在电脑的网络适配器属性里，把这个 5G 网卡的“速度和双工”手动拉到 **5.0 Gbps 全双工**，避免自动协商降频。&lt;br /&gt;3. **开启共享**：手机打开 `设置` ➔ `个人热点 / 网络共享` ➔ 勾选 **以太网共享**。这时候手机会自动给电脑网卡分配一个 `10.x.x.x` 开头的内网 IP 。&lt;br /&gt;4. **搭建服务端与客户端**：&lt;br /&gt;* **PC 端**：用 FileZilla Server 搭建本地 FTP 服务端（或者 Mac 直接开原生 SMB 文件共享）。&lt;br /&gt;* **手机端**：推荐用 **MT 管理器** 或 Solid Explorer 等文件管理器，连接电脑的内网 IP 。**用 MT 管理器的话，记得在设置里把 FTP 传输开启多线程**，对跑满带宽和处理小文件很有帮助。&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 3. 为什么能跑这么快？&lt;br /&gt;&lt;br /&gt;* **避开 MTP 的坑**：MTP 是单线程请求-响应模式，效率极低；而 FTP 走的是纯粹的 TCP/IP 数据流，配合多线程开销极小。&lt;br /&gt;* **物理专线无干扰**：双网卡直连延迟不到 1ms ，零丢包，TCP 协议不用频繁重传，数据流可以一直处于满载状态。&lt;br /&gt;* **吃满接口带宽**：RTL8156B 在 USB 3.2 接口下理论能到 5Gbps ，全双工+官方驱动加持下，实测 400MB/s 已经是硬件物理层面的真极限了。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 4. 总结&lt;br /&gt;&lt;br /&gt;* **优点**：速度极其狂暴，传输非常稳定，而且完全跨平台（ Win / Mac / Linux 都行）。&lt;br /&gt;* **缺点**：得买两个 5G 网卡（成本大概三四百块），且出门带两块网卡加网线稍微有点重。&lt;br /&gt;&lt;br /&gt;如果你也需要频繁从手机向电脑导出几百 G 的大文件，这个方案绝对比折腾各种无线快传或者慢吞吞的 MTP 靠谱得多。大家有更好的优化思路也欢迎一起讨论！</description><pubDate>Fri, 07 Aug 2026 08:42:22 GMT</pubDate><guid>bae458d5c83ae7e1f9f2a6cf8c484271</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Docker Desktop——容器管理</title><link>https://www.nodeloc.com/t/topic/102455</link><description>Docker Dosktop 
-
-汉化 
-
-有Mac - Apple Silicon 
-Mac - Intel Chip 
-Windows - AMD64 
-Windows - ARM64 
-Linux 
-
-我将可Docker部署的项目拉取&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 08:42:05 GMT</pubDate><guid>nodeloc-102455</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] 【人找车】要三网优化的。用于ai落地。50g流量即可。</title><link>https://www.nodeseek.com/post-862324-1</link><description>RT长期用</description><pubDate>Fri, 07 Aug 2026 08:41:38 GMT</pubDate><guid>fe40dc957767dfb5d4b7b8177f24b6b9</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【直播】挑战claude Pro-MAX订阅-看看能撑多久</title><link>https://www.nodeseek.com/post-862323-1</link><description>先开个帖子做长期记录。目标很简单：新号正常充值Claude20美金Pro会员，持续使用，逐步升级到5x看看能活多久。之前参与过一波20x薅羊毛，最终一个用了大概两个月、平时也一直正常使用的免费Google账号直接拉闸了。这次重新建号，并且尽量把整个注册、网络、付款环境记录详细一点。后面不管是稳定存活还是再次被封，都</description><pubDate>Fri, 07 Aug 2026 08:41:25 GMT</pubDate><guid>820a7d1e38d8c2af08912c1971f3db4a</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【请教】买了一个嘎骨文的美西圣何塞，直连的品质是这样，是IP脏还是线路脏？</title><link>https://www.nodeseek.com/post-862322-1</link><description /><pubDate>Fri, 07 Aug 2026 08:41:08 GMT</pubDate><guid>dee714e5d84eceef19370721d0864dfc</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 现在怎么买紫卡或T-Mobile 3刀呢？</title><link>https://www.nodeseek.com/post-862321-1</link><description>求解惑，打算搞一张。</description><pubDate>Fri, 07 Aug 2026 08:41:04 GMT</pubDate><guid>62fc6ee4faa1d4dcaa2292ab9e430b03</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 好红</title><link>https://www.nodeseek.com/post-862320-1</link><description /><pubDate>Fri, 07 Aug 2026 08:40:02 GMT</pubDate><guid>d32c8345517586cbe335f448132d8807</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【收】溢价65收，hostdzire 4c6g lax 年付</title><link>https://www.nodeseek.com/post-862319-1</link><description>年付24$及以下，或者溢价50收三年付4c6glax3级及以上用户交易，我先款，ns邮箱交易</description><pubDate>Fri, 07 Aug 2026 08:39:58 GMT</pubDate><guid>5e1828753d3305ef59539549092b3f57</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [NQ] wawo 59</title><link>https://www.nodeseek.com/post-862318-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m208.66.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Fri, 07 Aug 2026 08:39:46 GMT</pubDate><guid>4624a134539fca8eb4aa80707461d3e5</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 老规矩今日收2个Bug E3</title><link>https://www.nodeseek.com/post-862317-1</link><description /><pubDate>Fri, 07 Aug 2026 08:39:30 GMT</pubDate><guid>2676810015753b1ff8c7672f94dd17cb</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [程序员] Opencode Go 套餐的 DeepSeek V4 Flash 涨价了，注意用量</title><link>https://www.v2ex.com/t/1232772#reply1</link><description>&lt;p&gt;今天用着用着发现 oepncode 客户端下面 变成了 2x usage ，各位注意用量&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:39:19 GMT</pubDate><guid>bc41f332de7aa3bc6efa8c60a4bd8d61</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] [收] 剩余收个 云途 HK.BGP.A 151.2¥ / 年</title><link>https://www.nodeseek.com/post-862316-1</link><description /><pubDate>Fri, 07 Aug 2026 08:38:35 GMT</pubDate><guid>7939f91db893eac67c83b320e3c6e644</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有必要给自己的博客完成ICP备案吗？</title><link>https://www.nodeseek.com/post-862315-1</link><description>今天写了一个博客给别人看，微信发出去点开是：该网站未完成ICP备案，无法确认其安全性，如要继续访问，请注意保护个人信息。感觉差点意思，有必要备案一下吗？域名托管在CloudFlare上的。</description><pubDate>Fri, 07 Aug 2026 08:37:31 GMT</pubDate><guid>df28b76fc8ae300663d0120417e35642</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 宣传一下自己开源的一个skill</title><link>https://www.nodeseek.com/post-862314-1</link><description>skill仓库地址（https://github.com/hackghuber/define-prove），自己用了差不多两个月，觉得还不错故分享出来，详细内容请看仓库README，多的也不说，免得被说成过度宣传，如果你觉得有用记得star一下就行。</description><pubDate>Fri, 07 Aug 2026 08:37:07 GMT</pubDate><guid>406f1da1df784df3df8d22385f12e71c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 60出Zouter JP BGP Global - Standard - Debut 216/Intel 16.8元/月</title><link>https://www.nodeseek.com/post-862313-1</link><description>续费至8.18。</description><pubDate>Fri, 07 Aug 2026 08:34:58 GMT</pubDate><guid>95c436928da22f867d33c6a9174f27cd</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有没有cn2 9929 cmi的机器啊 月付20刀左右的</title><link>https://www.nodeseek.com/post-862312-1</link><description>有没有cn29929cmi的机器啊月付20刀左右的</description><pubDate>Fri, 07 Aug 2026 08:34:48 GMT</pubDate><guid>04192a6cb166e10a9c0b648af54514f5</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 不懂就问 为什么我在 dedirock 买了一个机子，后台却显示我有两个不同ip的机子？</title><link>https://www.nodeseek.com/post-862311-1</link><description>1C1.5G1.5TB款的如图所示</description><pubDate>Fri, 07 Aug 2026 08:34:07 GMT</pubDate><guid>b37b394d1126daf0c6f54fe4b22eead4</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 明盘259 出isvoro HK CN2 Standard 6折款 年付240款【走中介】</title><link>https://www.nodeseek.com/post-862310-1</link><description>4C4G40G600G流量总价259到期时间明年6月底</description><pubDate>Fri, 07 Aug 2026 08:33:07 GMT</pubDate><guid>cfb81e7bce16e38470bfb92b1adfa44e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [OpenAI] 各位的 08-12 / 08-13 重置次数还在吗？</title><link>https://www.v2ex.com/t/1232771#reply3</link><description>&lt;p&gt;&lt;a href="https://imgur.com/a/WlzqXu1" rel="nofollow"&gt;https://imgur.com/a/WlzqXu1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我的重置次数消失了？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:33:05 GMT</pubDate><guid>0cc24b2e888e027e63c9b975967be2e6</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] [出]骨折价出Datawave SG LITE 2G 9折款</title><link>https://www.nodeseek.com/post-862309-1</link><description>NQhttps://www.nodeseek.com/post-858482-1TQhttps://www.nodeseek.com/post-858516-1配置1C/1G/10G/5000Mbps/2000GB到期2026-08-2812:00:10已用189.70GB/2000GB月付24*0.9=21.6R</description><pubDate>Fri, 07 Aug 2026 08:33:02 GMT</pubDate><guid>4eae69982b9822184ab2590495016b4e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] 月薪 2W+，工作轻松但几乎没有成长，毕业四五年该继续待着吗？</title><link>https://www.v2ex.com/t/1232770#reply7</link><description>&lt;p&gt;今天看到一个帖子，大意是：“月薪 18000 ，但工作几乎毫无意义，干不干？”&lt;/p&gt;
+<rss version="2.0"><channel><title>技术论坛</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 技术论坛</description><lastBuildDate>Fri, 07 Aug 2026 09:42:27 GMT</lastBuildDate><item><title>[NodeSeek] codex++求助</title><link>https://www.nodeseek.com/post-862417-1</link><description>m1安装好了codex++，从管理工具里点启动没反应呢</description><pubDate>Fri, 07 Aug 2026 09:42:17 GMT</pubDate><guid>2124ea59bdfe4a0af8476f372368e30d</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 溢价80收VMISS US.LA.TRI.Basic 年付机</title><link>https://www.nodeseek.com/post-862416-1</link><description>+80收了，慢收。有个问题，月付也可以转年付吗？45的年付，大佬们指教下，如果可以月付也收</description><pubDate>Fri, 07 Aug 2026 09:42:11 GMT</pubDate><guid>616f8563663d24415ad401e7078ef5d3</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 哪里可以搞到去年的 github 号？</title><link>https://www.nodeloc.com/t/topic/102470</link><description>家人们，打听一下，哪里可以搞到去年及以前的 github 老号？需要注册一些服务限制了 github 号的注册时长 :pleading_face: 
+（第一次发帖，如果不适合，麻烦提醒一下）</description><pubDate>Fri, 07 Aug 2026 09:41:40 GMT</pubDate><guid>nodeloc-102470</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] 论坛有安卓客户端吗？</title><link>https://www.nodeseek.com/post-862415-1</link><description /><pubDate>Fri, 07 Aug 2026 09:41:21 GMT</pubDate><guid>f9aadaa3515f4277a8f8f6ed93831569</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 想玩儿时的游戏 可是充钱又舍不得</title><link>https://www.nodeseek.com/post-862414-1</link><description>真是废柴主要是老婆不让我玩</description><pubDate>Fri, 07 Aug 2026 09:40:57 GMT</pubDate><guid>4ed77ebc08dc3cc529dc0be09428d154</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 哪里能买到实名币安号?</title><link>https://www.nodeseek.com/post-862412-1</link><description>哪里能买到实名币安号?</description><pubDate>Fri, 07 Aug 2026 09:40:14 GMT</pubDate><guid>912b60a7e6c8a6d156e1f831e04ff97e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 网易云免费领会员，没啥能贡献的了</title><link>https://www.nodeloc.com/t/topic/102469</link><description /><pubDate>Fri, 07 Aug 2026 09:39:47 GMT</pubDate><guid>nodeloc-102469</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeSeek] 60出Geelinx三鸡</title><link>https://www.nodeseek.com/post-862411-1</link><description /><pubDate>Fri, 07 Aug 2026 09:39:18 GMT</pubDate><guid>55df20c30c990bcd1ab0ca664438ca7c</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] Claude Code 桌面替代软件</title><link>https://www.nodeseek.com/post-862409-1</link><description>用的是API，无法使用官方软件试了claudeia，但是win第三方编译的不是很好请问有像codexapp这种的替代方案吗</description><pubDate>Fri, 07 Aug 2026 09:38:15 GMT</pubDate><guid>ae5ccd2dab6ae0d145c27bbbb099d8ca</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 【NQ留档】AWS EC2 ap-southeast-1</title><link>https://www.nodeseek.com/post-862408-1</link><description>💻基本信息🎬IP质量🌐网络质量📍回程路由NodeQuality链接</description><pubDate>Fri, 07 Aug 2026 09:36:18 GMT</pubDate><guid>2dcd887474af17444ae7910c2376ae5d</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [酷工作] 深圳 Go 后端找工作交流</title><link>https://www.v2ex.com/t/1232790#reply0</link><description>&lt;p&gt;有没有在深圳找 Go+AI 后端工作的朋友，可以一起交流经验，分享面试经验，互相鼓励和督促，一起进步，一个人的力量还是太小了，多交流交流！&lt;/p&gt;
+&lt;p&gt;我的简介：本科毕业两年，两份工作经历（ AI 产品和直播业务）&lt;/p&gt;
+&lt;p&gt;可以加我：MTU1ODA4NjczMTg=&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:36:13 GMT</pubDate><guid>641f5d39ef996f29ed82a81a7876e500</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【咨询】Apple礼品卡自己开通GPT订阅的时候，看不到Pro怎么办呀，要先开通完Plus，再去升级Pro 20x么</title><link>https://www.nodeseek.com/post-862407-1</link><description>rt感谢大手子给解答下</description><pubDate>Fri, 07 Aug 2026 09:35:43 GMT</pubDate><guid>82f97819e7b870493883c0fd0a537977</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 避雷尼日利亚 Suburban Cloud 郊区云，付款后不发货</title><link>https://www.nodeseek.com/post-862406-1</link><description>详情看图1工单记录，目前过去3天，对面已装死不回复2024年就买过这家的2刀机器，也是账单乱发，给我发4刀账单，甚至还有9刀的，当时有在做尼区相关的业务，所以付这些账单都无所谓</description><pubDate>Fri, 07 Aug 2026 09:34:39 GMT</pubDate><guid>30db2bee039c92068f021801a2456c97</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 收ovh ks-stor ie区</title><link>https://www.nodeseek.com/post-862405-1</link><description>没收过这家，是不是中不中奖差价巨大啊？我看历史俩笔在80-100，但又有溢价2k的（好像是带宽中奖？）先90收吧，看能不能收到，有特殊的可以加价</description><pubDate>Fri, 07 Aug 2026 09:33:58 GMT</pubDate><guid>630c593c0c532df715593de124a50508</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 有老哥出lightlayer月付5刀的hk吗</title><link>https://www.nodeseek.com/post-862404-1</link><description>rt</description><pubDate>Fri, 07 Aug 2026 09:32:52 GMT</pubDate><guid>2788e6d333d38b19b8d0f9bca6fd862e</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [求职] 远程工作了近 3 年，又重新来社区看机会了</title><link>https://www.v2ex.com/t/1232789#reply0</link><description>&lt;p&gt;上一份远程工作就是在社区找到的。最近市场怎么样，有没有人捞捞？&lt;/p&gt;
+&lt;p&gt;个人简介：7 年工作经验。最近这段经历都在做全栈开发（偏前端），Claude Code 用得很 6 。再往前主要是在国内 2 个大厂做前端。985 软件工程本科&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:32:28 GMT</pubDate><guid>1c28eac48026a5f383037239a73d1dec</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 你们的giffgaff卡还能用吗</title><link>https://www.nodeseek.com/post-862403-1</link><description>好久没插卡今天插卡还有信号，但是在7月28号那天收到一些邮件说是将不能再使用。这是什么原因？</description><pubDate>Fri, 07 Aug 2026 09:31:52 GMT</pubDate><guid>62623f49718bb10a9d6ee03f61d9934f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 人找车  悉尼绿云9929或者德国9929</title><link>https://www.nodeseek.com/post-862402-1</link><description /><pubDate>Fri, 07 Aug 2026 09:31:52 GMT</pubDate><guid>401370ec04b60b29d9e147d96844d454</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 出DMIT TYO.AS3.Pro.TINY月付</title><link>https://www.nodeseek.com/post-862401-1</link><description>130出2026-09-01到期</description><pubDate>Fri, 07 Aug 2026 09:31:21 GMT</pubDate><guid>f86aa4d56626798c576a2ca471f8f869</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 免费获得.me域名一年</title><link>https://www.nodeloc.com/t/topic/102468</link><description>免费获得.me域名一年，需要edu 频道 
+https://nc.me/ 
+美国、英国、加拿大和澳大利亚的部分大学和GitHub 学生计划的成员能领</description><pubDate>Fri, 07 Aug 2026 09:30:07 GMT</pubDate><guid>nodeloc-102468</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [生活] 减肥一个月，胖了 3 斤</title><link>https://www.v2ex.com/t/1232788#reply1</link><description>&lt;p&gt;说起来挺惭愧的，曾经有过一段比较成功的减肥经验，还经常在论坛里指导别人怎么减肥。在 2022 年，因为得了慢性病决定减肥，当时的最高体重一度突破 83 公斤。通过跑步机爬坡加控制饮食，在第一个月内成功减到了 77 ，又在第二个月内减到了 73 。又经过两个月的减肥，最终减到了巅峰的 66 。接下来遇见了上海封城，就中断了。但是体重一直没有太大的回弹，在 66 至 68 之间来回打转。一直持续到了 2025 年。在这段时间里，还一直信誓旦旦地跟别人讲述自己的减肥成功案例，并且非常自信，认为自己绝不会反弹。&lt;/p&gt;
+&lt;p&gt;2025 年换了新工作，工作压力特别大，大概一个月完全没有控制饮食和运动。结果体重快速地爬升到了 72 。开始有意地减少控制零食和开始运动，无奈工作强度太大了。运动总是断断续续的体重虽然没有增长，但是也不见减少。七月份失业在家，想着最起码先把身体养好，所以又开始减肥。还是老样子的健身，健身房爬坡加控制饮食。也不知道是年龄渐长，还是没管住嘴。可能大概率是没管住嘴吧，毕竟是现在在家吃妈妈的饭比较香。刚才称了一下体重，达到了 73.5 。&lt;/p&gt;
+&lt;p&gt;任何时候都不能骄傲自满。减肥路上大家共勉&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:30:07 GMT</pubDate><guid>a7d24814d2169623b69ed93347e2196f</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了一个把网易云音乐变成 macOS 全屏黑胶桌面的开源小工具： CloudPlatter</title><link>https://www.v2ex.com/t/1232787#reply0</link><description>&lt;p&gt;最近看到 Vinyl for Mac ，很喜欢“让唱片机成为桌面一部分”的想法。但我平时主要使用网易云音乐，于是尝试做了 CloudPlatter ，一个开源的 macOS 桌面黑胶伴侣。&lt;/p&gt;
+&lt;p&gt;它不会替代网易云音乐，也不需要重新登录账号。网易云继续负责播放，CloudPlatter 读取本机 Now Playing 信息，把封面、唱片、唱臂和歌曲信息呈现在桌面层。&lt;/p&gt;
+&lt;h2&gt;效果&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="CloudPlatter 全屏黑胶桌面效果" class="embedded_image" rel="noreferrer" src="https://raw.githubusercontent.com/Chengyunlai/cloud-platter/main/docs/images/cloud-platter-desktop.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;场景位于系统壁纸之上、桌面图标和普通应用窗口之下，不会修改原始壁纸文件。唱片会随播放旋转，暂停时停止，唱臂也会落针、归位并带一点轻微的机械摆动。&lt;/p&gt;
+&lt;h2&gt;目前可以做什么&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;实时显示网易云音乐的标题、艺人、专辑和封面&lt;/li&gt;
+&lt;li&gt;跟随播放、暂停和切歌更新桌面&lt;/li&gt;
+&lt;li&gt;支持上一首、播放/暂停和下一首&lt;/li&gt;
+&lt;li&gt;支持多显示器和全屏桌面场景&lt;/li&gt;
+&lt;li&gt;全程在本机运行，不上传收听记录&lt;/li&gt;
+&lt;li&gt;支持 Apple 芯片和 Intel Mac&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;怎么体验&lt;/h2&gt;
+&lt;p&gt;安装包放在 GitHub Releases：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Chengyunlai/cloud-platter/releases" rel="nofollow"&gt;https://github.com/Chengyunlai/cloud-platter/releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载 &lt;code&gt;CloudPlatter-*-universal.zip&lt;/code&gt;，解压后把 App 放入“应用程序”即可。&lt;/p&gt;
+&lt;p&gt;目前使用 ad-hoc 签名且没有 Apple 公证。第一次打开时，需要在 Finder 中右键选择“打开”，或在“系统设置 → 隐私与安全性”中允许打开；不需要全局关闭 Gatekeeper 。&lt;/p&gt;
+&lt;p&gt;当前要求 macOS 14 或更高版本，并安装网易云音乐 macOS 客户端。主要验证环境是 macOS 26.3 与网易云音乐 3.1.9 ，其他版本欢迎反馈。&lt;/p&gt;
+&lt;h2&gt;实现和限制&lt;/h2&gt;
+&lt;p&gt;macOS 没有公开 API 可供普通应用读取其他播放器的完整 Now Playing 信息。CloudPlatter 使用隔离的 MediaRemote Adapter ，并配合一次性快照和网易云定向备用查询恢复状态。&lt;/p&gt;
+&lt;p&gt;这条路径不需要辅助功能或屏幕录制权限，但依赖 Apple 未公开的 MediaRemote 行为，未来系统或网易云升级后可能失效。因此目前只作为 GitHub 开源项目分发，不考虑 Mac App Store 。&lt;/p&gt;
+&lt;p&gt;项目仍处于预览阶段。我暂时没有开放外部 PR ，但欢迎通过 Issue 反馈 macOS 版本、网易云版本和复现步骤；后续会考虑邀请 contributor 一起完善。&lt;/p&gt;
+&lt;p&gt;GitHub：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/Chengyunlai/cloud-platter" rel="nofollow"&gt;https://github.com/Chengyunlai/cloud-platter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目与网易云音乐、Apple 或 Vinyl for Mac 没有从属、合作或背书关系。欢迎试用，也很想听听大家对桌面效果和兼容性的意见。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:30:05 GMT</pubDate><guid>aa99109bde53159fabda1ecfb00c684e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 全网首发PVE官方arm镜像给甲骨文安装PVE9并分配独立公网和分配nat网络解决方法</title><link>https://www.nodeseek.com/post-862400-1</link><description>OracleCloudARM安装ProxmoxVE9与LXC独立公网IP实践记录最近折腾了一下OracleCloudARM机器上的ProxmoxVE9，主要做了两部分内容：在OCIARM原生Debian13环境上安装ProxmoxVE9，并配置适合LXC使用的NAT网络在ProxmoxVE宿主机上通过额外VNIC、</description><pubDate>Fri, 07 Aug 2026 09:30:04 GMT</pubDate><guid>bd2c8d87b05a49b51c72334ce675bc5a</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 75r/季 proton family 家庭组车</title><link>https://www.nodeseek.com/post-862399-1</link><description>75r/季,又有人跳车了，现在剩1個車位</description><pubDate>Fri, 07 Aug 2026 09:29:59 GMT</pubDate><guid>d4d976b685b60ca53cdce4654afef78b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] 香港-Lightlayer没感觉出来丢包呀！</title><link>https://www.nodeseek.com/post-862397-1</link><description>我用的阿里云上海作为节点监控丢包和延迟，目前没有发现丢包情况，波动也很小。感觉24.99U一年的10m无限流量小水管还是很划算的，我是207.56网段的！</description><pubDate>Fri, 07 Aug 2026 09:27:28 GMT</pubDate><guid>978228e657e87703c9229bb596fb7429</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] AWS免费的EC2不支持CPU虚拟化嘛？要调试程序，需要安装wsl</title><link>https://www.nodeseek.com/post-862396-1</link><description>RT。有免费可以支持虚拟化的嘛？实例类型m7i-flex.large</description><pubDate>Fri, 07 Aug 2026 09:27:01 GMT</pubDate><guid>599ed70a76bc72754189f2084c700f4b</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeSeek] [NQ] Azure Japan East</title><link>https://www.nodeseek.com/post-862395-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m130.33.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Fri, 07 Aug 2026 09:26:47 GMT</pubDate><guid>13a8b82a5f4de608e5317930cd9c5ad9</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [分享创造] [送软件，来就送！] 做了个 macOS 工具：用自然语言搜本地视频/图片/音频素材，全本地运行不上传云端。</title><link>https://www.v2ex.com/t/1232786#reply0</link><description>&lt;h3&gt;参与方式：关注我👉 &lt;a href="https://x.com/JefferyHuangW" rel="nofollow"&gt;X&lt;/a&gt; 账号发送私信发你的邮箱就行。（活动截止 2026 年 8 月 20 ）&lt;/h3&gt;
+&lt;h1&gt;正文&lt;/h1&gt;
+&lt;h2&gt;痛点描述&lt;/h2&gt;
+&lt;p&gt;做视频或者有巨喜欢拍照的人应该都懂这个痛点：素材越攒越多，硬盘里几百个文件夹、几千个视频文件，找一个镜头要翻半小时。标签分类坚持不下来，文件名命名永远是"新建项目 3_final_最终版.mp4"。&lt;/p&gt;
+&lt;p&gt;之前做了 BiliNote （ GitHub 7k+ Star ），专门做 AI 视频笔记。做完发现很多用户的真实需求不是做笔记，而是"我有一堆素材，帮我找到我要的那一段"。这让我意识到一个问题：在 AI 时代，多数知识的载体是视频、图片和音频，而不是文字。但现有的方案要么把视频丢给 AI 临时读取（慢、贵、不可复用），要么靠云端平台托管（隐私没保障、数据不在自己手里）。&lt;/p&gt;
+&lt;h2&gt;做 AI 时代知识库的 infra&lt;/h2&gt;
+&lt;p&gt;你需要的是一套本地的知识库基础设施——把素材一次性索引好，之后随时秒搜。&lt;/p&gt;
+&lt;p&gt;所以做了 &lt;a href="https://www.kacut.app" rel="nofollow"&gt;咔咔找 AI&lt;/a&gt; 一个 macOS 本地 AI 素材搜索引擎。&lt;/p&gt;
+&lt;h2&gt;核心能力：&lt;/h2&gt;
+&lt;p&gt;导入素材后自动提取画面、语音、文本，建立多模态索引
+用自然语言搜索，比如"海边日落""两个人在争吵""慢动作特写"都能直接搜到对应片段
+全部本地运行，不上传云端。
+买断制，不搞订阅
+为什么做本地？因为视频素材是创作者最私密的资产，扔云端搜索这事很多人不放心。而且本地推理延迟更低，不用等网络。&lt;/p&gt;
+&lt;h4&gt;软件截图-基础自然语言搜索功能&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="件截图-基础自然语言搜索功能" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/01mFfui6l.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;软件截图-聊天模式 AI 更懂你的素材库&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="软件截图-聊天模式 AI 更懂你的素材库" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/wMbqtE62l.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;软件截图-基础自然语言搜索功能&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="软件截图-基础自然语言搜索功能" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/mbO2rHHwl.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;软件截图-素材库存管理&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="软件截图-素材库存管理" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/z42lho7vl.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;软件截图-素材库存管理&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="软件截图-素材库存管理" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/RoCLmV7ol.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;软件截图-多维度检索&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="软件截图-多维度检索" class="embedded_image" rel="noreferrer" src="https://i.v2ex.co/pp7veV9Zl.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;写在最后的 Q&amp;amp;A&lt;/h2&gt;
+&lt;h4&gt;会有 windows 版本吗？&lt;/h4&gt;
+&lt;p&gt;会的&lt;/p&gt;
+&lt;h3&gt;真的 100%本地吗？&lt;/h3&gt;
+&lt;p&gt;除了联网校验 license 和 你自己配置的大模型（也可以用本地大模型）之外 全部推理过程包括图片都不上传任何地方&lt;/p&gt;
+&lt;h4&gt;会开源吗&lt;/h4&gt;
+&lt;p&gt;部分功能会开源&lt;/p&gt;
+&lt;h4&gt;我的电脑带得动吗？&lt;/h4&gt;
+&lt;p&gt;M 系列都可以&lt;/p&gt;
+&lt;h4&gt;使用过程中有任何问题怎么办？&lt;/h4&gt;
+&lt;p&gt;直接 X 上私信我&lt;/p&gt;
+&lt;h4&gt;做的太好了，太喜欢了怎么办？&lt;/h4&gt;
+&lt;p&gt;买 10 份&lt;/p&gt;
+&lt;h4&gt;没有钱买，但是很喜欢怎么办？&lt;/h4&gt;
+&lt;p&gt;x 上私信我，交个朋友我送你！&lt;/p&gt;
+&lt;h4&gt;我想抄这个软件怎么办？&lt;/h4&gt;
+&lt;p&gt;不行哦。抄袭可耻哦～～但是我也没有办法&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:20:44 GMT</pubDate><guid>911ff48dc7175b8d791a81ca082b5635</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 购买/订阅苹果开发者帐号，一定要 $99 块钱，不能打折么？</title><link>https://www.v2ex.com/t/1232785#reply0</link><description>&lt;p&gt;有什么合适的渠道，能够便宜点。貌似 apple gift 中的钱，不能用来付款开发者帐号？&lt;/p&gt;
+&lt;p&gt;谢谢！&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:20:42 GMT</pubDate><guid>a01fc562ccf00945f7af77e6c7140535</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 苹果手机，怎么设置只接受白名单号码</title><link>https://www.v2ex.com/t/1232784#reply1</link><description>苹果手机给孩子暑假用，怎么只接受白名单手机号码来电。</description><pubDate>Fri, 07 Aug 2026 09:15:09 GMT</pubDate><guid>660f4492ef2a17298b797dd459f4d8f2</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 2026 年 8 月 6 日， OpenAI 等共同发布并开源 Agent Plugins 1.0.0 标准</title><link>https://www.v2ex.com/t/1232783#reply0</link><description>&lt;p&gt;2026 年 8 月 6 日，OpenAI 、Amazon 、Microsoft 、Cursor 、Vercel 等共同发布并开源 Agent Plugins 1.0.0 标准。
+Agent Plugins 包含了 skills 和 mcp ，让 agent 调用工具的功能更强大更容易。
+Agent 以后功能更强大了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://agentplugin.net/" rel="nofollow"&gt;https://agentplugin.net/&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:14:40 GMT</pubDate><guid>ac5fc27575358e5580ca153f51f899fd</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [奇思妙想] 大小模型协同的智能任务处理架构：面向成本与效率优化的多模型调度机制</title><link>https://www.v2ex.com/t/1232782#reply0</link><description>&lt;h2&gt;摘要&lt;/h2&gt;
+&lt;p&gt;随着大语言模型能力的快速发展，单一大模型已经能够完成复杂推理、代码生成、文档写作和工具调用等任务。然而，在实际应用中，完全依赖大模型处理所有请
+求会带来成本高、响应慢、上下文浪费和任务调度不灵活等问题。为解决这些问题，本文提出一种大小模型协同的智能任务处理架构：用户需求首先进入小模型，
+由小模型进行意图识别、任务分类、复杂度判断和初步处理；当任务超出小模型能力范围时，再转交给大模型进行高层推理、方案制定或专家级解答。大模型不必
+直接执行所有细节操作，而是可以生成任务指南、执行计划或判断标准，再由小模型负责具体操作、工具调用和信息提取。该模式类似于人类大脑与小脑的协作关
+系：大模型承担复杂思考、战略规划和抽象推理，小模型承担快速反应、重复执行和局部控制。通过多模型协同，还可以将数学、编程、法律、医学、翻译等专业
+任务分发给不同专家模型，从而提升效率、降低成本并增强系统可扩展性。&lt;/p&gt;
+&lt;p&gt;关键词：大语言模型；小模型；多模型协同；任务调度；智能体； Token 成本优化&lt;/p&gt;
+&lt;h2&gt;一、引言&lt;/h2&gt;
+&lt;p&gt;大语言模型已经成为人工智能应用中的核心能力之一。无论是代码生成、知识问答、数据分析，还是自动化办公和智能客服，大模型都展现出强大的语言理解与推
+理能力。然而，大模型并非在所有场景下都是最优选择。&lt;/p&gt;
+&lt;p&gt;在许多简单任务中，例如判断用户意图、提取关键词、格式转换、执行简单命令、总结短文本等，使用大模型往往会造成资源浪费。大模型的推理成本较高，响应
+时间较长，而且上下文窗口虽然越来越大，但仍然是有限资源。如果所有输入、工具结果和中间状态都直接交给大模型处理，就会产生大量不必要的 Token 消耗。&lt;/p&gt;
+&lt;p&gt;因此，更合理的方式不是让一个大模型承担全部工作，而是构建一个由多个模型协同工作的智能系统。小模型负责轻量任务、信息筛选和流程控制，大模型负责复
+杂推理和关键决策。两者形成分工协作关系，从而在保证任务质量的同时降低运行成本。&lt;/p&gt;
+&lt;h2&gt;二、大小模型协同的基本思想&lt;/h2&gt;
+&lt;p&gt;大小模型协同的核心思想是：不是所有问题都需要大模型解决。系统应当根据任务难度、风险等级和专业类型，动态选择合适的模型。&lt;/p&gt;
+&lt;p&gt;在该架构中，小模型通常承担以下职责：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;理解用户输入的基本意图。&lt;/li&gt;
+&lt;li&gt;判断任务是否简单、常规或可直接处理。&lt;/li&gt;
+&lt;li&gt;对上下文进行压缩、筛选和结构化。&lt;/li&gt;
+&lt;li&gt;执行大模型给出的计划。&lt;/li&gt;
+&lt;li&gt;调用 Shell 、API 、数据库或其他工具。&lt;/li&gt;
+&lt;li&gt;将工具返回的大量信息提取成关键摘要。&lt;/li&gt;
+&lt;li&gt;在必要时向大模型请求进一步指导。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;大模型则承担以下职责：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;处理复杂推理任务。&lt;/li&gt;
+&lt;li&gt;制定多步骤任务计划。&lt;/li&gt;
+&lt;li&gt;解决小模型无法判断的问题。&lt;/li&gt;
+&lt;li&gt;进行高风险决策或复杂代码设计。&lt;/li&gt;
+&lt;li&gt;给出任务执行指南和判断标准。&lt;/li&gt;
+&lt;li&gt;对小模型返回的关键信息进行最终分析。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这种模式类似于人类大脑与小脑的关系。大脑负责高级认知、规划、判断和抽象思考；小脑则负责动作协调、快速反馈和重复控制。在智能系统中，大模型可以看
+作“大脑”，小模型可以看作“小脑”。大模型不必亲自处理每一个细节，而是给出目标、约束和策略；小模型按照指南执行，并在遇到异常时反馈给大模型。&lt;/p&gt;
+&lt;h2&gt;三、系统架构设计&lt;/h2&gt;
+&lt;p&gt;一个典型的大小模型协同系统可以分为五个部分：请求入口、小模型调度层、大模型推理层、工具执行层和结果汇总层。&lt;/p&gt;
+&lt;p&gt;首先，用户请求进入系统后，并不会立刻发送给大模型，而是先交给小模型。小模型对请求进行分类，例如判断这是普通问答、代码修改、数学推理、文件操作、
+数据分析，还是需要外部工具的任务。&lt;/p&gt;
+&lt;p&gt;如果小模型判断任务简单，例如“提取这段话的关键词”“把 JSON 格式化”“运行一个简单命令并总结输出”，则可以直接完成，不必调用大模型。&lt;/p&gt;
+&lt;p&gt;如果任务较复杂，例如“设计一个多模型智能体架构”“定位代码库中的复杂 bug”“分析数学证明是否正确”，小模型会将任务整理成更清晰的结构化请求，再发送给
+大模型。这样，大模型收到的不是原始、混乱、冗长的信息，而是经过筛选后的关键内容。&lt;/p&gt;
+&lt;p&gt;大模型完成推理后，可以返回两类结果。一类是最终答案，另一类是操作指南。例如在代码助手场景中，大模型可以说：“需要查看配置文件、定位错误日志、检查
+依赖版本、运行测试，并把失败信息摘要返回。”随后小模型负责实际执行这些步骤。小模型只把关键报错、相关文件片段和测试结果返回给大模型，而不是把完整
+日志全部传递过去。&lt;/p&gt;
+&lt;p&gt;这种设计可以显著减少 Token 消耗，同时也让系统具备更强的模块化能力。&lt;/p&gt;
+&lt;h2&gt;四、多模型专家协同机制&lt;/h2&gt;
+&lt;p&gt;除了大小模型协同，还可以进一步扩展为多专家模型协同。不同模型可以针对不同任务类型进行优化。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数学问题交给数学专家模型。&lt;/li&gt;
+&lt;li&gt;代码问题交给编程专家模型。&lt;/li&gt;
+&lt;li&gt;法律文本交给法律模型。&lt;/li&gt;
+&lt;li&gt;医学知识交给医学模型。&lt;/li&gt;
+&lt;li&gt;翻译任务交给翻译模型。&lt;/li&gt;
+&lt;li&gt;数据分析任务交给统计或表格模型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;小模型在这里不仅是执行者，也可以充当“路由器”。它根据用户请求的内容、领域和复杂度，将任务分发给最合适的模型。这样可以避免所有任务都依赖一个通用
+大模型。&lt;/p&gt;
+&lt;p&gt;例如，用户提出一个复杂数学问题时，小模型可以先判断问题属于代数、几何、概率还是微积分。如果是高难度证明题，则转发给数学专家模型；如果只是简单计
+算，则小模型直接完成。再比如代码任务中，小模型可以先读取文件结构，定位相关模块，将精简后的上下文交给编程模型，而不是把整个项目塞给大模型。&lt;/p&gt;
+&lt;p&gt;这种专家协同机制能够提升系统专业性，也能减少无效推理。&lt;/p&gt;
+&lt;h2&gt;五、在工具调用场景中的优势&lt;/h2&gt;
+&lt;p&gt;大小模型协同在工具调用场景中尤其有价值。以 Shell 命令执行为例，如果只有一个大模型参与，流程通常是：&lt;/p&gt;
+&lt;p&gt;用户提出需求，大模型生成命令，系统执行命令，命令报错，再把错误返回给大模型，大模型修正命令，再执行，如此反复。&lt;/p&gt;
+&lt;p&gt;这个过程会消耗大量 Token ，尤其是当命令输出很长时，大模型需要反复读取无关日志。更好的方式是：大模型只负责说明目标，例如“检查项目依赖是否安装、运
+行测试、如果失败则提取错误堆栈中最关键的三行”。小模型根据这个指南执行具体命令。&lt;/p&gt;
+&lt;p&gt;如果命令失败，小模型可以先进行基础判断，例如路径不存在、依赖未安装、参数错误、权限不足等。只有当错误超出小模型处理范围时，才将关键信息传给大模
+型。这样，大模型不需要关注每一次低层操作，而是只处理真正需要高级推理的问题。&lt;/p&gt;
+&lt;p&gt;这种模式具有几个明显优势：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;降低大模型 Token 消耗。&lt;/li&gt;
+&lt;li&gt;减少大模型处理无关日志的负担。&lt;/li&gt;
+&lt;li&gt;提高工具调用速度。&lt;/li&gt;
+&lt;li&gt;提升系统的自动化程度。&lt;/li&gt;
+&lt;li&gt;让错误信息更加结构化、可诊断。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;六、成本与效率分析&lt;/h2&gt;
+&lt;p&gt;Token 成本是大模型应用落地时必须考虑的问题。大模型处理能力强，但调用成本也更高。如果一个系统中有大量简单请求，全部交给大模型会造成明显浪费。&lt;/p&gt;
+&lt;p&gt;大小模型协同可以通过以下方式降低成本：&lt;/p&gt;
+&lt;p&gt;首先，小模型可以拦截简单任务。大量日常请求不需要复杂推理，小模型即可完成。&lt;/p&gt;
+&lt;p&gt;其次，小模型可以压缩上下文。它可以从长日志、长文档或大量文件中提取关键片段，减少传给大模型的输入量。&lt;/p&gt;
+&lt;p&gt;再次，小模型可以执行重复操作。许多操作本身不需要创造性，只需要按照计划执行。例如读取文件、运行测试、整理结果、检查格式等。&lt;/p&gt;
+&lt;p&gt;最后，多专家模型可以减少通用大模型的压力。不同领域的问题由不同模型处理，可以提高准确率，也能避免大模型在不擅长的领域中进行低效推理。&lt;/p&gt;
+&lt;p&gt;因此，该架构不仅能降低经济成本，也能提升响应速度和系统吞吐能力。&lt;/p&gt;
+&lt;h2&gt;七、面临的挑战&lt;/h2&gt;
+&lt;p&gt;虽然大小模型协同具有明显优势，但也面临一些挑战。&lt;/p&gt;
+&lt;p&gt;第一是任务判断的准确性。小模型需要判断哪些任务可以自己解决，哪些任务必须交给大模型。如果判断错误，可能导致简单问题被过度处理，或者复杂问题被低
+能力模型错误解决。&lt;/p&gt;
+&lt;p&gt;第二是上下文压缩的可靠性。小模型在提取关键信息时，可能遗漏重要细节。如果传给大模型的信息不完整，大模型的判断也可能受到影响。&lt;/p&gt;
+&lt;p&gt;第三是模型之间的协议设计。大模型和小模型之间需要清晰的通信格式，例如任务目标、输入摘要、约束条件、执行步骤、错误状态和返回格式。如果协议混乱，
+协同效率会下降。&lt;/p&gt;
+&lt;p&gt;第四是责任边界问题。系统需要明确哪些决策必须由大模型完成，哪些操作可以由小模型自动执行。对于高风险任务，例如删除文件、修改数据库、执行生产环境
+命令等，必须设置严格的确认机制。&lt;/p&gt;
+&lt;p&gt;第五是评估体系问题。多模型协同系统不能只评估最终答案质量，还要评估路由准确率、上下文压缩质量、工具调用成功率、成本节省比例和错误恢复能力。&lt;/p&gt;
+&lt;h2&gt;八、改进方向&lt;/h2&gt;
+&lt;p&gt;为了提升大小模型协同系统的可靠性，可以从以下几个方向优化。&lt;/p&gt;
+&lt;p&gt;第一，建立任务分级机制。系统可以将任务分为简单任务、普通任务、复杂任务和高风险任务。不同等级对应不同模型和不同审批策略。&lt;/p&gt;
+&lt;p&gt;第二，设计结构化通信协议。小模型向大模型汇报时，不应直接发送大量原始文本，而应按照固定格式提供目标、已执行步骤、关键结果、异常信息和待决策问
+题。&lt;/p&gt;
+&lt;p&gt;第三，引入记忆与经验机制。系统可以记录常见错误和解决方案，使小模型能够处理更多重复性问题。例如某类 Shell 命令失败后，小模型可以根据历史经验自动
+修正。&lt;/p&gt;
+&lt;p&gt;第四，支持模型动态配置。用户或系统管理员可以根据成本、速度和准确率需求，配置不同模型组合。例如低成本模式优先使用小模型，高质量模式更频繁调用大
+模型，专业模式则启用专家模型。&lt;/p&gt;
+&lt;p&gt;第五，加强安全控制。对于文件删除、权限修改、数据库写入、网络请求等操作，系统应要求明确授权，并记录操作日志。&lt;/p&gt;
+&lt;h2&gt;九、应用场景&lt;/h2&gt;
+&lt;p&gt;大小模型协同架构可以应用于多个领域。&lt;/p&gt;
+&lt;p&gt;在编程助手中，小模型负责读取文件、运行测试、提取报错和执行简单修改，大模型负责架构设计、复杂 bug 分析和关键代码生成。&lt;/p&gt;
+&lt;p&gt;在智能客服中，小模型处理常见问题和信息检索，大模型处理复杂投诉、跨领域咨询和需要综合判断的问题。&lt;/p&gt;
+&lt;p&gt;在教育系统中，小模型负责批改简单答案、整理知识点，大模型负责生成个性化讲解和复杂题目解析。&lt;/p&gt;
+&lt;p&gt;在企业办公中，小模型处理表格整理、邮件分类、会议纪要提取，大模型负责决策支持、报告生成和复杂分析。&lt;/p&gt;
+&lt;p&gt;在科研场景中，小模型负责文献筛选、摘要提取和格式整理，大模型负责理论分析、实验设计和论文结构优化。&lt;/p&gt;
+&lt;h2&gt;十、结论&lt;/h2&gt;
+&lt;p&gt;大小模型协同是一种更符合实际应用需求的人工智能系统架构。它避免了单一大模型处理所有任务所带来的高成本和低效率问题，通过小模型负责初步判断、执行
+操作和信息压缩，大模型负责复杂推理和关键决策，实现了能力、成本和效率之间的平衡。&lt;/p&gt;
+&lt;p&gt;这种模式类似于人类大脑与小脑的分工：大模型像大脑，负责理解、规划和判断；小模型像小脑，负责执行、协调和反馈。进一步结合多专家模型后，系统还可以
+根据任务类型动态选择最合适的模型，从而形成更灵活、更高效、更专业的智能协作网络。&lt;/p&gt;
+&lt;p&gt;未来，人工智能系统的发展方向很可能不再是单纯追求一个更大的模型，而是构建由多个模型、工具和记忆系统组成的协同体系。谁能更好地设计模型之间的分
+工、通信和调度机制，谁就能在实际应用中获得更低成本、更高效率和更强可靠性。哼，这才是把大模型真正用聪明的方式。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:14:19 GMT</pubDate><guid>deee76f783b4e0989ed02c660f6dbfa4</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] 发现一个 V2EX 的疑似钓鱼站</title><link>https://www.v2ex.com/t/1232781#reply3</link><description>&lt;p&gt;我正上班摸鱼呢，正巧搜索东西，从 Google 搜索点击进入的“疑似 V2EX 的帖子”，然后弹出一个需要登陆的界面，v 站某些帖子确实需要额外登陆，大家懂得都懂，结果输完密码就自动跳转了，但是没有显示正常登陆态，一开始还没有意识到，输了两次回过神来，防不胜防啊&lt;/p&gt;
+&lt;p&gt;网站：&lt;a href="http://global.v2ex.co" rel="nofollow"&gt;global.v2ex.co&lt;/a&gt;
+whios 没看到啥信息&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 09:07:36 GMT</pubDate><guid>7bea38bd6f4ca17fcd3f39be948f2186</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 求开放25的VPS厂商</title><link>https://www.nodeloc.com/t/topic/102462</link><description>想打个邮件服务器，发现我的VPS都封25端口，问问大家有没有什么便宜点的开放25的VPS</description><pubDate>Fri, 07 Aug 2026 09:05:45 GMT</pubDate><guid>nodeloc-102462</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [iPhone] AirPods pro3 单耳如何配对</title><link>https://www.v2ex.com/t/1232780#reply0</link><description>&lt;a href="https://i.imgur.com/6KA5pOf.jpeg" rel="nofollow noopener" target="_blank"&gt;&lt;img class="embedded_image" rel="noreferrer" src="https://i.imgur.com/6KA5pOf.jpeg" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;我的是 AirPods pro3 ，充电仓 a3122 ，俩耳机都是 a3065 ，左耳丢了，海鲜市场单买了一个（确定正品），配对时提示如上图，有大佬知道咋配对的吗？有点难崩</description><pubDate>Fri, 07 Aug 2026 09:04:41 GMT</pubDate><guid>5299ea3605a4497bcb98a851f0e19ee5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] 阿里云国际账号代充如何实现自助到账！</title><link>https://www.v2ex.com/t/1232779#reply0</link><description>&lt;p&gt;对于高频使用海外云资源的用户来说，每次充值都要联系客服人工转账非常低效。尤其在遇到大流量突发或者服务器快欠费时，人工代充的延迟可能会导致业务停机。现在主流的解决方式是接入自动化自助充值系统。&lt;/p&gt;
+&lt;h2&gt;自助授信额度机制&lt;/h2&gt;
+&lt;p&gt;行业内目前成熟的代充方案是采用 24 小时自助 API 对接。用户在分销商的独立客户端或者平台上，通过波场链等加密货币或主流网银自主下单。系统在收到账单后的几秒钟内，会自动向你的阿里云国际账号分发等额的美元额度（ Credit Note ）。&lt;/p&gt;
+&lt;h2&gt;确保 API 充值安全的注意点&lt;/h2&gt;
+&lt;p&gt;有些不合规的代充通过黑卡刷额度，这会导致你的阿里云账号被直接封禁。合规的自助代充，其后台划拨的必须是阿里云官方正规授权的分销商现金池。充值完成后，可以在阿里云国际站控制台的费用中心直接查到资金来源明细。&lt;/p&gt;
+&lt;p&gt;📩 客服 Telegram： @&lt;a href="https://www.v2ex.com/member/cloudcup"&gt;cloudcup&lt;/a&gt; 🔥 合作平台： 阿里云国际｜腾讯云国际｜华为云国际｜ AWS ｜ GCP ｜ Azure 🔗 官方网站： &lt;a href="https://cloudcup.online" rel="nofollow"&gt;https://cloudcup.online&lt;/a&gt; ✈️自助开户充值：@cloudcup_bot ✈️双向联系：@cloudcupbot&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:54:02 GMT</pubDate><guid>edc66414d2a06a8893bf01c82889257a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 考 人工智能训练师 有什么作用？</title><link>https://www.v2ex.com/t/1232778#reply5</link><description>&lt;p&gt;考 人工智能训练师 有什么作用？公司好像有培训资料&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:50:49 GMT</pubDate><guid>57a500420ba7d77a510c1ce4d5acc4c1</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 中了甲状腺癌之后，才知道原来得这个癌的人这么多？</title><link>https://www.v2ex.com/t/1232777#reply14</link><description>男，中招了，才知道年轻人现在好多得这个的&lt;br /&gt;&lt;br /&gt;特别是女生，建议大家着重检查下&lt;br /&gt;&lt;br /&gt;唉</description><pubDate>Fri, 07 Aug 2026 08:49:13 GMT</pubDate><guid>66821c8ae87856bacfa1a2115f209986</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 微信的小微最近开始发力了，似乎也没啥用</title><link>https://www.v2ex.com/t/1232776#reply2</link><description>&lt;p&gt;俩月前还是左上角一个对话框，最近看到很多入口。&lt;/p&gt;
+&lt;p&gt;1 、公众号文章列表，小微总结&lt;/p&gt;
+&lt;p&gt;2 、公众号文章详情，问小微。&lt;/p&gt;
+&lt;p&gt;3 、扫一扫，拍照给 AI&lt;/p&gt;
+&lt;p&gt;4 、朋友圈，AI 帮写。&lt;/p&gt;
+&lt;p&gt;5 、游戏圈，AI 解读。&lt;/p&gt;
+&lt;p&gt;不知道还有没有我没发现的。&lt;/p&gt;
+&lt;p&gt;感觉能开的都开了，实际上也没啥用。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:48:40 GMT</pubDate><guid>beb1ee1c589525ac7b03c7977ce3534a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了个 Chrome 本地命令面板插件，搜标签页/书签/历史+存社交帖子</title><link>https://www.v2ex.com/t/1232775#reply0</link><description>&lt;p&gt;背景是这样的：我平时开的标签页长期维持在 40-50 个，Chrome 自带的标签页搜索用起来还是要先点一下再滚动找，遇到窗口多的时候更麻烦。之前也试过几个标签管理类插件，要么要注册账号，要么把数据传到云端，我自己是不太放心把浏览记录这种东西交出去的。&lt;/p&gt;
+&lt;p&gt;索性自己写了一个，思路很简单：一个快捷键（ Cmd/Ctrl+Shift+K ）唤起一个命令面板，输入关键词可以同时搜到当前打开的标签页、书签、历史记录，回车直接跳转或者做一些操作（比如静音、置顶、关闭）。所有索引都是在本地建的，不需要登录，也不会往外发请求。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TroveKey 命令面板：搜索标签页、书签、历史记录和命令" class="embedded_image" rel="noreferrer" src="https://trovekey.net/_next/image?url=%2Fproduct%2Fcommand-palette.png&amp;amp;w=1200&amp;amp;q=75" /&gt;&lt;/p&gt;
+&lt;p&gt;另外加了一个小功能，是我自己经常需要的：刷 Reddit 、X 、YouTube 的时候经常看到想留着的帖子，之前都是收藏夹一丢就再也找不到了。现在可以直接把帖子内容和链接存到本地一个小库里，之后能按关键词搜出来，导出成 JSON 也行，不绑定任何账号体系。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TroveKey 本地内容库：按平台筛选、搜索已保存的帖子" class="embedded_image" rel="noreferrer" src="https://trovekey.net/_next/image?url=%2Fproduct%2Fsaved-content.png&amp;amp;w=1920&amp;amp;q=75" /&gt;&lt;/p&gt;
+&lt;p&gt;说明一下限制：这不是一个全能的稍后读工具，遇到平台反爬或者页面结构变动的情况，可能只能存下链接和基本信息，存不全的地方会明确标出来，不会假装抓全了。目前只对 Reddit / X / YouTube / Instagram / TikTok / LinkedIn 做了专门适配，其他网站是通用兜底方案，效果一般。&lt;/p&gt;
+&lt;p&gt;现在是 Chrome 插件形态，已经上架 Web Store ，Edge 版本也在整理。做这个纯粹是自己每天要用，顺手打磨了一下界面和交互，欢迎大家试用之后来喷体验，尤其是标签页特别多、习惯键盘操作的同学可以感受下差异。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="TroveKey 设置页：快捷键、抓取选项和本地数据控制" class="embedded_image" rel="noreferrer" src="https://trovekey.net/_next/image?url=%2Fproduct%2Fsettings.png&amp;amp;w=1200&amp;amp;q=75" /&gt;&lt;/p&gt;
+&lt;p&gt;Chrome Web Store: &lt;a href="https://chromewebstore.google.com/detail/lfjlphogacfmbajgpbhlhmeihfahklkj" rel="nofollow"&gt;https://chromewebstore.google.com/detail/lfjlphogacfmbajgpbhlhmeihfahklkj&lt;/a&gt;
+官网: &lt;a href="https://trovekey.net/" rel="nofollow"&gt;https://trovekey.net/&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:47:44 GMT</pubDate><guid>1ab0db2b41d1e3a5ba26f219e963ff1c</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [生活] 好多人不知道「秋天第一杯奶茶」怎么来的</title><link>https://www.v2ex.com/t/1232774#reply8</link><description>&lt;p&gt;最开始这可不是正经的「奶茶」……&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:47:10 GMT</pubDate><guid>8f62dff0c58631a6afdb8f98a2b8638e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 手机往电脑上传下载文件跑满 400MB/s，搞了套“双 5G 网卡+网线直连”，</title><link>https://www.v2ex.com/t/1232773#reply3</link><description>### [分享] 彻底干掉 MTP ！搞了套“双 5G 网卡+网线直连”，手机往电脑传文件跑满 400MB/s&lt;br /&gt;&lt;br /&gt;平时经常要把手机里几十上百 G 的视频素材和日志包导出到电脑，天下苦 MTP 久矣。&lt;br /&gt;&lt;br /&gt;走 MTP 协议经常卡死不说，速度顶多三四十兆，遇到海量小文件直接假死；走无线局域网或者快传，又总受限于路由器性能和无线干扰，速度忽高忽低。&lt;br /&gt;&lt;br /&gt;最近自己折腾出了一套**硬件级点对点以太网专线**的方案，手机和电脑直接用网线拉起来。实测传输速度直接拉满 **400+ MB/s**（大概 3.2 Gbps 左右），基本上把 5G 网卡扣除损耗后的极限、以及手机 UFS 闪存的读取速度全部挤干了。&lt;br /&gt;&lt;br /&gt;附上实测和架构截图：&lt;br /&gt;[&lt;a href="https://imgur.com/K85Jpig" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/K85Jpig&lt;/a&gt;]( &lt;a href="https://imgur.com/K85Jpig" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/K85Jpig&lt;/a&gt;)&lt;br /&gt;[&lt;a href="https://imgur.com/pXdgYLV" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/pXdgYLV&lt;/a&gt;]( &lt;a href="https://imgur.com/pXdgYLV" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/pXdgYLV&lt;/a&gt;)&lt;br /&gt;[&lt;a href="https://imgur.com/9YyZpho" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/9YyZpho&lt;/a&gt;]( &lt;a href="https://imgur.com/9YyZpho" rel="nofollow noopener" target="_blank"&gt;https://imgur.com/9YyZpho&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;这套方案我自己用了阵子感觉非常爽，分享给有类似大文件传输需求的朋友。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 1. 怎么接硬件？&lt;br /&gt;&lt;br /&gt;结构很简单，相当于拼了一个“三截式”的物理数据线：&lt;br /&gt;&lt;br /&gt;**`手机` ➔ `Type-C 转 5G 网卡` ➔ `网线` ➔ `USB-A/Type-C 转 5G 网卡` ➔ `电脑**`&lt;br /&gt;&lt;br /&gt;* **手机**：接口需要支持 USB 3.0+，且系统支持外接网卡（现在比较新的安卓机基本都行）。&lt;br /&gt;* **网卡**：买了两个瑞昱 RTL8156B 芯片的 5G USB 网卡（一个 C 口，一个 A 口）。**注意电脑端最好装一下 Realtek 官方的 USB 网卡驱动**，别用 Win 自带的默认驱动，性能更稳。&lt;br /&gt;* **网线**：随便一根 Cat6 或以上的短网线。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 2. 软件与网络配置（关键避坑点）&lt;br /&gt;&lt;br /&gt;本质上就是让手机和电脑建立一个点对点局域网，由手机充当 DHCP 服务器：&lt;br /&gt;&lt;br /&gt;1. **连上硬件**：把手机、网卡、网线和电脑全部接好。&lt;br /&gt;2. **电脑网卡设置（重点）**：在电脑的网络适配器属性里，把这个 5G 网卡的“速度和双工”手动拉到 **5.0 Gbps 全双工**，避免自动协商降频。&lt;br /&gt;3. **开启共享**：手机打开 `设置` ➔ `个人热点 / 网络共享` ➔ 勾选 **以太网共享**。这时候手机会自动给电脑网卡分配一个 `10.x.x.x` 开头的内网 IP 。&lt;br /&gt;4. **搭建服务端与客户端**：&lt;br /&gt;* **PC 端**：用 FileZilla Server 搭建本地 FTP 服务端（或者 Mac 直接开原生 SMB 文件共享）。&lt;br /&gt;* **手机端**：推荐用 **MT 管理器** 或 Solid Explorer 等文件管理器，连接电脑的内网 IP 。**用 MT 管理器的话，记得在设置里把 FTP 传输开启多线程**，对跑满带宽和处理小文件很有帮助。&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 3. 为什么能跑这么快？&lt;br /&gt;&lt;br /&gt;* **避开 MTP 的坑**：MTP 是单线程请求-响应模式，效率极低；而 FTP 走的是纯粹的 TCP/IP 数据流，配合多线程开销极小。&lt;br /&gt;* **物理专线无干扰**：双网卡直连延迟不到 1ms ，零丢包，TCP 协议不用频繁重传，数据流可以一直处于满载状态。&lt;br /&gt;* **吃满接口带宽**：RTL8156B 在 USB 3.2 接口下理论能到 5Gbps ，全双工+官方驱动加持下，实测 400MB/s 已经是硬件物理层面的真极限了。&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;#### 4. 总结&lt;br /&gt;&lt;br /&gt;* **优点**：速度极其狂暴，传输非常稳定，而且完全跨平台（ Win / Mac / Linux 都行）。&lt;br /&gt;* **缺点**：得买两个 5G 网卡（成本大概三四百块），且出门带两块网卡加网线稍微有点重。&lt;br /&gt;&lt;br /&gt;如果你也需要频繁从手机向电脑导出几百 G 的大文件，这个方案绝对比折腾各种无线快传或者慢吞吞的 MTP 靠谱得多。大家有更好的优化思路也欢迎一起讨论！</description><pubDate>Fri, 07 Aug 2026 08:42:22 GMT</pubDate><guid>6d7f369e351818647e621957b79c222a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] Opencode Go 套餐的 DeepSeek V4 Flash 涨价了，注意用量</title><link>https://www.v2ex.com/t/1232772#reply7</link><description>&lt;p&gt;今天用着用着发现 oepncode 客户端下面 变成了 2x usage ，各位注意用量&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:39:19 GMT</pubDate><guid>fae10c706fb065e12a6d1268654c131e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [OpenAI] 各位的 08-12 / 08-13 重置次数还在吗？</title><link>https://www.v2ex.com/t/1232771#reply8</link><description>&lt;p&gt;&lt;a href="https://imgur.com/a/WlzqXu1" rel="nofollow"&gt;https://imgur.com/a/WlzqXu1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我的重置次数消失了？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:33:05 GMT</pubDate><guid>91afb10fdb327782f6b286ac17e293d0</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 月薪 2W+，工作轻松但几乎没有成长，毕业四五年该继续待着吗？</title><link>https://www.v2ex.com/t/1232770#reply14</link><description>&lt;p&gt;今天看到一个帖子，大意是：“月薪 18000 ，但工作几乎毫无意义，干不干？”&lt;/p&gt;
 &lt;p&gt;感觉和我的现状挺像。毕业四五年了，目前月薪 2W+，工作强度不大，大部分时间比较清闲，偶尔甚至会浑浑噩噩地摸鱼。从收入、稳定性和舒适度来看，这份工作其实没什么可抱怨的。&lt;/p&gt;
 &lt;p&gt;但待久了又会有一种说不上来的不舒服：每天做的事情没什么成就感，也感觉不到能力在增长。跟朋友聊起这些，他们觉得我是在“无病呻吟”——工资还可以、工作又轻松，还有什么不满足的？说实话，我也理解这种看法，毕竟现在的大环境下，一份舒服稳定的工作并不容易遇到。&lt;/p&gt;
 &lt;p&gt;纠结的地方在于，毕业四五年似乎正是积累经验、提升能力的阶段。如果长期待在舒适区，担心以后想换工作时，才发现这些年除了工作年限，真正能拿得出手的东西并不多。但另一方面，我也不确定所谓“年轻就应该卷”是不是另一种焦虑。为了成长主动放弃现在的状态，也未必一定能换来更好的结果。&lt;/p&gt;
@@ -22,7 +236,7 @@ Linux
 &lt;li&gt;如果是毕业四五年的阶段，你会选择珍惜舒适期，还是主动寻找更有挑战的机会？&lt;/li&gt;
 &lt;li&gt;有没有经历过类似阶段的朋友？后来是继续留下，还是选择了离开？&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;不是凡尔赛，也不是觉得轻松有什么不好，只是想了解一下，长期来看该如何更理性地评估这种状态。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:32:47 GMT</pubDate><guid>5749a33ef14e7b1a227ab169c493dd0b</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【Hytron】Hytron的机器开多了用不上怎么处理</title><link>https://www.nodeseek.com/post-862308-1</link><description>如图这四台机器哪些有必要留着啊用不上的有人租吗还是直接放生</description><pubDate>Fri, 07 Aug 2026 08:32:36 GMT</pubDate><guid>669490b30156a4144e8abea2afd64f48</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[V2EX] [问与答] 中国出入境新规定没人说说吗？</title><link>https://www.v2ex.com/t/1232769#reply3</link><description>&lt;h3&gt;简单说就这几条：&lt;/h3&gt;
+&lt;p&gt;不是凡尔赛，也不是觉得轻松有什么不好，只是想了解一下，长期来看该如何更理性地评估这种状态。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:32:47 GMT</pubDate><guid>cf20c6b0e131503177dbcd46939ceb95</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 中国出入境新规定没人说说吗？</title><link>https://www.v2ex.com/t/1232769#reply12</link><description>&lt;h3&gt;简单说就这几条：&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;出境风险提醒：
 外交部会公布战乱、高危国家地区。办护照、过边检时会提醒你别去高危地区；去高风险地区时，必要时会劝阻。&lt;/li&gt;
@@ -37,8 +251,7 @@ Linux
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr /&gt;
-&lt;p&gt;听说现在已经在卡护照了，以后想润出去更难了😿&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:32:15 GMT</pubDate><guid>b94e94fdc081233cd95a2526b2dbb4d7</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] 【nq/tq】vmiss 八折 CN.HK.BGP.DC2.Basic 100m 400g 40cad/y</title><link>https://www.nodeseek.com/post-862307-1</link><description>💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[1m硬件质量体检报告：[36m38.207.*.*[0m[4mhttps://github.com/xykt/HardwareQuality[</description><pubDate>Fri, 07 Aug 2026 08:31:18 GMT</pubDate><guid>876ac158f8fceb2547efd2e4f851df8f</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 自己搭一个普号gpt普号池</title><link>https://www.nodeloc.com/t/topic/102454</link><description>有没有省钱的codex玩法？ 搭一个普号池 有没有人试过，接入codex，可以使用便宜的验证码，但是不知道要不要二验，封号的概率大不大，有没有人尝试了？ 
-:xhj005:</description><pubDate>Fri, 07 Aug 2026 08:30:58 GMT</pubDate><guid>nodeloc-102454</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享发现] 36 岁被裁后开始玩路亚，两年后我用 AI 给钓场写了个 SaaS</title><link>https://www.v2ex.com/t/1232768#reply0</link><description>&lt;h1&gt;被裁后开始玩路亚，我给钓场做了一个小程序，想找首批用户&lt;/h1&gt;
+&lt;p&gt;听说现在已经在卡护照了，以后想润出去更难了😿&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:32:15 GMT</pubDate><guid>49dcb5e7bca20d149d5723d8eb5a0ab5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 36 岁被裁后开始玩路亚，两年后我用 AI 给钓场写了个 SaaS</title><link>https://www.v2ex.com/t/1232768#reply3</link><description>&lt;h1&gt;被裁后开始玩路亚，我给钓场做了一个小程序，想找首批用户&lt;/h1&gt;
 &lt;p&gt;2024 年初，我 36 岁，在做了 15 年程序员以后，被裁了。&lt;/p&gt;
 &lt;p&gt;也可以说是提前“被退休”。&lt;/p&gt;
 &lt;p&gt;空下来的那段时间，我开始玩路亚，后来经常去商业钓场，也就是钓友常说的黑坑。去得多了，我发现不少钓场还在用微信群完成几乎所有经营工作。&lt;/p&gt;
@@ -80,218 +293,5 @@ Linux
 &lt;p&gt;前几家参与内测的钓场可以免费使用，我也会亲自协助配置鱼讯、预约、会员卡和现场核销流程。比起现在就考虑怎么收费，我更想先跟着真实经营跑几场，把那些坐在电脑前想不到的问题找出来。&lt;/p&gt;
 &lt;p&gt;如果你自己经营路亚钓场，或者认识愿意尝试的钓场老板，欢迎在帖子里回复或联系我。&lt;/p&gt;
 &lt;p&gt;玩路亚的朋友也欢迎体验。如果你的城市还没有收录钓场，可以告诉我所在城市和常去的塘；无论是产品、行业流程还是技术实现，都欢迎拍砖。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="小程序码" class="embedded_image" rel="noreferrer" src="https://picui.ogmua.cn/s1/2026/08/07/6a75977422b06.webp" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:30:51 GMT</pubDate><guid>07231095297efd484bd3f0221c335047</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 发现一个有趣的现象， AI 开发代码的自查陷阱</title><link>https://www.v2ex.com/t/1232767#reply0</link><description>最近用了几款大模型开展开发工作，我察觉到一个很有意思的规律：当业务代码逻辑稍微复杂之后，倘若直接在原有对话会话中，让刚刚写完代码的 AI 自查漏洞，它大多会判定代码不存在 Bug 。&lt;br /&gt;&lt;br /&gt;可只要新建一个空白会话重新提交代码进行审查，AI 往往便能找出各类问题；若是再更换一款大模型检测，排查出的细节问题还会更多，只是其中相当一部分属于影响不大的次要瑕疵。&lt;br /&gt;&lt;br /&gt;这是不是 AI 之间的相互挑刺？</description><pubDate>Fri, 07 Aug 2026 08:30:46 GMT</pubDate><guid>ecceb2ce91c3fd8a55e8a5e53393aecc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeSeek] [纯水] 纪念一下我的甲骨文arm 4+24</title><link>https://www.nodeseek.com/post-862305-1</link><description>哎，一开始还以为老号可以继续用4+24，没想到都要降配，可惜了我当时抢了几个月的新加坡了</description><pubDate>Fri, 07 Aug 2026 08:29:34 GMT</pubDate><guid>0b807688e6a71dac13021f60931b16c0</guid><source url="https://rss.nodeseek.com/">NodeSeek</source></item><item><title>[NodeLoc] 感觉阿里的tokenplan 又贵, 额度又少, 然后国模好傻逼</title><link>https://www.nodeloc.com/t/topic/102453</link><description>赶紧阿里的tokenplan 又贵, 额度又少 
-早上看到它发了邮件, 然后点进去就可以买了, 就买了个39的包季的 然后接入到hermes用3.8 的max, 结果额度赶紧巨少, 赶紧都没问几个问题, 就周限额用完了, 赶紧被骗了, 还不&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 08:28:01 GMT</pubDate><guid>nodeloc-102453</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[NodeLoc] Welcome to 宝藏湾</title><link>https://www.nodeloc.com/t/topic/102452</link><description>Welcome to our node! This is a space for discussions about 宝藏湾. 
-Feel free to introduce yourself and start conversations&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 08:25:44 GMT</pubDate><guid>nodeloc-102452</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [职场话题] 吐槽一下新需求</title><link>https://www.v2ex.com/t/1232765#reply0</link><description>手机 app 页面一个表单有 20 列，我看了一下同花顺的股票也就 10 列，人家还可以自定义。一个手机页面巴不得把所有系统的相关数据全都展示上去，这需求给我看力竭了。本来美美摸鱼的周五下午。</description><pubDate>Fri, 07 Aug 2026 08:23:54 GMT</pubDate><guid>3f7d56dd82501f880e6da7088da10708</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 使用 deepseek，外接视觉模型有什么好的便宜的方案推荐</title><link>https://www.v2ex.com/t/1232764#reply3</link><description>&lt;p&gt;deepseek 不是多模态，在实际的使用中写 UI 确实差点意思，感觉好麻烦，特别是调 UI 的时候，感觉不好沟通。&lt;/p&gt;
-&lt;p&gt;目前实践制作 UI 的流程是让 deepseek 绘制 ascii UI 布局，确定布局之后，就整理提示词使用 gemini 的 &lt;/p&gt;
-&lt;p&gt;stitch 制作原型图，原型图确定了再回到 deepseek 里面制作界面。&lt;/p&gt;
-&lt;p&gt;实际的过程中就会遇到一些小问题，比如网站 一下 UI 细节或者按钮的大小不一致，deepseek 无法看到，文字&lt;/p&gt;
-&lt;p&gt;描述的话，deepseek 没有办法一次性搞定。&lt;/p&gt;
-&lt;p&gt;所以想求一个比较好的使用方案能解决 deepseek 做 UI 视觉上面碰到的问题。&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:21:28 GMT</pubDate><guid>76c784270880aeac304cd416c2275442</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [职场话题] ios 开发如何转全栈</title><link>https://www.v2ex.com/t/1232763#reply0</link><description>&lt;p&gt;应该从哪里入手&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:19:53 GMT</pubDate><guid>008e270543c9a71a0480d59266047d65</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] iOS 英文网页 Safari 生词翻译插件 WordHint</title><link>https://www.v2ex.com/t/1232762#reply0</link><description>英文网站阅读会被生词卡断，但是还想看原文，尽可能减少打断阅读&lt;br /&gt;&lt;br /&gt;&lt;a href="https://apps.apple.com/cn/app/wordhint-for-safari/id6779261250" rel="nofollow noopener" target="_blank"&gt;https://apps.apple.com/cn/app/wordhint-for-safari/id6779261250&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;官网以及如何使用&lt;br /&gt;&lt;br /&gt;&lt;a href="https://wordhint.tomo.im" rel="nofollow noopener" target="_blank"&gt;https://wordhint.tomo.im&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;创意参考 @&lt;a href="https://www.v2ex.com/member/sofish" rel="nofollow noopener" target="_blank"&gt;sofish&lt;/a&gt; ，阅读书籍可以用&lt;br /&gt;&lt;br /&gt;&lt;a href="https://jinshu.built4.fun/zh" rel="nofollow noopener" target="_blank"&gt;https://jinshu.built4.fun/zh&lt;/a&gt;</description><pubDate>Fri, 07 Aug 2026 08:18:42 GMT</pubDate><guid>adcafc57b05446994f0a5d070e48b6ec</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 有没有清理耳机耳屎的焚诀？</title><link>https://www.v2ex.com/t/1232761#reply1</link><description>&lt;p&gt;买过那个专门清理耳机的工具，但清理起来很不方便&lt;/p&gt;
-&lt;p&gt;有啥焚诀吗？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:13:43 GMT</pubDate><guid>004302dd066970c1896a9c2740c6446e</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 大家有没有试过 miyo（copilot for obsidian 团队开发的）？</title><link>https://www.v2ex.com/t/1232760#reply0</link><description>感觉各 AI 共享记忆很能解决痛点，不知道大家如何看。&lt;br /&gt;是觉得更方便了，还是因为记忆污染更讨厌了。</description><pubDate>Fri, 07 Aug 2026 08:10:52 GMT</pubDate><guid>533bc99927ec5abc6798498962f0ed93</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [推广] Gemini AI Pro 成品号会员/代充 年付 不到 1 张 享受价值¥2500 超级 AI 会员 需要的抓紧哦</title><link>https://www.v2ex.com/t/1232759#reply2</link><description>Gemini AI Pro 成品号会员/代充 年付 不到 1 张 享受价值¥2500 超级 AI 会员 需要的抓紧哦，月底就要绝版了，无需帮卡全球可用，需当天兑换，谷歌即将发布最强的的 3.5Pro 大模型&lt;br /&gt;&lt;br /&gt;传送门： &lt;a href="https://ycloudshop.com/product/gemini-recharge" rel="nofollow noopener" target="_blank"&gt;https://ycloudshop.com/product/gemini-recharge&lt;/a&gt;</description><pubDate>Fri, 07 Aug 2026 08:08:46 GMT</pubDate><guid>5c32d4403579026a63f28a3d0a274ef5</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] [项目分享] Pragma：尝试解决不同 Agent Harness 之间的记忆断裂</title><link>https://www.v2ex.com/t/1232758#reply0</link><description>&lt;p&gt;最近把自己做的项目 &lt;strong&gt;Pragma&lt;/strong&gt; 正式公开了，你觉得有意思或者对你有帮助的话求个 star ，有兴趣的也欢迎提交 pr：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/pqpo/pragma" rel="nofollow"&gt;https://github.com/pqpo/pragma&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Pragma 不是想再做一个 Claude Code 或 Codex ，而是想解决一个我在长期使用 AI Agent 时越来越明显的问题：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不同 Agent 很强，但工作方式、上下文和经验都被困在各自的 Session 里。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;比如一个开发任务可能是：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;Claude Code 做需求分析
-        ↓
-Codex 做技术方案
-        ↓
-Codex 实现代码
-        ↓
-Claude Code 做独立 Review
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;每一步可以使用不同的模型、不同的 Harness 。&lt;/p&gt;
-&lt;p&gt;真正麻烦的不是怎么调用它们，而是：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;前一个 Agent 学到的东西，怎么让后一个 Agent 继续利用？&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;不迁移 Session ，而是迁移工作语义&lt;/h2&gt;
-&lt;p&gt;一开始很自然会想到：能不能把 Claude Code 的 Session 直接交给 Codex ？&lt;/p&gt;
-&lt;p&gt;但不同 Harness 有完全不同的 Session 、Message 、Tool Call 、Compaction 等内部机制，而且真正有价值的通常也不是完整的聊天记录。&lt;/p&gt;
-&lt;p&gt;比如一次任务中发现：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;这个项目不能使用 UUID ，
-因为历史数据和接口都依赖 ULID 。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;真正值得留下的是这个&lt;strong&gt;事实&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;或者一次排障过程：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;修改方案
-→ 测试失败
-→ 找到历史兼容逻辑
-→ 调整实现
-→ 最终通过
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;值得留下的是这次&lt;strong&gt;经验&lt;/strong&gt;，而不是几十轮聊天记录。&lt;/p&gt;
-&lt;p&gt;所以 Pragma 的核心思路是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;不迁移 Session ，而是迁移工作语义。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;所有 Harness 进入同一条 Memory Pipeline&lt;/h2&gt;
-&lt;p&gt;Pragma 会把 Claude Code 、Codex 、PI 等不同 Runtime 的执行过程归一化，最终进入统一的 Memory Pipeline：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;Claude Code / Codex / PI
-          ↓
-      Execution
-          ↓
-       Evidence
-          ↓
-        Memory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Memory 目前主要分成两类：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Episodic Memory&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;记录「以前发生过什么」，例如一次任务的目标、尝试、失败、恢复和最终结果。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Semantic Memory&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;记录「现在认为哪些事情是真的」，例如项目约束、用户偏好和稳定事实。&lt;/p&gt;
-&lt;p&gt;所以最终不会存在：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;Claude Code Memory
-Codex Memory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;而只有：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;Pragma Memory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;下一次无论换成 Codex 、Claude Code ，还是未来其他 Harness ，都可以继续利用这些经验。&lt;/p&gt;
-&lt;h2&gt;Context 和 Memory 是两回事&lt;/h2&gt;
-&lt;p&gt;这个边界我觉得也很重要。&lt;/p&gt;
-&lt;p&gt;刚刚生成的：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;requirements.md
-architecture.md
-review findings
-TODO
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;属于当前任务的 &lt;strong&gt;Context&lt;/strong&gt;，应该直接在 Agent 之间流动。&lt;/p&gt;
-&lt;p&gt;而：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;这个项目过去踩过什么坑
-用户长期有什么偏好
-什么方案以前失败过
-有哪些稳定约束
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;才更适合进入 &lt;strong&gt;Memory&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;我现在会简单理解成：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Context 是这次工作正在知道什么。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Memory 是过去的工作有什么值得继续知道。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;最后&lt;/h2&gt;
-&lt;p&gt;Pragma 想做的事情其实可以浓缩成一句话：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;让 AI 的工作方式和经验脱离某个具体 Agent ，变成可以持续积累、复用和迁移的资产。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;模型和 Agent Harness 会不断变化。&lt;/p&gt;
-&lt;p&gt;今天是 Claude Code 、Codex ，明天一定还会有更好的工具。&lt;/p&gt;
-&lt;p&gt;但如果每换一个工具，我们积累的经验就重新归零，那其实很可惜。&lt;/p&gt;
-&lt;p&gt;所以我更希望最终留下来的不是某一个 Agent ，而是：&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-text"&gt;Workflow
-+ Context
-+ Memory
-+ Evaluation
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;项目目前还在比较早期，欢迎讨论这种跨 Harness 的 Context / Memory 设计。&lt;/p&gt;
-&lt;p&gt;GitHub：&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/pqpo/pragma" rel="nofollow"&gt;https://github.com/pqpo/pragma&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:07:30 GMT</pubDate><guid>9aaff5937e165e71560ae72c886f7a77</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] 今天 opencode go 里面的 deepseek v4 flash 是不是降智了？</title><link>https://www.v2ex.com/t/1232757#reply0</link><description>&lt;p&gt;主观感受，各位有这个感觉吗？&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:04:09 GMT</pubDate><guid>434d0c969aed50a7be80b17a83d60c23</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [问与答] AI 中转站云设施选择疑问</title><link>https://www.v2ex.com/t/1232756#reply0</link><description>&lt;p&gt;如题，各位屌大的中转站老板们，大家搭建中转站时用的是哪个服务商的服务器，dmit, aws, gcp, azure 还是其他。&lt;/p&gt;
-&lt;p&gt;小弟也想参合一下。如果我看中网络延迟，是否 dmit 是首选？但是他们家也硬盘能否动态扩容咱不清楚，我没用过他家的。&lt;/p&gt;
-&lt;p&gt;aws 日本如何，有没有在用的现身说法一下。&lt;/p&gt;
-&lt;p&gt;另外一个是成本问题，是否有价格相对便宜的服务商推荐呢，前提是网络上国内延迟比较低的。&lt;/p&gt;
-&lt;p&gt;能否给个参考呢，感谢&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:00:11 GMT</pubDate><guid>caeb468812582e5337d886145c6f41ba</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Smailr 现在已支持邮箱排序功能</title><link>https://www.nodeloc.com/t/topic/102450</link><description>创建了几十个上百个邮箱，可能常用的只有几个，现在可以通过左边的拖拽把常用的邮箱放在最上面。 也可以通过箭头上下调整。</description><pubDate>Fri, 07 Aug 2026 07:53:09 GMT</pubDate><guid>nodeloc-102450</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [推广] 9HTTP 限时优惠✅ 长效 ISP 代理美国 IP $1.92/IP ✅动态住宅 $0.45/GB 起</title><link>https://www.v2ex.com/t/1232754#reply0</link><description>&lt;h2&gt;倒计时 24 天&lt;/h2&gt;
-&lt;p&gt;✅ 长效 ISP 代理｜ 全场 6 折&lt;/p&gt;
-&lt;p&gt;搭载运营商专属固定静态 IP ，IP 归属稳定不频繁变动&lt;/p&gt;
-&lt;p&gt;完美适配长期多账号托管、海外店铺运维、后台日常登录管理，杜绝账号因 IP 波动触发风控，长期使用安全感拉满。&lt;/p&gt;
-&lt;p&gt;✅ 动态住宅代理｜全场 7 折&lt;/p&gt;
-&lt;p&gt;原生真实家庭住宅 IP 池，海量节点轮换&lt;/p&gt;
-&lt;p&gt;适合网页数据抓取、海外站点浏览检索、内容访问等场景，伪装普通居家用户环境，兼容性更广，各类采集项目都能顺畅运行。&lt;/p&gt;
-&lt;p&gt;官网：&lt;a href="https://www.9http.com?ref=v2ex" rel="nofollow"&gt;9HTTP&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;使用方法：&lt;/h2&gt;
-&lt;p&gt;购买时输入优惠码即可:&lt;a href="https://www.9http.com?ref=v2ex" rel="nofollow"&gt;9HTTP.COM&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:46:36 GMT</pubDate><guid>85e70fcece6bedf7a69a67cfb936699a</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享创造] 做了个 App Store 截图制作工具：我想解决的不是套壳，而是多尺寸和多语言反复改图</title><link>https://www.v2ex.com/t/1232753#reply0</link><description>最近在做自己的 App 上架物料时，又被截图这件事卡住了。&lt;br /&gt;&lt;br /&gt;真正麻烦的不是做第一张图，而是后续这些重复劳动：&lt;br /&gt;&lt;br /&gt;- 同一套内容要适配 iPhone 、iPad 、Android Phone / Tablet ，尺寸和安全区域都不一样&lt;br /&gt;- 文案稍微改一个字，往往得回到多个设计稿里手动同步&lt;br /&gt;- 准备多语言版本时，中文、英文、日文长度差异很大，排版很容易崩&lt;br /&gt;- App 更新后，想只替换几张 UI 截图，也要重新检查整套导出规格&lt;br /&gt;- 有时候只是想给一张截图加设备框、背景和卖点标注，不太想打开 Figma 再搭一遍&lt;br /&gt;&lt;br /&gt;所以自己做了 AppScreenshots：&lt;br /&gt;&lt;br /&gt;&lt;a href="https://appscreenshots.net/" rel="nofollow noopener" target="_blank"&gt;https://appscreenshots.net/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;它是一个浏览器里的 App Store / Google Play 截图编辑器，目前主要做了这些功能：&lt;br /&gt;&lt;br /&gt;- 支持 iPhone 、iPad 、Android 、Apple Watch 等常见上架尺寸&lt;br /&gt;- 一份设计可以导出多个商店规格&lt;br /&gt;- 支持设备框、背景、文字、强调标注等基础组件&lt;br /&gt;- 可以做多语言版本，并批量导出&lt;br /&gt;- 另有单独的截图缩放、App Icon 、Mockup 等小工具&lt;br /&gt;- 免费可直接使用，不需要先注册才能试&lt;br /&gt;&lt;br /&gt;AI 生图/排版也加进去了，但我自己更把它当作起稿工具：先快速生成一个方向，再手动改文案和布局。对上架截图来说，能不能准确表达功能和目标用户，比看起来是不是 AI 做的更重要。&lt;br /&gt;&lt;br /&gt;这个工具目前最想验证两个问题：&lt;br /&gt;&lt;br /&gt;1. 大家实际做商店截图时，最耗时间的环节是什么？尺寸适配、多语言，还是文案和视觉排版？&lt;br /&gt;2. 如果你用过类似工具，哪些细节会决定你愿不愿意长期用？比如模板、版本管理、团队协作、导出规范校验等。&lt;br /&gt;&lt;br /&gt;欢迎直接吐槽，也欢迎拿自己的 App 截图来试试，页面上有一些模板和示例，暂时没做复杂的账号门槛。</description><pubDate>Fri, 07 Aug 2026 07:46:34 GMT</pubDate><guid>5c9d8fcb085fe74bb1371ef768959157</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [宽带症候群] 电信联通宽带选择</title><link>https://www.v2ex.com/t/1232752#reply0</link><description>&lt;p&gt;目前有两条主要宽带，
-坐标：0595
-店铺：
-联通下行 1000M,上行 150M ，月付 95 ，带 2 张副卡（办理这条宽带时，把移动和部分电信号转网加入的，95 元包含 2 张副卡的卡费 13 元*2 ）；每月流量 100G ，不过用不完，基本都是 wifi
-电信下行 1000M ，上行 50M ，月付 169 元，流量也是用不完，目前卡给小孩装儿童手表上。&lt;/p&gt;
-&lt;p&gt;家里：联通一条 1000M 下，上行 50M&lt;/p&gt;
-&lt;p&gt;店铺其实还有一条宽带，也是联通的，1000M 下行，50M 上行。&lt;/p&gt;
-&lt;p&gt;店铺的两条宽带都是公网 IP+桥接。
-现在比较纠结，要不要把电信的取消掉，毕竟费用还是挺高的，10 月份合约到期就可以直接取消。
-但是用下来感觉电信的宽带还是比联通的要稳一点，特别是晚上高峰期，联通测速只有 700M ，而且会有波动，电信的 940M 很稳定。&lt;/p&gt;
-&lt;p&gt;另外一个需求：有出国需求，目前是 amy 机场，在蹲 dmit ，不知道体验会不会更好&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:46:04 GMT</pubDate><guid>95250863204f84b818b2050cd4c56a36</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [程序员] 做了个 CLI:把团队的 AI 编程规则/技能一键同步到 Claude Code、Cursor、Codex</title><link>https://www.v2ex.com/t/1232751#reply2</link><description>&lt;p&gt;我们团队十几号人,都在用 AI 写代码,但工具很杂:有人 Claude Code,有人 Cursor,有人 Codex 。用的过程中发现一个很烦的问题——&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;每个人的 AI 配置不一致,而且各改各的。&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;老同事本地攒了一套 &lt;a href="http://CLAUDE.md" rel="nofollow"&gt;CLAUDE.md&lt;/a&gt; 、自定义 skills 、一堆环境变量和"我们这儿的规矩";新人的 AI 基本是台空白出厂车。&lt;/li&gt;
-&lt;li&gt;同一个坑,AI 会带着每个人再踩一遍:A 花两小时搞清楚某条内部链路怎么配,一周后 B 问几乎一样的问题,又花两小时。&lt;/li&gt;
-&lt;li&gt;就算把 rules 、skills 丢进一个共享 Git 仓,也只解决了"有没有源"——&lt;strong&gt;合并之后没人记得 pull,pull 了也不知道该拷到哪个工具的哪个目录。&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;所以我做了个 CLI,思路很简单:&lt;strong&gt;把团队的 skills / rules / docs / 环境变量 / hooks / MCP 配置放在一个 Git 仓里,评审合并后,自动同步进每个人本地的 AI 工具。&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;teamai push  → 自动开分支 + 建 MR → Reviewer 评审合并
-                                        ↓
-             会话启动时 SessionStart hook 自动 teamai pull → 写进各工具目录
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;几个我自己觉得还算有用的点:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;多工具一份维护&lt;/strong&gt;:skills 会分别写进 &lt;code&gt;~/.claude/skills/&lt;/code&gt;、&lt;code&gt;~/.cursor/skills/&lt;/code&gt;、&lt;code&gt;~/.codex/skills/&lt;/code&gt;……不用在每个工具里各拷一套。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;环境变量当一等公民&lt;/strong&gt;:测试环境地址、访问凭证这类配置能随 pull 注入 shell 。很多"新人连不上测试环境"其实不是知识问题,是配置没到位。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;不绕过评审&lt;/strong&gt;:push 默认开 MR,必须过人。自动的是"同步"和"注入",不是"写入"——写什么依然由人把关。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;经验沉淀&lt;/strong&gt;:会话结束时如果检测到"摩擦信号"(你打断/纠正了 AI 、拒了工具调用、模型反复重试),会提示你把这次踩的坑总结成一篇 learning 推给团队,之后别人能检索到。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;开源、MIT 、还在迭代:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;npm install -g teamai-cli
-# 单人用也行,不用先建仓,init 会检查并自动创建
-teamai init --repo https://github.com/yourorg/yourrepo
-&lt;/code&gt;&lt;/pre&gt;</description><pubDate>Fri, 07 Aug 2026 07:43:44 GMT</pubDate><guid>7d9c72c5b1a39f9f7058900d052f03a6</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] 目前正在疯狂 Coding 争取给论坛虚拟主机换一套更加 NB 的系统</title><link>https://www.nodeloc.com/t/topic/102449</link><description>这个系统写完之后就是一个提供 ssh 的，支持 php，nginx，python 的虚拟主机 
-目前进度：daemon 部分已完成并进行初步测试，可以正常操作虚拟机，ssh 和 sftp 已测试并功能正常，http 代理和 tls 证&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 07:42:33 GMT</pubDate><guid>nodeloc-102449</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [分享创造] 做了一个小朋友练字的小程序，收录了大概 2500+个字，除了可以在手机 pad 上，也可以打印成字贴</title><link>https://www.v2ex.com/t/1232750#reply4</link><description>小程序名字叫  幼儿练字助手</description><pubDate>Fri, 07 Aug 2026 07:42:26 GMT</pubDate><guid>85823f901ba6e857226e3fa12f20c463</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [酷工作] macOS / iOS 应用工程师招聘（全栈和具有跨平台能力者优先）</title><link>https://www.v2ex.com/t/1232749#reply1</link><description>&lt;p&gt;没在 V 站发过招聘，来试一试。&lt;/p&gt;
-&lt;p&gt;我们正在打造下一代 AI agent 工具。&lt;/p&gt;
-&lt;p&gt;如果你喜欢 Alfred 、Raycast 、Flows 、Cursor 、Notion 、Linear ，热衷于研究各种工作流、自动化和 AI Agent ，并希望亲手打造一款真正改变工作方式的产品，我们希望认识你。&lt;/p&gt;
-&lt;p&gt;这是一个从 0 到 1 的核心岗位，你将参与产品设计、客户端开发、后端架构、AI 能力集成等几乎所有关键决策。&lt;/p&gt;
-&lt;p&gt;你将负责——&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;开发 macOS 和 iOS 原生应用（ Swift / SwiftUI ）&lt;/li&gt;
-&lt;li&gt;设计并实现 AI 驱动的工作流和自动化能力&lt;/li&gt;
-&lt;li&gt;构建 AI Agent 、Memory 、RAG 等核心能力&lt;/li&gt;
-&lt;li&gt;负责客户端与后端的整体架构设计与开发&lt;/li&gt;
-&lt;li&gt;设计 API 、数据库及云端服务，保障系统性能与稳定性&lt;/li&gt;
-&lt;li&gt;接入各类 LLM 、MCP 、第三方工具及开发者生态&lt;/li&gt;
-&lt;li&gt;与产品、设计共同打磨细节，持续优化用户体验&lt;/li&gt;
-&lt;li&gt;快速迭代产品，验证想法，把创意真正变成用户每天都会使用的工具&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们希望你具备——&lt;/p&gt;
-&lt;p&gt;必备能力：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;有 macOS 或 iOS 原生应用开发经验&lt;/li&gt;
-&lt;li&gt;熟悉 Swift 、SwiftUI ，对 Apple 平台有深入理解&lt;/li&gt;
-&lt;li&gt;具备扎实的后端开发能力（ Node.js 、Go 、Rust 、Python 等任意一种均可）&lt;/li&gt;
-&lt;li&gt;能独立设计并开发完整功能，从客户端一直做到服务端&lt;/li&gt;
-&lt;li&gt;熟悉数据库设计、REST API 、实时通信等基础能力&lt;/li&gt;
-&lt;li&gt;对 AI 产品充满兴趣，了解 LLM 、Agent 、Prompt 、RAG 等相关技术&lt;/li&gt;
-&lt;li&gt;具备优秀的工程能力，关注性能、稳定性和代码质量&lt;/li&gt;
-&lt;li&gt;有较强的产品意识，而不仅仅是完成需求&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;如果你还具备这些，会非常加分：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;App Store 上架过自己的 app&lt;/li&gt;
-&lt;li&gt;做过 Alfred Workflow 、Raycast Extension 或类似插件&lt;/li&gt;
-&lt;li&gt;熟悉 Expo 、Flutter 等跨平台开发框架&lt;/li&gt;
-&lt;li&gt;做过浏览器插件、VS Code Extension 、开发者工具&lt;/li&gt;
-&lt;li&gt;使用过 Cursor 、Claude Code 、Codex 等 AI Coding 工具&lt;/li&gt;
-&lt;li&gt;有 AI Agent 、Workflow 、Automation 产品开发经验&lt;/li&gt;
-&lt;li&gt;做过 Electron 或 Tauri 桌面应用&lt;/li&gt;
-&lt;li&gt;有 RAG 、向量数据库、Embedding 等相关经验&lt;/li&gt;
-&lt;li&gt;熟悉 Apple Shortcuts 、Accessibility API 、Spotlight 、Launch Agent 等 macOS 系统能力&lt;/li&gt;
-&lt;li&gt;开源项目贡献者，或拥有自己的 Side Project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们更看重——&lt;/p&gt;
-&lt;p&gt;相比于会多少框架，我们更看重：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;对优秀产品有审美，对细节有追求&lt;/li&gt;
-&lt;li&gt;喜欢折腾各种效率工具和自动化&lt;/li&gt;
-&lt;li&gt;乐于学习新技术，对 AI 保持好奇心&lt;/li&gt;
-&lt;li&gt;能快速学习、快速迭代、快速交付&lt;/li&gt;
-&lt;li&gt;有 owner 意识，愿意和团队一起把产品做到极致&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们希望你是这样的人——&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Alfred 、Raycast 、Cursor 、Notion 、Flows 等产品的重度用户&lt;/li&gt;
-&lt;li&gt;经常自己写脚本、插件或者自动化工具提升效率&lt;/li&gt;
-&lt;li&gt;喜欢研究新的 AI 产品，而不仅仅是使用它们&lt;/li&gt;
-&lt;li&gt;对"软件应该足够智能、足够优雅"有自己的理解&lt;/li&gt;
-&lt;li&gt;希望打造真正能够改变工作方式的下一代 AI 产品&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;欢迎来聊聊。&lt;/p&gt;
-&lt;p&gt;这是我的邮箱，期待各位的简历： &lt;a href="mailto:hr@knowhereto.ai"&gt;hr@knowhereto.ai&lt;/a&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:41:31 GMT</pubDate><guid>9f333a06325dde02c10c3f57a5de74b6</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [中转站测评] sub2api 中转站问题求助</title><link>https://www.v2ex.com/t/1232748#reply1</link><description>&lt;p&gt;程序 SUB2API ，规则部分原生。&lt;/p&gt;
-&lt;p&gt;背景：现有一分组，实际只有一个账号。该账号大致可以理解为"调度线上号池"的网关。
-该分组当中有一个网关 API 作为主账户。为了备份加了一个官 key 做优先级稍低的账户，以应对突发情况。
-设置方式：两个账户优先级 一个高 一个低。 官 key 优先级数字设置的 2 ，主力设置的 1.&lt;/p&gt;
-&lt;p&gt;结果在原账户可用的情况下，流量相当大的比例走到了 官 key 账户。 这跟预想完全两回事，分分钟要破产了。&lt;/p&gt;
-&lt;p&gt;百思不得其解，有佬指点一下吗&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 07:41:29 GMT</pubDate><guid>b01f4eee2415d81082d785506d53538d</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
+&lt;p&gt;&lt;img alt="小程序码" class="embedded_image" rel="noreferrer" src="https://picui.ogmua.cn/s1/2026/08/07/6a75977422b06.webp" /&gt;&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 08:30:51 GMT</pubDate><guid>403003afe28c700ecd4c6f5aac7a4eb3</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[V2EX] [分享发现] 发现一个有趣的现象， AI 开发代码的自查陷阱</title><link>https://www.v2ex.com/t/1232767#reply0</link><description>最近用了几款大模型开展开发工作，我察觉到一个很有意思的规律：当业务代码逻辑稍微复杂之后，倘若直接在原有对话会话中，让刚刚写完代码的 AI 自查漏洞，它大多会判定代码不存在 Bug 。&lt;br /&gt;&lt;br /&gt;可只要新建一个空白会话重新提交代码进行审查，AI 往往便能找出各类问题；若是再更换一款大模型检测，排查出的细节问题还会更多，只是其中相当一部分属于影响不大的次要瑕疵。&lt;br /&gt;&lt;br /&gt;这是不是 AI 之间的相互挑刺？</description><pubDate>Fri, 07 Aug 2026 08:30:46 GMT</pubDate><guid>ecceb2ce91c3fd8a55e8a5e53393aecc</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item><item><title>[NodeLoc] Welcome to 宝藏湾</title><link>https://www.nodeloc.com/t/topic/102452</link><description>Welcome to our node! This is a space for discussions about 宝藏湾. 
+Feel free to introduce yourself and start conversations&amp;hellip;</description><pubDate>Fri, 07 Aug 2026 08:25:44 GMT</pubDate><guid>nodeloc-102452</guid><source url="https://www.nodeloc.com/latest.json">NodeLoc</source></item><item><title>[V2EX] [职场话题] 吐槽一下新需求</title><link>https://www.v2ex.com/t/1232765#reply8</link><description>手机 app 页面一个表单有 20 列，我看了一下同花顺的股票也就 10 列，人家还可以自定义。一个手机页面巴不得把所有系统的相关数据全都展示上去，这需求给我看力竭了。本来美美摸鱼的周五下午。</description><pubDate>Fri, 07 Aug 2026 08:23:54 GMT</pubDate><guid>0ea20349fb4de627927fbe595aa92ebd</guid><source url="https://www.v2ex.com/index.xml">V2EX</source></item></channel></rss>
