@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 07:54:15 GMT</lastBuildDate><item><title>[Product Hunt] Kitesurf</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
+<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 08:43:49 GMT</lastBuildDate><item><title>[Product Hunt] Kitesurf</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
             Browser built for agents, running on Cloudflare Workers
           &lt;/p&gt;
           &lt;p&gt;
             &lt;a href="https://www.producthunt.com/products/cloudflare?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1217044?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 04:59:49 GMT</pubDate><guid>5fe40cb4252a6e2a5d84e3e0056b64b0</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] AMD to Acquire Taalas for Model Specific AI Inference Chips</title><link>https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/</link><description>&lt;p&gt;AMD announced that it will acquire Taalas to build future model-specific AI inference chips that are purpose built to accelerate single models&lt;/p&gt;
+          &lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 04:59:49 GMT</pubDate><guid>5fe40cb4252a6e2a5d84e3e0056b64b0</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Rescript for Desktop</title><link>https://www.producthunt.com/products/rescript-edit-videos-like-you-edit-text</link><description>&lt;p&gt;
+            A free, open source, Descript alternative. Runs on-device.
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/rescript-edit-videos-like-you-edit-text?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1217040?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 04:56:04 GMT</pubDate><guid>b105330180f3a4379be71c80b47da147</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] AgentOne Desktop</title><link>https://www.producthunt.com/products/agentone-desktop</link><description>&lt;p&gt;
+            Automate boring work. Extensible and free desktop AI agent.
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/agentone-desktop?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1217026?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 03:57:52 GMT</pubDate><guid>f282715d449d26cd6dd89cc656ec493f</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] AMD to Acquire Taalas for Model Specific AI Inference Chips</title><link>https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/</link><description>&lt;p&gt;AMD announced that it will acquire Taalas to build future model-specific AI inference chips that are purpose built to accelerate single models&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/"&gt;AMD to Acquire Taalas for Model Specific AI Inference Chips&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 23:20:01 GMT</pubDate><guid>af3826bbf24704f35442c31fbda572f0</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Blueberry</title><link>https://www.producthunt.com/products/blueberry-6</link><description>&lt;p&gt;
             Stop Ghosting People You Actually Like
           &lt;/p&gt;
@@ -112,7 +126,14 @@
             &lt;a href="https://www.producthunt.com/products/whop-cli?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1216139?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 01:40:05 GMT</pubDate><guid>dd8296cacba3d3a6ee519c6f4a036b99</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Chute</title><link>https://www.producthunt.com/products/chute-better-airdrop</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 01:40:05 GMT</pubDate><guid>dd8296cacba3d3a6ee519c6f4a036b99</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] The new Firecrawl MCP</title><link>https://www.producthunt.com/products/extract-by-firecrawl</link><description>&lt;p&gt;
+            Agent-ready web context for any MCP client.
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/extract-by-firecrawl?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1216087?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 22:49:34 GMT</pubDate><guid>b58ffa21d36583e5b4d1cd7478697e38</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Chute</title><link>https://www.producthunt.com/products/chute-better-airdrop</link><description>&lt;p&gt;
             The fastest way to send anything to your iPhone
           &lt;/p&gt;
           &lt;p&gt;
@@ -198,14 +219,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1215080?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:17:00 GMT</pubDate><guid>e709b026f2c0dc625fe2195d21386073</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] Lenovo ThinkPad X1 Carbon Gen 14 Review</title><link>https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/</link><description>&lt;p&gt;The Lenovo ThinkPad X1 Carbon Gen 14 takes the long-running business notebook line into a new Intel Core Ultra generation. Our model 21V7006EUS pairs an Intel Core Ultra 7 355 with 32GB-class memory and integrated Intel graphics in a system&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/"&gt;Lenovo ThinkPad X1 Carbon Gen 14 Review&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:00:56 GMT</pubDate><guid>2b62c5d17f6c7f21b79eb7492a5c5009</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Keystroke</title><link>https://www.producthunt.com/products/keystroke-2</link><description>&lt;p&gt;
-            Build powerful AI agents &amp; workflows
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/keystroke-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1215053?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 19:29:34 GMT</pubDate><guid>77f56a2b75b0d03acab089fba51e75f5</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Kiro Crew</title><link>https://www.producthunt.com/products/kiro</link><description>&lt;p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/"&gt;Lenovo ThinkPad X1 Carbon Gen 14 Review&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:00:56 GMT</pubDate><guid>2b62c5d17f6c7f21b79eb7492a5c5009</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Kiro Crew</title><link>https://www.producthunt.com/products/kiro</link><description>&lt;p&gt;
             Open source agentic development workspace
           &lt;/p&gt;
           &lt;p&gt;
@@ -243,14 +257,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1212911?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Sun, 02 Aug 2026 10:43:52 GMT</pubDate><guid>05236b338b752be1e72d87b38677790a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] Kioxia CM10 Series Launched for the PCIe Gen6 Generation of SSDs</title><link>https://www.servethehome.com/kioxia-cm10-series-launched-for-the-pcie-gen6-generation-of-ssds/</link><description>&lt;p&gt;The new Kioxia CM10 series spans 2.5" and EDSFF form factors, PCIe Gen5 and Gen6, air-cooled and liquid-cooled, and two NAND generations&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/kioxia-cm10-series-launched-for-the-pcie-gen6-generation-of-ssds/"&gt;Kioxia CM10 Series Launched for the PCIe Gen6 Generation of SSDs&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Sat, 01 Aug 2026 15:00:24 GMT</pubDate><guid>6ab02359eb0d93deafdaa39566e0a1f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] AdAnt AI</title><link>https://www.producthunt.com/products/adant-ai</link><description>&lt;p&gt;
-            Claude for viral, high-converting social ads
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/adant-ai?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1212030?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Sat, 01 Aug 2026 05:39:48 GMT</pubDate><guid>8720be1788260b7de29168998198a5b4</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Website to Markdown API</title><link>https://www.producthunt.com/products/website-to-markdown-api</link><description>&lt;p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/kioxia-cm10-series-launched-for-the-pcie-gen6-generation-of-ssds/"&gt;Kioxia CM10 Series Launched for the PCIe Gen6 Generation of SSDs&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Sat, 01 Aug 2026 15:00:24 GMT</pubDate><guid>6ab02359eb0d93deafdaa39566e0a1f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Website to Markdown API</title><link>https://www.producthunt.com/products/website-to-markdown-api</link><description>&lt;p&gt;
             Turn any website into LLM-ready Markdown
           &lt;/p&gt;
           &lt;p&gt;
