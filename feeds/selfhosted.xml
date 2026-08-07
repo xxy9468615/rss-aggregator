@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 00:32:24 GMT</lastBuildDate><item><title>[ServeTheHome] AMD to Acquire Taalas for Model Specific AI Inference Chips</title><link>https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/</link><description>&lt;p&gt;AMD announced that it will acquire Taalas to build future model-specific AI inference chips that are purpose built to accelerate single models&lt;/p&gt;
+<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 03:34:17 GMT</lastBuildDate><item><title>[ServeTheHome] AMD to Acquire Taalas for Model Specific AI Inference Chips</title><link>https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/</link><description>&lt;p&gt;AMD announced that it will acquire Taalas to build future model-specific AI inference chips that are purpose built to accelerate single models&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-to-acquire-taalas-for-model-specific-ai-inference-chips/"&gt;AMD to Acquire Taalas for Model Specific AI Inference Chips&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 23:20:01 GMT</pubDate><guid>af3826bbf24704f35442c31fbda572f0</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] hey postcard - digital postcards</title><link>https://www.producthunt.com/products/hey-postcard-slow-messaging</link><description>&lt;p&gt;
             delivered tomorrow morning at a random time between 8 -10 AM
           &lt;/p&gt;
@@ -58,7 +58,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1215812?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 15:17:17 GMT</pubDate><guid>86c76b7183a37fdcd123799a9e984d4a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Annotate</title><link>https://www.producthunt.com/products/annotate-8</link><description>&lt;p&gt;
-            Screen recording as prompts
+            Free screen recording as prompts
           &lt;/p&gt;
           &lt;p&gt;
             &lt;a href="https://www.producthunt.com/products/annotate-8?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
@@ -156,7 +156,14 @@
             &lt;a href="https://www.producthunt.com/products/stynar?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1214385?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 04:49:37 GMT</pubDate><guid>1e06de55f4be6ce5fa9d4a3403385faf</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] MOTHER</title><link>https://www.producthunt.com/products/mother-claude-code-terminal</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 04:49:37 GMT</pubDate><guid>1e06de55f4be6ce5fa9d4a3403385faf</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] VIDEO AI ME</title><link>https://www.producthunt.com/products/video-ai-me</link><description>&lt;p&gt;
+            Make videos and post them everywhere with just one tool
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/video-ai-me?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1214128?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:35:56 GMT</pubDate><guid>17fa52b0cde88f93f5d1aaf78d0885de</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] MOTHER</title><link>https://www.producthunt.com/products/mother-claude-code-terminal</link><description>&lt;p&gt;
             A terminal built for Claude Code w/ one-click session resume
           &lt;/p&gt;
           &lt;p&gt;
@@ -164,28 +171,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1214120?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:21:35 GMT</pubDate><guid>db5724b6b015e9dfaf6d7fed42a66343</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] AMD Helios Architecture Deep Dive: The Power of AMD’s Hardware Combined</title><link>https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/</link><description>&lt;p&gt;The Helios rackscale system is the culmination of AMD's server hardware, as well as their AI datacenter ambitions. For Advancing AI 2026, the company dove into the architecture of their first rackscale systems, outlining how they have scaled up 72 Instinct MI455X accelerators to act as a single system&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] SpeakoFlow</title><link>https://www.producthunt.com/products/speakoflow</link><description>&lt;p&gt;
-            Free, open-source voice dictation and AI assistant, offline
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/speakoflow?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1213586?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 08:34:16 GMT</pubDate><guid>a89dd98792fbd968e4ca02cc93a3c9ed</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Screen Awesome</title><link>https://www.producthunt.com/products/screen-awesome-record-annotate</link><description>&lt;p&gt;
-            The free screen recorder that cannot upload your video
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/screen-awesome-record-annotate?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1213557?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 08:00:36 GMT</pubDate><guid>d2f61e5668d1d92c627c53dfae8ff591</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Vinyl for Mac</title><link>https://www.producthunt.com/products/vinyl-for-mac</link><description>&lt;p&gt;
-            Turn your Mac into a spinning vinyl player.
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/vinyl-for-mac?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1213431?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 05:19:33 GMT</pubDate><guid>75b78a3d9a7d6570e8a301bbedcc753d</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] npm i -g hotcell</title><link>https://www.producthunt.com/products/npm-i-g-hotcell</link><description>&lt;p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] npm i -g hotcell</title><link>https://www.producthunt.com/products/npm-i-g-hotcell</link><description>&lt;p&gt;
             Local sandboxes for AI agents on your Mac, Linux, bare metal
           &lt;/p&gt;
           &lt;p&gt;
