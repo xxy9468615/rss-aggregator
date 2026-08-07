@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 21:50:51 GMT</lastBuildDate><item><title>[ServeTheHome] A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026</title><link>https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the Kioxia GP1 PCIe Gen6 NVMe SSD running live in the company's booth at just over 10M IOPS&lt;/p&gt;
+<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Fri, 07 Aug 2026 22:22:59 GMT</lastBuildDate><item><title>[ServeTheHome] A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026</title><link>https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the Kioxia GP1 PCIe Gen6 NVMe SSD running live in the company's booth at just over 10M IOPS&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/"&gt;A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 19:00:09 GMT</pubDate><guid>09111312a84660a8d6ec09c28ba133d4</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Kitesurf</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
             Browser built for agents, running on Cloudflare Workers
           &lt;/p&gt;
@@ -191,7 +191,14 @@
             &lt;a href="https://www.producthunt.com/products/reference-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1215309?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 05:07:59 GMT</pubDate><guid>78898faf0edc99246f04400f3a3ad05c</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] X Money</title><link>https://www.producthunt.com/products/x-money-2</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 05:07:59 GMT</pubDate><guid>78898faf0edc99246f04400f3a3ad05c</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Dover MCP</title><link>https://www.producthunt.com/products/dover</link><description>&lt;p&gt;
+            Run your hiring process from Claude or ChatGPT
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/dover?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1215158?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 23:35:35 GMT</pubDate><guid>b55b3ad81d4a2a6f94a4804964f2f281</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] X Money</title><link>https://www.producthunt.com/products/x-money-2</link><description>&lt;p&gt;
             Your money, on the world's most powerful network.
           &lt;/p&gt;
           &lt;p&gt;
@@ -250,11 +257,4 @@
             &lt;a href="https://www.producthunt.com/products/shootclip?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1212911?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Sun, 02 Aug 2026 10:43:52 GMT</pubDate><guid>05236b338b752be1e72d87b38677790a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] AdAnt AI</title><link>https://www.producthunt.com/products/adant-ai</link><description>&lt;p&gt;
-            Claude for viral, high-converting social ads
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/adant-ai?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1212030?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Sat, 01 Aug 2026 05:39:48 GMT</pubDate><guid>8720be1788260b7de29168998198a5b4</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item></channel></rss>
+          &lt;/p&gt;</description><pubDate>Sun, 02 Aug 2026 10:43:52 GMT</pubDate><guid>05236b338b752be1e72d87b38677790a</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item></channel></rss>
