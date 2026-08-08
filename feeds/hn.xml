@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>Hacker News 精选</title><link>https://rss-aggregator.local</link><description>Aggregated feed: Hacker News 精选</description><lastBuildDate>Sat, 08 Aug 2026 11:46:45 GMT</lastBuildDate><item><title>[HN Show] Show HN: Otaku – A Roleplay Terminal Client</title><link>https://github.com/enclavum/otaku</link><description>&lt;p&gt;Otaku is an attempt to build a terminal alternative to SillyTavern (ST), with a focus on:
+<rss version="2.0"><channel><title>Hacker News 精选</title><link>https://rss-aggregator.local</link><description>Aggregated feed: Hacker News 精选</description><lastBuildDate>Sat, 08 Aug 2026 12:03:28 GMT</lastBuildDate><item><title>[HN Show] Show HN: Otaku – A Roleplay Terminal Client</title><link>https://github.com/enclavum/otaku</link><description>&lt;p&gt;Otaku is an attempt to build a terminal alternative to SillyTavern (ST), with a focus on:
 - transparency about what is sent to the LLM (the `/context` command),
 - automatic incremental summaries that replace the middle of the chat to save context space (browse and edit them with the `/lore` command),
 - automatic character extraction from the chat (the `/cast` command),

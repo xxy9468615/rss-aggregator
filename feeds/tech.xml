@@ -1,5 +1,1749 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>科技资讯</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 科技资讯</description><lastBuildDate>Sat, 08 Aug 2026 11:46:45 GMT</lastBuildDate><item><title>[Habr] 100 фактов о жизни и бизнесе. Часть 1</title><link>https://habr.com/ru/articles/1068194/</link><description>&lt;p&gt;Жизнь и бизнес состоят из большого количества скучных, нудных и банальных вещей, сделав которые неожиданно получаешь то самое, о чем не стыдно дать интервью.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068194/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068194#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:39:24 GMT</pubDate><guid>23f61f745c9759f40ce7ddf761a7d86b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Развитие людей от HR: как не надо, но очень хочется (Степан, руководитель)</title><link>https://habr.com/ru/articles/1068192/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/071/14a/9a3/07114a9a31cc367b51751d2c7b03b5ee.png" /&gt;&lt;p&gt;Каждый раз, когда открываю &lt;a href="https://rb.ru/interview/nataliya-runova-t2-kak-najti-neraskrytyj-potencial-vnutri-komandy/" rel="noopener noreferrer nofollow"&gt;очередную статью для HR&lt;/a&gt;, начинаю подозревать, что бизнесом управляют не собственники, не директора и даже не бабло. Бизнесом управляет HR. Судя по этим статьям, именно HR создает компании, удерживает сотрудников, определяет стратегию, увеличивает прибыль и спасает этот &lt;s&gt;сраный&lt;/s&gt; мир. Генеральный директор в этой схеме нужен примерно так же, как фикус в переговорке. Для атмосферы.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068192/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068192#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:31:42 GMT</pubDate><guid>087a4283e832a0fc1f235711a32334ad</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Отдали базу штрихкодов статикой: 1,9 МБ, 1387 шардов, медиана в одну строку</title><link>https://habr.com/ru/articles/1068190/</link><description>&lt;p&gt;Браузерный сканер штрихкодов упирается в развилку: чтобы показать, что за товар в руках, надо сходить в товарный API — и отдать туда номер, IP и время. По одному запросу это ничего, по потоку — фактический чек, собранный чужими руками.&lt;/p&gt;&lt;p&gt;Второй путь: скачать базу один раз, порезать на файлы по префиксу и раздавать статикой. Разбираем, что из этого вышло на 32 772 товарах: 1387 шардов, 1,85 МиБ сырых и 429 КиБ в brotli, худший файл 331 КиБ. И главное — сколько приватности при этом всё равно утекает: запрос к серверу есть, а медиана строк в шарде равна единице, то есть для 722 файлов из 1387 запрос за шардом равен запросу за товаром.&lt;/p&gt;&lt;p&gt;Внутри: фильтр на входе, почему не одним файлом, TSV против JSON с замерами, и что в схеме до сих пор не решено.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068190/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068190#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:28:33 GMT</pubDate><guid>b7a5a95f1e2dc2c1d8001c66e502ee8b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Dev.to] PixelBatch — your entire image toolbox in one app, 14 tools for free, so you don't have to edit images one by one anymore</title><link>https://dev.to/prathvix/pixelbatch-your-entire-image-toolbox-in-one-app-14-tools-for-free-so-you-dont-have-to-edit-3993</link><description>&lt;p&gt;After spending way too long editing images one by one for my content, I built PixelBatch — a native macOS app that processes whole folders of images in one pass.&lt;br /&gt;
+<rss version="2.0"><channel><title>科技资讯</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 科技资讯</description><lastBuildDate>Sat, 08 Aug 2026 12:03:28 GMT</lastBuildDate><item><title>[Habr] Как злоумышленник за несколько шагов перехватит ваши данные</title><link>https://habr.com/ru/articles/1068198/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/251/33a/7cb/25133a7cb2248c0b748ba29020b8e2a6.jpeg" /&gt;&lt;p&gt;Привет, Хабр. Статья является напоминанием как уязвимы ваши личные данные при несоблюдении базовых правил цифровой гигиены. Материал создан исключительно в учебных целях, для специалистов по информационной безопасности и для пользователей, которые хотят более углубленно понимать, как защитить свои данные от утечек. Использование данных методов против других лиц без согласия — уголовно наказуемо (ст. 272 УК РФ).&lt;br /&gt;&lt;br /&gt;Речь пойдет о том, что происходит, когда вы переходите по ссылке, минуя предупреждения браузера о "Небезопасном соединения", или устанавливаете в систему корневые сертификаты, полученные из сомнительных источников.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068198/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068198#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 12:01:13 GMT</pubDate><guid>c0485d9cb35d10a807ee30797b6795ca</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[The Verge] Is this $450 laptop from an unknown brand too good to be true?</title><link>https://www.theverge.com/tech/977031/chuwi-unibook-laptop-intel-wildcat-lake-review</link><description>Finding a good laptop under $500 was hard enough before RAMageddon. They nearly always had cheap hardware and underpowered, often outdated chips. That's what made the MacBook Neo so disruptive: It offered great build quality and good-enough performance starting at $599. Windows laptops couldn't touch it. Even though it's gone up to $699, it's still [&amp;#8230;]</description><pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate><guid>194009efac9bfe97d6835afa6cd8768b</guid><source url="https://www.theverge.com/rss/index.xml">The Verge</source></item><item><title>[The Verge] My favorite feel-good show is back</title><link>https://www.theverge.com/tech/977084/ted-lasso-bose-tony-installer</link><description>Hi, friends! Welcome to Installer No. 139, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, barbecue sauce, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about Johnny Knoxville and Google Zero and the history of the bicycle, [&amp;#8230;]</description><pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate><guid>5194bf84fbb4fdf954b366c38ad4fc59</guid><source url="https://www.theverge.com/rss/index.xml">The Verge</source></item><item><title>[Dev.to] How Will You Configure Multiple Backend Instances in Apigee X So That If One Goes Down, Traffic Is Routed to Another?</title><link>https://dev.to/realnamehidden1_61/how-will-you-configure-multiple-backend-instances-in-apigee-x-so-that-if-one-goes-down-traffic-is-31nk</link><description>&lt;p&gt;&lt;strong&gt;“You have multiple backend instances. If one instance goes down, how will Apigee X automatically route traffic to another healthy instance?”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This sounds like a simple interview question.&lt;/p&gt;
+
+&lt;p&gt;But if you've worked with Apigee, you know there is more to it than just saying:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“I'll configure multiple Target Servers.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The interviewer is really testing whether you understand &lt;strong&gt;load balancing, failover, health monitoring, retries, and high availability&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this article, we'll build the solution step by step using a simple real-world scenario.&lt;/p&gt;
+
+&lt;p&gt;By the end, you'll understand:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What Target Servers are&lt;/li&gt;
+&lt;li&gt;How load balancing works in Apigee X&lt;/li&gt;
+&lt;li&gt;How &lt;code&gt;MaxFailures&lt;/code&gt; helps with failover&lt;/li&gt;
+&lt;li&gt;Why Health Monitoring is important&lt;/li&gt;
+&lt;li&gt;How Apigee brings a recovered server back into rotation&lt;/li&gt;
+&lt;li&gt;When to use &lt;code&gt;RoundRobin&lt;/code&gt;, &lt;code&gt;Weighted&lt;/code&gt;, and &lt;code&gt;LeastConnections&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;How retry can affect transactional APIs&lt;/li&gt;
+&lt;li&gt;Common mistakes to avoid&lt;/li&gt;
+&lt;li&gt;How to answer this question confidently in an interview&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;
+  
+  
+  The Problem: What Happens When a Backend Server Goes Down?
+&lt;/h1&gt;
+
+&lt;p&gt;Imagine you have an API exposed through Apigee X:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Client
+   |
+   v
+Apigee X
+   |
+   v
+Payment API
+   |
+   +----------------+
+   |                |
+   v                v
+Backend Server 1  Backend Server 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now your application grows.&lt;/p&gt;
+
+&lt;p&gt;You don't want just two backend instances. You want three:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Backend Server 1
+Backend Server 2
+Backend Server 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;p&gt;Because if one server fails, the other servers can continue handling requests.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;             Apigee X
+                 |
+          Load Balancer
+         /      |      \
+        ↓       ↓       ↓
+       S1      S2      S3
+       ✓       ✓       ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Everything is healthy.&lt;/p&gt;
+
+&lt;p&gt;But suddenly:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;             Apigee X
+                 |
+          Load Balancer
+         /      |      \
+        ↓       ↓       ↓
+       S1      S2      S3
+       ✓       ❌      ✓
+             DOWN
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;We don't want Apigee to continue sending requests to Server 2.&lt;/p&gt;
+
+&lt;p&gt;Instead:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;             Apigee X
+                 |
+          Load Balancer
+             /       \
+            ↓         ↓
+           S1         S3
+           ✓          ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's the problem we're solving.&lt;/p&gt;
+
+&lt;p&gt;And Apigee X has built-in support for &lt;strong&gt;load balancing and failover across multiple backend server instances&lt;/strong&gt;. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Think of Target Servers Like a Restaurant
+&lt;/h1&gt;
+
+&lt;p&gt;Here's an easy analogy.&lt;/p&gt;
+
+&lt;p&gt;Imagine you're running a busy restaurant.&lt;/p&gt;
+
+&lt;p&gt;You have three cashiers:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Cashier 1
+Cashier 2
+Cashier 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Customers shouldn't have to know which cashier they're going to.&lt;/p&gt;
+
+&lt;p&gt;The manager decides where each customer should go.&lt;/p&gt;
+
+&lt;p&gt;If Cashier 2 suddenly stops working, the manager stops sending customers there.&lt;/p&gt;
+
+&lt;p&gt;That's essentially what we're doing with Apigee.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Customers
+    ↓
+Restaurant Manager
+    ↓
+Cashier 1 | Cashier 2 | Cashier 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;In our API architecture:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;API Clients
+    ↓
+Apigee X
+    ↓
+Load Balancer
+    ↓
+Target Server 1 | Target Server 2 | Target Server 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The &lt;strong&gt;Target Server&lt;/strong&gt; represents the backend destination, while the &lt;strong&gt;LoadBalancer&lt;/strong&gt; determines how traffic is distributed among those destinations.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  What Is a Target Server in Apigee X?
+&lt;/h1&gt;
+
+&lt;p&gt;A Target Server allows you to separate your backend server configuration from your API proxy configuration.&lt;/p&gt;
+
+&lt;p&gt;Instead of putting a concrete backend URL directly inside your TargetEndpoint, you define a named Target Server.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;payment-server-1
+    |
+    +--&amp;gt; backend-1.example.com:8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Another:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;payment-server-2
+    |
+    +--&amp;gt; backend-2.example.com:8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And another:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;payment-server-3
+    |
+    +--&amp;gt; backend-3.example.com:8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Google describes Target Servers as a way to decouple concrete backend URLs from the TargetEndpoint configuration. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;p&gt;You can read more in the official &lt;a href="https://docs.cloud.google.com/apigee/docs/api-platform/deploy/load-balancing-across-backend-servers?authuser=0&amp;amp;utm_source=chatgpt.com" rel="noopener noreferrer"&gt;Apigee load balancing documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Step 1: Create Multiple Target Servers
+&lt;/h1&gt;
+
+&lt;p&gt;Let's assume we have three backend instances:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Target Server&lt;/th&gt;
+&lt;th&gt;Backend&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;payment-server-1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;10.10.1.10:8080&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;payment-server-2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;10.10.1.11:8080&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;payment-server-3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;10.10.1.12:8080&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Conceptually:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;payment-server-1 → 10.10.1.10:8080
+
+payment-server-2 → 10.10.1.11:8080
+
+payment-server-3 → 10.10.1.12:8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The important thing is that the API proxy doesn't need to hardcode these backend URLs directly.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Step 2: Configure the Load Balancer
+&lt;/h1&gt;
+
+&lt;p&gt;Now we tell Apigee:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“I have multiple backend servers. Distribute requests between them.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Inside the TargetEndpoint:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;TargetEndpoint&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"default"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;HTTPTargetConnection&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Algorithm&amp;gt;&lt;/span&gt;RoundRobin&lt;span class="nt"&gt;&amp;lt;/Algorithm&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-2"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-3"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/HTTPTargetConnection&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/TargetEndpoint&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's the basic configuration.&lt;/p&gt;
+
+&lt;p&gt;The official Apigee documentation supports three load-balancing algorithms:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RoundRobin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Weighted&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LeastConnections&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;RoundRobin&lt;/code&gt; is the default algorithm. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  How Does Round Robin Work?
+&lt;/h1&gt;
+
+&lt;p&gt;Think of three people standing in a queue.&lt;/p&gt;
+
+&lt;p&gt;Instead of sending every request to the first person, Apigee distributes them one after another.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Request 1 → Server 1
+Request 2 → Server 2
+Request 3 → Server 3
+
+Request 4 → Server 1
+Request 5 → Server 2
+Request 6 → Server 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;So:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;        Apigee X
+            |
+      Round Robin
+            |
+     +------+------+------+
+     |      |      |
+     ↓      ↓      ↓
+    S1     S2     S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This works well when your backend instances have roughly similar capacity.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  But What If Server 2 Goes Down?
+&lt;/h1&gt;
+
+&lt;p&gt;Now we reach the interesting part.&lt;/p&gt;
+
+&lt;p&gt;Suppose:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 1 → Healthy ✓
+Server 2 → DOWN ❌
+Server 3 → Healthy ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Without failure handling, requests could still be sent toward Server 2.&lt;/p&gt;
+
+&lt;p&gt;That's obviously not what we want.&lt;/p&gt;
+
+&lt;p&gt;This is where &lt;strong&gt;&lt;code&gt;MaxFailures&lt;/code&gt;&lt;/strong&gt; comes into play.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Step 3: Configure MaxFailures
+&lt;/h1&gt;
+
+&lt;p&gt;We can configure:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Algorithm&amp;gt;&lt;/span&gt;RoundRobin&lt;span class="nt"&gt;&amp;lt;/Algorithm&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-2"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-3"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Here, we're telling Apigee to remove a target from rotation after the configured failure threshold is reached.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 2
+
+Failure
+   ↓
+Failure
+   ↓
+Failure
+   ↓
+Failure
+   ↓
+Failure
+   ↓
+Removed from rotation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Traffic then continues through the healthy servers:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 1 ←→ Server 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The important detail is that Apigee's definition of a failure is primarily a case where it doesn't receive a response from the target. An HTTP response such as &lt;code&gt;404&lt;/code&gt; or &lt;code&gt;500&lt;/code&gt; normally counts as a response rather than a connection failure. If you want particular HTTP status codes to count as failures, you can configure &lt;code&gt;ServerUnhealthyResponse&lt;/code&gt;. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Algorithm&amp;gt;&lt;/span&gt;RoundRobin&lt;span class="nt"&gt;&amp;lt;/Algorithm&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-2"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-3"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;ServerUnhealthyResponse&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ResponseCode&amp;gt;&lt;/span&gt;500&lt;span class="nt"&gt;&amp;lt;/ResponseCode&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ResponseCode&amp;gt;&lt;/span&gt;502&lt;span class="nt"&gt;&amp;lt;/ResponseCode&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ResponseCode&amp;gt;&lt;/span&gt;503&lt;span class="nt"&gt;&amp;lt;/ResponseCode&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ServerUnhealthyResponse&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now those configured response codes are also treated as failures.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  A Small but Important Detail About MaxFailures
+&lt;/h1&gt;
+
+&lt;p&gt;This is something many developers miss.&lt;/p&gt;
+
+&lt;p&gt;The default value of:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;0&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;means Apigee does &lt;strong&gt;not&lt;/strong&gt; remove a Target Server from rotation based on the failure count.&lt;/p&gt;
+
+&lt;p&gt;So if you're designing failover, don't simply create multiple Target Servers and assume Apigee will automatically remove unhealthy ones.&lt;/p&gt;
+
+&lt;p&gt;You need to configure the failure behavior appropriately. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Step 4: Add Health Monitoring
+&lt;/h1&gt;
+
+&lt;p&gt;Now imagine Server 2 has been removed.&lt;/p&gt;
+
+&lt;p&gt;A few minutes later, the infrastructure team fixes it.&lt;/p&gt;
+
+&lt;p&gt;Server 2 is healthy again.&lt;/p&gt;
+
+&lt;p&gt;What happens now?&lt;/p&gt;
+
+&lt;p&gt;This is where &lt;strong&gt;Health Monitoring&lt;/strong&gt; becomes extremely useful.&lt;/p&gt;
+
+&lt;p&gt;Think about the restaurant analogy again.&lt;/p&gt;
+
+&lt;p&gt;The manager doesn't permanently ban a cashier just because they temporarily left.&lt;/p&gt;
+
+&lt;p&gt;The manager periodically checks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Are you ready to work again?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That's essentially what a health monitor does.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 2 DOWN
+     ↓
+Removed from rotation
+     ↓
+Health Monitor checks
+     ↓
+Server 2 becomes healthy
+     ↓
+Added back into rotation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Apigee health monitoring can actively poll backend Target Servers using either TCP or HTTP checks. When the target becomes healthy again, Apigee can automatically return it to rotation without redeploying the proxy. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  TCP Health Monitor
+&lt;/h1&gt;
+
+&lt;p&gt;For a basic connectivity check, you can use a TCP monitor.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;HealthMonitor&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;IsEnabled&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/IsEnabled&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;IntervalInSec&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/IntervalInSec&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;TCPMonitor&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;ConnectTimeoutInSec&amp;gt;&lt;/span&gt;10&lt;span class="nt"&gt;&amp;lt;/ConnectTimeoutInSec&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/TCPMonitor&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/HealthMonitor&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This essentially asks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Can I establish a TCP connection to this backend?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If the connection fails, the target's failure count is incremented.&lt;/p&gt;
+
+&lt;p&gt;If the health check succeeds, the target can become healthy again.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  HTTP Health Monitor
+&lt;/h1&gt;
+
+&lt;p&gt;Sometimes just checking whether a port is open isn't enough.&lt;/p&gt;
+
+&lt;p&gt;Your server might accept TCP connections but the actual application could still be unhealthy.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;TCP connection → ✓
+
+Application → ❌
+Database connection → ❌
+Dependencies → ❌
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;In that case, an HTTP health endpoint is often more useful.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;GET /health
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Expected response:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight http"&gt;&lt;code&gt;&lt;span class="k"&gt;HTTP&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="m"&gt;1.1&lt;/span&gt; &lt;span class="m"&gt;200&lt;/span&gt; &lt;span class="ne"&gt;OK&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A simplified HTTP monitor configuration can look like:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;HealthMonitor&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;IsEnabled&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/IsEnabled&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;IntervalInSec&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/IntervalInSec&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;HTTPMonitor&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;Request&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Verb&amp;gt;&lt;/span&gt;GET&lt;span class="nt"&gt;&amp;lt;/Verb&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Path&amp;gt;&lt;/span&gt;/health&lt;span class="nt"&gt;&amp;lt;/Path&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;ConnectTimeoutInSec&amp;gt;&lt;/span&gt;10&lt;span class="nt"&gt;&amp;lt;/ConnectTimeoutInSec&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;SocketReadTimeoutInSec&amp;gt;&lt;/span&gt;30&lt;span class="nt"&gt;&amp;lt;/SocketReadTimeoutInSec&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/Request&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;SuccessResponse&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;ResponseCode&amp;gt;&lt;/span&gt;200&lt;span class="nt"&gt;&amp;lt;/ResponseCode&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/SuccessResponse&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/HTTPMonitor&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/HealthMonitor&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now Apigee isn't simply asking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Is the server reachable?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It's asking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“Is the application responding to its health check correctly?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1&gt;
+  
+  
+  Putting It All Together
+&lt;/h1&gt;
+
+&lt;p&gt;Now we can build the complete configuration.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;TargetEndpoint&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"default"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;HTTPTargetConnection&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+
+            &lt;span class="c"&gt;&amp;lt;!-- Distribute traffic across healthy targets --&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Algorithm&amp;gt;&lt;/span&gt;RoundRobin&lt;span class="nt"&gt;&amp;lt;/Algorithm&amp;gt;&lt;/span&gt;
+
+            &lt;span class="c"&gt;&amp;lt;!-- Backend instances --&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-2"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-3"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+            &lt;span class="c"&gt;&amp;lt;!-- Remove a target after repeated failures --&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+
+        &lt;span class="c"&gt;&amp;lt;!-- Continuously check backend health --&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;HealthMonitor&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;IsEnabled&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/IsEnabled&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;IntervalInSec&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/IntervalInSec&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;HTTPMonitor&amp;gt;&lt;/span&gt;
+
+                &lt;span class="nt"&gt;&amp;lt;Request&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;Verb&amp;gt;&lt;/span&gt;GET&lt;span class="nt"&gt;&amp;lt;/Verb&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;Path&amp;gt;&lt;/span&gt;/health&lt;span class="nt"&gt;&amp;lt;/Path&amp;gt;&lt;/span&gt;
+
+                    &lt;span class="nt"&gt;&amp;lt;ConnectTimeoutInSec&amp;gt;&lt;/span&gt;10&lt;span class="nt"&gt;&amp;lt;/ConnectTimeoutInSec&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;SocketReadTimeoutInSec&amp;gt;&lt;/span&gt;30&lt;span class="nt"&gt;&amp;lt;/SocketReadTimeoutInSec&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;/Request&amp;gt;&lt;/span&gt;
+
+                &lt;span class="nt"&gt;&amp;lt;SuccessResponse&amp;gt;&lt;/span&gt;
+                    &lt;span class="nt"&gt;&amp;lt;ResponseCode&amp;gt;&lt;/span&gt;200&lt;span class="nt"&gt;&amp;lt;/ResponseCode&amp;gt;&lt;/span&gt;
+                &lt;span class="nt"&gt;&amp;lt;/SuccessResponse&amp;gt;&lt;/span&gt;
+
+            &lt;span class="nt"&gt;&amp;lt;/HTTPMonitor&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;/HealthMonitor&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/HTTPTargetConnection&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/TargetEndpoint&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The exact health endpoint, timeout values, and failure threshold should be chosen based on your application's behavior rather than blindly copying these numbers.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  So What Happens During a Real Failure?
+&lt;/h1&gt;
+
+&lt;p&gt;Let's visualize the entire lifecycle.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Everything is healthy
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;                  Apigee X
+                     |
+                LoadBalancer
+                     |
+          +----------+----------+
+          |          |          |
+          ↓          ↓          ↓
+         S1         S2         S3
+         ✓          ✓          ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Traffic:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → S2 → S3 → S1 → S2 → S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h3&gt;
+  
+  
+  Server 2 fails
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;                  Apigee X
+                     |
+                LoadBalancer
+                     |
+          +----------+----------+
+          |          |          |
+          ↓          ↓          ↓
+         S1         S2         S3
+         ✓          ❌         ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Apigee detects failures.&lt;/p&gt;
+
+&lt;p&gt;Once the configured failure threshold is reached:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S2
+ ↓
+Marked unavailable
+ ↓
+Removed from rotation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Traffic becomes:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → S3 → S1 → S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h3&gt;
+  
+  
+  Server 2 recovers
+&lt;/h3&gt;
+
+&lt;p&gt;The Health Monitor detects that Server 2 is healthy again.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S2
+ ↓
+Health check succeeds
+ ↓
+Returned to rotation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And we're back to:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → S2 → S3 → S1 → S2 → S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's the complete failover lifecycle.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  What About Retry?
+&lt;/h1&gt;
+
+&lt;p&gt;There's one more concept worth understanding:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Retry.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;By default, Apigee's TargetEndpoint retry behavior is enabled.&lt;/p&gt;
+
+&lt;p&gt;Retries can occur for response failures such as I/O errors or HTTP timeouts, and can also be configured to react to status codes specified under &lt;code&gt;ServerUnhealthyResponse&lt;/code&gt;. Apigee requires at least two Target Servers for retry to work. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;p&gt;Conceptually:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Client
+  |
+  ↓
+Apigee
+  |
+  ↓
+Server 1
+  |
+  X Connection failure
+  |
+  ↓
+Another available target
+  |
+  ↓
+Server 2
+  |
+  ✓
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This can improve resilience.&lt;/p&gt;
+
+&lt;p&gt;But there's an important catch.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  ⚠️ Be Careful With Retry on Payment APIs
+&lt;/h1&gt;
+
+&lt;p&gt;Imagine this API:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight http"&gt;&lt;code&gt;&lt;span class="err"&gt;POST /payments
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The request reaches Server 1.&lt;/p&gt;
+
+&lt;p&gt;Server 1 successfully processes the payment.&lt;/p&gt;
+
+&lt;p&gt;But before Apigee receives the response, the network connection fails.&lt;/p&gt;
+
+&lt;p&gt;Apigee doesn't know whether the payment was processed.&lt;/p&gt;
+
+&lt;p&gt;If the request is retried against Server 2:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 1
+   |
+   +--&amp;gt; Payment processed ✓
+   |
+   X Response lost
+
+Apigee
+   |
+   +--&amp;gt; Retry
+          |
+          ↓
+       Server 2
+          |
+          +--&amp;gt; Same payment request
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now you have a potential duplicate transaction.&lt;/p&gt;
+
+&lt;p&gt;That's why &lt;strong&gt;idempotency&lt;/strong&gt; is extremely important for transactional APIs.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight http"&gt;&lt;code&gt;&lt;span class="err"&gt;POST /payments
+
+Idempotency-Key: payment-request-12345
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The backend can use that key to recognize duplicate requests.&lt;/p&gt;
+
+&lt;p&gt;So when designing a highly available payment API, don't think about retry in isolation.&lt;/p&gt;
+
+&lt;p&gt;Think:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Load Balancing
+      +
+Failover
+      +
+Retry
+      +
+Idempotency
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h1&gt;
+  
+  
+  What If All Backend Servers Go Down?
+&lt;/h1&gt;
+
+&lt;p&gt;You can also configure a dedicated &lt;strong&gt;fallback Target Server&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Primary Servers:
+
+S1
+S2
+S3
+
+Fallback:
+
+S4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Configuration:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Algorithm&amp;gt;&lt;/span&gt;RoundRobin&lt;span class="nt"&gt;&amp;lt;/Algorithm&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"payment-server-2"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"backup-server"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;IsFallback&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/IsFallback&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/Server&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The fallback server isn't used during normal load balancing.&lt;/p&gt;
+
+&lt;p&gt;It becomes available when all the other target servers have been removed from rotation. Only one Target Server can be configured as the fallback server. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;p&gt;So:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Normal:
+
+S1 ←→ S2
+
+
+S1 DOWN
+S2 DOWN
+
+       ↓
+
+Fallback S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This can be useful for emergency or disaster-recovery scenarios.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  RoundRobin vs Weighted vs LeastConnections
+&lt;/h1&gt;
+
+&lt;p&gt;Choosing the load-balancing algorithm depends on your backend architecture.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  1. RoundRobin
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → S2 → S3 → S1 → S2 → S3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Use it when backend instances have roughly similar capacity.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  2. Weighted
+&lt;/h2&gt;
+
+&lt;p&gt;Suppose:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 1 → Weight 5
+Server 2 → Weight 3
+Server 3 → Weight 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The servers don't necessarily receive equal traffic.&lt;/p&gt;
+
+&lt;p&gt;This makes sense when your backend infrastructure has different capacities.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → 8 CPU
+S2 → 4 CPU
+S3 → 2 CPU
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;You may want the stronger server to handle more traffic.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  3. LeastConnections
+&lt;/h2&gt;
+
+&lt;p&gt;Instead of simply taking turns, Apigee can distribute traffic based on active connections.&lt;/p&gt;
+
+&lt;p&gt;Conceptually:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;S1 → 10 connections
+S2 → 4 connections
+S3 → 7 connections
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A new request can be directed toward the server with fewer active connections.&lt;/p&gt;
+
+&lt;p&gt;This can be useful when requests have significantly different processing times.&lt;/p&gt;
+
+&lt;p&gt;Apigee supports &lt;code&gt;RoundRobin&lt;/code&gt;, &lt;code&gt;Weighted&lt;/code&gt;, and &lt;code&gt;LeastConnections&lt;/code&gt;. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Common Mistakes to Avoid
+&lt;/h1&gt;
+
+&lt;h2&gt;
+  
+  
+  ❌ Mistake 1: Using Only One Target Server
+&lt;/h2&gt;
+
+&lt;p&gt;What's the point of load balancing if there's only one server?&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;LoadBalancer&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;Server&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;"server-1"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;5&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/LoadBalancer&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;If that single server is removed from rotation, there is nowhere else to send traffic.&lt;/p&gt;
+
+&lt;p&gt;Google specifically documents using a single Target Server with non-zero &lt;code&gt;MaxFailures&lt;/code&gt; as an anti-pattern. ([Google Cloud Documentation][2])&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  ❌ Mistake 2: Using MaxFailures Without Thinking About Recovery
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;MaxFailures&lt;/code&gt; determines when a server should be removed from rotation.&lt;/p&gt;
+
+&lt;p&gt;For automatic recovery, configure a Health Monitor.&lt;/p&gt;
+
+&lt;p&gt;Google recommends using &lt;code&gt;MaxFailures &amp;gt; 0&lt;/code&gt; with a Health Monitor so that a recovered Target Server can automatically return to rotation. ([Google Cloud Documentation][1])&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  ❌ Mistake 3: Assuming Every HTTP 500 Is Automatically a Target Failure
+&lt;/h2&gt;
+
+&lt;p&gt;This is a subtle one.&lt;/p&gt;
+
+&lt;p&gt;By default, receiving an HTTP response—even a &lt;code&gt;500&lt;/code&gt;—means Apigee received a response from the target.&lt;/p&gt;
+
+&lt;p&gt;If you want certain HTTP status codes to count toward target failure handling, configure &lt;code&gt;ServerUnhealthyResponse&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  ❌ Mistake 4: Blindly Retrying POST Requests
+&lt;/h2&gt;
+
+&lt;p&gt;Retries can be dangerous for operations such as:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Payments
+Orders
+Money transfers
+Booking creation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Always consider whether the operation is idempotent before enabling or relying on retries.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  ❌ Mistake 5: Treating TCP Health as Application Health
+&lt;/h2&gt;
+
+&lt;p&gt;A server can accept TCP connections while its application is unhealthy.&lt;/p&gt;
+
+&lt;p&gt;For critical applications, consider an HTTP health endpoint that verifies the application is actually ready to process requests.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Best Practices for Apigee X Backend Failover
+&lt;/h1&gt;
+
+&lt;p&gt;Here are the practices I'd follow in a production environment.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  1. Use Multiple Target Servers
+&lt;/h3&gt;
+
+&lt;p&gt;Don't put all your availability expectations on a single backend.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Target Server 1
+Target Server 2
+Target Server 3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This gives Apigee multiple destinations for failover.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  2. Configure a Meaningful Health Check
+&lt;/h3&gt;
+
+&lt;p&gt;Prefer an application-level health endpoint when appropriate:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;GET /health
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The endpoint should provide a meaningful indication that the application can actually serve traffic.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  3. Tune MaxFailures Carefully
+&lt;/h3&gt;
+
+&lt;p&gt;Don't blindly use:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;1&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;or:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight xml"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;MaxFailures&amp;gt;&lt;/span&gt;100&lt;span class="nt"&gt;&amp;lt;/MaxFailures&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The right value depends on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Backend stability&lt;/li&gt;
+&lt;li&gt;Traffic volume&lt;/li&gt;
+&lt;li&gt;Expected transient failures&lt;/li&gt;
+&lt;li&gt;Business criticality&lt;/li&gt;
+&lt;li&gt;Recovery time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+  
+  
+  4. Design Retry With Idempotency
+&lt;/h3&gt;
+
+&lt;p&gt;For read operations such as:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;GET /customers
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;retry is usually easier to reason about.&lt;/p&gt;
+
+&lt;p&gt;For operations such as:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;POST /payments
+POST /orders
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;you need to think carefully about duplicate processing.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  5. Monitor the Failover Behavior
+&lt;/h3&gt;
+
+&lt;p&gt;Don't just configure failover and forget about it.&lt;/p&gt;
+
+&lt;p&gt;Test scenarios such as:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Server 1 DOWN
+Server 2 DOWN
+Server 3 DOWN
+Server recovery
+Network timeout
+Connection refused
+Backend 500
+Backend 503
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then verify that Apigee behaves as expected.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  The Architecture at a Glance
+&lt;/h1&gt;
+
+&lt;p&gt;Here's the complete picture:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;                         API Client
+                              |
+                              ↓
+                         APIGEE X
+                              |
+                       API Proxy
+                              |
+                       TargetEndpoint
+                              |
+                       LoadBalancer
+                              |
+              +---------------+---------------+
+              |               |               |
+              ↓               ↓               ↓
+        Target Server 1 Target Server 2 Target Server 3
+              |               |               |
+              ↓               ↓               ↓
+         Backend #1      Backend #2      Backend #3
+              ✓               ❌               ✓
+                              |
+                         MaxFailures
+                              |
+                              ↓
+                       Remove from pool
+                              |
+                       Health Monitor
+                              |
+                              ↓
+                       Backend recovers
+                              |
+                              ↓
+                       Back into rotation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The mental model is simple:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Multiple Target Servers → Load Balancer → Detect Failure → Remove Unhealthy Target → Continue Traffic → Detect Recovery → Add Target Back&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1&gt;
+  
+  
+  🎯 Interview-Ready Answer
+&lt;/h1&gt;
+
+&lt;p&gt;If an interviewer asks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“How will you configure multiple backend instances in Apigee X so that if one goes down, traffic is routed to another instance?”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here's the answer I'd give:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“I would create multiple Target Servers in the Apigee environment, with each Target Server pointing to a different backend instance. Then, in the TargetEndpoint, I would configure a LoadBalancer referencing those Target Servers. Depending on the requirement, I can use RoundRobin, Weighted, or LeastConnections.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For failover, I would configure MaxFailures so that an unhealthy Target Server is removed from rotation after the configured failure threshold. I would also configure a Health Monitor so Apigee can actively check the backend and automatically return the Target Server to rotation once it becomes healthy again.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If required, I can configure a dedicated fallback Target Server using IsFallback. For transactional APIs such as payment APIs, I would also carefully evaluate retry behavior and use idempotency to prevent duplicate transactions.”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That answer demonstrates much more than simply knowing what a Target Server is.&lt;/p&gt;
+
+&lt;p&gt;It shows that you understand &lt;strong&gt;high availability and production API architecture&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  Conclusion
+&lt;/h1&gt;
+
+&lt;p&gt;Configuring multiple backend instances in Apigee X isn't just about adding multiple URLs.&lt;/p&gt;
+
+&lt;p&gt;The real solution combines several concepts:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Target Servers
+      ↓
+Load Balancer
+      ↓
+Failure Detection
+      ↓
+MaxFailures
+      ↓
+Health Monitor
+      ↓
+Automatic Failover
+      ↓
+Automatic Recovery
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And depending on your use case:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Retry
++
+Fallback Server
++
+Idempotency
++
+Monitoring
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The key takeaway is this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Target Servers define where your API can go. The LoadBalancer decides where traffic should go. MaxFailures helps remove unhealthy targets, while Health Monitoring helps bring recovered targets back into rotation.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Once you understand that flow, this entire Apigee X interview question becomes much easier.&lt;/p&gt;
+
+&lt;p&gt;And more importantly, you can apply the same architecture to real-world systems where &lt;strong&gt;availability and resilience matter&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1&gt;
+  
+  
+  💬 Your Turn
+&lt;/h1&gt;
+
+&lt;p&gt;Have you implemented backend failover using &lt;strong&gt;Apigee X Target Servers&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;Did you use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RoundRobin?&lt;/li&gt;
+&lt;li&gt;Weighted?&lt;/li&gt;
+&lt;li&gt;LeastConnections?&lt;/li&gt;
+&lt;li&gt;Health Monitoring?&lt;/li&gt;
+&lt;li&gt;A fallback server?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Share your experience or questions in the comments. I'd love to hear how you're handling backend high availability in your Apigee projects.&lt;/p&gt;
+
+&lt;p&gt;If you're learning &lt;strong&gt;Apigee X, API management, API security, or API traffic management&lt;/strong&gt;, follow along for more practical, interview-focused articles.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Further Reading
+&lt;/h2&gt;
+
+&lt;p&gt;For the implementation details, Google's official documentation is the best reference:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.cloud.google.com/apigee/docs/api-platform/deploy/load-balancing-across-backend-servers?authuser=0" rel="noopener noreferrer"&gt;Load balancing across backend servers in Apigee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.cloud.google.com/apigee/docs/api-platform/antipatterns/load-balancing-maxfailures" rel="noopener noreferrer"&gt;Apigee load-balancing MaxFailures anti-pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cloud.google.com/apigee/docs" rel="noopener noreferrer"&gt;Google Cloud Apigee documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Sat, 08 Aug 2026 11:50:33 GMT</pubDate><guid>e296d611a37ec22ff210a5bedf06eceb</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] I outgrew nohup, so I built a daemonless job manager</title><link>https://dev.to/ryancswallace/i-outgrew-nohup-so-i-built-a-daemonless-job-manager-40hm</link><description>&lt;p&gt;I've long used &lt;code&gt;nohup&lt;/code&gt; for background processes that I want to run independently of the terminal. These types of jobs are usually long-running, sometimes launched over an SSH connection, and often have dependencies on other jobs.&lt;/p&gt;
+
+&lt;p&gt;I built Jobman to combine the simplicity of &lt;code&gt;nohup&lt;/code&gt; with features I previously wrote one-off shell scripts for, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;retries&lt;/li&gt;
+&lt;li&gt;timeouts&lt;/li&gt;
+&lt;li&gt;dependencies between jobs&lt;/li&gt;
+&lt;li&gt;email or webhook notifications on completion or failure&lt;/li&gt;
+&lt;li&gt;separate stdout and stderr logging with a combined observed-order view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jobman does this with a small per-job supervisor process; there's no shared daemon to run. It uses SQLite for job and run metadata and plain files for log storage. It's intended to be a local, per-user tool, not a system-wide or distributed scheduler.&lt;/p&gt;
+
+&lt;p&gt;Jobman is an MIT-licensed command-line job manager written in Go. It runs on Linux, macOS, and Windows, and it doesn’t need a shared daemon.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Basic Examples
+&lt;/h2&gt;
+
+&lt;p&gt;Here's an example session using Jobman to launch a Python script, examine its logs, and check its status:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight console"&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;jobman run &lt;span class="nt"&gt;--name&lt;/span&gt; import-data &lt;span class="nt"&gt;--retries&lt;/span&gt; 3 &lt;span class="nt"&gt;--run-timeout&lt;/span&gt; 30m &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="go"&gt;  --retry-timeouts -- python3 ./import_data.py
+019fddfe-23bb-732d-a869-2aaee43c03d7
+
+&lt;/span&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;jobman logs &lt;span class="nt"&gt;--follow&lt;/span&gt; import-data
+&lt;span class="go"&gt;Starting import...
+Imported batch 1/3.
+Imported batch 2/3.
+^C
+
+&lt;/span&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;jobman status import-data
+&lt;span class="go"&gt;019fddfe-23bb-732d-a869-2aaee43c03d7    import-data     running
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Above, the Ctrl-C stopped &lt;code&gt;logs --follow&lt;/code&gt;, while the Python process continued under Jobman.&lt;/p&gt;
+
+&lt;p&gt;Here's a similar example live:&lt;/p&gt;
+
+&lt;p&gt;  
+  
+&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Fit and Alternatives
+&lt;/h2&gt;
+
+&lt;p&gt;Jobman is mainly for noninteractive local work:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;data imports and exports&lt;/li&gt;
+&lt;li&gt;research scripts and model runs&lt;/li&gt;
+&lt;li&gt;long builds or downloads&lt;/li&gt;
+&lt;li&gt;maintenance commands&lt;/li&gt;
+&lt;li&gt;jobs started over SSH&lt;/li&gt;
+&lt;li&gt;small local pipelines with dependencies.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jobman isn’t meant to replace tmux when you need to reattach to an interactive terminal. It also isn’t a boot-time service manager or a distributed scheduler like Slurm.&lt;/p&gt;
+
+&lt;p&gt;Comparing Jobman to possible alternatives:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;nohup&lt;/code&gt;: when you just need redirection and a PID&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;tmux&lt;/code&gt;: when you want the terminal session back&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;systemd-run&lt;/code&gt;: when systemd should own the process&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;code&gt;jobman&lt;/code&gt;&lt;/strong&gt;: when you want a durable local job with retries, timeouts, logs, dependencies, and later lifecycle controls&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jobs can survive a closed terminal or lost SSH connection, but they may still be stopped when the operating-system user session ends, depending on session configuration.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Try Jobman
+&lt;/h2&gt;
+
+&lt;p&gt;On macOS:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;brew &lt;span class="nb"&gt;install &lt;/span&gt;ryancswallace/tap/jobman
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Linux packages and Windows builds are also available. The &lt;a href="https://jobman.tech/getting-started/installation/" rel="noopener noreferrer"&gt;installation guide&lt;/a&gt; has the full set of options.&lt;/p&gt;
+
+&lt;p&gt;Once installed, this is enough to create and inspect a first job:&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;jobman run &lt;span class="nt"&gt;--wait&lt;/span&gt; &lt;span class="nt"&gt;--name&lt;/span&gt; first-job &lt;span class="nt"&gt;--&lt;/span&gt; jobman &lt;span class="nt"&gt;--version&lt;/span&gt;
+jobman status first-job
+jobman logs &lt;span class="nt"&gt;--stream&lt;/span&gt; stdout first-job
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The source is on &lt;a href="https://github.com/ryancswallace/jobman" rel="noopener noreferrer"&gt;GitHub&lt;/a&gt;, and the documentation is at &lt;a href="https://jobman.tech/" rel="noopener noreferrer"&gt;jobman.tech&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve also written an &lt;a href="https://ryancswallace.dev/tags/jobman/" rel="noopener noreferrer"&gt;Inside Jobman series&lt;/a&gt; about the implementation, including detached supervision, scheduling, process trees, timeouts, and durable logs.&lt;/p&gt;
+
+&lt;p&gt;Do you see Jobman replacing any combinations of tools you currently use (nohup, tmux, screen, systemd-run)? If Jobman looks useful to you, let me know what types of jobs you would use it for.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:48:51 GMT</pubDate><guid>78702fa48c2c0e53d077be66d4557e3a</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Habr] 100 фактов о жизни и бизнесе. Часть 1</title><link>https://habr.com/ru/articles/1068194/</link><description>&lt;p&gt;Жизнь и бизнес состоят из большого количества скучных, нудных и банальных вещей, сделав которые неожиданно получаешь то самое, о чем не стыдно дать интервью.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068194/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068194#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:39:24 GMT</pubDate><guid>23f61f745c9759f40ce7ddf761a7d86b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Развитие людей от HR: как не надо, но очень хочется (Степан, руководитель)</title><link>https://habr.com/ru/articles/1068192/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/071/14a/9a3/07114a9a31cc367b51751d2c7b03b5ee.png" /&gt;&lt;p&gt;Каждый раз, когда открываю &lt;a href="https://rb.ru/interview/nataliya-runova-t2-kak-najti-neraskrytyj-potencial-vnutri-komandy/" rel="noopener noreferrer nofollow"&gt;очередную статью для HR&lt;/a&gt;, начинаю подозревать, что бизнесом управляют не собственники, не директора и даже не бабло. Бизнесом управляет HR. Судя по этим статьям, именно HR создает компании, удерживает сотрудников, определяет стратегию, увеличивает прибыль и спасает этот &lt;s&gt;сраный&lt;/s&gt; мир. Генеральный директор в этой схеме нужен примерно так же, как фикус в переговорке. Для атмосферы.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068192/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068192#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:31:42 GMT</pubDate><guid>087a4283e832a0fc1f235711a32334ad</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[ArsTechnica] The first self-driving vehicle on Mars has proven to be a smashing success</title><link>https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/</link><description>About 90 percent of the distance driven by Perseverance has been autonomous.</description><pubDate>Sat, 08 Aug 2026 11:30:48 GMT</pubDate><guid>1178b8b99370d786d61e96732de3001d</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Habr] Отдали базу штрихкодов статикой: 1,9 МБ, 1387 шардов, медиана в одну строку</title><link>https://habr.com/ru/articles/1068190/</link><description>&lt;p&gt;Браузерный сканер штрихкодов упирается в развилку: чтобы показать, что за товар в руках, надо сходить в товарный API — и отдать туда номер, IP и время. По одному запросу это ничего, по потоку — фактический чек, собранный чужими руками.&lt;/p&gt;&lt;p&gt;Второй путь: скачать базу один раз, порезать на файлы по префиксу и раздавать статикой. Разбираем, что из этого вышло на 32 772 товарах: 1387 шардов, 1,85 МиБ сырых и 429 КиБ в brotli, худший файл 331 КиБ. И главное — сколько приватности при этом всё равно утекает: запрос к серверу есть, а медиана строк в шарде равна единице, то есть для 722 файлов из 1387 запрос за шардом равен запросу за товаром.&lt;/p&gt;&lt;p&gt;Внутри: фильтр на входе, почему не одним файлом, TSV против JSON с замерами, и что в схеме до сих пор не решено.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068190/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068190#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 11:28:33 GMT</pubDate><guid>b7a5a95f1e2dc2c1d8001c66e502ee8b</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Dev.to] PixelBatch — your entire image toolbox in one app, 14 tools for free, so you don't have to edit images one by one anymore</title><link>https://dev.to/prathvix/pixelbatch-your-entire-image-toolbox-in-one-app-14-tools-for-free-so-you-dont-have-to-edit-3993</link><description>&lt;p&gt;After spending way too long editing images one by one for my content, I built PixelBatch — a native macOS app that processes whole folders of images in one pass.&lt;br /&gt;
 What it does:&lt;br /&gt;
 Core tools&lt;br /&gt;
 &lt;a class="article-body-image-wrapper" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6bi77l9z3obm3fo9kdk0.png"&gt;&lt;img alt=" " height="500" src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F6bi77l9z3obm3fo9kdk0.png" width="800" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -869,7 +2613,7 @@ Running a CNN prediction synchronously inside an HTTP request handler blocks the
   Repo
 &lt;/h2&gt;
 
-&lt;p&gt;Code and setup instructions: &lt;a href="https://github.com/priyadharshiny13" rel="noopener noreferrer"&gt;github.com/priyadharshiny13&lt;/a&gt; — see the &lt;code&gt;smart-health-api&lt;/code&gt; repository.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:06:09 GMT</pubDate><guid>b2e017c2dd58e9feb56781007ff67dcc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] Automatic Error Recovery in AI Agent Networks</title><link>https://dev.to/albert_zhang_f468830cf0e6/automatic-error-recovery-in-ai-agent-networks-28fi</link><description>&lt;p&gt;In a single-agent system, failure is simple: the agent errors, you retry.&lt;/p&gt;
+&lt;p&gt;Code and setup instructions: &lt;a href="https://github.com/priyadharshiny13" rel="noopener noreferrer"&gt;github.com/priyadharshiny13&lt;/a&gt; — see the &lt;code&gt;smart-health-api&lt;/code&gt; repository.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:06:09 GMT</pubDate><guid>b2e017c2dd58e9feb56781007ff67dcc</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[ArsTechnica] DeepMind’s hurricane breakthrough has surprised weather scientists</title><link>https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/</link><description>Open source WeatherNext model can make accurate predictions with lower-resolution weather data.</description><pubDate>Sat, 08 Aug 2026 11:05:50 GMT</pubDate><guid>529c4767029a6e49462f5007d9390c76</guid><source url="https://feeds.arstechnica.com/arstechnica/index">ArsTechnica</source></item><item><title>[Dev.to] Automatic Error Recovery in AI Agent Networks</title><link>https://dev.to/albert_zhang_f468830cf0e6/automatic-error-recovery-in-ai-agent-networks-28fi</link><description>&lt;p&gt;In a single-agent system, failure is simple: the agent errors, you retry.&lt;/p&gt;
 
 &lt;p&gt;In multi-agent systems, failure is a graph problem.&lt;/p&gt;
 
@@ -1357,257 +3101,4 @@ Agent D: ❌ Partial data (depends on C)
   Conclusion
 &lt;/h2&gt;
 
-&lt;p&gt;The cache-purge incident cost us twenty minutes of degraded performance and an afternoon of forensics, and the root cause was embarrassingly ordinary: we trusted a session cookie to prove &lt;em&gt;intent&lt;/em&gt; when all it proved was &lt;em&gt;identity&lt;/em&gt;. Signed double-submit cookies close that gap without a session store, without poisoning an aggressive page cache, and without a framework — about a hundred lines of PHP 8.4. The three-part check (equal copies, valid signature, unexpired) is what makes it hold up against the subdomain and MITM variants that break the naive version, and the little fork-based test harness is what keeps a future "simplification" from quietly reopening the hole. If your video admin panel changes state on a cookie alone, add the guard before something loads the wrong forum tab for you.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:00:01 GMT</pubDate><guid>fc6d6618b78deb0af43246ae0e81b028</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] The People AI Cannot Hear</title><link>https://dev.to/rawveg/the-people-ai-cannot-hear-hn2</link><description>&lt;p&gt;The voice command is simple. “Call my sister.” The user, sitting at a kitchen table in south London, says it three times, each time more slowly, each time more carefully. The smart speaker responds each time with the same brisk cheerfulness. It has heard “call Maria.” It has heard “call the sister.” It has, on the third attempt, offered to play a song called “Sister” by an artist she has never heard of. What it has not done is the thing she asked. Her speech, shaped by a neuromuscular condition that makes consonants softer and vowels longer, sits just outside the envelope of audio the model was trained to recognise. To the speaker's statistical ear, she is not quite a person giving an instruction. She is noise, or close enough to noise that the cheapest path is to guess.&lt;/p&gt;
-
-&lt;p&gt;On any given morning, a version of that scene plays out in hundreds of thousands of homes. It is one of the quieter harms of the current artificial intelligence moment, a harm so ordinary that the people experiencing it have mostly stopped complaining about it. You learn, over time, to pitch your voice higher. You learn to flatten your accent. You learn which words the machine prefers and which ones it cannot parse. You build, in other words, a second self, optimised for the model. And then you watch the technology press describe the same model as an assistant that understands natural language.&lt;/p&gt;
-
-&lt;p&gt;The argument that this is structural rather than a peripheral bug appeared in sharp form in a January 2026 Forbes analysis by Gus Alexiou, a long-time disability inclusion contributor who has written about assistive technology since his own multiple-sclerosis diagnosis. Alexiou framed disability as the ultimate stress test for AI. When a system optimises for uniform productivity and standardised interaction, the argument ran, it does not merely under-serve the approximately 1.3 billion people the World Health Organization counts as experiencing significant disability. It structurally excludes them, through the quiet accumulation of design defaults that never imagined them in the room.&lt;/p&gt;
-
-&lt;p&gt;Three weeks later, on 3 February 2026, the British government put that argument into institutional form. The Department for Work and Pensions, under Secretary Pat McFadden, convened a roundtable that brought Google, Meta, Microsoft and Amazon into the same room as Scope, Guide Dogs UK, AbilityNet, Disability Rights UK, the Business Disability Forum, RNID, the Lightyear Foundation, the Regional Stakeholder Network, the Global Disability Innovation Hub and the Atech Policy Lab. The framing was employment-focused, a conversation about closing the disability employment gap. The subtext was the one Alexiou had articulated in Forbes: the distance between what AI could do for disabled workers and what it currently does, and the question of who was on the hook for closing it.&lt;/p&gt;
-
-&lt;p&gt;Around the same time, a framework appeared in Frontiers in Digital Health. Written by Gabriella Waters of the Cognitive and Neurodiversity AI Lab at Virginia State University and Morgan State's Center for Equitable AI and Machine Learning Systems, the paper argued something that should have been obvious: there is no standardised methodology for evaluating whether AI systems work for disabled users, and the dominant evaluation practices actively disguise their failure to do so. Accuracy and generalisability, the two metrics that have governed machine-learning benchmarks for a decade, treat disabled users as statistical noise rather than as a population whose performance matters. Waters' proposed framework covers red teaming, model testing, field testing and usability testing with disabled participants, dressed up in the methodological language the field demands before it will listen.&lt;/p&gt;
-
-&lt;p&gt;Picking up the same thread from a different angle, a Rest of World investigation by deputy editor Rina Chandran, published 12 March 2026, traced the failure of Western AI models in overseas agricultural settings. Catherine Nakalembe, the University of Maryland geographer who won the 2020 Africa Food Prize, had to collect more than five million helmet-mounted camera images across Kenya and Uganda to train a system to recognise maize, beans and cassava because existing models could not. Arti Dhar, co-founder of Farmers for Forests, found that a widely used open-source segmentation model missed more than half the trees in a Maharashtra forest because it had been trained on North American species. Digital Green's FarmerChat, by contrast, works across 16 vernacular languages in South Asia and Africa because it was built with the farmers rather than for them.&lt;/p&gt;
-
-&lt;p&gt;The four sources do not look, at first, like they are telling the same story. Disability, workplace inclusion, testing methodology, smallholder agriculture in the global South. They are. When a technology scales by averaging, the people at the edges of the average pay the cost, and those people are not a minor accounting category. They are the majority of humanity, unevenly distributed. Add non-English speakers, rural users, people with accents the model was never tuned on, and older adults, and the exclusion is not a rounding error. It is the shape of the market.&lt;/p&gt;
-
-&lt;p&gt;The question the Forbes piece really asked, and that the UK convening declined to answer directly, is who currently has the power and the incentive to change any of this. That question has an uncomfortable answer.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  The default is the person the model imagined
-&lt;/h2&gt;
-
-&lt;p&gt;To see why disability is a stress test rather than a special case, it helps to understand how the defaults were set. A large language model is a very expensive statistical summary of text its builders chose, or could afford, to scrape. A voice recognition system is a very expensive statistical summary of speech its builders recorded, or bought, or licensed. A vision model is a very expensive statistical summary of images its builders labelled, or hired people to label, or used labels some earlier researcher had published. At every step, the system's eventual performance on any given user is roughly a function of how well that user resembles the median entity in the training distribution.&lt;/p&gt;
-
-&lt;p&gt;The median entity in most training distributions is, to a close approximation, a neurotypical, non-disabled, native-English-speaking adult in North America or Western Europe, interacting via keyboard, mouse or clear spoken English in a quiet room. Meredith Ringel Morris, the former Microsoft researcher who founded the Ability Research Group and now leads HCI research at Google DeepMind, has spent more than a decade cataloguing how that default haunts the systems built around it. Her 2020 Communications of the ACM paper, co-authored with Shari Trewin of IBM, laid out a research roadmap other researchers have been filling in ever since: self-driving car pedestrian detection that does not register wheelchair users; hiring screeners that discount autistic candidates because their facial expressions score as inauthentic; voice assistants that cannot parse speech disabilities; captioning systems that fail on British Sign Language because the model only trained on spoken audio.&lt;/p&gt;
-
-&lt;p&gt;Waters' Frontiers paper takes this catalogue as its starting point and asks what evaluation would have to look like to catch these failures before deployment rather than after. Her answer runs to seven specialised metrics, among them an Inclusive Accuracy Rate that requires systems to report performance broken down by user characteristics, an Accessibility Disparity Index that quantifies the gap between best and worst performing groups, an Assistive Technology Compatibility Score, a Cognitive Load Index for neurodivergent users, an Error Recovery Rate, and several others. None of them is exotic. What is exotic, at least in the dominant benchmarking culture, is the assumption that they should be reported at all.&lt;/p&gt;
-
-&lt;p&gt;At present, when a model card for a frontier system is published, it will typically include accuracy on standardised benchmarks, sometimes broken down by language or domain, very rarely broken down by user characteristics, and almost never broken down by disability. The ImageNet paper that became the benchmark for vision research did not report performance by subject characteristics. The GLUE paper that became the benchmark for natural-language understanding did not either. Partly this is because the benchmarks did not have that data. Partly it is because the benchmarks assumed the user did not matter. Either way, by the time a commercial system is built on these foundations, the places where performance falls apart have already been defined out of the evaluation.&lt;/p&gt;
-
-&lt;p&gt;The Forbes stress-test framing is, in that sense, a good one. A stress test does not tell you anything the system could not, in principle, have told you about itself. It just forces the information into the open. Run a text-to-image system on prompts including disability terms, as Ashley Shew of Virginia Tech and others have done, and you get outputs in which wheelchairs are rusting wrecks, guide dogs are ominous shadows, and prosthetic limbs are rendered as torture devices. Run a sentiment classifier on sentences containing “disability” and the valence collapses, sometimes by several standard deviations. Run a caption model on an image of a person signing and it will tell you about the person's clothes. None of this is a failure mode anyone intended. All of it is a failure mode anyone with a bias audit could have found. The absence of the audit is the choice.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  Why employment is the leverage point
-&lt;/h2&gt;
-
-&lt;p&gt;The UK government's convening on 3 February was, in one sense, about a much older problem than AI. The disability employment gap in Britain has hovered around 28 percentage points for a decade, and Scope's chief executive Mark Hodgkinson used his remarks at the roundtable to point out that roughly a million disabled people who want to work are currently out of the labour market, many of them not through any lack of capability but because the workplaces and the tools they are asked to work with do not accommodate them.&lt;/p&gt;
-
-&lt;p&gt;The reason the meeting mattered is that workplace AI is, right now, the sharp end of a different stress test. The workplace is where biased hiring algorithms live. It is where productivity monitoring systems penalise users whose working patterns deviate from the average. It is where speech recognition is deployed to take meeting minutes that then become performance evidence. It is where agentic tools are being rolled out as personal assistants that assume their user's schedule, preferences and interaction style map neatly onto the same neurotypical default. For a disabled worker, a badly designed AI system is not merely an inconvenience. It is, increasingly, a gatekeeper standing between them and the capacity to work at all.&lt;/p&gt;
-
-&lt;p&gt;Maxine Williams, vice president of accessibility at Meta, used the roundtable to announce that the company's AI-powered wearables had added real-time environmental description for blind and low-vision users. This is genuinely useful. It is also the kind of announcement that quietly obscures a harder question. The same company's advertising-targeting algorithms, the same platform's automated content moderation, the same recommender systems that decide what a disabled creator gets shown to, are built on training pipelines that have no comparable accessibility evaluation. A pair of smart glasses that describes a room to a blind user is a product feature. A newsfeed ranking system that deprioritises disability-related content because it scores as low-sentiment is an infrastructural choice. The first is visible, marketable and reputationally valuable. The second is invisible, cheap to leave alone, and reputationally expensive only if someone does the audit.&lt;/p&gt;
-
-&lt;p&gt;The same asymmetry runs through the Microsoft, Google and Amazon presentations at the DWP meeting. Amazon's Jaqui Sampson spoke about the company's neurodiversity hiring programme, which has placed several hundred people on the autism spectrum into warehouse and technical roles. Google's team highlighted Project Relate, the speech-recognition model fine-tuned on non-standard speech that grew out of its Project Euphonia research. Microsoft talked about the Seeing AI app and the Immersive Reader. Every one of these is, in isolation, a real contribution. Every one of them also sits alongside the same companies' core AI infrastructure, which is not accessibility-evaluated and is, in most cases, the foundation on which third parties are building the workplace tools disabled workers have to use. Assistive features at the edge, inaccessible scaffolding at the core. That is the pattern.&lt;/p&gt;
-
-&lt;p&gt;Guide Dogs UK's Alex Pepper said the quiet part out loud. Assistive technology, she told the room, can remove barriers at work, but it is not a solution on its own. Translation: the industry is very good at giving disability advocates product demos and very bad at changing the way the substrate systems are trained, evaluated and governed. A pair of AI glasses does not fix a hiring pipeline whose screening tool discards autistic applicants at the CV stage. A captioning feature does not fix a workplace analytics system that penalises a deaf employee for the below-average meeting participation metrics the same captioning layer enabled.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  The colonial analogy is not a metaphor
-&lt;/h2&gt;
-
-&lt;p&gt;One of the more striking aspects of reading the Forbes argument alongside the Rest of World investigation is how structurally similar the failure modes are. Chandran's reporting from March 2026 does not use the word “disability” once. It does not need to. The mechanism it describes, a Western model trained on Western data fails to recognise the objects, practices and languages of people outside the training distribution, is the same mechanism Morris and Waters and every disability AI researcher has been describing for years.&lt;/p&gt;
-
-&lt;p&gt;Nakalembe's 5 million-image dataset of smallholder crops in East Africa exists because the existing computer vision literature on agriculture had been trained almost entirely on North American and European industrial farms. Maize, in the Midwest sense, looks one way; maize, in the Rwandan sense, looks another. A segmentation model that was never shown the second cannot see it. Dhar's forest-monitoring tool that missed half the trees in Maharashtra was not malfunctioning by some local standard. It was doing exactly what it had been trained to do. It had simply never been trained on the relevant world.&lt;/p&gt;
-
-&lt;p&gt;Digital Green's FarmerChat, which now reaches a million farmers across South Asia and Africa, is instructive because of the corrective it represents. It works by doing what Waters' framework would require: sourcing the training data from the users who will actually use the tool, evaluating the model against their real queries rather than against a benchmark designed somewhere else, and building with the users rather than for them. In other words, it drops the default. It treats the smallholder farmer in vernacular Telugu or Swahili as the person the model is for, rather than as a tolerated edge case.&lt;/p&gt;
-
-&lt;p&gt;What the agricultural story shares with the disability story is the structural dynamic. In both, the dominant models were trained by institutions whose own users were implicitly treated as the species for which the tool was being built. In both, the populations outside that implicit species had to assemble their own data, build their own pipelines and argue, repeatedly, for the legitimacy of their inclusion. In both, the industry's preferred response has been to offer add-ons, localisation layers, assistive features bolted onto a substrate that remains unchanged. In both, the add-on strategy is cheaper than the redesign. In neither does the add-on strategy actually solve the underlying problem, which is that the training substrate itself encoded a worldview.&lt;/p&gt;
-
-&lt;p&gt;The reason this matters for the power question is that it connects two movements that have mostly operated in isolation. The disability AI community, led by researchers like Morris, Shew, Jutta Treviranus at OCAD University in Toronto, and Catherine Holloway at the Global Disability Innovation Hub at UCL, has been asking for inclusive training data and participatory evaluation for the better part of a decade. The global-south AI community, represented by researchers like Nakalembe, Timnit Gebru at the Distributed AI Research Institute, and the authors of the 2021 Stochastic Parrots paper, has been asking for the same thing from a different direction. When those two arguments are recognised as the same argument, the constituency pushing for structural change becomes considerably larger than either community looks on its own.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  Who currently has the power
-&lt;/h2&gt;
-
-&lt;p&gt;The honest answer to the question of who has the power to deliver genuine inclusion, and who has the incentive, does not flatter the industry.&lt;/p&gt;
-
-&lt;p&gt;The people who have the most power to change how models are trained, evaluated and deployed are the half-dozen companies whose frontier systems underpin most of the AI economy: OpenAI, Anthropic, Google DeepMind, Meta, Microsoft and, at the infrastructure layer, Nvidia. These are the entities whose training data choices, whose evaluation benchmarks, whose model cards and whose API behaviours determine what everyone downstream inherits. If any one of them chose, tomorrow, to publish accessibility-disaggregated performance data on its next frontier release, or to make Waters' Inclusive Accuracy Rate a standard reporting field, the rest of the industry would have to follow, because the procurement contracts and the regulatory filings and the research community would start asking for it. None of them currently does.&lt;/p&gt;
-
-&lt;p&gt;They have the power. They do not have the incentive, or at least not a large enough one to outweigh the cost. The cost, which is substantial, is what the disability community calls data work: assembling inclusive datasets, running participatory design processes, building evaluation suites that require human effort rather than automatable benchmarks, and, most awkwardly, publishing disparity metrics that will make the model look worse on average. The revenue upside of any of this for the model provider is real but small compared to the upside of the next efficiency frontier or the next reasoning benchmark. The downside, legally and reputationally, has so far been manageable.&lt;/p&gt;
-
-&lt;p&gt;The people who have the incentive but not the power are disabled users, disability-led organisations, and the researchers working alongside them. Scope, Disability Rights UK, RNID and the others who sat across the DWP table from the tech companies in February are unambiguously motivated to deliver genuine inclusion. They do not control the training pipelines. They do not sit on the model cards. They can, at best, act as a feedback channel, and only if the companies choose to listen. Catherine Holloway's Global Disability Innovation Hub and its Centre for Digital Language Inclusion, launched in partnership with the Royal Academy of Engineering and the University of Ghana in 2025, is building non-standard speech datasets precisely because no frontier lab has produced one at the scale required. That work is essential, and it is happening largely on philanthropic and academic funding while the companies that could resource it two orders of magnitude better continue not to.&lt;/p&gt;
-
-&lt;p&gt;The people who have some of both are the regulators, and regulators are the reason any of this is shifting at all. The European Accessibility Act, which came into force on 28 June 2025, requires a wide range of consumer-facing products and services to meet accessibility standards, including, increasingly, AI-enabled ones. The UK's Equality Act has always prohibited discrimination in the provision of goods and services, and the Equality and Human Rights Commission has been explicit that algorithmic discrimination is within its remit. The EU AI Act's high-risk categorisation for employment-related AI systems carries obligations that include bias mitigation and fundamental-rights impact assessments, and disability discrimination is among the rights it protects. The US Section 508 refresh, updated through 2024 and 2025, now covers procurement rules for federal AI systems. The 24 April 2026 deadline for US state and local government agencies to comply with Title II of the Americans with Disabilities Act at WCAG 2.1 Level AA is a week away from the moment this piece is being written, and will push a large volume of procurement activity toward accessibility-audited vendors.&lt;/p&gt;
-
-&lt;p&gt;The regulatory pressure is building, slowly, against the incentive gradient of the industry. Whether it builds fast enough to shift the default before the current generation of AI systems has ossified into infrastructure is the open question.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  What genuine inclusion would require
-&lt;/h2&gt;
-
-&lt;p&gt;Set aside the rhetoric of empowerment and the photograph-friendly accessibility features, and the substance of what inclusion requires is reasonably well understood. The academic and advocacy literature converges on roughly five things, and the striking feature of the convergence is that none of the five is technically hard. They are organisationally and commercially unwelcome.&lt;/p&gt;
-
-&lt;p&gt;The first is inclusive training data, collected through participatory processes with the populations the system is expected to serve. Digital Green's 120,000-query corpus of farmer questions in 16 languages is the template for what that looks like in agriculture. The Speech Accessibility Project at the University of Illinois, which has been collecting non-standard speech recordings from people with Parkinson's, cerebral palsy, ALS and Down syndrome since 2022, is the template for what it looks like in voice. The 5 million-image East African crop dataset Nakalembe assembled is the template for what it looks like in vision. None of these was built by the frontier labs. All of them should be.&lt;/p&gt;
-
-&lt;p&gt;The second is disaggregated evaluation, reported publicly, with performance broken down by user characteristics and context. Waters' seven metrics are a starting point. Morris' research roadmap offers another. At minimum, model cards for any deployed AI system should report performance on named disability-relevant evaluations, should state the demographic composition of the evaluation set, and should be updated when the underlying model is updated. At present, they typically do none of this.&lt;/p&gt;
-
-&lt;p&gt;The third is participatory design, built into the product cycle rather than retrofitted afterwards. Jutta Treviranus' Inclusive Design Research Centre has a motto, “design with not for”, that has circulated in the accessibility community for twenty years. In AI, it is still largely aspirational. The UK's Atech Policy Lab, which sat at the DWP roundtable, is one of the few bodies attempting to hard-code participatory practice into the AI assistive-technology pipeline. Most of the major labs' partnership structures with disability organisations remain advisory rather than decisional.&lt;/p&gt;
-
-&lt;p&gt;The fourth is interoperability with assistive technologies. The systems that disabled users already rely on, screen readers, switch controls, eye-gaze interfaces, alternative input devices, bespoke communication aids, need to be first-class citizens in the AI interaction model, not afterthoughts. This is a straightforwardly technical requirement, and it is the one area where mandatory standards are starting to bite. The W3C's WAI-AI task force, formed in 2024 and producing guidance through 2025 and 2026, is doing the unglamorous work of defining what accessible AI means in a way developers can actually implement.&lt;/p&gt;
-
-&lt;p&gt;The fifth is accountability when systems fail, meaning both the right of redress for the user harmed and the obligation of the provider to fix the underlying issue rather than adding yet another accessibility plug-in. This is where regulation becomes indispensable. Voluntary commitments have been on offer from the industry for a decade. The pattern the DWP roundtable demonstrated, tech companies promising product features while their core training pipelines remain unaudited, is what voluntary commitments reliably produce. Mandatory disclosure, backed by enforcement, is what changes the substrate.&lt;/p&gt;
-
-&lt;p&gt;Each of these five can be characterised as a cost centre, and each, properly executed, is a correction to a market failure currently paid for by disabled users, global-south users, and, eventually, the employers and public services on the receiving end of the systems' underperformance. A stress test does not create the fragility. It exposes it. The fragility was always there.&lt;/p&gt;
-
-&lt;h2&gt;
-  
-  
-  The architecture of the next decade
-&lt;/h2&gt;
-
-&lt;p&gt;There is a version of the next few years in which the story gets worse before it gets better. More AI systems will be deployed into more workplaces, more public services, more clinical and educational and legal settings, before the regulatory substrate and the evaluation methodology have caught up. Disabled users, like global-south users, will continue to bear the cost of the gap between the technology's performance on the median user and its performance on them. The assistive add-on will continue to be the preferred industry response. The companies that could do the deeper work will continue to choose not to, because the incentive structure has not yet reversed.&lt;/p&gt;
-
-&lt;p&gt;There is also a version in which a combination of regulatory enforcement, procurement leverage from large public buyers, and sustained pressure from the research community and disability-led organisations starts to shift the defaults. The EU AI Act's first full enforcement cycle begins to bite through 2026 and 2027. The US ADA Title II deadline produces a wave of vendor audits. The DWP-style convenings, if they become regular rather than ceremonial, put the same five questions to the same companies repeatedly until the answers change. The Frontiers framework gets picked up by NIST, by the Alan Turing Institute's AI Safety Institute, by standards bodies that have the authority to make accessibility evaluation a default reporting field. The 5 million-image datasets and the 120,000-query corpora stop being heroic one-off efforts and start being line items in platform R&amp;amp;D budgets.&lt;/p&gt;
-
-&lt;p&gt;Which of these futures arrives depends on something more prosaic than a technical breakthrough. It depends on whether the power and the incentive can be brought into alignment, and whether the regulatory architecture is built fast enough to do the aligning. The power currently sits with the labs. The incentive currently does not. The gap between the two is where the exclusion lives, and it will continue to live there until someone, regulator or buyer or coalition of both, moves it.&lt;/p&gt;
-
-&lt;p&gt;Return, finally, to the kitchen table in south London. The woman asking her smart speaker to call her sister is not, in the technology industry's current accounting, a failure case. She is not a test the product was designed to pass. She is, from the system's point of view, slightly outside the curve, which is another way of saying slightly outside the imagination of the people who built it. Her experience is what the Forbes analysis meant by a stress test. If she works, the system works. If she does not, the system is not ready. The point of treating her as the test case is that it produces a higher-quality system for everyone, because the default person the models were trained to serve is not, in fact, most of the people the models are being sold to.&lt;/p&gt;
-
-&lt;p&gt;Alexiou's insight, and the convergence with Waters' framework and Chandran's reporting and the UK government's cautious, cautiously serious convening, is that inclusion is not a niche product requirement. It is the infrastructure question the next decade of this technology turns on. Who has the power to deliver it is mostly the labs. Who has the incentive is mostly the users, the regulators and the advocates. Closing that gap is the work. Nobody is going to close it by accident, and nobody is going to close it because it would be the nice thing to do. It will close when the cost of not closing it is made legible, and that is a job for law, for procurement, for journalism and for the disability community itself, not for a press release about a new AI-powered wearable. The kitchen-table speaker will start hearing her properly on the day the company that makes it has to report, publicly and disaggregated, how often it does not. Until then, she will keep pitching her voice higher and the rest of the market will keep pretending the model understands natural language.&lt;/p&gt;
-
-
-
-
-&lt;h2&gt;
-  
-  
-  References &amp;amp; Sources
-&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Alexiou, G. “Why Disability Is The Ultimate Stress Test For Artificial Intelligence.” Forbes, January 2026. &lt;a href="https://www.forbes.com/sites/gusalexiou/" rel="noopener noreferrer"&gt;https://www.forbes.com/sites/gusalexiou/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Department for Work and Pensions. “Tech giants meet disability sector to break down barriers at work.” GOV.UK, 3 February 2026. &lt;a href="https://www.gov.uk/government/news/tech-giants-meet-disability-sector-to-break-down-barriers-at-work" rel="noopener noreferrer"&gt;https://www.gov.uk/government/news/tech-giants-meet-disability-sector-to-break-down-barriers-at-work&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Waters, G. “AI testing, evaluation, verification and validation for accessibility: a comprehensive framework.” Frontiers in Digital Health, Volume 7, 2025-2026. DOI: 10.3389/fdgth.2025.1679603. &lt;a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1679603/full" rel="noopener noreferrer"&gt;https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1679603/full&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Chandran, R. “AI models from Western tech giants fail in overseas agricultural settings.” Rest of World, 12 March 2026. &lt;a href="https://restofworld.org/2026/ai-agriculture-local-data/" rel="noopener noreferrer"&gt;https://restofworld.org/2026/ai-agriculture-local-data/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;World Health Organization. “Disability.” WHO Fact Sheet, 2023 (updated 2024-2025). &lt;a href="https://www.who.int/news-room/fact-sheets/detail/disability-and-health" rel="noopener noreferrer"&gt;https://www.who.int/news-room/fact-sheets/detail/disability-and-health&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Morris, M. R. “AI and Accessibility: A Discussion of Ethical Considerations.” Communications of the ACM, Vol. 63 No. 6, June 2020. &lt;a href="https://cacm.acm.org/magazines/2020/6/245157-ai-and-accessibility/fulltext" rel="noopener noreferrer"&gt;https://cacm.acm.org/magazines/2020/6/245157-ai-and-accessibility/fulltext&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Trewin, S., Basson, S., Muller, M., Branham, S., Treviranus, J., Gruen, D., Hebert, D., Lyckowski, N. and Manser, E. “Considerations for AI Fairness for People with Disabilities.” AI Matters, 5(3), 2019. &lt;a href="https://sigai.acm.org/static/aimatters/5-3/AIMatters-5-3-05-Trewin.pdf" rel="noopener noreferrer"&gt;https://sigai.acm.org/static/aimatters/5-3/AIMatters-5-3-05-Trewin.pdf&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Microsoft Research. “AI Fairness and Disability.” Project page and publications. &lt;a href="https://www.microsoft.com/en-us/research/project/ai-fairness-and-disability/publications/" rel="noopener noreferrer"&gt;https://www.microsoft.com/en-us/research/project/ai-fairness-and-disability/publications/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Microsoft. “Shrinking the 'data desert': Inside efforts to make AI systems more inclusive of people with disabilities.” Microsoft Source. &lt;a href="https://news.microsoft.com/source/features/diversity-inclusion/shrinking-the-data-desert/" rel="noopener noreferrer"&gt;https://news.microsoft.com/source/features/diversity-inclusion/shrinking-the-data-desert/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Global Disability Innovation Hub. “Changing lives through AI: a new Centre for Digital Language Inclusion.” 2025. &lt;a href="https://www.disabilityinnovation.com/news/cdli" rel="noopener noreferrer"&gt;https://www.disabilityinnovation.com/news/cdli&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Global Disability Innovation Hub. “Prof Catherine Holloway profile.” &lt;a href="https://www.disabilityinnovation.com/who-we-are/our-team/dr-catherine-holloway" rel="noopener noreferrer"&gt;https://www.disabilityinnovation.com/who-we-are/our-team/dr-catherine-holloway&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Speech Accessibility Project, University of Illinois Urbana-Champaign. &lt;a href="https://speechaccessibilityproject.beckman.illinois.edu/" rel="noopener noreferrer"&gt;https://speechaccessibilityproject.beckman.illinois.edu/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Nakalembe, C. et al. NASA Harvest and University of Maryland work on East African smallholder agriculture, as reported in Rest of World, 12 March 2026.&lt;/li&gt;
-&lt;li&gt;Scope UK. Statements by Mark Hodgkinson, Chief Executive, at DWP roundtable, 3 February 2026. &lt;a href="https://www.scope.org.uk/" rel="noopener noreferrer"&gt;https://www.scope.org.uk/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;European Accessibility Act. Directive (EU) 2019/882, in force 28 June 2025. &lt;a href="https://ec.europa.eu/social/main.jsp?catId=1202" rel="noopener noreferrer"&gt;https://ec.europa.eu/social/main.jsp?catId=1202&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;European Union. “Artificial Intelligence Act.” Regulation (EU) 2024/1689. &lt;a href="https://artificialintelligenceact.eu/" rel="noopener noreferrer"&gt;https://artificialintelligenceact.eu/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;US Access Board. “Section 508 Standards.” &lt;a href="https://www.access-board.gov/ict/" rel="noopener noreferrer"&gt;https://www.access-board.gov/ict/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;US Department of Justice. “ADA Title II Web Content and Mobile Apps Rule.” Final rule published April 2024, compliance dates 2026-2027. &lt;a href="https://www.ada.gov/resources/2024-03-08-web-rule/" rel="noopener noreferrer"&gt;https://www.ada.gov/resources/2024-03-08-web-rule/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;W3C. “Accessibility of AI Systems (AI-Accessibility).” WAI task force, 2024-2026. &lt;a href="https://www.w3.org/WAI/" rel="noopener noreferrer"&gt;https://www.w3.org/WAI/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Bender, E. M., Gebru, T., McMillan-Major, A. and Shmitchell, S. “On the Dangers of Stochastic Parrots.” FAccT 2021. &lt;a href="https://dl.acm.org/doi/10.1145/3442188.3445922" rel="noopener noreferrer"&gt;https://dl.acm.org/doi/10.1145/3442188.3445922&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Shew, A. “Against Technoableism: Rethinking Who Needs Improvement.” W. W. Norton, 2023.&lt;/li&gt;
-&lt;li&gt;Treviranus, J. “The Three Dimensions of Inclusive Design.” Inclusive Design Research Centre, OCAD University. &lt;a href="https://legacy.inclusivedesign.ca/" rel="noopener noreferrer"&gt;https://legacy.inclusivedesign.ca/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Muckrack. “Gus Alexiou journalist profile.” &lt;a href="https://muckrack.com/gus-alexiou/articles" rel="noopener noreferrer"&gt;https://muckrack.com/gus-alexiou/articles&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Equality and Human Rights Commission. “Artificial intelligence, machine learning and automated decision-making: our guidance.” 2024-2025. &lt;a href="https://www.equalityhumanrights.com/" rel="noopener noreferrer"&gt;https://www.equalityhumanrights.com/&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-
-&lt;p&gt;&lt;a class="article-body-image-wrapper" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fos7pdncawa0mgqcin0gf.png"&gt;&lt;img alt="Tim Green" height="100" src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fos7pdncawa0mgqcin0gf.png" width="100" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tim Green&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;UK-based Systems Theorist &amp;amp; Independent Technology Writer&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Tim explores the intersections of artificial intelligence, decentralised cognition, and posthuman ethics. His work, published at &lt;a href="https://smarterarticles.co.uk" rel="noopener noreferrer"&gt;smarterarticles.co.uk&lt;/a&gt;, challenges dominant narratives of technological progress while proposing interdisciplinary frameworks for collective intelligence and digital stewardship.&lt;/p&gt;
-
-&lt;p&gt;His writing has been featured on Ground News and shared by independent researchers across both academic and technological communities.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ORCID:&lt;/strong&gt; &lt;a href="https://orcid.org/0009-0002-0156-9795" rel="noopener noreferrer"&gt;0009-0002-0156-9795&lt;/a&gt; &lt;br /&gt;
-&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:tim@smarterarticles.co.uk"&gt;tim@smarterarticles.co.uk&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Listen to the free weekly &lt;a href="https://smarterarticles.captivate.fm/listen" rel="noopener noreferrer"&gt;SmarterArticles Podcast&lt;/a&gt;&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:00:00 GMT</pubDate><guid>856ac691a84735f03e315a5bd82e1f3f</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Dev.to] I made a 100% offline dev toolkit in one HTML file - no dependencies, no ads</title><link>https://dev.to/unpro_gamer_141/i-made-a-100-offline-dev-toolkit-in-one-html-file-no-dependencies-no-ads-2h3h</link><description>&lt;h2&gt;
-  
-  
-  🧰 DevUtils – The toolkit for developers that you never knew you needed
-&lt;/h2&gt;
-
-&lt;p&gt;I was getting really tired of having to open a lot of different websites just to format my JSON or generate a UUID or test a regex. So I decided to build a &lt;em&gt;single HTML page&lt;/em&gt;* that can do all of these things. And it works completely offline.&lt;/p&gt;
-
-&lt;h3&gt;
-  
-  
-  ✨ What is included in DevUtils
-&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;JSON Formatter / Validator / Minifier&lt;/strong&gt; – DevUtils can instantly clean up your JSON&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Base64 Encoder / Decoder&lt;/strong&gt; – DevUtils can encode text or decode Base64 strings&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;UUID v4 Generator&lt;/strong&gt; – DevUtils can generate a UUID with one click and copy it to your clipboard&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Unix Timestamp Converter&lt;/strong&gt; – DevUtils can convert seconds into a date that you can read easily. And it can also do the opposite&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Regex Tester&lt;/strong&gt; – DevUtils can test patterns with flags like g, i and m&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Text Diff Checker&lt;/strong&gt; – DevUtils can compare two texts and show you exactly what has changed&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Color Picker&lt;/strong&gt; – DevUtils can let you pick any color and get the HEX, RGB and HSL values away&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;QR Code Generator&lt;/strong&gt; – DevUtils can generate QR codes from any text or URL&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;
-  
-  
-  🚀 What makes DevUtils different from tools
-&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DevUtils has zero dependencies&lt;/strong&gt; – DevUtils does not need npm or a CDN or any build tools&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DevUtils works completely offline&lt;/strong&gt; – DevUtils works without the internet and you can use it anywhere&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DevUtils loads really fast&lt;/strong&gt; – DevUtils does not make you wait for frameworks or APIs to load&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DevUtils is just one file&lt;/strong&gt; – the &lt;code&gt;index.html&lt;/code&gt; file. You can just drop it anywhere and start using DevUtils&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;
-  
-  
-  🎯 You can try DevUtils live
-&lt;/h3&gt;
-
-&lt;p&gt;👉 &lt;strong&gt;&lt;a href="https://unprogamer141.github.io/DevUtils/" rel="noopener noreferrer"&gt;https://unprogamer141.github.io/DevUtils/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3&gt;
-  
-  
-  📦 DevUtils is on GitHub
-&lt;/h3&gt;
-
-&lt;p&gt;👉 &lt;strong&gt;&lt;a href="https://github.com/unprogamer141/DevUtils" rel="noopener noreferrer"&gt;https://github.com/unprogamer141/DevUtils&lt;/a&gt;&lt;/strong&gt; – if you think DevUtils is useful you can star it&lt;/p&gt;
-
-&lt;h3&gt;
-  
-  
-  💬 I want to hear your thoughts, on DevUtils
-&lt;/h3&gt;
-
-&lt;p&gt;I built DevUtils for my use but I really want to know what other tools you would like to see added to DevUtils. What is missing from DevUtils? What would make you use DevUtils every day?&lt;/p&gt;
-
-&lt;p&gt;Please let me know in the comments.. If you like DevUtils please share it with other developers.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 10:59:50 GMT</pubDate><guid>7e06da09620e7209c374d142eee09ebe</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Habr] Когда документация заканчивается, системный аналитик начинает читать код</title><link>https://habr.com/ru/articles/1065212/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/adb/ff4/f5e/adbff4f5e8dbaebbe918e42dc6855561.png" /&gt;&lt;p&gt;&lt;strong&gt;Как восстановить архитектуру распределенной системы по Git-репозиториям, конфигурации и исходному коду&lt;/strong&gt;  &lt;/p&gt;&lt;p&gt;Системному аналитику далеко не всегда достается система с актуальной документацией и готовыми архитектурными схемами. Иногда единственным достоверным источником информации остается то, что реально работает в production: развернутые сервисы, их конфигурация и исходный код.&lt;/p&gt;&lt;p&gt;В этой статье на практическом примере я покажу, как восстанавливал AS-IS архитектуру существующей подсистемы: от определения фактически работающих компонентов и поиска соответствующей версии исходного кода до анализа Java Spring-приложения, его Kafka-потоков, REST-интеграций, работы с MongoDB, retry и обработки ошибок. Результатом стала архитектурная модель и диаграмма последовательности, построенные на основании фактической реализации.&lt;/p&gt;&lt;p&gt;Статья в первую очередь рассчитана на системных аналитиков. Ее цель не в том, чтобы научить читать Java-код как разработчик, а показать практическую методику: куда смотреть в незнакомом репозитории, как выбирать значимые участки кода и как превращать найденные технические детали в понятное описание поведения и архитектуры системы.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1065212/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1065212#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:56:28 GMT</pubDate><guid>fd293fdf12066f06c86d33376d317d8c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] HWMON Fixes For Linux 7.2-rc7: "Most Of Them Fixing Critical Or High Severity Bugs"</title><link>https://www.phoronix.com/news/Linux-7.2-rc7-HWMON</link><description>It's been another busy week in the Linux kernel camp with increased patch activity continuing due to AI/LLM coding agents / bots continuing to uncover different defects in the open-source codebase. The hardware monitoring (HWMON) subsystem saw many fixes this week for issues mostly raised by the Sashiko AI bot with the issues being described as mostly critical or high severity bugs...</description><pubDate>Sat, 08 Aug 2026 10:55:33 GMT</pubDate><guid>bf277ab1dbf8114df6b867e282a32bde</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] [Перевод] Победить Hibernate в тестах. Возможно?</title><link>https://habr.com/ru/companies/spring_aio/articles/1068176/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/db9/a98/561/db9a985613e4dd7eaa56d917bd4ff71a.png" /&gt;&lt;p&gt;Победить Hibernate в тестах. Сможем?&lt;/p&gt;&lt;p&gt;Всем, привет! На связи Михаил Поливаха, технический лидер &lt;a href="https://github.com/axelixlabs/axelix"&gt;Open Source проекта Axelix&lt;/a&gt; (проект, посвященный помочь вам идентифицировать частые проблемы в Java server-side приложениях, в т.ч в рамках работы с Hibernate).&lt;/p&gt;&lt;p&gt;Данная, последняя статья является продолжением небольшой серии статей ответов на вопросы, которые возникли у участников Spring АйО Академии в рамках программы Hibernate. Я рассмотрю оставшиеся последние вопросы, а именно:&lt;/p&gt;&lt;p&gt;&lt;em&gt;“Можно ли в тестах как-то проверить, что Hibernate под капотом делает что-то страшное?”&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Тут очень важно не давать вам “рыбу”, а научить вас рыбачить, т.е. дать вам некоторый фреймворк о том, что стоит держать в уме при работе с Hibernate.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068176/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068176#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:46:18 GMT</pubDate><guid>2b2637b86fbd324fea1093edb2dbba85</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Музей Кронпринц</title><link>https://habr.com/ru/articles/1068182/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/f05/1a4/e10/f051a4e106ee5a7320f25375940586d0.jpeg" /&gt;&lt;p&gt;Намедни посетили ещё один замечательный калининградский музей именуемый "Кронпринц" и размещенный в одноименной бывшей немецкой оборонительной казарме XVIII века.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068182/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068182#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:46:12 GMT</pubDate><guid>263f0937d46d90ef2620193236246b1e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] AI Helped Create A DirectX 11 Driver For QEMU VMs</title><link>https://www.phoronix.com/news/Triton-DirectX-11-QEMU-Driver</link><description>Thanks in part to the power of Claude Opus 5 and Claude Fable 5, a new Windows DirectX 11 driver for QEMU has been created to help improve graphics acceleration for Microsoft Windows guests running under QEMU virtual machines...</description><pubDate>Sat, 08 Aug 2026 10:40:14 GMT</pubDate><guid>8e93353eb6ac9ee0e12cccc00124f45a</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] Как ИИ забраковал планету, а мы её всё равно нашли</title><link>https://habr.com/ru/articles/1068098/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/69a/e17/8a9/69ae178a9c4fc928fb0a1c31287fcecb.jpg" /&gt;&lt;p&gt;В данной статье я хотел бы описать как была открыта планета TOI-1899 b, почему эта планета интересная, что необычного было в её открытии.&lt;/p&gt;&lt;p&gt;ИИ не справился, а мы смогли.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068098/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068098#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:36:53 GMT</pubDate><guid>1444faf49f5992970ce41c42264aad7d</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] Linux 7.2-rc7 Adding Support For The Most Unique Or Very Funky Gaming Controller</title><link>https://www.phoronix.com/news/Linux-7.2-rc7-Input-Changes</link><description>The input subsystem fixes for the week include a number of AI-driven patches to address various information leaks, out-of-bounds accesses, validation fixes, and other coding issues that have turned up recently. Plus some device quirks and also adding support for a rather funky gaming controller to the common XPad Linux driver used by many different gaming controllers...</description><pubDate>Sat, 08 Aug 2026 10:25:56 GMT</pubDate><guid>8620bd1223b64de0361bd74686b1ae7f</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] Безопасность в cloud-native: главные риски и способы защиты</title><link>https://habr.com/ru/companies/cloud_ru/articles/1067052/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/5f9/12c/6a1/5f912c6a113052adee4fe8d689c49ccf.png" /&gt;&lt;p&gt;В cloud-native-среде безопасность давно не ограничивается защитой периметра. Уязвимость может появиться в IaC-шаблоне, попасть в контейнерный образ, пройти через CI/CD и проявиться уже в продакшене. &lt;/p&gt;&lt;p&gt;Тема очень сложная, поэтому когда я наткнулся на большой &lt;a href="https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md"&gt;англоязычный материал&lt;/a&gt; о cloud-native-безопасности в публичном репозитории Security Technical Advisory Group, то сразу решил его перевести. &lt;/p&gt;&lt;p&gt;&lt;strong&gt;Cобрал практическое саммари: какие риски возникают на этапах разработки, сборки, развертывания и эксплуатации (runtime) и какими механизмами их закрывают — от DevSecOps и защиты цепочки поставки до Zero Trust и политик для работающих нагрузок.&lt;/strong&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067052/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067052#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:23:25 GMT</pubDate><guid>62e5f5249f733c081d35bcc9b24afbef</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] Apple Introduces Leasing Program for iPhones and Other Devices</title><link>https://www.nytimes.com/2026/07/28/technology/apple-leasing-program.html</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220390"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:16:01 GMT</pubDate><guid>2df669784107c8f14c64d4dce8454c87</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] New Amazon Data Center Is Set to Have the Most Polluting Power Plant in the U.S.</title><link>https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220350"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:07:06 GMT</pubDate><guid>b29f781dc36e9c69dae0be5cbbf6c78d</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] US Military's Cyber Command Unit Grapples with Cluster of Deaths by Suicide</title><link>https://www.bloomberg.com/news/articles/2026-08-06/us-military-s-cyber-command-unit-grapples-with-cluster-of-deaths-by-suicide</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220339"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:04:25 GMT</pubDate><guid>b8aff8aa9cfdefa9af20c2e62cac2559</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] Лопнет ли пузырь на рынке ИИ? Разбираем потери, долги и производительность</title><link>https://habr.com/ru/companies/bothub/articles/1068046/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/05c/cbb/563/05ccbb5636a308986b8b5a16ef7e8e98.jpeg" /&gt;&lt;p&gt;Нынешняя экономика искусственного интеллекта — это история о потерях, доходах, смене стиля жизни и интернет-среды, а также о разрыве между ожиданиями и реальностью. Инвесторы пока имеют деньги и терпение, чтобы вкладываться в ИИ-компании Anthropic, OpenAI и другие, а те, в свою очередь, демпингуют рынок и уже смотрят на IPO. На микроуровне (отдельный ИИ-агент) мы видим неэффективность и потери, а на рынке мы видим огромные долги, которые не подкреплены реальной производительностью. А между молотом и наковальней — люди, пытающиеся увеличить продуктивность, получая лишь «2x», а не обещанные «10x».&lt;/p&gt;&lt;p&gt;Но ИИ кардинально поменял нашу жизнь, и многие из нас пользуются им каждый день, повышая свою продуктивность или уменьшая свою когнитивную нагрузку.&lt;/p&gt;&lt;p&gt;Так лопнет ли пузырь? Или он уже лопнул, а мы и не заметили?&lt;/p&gt;&lt;p&gt;В этой статье мы разберем потери из-за ИИ, перегрев долгового рынка и правда ли, что продуктивность увеличивается в 10 раз, если купить подписку на Claude или ChatGPT?&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068046/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068046#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:00:20 GMT</pubDate><guid>b468f565713cdcd3aa04575d8ef531ce</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] FlatAdapter для преобразования иерархических структур</title><link>https://habr.com/ru/articles/1068172/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/579/20f/f11/57920ff118d57d61835b38260adee86e.png" /&gt;&lt;p&gt;Превращаем иерархические структуры в набор плоских строк готовых для импорта в БД&lt;/p&gt;&lt;p&gt;&lt;code&gt;flat-adapter&lt;/code&gt; преобразует нетипизированные вложенные mapping в детерминированный список плоских строк. Библиотека умеет приводить scalar-типы, обрабатывать optional-поля, извлекать значения по путям, разворачивать вложенные FlatAdapter-ы и строить декартово произведение списков.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068172/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068172#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:46:13 GMT</pubDate><guid>4508eba5d95a5b977ebe8bbc4b45993f</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] [Перевод] Драгоценный камень в сердце квантовой физики</title><link>https://habr.com/ru/articles/1066972/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/98b/0a2/f0b/98b0a2f0b53e46eb046a608b7ceeed0c.jpg" /&gt;&lt;p&gt;Физики открыли геометрический объект, похожий на&amp;nbsp;драгоценный камень, который значительно упрощает расчёты взаимодействий частиц и ставит под&amp;nbsp;сомнение представление о&amp;nbsp;том, что&amp;nbsp;пространство и время являются фундаментальными составляющими реальности.&amp;nbsp;&lt;/p&gt;&lt;p&gt;«Это совершенно новое открытие, и оно намного проще всего того, что&amp;nbsp;делалось ранее»,&amp;nbsp;— сказал &lt;a href="http://www.maths.ox.ac.uk/contact/details/hodges" rel="noopener noreferrer nofollow"&gt;Эндрю Ходжес&lt;/a&gt;, физик‑математик из&amp;nbsp;Оксфордского университета, следивший за&amp;nbsp;этой работой.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Открытие того, что&amp;nbsp;взаимодействия частиц&amp;nbsp;— самые базовые явления в&amp;nbsp;природе&amp;nbsp;— могут&amp;nbsp;быть следствием геометрии, значительно продвигает многолетние усилия по&amp;nbsp;переформулировке квантовой теории поля&amp;nbsp;— свода законов, описывающих элементарные частицы и их взаимодействия. Взаимодействия, которые ранее рассчитывались с&amp;nbsp;помощью математических формул, состоящих из&amp;nbsp;тысяч слагаемых, теперь можно описать путём вычисления объёма соответствующего «&lt;a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80" rel="noopener noreferrer nofollow"&gt;амплитуэдра&lt;/a&gt;&lt;a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80&amp;quot;&amp;gt;%D0%B0%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80%D0%B0&amp;lt;/a&amp;gt;%C2%BB" rel="noopener noreferrer nofollow"&gt;»&lt;/a&gt;, похожего на&amp;nbsp;драгоценный камень, что&amp;nbsp;даёт эквивалентное выражение, состоящее из&amp;nbsp;одного слагаемого.&amp;nbsp;&lt;/p&gt;&lt;p&gt;«Степень эффективности модели просто ошеломляет»,&amp;nbsp;— сказал &lt;a href="http://www-personal.umich.edu/~jbourj/" rel="noopener noreferrer nofollow"&gt;Джейкоб Бурджайли&lt;/a&gt;, физик‑теоретик из&amp;nbsp;Гарвардского университета и один из&amp;nbsp;исследователей, разработавших эту новую идею. «Теперь на&amp;nbsp;бумаге можно без&amp;nbsp;труда выполнять вычисления, которые раньше&amp;nbsp;были невозможны даже с&amp;nbsp;помощью компьютера».&amp;nbsp;&lt;/p&gt;&lt;p&gt;Новая геометрическая версия квантовой теории поля также может облегчить поиск теории квантовой гравитации, которая плавно соединила&amp;nbsp;бы крупномасштабную и мелкомасштабную картины Вселенной. Попытки, предпринятые до&amp;nbsp;сих пор с&amp;nbsp;целью включения гравитации в&amp;nbsp;законы физики на&amp;nbsp;квантовом уровне, наталкивались на&amp;nbsp;абсурдные бесконечности и глубокие парадоксы. Амплитуэдр или&amp;nbsp;подобный ему геометрический объект мог&amp;nbsp;бы помочь, устранив два глубоко укоренившихся принципа физики: локальность и унитарность.&amp;nbsp;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1066972/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1066972#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:32:18 GMT</pubDate><guid>d7bfc36fa68894ab3adf0c45f05d5a42</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] От болтливых LLM-агентов к управляемым системам</title><link>https://habr.com/ru/articles/1068168/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/350/01e/d70/35001ed70f20ae3dc7a4dcb06ab98adb.jpg" /&gt;&lt;p&gt;Когда достаточно одного LLM-агента, когда нужна мультиагентная система, а когда лучше вообще использовать обычный workflow? Разбираем современный стек агентных приложений: ReAct, Agent SDK, графы, durable execution, sandbox, память, протоколы, evals и безопасность — с упором на практический выбор архитектуры для production.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068168/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068168#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:24:35 GMT</pubDate><guid>25aa7ab83c0394e2a64755fbbde68890</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Bubble-свадьба и как я докатился до такой жизни — путь соло-разработчика</title><link>https://habr.com/ru/articles/1068096/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/e54/aa7/e48/e54aa7e48ccc75d0ccd017559b83f18c.jpeg" /&gt;&lt;p&gt;И это не самое странное, что я делал: были ещё RPG в телеге с озвучкой, пиксельная карта России с внутренней экономикой, сервис который генерирует поздравительные треки. Что-то из этого доехало до релиза и заработало, что-то висит на полпути. В этой статье пробегусь по всем проектам и по пути отвечу на вопрос, который сам себе задавал: почему раньше половина проектов не доезжала до конца, а сейчас - доезжает. Если вы тоже что-то пилите с ИИ - думаю, будет знакомо.&lt;/p&gt;&lt;p&gt;В статье кратко мой пусть, и что меня связывало с играми и ИИ, поехали)&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068096/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068096#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:22:07 GMT</pubDate><guid>57b2a6831508a0ce4e4b6d17cc7b7047</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] DeepMind's WeatherNext model achieves breakthrough forecasting cyclones</title><link>https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220126"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:18:50 GMT</pubDate><guid>ea121f25d18711cebc04f6c1fe7a5f34</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] Пишем терабайты видео на диск в Go и не даем ОС сожрать всю память</title><link>https://habr.com/ru/articles/1068166/</link><description>&lt;p&gt;Выкатили мы первый релиз в прод (100 камер), обрадовали клиентов, начали работать. Прошел где-то час, полетели алерты. Залезаю на сервак, смотрю htop – а там свободно 100 метров ОЗУ. Пу-пу-пу-пу. Нужно внести уточнение что боевой сервер имел 32 гига озу. Ожидаемое поведение было то что процессор отдыхает, сетевуха переваривает трафик, озу 250-300 МБ, диски нагружены не сильно. Так что, когда видишь такие цифры в htop, начинаешь винить себя и свои кривые руки, написавшие это "Г". Но все же решили пойти в Гугл, чатгпт и тому подобное. Благо, ответ нашелся быстро, и посыпать голову пеплом перестали. &lt;/p&gt;&lt;p&gt;Код оказался не вообще не причем, память сожрал сам Линукс. Если когда-нибудь вы писали тонны данных на диск, я думаю вы уже поняли в чем дело. Есть такой «невидимый враг» как страничный кэш (Page Cache). Вот именно он и был корнем этой проблемы.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Как&amp;nbsp;работает страничный кеш и что&amp;nbsp;с&amp;nbsp;ним делать?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Когда ваша функция, которая должна писать данные на диск пишет данные, на самом деле она не пишет их на диск. Она пишет их в ОЗУ. Логика ядра Линукса проста и банальна, и она направленна на ускорение «отзывчивости» системы, всю суть можно объяснить так: «О, только что записали сотню гигабайт данных, наверное, скоро понадобится эти данные прочитать. Оставлю-ка я их в кеше, пользователь будет рад что так быстро смог их прочитать.» И так гигабайт за гигабайтом, пока в сервере не кончится физическая память.&lt;/p&gt;&lt;p&gt;Типичное решение проблемы – пишем скрипт, который раз в час делает &lt;code&gt;echo 3 &amp;gt; /proc/sys/vm/drop_caches&lt;/code&gt;. Ну а кто-то просто забивает и позволяет системе убивать случайные процессы через OOM Killer. Но мы же пишем отказоустойчивую штуку. Нам такое не подходит. Задача объяснить ядру ОС, что наши fMP4 сегменты видеоархива — это write-only мусор на небольшое количество времени (т.к если клиент не хочет долго хранить записи, то архив чистится, а если хочет – мы отправляем архив после N времени хранения в S3, а локальную копию тоже чистим). Так что все должно работать по принципу – записал и забыл.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068166/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068166#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:18:31 GMT</pubDate><guid>7d87a073d84ff2d645de48d2dc9d15e4</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Что я узнала, когда выгрузила весь реестр российского ПО и проанализировала все 32 тысячи записей</title><link>https://habr.com/ru/articles/1068164/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/87d/ee1/c8c/87dee1c8c6349264b7816063a936085e.png" /&gt;&lt;p&gt;Я айти-юрист и почти каждую неделю вношу чужой софт в реестр российского ПО. Реестр я вижу изнутри: заявления, экспертиза, протоколы, отказы. Но обычно ты смотришь на него глазами одной заявки. А что, если посмотреть на весь реестр сразу?&lt;/p&gt;&lt;p&gt;Я выгрузила его целиком на 7 августа 2026 года. Получилось 32 071 запись. Я проанализировала, как реестр рос, из чего он состоит, кто туда вступает и на каких основаниях компании заявляют права на свой код. &lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068164/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068164#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:07:44 GMT</pubDate><guid>5ba15d064023a77d060421ec4a6d0a20</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] 16 и ещё 1 причина знать SHAP</title><link>https://habr.com/ru/articles/1067656/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/bfc/16c/261/bfc16c2619c53d74de766b9cfa6acfd6.png" /&gt;&lt;p&gt;Мы знаем его как "метод на основе Теории Игр", "фреймворк" и издалека чувствуем, что это он, видя красные и синие полоски. Но что сделало этот метод таким популярным? Как он родился и почему, после релиза в 2017 году, разные группы исследователей добавляли в него новые расширения и куда этот инструмент пришел сейчас?  &lt;/p&gt;&lt;p&gt;Предлагаю впервые за долгое время потрогать от меня статью без кода —&amp;nbsp;но с картинками. В ней вы узнаете ответы на вопросы и откроете для себя ровно &lt;strong&gt;15 расширений SHAP.  А почему причин 17 — тоже увидите из текста. &lt;/strong&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067656/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067656#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:07:17 GMT</pubDate><guid>8caf5fc3c6468815d546afc51f0e3788</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Как изобрели письменность? Часть 4. Крит, галеры, два письма: о непростой истории греческих алфавитов</title><link>https://habr.com/ru/companies/ruvds/articles/1067990/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/03e/fdd/200/03efdd20018e98640298266a956fc616.webp" /&gt;&lt;p&gt;Греки — один из немногих народов с письменной традицией, чья история отслеживается с бронзового века и продолжается поныне. По древности письменной традиции эллины вполне могут поспорить с китайцами, пусть и заимствовали свою первую письменность у другого народа. С I тысячелетия до нашей эры на греческом языке, с уже знакомой нам письменностью на основе финикийской, начинает развиваться одна из важнейших на планете художественных и научно-философских литературных традиций. Именно носители греческого языка сумели сплавить воедино собственную живую и оригинальную мысль, огромное наследие древних цивилизаций Египта и Месопотамии, религиозные учения иудеев и иранцев, и даже метафизические концепции из далёкой Индии. Из греческой письменности развились сначала римская латиница, а затем и славянская кириллица. Попробуем проследить, как греки прошли путь от суровых северных варваров эпохи бронзы к самому образованному народу античности и как на нём умудрились потерять и забыть свою первую письменность.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067990/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067990#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:01:15 GMT</pubDate><guid>cf630146057aaaa45f0e531f5583673a</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] В ДНК человека нашли «память» о предках, которых мы не знаем</title><link>https://habr.com/ru/companies/ru_mts/articles/1067416/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/b65/fe0/cbd/b65fe0cbdedb2aa51749533e29e14ca1.jpeg" /&gt;&lt;p&gt;Мы привыкли думать, что историю человечества можно прочитать по костям и орудиям. Археологи копают, находят останки, сравнивают их с уже известными образцами и постепенно складывают пазл древа эволюции человека. Но иногда прошлое оставляет следы совсем в другом месте — прямо внутри нас.&lt;/p&gt;&lt;p&gt;Недавняя работа команды специалистов из Калифорнийского университета в Беркли показала, что в геномах живущих сейчас людей спрятаны фрагменты от группы, о которой до сих пор не было никаких материальных свидетельств. Ни костей, ни зубов — ничего. Только генетическая память, которую удалось вытащить на свет новым вычислительным методом.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067416/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067416#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:00:15 GMT</pubDate><guid>c077942b0c74abf98fcb12b045021a8f</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Lobsters] They don’t make ’em like Sublime Text anymore</title><link>https://dbushell.com/2026/08/07/sublime-text/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/uny1fo/they_don_t_make_em_like_sublime_text"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 08:57:33 GMT</pubDate><guid>decef42bca91f3ab04a902b893d68559</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] Почему голосовые ИИ‑агенты перебивают людей: замерил на боевом API и починил правилами русского синтаксиса</title><link>https://habr.com/ru/articles/1068162/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/123/e1a/515/123e1a515f92dbccf74749c21218a484.png" /&gt;&lt;p&gt;Все голосовые платформы решают, что&amp;nbsp;человек договорил, по&amp;nbsp;таймеру тишины. Я замерил, во&amp;nbsp;что&amp;nbsp;это выливается на&amp;nbsp;живой русской речи, и получил цифру, которая меня удивила:&amp;nbsp;&lt;strong&gt;из 1275&amp;nbsp;мс задержки перед ответом 1200&amp;nbsp;мс&amp;nbsp;— это ожидание секундомера, и только 75&amp;nbsp;мс&amp;nbsp;— работа самой модели.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Ниже&amp;nbsp;— методика, замеры и решение, которое даёт 316&amp;nbsp;мс вместо 1200&amp;nbsp;при&amp;nbsp;двух обрывах вместо тридцати восьми. Всё воспроизводимо, детектор&amp;nbsp;— на&amp;nbsp;правилах, без&amp;nbsp;обучения и без&amp;nbsp;GPU.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068162/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068162#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:52:14 GMT</pubDate><guid>eef35abb1d520614a5a2488423c72848</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] «Bro, what…?» #1. Первый контакт с crackme на Linux x86-64</title><link>https://habr.com/ru/articles/1068160/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/ff4/0ae/279/ff40ae2799b80224a265528b70aa73bc.png" /&gt;&lt;p&gt;Вы запускаете программу, о которой ничего не знаете. Она вежливо просит строку, а в ответ на ваш ввод насмешливо отвечает: «Bro, what are you trying to do?» И правда, что мы пытаемся сделать? Пытаемся понять ее.&lt;/p&gt;&lt;p&gt;Перед нами crackme – программа-головоломка, написанная для тренировки навыков обратной разработки: бинарник под Linux x86-64 без исходников и документации, который издевается над каждым, кто не смог его разгадать. Это первая статья цикла из трех о гибридном анализе крякми &lt;strong&gt;Getting Started Keygen&lt;/strong&gt; (Mazzottis). Мы осмотрим файл штатными утилитами, найдем &lt;code&gt;main&lt;/code&gt; в Ghidra, расшифруем «бессмысленные» имена переменных в реальную раскладку стека и подтвердим гипотезы в GDB. По пути встретим оптимизированный пролог без RBP, «хитрое» беззнаковое условие и &lt;code&gt;std::string&lt;/code&gt;, спрятавшийся в трех переменных, которые на первый взгляд никак не связаны.&lt;/p&gt;&lt;p&gt;Во второй части цикла – мутационное тестирование и реконструкция скрытой структуры, в третьей – полный разбор хеш-функции и восстановление алгоритма на Python.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068160/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068160#habracut"&gt;Читать первую часть&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:47:08 GMT</pubDate><guid>661746c87551d1f08f63d408a753ef5c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] RCE-уязвимость в ИИ-редакторах кода угрожала 50 млн разработчиков. Разбираемся, что произошло</title><link>https://habr.com/ru/companies/selectel/articles/1067406/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/836/217/a94/836217a94304ea0d4db1f0e6941c9dcd.jpg" /&gt;&lt;p&gt;Исследователи AISLE &lt;a href="https://aisle.com/blog/aisle-discovers-1-click-rce-vulnerability-in-cursor-vs-code-and-google-antigravity"&gt;обнаружили критическую уязвимость&lt;/a&gt;, которая затрагивает Cursor, Microsoft Visual Studio Code и Google Antigravity. Проблема позволяла злоумышленнику добиться удаленного выполнения кода (RCE), если разработчик открывал специально подготовленную ссылку в сообщении Git-коммита.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Несмотря на то, что исправления уже выпущены всеми тремя вендорами, инцидент показал новую проблему всей экосистемы AI-IDE — наследование уязвимостей между продуктами, построенными на общей кодовой базе.&lt;strong&gt; &lt;/strong&gt;По оценке исследователей, потенциально под угрозой могли находиться около 50 миллионов пользователей.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067406/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067406#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:00:10 GMT</pubDate><guid>c120c50fae79212e9a0213e919d9772e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Что видит DPI, и что мы попробовали у него отобрать</title><link>https://habr.com/ru/articles/1068156/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/dbf/94e/66c/dbf94e66cc2f1776134e4bfbcf449a43.png" /&gt;&lt;p&gt;Последние пару лет я работаю в команде, которая занимается устойчивой к DPI (Deep Packet Inspection) туннельной инфраструктурой — по сути, альтернативой классическому VPN.&lt;/p&gt;&lt;p&gt;Когда начинаешь заниматься этим всерьёз, довольно быстро обнаруживается неприятная вещь: шифрование само по себе давно уже не означает, что трафик нельзя распознать. Содержимое пакетов действительно можно скрыть, но пакет от этого не исчезает. У него остаются размер, направление, время появления; соединение начинается с определённой последовательности сообщений, TLS-клиент определённым образом представляется серверу, поток ускоряется, замедляется, замирает и снова начинает передавать данные.&lt;/p&gt;&lt;p&gt;Для человека всё это выглядит как куча зашифрованных байтов. Для классификатора — как вполне пригодный набор признаков.&lt;/p&gt;&lt;p&gt;Поэтому значительная часть нашей работы в итоге свелась не к тому, чтобы «зашифровать ещё сильнее», а к более практическому вопросу: что именно видит наблюдатель снаружи и по каким признакам он может решить, что перед ним не браузерный трафик, а туннель.&lt;/p&gt;&lt;p&gt;Об этом и расскажу.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068156/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068156#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:00:10 GMT</pubDate><guid>1cb162728db2e583b8eb2aee3e186224</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Погружение в создание приставки для Microsoft MakeCode Arcade</title><link>https://habr.com/ru/articles/1056210/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/6f5/468/ef2/6f5468ef2391ec4303fa2b9b597a87b0.jpg" /&gt;&lt;p&gt;В прошлой статье я рассказывал, как делал Arduboy WOW с применением модулей, но помимо Arduboy мне еще почти также сильно интересовала платформа Microsoft MakeCode Arcade и мне захотелось повторить тоже самое, но с ней. Правда пока я решил ограничиться созданием устройства на макетной плате, чтобы подробнее изучить эту платформу и не отвлекаться на остальное. (Или в будущем сделаю на этой базе полноценную приставку и напишу еще одну статью.)&lt;/p&gt;&lt;p&gt;MakeCode Arcade очень сильно отличается от Arduboy, но в то же время они в сущности обо одном. В двух словах, MakeCode Arcade это не одна приставка, а несколько десятков приставок, игры для которых пишутся в своем редакторе, в браузере. В этой статье я постараюсь рассказать как эта система работает изнутри или как у них получилось сделать столь заманчивую идею реальностью на примере моего устройства на макетной плате, которое я назвал MakeCode Arcade Beast.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1056210/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1056210#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:00:10 GMT</pubDate><guid>f63e52672435d135acf7309984fc4aca</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Голосовой ввод в любое окно Windows за секунду. Офлайн, на CPU, без единого гигабайта torch</title><link>https://habr.com/ru/articles/1068154/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/582/bc4/67b/582bc467b27d4964325dbd4bc81a0a3a.png" /&gt;&lt;p&gt;Голосовой ввод для Windows за ~1 секунду | Полностью локально • CPU • Open Source&lt;/p&gt;&lt;p&gt;Как заставить Whisper распознавать речь почти в 4 раза быстрее на обычном CPU без GPU и без облака. Разбираю архитектуру WhisperType, сужение окна энкодера, потоковую обработку аудио, оптимизацию faster-whisper и подводные камни WinAPI.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068154/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068154#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 07:59:10 GMT</pubDate><guid>1ce234543145643c87a540b665527755</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Записки нейроманта #0 — Claude Code вчера получил лучшее обновление года</title><link>https://habr.com/ru/articles/1068106/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/8f0/304/cb7/8f0304cb784e76f7a62d615c307ce77e.jpg" /&gt;&lt;p&gt;У меня всегда крутится несколько Claude Code. Вчера заметил странное: два агента, работавшие над одной проблемой, сами обменялись сообщениями через сокет uds:/tmp/cc-socks/769334.sock. Раньше такого не было.&lt;/p&gt;&lt;p&gt;Оказалось, в 2.1.224 появился cross-session SendMessage: разные сессии находят друг друга через ListAgents и пишут друг другу напрямую. А в 2.1.225 это заработало и между машинами при включённом remote control. Сейчас 90 процентов работы у меня делает один универсальный агент с огромным контекстом — и вот теперь наконец можно собрать поверх нескольких полноценных Claude Code отдельного координатора.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068106/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068106#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 07:57:48 GMT</pubDate><guid>ce155f3bc1528e5098921218b53b6510</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[SoylentNews] AI Slop Pollutes the CVE Pipeline With Fake Vulns</title><link>https://soylentnews.org/article.pl?sid=26%2F08%2F07%2F0157223&amp;from=rss</link><description>&lt;p class="byline"&gt;&lt;a href="//soylentnews.org/~Arthur+T+Knackerbracket/"&gt;Arthur T Knackerbracket&lt;/a&gt; writes:&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.theregister.com/security/2026/08/03/ai-slop-pollutes-the-cve-pipeline-with-fake-vulns/5282462"&gt;https://www.theregister.com/security/2026/08/03/ai-slop-pollutes-the-cve-pipeline-with-fake-vulns/5282462&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Now AI is making fake vulnerabilities and polluting the ecosystem. A batch of critical- and high-rated SQLite CVEs that appeared in the NVD with CISA-supplied enrichment last week turned out to be technically bogus, according to security researchers, and their path into widely used databases exposes weaknesses in the CVE pipeline.&lt;/p&gt;&lt;p&gt;Software supply chain security outfit JFrog &lt;a href="https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/"&gt;reported&lt;/a&gt; last week that six supposed SQLite vulnerabilities published in a &lt;a href="https://github.com/programmervuln/cveadvisory-"&gt;larger batch&lt;/a&gt; by a new, obscure GitHub repository were all complete garbage. Running the advisories through an AI checker suggested they were likely AI generated, JFrog said, and, upon testing, it found that none of the six SQLite reports, which carried CVSS scores ranging from 9.8 to 7.5, described a reproducible vulnerability.&lt;/p&gt;&lt;p&gt;One, an alleged use-after-free vulnerability in the open source database that Red Hat initially assigned a maximum 10.0 CVSS score to before lowering it, relied on a function that didn't exist in the affected SQLite version. Another UAF vulnerability with a 9.1 CVSS score cited source lines that weren't even related to the supposed flaw. When JFrog tested the accompanying proof-of-concept, it executed a valid query with no memory leaks or errors. The other four SQLite CVEs from the repo that JFrog tested were similarly fake.&amp;nbsp;&lt;/p&gt;&lt;p&gt;The other 49 CVEs in the questionable GitHub repo claimed to be security vulnerabilities in the open-source RAW image processing library libraw and Arduino audio decoding library ESP32-audioI2S. While JFrog didn't test those as extensively, it said all are just as fake as the rest, aside from one which "contained a real bug wrapped in unverified CVE metadata."&amp;nbsp;&lt;/p&gt;&lt;p&gt;A message posted to Openwall's OSS-Security mailing list on Friday &lt;a href="https://www.openwall.com/lists/oss-security/2026/08/01/2"&gt;indicated&lt;/a&gt; that MITRE had rejected the whole repo's worth of vaporous vulnerabilities, but the whole thing should serve as an important lesson, poster and Oracle Solaris engineer Alan Coopersmith pointed out.&lt;/p&gt;&lt;p&gt;"MITRE and most other CNAs which assign CVEs for code they don't produce themselves operate on the honor system, and trust CVE requesters to have verified the information they provide," Coopersmith noted in the OSS-Security post. "The CNA is often not in a position of being able to verify the report themselves."&amp;nbsp;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;a href="https://soylentnews.org/article.pl?sid=26/08/07/0157223&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at SoylentNews.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 07:55:00 GMT</pubDate><guid>74d7bbccc3232e1fdb7cdaf3c54229b0</guid><source url="https://soylentnews.org/index.rss">SoylentNews</source></item><item><title>[Habr] Я печатаю медленнее, чем думаю: локальная диктовка на Whisper для Windows, телефона и Telegram</title><link>https://habr.com/ru/articles/1068152/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/448/2a4/1d3/4482a41d3a59f69c77e49889029ef84e.png" /&gt;&lt;p&gt;Я диктую постоянно: сообщения, заметки, постановку задач — говорить в разы быстрее, чем печатать, а мысль не успевает остыть. Проблема в том, что удобной диктовки, которая не гонит звук в чужое облако, я не нашёл. Так появился PasteTalk: локальная диктовка для Windows по горячей клавише, а вокруг неё — собственный сервер, приложение для телефона и Telegram-бот.&lt;/p&gt;&lt;p&gt;Отдельным требованием стала мама: из-за слабого зрения печатать на телефоне она почти не может, и телефонная часть проектировалась под самый жёсткий случай — одна кнопка на весь экран, крупный шрифт, ошибки словами. Забегая вперёд: правки «для мамы» сделали приложение удобнее и для всех остальных.&lt;/p&gt;&lt;p&gt;Под катом — архитектура, цифры и четыре бага, каждый из которых молча съедал наговорённый текст.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068152/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068152#habracut"&gt;Как это устроено →&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 07:50:44 GMT</pubDate><guid>0c49c390d02bd909f9df9916e9a663f0</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Как я пишу RTS про Марс на Rust вместе с ИИ-агентами: архитектура, ошибки и 400+ тестов</title><link>https://habr.com/ru/articles/1068148/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/f02/add/e62/f02adde6245490b7cd6ceb4611f70cc6.jpg" /&gt;&lt;p&gt;Можно ли одному человеку собрать не демо, а работающую классическую RTS, если почти весь код пишут несколько ИИ-агентов? Я проверяю это на неудобной задаче: Марс 1:1, Rust + wgpu, камера от орбиты до ног робота, отдельная детерминированная симуляция, единая шина команд для человека, сети и ИИ. Разбираю, что уже работает к середине проекта, как устроены научные карты и BUS, почему 15 мс «в API» оказались ожиданием GPU, как тест на одном ПК скрыл сетевой лаг и какие красивые решения пришлось выбросить после измерений.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068148/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068148#habracut"&gt;Читать разбор&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 07:44:40 GMT</pubDate><guid>af0bedd5da1f2d2306c5dd2708262eac</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item></channel></rss>
+&lt;p&gt;The cache-purge incident cost us twenty minutes of degraded performance and an afternoon of forensics, and the root cause was embarrassingly ordinary: we trusted a session cookie to prove &lt;em&gt;intent&lt;/em&gt; when all it proved was &lt;em&gt;identity&lt;/em&gt;. Signed double-submit cookies close that gap without a session store, without poisoning an aggressive page cache, and without a framework — about a hundred lines of PHP 8.4. The three-part check (equal copies, valid signature, unexpired) is what makes it hold up against the subdomain and MITM variants that break the naive version, and the little fork-based test harness is what keeps a future "simplification" from quietly reopening the hole. If your video admin panel changes state on a cookie alone, add the guard before something loads the wrong forum tab for you.&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 11:00:01 GMT</pubDate><guid>fc6d6618b78deb0af43246ae0e81b028</guid><source url="https://dev.to/feed">Dev.to</source></item><item><title>[Hacker News] Now we have a timeline of the OpenAI accidental attack against Hugging Face</title><link>https://simonwillison.net/2026/Aug/7/openai-timeline/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220609"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:57:44 GMT</pubDate><guid>83a56bfafb257cece7efc74654d3a2b6</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] Когда документация заканчивается, системный аналитик начинает читать код</title><link>https://habr.com/ru/articles/1065212/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/adb/ff4/f5e/adbff4f5e8dbaebbe918e42dc6855561.png" /&gt;&lt;p&gt;&lt;strong&gt;Как восстановить архитектуру распределенной системы по Git-репозиториям, конфигурации и исходному коду&lt;/strong&gt;  &lt;/p&gt;&lt;p&gt;Системному аналитику далеко не всегда достается система с актуальной документацией и готовыми архитектурными схемами. Иногда единственным достоверным источником информации остается то, что реально работает в production: развернутые сервисы, их конфигурация и исходный код.&lt;/p&gt;&lt;p&gt;В этой статье на практическом примере я покажу, как восстанавливал AS-IS архитектуру существующей подсистемы: от определения фактически работающих компонентов и поиска соответствующей версии исходного кода до анализа Java Spring-приложения, его Kafka-потоков, REST-интеграций, работы с MongoDB, retry и обработки ошибок. Результатом стала архитектурная модель и диаграмма последовательности, построенные на основании фактической реализации.&lt;/p&gt;&lt;p&gt;Статья в первую очередь рассчитана на системных аналитиков. Ее цель не в том, чтобы научить читать Java-код как разработчик, а показать практическую методику: куда смотреть в незнакомом репозитории, как выбирать значимые участки кода и как превращать найденные технические детали в понятное описание поведения и архитектуры системы.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1065212/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1065212#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:56:28 GMT</pubDate><guid>fd293fdf12066f06c86d33376d317d8c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] HWMON Fixes For Linux 7.2-rc7: "Most Of Them Fixing Critical Or High Severity Bugs"</title><link>https://www.phoronix.com/news/Linux-7.2-rc7-HWMON</link><description>It's been another busy week in the Linux kernel camp with increased patch activity continuing due to AI/LLM coding agents / bots continuing to uncover different defects in the open-source codebase. The hardware monitoring (HWMON) subsystem saw many fixes this week for issues mostly raised by the Sashiko AI bot with the issues being described as mostly critical or high severity bugs...</description><pubDate>Sat, 08 Aug 2026 10:55:33 GMT</pubDate><guid>bf277ab1dbf8114df6b867e282a32bde</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] [Перевод] Победить Hibernate в тестах. Возможно?</title><link>https://habr.com/ru/companies/spring_aio/articles/1068176/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/db9/a98/561/db9a985613e4dd7eaa56d917bd4ff71a.png" /&gt;&lt;p&gt;Победить Hibernate в тестах. Сможем?&lt;/p&gt;&lt;p&gt;Всем, привет! На связи Михаил Поливаха, технический лидер &lt;a href="https://github.com/axelixlabs/axelix"&gt;Open Source проекта Axelix&lt;/a&gt; (проект, посвященный помочь вам идентифицировать частые проблемы в Java server-side приложениях, в т.ч в рамках работы с Hibernate).&lt;/p&gt;&lt;p&gt;Данная, последняя статья является продолжением небольшой серии статей ответов на вопросы, которые возникли у участников Spring АйО Академии в рамках программы Hibernate. Я рассмотрю оставшиеся последние вопросы, а именно:&lt;/p&gt;&lt;p&gt;&lt;em&gt;“Можно ли в тестах как-то проверить, что Hibernate под капотом делает что-то страшное?”&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Тут очень важно не давать вам “рыбу”, а научить вас рыбачить, т.е. дать вам некоторый фреймворк о том, что стоит держать в уме при работе с Hibernate.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068176/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068176#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:46:18 GMT</pubDate><guid>2b2637b86fbd324fea1093edb2dbba85</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Музей Кронпринц</title><link>https://habr.com/ru/articles/1068182/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/f05/1a4/e10/f051a4e106ee5a7320f25375940586d0.jpeg" /&gt;&lt;p&gt;Намедни посетили ещё один замечательный калининградский музей именуемый "Кронпринц" и размещенный в одноименной бывшей немецкой оборонительной казарме XVIII века.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068182/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068182#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:46:12 GMT</pubDate><guid>263f0937d46d90ef2620193236246b1e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] AI Helped Create A DirectX 11 Driver For QEMU VMs</title><link>https://www.phoronix.com/news/Triton-DirectX-11-QEMU-Driver</link><description>Thanks in part to the power of Claude Opus 5 and Claude Fable 5, a new Windows DirectX 11 driver for QEMU has been created to help improve graphics acceleration for Microsoft Windows guests running under QEMU virtual machines...</description><pubDate>Sat, 08 Aug 2026 10:40:14 GMT</pubDate><guid>8e93353eb6ac9ee0e12cccc00124f45a</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] Как ИИ забраковал планету, а мы её всё равно нашли</title><link>https://habr.com/ru/articles/1068098/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/69a/e17/8a9/69ae178a9c4fc928fb0a1c31287fcecb.jpg" /&gt;&lt;p&gt;В данной статье я хотел бы описать как была открыта планета TOI-1899 b, почему эта планета интересная, что необычного было в её открытии.&lt;/p&gt;&lt;p&gt;ИИ не справился, а мы смогли.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068098/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068098#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:36:53 GMT</pubDate><guid>1444faf49f5992970ce41c42264aad7d</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Phoronix] Linux 7.2-rc7 Adding Support For The Most Unique Or Very Funky Gaming Controller</title><link>https://www.phoronix.com/news/Linux-7.2-rc7-Input-Changes</link><description>The input subsystem fixes for the week include a number of AI-driven patches to address various information leaks, out-of-bounds accesses, validation fixes, and other coding issues that have turned up recently. Plus some device quirks and also adding support for a rather funky gaming controller to the common XPad Linux driver used by many different gaming controllers...</description><pubDate>Sat, 08 Aug 2026 10:25:56 GMT</pubDate><guid>8620bd1223b64de0361bd74686b1ae7f</guid><source url="https://www.phoronix.com/rss.php">Phoronix</source></item><item><title>[Habr] Безопасность в cloud-native: главные риски и способы защиты</title><link>https://habr.com/ru/companies/cloud_ru/articles/1067052/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/5f9/12c/6a1/5f912c6a113052adee4fe8d689c49ccf.png" /&gt;&lt;p&gt;В cloud-native-среде безопасность давно не ограничивается защитой периметра. Уязвимость может появиться в IaC-шаблоне, попасть в контейнерный образ, пройти через CI/CD и проявиться уже в продакшене. &lt;/p&gt;&lt;p&gt;Тема очень сложная, поэтому когда я наткнулся на большой &lt;a href="https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md"&gt;англоязычный материал&lt;/a&gt; о cloud-native-безопасности в публичном репозитории Security Technical Advisory Group, то сразу решил его перевести. &lt;/p&gt;&lt;p&gt;&lt;strong&gt;Cобрал практическое саммари: какие риски возникают на этапах разработки, сборки, развертывания и эксплуатации (runtime) и какими механизмами их закрывают — от DevSecOps и защиты цепочки поставки до Zero Trust и политик для работающих нагрузок.&lt;/strong&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067052/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067052#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:23:25 GMT</pubDate><guid>62e5f5249f733c081d35bcc9b24afbef</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] Apple Introduces Leasing Program for iPhones and Other Devices</title><link>https://www.nytimes.com/2026/07/28/technology/apple-leasing-program.html</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220390"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:16:01 GMT</pubDate><guid>2df669784107c8f14c64d4dce8454c87</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] New Amazon Data Center Is Set to Have the Most Polluting Power Plant in the U.S.</title><link>https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220350"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:07:06 GMT</pubDate><guid>b29f781dc36e9c69dae0be5cbbf6c78d</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Hacker News] US Military's Cyber Command Unit Grapples with Cluster of Deaths by Suicide</title><link>https://www.bloomberg.com/news/articles/2026-08-06/us-military-s-cyber-command-unit-grapples-with-cluster-of-deaths-by-suicide</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220339"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:04:25 GMT</pubDate><guid>b8aff8aa9cfdefa9af20c2e62cac2559</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] Лопнет ли пузырь на рынке ИИ? Разбираем потери, долги и производительность</title><link>https://habr.com/ru/companies/bothub/articles/1068046/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/05c/cbb/563/05ccbb5636a308986b8b5a16ef7e8e98.jpeg" /&gt;&lt;p&gt;Нынешняя экономика искусственного интеллекта — это история о потерях, доходах, смене стиля жизни и интернет-среды, а также о разрыве между ожиданиями и реальностью. Инвесторы пока имеют деньги и терпение, чтобы вкладываться в ИИ-компании Anthropic, OpenAI и другие, а те, в свою очередь, демпингуют рынок и уже смотрят на IPO. На микроуровне (отдельный ИИ-агент) мы видим неэффективность и потери, а на рынке мы видим огромные долги, которые не подкреплены реальной производительностью. А между молотом и наковальней — люди, пытающиеся увеличить продуктивность, получая лишь «2x», а не обещанные «10x».&lt;/p&gt;&lt;p&gt;Но ИИ кардинально поменял нашу жизнь, и многие из нас пользуются им каждый день, повышая свою продуктивность или уменьшая свою когнитивную нагрузку.&lt;/p&gt;&lt;p&gt;Так лопнет ли пузырь? Или он уже лопнул, а мы и не заметили?&lt;/p&gt;&lt;p&gt;В этой статье мы разберем потери из-за ИИ, перегрев долгового рынка и правда ли, что продуктивность увеличивается в 10 раз, если купить подписку на Claude или ChatGPT?&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068046/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068046#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 10:00:20 GMT</pubDate><guid>b468f565713cdcd3aa04575d8ef531ce</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] FlatAdapter для преобразования иерархических структур</title><link>https://habr.com/ru/articles/1068172/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/579/20f/f11/57920ff118d57d61835b38260adee86e.png" /&gt;&lt;p&gt;Превращаем иерархические структуры в набор плоских строк готовых для импорта в БД&lt;/p&gt;&lt;p&gt;&lt;code&gt;flat-adapter&lt;/code&gt; преобразует нетипизированные вложенные mapping в детерминированный список плоских строк. Библиотека умеет приводить scalar-типы, обрабатывать optional-поля, извлекать значения по путям, разворачивать вложенные FlatAdapter-ы и строить декартово произведение списков.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068172/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068172#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:46:13 GMT</pubDate><guid>4508eba5d95a5b977ebe8bbc4b45993f</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] [Перевод] Драгоценный камень в сердце квантовой физики</title><link>https://habr.com/ru/articles/1066972/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/98b/0a2/f0b/98b0a2f0b53e46eb046a608b7ceeed0c.jpg" /&gt;&lt;p&gt;Физики открыли геометрический объект, похожий на&amp;nbsp;драгоценный камень, который значительно упрощает расчёты взаимодействий частиц и ставит под&amp;nbsp;сомнение представление о&amp;nbsp;том, что&amp;nbsp;пространство и время являются фундаментальными составляющими реальности.&amp;nbsp;&lt;/p&gt;&lt;p&gt;«Это совершенно новое открытие, и оно намного проще всего того, что&amp;nbsp;делалось ранее»,&amp;nbsp;— сказал &lt;a href="http://www.maths.ox.ac.uk/contact/details/hodges" rel="noopener noreferrer nofollow"&gt;Эндрю Ходжес&lt;/a&gt;, физик‑математик из&amp;nbsp;Оксфордского университета, следивший за&amp;nbsp;этой работой.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Открытие того, что&amp;nbsp;взаимодействия частиц&amp;nbsp;— самые базовые явления в&amp;nbsp;природе&amp;nbsp;— могут&amp;nbsp;быть следствием геометрии, значительно продвигает многолетние усилия по&amp;nbsp;переформулировке квантовой теории поля&amp;nbsp;— свода законов, описывающих элементарные частицы и их взаимодействия. Взаимодействия, которые ранее рассчитывались с&amp;nbsp;помощью математических формул, состоящих из&amp;nbsp;тысяч слагаемых, теперь можно описать путём вычисления объёма соответствующего «&lt;a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80" rel="noopener noreferrer nofollow"&gt;амплитуэдра&lt;/a&gt;&lt;a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80&amp;quot;&amp;gt;%D0%B0%D0%BC%D0%BF%D0%BB%D0%B8%D1%82%D1%83%D1%8D%D0%B4%D1%80%D0%B0&amp;lt;/a&amp;gt;%C2%BB" rel="noopener noreferrer nofollow"&gt;»&lt;/a&gt;, похожего на&amp;nbsp;драгоценный камень, что&amp;nbsp;даёт эквивалентное выражение, состоящее из&amp;nbsp;одного слагаемого.&amp;nbsp;&lt;/p&gt;&lt;p&gt;«Степень эффективности модели просто ошеломляет»,&amp;nbsp;— сказал &lt;a href="http://www-personal.umich.edu/~jbourj/" rel="noopener noreferrer nofollow"&gt;Джейкоб Бурджайли&lt;/a&gt;, физик‑теоретик из&amp;nbsp;Гарвардского университета и один из&amp;nbsp;исследователей, разработавших эту новую идею. «Теперь на&amp;nbsp;бумаге можно без&amp;nbsp;труда выполнять вычисления, которые раньше&amp;nbsp;были невозможны даже с&amp;nbsp;помощью компьютера».&amp;nbsp;&lt;/p&gt;&lt;p&gt;Новая геометрическая версия квантовой теории поля также может облегчить поиск теории квантовой гравитации, которая плавно соединила&amp;nbsp;бы крупномасштабную и мелкомасштабную картины Вселенной. Попытки, предпринятые до&amp;nbsp;сих пор с&amp;nbsp;целью включения гравитации в&amp;nbsp;законы физики на&amp;nbsp;квантовом уровне, наталкивались на&amp;nbsp;абсурдные бесконечности и глубокие парадоксы. Амплитуэдр или&amp;nbsp;подобный ему геометрический объект мог&amp;nbsp;бы помочь, устранив два глубоко укоренившихся принципа физики: локальность и унитарность.&amp;nbsp;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1066972/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1066972#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:32:18 GMT</pubDate><guid>d7bfc36fa68894ab3adf0c45f05d5a42</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] От болтливых LLM-агентов к управляемым системам</title><link>https://habr.com/ru/articles/1068168/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/350/01e/d70/35001ed70f20ae3dc7a4dcb06ab98adb.jpg" /&gt;&lt;p&gt;Когда достаточно одного LLM-агента, когда нужна мультиагентная система, а когда лучше вообще использовать обычный workflow? Разбираем современный стек агентных приложений: ReAct, Agent SDK, графы, durable execution, sandbox, память, протоколы, evals и безопасность — с упором на практический выбор архитектуры для production.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068168/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068168#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:24:35 GMT</pubDate><guid>25aa7ab83c0394e2a64755fbbde68890</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Bubble-свадьба и как я докатился до такой жизни — путь соло-разработчика</title><link>https://habr.com/ru/articles/1068096/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/e54/aa7/e48/e54aa7e48ccc75d0ccd017559b83f18c.jpeg" /&gt;&lt;p&gt;И это не самое странное, что я делал: были ещё RPG в телеге с озвучкой, пиксельная карта России с внутренней экономикой, сервис который генерирует поздравительные треки. Что-то из этого доехало до релиза и заработало, что-то висит на полпути. В этой статье пробегусь по всем проектам и по пути отвечу на вопрос, который сам себе задавал: почему раньше половина проектов не доезжала до конца, а сейчас - доезжает. Если вы тоже что-то пилите с ИИ - думаю, будет знакомо.&lt;/p&gt;&lt;p&gt;В статье кратко мой пусть, и что меня связывало с играми и ИИ, поехали)&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068096/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068096#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:22:07 GMT</pubDate><guid>57b2a6831508a0ce4e4b6d17cc7b7047</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Hacker News] DeepMind's WeatherNext model achieves breakthrough forecasting cyclones</title><link>https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/</link><description>&lt;a href="https://news.ycombinator.com/item?id=49220126"&gt;Comments&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:18:50 GMT</pubDate><guid>ea121f25d18711cebc04f6c1fe7a5f34</guid><source url="https://news.ycombinator.com/rss">Hacker News</source></item><item><title>[Habr] Пишем терабайты видео на диск в Go и не даем ОС сожрать всю память</title><link>https://habr.com/ru/articles/1068166/</link><description>&lt;p&gt;Выкатили мы первый релиз в прод (100 камер), обрадовали клиентов, начали работать. Прошел где-то час, полетели алерты. Залезаю на сервак, смотрю htop – а там свободно 100 метров ОЗУ. Пу-пу-пу-пу. Нужно внести уточнение что боевой сервер имел 32 гига озу. Ожидаемое поведение было то что процессор отдыхает, сетевуха переваривает трафик, озу 250-300 МБ, диски нагружены не сильно. Так что, когда видишь такие цифры в htop, начинаешь винить себя и свои кривые руки, написавшие это "Г". Но все же решили пойти в Гугл, чатгпт и тому подобное. Благо, ответ нашелся быстро, и посыпать голову пеплом перестали. &lt;/p&gt;&lt;p&gt;Код оказался не вообще не причем, память сожрал сам Линукс. Если когда-нибудь вы писали тонны данных на диск, я думаю вы уже поняли в чем дело. Есть такой «невидимый враг» как страничный кэш (Page Cache). Вот именно он и был корнем этой проблемы.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Как&amp;nbsp;работает страничный кеш и что&amp;nbsp;с&amp;nbsp;ним делать?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Когда ваша функция, которая должна писать данные на диск пишет данные, на самом деле она не пишет их на диск. Она пишет их в ОЗУ. Логика ядра Линукса проста и банальна, и она направленна на ускорение «отзывчивости» системы, всю суть можно объяснить так: «О, только что записали сотню гигабайт данных, наверное, скоро понадобится эти данные прочитать. Оставлю-ка я их в кеше, пользователь будет рад что так быстро смог их прочитать.» И так гигабайт за гигабайтом, пока в сервере не кончится физическая память.&lt;/p&gt;&lt;p&gt;Типичное решение проблемы – пишем скрипт, который раз в час делает &lt;code&gt;echo 3 &amp;gt; /proc/sys/vm/drop_caches&lt;/code&gt;. Ну а кто-то просто забивает и позволяет системе убивать случайные процессы через OOM Killer. Но мы же пишем отказоустойчивую штуку. Нам такое не подходит. Задача объяснить ядру ОС, что наши fMP4 сегменты видеоархива — это write-only мусор на небольшое количество времени (т.к если клиент не хочет долго хранить записи, то архив чистится, а если хочет – мы отправляем архив после N времени хранения в S3, а локальную копию тоже чистим). Так что все должно работать по принципу – записал и забыл.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068166/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068166#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:18:31 GMT</pubDate><guid>7d87a073d84ff2d645de48d2dc9d15e4</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Что я узнала, когда выгрузила весь реестр российского ПО и проанализировала все 32 тысячи записей</title><link>https://habr.com/ru/articles/1068164/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/87d/ee1/c8c/87dee1c8c6349264b7816063a936085e.png" /&gt;&lt;p&gt;Я айти-юрист и почти каждую неделю вношу чужой софт в реестр российского ПО. Реестр я вижу изнутри: заявления, экспертиза, протоколы, отказы. Но обычно ты смотришь на него глазами одной заявки. А что, если посмотреть на весь реестр сразу?&lt;/p&gt;&lt;p&gt;Я выгрузила его целиком на 7 августа 2026 года. Получилось 32 071 запись. Я проанализировала, как реестр рос, из чего он состоит, кто туда вступает и на каких основаниях компании заявляют права на свой код. &lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068164/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068164#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:07:44 GMT</pubDate><guid>5ba15d064023a77d060421ec4a6d0a20</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] 16 и ещё 1 причина знать SHAP</title><link>https://habr.com/ru/articles/1067656/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/bfc/16c/261/bfc16c2619c53d74de766b9cfa6acfd6.png" /&gt;&lt;p&gt;Мы знаем его как "метод на основе Теории Игр", "фреймворк" и издалека чувствуем, что это он, видя красные и синие полоски. Но что сделало этот метод таким популярным? Как он родился и почему, после релиза в 2017 году, разные группы исследователей добавляли в него новые расширения и куда этот инструмент пришел сейчас?  &lt;/p&gt;&lt;p&gt;Предлагаю впервые за долгое время потрогать от меня статью без кода —&amp;nbsp;но с картинками. В ней вы узнаете ответы на вопросы и откроете для себя ровно &lt;strong&gt;15 расширений SHAP.  А почему причин 17 — тоже увидите из текста. &lt;/strong&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067656/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067656#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:07:17 GMT</pubDate><guid>8caf5fc3c6468815d546afc51f0e3788</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Как изобрели письменность? Часть 4. Крит, галеры, два письма: о непростой истории греческих алфавитов</title><link>https://habr.com/ru/companies/ruvds/articles/1067990/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/03e/fdd/200/03efdd20018e98640298266a956fc616.webp" /&gt;&lt;p&gt;Греки — один из немногих народов с письменной традицией, чья история отслеживается с бронзового века и продолжается поныне. По древности письменной традиции эллины вполне могут поспорить с китайцами, пусть и заимствовали свою первую письменность у другого народа. С I тысячелетия до нашей эры на греческом языке, с уже знакомой нам письменностью на основе финикийской, начинает развиваться одна из важнейших на планете художественных и научно-философских литературных традиций. Именно носители греческого языка сумели сплавить воедино собственную живую и оригинальную мысль, огромное наследие древних цивилизаций Египта и Месопотамии, религиозные учения иудеев и иранцев, и даже метафизические концепции из далёкой Индии. Из греческой письменности развились сначала римская латиница, а затем и славянская кириллица. Попробуем проследить, как греки прошли путь от суровых северных варваров эпохи бронзы к самому образованному народу античности и как на нём умудрились потерять и забыть свою первую письменность.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067990/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067990#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:01:15 GMT</pubDate><guid>cf630146057aaaa45f0e531f5583673a</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] В ДНК человека нашли «память» о предках, которых мы не знаем</title><link>https://habr.com/ru/companies/ru_mts/articles/1067416/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/b65/fe0/cbd/b65fe0cbdedb2aa51749533e29e14ca1.jpeg" /&gt;&lt;p&gt;Мы привыкли думать, что историю человечества можно прочитать по костям и орудиям. Археологи копают, находят останки, сравнивают их с уже известными образцами и постепенно складывают пазл древа эволюции человека. Но иногда прошлое оставляет следы совсем в другом месте — прямо внутри нас.&lt;/p&gt;&lt;p&gt;Недавняя работа команды специалистов из Калифорнийского университета в Беркли показала, что в геномах живущих сейчас людей спрятаны фрагменты от группы, о которой до сих пор не было никаких материальных свидетельств. Ни костей, ни зубов — ничего. Только генетическая память, которую удалось вытащить на свет новым вычислительным методом.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067416/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067416#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 09:00:15 GMT</pubDate><guid>c077942b0c74abf98fcb12b045021a8f</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Lobsters] They don’t make ’em like Sublime Text anymore</title><link>https://dbushell.com/2026/08/07/sublime-text/</link><description>&lt;p&gt;&lt;a href="https://lobste.rs/s/uny1fo/they_don_t_make_em_like_sublime_text"&gt;Comments&lt;/a&gt;&lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 08:57:33 GMT</pubDate><guid>decef42bca91f3ab04a902b893d68559</guid><source url="https://lobste.rs/rss">Lobsters</source></item><item><title>[Habr] Почему голосовые ИИ‑агенты перебивают людей: замерил на боевом API и починил правилами русского синтаксиса</title><link>https://habr.com/ru/articles/1068162/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/123/e1a/515/123e1a515f92dbccf74749c21218a484.png" /&gt;&lt;p&gt;Все голосовые платформы решают, что&amp;nbsp;человек договорил, по&amp;nbsp;таймеру тишины. Я замерил, во&amp;nbsp;что&amp;nbsp;это выливается на&amp;nbsp;живой русской речи, и получил цифру, которая меня удивила:&amp;nbsp;&lt;strong&gt;из 1275&amp;nbsp;мс задержки перед ответом 1200&amp;nbsp;мс&amp;nbsp;— это ожидание секундомера, и только 75&amp;nbsp;мс&amp;nbsp;— работа самой модели.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Ниже&amp;nbsp;— методика, замеры и решение, которое даёт 316&amp;nbsp;мс вместо 1200&amp;nbsp;при&amp;nbsp;двух обрывах вместо тридцати восьми. Всё воспроизводимо, детектор&amp;nbsp;— на&amp;nbsp;правилах, без&amp;nbsp;обучения и без&amp;nbsp;GPU.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068162/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068162#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:52:14 GMT</pubDate><guid>eef35abb1d520614a5a2488423c72848</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] «Bro, what…?» #1. Первый контакт с crackme на Linux x86-64</title><link>https://habr.com/ru/articles/1068160/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/ff4/0ae/279/ff40ae2799b80224a265528b70aa73bc.png" /&gt;&lt;p&gt;Вы запускаете программу, о которой ничего не знаете. Она вежливо просит строку, а в ответ на ваш ввод насмешливо отвечает: «Bro, what are you trying to do?» И правда, что мы пытаемся сделать? Пытаемся понять ее.&lt;/p&gt;&lt;p&gt;Перед нами crackme – программа-головоломка, написанная для тренировки навыков обратной разработки: бинарник под Linux x86-64 без исходников и документации, который издевается над каждым, кто не смог его разгадать. Это первая статья цикла из трех о гибридном анализе крякми &lt;strong&gt;Getting Started Keygen&lt;/strong&gt; (Mazzottis). Мы осмотрим файл штатными утилитами, найдем &lt;code&gt;main&lt;/code&gt; в Ghidra, расшифруем «бессмысленные» имена переменных в реальную раскладку стека и подтвердим гипотезы в GDB. По пути встретим оптимизированный пролог без RBP, «хитрое» беззнаковое условие и &lt;code&gt;std::string&lt;/code&gt;, спрятавшийся в трех переменных, которые на первый взгляд никак не связаны.&lt;/p&gt;&lt;p&gt;Во второй части цикла – мутационное тестирование и реконструкция скрытой структуры, в третьей – полный разбор хеш-функции и восстановление алгоритма на Python.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068160/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068160#habracut"&gt;Читать первую часть&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:47:08 GMT</pubDate><guid>661746c87551d1f08f63d408a753ef5c</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] RCE-уязвимость в ИИ-редакторах кода угрожала 50 млн разработчиков. Разбираемся, что произошло</title><link>https://habr.com/ru/companies/selectel/articles/1067406/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/836/217/a94/836217a94304ea0d4db1f0e6941c9dcd.jpg" /&gt;&lt;p&gt;Исследователи AISLE &lt;a href="https://aisle.com/blog/aisle-discovers-1-click-rce-vulnerability-in-cursor-vs-code-and-google-antigravity"&gt;обнаружили критическую уязвимость&lt;/a&gt;, которая затрагивает Cursor, Microsoft Visual Studio Code и Google Antigravity. Проблема позволяла злоумышленнику добиться удаленного выполнения кода (RCE), если разработчик открывал специально подготовленную ссылку в сообщении Git-коммита.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Несмотря на то, что исправления уже выпущены всеми тремя вендорами, инцидент показал новую проблему всей экосистемы AI-IDE — наследование уязвимостей между продуктами, построенными на общей кодовой базе.&lt;strong&gt; &lt;/strong&gt;По оценке исследователей, потенциально под угрозой могли находиться около 50 миллионов пользователей.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1067406/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1067406#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:00:10 GMT</pubDate><guid>c120c50fae79212e9a0213e919d9772e</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item><item><title>[Habr] Что видит DPI, и что мы попробовали у него отобрать</title><link>https://habr.com/ru/articles/1068156/</link><description>&lt;img src="https://habrastorage.org/getpro/habr/upload_files/dbf/94e/66c/dbf94e66cc2f1776134e4bfbcf449a43.png" /&gt;&lt;p&gt;Последние пару лет я работаю в команде, которая занимается устойчивой к DPI (Deep Packet Inspection) туннельной инфраструктурой — по сути, альтернативой классическому VPN.&lt;/p&gt;&lt;p&gt;Когда начинаешь заниматься этим всерьёз, довольно быстро обнаруживается неприятная вещь: шифрование само по себе давно уже не означает, что трафик нельзя распознать. Содержимое пакетов действительно можно скрыть, но пакет от этого не исчезает. У него остаются размер, направление, время появления; соединение начинается с определённой последовательности сообщений, TLS-клиент определённым образом представляется серверу, поток ускоряется, замедляется, замирает и снова начинает передавать данные.&lt;/p&gt;&lt;p&gt;Для человека всё это выглядит как куча зашифрованных байтов. Для классификатора — как вполне пригодный набор признаков.&lt;/p&gt;&lt;p&gt;Поэтому значительная часть нашей работы в итоге свелась не к тому, чтобы «зашифровать ещё сильнее», а к более практическому вопросу: что именно видит наблюдатель снаружи и по каким признакам он может решить, что перед ним не браузерный трафик, а туннель.&lt;/p&gt;&lt;p&gt;Об этом и расскажу.&lt;/p&gt; &lt;a href="https://habr.com/ru/articles/1068156/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=1068156#habracut"&gt;Читать далее&lt;/a&gt;</description><pubDate>Sat, 08 Aug 2026 08:00:10 GMT</pubDate><guid>1cb162728db2e583b8eb2aee3e186224</guid><source url="https://habr.com/ru/rss/all/">Habr</source></item></channel></rss>
