@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Sat, 08 Aug 2026 06:02:49 GMT</lastBuildDate><item><title>[ServeTheHome] A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026</title><link>https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the Kioxia GP1 PCIe Gen6 NVMe SSD running live in the company's booth at just over 10M IOPS&lt;/p&gt;
+<rss version="2.0"><channel><title>自部署 · HomeLab</title><link>https://rss-aggregator.local</link><description>Aggregated feed: 自部署 · HomeLab</description><lastBuildDate>Sat, 08 Aug 2026 07:08:07 GMT</lastBuildDate><item><title>[Product Hunt] Basedash Subscriptions</title><link>https://www.producthunt.com/products/basedash</link><description>&lt;p&gt;
+            Subscribe to any dashboard. Delivered on schedule.
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/basedash?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1217769?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Sat, 08 Aug 2026 04:18:54 GMT</pubDate><guid>edd0f2ce2f8a929824c0c73f84b32505</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Toolport</title><link>https://www.producthunt.com/products/conduit-12</link><description>&lt;p&gt;
+            Every tool, one port. One MCP setup for all your AI agents
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/conduit-12?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1217619?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 20:20:13 GMT</pubDate><guid>cc0850cf5e0e5eb1f5812eb81e4c8c2d</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026</title><link>https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/</link><description>&lt;p&gt;At FMS 2026, we saw the Kioxia GP1 PCIe Gen6 NVMe SSD running live in the company's booth at just over 10M IOPS&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/a-10m-iops-kioxia-gp1-ssd-shown-running-at-fms-2026/"&gt;A 10M IOPS Kioxia GP1 SSD Shown Running at FMS 2026&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Fri, 07 Aug 2026 19:00:09 GMT</pubDate><guid>09111312a84660a8d6ec09c28ba133d4</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Kitesurf</title><link>https://www.producthunt.com/products/cloudflare</link><description>&lt;p&gt;
             Browser built for agents, running on Cloudflare Workers
           &lt;/p&gt;
@@ -99,7 +113,14 @@
             &lt;a href="https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1216181?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:49:38 GMT</pubDate><guid>e5ac93b8c12d03d6d9140bbafc249ff5</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Glyphi: Speed Reader</title><link>https://www.producthunt.com/products/glyphi-speed-reader</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:49:38 GMT</pubDate><guid>e5ac93b8c12d03d6d9140bbafc249ff5</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] AstraPixels</title><link>https://www.producthunt.com/products/astrapixels</link><description>&lt;p&gt;
+            ​​A pixel-art solar system at its real current positions.​
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/astrapixels?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1216176?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Thu, 06 Aug 2026 03:18:25 GMT</pubDate><guid>727a01bbb8ed20ab2bce191c8345e6c0</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Glyphi: Speed Reader</title><link>https://www.producthunt.com/products/glyphi-speed-reader</link><description>&lt;p&gt;
             An RSVP reader for books, PDFs, articles &amp; webpages
           &lt;/p&gt;
           &lt;p&gt;
@@ -184,28 +205,14 @@
             &lt;a href="https://www.producthunt.com/products/stepshot-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1215451?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 08:17:49 GMT</pubDate><guid>afe2b3204b7138e1563eeac75d927f47</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Hansel</title><link>https://www.producthunt.com/products/hansel-2</link><description>&lt;p&gt;
-            Remember everything you've worked on
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/hansel-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1215391?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 06:59:36 GMT</pubDate><guid>39488e970c375d329a6b116cfd3ac901</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Reference</title><link>https://www.producthunt.com/products/reference-2</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 08:17:49 GMT</pubDate><guid>afe2b3204b7138e1563eeac75d927f47</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Reference</title><link>https://www.producthunt.com/products/reference-2</link><description>&lt;p&gt;
             Local semantic search for AI agents
           &lt;/p&gt;
           &lt;p&gt;
             &lt;a href="https://www.producthunt.com/products/reference-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
             |
             &lt;a href="https://www.producthunt.com/r/p/1215309?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 05:07:59 GMT</pubDate><guid>78898faf0edc99246f04400f3a3ad05c</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Dover MCP</title><link>https://www.producthunt.com/products/dover</link><description>&lt;p&gt;
-            Run your hiring process from Claude or ChatGPT
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/dover?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1215158?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 23:35:35 GMT</pubDate><guid>b55b3ad81d4a2a6f94a4804964f2f281</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] X Money</title><link>https://www.producthunt.com/products/x-money-2</link><description>&lt;p&gt;
+          &lt;/p&gt;</description><pubDate>Wed, 05 Aug 2026 05:07:59 GMT</pubDate><guid>78898faf0edc99246f04400f3a3ad05c</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] X Money</title><link>https://www.producthunt.com/products/x-money-2</link><description>&lt;p&gt;
             Your money, on the world's most powerful network.
           &lt;/p&gt;
           &lt;p&gt;
@@ -220,14 +227,7 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1215080?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:17:00 GMT</pubDate><guid>e709b026f2c0dc625fe2195d21386073</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] Lenovo ThinkPad X1 Carbon Gen 14 Review</title><link>https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/</link><description>&lt;p&gt;The Lenovo ThinkPad X1 Carbon Gen 14 takes the long-running business notebook line into a new Intel Core Ultra generation. Our model 21V7006EUS pairs an Intel Core Ultra 7 355 with 32GB-class memory and integrated Intel graphics in a system&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/"&gt;Lenovo ThinkPad X1 Carbon Gen 14 Review&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:00:56 GMT</pubDate><guid>2b62c5d17f6c7f21b79eb7492a5c5009</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Keystroke</title><link>https://www.producthunt.com/products/keystroke-2</link><description>&lt;p&gt;
-            Build powerful AI agents &amp; workflows
-          &lt;/p&gt;
-          &lt;p&gt;
-            &lt;a href="https://www.producthunt.com/products/keystroke-2?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
-            |
-            &lt;a href="https://www.producthunt.com/r/p/1215053?app_id=339"&gt;Link&lt;/a&gt;
-          &lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 19:29:34 GMT</pubDate><guid>77f56a2b75b0d03acab089fba51e75f5</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[Product Hunt] Troopr AI Scrum Master</title><link>https://www.producthunt.com/products/troopr</link><description>&lt;p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/lenovo-thinkpad-x1-carbon-gen-14-review/"&gt;Lenovo ThinkPad X1 Carbon Gen 14 Review&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Tue, 04 Aug 2026 20:00:56 GMT</pubDate><guid>2b62c5d17f6c7f21b79eb7492a5c5009</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Troopr AI Scrum Master</title><link>https://www.producthunt.com/products/troopr</link><description>&lt;p&gt;
             Writes your standup from real work. Remembers your team.
           &lt;/p&gt;
           &lt;p&gt;
@@ -242,7 +242,14 @@
             |
             &lt;a href="https://www.producthunt.com/r/p/1214232?app_id=339"&gt;Link&lt;/a&gt;
           &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 22:15:29 GMT</pubDate><guid>fcd808e501953b4f62c67abb9d6d6c44</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] AMD Helios Architecture Deep Dive: The Power of AMD’s Hardware Combined</title><link>https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/</link><description>&lt;p&gt;The Helios rackscale system is the culmination of AMD's server hardware, as well as their AI datacenter ambitions. For Advancing AI 2026, the company dove into the architecture of their first rackscale systems, outlining how they have scaled up 72 Instinct MI455X accelerators to act as a single system&lt;/p&gt;
-&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[ServeTheHome] ASUS Showcases NUC 16 Family Powered By Panther Lake</title><link>https://www.servethehome.com/asus-showcases-nuc-16-family-powered-by-intel-panther-lake/</link><description>&lt;p&gt;ASUS was showing off the new NUC 16 family of mini-PCs for this year's Computex trade show. Powered by Intel's Panther Lake and Wildcat Lake SoCs, these mini-PCs pack a full system into a 0.7L chassis&lt;/p&gt;
+&lt;p&gt;The post &lt;a href="https://www.servethehome.com/amd-helios-architecture-deep-dive-amd-broadcom-hardware-combined/"&gt;AMD Helios Architecture Deep Dive: The Power of AMD&amp;#8217;s Hardware Combined&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 19:00:32 GMT</pubDate><guid>528c01c2fa705ca427130cfb048995f9</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] Hexis</title><link>https://www.producthunt.com/products/bevel-4</link><description>&lt;p&gt;
+            Git-backed skills, tools &amp; context for AI agents
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="https://www.producthunt.com/products/bevel-4?utm_campaign=producthunt-atom-posts-feed&amp;amp;utm_medium=rss-feed&amp;amp;utm_source=producthunt-atom-posts-feed"&gt;Discussion&lt;/a&gt;
+            |
+            &lt;a href="https://www.producthunt.com/r/p/1213979?app_id=339"&gt;Link&lt;/a&gt;
+          &lt;/p&gt;</description><pubDate>Mon, 03 Aug 2026 16:15:36 GMT</pubDate><guid>9ed0a10c7f60579a53ce42678b1fa602</guid><source url="https://www.producthunt.com/feed">Product Hunt</source></item><item><title>[ServeTheHome] ASUS Showcases NUC 16 Family Powered By Panther Lake</title><link>https://www.servethehome.com/asus-showcases-nuc-16-family-powered-by-intel-panther-lake/</link><description>&lt;p&gt;ASUS was showing off the new NUC 16 family of mini-PCs for this year's Computex trade show. Powered by Intel's Panther Lake and Wildcat Lake SoCs, these mini-PCs pack a full system into a 0.7L chassis&lt;/p&gt;
 &lt;p&gt;The post &lt;a href="https://www.servethehome.com/asus-showcases-nuc-16-family-powered-by-intel-panther-lake/"&gt;ASUS Showcases NUC 16 Family Powered By Panther Lake&lt;/a&gt; appeared first on &lt;a href="https://www.servethehome.com"&gt;ServeTheHome&lt;/a&gt;.&lt;/p&gt;</description><pubDate>Sun, 02 Aug 2026 17:00:02 GMT</pubDate><guid>93b8786b08086cb3b52ccf95cee7afbf</guid><source url="https://www.servethehome.com/feed/">ServeTheHome</source></item><item><title>[Product Hunt] ShootClip</title><link>https://www.producthunt.com/products/shootclip</link><description>&lt;p&gt;
             Edit videos 10x faster with AI
           &lt;/p&gt;
